@@ -1,5 +1,23 @@
 # Teddy Encounter working status
 
+## Floor morphology pass — 5 October 2026
+
+Grok session `01a10a54-69ee-7253-978b-c01aa506ee63` is the sole Unreal writer. Branch `grok/chamber-parity-continuation`. The saved room was not rebuilt. V1 and V2 floor sources were not reimported.
+
+The visible floor is now one no-collision sheet, `TE_Chamber_Morph_Main` / `SM_ChamberFractureMorph_Main` (10,218 triangles, 58 plates, median plate about 7.8 m², 10 omitted plates, 16 angular fragments, local relief at most 3.75 cm). It sits at (40, 0, −5), scale Z exactly 1. New graphs `M_Chamber_FloorMorph*` use a flat normal and a 32 m stain at 22% weight, so the old hairline bump is not driving the read. The five V2 fields, four slab groups and five crust banks stay in place and are hidden. An intermediate capture, `20261005T131418-capture_chamber_views`, put pure black cards on the floor and was rejected; the saved mesh does not use those cards.
+
+| Evidence | Result |
+| --- | --- |
+| Before | `20261005T114712-capture_chamber_views`, ungraded native 1920×1280. |
+| After | `20261005T131840-capture_chamber_views`: front, reverse, and a held ordinary view at pitch −46° / FOV 54. |
+| Chamber audit | `20261005T131946-verify_chamber_runtime`, **31/31**. The added checks pin the morphology mesh and require the fine overlays to stay present and hidden. |
+| Room audit | `20261005T132018-verify_full_room`, **28/28**. Routes, spawns and the four collision bounds still pass. |
+| Run | `evidence/chamber/20261005T131340Z` |
+
+Both directions are quieter and read as one floor, with a few larger broken plates instead of the fine crack web and repeated banks. The breaks are still too sparse and too shallow against both concepts. The strip outside the sheet still shows the older floor. Overhead haze, wall wash and red points were not changed. This is not visual acceptance.
+
+Open the saved encounter with **PLAY.cmd** or **EDIT.cmd**. Next: local overhead haze and calmer wall light, without raising global exposure. Deepen the connected plate breaks in the same floor kit if the next review still finds the floor too intact. Do not add a creature, weapon, phase or camera mode.
+
 ## Grok continuation handoff — 5 October 2026
 
 The user has delegated the next chamber parity pass to Grok. [GROK_CHAMBER_HANDOFF.md](study/GROK_CHAMBER_HANDOFF.md) supplies the original video, selected close/front/reverse references, final actual captures, current corrected assets, prerequisites and concrete next milestones. The designated existing session is `01a10a54-69ee-7253-978b-c01aa506ee63` (Husk Cluster boss shot fidelity study, Grok4.7/xhigh).

@@ -272,6 +272,34 @@ def saved_audit():
     check('saved_crust_bounds_remain_grounded_low_relief', bool(crust_rows) and all(
         m['bounds']['finite_ordered'] and m['bounds']['min'][2] >= -5.05 and m['bounds']['max'][2] <= 1.05
         for row in crust_rows for m in row['meshes']))
+    check('fine_floor_slab_and_crust_overlays_preserved_and_hidden', floor_identity_ok and slab_identity_ok and crust_identity_ok and
+          all(row['actor_hidden'] for row in floor_rows + slab_rows + crust_rows) and
+          len(floor_rows) == 5 and len(slab_rows) == 4 and len(crust_rows) == 5)
+    morph_manifest_path = run_dir / 'chamber-floor-morphology-reviewed.json'
+    morph_manifest_bytes = morph_manifest_path.read_bytes()
+    morph_manifest = json.loads(morph_manifest_bytes)
+    assert morph_manifest['owner'] == 'teddy-chamber-floor-morphology-v3-20261005'
+    result['frozen_morphology_manifest'] = str(morph_manifest_path)
+    result['morphology_manifest_sha256'] = hashlib.sha256(morph_manifest_bytes).hexdigest()
+    expected_morph = {PREFIX + 'Morph_' + item['label']: item for item in morph_manifest['recommended_placements']}
+    expected_morph_meshes = {NAMESPACE + 'FloorMorphology/' + item['name'] + '.' + item['name'] for item in morph_manifest['assets']}
+    assert len(expected_morph) == len(morph_manifest['recommended_placements']) == 1
+    assert expected_morph_meshes == {NAMESPACE + 'FloorMorphology/SM_ChamberFractureMorph_Main.SM_ChamberFractureMorph_Main'}
+    morph_rows = [row for row in geometry if 'ChamberMorphologyOwned' in row['tags'] or row['label'].startswith(PREFIX + 'Morph_') or any(m['mesh'].startswith(NAMESPACE + 'FloorMorphology/') for m in row['meshes'])]
+    actual_morph = {row['label']: row for row in morph_rows}
+    morph_identity_ok = (set(actual_morph) == set(expected_morph) and all(
+        'ChamberMorphologyOwned' in row['tags'] and not row['actor_hidden'] and len(row['meshes']) == 1 and
+        row['meshes'][0]['mesh'] == NAMESPACE + 'FloorMorphology/' + expected_morph[row['label']]['mesh'] + '.' + expected_morph[row['label']]['mesh']
+        for row in morph_rows))
+    check('saved_floor_morphology_matches_reviewed_manifest', morph_identity_ok and
+          len(morph_rows) == 1 and {m['mesh'] for row in morph_rows for m in row['meshes']} == expected_morph_meshes)
+    check('saved_floor_morphology_transform_is_grounded_without_vertical_scale', morph_identity_ok and all(
+        math.dist(row['location'], expected_morph[row['label']]['location_cm']) < .1 and
+        math.dist(row['scale'], expected_morph[row['label']]['scale']) < .0001 and abs(row['scale'][2] - 1.) < .0001 and
+        abs(row['rotation'][0]) < .01 and abs(row['rotation'][2]) < .01 and
+        abs((row['rotation'][1] - expected_morph[row['label']]['yaw'] + 180) % 360 - 180) < .01 and
+        all(m['bounds']['finite_ordered'] and m['bounds']['min'][2] >= -5.05 and m['bounds']['max'][2] <= 6.05 for m in row['meshes'])
+        for row in morph_rows))
     placement_rows = []
     for row in geometry:
         for mesh in row['meshes']:

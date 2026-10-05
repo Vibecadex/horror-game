@@ -27,17 +27,17 @@ The [close direction](visuals/direction-close-best.jpg) and original video estab
 - Broad B-3 bulkhead, wheel, indicators and fan replace the earlier small X-braced appearance. Original assets remain preserved.
 - Both side walls and the real two-bay reverse wall exist. Modeled piers, attached equipment and lowered perimeter drainage complete the enclosure. Native camera-dependent wall/light cutaway remains active.
 - Weathered world-aligned wall materials use a new generated albedo with retained normal/roughness inputs. This is authored art, not a measured scan.
-- **Five connected fracture fields, four sparse-slab groups and five crust-bank placements** use corrected V2 exports with no collision. **43 of45 earlier floor actors are hidden**, with original transforms/assets retained.
+- **One morphology sheet** (`SM_ChamberFractureMorph_Main`, actor `TE_Chamber_Morph_Main`) is the visible floor. It has no collision. The five V2 fields, four slab groups and five crust banks remain at their frozen transforms and are hidden. **43 of 45 earlier floor actors stay hidden.** The 13:18 UTC black-card attempt was rejected and is not the saved mesh.
 - The earlier84-instance /21-mesh room extension remains. Source catalogs also contain unused variants; file presence does not establish assignment.
 - Character meshes, skeleton, animation, gameplay and controls were preserved. Ordinary tracking remains pitch−46° and FOV54; architectural evidence cameras are separate.
 
-[chamber-settings.json](chamber-settings.json), revision `chamber-08-crust`, holds current room values. It supersedes older chamber trials: primary key165000cd / outer cone48°, rear scattering4 and separate environment-channel service accents. These are saved implementation values, not acceptance thresholds.
+[chamber-settings.json](chamber-settings.json), revision `chamber-09-floor-morphology`, holds current room values. The older `floor` object is unchanged and describes the hidden V2 graphs. `floor_morphology` is the visible sheet: 3200 cm stain tile, texture weight 0.22, flat normal. Lighting values are still the chamber-08 set. They supersede older trials, including primary key 165000 cd / outer cone 48°, rear scattering 4 and separate environment-channel service accents. These are saved implementation values, not acceptance thresholds.
 
 ## Next work in priority order
 
 | Priority | Current difference | Task and review condition |
 | --- | --- | --- |
-| 1: floor morphology | Fine grain and isolated fracture patches dominate; the target has connected erosion, varied broken plates and dispersed angular fragments. | Rework transitions/damage scale using corrected sources. Preserve quiet floor, contact, lanes and no-collision behavior. Both views must read as one worn floor without repeated bank arcs or bright outlines. |
+| 1: floor depth | The hairline web and repeated banks are gone. Both views show one quieter floor, but the breaks are still too few and too shallow, and the perimeter outside the sheet still shows the older floor. | Deepen connected plate loss and grounded fragments in `FloorMorphologyV3` only. Do not restore black cards, hairline normals, or the hidden V2 overlays. |
 | 2: light and haze | Wall washes are more direct and overhead glow weaker. Near floor is brighter/more even while some services/red points are too dark. | Adjust local distribution with native captures after each trial. Recover depth/overhead glow without global exposure compensation or glowing fog shapes. Keep bodies, aim pool and telegraphs readable. |
 | 3: construction/framing | Panel divisions are more regular, wall/door/floor proportions approximate, and reverse has excess black upper margin. | Compare geometry and disclosed cameras before changing either. Strengthen architectural mass/local aging. Never hide missing construction with framing or force cutaway for a still. |
 
@@ -50,7 +50,8 @@ More small debris or uniform contrast will not solve continuous erosion. Do not 
 | [ChamberParity](../Assets/Adapted/ChamberParity/) | Editable door, wheel, bays, drums and source renders. |
 | [FloorNormalsV2](../Assets/Adapted/ChamberParity/FloorNormalsV2/manifest.json) | Three corrected field mesh types, five placements. |
 | [SlabsNormalsV2](../Assets/Adapted/ChamberParity/SlabsNormalsV2/manifest.json) | Sixteen closed slabs in a sparse group, four placements. |
-| [CrustNormalsV2](../Assets/Adapted/ChamberParity/CrustNormalsV2/manifest.json) | Two corrected bank types, five placements. |
+| [CrustNormalsV2](../Assets/Adapted/ChamberParity/CrustNormalsV2/manifest.json) | Two corrected bank types, five placements. Hidden, not deleted. |
+| [FloorMorphologyV3](../Assets/Adapted/ChamberParity/FloorMorphologyV3/manifest.json) | Visible floor sheet. One placement. Quiet material scale is applied in Unreal, not in the FBX preview. |
 | [WallSurface](../Assets/Adapted/ChamberParity/WallSurface/) | Albedo, prompt/provenance; retained inputs supply normal/roughness. |
 
 Unreal assets use `/Game/TeddyEncounter/Chamber`; actor prefix `TE_Chamber_`, tags `TeddyEncounterOwned` / `ChamberOwned`. One integrator writes shared maps/packages. Source artists use separate agreed files; QA judges without changing the candidate.

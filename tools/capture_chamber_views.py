@@ -27,6 +27,7 @@ CAMERA_REVISION = 'chamber-03-reverse-services'
 VIEWS = [
     {'name': '01-chamber-front', 'caption': 'ARCHITECTURAL FRONT: looks +X toward pressure bulkhead; saved actors/art/exposure. Camera outside front wall; native owned tall-wall cutaway may hide, retained sill remains. Reframed camera revision chamber-02.', 'kind': 'architecture', 'location': (-4050, 180, 2780), 'target': (100, 180, 80), 'fov': 41.5},
     {'name': '02-chamber-reverse', 'caption': 'ARCHITECTURAL REVERSE: looks -X toward complete reverse service wall; camera inside far wall. Saved actors/art/exposure; native reverse wall must be visible. Revision03 retains the approximately35-degree pose and widens FOV to70 to include the electrical cabinets and near-end pipe rack.', 'kind': 'architecture', 'location': (1450, 100, 1450), 'target': (-600, 100, 0), 'fov': 70.0},
+    {'name': '03-ordinary-gameplay', 'caption': 'ORDINARY GAMEPLAY HOLD: saved director pose restored after the architectural plates. Expected near pitch -46 and FOV 54. Characters held. Not an architectural parity plate and not physical-device input.', 'kind': 'gameplay-camera'},
 ]
 
 if '--describe' in sys.argv:
@@ -108,6 +109,17 @@ def stage(world, player, pc):
         component.set_editor_property('constrain_aspect_ratio', True)
         component.set_editor_property('post_process_blend_weight', 0.)
         # The controller already views this director from the gameplay shots.
+    elif view['kind'] == 'gameplay-camera':
+        camera = state['camera_actor']
+        original = report['architectural_camera_original']
+        camera.set_actor_tick_enabled(False)
+        camera.set_actor_location(u.Vector(*original['location']), False, False)
+        camera.set_actor_rotation(u.Rotator(pitch=original['rotation'][0], yaw=original['rotation'][1], roll=original['rotation'][2]), False)
+        component = camera.get_component_by_class(u.CameraComponent)
+        component.set_editor_property('field_of_view', original['fov'])
+        component.set_editor_property('aspect_ratio', CAPTURE_SIZE[0] / CAPTURE_SIZE[1])
+        component.set_editor_property('constrain_aspect_ratio', True)
+        component.set_editor_property('post_process_blend_weight', 0.)
     u.AutomationLibrary.finish_loading_before_screenshot()
     state['settle_game'] = u.GameplayStatics.get_time_seconds(world)
     state['phase'] = 'settle'

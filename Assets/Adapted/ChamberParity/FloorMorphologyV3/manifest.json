@@ -1,0 +1,276 @@
+{
+  "owner": "teddy-chamber-floor-morphology-v3-20261005",
+  "status": "source-ready-for-engine-review",
+  "generator": "tools/make_chamber_floor_morphology.py",
+  "generator_sha256": "89242ffd991695140cb72f92ab7df501a3ed0ce3ab81455365edf849e8e07ae7",
+  "editable_blend": "Assets/Adapted/ChamberParity/FloorMorphologyV3/ChamberFloorMorphology_V3.blend",
+  "blend_sha256": "1698ef99d2d295d19d452cd611507c7ba7e2d02d7bc80e45f96cf2476e59ad52",
+  "source": "Deterministic coarse plates, connected erosion along three paths, omitted chunks, and sparse angular fragments. Not a rerun of the fine Floor kit.",
+  "preserved": "Floor, FloorNormalsV2, Slabs, SlabsNormalsV2, Crust, CrustNormalsV2, characters, and the saved level are not modified by this generator.",
+  "references": [
+    "study/visuals/chamber-target-front.png",
+    "study/visuals/chamber-target-reverse.png"
+  ],
+  "coordinate_system": "Metres, +Z up. Static FBX mirrors Y in the project importer.",
+  "fbx_settings": {
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "global_scale": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_NONE"
+  },
+  "material_slots": [
+    "Concrete",
+    "ConcreteLight",
+    "ConcreteDark",
+    "Aggregate",
+    "Dark",
+    "Crack"
+  ],
+  "material_scale": {
+    "tile_cm": 3200,
+    "texture_weight": 0.22,
+    "normal": "flat",
+    "detail_weight": 0.0,
+    "note": "Importer builds M_Chamber_FloorMorph* only. No black crack cards. Flat normal. Large-scale stain."
+  },
+  "assets": [
+    {
+      "name": "SM_ChamberFractureMorph_Main",
+      "file": "SM_ChamberFractureMorph_Main.fbx",
+      "triangles": 10218,
+      "vertices": 17510,
+      "bounds_m": {
+        "min": [
+          -13.519194602966309,
+          -14.160120010375977,
+          0.0012000000569969416
+        ],
+        "max": [
+          13.534786224365234,
+          14.149999618530273,
+          0.03750000149011612
+        ]
+      },
+      "dimensions_m": [
+        27.053980827331543,
+        28.31011962890625,
+        0.03630000143311918
+      ],
+      "expected_dimensions_cm": [
+        2705.3980827331543,
+        2831.011962890625,
+        3.630000143311918
+      ],
+      "highest_point_cm": 3.750000149011612,
+      "material_slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "plate_count": 58,
+      "missing_chunks": 10,
+      "detached_fragments": [
+        {
+          "centre_m": [
+            1.096,
+            -1.829
+          ],
+          "nominal_span_cm": 137.5,
+          "top_cm": 2.28
+        },
+        {
+          "centre_m": [
+            -9.1,
+            -7.796
+          ],
+          "nominal_span_cm": 67.5,
+          "top_cm": 2.44
+        },
+        {
+          "centre_m": [
+            11.863,
+            7.838
+          ],
+          "nominal_span_cm": 66.2,
+          "top_cm": 3.26
+        },
+        {
+          "centre_m": [
+            -2.172,
+            10.329
+          ],
+          "nominal_span_cm": 57.3,
+          "top_cm": 3.32
+        },
+        {
+          "centre_m": [
+            -4.908,
+            -7.049
+          ],
+          "nominal_span_cm": 140.0,
+          "top_cm": 2.51
+        },
+        {
+          "centre_m": [
+            10.675,
+            8.794
+          ],
+          "nominal_span_cm": 73.3,
+          "top_cm": 2.62
+        },
+        {
+          "centre_m": [
+            10.055,
+            0.305
+          ],
+          "nominal_span_cm": 60.0,
+          "top_cm": 3.22
+        },
+        {
+          "centre_m": [
+            6.036,
+            9.943
+          ],
+          "nominal_span_cm": 74.4,
+          "top_cm": 3.08
+        },
+        {
+          "centre_m": [
+            -3.077,
+            -7.779
+          ],
+          "nominal_span_cm": 114.0,
+          "top_cm": 2.39
+        },
+        {
+          "centre_m": [
+            1.536,
+            5.086
+          ],
+          "nominal_span_cm": 69.1,
+          "top_cm": 3.26
+        },
+        {
+          "centre_m": [
+            3.366,
+            4.962
+          ],
+          "nominal_span_cm": 77.6,
+          "top_cm": 2.65
+        },
+        {
+          "centre_m": [
+            8.304,
+            2.265
+          ],
+          "nominal_span_cm": 59.6,
+          "top_cm": 2.41
+        },
+        {
+          "centre_m": [
+            1.897,
+            7.14
+          ],
+          "nominal_span_cm": 88.5,
+          "top_cm": 2.79
+        },
+        {
+          "centre_m": [
+            -0.005,
+            -0.234
+          ],
+          "nominal_span_cm": 42.6,
+          "top_cm": 3.52
+        },
+        {
+          "centre_m": [
+            -3.182,
+            9.479
+          ],
+          "nominal_span_cm": 65.9,
+          "top_cm": 3.19
+        },
+        {
+          "centre_m": [
+            -8.573,
+            9.576
+          ],
+          "nominal_span_cm": 65.6,
+          "top_cm": 2.97
+        }
+      ],
+      "surface_material_counts": {
+        "Concrete": 41,
+        "ConcreteDark": 18
+      },
+      "visible_erosion_edges": 10,
+      "median_plate_area_m2": 7.824238158407193,
+      "plate_area_range_m2": [
+        1.330145021147528,
+        50.91574175393955
+      ],
+      "plate_top_range_cm": [
+        0.42,
+        1.9892436274908682
+      ],
+      "origin": "Local Z=0 is the underlying floor. Actor Z=-5 cm, Z scale exactly 1. NoCollision.",
+      "sha256": "1b59a14e8fbc3cb3bb8333dfdd14c95a8c4786e997f4ae0960bd98c4abeeafde"
+    }
+  ],
+  "total_unique_triangles": 10218,
+  "fbx_roundtrip_checks": [
+    {
+      "name": "SM_ChamberFractureMorph_Main",
+      "max_dimension_error_m": 0.0,
+      "triangles": 10218,
+      "slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "passed": true
+    }
+  ],
+  "recommended_placements": [
+    {
+      "label": "Main",
+      "mesh": "SM_ChamberFractureMorph_Main",
+      "location_cm": [
+        40,
+        0,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -1311.9194602966309,
+          -1414.9999618530273,
+          -4.879999994300306
+        ],
+        "max": [
+          1393.4786224365234,
+          1416.0120010375977,
+          -1.249999850988388
+        ]
+      }
+    }
+  ],
+  "construction_limits": "Relief stays within 0-3.9 cm local and world Z -5.05 to 1.05 cm at the recommended placement. No collision. Exterior height tapers. Quiet plates stay outside the erosion paths.",
+  "renders": [
+    "morphology-overview.png"
+  ],
+  "render_engine_error": "bpy_struct: item.attr = val: enum \"BLENDER_EEVEE_NEXT\" not found in ('BLENDER_EEVEE', 'BLENDER_WORKBENCH', 'CYCLES')"
+}
