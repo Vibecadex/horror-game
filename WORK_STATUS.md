@@ -1,5 +1,11 @@
 # Teddy Encounter working status
 
+## Grok continuation handoff — 5 October 2026
+
+The user has delegated the next chamber parity pass to Grok. [GROK_CHAMBER_HANDOFF.md](study/GROK_CHAMBER_HANDOFF.md) supplies the original video, selected close/front/reverse references, final actual captures, current corrected assets, prerequisites and concrete next milestones. The designated existing session is `01a10a54-69ee-7253-978b-c01aa506ee63` (Husk Cluster boss shot fidelity study, Grok4.7/xhigh).
+
+Grok becomes the sole Unreal writer for that pass; Codex will not make concurrent game-asset changes. First priority is continuous floor erosion/varied fragments, then local haze/light distribution and architectural proportions. Preserve characters, controls, gameplay camera and native cutaway. Delegation acknowledgment and dispatch evidence belong in `evidence/grok-delegation/20261005/`. This handoff does not itself establish another completed visual pass or parity acceptance.
+
 ## Private team repository handoff — 5 October 2026
 
 Repository: **https://github.com/Vibecadex/horror-game**, private. Existing organization collaborators have write access; no invitations or external messages were sent. Git LFS carries binary assets and supports locks for shared maps/packages/source scenes.
