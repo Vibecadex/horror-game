@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "visual_acceptance": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "changes": [],
+  "before": {},
+  "requires": [
+    "saved reopen",
+    "camera edge verification",
+    "three reference comparisons",
+    "attack-warning readability",
+    "gameplay regression"
+  ],
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/refine_qa_visuals.py\", line 256, in <module>\n    main()\n  File \"C:/Projects/to-deploy/horror-game/tools/refine_qa_visuals.py\", line 189, in main\n    floor, cloth, warning = make_floor(), make_cloth(), make_warning()\n                            ^^^^^^^^^^^^\n  File \"C:/Projects/to-deploy/horror-game/tools/refine_qa_visuals.py\", line 83, in make_floor\n    broad = noise(mat, position, .0032)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:/Projects/to-deploy/horror-game/tools/refine_qa_visuals.py\", line 69, in noise\n    link(position, result, 'Position')\n  File \"C:/Projects/to-deploy/horror-game/tools/refine_qa_visuals.py\", line 38, in link\n    assert M.connect_material_expressions(source, output, target, pin), (source, target, pin)\nAssertionError: (<Object '/Game/TeddyEncounter/Materials/M_QA_Concrete.M_QA_Concrete:MaterialExpressionWorldPosition_0' (0x0000012CA73DE1C0) Class 'MaterialExpressionWorldPosition'>, <Object '/Game/TeddyEncounter/Materials/M_QA_Concrete.M_QA_Concrete:MaterialExpressionNoise_0' (0x0000012CAA21D800) Class 'MaterialExpressionNoise'>, 'Position')\n"
+}

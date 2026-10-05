@@ -1,0 +1,38 @@
+{
+  "passed": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "method": "Frozen NPCs, staged player/boss positions, 2.5 seconds camera settling; projected conservative body bounds in native PIE viewport; held native screenshots at three edge cases, HUD hidden only for these plates",
+  "cases": [
+    {
+      "player": [
+        -1000,
+        230
+      ],
+      "boss": [
+        250,
+        -230
+      ],
+      "bounds_normalized": {
+        "player": [
+          0.5533926397620809,
+          0.6998454700816762,
+          0.5817517763999323,
+          0.7927792635830966
+        ],
+        "boss": [
+          0.3892167371640779,
+          0.09056277881969105,
+          0.4908508360973712,
+          0.36403567227450284
+        ]
+      },
+      "visible": true,
+      "viewport": [
+        1014,
+        550
+      ]
+    }
+  ],
+  "images": [],
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/verify_encounter_camera.py\", line 27, in tick\n    try:validation=decode_png(s['pending'])\n                   ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Projects\\to-deploy\\horror-game\\tools\\png_evidence.py\", line 20, in decode_png\n    assert (w,h)==expected and depth==8 and color in (2,6) and not (comp or filt or interlace), header\n                                            ^^^^^^^^^^^^^^\nAssertionError: (1014, 550, 8, 6, 0, 0, 0)\n"
+}

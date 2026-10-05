@@ -1,0 +1,11 @@
+# Preserved full-room classification failure
+
+The [104810 full-room receipt](../../implementation/20261005T104810-verify_full_room/receipt.json) passed 25/28 checks. Its three failed checks are the original extension's 84-actor count, exact ownership/label classification and 21-mesh set. The receipt contains 46 shell actors, 38 dressing actors and one unexpected row: `TE_Chamber_FrontCutaway` with 19 mesh components.
+
+This is a classification fault in the audit. The new native chamber cutaway deliberately reuses two retained extension-wall meshes. The old audit's namespace discovery therefore included the entire cutaway in the original extension group. The [separate 104516 saved-chamber details](../../implementation/20261005T104516-verify_chamber_runtime/details.json) identify that exact actor as `/Game/TeddyEncounter/Chamber/Blueprints/BP_ChamberCutaway.BP_ChamberCutaway_C` with exactly `ChamberCutawayOwned`, `ChamberOwned` and `TeddyEncounterOwned` tags. Its bounds, source components, NoCollision state and native visibility transitions passed that independent audit.
+
+The bounded repair to [verify_full_room.py](../../../tools/verify_full_room.py) separates only an actor matching that exact label, generated class and three-tag set. Its complete mesh/bounds/collision readback is retained in `room_extension_mesh_reuse`. Every other unexpected user of the old mesh namespace still enters the original strict audit. All original 84 actors / 46 shell / 38 dressing / 21 meshes assertions and collision/bounds thresholds remain unchanged.
+
+An offline read of the preserved failure receipt, joined to the independently recorded actor identity, confirms 84 original actors and 21 unique original meshes after that one row is separated. Both edited harnesses parse successfully. This is a diagnosis and harness correction, **not a fresh runtime pass**; the integrator must rerun the suite after the final slab additions. The original failed receipt is unchanged.
+
+The subsequent [105657 independent review](../runtime-105657/INDEPENDENT_REVIEW.md) closes this failure with **28/28 fresh checks and host exit 0**, including the exact original counts and separately recorded reuse. All six saved view images were decoded, hash-verified and visually inspected.

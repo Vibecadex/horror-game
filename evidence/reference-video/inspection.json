@@ -1,0 +1,25 @@
+{
+  "source": "C:\\Projects\\to-deploy\\horror-scene\\WhatsApp Video 2026-10-04 at 16.53.31.mp4",
+  "sha256": "289b314d3578e76e7a8e916c31ef653c0bbea2fb97e21eea2100cb063069fdeb",
+  "sourceUnmodified": true,
+  "durationSeconds": 22.991667,
+  "sourcePixels": [
+    384,
+    848
+  ],
+  "framesPerSecond": 60,
+  "inspected": "Chronological whole-clip stills every 60 frames; upright keyframes; gameplay motion contact sheets sampled at 4 fps from source seconds 5 through 19.",
+  "normalizedGameplayOrientation": "90 degrees counter-clockwise for the stable landscape recording segments",
+  "originalGameplayCropAfterRotation": [
+    76,
+    0,
+    700,
+    384
+  ],
+  "socialMediaOverlaysObscurePartsOfGameplay": true,
+  "exactInputBindingsVisible": false,
+  "audioPresent": true,
+  "audioAuditioned": false,
+  "audioNote": "Audio extracted for future audition. Current inspection tools did not support audio input; no source sound claims made.",
+  "referenceAnalysis": "REFERENCE_BRIEF.md"
+}

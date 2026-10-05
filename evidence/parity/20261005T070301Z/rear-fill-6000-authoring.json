@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "purpose": "Repair independently observed rear-centre character contrast gap",
+  "settings": {
+    "location": [
+      1250,
+      0,
+      420
+    ],
+    "radius": 650,
+    "source": 70,
+    "intensity": 6000,
+    "color": [
+      0.35,
+      0.5,
+      0.55
+    ]
+  },
+  "material_camera_fog_key_and_gameplay_changes": false,
+  "before_map_backup": "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity\\20261005T070301Z\\before-rear-readability.umap",
+  "label": "TE_Parity_RearCenterCharacterFill",
+  "lighting_channels": "<Struct 'LightingChannels' (0x0000028D5EEA494C) {channel0: False, channel1: True, channel2: False}>",
+  "map_sha256": "b75a7d1b93f25d1b81025f1acf3852dcb7c3c57207f527a0491f75422299d66c"
+}

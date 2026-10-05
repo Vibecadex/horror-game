@@ -1,0 +1,19 @@
+{
+  "arguments": [
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "C:\\Projects\\to-deploy\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject",
+    "-ExecutePythonScript=C:\\Projects\\to-deploy\\horror-game\\tools\\verify_encounter_camera.py",
+    "-RenderOffscreen",
+    "-ResX=1280",
+    "-ResY=720",
+    "-unattended",
+    "-nosplash",
+    "-nop4",
+    "-NoSound",
+    "-abslog=C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T222440-verify_encounter_camera\\engine.log",
+    "-DDC=InstalledNoZenLocalFallback",
+    "-LocalDataCachePath=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\derived-data",
+    "-UserDir=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\unreal-user"
+  ],
+  "script_sha256": "36957148dbd8125b0e32a8f3c02638cd54635c1fe678bdb624002b96b0c908d3"
+}

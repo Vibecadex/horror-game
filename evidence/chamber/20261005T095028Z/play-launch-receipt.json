@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "process_id": 71464,
+  "process_name": "UnrealEditor",
+  "window_title": "TeddyBlueprint (64-bit Development PCD3D_SM6) ",
+  "responding": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "launcher": "python tools/astra_setup.py open --mode play",
+  "expected_map_in_process_command": true,
+  "utc": "2026-10-05T12:00:23.6246504Z"
+}

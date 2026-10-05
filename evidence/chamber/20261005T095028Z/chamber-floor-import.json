@@ -1,0 +1,227 @@
+{
+  "passed": true,
+  "actors": [
+    {
+      "label": "TE_Chamber_Floor_ForegroundLeft",
+      "placement": {
+        "label": "ForegroundLeft",
+        "mesh": "SM_ChamberFractureFork_A",
+        "location_cm": [
+          -800,
+          -700,
+          -5
+        ],
+        "yaw": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            -1279.2457103729248,
+            -1107.912826538086,
+            -4.990000000252621
+          ],
+          "max": [
+            -322.6245403289795,
+            -279.8809051513672,
+            -1.6573722660541534
+          ]
+        }
+      }
+    },
+    {
+      "label": "TE_Chamber_Floor_ForegroundRight",
+      "placement": {
+        "label": "ForegroundRight",
+        "mesh": "SM_ChamberFractureBank_B",
+        "location_cm": [
+          -780,
+          480,
+          -5
+        ],
+        "yaw": 9,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            -1297.0692712358318,
+            -12.778598839902259,
+            -4.990000000252621
+          ],
+          "max": [
+            -252.8486851922204,
+            986.1659150882235,
+            -1.6106411069631577
+          ]
+        }
+      }
+    },
+    {
+      "label": "TE_Chamber_Floor_MidLeftDrift",
+      "placement": {
+        "label": "MidLeftDrift",
+        "mesh": "SM_ChamberFractureDrift_C",
+        "location_cm": [
+          230,
+          -740,
+          -5
+        ],
+        "yaw": -12,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            -330.8641764790539,
+            -1231.3027830887586,
+            -4.990000000252621
+          ],
+          "max": [
+            790.1293808448517,
+            -238.9160777831774,
+            -1.4875724166631699
+          ]
+        }
+      }
+    },
+    {
+      "label": "TE_Chamber_Floor_RearRightFork",
+      "placement": {
+        "label": "RearRightFork",
+        "mesh": "SM_ChamberFractureFork_A",
+        "location_cm": [
+          820,
+          600,
+          -5
+        ],
+        "yaw": 177,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            321.2914322406548,
+            155.3748812421012,
+            -4.990000000252621
+          ],
+          "max": [
+            1319.9374286234718,
+            1032.3376973549498,
+            -1.6573722660541534
+          ]
+        }
+      }
+    },
+    {
+      "label": "TE_Chamber_Floor_RightSideBank",
+      "placement": {
+        "label": "RightSideBank",
+        "mesh": "SM_ChamberFractureBank_B",
+        "location_cm": [
+          10,
+          920,
+          -5
+        ],
+        "yaw": 87,
+        "scale": [
+          0.7,
+          0.7,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            -313.2706336470369,
+            586.9649753751914,
+            -4.990000000252621
+          ],
+          "max": [
+            325.5716160672042,
+            1261.8865990257752,
+            -1.6106411069631577
+          ]
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "path": "/Game/TeddyEncounter/Chamber/Floor/SM_ChamberFractureFork_A.SM_ChamberFractureFork_A",
+      "bounds_cm": [
+        956.6211853027344,
+        828.0319519042969,
+        3.3326277639716864
+      ],
+      "sha256": "17a648fe155fc40c3a90db5dd45d8644d82bf1efc6b6289115eea4afe27522b6"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Chamber/Floor/SM_ChamberFractureBank_B.SM_ChamberFractureBank_B",
+      "bounds_cm": [
+        920.1294860839844,
+        865.662353515625,
+        3.379358997568488
+      ],
+      "sha256": "7f081e4a34148930690a2f1aae2519160f2caff680bfa39f17ae17b158cb59ca"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Chamber/Floor/SM_ChamberFractureDrift_C.SM_ChamberFractureDrift_C",
+      "bounds_cm": [
+        974.4105834960938,
+        807.4398803710938,
+        3.5024275686591864
+      ],
+      "sha256": "43fbeda42340aef8be9b26ed7a1dd479171d182052bd5f325a99686dfbb9544f"
+    }
+  ],
+  "concealed": [
+    "TE_Parity_Floor_000",
+    "TE_Parity_Floor_001",
+    "TE_Parity_Floor_002",
+    "TE_Parity_Floor_003",
+    "TE_Parity_Floor_023",
+    "TE_Parity_Floor_024",
+    "TE_Parity_Floor_025",
+    "TE_Parity_Floor_026",
+    "TE_Parity_Floor_027",
+    "TE_Parity_Floor_028",
+    "TE_Parity_Floor_029",
+    "TE_Parity_Floor_030",
+    "TE_Parity_Floor_031",
+    "TE_Parity_Floor_032",
+    "TE_Parity_Floor_033",
+    "TE_Parity_Floor_034",
+    "TE_Parity_Floor_035",
+    "TE_Parity_Floor_036",
+    "TE_Parity_Floor_037",
+    "TE_Parity_Floor_038",
+    "TE_Parity_Floor_039",
+    "TE_Parity_Floor_040",
+    "TE_Parity_Floor_041",
+    "TE_Parity_Floor_042",
+    "TE_Parity_Floor_043",
+    "TE_Parity_Floor_044",
+    "TE_Parity_Floor_011",
+    "TE_Parity_Floor_012",
+    "TE_Parity_Floor_013",
+    "TE_Parity_Floor_014",
+    "TE_Parity_Floor_016",
+    "TE_Parity_Floor_018",
+    "TE_Parity_Floor_019",
+    "TE_Parity_Floor_020"
+  ],
+  "original_assets_preserved": true,
+  "manifest_sha256": "193563fd5ebbf91c83327d29be24539e914525c1237679143032e0c217288133"
+}

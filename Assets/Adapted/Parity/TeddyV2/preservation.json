@@ -1,0 +1,54 @@
+{
+  "owner": "teddy-parity-stitches-v2-20261005",
+  "passed": true,
+  "checks": [
+    {
+      "path": "Assets\\Adapted\\Parity\\Teddy\\Teddy_Parity.fbx",
+      "expected_sha256": "0b3721f9daf8df95d97b2e481fd3dccde12a8b557a32d4610f85cc7766d62c6e",
+      "actual_sha256": "0b3721f9daf8df95d97b2e481fd3dccde12a8b557a32d4610f85cc7766d62c6e",
+      "unchanged": true
+    },
+    {
+      "path": "Assets\\Adapted\\Parity\\Teddy\\Teddy_Parity_Idle.fbx",
+      "expected_sha256": "0f03842eec23c1fdf75c7061cc673f1cf7dc123998b750a49d29dec488565858",
+      "actual_sha256": "0f03842eec23c1fdf75c7061cc673f1cf7dc123998b750a49d29dec488565858",
+      "unchanged": true
+    },
+    {
+      "path": "Assets\\Adapted\\Parity\\Teddy\\Teddy_Parity_Walk.fbx",
+      "expected_sha256": "a1664489aae4ad9256deff005d33a7363d565ed8f57174ebdc5088013a016e18",
+      "actual_sha256": "a1664489aae4ad9256deff005d33a7363d565ed8f57174ebdc5088013a016e18",
+      "unchanged": true
+    },
+    {
+      "path": "Assets\\Adapted\\Parity\\Teddy\\Teddy_Parity_Crawl.fbx",
+      "expected_sha256": "35fdda2d7e3cb5be4145d10315bf70d6e1f8a5ea168039bb8d38d5a0aaf2656e",
+      "actual_sha256": "35fdda2d7e3cb5be4145d10315bf70d6e1f8a5ea168039bb8d38d5a0aaf2656e",
+      "unchanged": true
+    },
+    {
+      "path": "Assets\\Adapted\\Parity\\Teddy\\Teddy_Parity_Attack.fbx",
+      "expected_sha256": "fac3e4e8dd41a9d8574c78d1b68dffefeb407838e64d0f1a700dcb00ad7d8a79",
+      "actual_sha256": "fac3e4e8dd41a9d8574c78d1b68dffefeb407838e64d0f1a700dcb00ad7d8a79",
+      "unchanged": true
+    },
+    {
+      "path": "Assets\\Adapted\\Parity\\Teddy\\Teddy_Parity_Hit.fbx",
+      "expected_sha256": "f02b083e1c5fb43ddbce50b1ed4102024804cc5c0aa84757254ed5f90520b507",
+      "actual_sha256": "f02b083e1c5fb43ddbce50b1ed4102024804cc5c0aa84757254ed5f90520b507",
+      "unchanged": true
+    },
+    {
+      "path": "Assets\\Adapted\\Parity\\Teddy\\Teddy_Parity_Defeat.fbx",
+      "expected_sha256": "ba1757a94a978d0ea3233b19dac8de5dd315eef851531d04d30d7758ab23d9ad",
+      "actual_sha256": "ba1757a94a978d0ea3233b19dac8de5dd315eef851531d04d30d7758ab23d9ad",
+      "unchanged": true
+    },
+    {
+      "path": "Assets\\Adapted\\Teddy\\Teddy_Encounter.blend",
+      "expected_sha256": "d03bc4a0ee204e260be6036cd7636390ea789fe9f13793f39d70093d47b5b565",
+      "actual_sha256": "d03bc4a0ee204e260be6036cd7636390ea789fe9f13793f39d70093d47b5b565",
+      "unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "components": [
+    {
+      "name": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_CombatCamera_C_0.RoomTone",
+      "sound": "<Object '/Game/TeddyEncounter/Audio/RoomTone.RoomTone' (0x0000025D1CF40000) Class 'SoundWave'>",
+      "volume": 0.5,
+      "playing": true,
+      "active": true
+    }
+  ],
+  "sounds": [],
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/verify_encounter_audio.py\", line 19, in tick\n    obj=u.load_asset('/Game/TeddyEncounter/Audio/'+name);r['sounds'].append({'name':name,'duration':obj.duration,'volume':obj.volume,'channels':obj.num_channels})\n                                                                                                                          ^^^^^^^^^^\nAttributeError: 'SoundWave' object has no attribute 'volume'\n"
+}

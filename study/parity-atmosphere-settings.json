@@ -1,0 +1,11 @@
+{
+  "revision": "atmosphere-14",
+  "fog": [],
+  "height_fog": {"fog_density": 0.017, "fog_height_falloff": 2.0, "volumetric_fog_extinction_scale": 1.0, "volumetric_fog_distance": 12000},
+  "fog_lights": [
+    {"name": "FarFog_Light", "type": "rect", "location": [900, -100, 650], "target": [900, -100, -100], "intensity": 150000, "color": [0.35, 1.0, 0.97], "radius": 2200, "width": 1200, "height": 1200, "scattering": 16}
+  ],
+  "perimeter_character_fill": {"height": 600, "radius": 950, "intensity": 14000},
+  "foreground_character_fill": {"x": -1400, "height": 500, "radius": 1000, "intensity": 22000},
+  "rear_center_character_fill": {"location": [1250, 0, 420], "radius": 650, "source": 70, "intensity": 6000, "color": [0.35, 0.50, 0.55]}
+}

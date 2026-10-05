@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "actors": [
+    "TE_Parity_Floor_000",
+    "TE_Parity_Floor_001"
+  ],
+  "prior_fracture_mesh_preserved": true,
+  "dimensions_cm": [
+    637.0926818847656,
+    449.66905212402344,
+    3.1049171909689903
+  ],
+  "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityFractureField_A_V3.SM_ParityFractureField_A_V3",
+  "saved_reload": true
+}

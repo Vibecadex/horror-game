@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "snapshot_created_utc": "2026-10-05T05:44:33.720034+00:00",
+  "files_unchanged": 113,
+  "active_asset_set_unchanged": true,
+  "fresh_runs": {
+    "gallery": "evidence\\implementation\\20261005T054732-capture_room_gallery",
+    "qa": "evidence\\implementation\\20261005T054434-verify_full_room",
+    "keys": "evidence\\implementation\\20261005T054646-verify_encounter_keys",
+    "native": "evidence\\full-room\\20261005T050433Z\\native-motion-20261005T054842"
+  },
+  "handoff": "Grok final assistant completion confirmed, latest final plate 20261005T053842-capture_encounter; no editor running",
+  "surface_receipt_sha256": "afc0e7e7e3b1e08a1982735dc952ee3e3f1b801af9852c0c89cd3faaf39f9899"
+}

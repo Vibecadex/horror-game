@@ -1,0 +1,17 @@
+# Iteration 1 independent visual review
+
+Inspected the full-size [Unreal image](../../implementation/20261005T070819-capture_room_gallery/01-gameplay-initial.png) against the selected look study, then generated the bounded [comparison](comparison.jpg), [detail crops](details.png), and [diagnostics](metrics.json). Candidate hash matches its capture receipt. This is the saved initial gameplay camera at pitch −46°, FOV 48°, with subjects held and HUD hidden. It is not yet aligned to the target; the player aims away from the boss in this held shot. The integrator reports no floor/stitch geometry has been applied yet, so this is a lighting/material iteration, not final review.
+
+**Disposition: materially improved lighting mechanisms, but visual parity remains incomplete.**
+
+| Finding | Directional correction |
+| --- | --- |
+| A real player light pool now exists. Its sampled core brightness is already close to the target: display luma 218 versus 219. Its approximate bright footprint is 199×159 versus 97×72 pixels, and it lies below/behind the player. | Stage aiming toward the boss first, then shrink the cone/ground footprint and reach. Do not assume peak intensity is the main defect. |
+| The key illuminates most of the lower frame, leaving pale cyan ground where the target has varied teal midtones and crushed corners. Central-floor luma is 194 versus 117; corner patches 61 versus 0.53. | Reduce the key's total floor energy and constrain its spatial influence. Recheck the lower corners without lifting them through global exposure. |
+| Far haze brightness is close: 80 versus 79. It leans greener than the selected cyan/teal haze. | Preserve the useful far-field depth while correcting the green/blue balance. Do not remove the haze simply because the nearby floor is too bright. |
+| The boss now casts a long connected shadow, but it reaches approximately y550 and x235 while the selected shadow ends near y475 and x347. The cast outline is very hard. | Move the projected key toward the boss's screen-space vertical, shorten the shadow and add moderate edge softness. Preserve a strong connected dark mass rather than ambient flattening. |
+| Olive cloth color is closer to the reference; the sampled upper cloth patch dropped from baseline luma101 to70, against target49. The actual surface remains softly mottled/smooth at this distance. | Continue darker, more detailed cloth response and the planned stitched geometry. A compiled Cloth shading model is implementation evidence, not visual acceptance. |
+| Flat oversized decals are no longer the dominant graphic floor shapes, but the floor is smooth and broad cloudy mottling remains conspicuous. | Add the planned restrained fractured surfaces and physical fragments, then reassess under the reduced key. Do not compensate with stronger uniform noise. |
+| Body framing remains oversized and displaced, and the player is much brighter than the target dark silhouette. | Stage the matched pose/camera, then reduce overly broad light spill on the player while preserving the local ground pool and controls. |
+
+The geometry pass, corrected camera/aiming view, edge/corner readability, ordinary motion and saved mechanics have not been reviewed for this iteration. No final acceptance or unchanged-regression claim follows from this still. Numeric masks are approximate and may include a few edge/background pixels; they are supporting evidence for the visible findings, not a parity score.

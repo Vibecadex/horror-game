@@ -1,0 +1,347 @@
+{
+  "checked_at_utc": "2026-10-05T04:21:05.271610+00:00",
+  "all_68_build_files_unchanged": true,
+  "source_video_unchanged": true,
+  "files": [
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/AttackRing.uasset",
+      "unchanged": true,
+      "sha256": "0b1c91b545e23c58a80ba4115182a734ea95bb8a996c57c1f785b4c500a60903"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/ServiceRifle.uasset",
+      "unchanged": true,
+      "sha256": "acc4e6fd62d4906eedbc38023f9d196840eaa8aeb40ed6b645abd39913a90ded"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_Concrete_Color.uasset",
+      "unchanged": true,
+      "sha256": "fcb72e4efebcacbceb3dd2efd687625c0a21f457365cbd7f909b11aeefafc56e"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_Concrete_Normal.uasset",
+      "unchanged": true,
+      "sha256": "c1a582ad21f72373fc10c1807dfe73a7800932d972f2e25424c47fdc4fa49fbe"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_Concrete_Roughness.uasset",
+      "unchanged": true,
+      "sha256": "ad91401d454de2c5a029a8af7f4c776a68e243ff661afd72af68d75acd200903"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/ClothHit.uasset",
+      "unchanged": true,
+      "sha256": "6f3825f5f868e2f53615f0cf8aac5bc02ac2c9103acb7b69bba0922fc81c87f8"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/Rifle.uasset",
+      "unchanged": true,
+      "sha256": "f9016942e354f73d3432ed4886cc84a8452e70ae2886e3528ea4af86eb1970a5"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/RoomTone.uasset",
+      "unchanged": true,
+      "sha256": "92b9e51278b1576d6f5ac85a685d74564d9bd87ba611b19519d5ef94949f58f7"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/Slam.uasset",
+      "unchanged": true,
+      "sha256": "8df719acf31c667497ccdf9a71f47c71fa0d492d5eac89cf0c6e8f2ec28c553d"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_CombatCamera.uasset",
+      "unchanged": true,
+      "sha256": "8b42073c54695f217d56383320b378e5aeb9847ef2fef3eb0c862ad8377b23b7"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterController.uasset",
+      "unchanged": true,
+      "sha256": "c620130584135b6040316f419943b33be2764c656936259b68ad0bee3725e03b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterGameMode.uasset",
+      "unchanged": true,
+      "sha256": "ea34f51e0890496c21251f4fe9379e91698bfb2dc3b23c7dd9bac32a5d50cee1"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterHUD.uasset",
+      "unchanged": true,
+      "sha256": "75e35cb6b7ef70e878466784699e1048c07f965a509bd596d73164d22a122002"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterPlayer.uasset",
+      "unchanged": true,
+      "sha256": "10742a066c630cdffef9959c0fa61794caad9d93683f7534efae66e084779214"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterProjectile.uasset",
+      "unchanged": true,
+      "sha256": "48f8e2e7d1af2b4ef2d63a62bc32992473dafe778a2012aa1e5a0d07e86cc3d6"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_Stitchling.uasset",
+      "unchanged": true,
+      "sha256": "0743da8a63bb88c71760fc9e33fe06be2df9b2316fdaff2b62e3c7bc0ebfe9ea"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_TeddyBoss.uasset",
+      "unchanged": true,
+      "sha256": "f1dbc4f5f03343c5ebeee2fa8beda3713fc4b4fcdd438a444b8e2fa994d72080"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Input/IA_Pause.uasset",
+      "unchanged": true,
+      "sha256": "332431397fa8ff23fb2ab36c1b1ca32e450d1a15bc19295732e381d6b7c94542"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Input/IA_Restart.uasset",
+      "unchanged": true,
+      "sha256": "c2417272334b4982ecd4fdf514c85827b3267a23ca56af7a9ff28dcbf30cd6ee"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Input/IMC_Encounter.uasset",
+      "unchanged": true,
+      "sha256": "8129fa44bbd5f4517e89854ca7b1643cca6f376b2b204ce825c80512e5cd3214"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_AimLine.uasset",
+      "unchanged": true,
+      "sha256": "77ec65ca5c3bc4d8d12079cf19cc484e9c18d99a5d40337f5ec626d5f9f46b43"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_AttackWarning.uasset",
+      "unchanged": true,
+      "sha256": "0de33cab13f19b5d54eb967150aafe8041b78cb646765da443407cdf30bb3cad"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_Charcoal.uasset",
+      "unchanged": true,
+      "sha256": "b96095d0f881ddd3048b94a482f3a1e154d0416149f6cde075bda3f986b841f5"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_Muzzle.uasset",
+      "unchanged": true,
+      "sha256": "98fcb1ced1bf51e8a627ec8e34cc12a6ac8bd59bd1fe6c82c2d9aba72ceefecd"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_OxidisedIron.uasset",
+      "unchanged": true,
+      "sha256": "2aad3a82133437838474049449c4b87b4daa77fb1dfa690418b6b31225a179cd"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_TeddyCloth.uasset",
+      "unchanged": true,
+      "sha256": "5846b17635c49f0fb55d4d7d2b0465e10d9c92edb09216028098ddbb1a9c76f8"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_WarningLamp.uasset",
+      "unchanged": true,
+      "sha256": "9f895fc65c75ae6b12c5182ca50a68c03018853d67b27f49c1c65307ead8b0a6"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_WornConcrete.uasset",
+      "unchanged": true,
+      "sha256": "f69686acca9422aaccf7e51d6d8dc23f3dfc123798e6414dbf9cddc009cd27c6"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Player/ABP_EncounterRifle.uasset",
+      "unchanged": true,
+      "sha256": "561d55a0e7e4567641aa355031f60c0d19fa36b844eb0686df58d24e5742763b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Player/BS_RifleLocomotion.uasset",
+      "unchanged": true,
+      "sha256": "bc765e91a0ae42b5a065b76bc50070badec0d4217561d59e5524b0328c790b5c"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/T_Teddy_BaseColor.uasset",
+      "unchanged": true,
+      "sha256": "349944d07731fa4c53da3d145f23fa72025ddfbd79a738c3ef9e60be2642af70"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Attack/A_Teddy_Attack.uasset",
+      "unchanged": true,
+      "sha256": "80a55f7317b1ac44cbce91eb0fb5bf5ff64201029118831001fd46af93558992"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.uasset",
+      "unchanged": true,
+      "sha256": "e13175226feef3db49fbbd8ca360846e225a4ef855d40421747f71f9807f613c"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.uasset",
+      "unchanged": true,
+      "sha256": "db71bdea8be1cb177425c8fb2169c32fc5aba45ccbcfb1ad45ad5bfdd0971236"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Hit/A_Teddy_Hit.uasset",
+      "unchanged": true,
+      "sha256": "336002d8436c533e1661c912d1994656da2ea18c0f96331b917786f28c9d294e"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Idle/A_Teddy_Idle.uasset",
+      "unchanged": true,
+      "sha256": "978948b70eaa6f12ccd4f12b51174a01726f9b660a312019dd059ad52cb8849d"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Idle/SK_Teddy.uasset",
+      "unchanged": true,
+      "sha256": "84a1becf9529426ba0f434a8e7ec38bd39219de0c0de4e4b45c93d9258c3970b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.uasset",
+      "unchanged": true,
+      "sha256": "61e59728f72c8da74c2c61b680e7a4a762e5a7768ecfbe4f1d72a7b49fcd29c1"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Walk/A_Teddy_Walk.uasset",
+      "unchanged": true,
+      "sha256": "386d95b3353f9f4a629796b4af988c6760660ddd47065587fd9eba9d24da0826"
+    },
+    {
+      "path": "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+      "unchanged": true,
+      "sha256": "fe0325bac21485c7f1ca7611461cafe4893aef203120bbd0c92d79ffdeb666cc"
+    },
+    {
+      "path": "Assets/Adapted/Arena/Arena_Art.blend",
+      "unchanged": true,
+      "sha256": "fda506236700a98bbcd68c577d8a66941a27f0aa914a85e7d45110177c24d732"
+    },
+    {
+      "path": "Assets/Adapted/Arena/AttackRing.fbx",
+      "unchanged": true,
+      "sha256": "7b3995d5cc89d1192442e382b8c39d8d05a21fc1c3fd3cd49ca1b3b34fd4a657"
+    },
+    {
+      "path": "Assets/Adapted/Arena/Encounter_Details.blend",
+      "unchanged": true,
+      "sha256": "8a11d17864ecfc81044278dd23eb389edc84b511a921a38f6f3196c61bc91de3"
+    },
+    {
+      "path": "Assets/Adapted/Arena/provenance.json",
+      "unchanged": true,
+      "sha256": "19343f629ce35511c48e14a78b08ac04e6da0cdf284d472a6732cf1c166d39ff"
+    },
+    {
+      "path": "Assets/Adapted/Arena/ServiceRifle.fbx",
+      "unchanged": true,
+      "sha256": "0d4cede232170cbb48ef728410af74f328d5ebd949675665ec8e057ee6b692e2"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_Concrete_Color.png",
+      "unchanged": true,
+      "sha256": "e919538e37fb2e5dce770998915280e8f76ce3f746709f053ecf90a06bd2a405"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_Concrete_Normal.png",
+      "unchanged": true,
+      "sha256": "40c3e8c5481347ee2da578f5916a28a4c04c61c1ea93df30db0ef6816041e16b"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_Concrete_Roughness.png",
+      "unchanged": true,
+      "sha256": "f6a6993275769f15dbe10cc5f1d8f10c8644bf25496b3d578c5c4ff377373646"
+    },
+    {
+      "path": "Assets/Adapted/Audio/ClothHit.wav",
+      "unchanged": true,
+      "sha256": "8e67c93461fd2b03988c489d06062262e1a268cbb329fd502ed7f9bbfcd7e7f1"
+    },
+    {
+      "path": "Assets/Adapted/Audio/provenance.json",
+      "unchanged": true,
+      "sha256": "906a6a5cc74371764ac96987755011e18233950e4e50376376cde45a2a1458f8"
+    },
+    {
+      "path": "Assets/Adapted/Audio/Rifle.wav",
+      "unchanged": true,
+      "sha256": "34f05e602599074f1577e01d19d2cc42a470eb6226ae0c20fa5bb95924428259"
+    },
+    {
+      "path": "Assets/Adapted/Audio/RoomTone.wav",
+      "unchanged": true,
+      "sha256": "c8e5dfb418e50469c38fc4e5969813c8f7d01949e53fb527b430ee40e472d148"
+    },
+    {
+      "path": "Assets/Adapted/Audio/Slam.wav",
+      "unchanged": true,
+      "sha256": "c3ac09bd026e8c0f7813a2129811037beb99f6bf47cf5e1a07a255036cc7fad4"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/adaptation.json",
+      "unchanged": true,
+      "sha256": "99cb6be1b53058a558971de8313143f326df5ea134f7fc0677c34531b426a73c"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/motion-refinement.json",
+      "unchanged": true,
+      "sha256": "26f395f6f4ba552f73dfb7c16ec2b1c0400d5d433683ec416c38d44673573eb9"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/README.md",
+      "unchanged": true,
+      "sha256": "5d26dbc2b366ba4a7778ef79797b24aa57b6d8eac669744ba5c1b20f2456e936"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Attack.fbx",
+      "unchanged": true,
+      "sha256": "19308be8f68ec526c302773740f670248cfde532420fab34178d18b74d559538"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_BaseColor.png",
+      "unchanged": true,
+      "sha256": "dfdcb9b4bb477d4e3e486313f6b1d63c34ea676c0c15461d2d0fe0545692b6c1"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Crawl.fbx",
+      "unchanged": true,
+      "sha256": "4010725a9ea0ae12a453a1a191a5e4eb2dfd6d5b23711b91560d464eabd3fba2"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Defeat.fbx",
+      "unchanged": true,
+      "sha256": "0ddd99221787ae448b3edbe74e2362f27428cde5e98306a767a51167ecb36ff6"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Encounter.blend",
+      "unchanged": true,
+      "sha256": "d03bc4a0ee204e260be6036cd7636390ea789fe9f13793f39d70093d47b5b565"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Hit.fbx",
+      "unchanged": true,
+      "sha256": "6952249ccce2826eb0b9310d8dbe6024342386be1f0a4b8d4398cde2c792814d"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Idle.fbx",
+      "unchanged": true,
+      "sha256": "52ac34aec09e33bca39857cebde1495ad6144060f80fa38b152ac20fc76cda81"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Walk.fbx",
+      "unchanged": true,
+      "sha256": "62c77b9d414b9c73ba7a9615b4cd83aed7e43ec96533260c0d44786f3ff8e8d1"
+    },
+    {
+      "path": "TeddyBlueprint/TeddyBlueprint.uproject",
+      "unchanged": true,
+      "sha256": "ad3cc5ca60182b38e358f12394fe83814717659a609e88b19eb4a079182c8a36"
+    },
+    {
+      "path": "TeddyBlueprint/Config/DefaultEngine.ini",
+      "unchanged": true,
+      "sha256": "f637b632b95a631f2c19499be43634290b1c912f8bc73c283d1b8658019c4469"
+    },
+    {
+      "path": "TeddyBlueprint/Config/DefaultGame.ini",
+      "unchanged": true,
+      "sha256": "6e8d04e19bdc7f41c74b6adba845978c4c6be9f93d4815025acf5bb58d341bdc"
+    },
+    {
+      "path": "TeddyBlueprint/Config/DefaultInput.ini",
+      "unchanged": true,
+      "sha256": "c4dd662abe0881239745ff2ae0743a363487a7796439d7c7e8367d2224070164"
+    }
+  ]
+}

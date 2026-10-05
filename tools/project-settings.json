@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "model": "gpt-6-astra",
+  "reasoning_effort": "max",
+  "codex_executable": ".tool-cache/codex-cli/node_modules/@openai/codex-win32-x64/vendor/x86_64-pc-windows-msvc/bin/codex.exe",
+  "codex_version": "0.160.0",
+  "engine_root": "C:/Program Files/Epic Games/UE_5.8",
+  "unreal_build_cache": ".tool-cache/unreal-build",
+  "workflow": "unreal_blueprint_5_8",
+  "project": "TeddyBlueprint/TeddyBlueprint.uproject",
+  "legacy_project": "BossShot/BossShot.uproject",
+  "reference_video": "Assets/Reference/WhatsApp Video 2026-10-04 at 16.53.31.mp4",
+  "reference_video_sha256": "289b314d3578e76e7a8e916c31ef653c0bbea2fb97e21eea2100cb063069fdeb",
+  "source_archive": "Assets/Reference/BossShot.zip",
+  "source_archive_sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+  "teddy_model": "Assets/ThirdParty/HorrorTeddyBear/horror-teddy-bear-monster.glb",
+  "teddy_model_sha256": "9fe8c87ab5eab6d05f19c936d8ae993d07727aa9871100118aa21452f7a9a8bb",
+  "reference_images": [
+    "evidence/reference-video/upright-05.png",
+    "evidence/reference-video/upright-10.png",
+    "evidence/reference-video/upright-16.png"
+  ],
+  "baseline_map": "/Game/Variant_TwinStick/LVL_TwinStick",
+  "target_map": "/Game/Maps/TeddyEncounter"
+}

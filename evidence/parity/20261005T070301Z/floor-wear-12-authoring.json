@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "scene_writes": false,
+  "settings": {
+    "start_cm": 250,
+    "fade_cm": 650,
+    "damp_min": 0.054,
+    "dry_max": 0.54
+  },
+  "materials": [
+    "/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedFloor.M_Parity_CombinedFloor",
+    "/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedFloorLight.M_Parity_CombinedFloorLight",
+    "/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedFloorDark.M_Parity_CombinedFloorDark"
+  ]
+}

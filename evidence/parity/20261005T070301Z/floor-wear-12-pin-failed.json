@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "scene_writes": false,
+  "settings": {
+    "start_cm": 250,
+    "fade_cm": 650,
+    "damp_min": 0.054,
+    "dry_max": 0.54
+  },
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/apply_parity_floor_wear.py\", line 9, in <module>\n    R['materials']=[combined.floor(name,value).get_path_name() for name,value in [('M_Parity_CombinedFloor',1.),('M_Parity_CombinedFloorLight',1.18),('M_Parity_CombinedFloorDark',.82)]]\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:/Projects/to-deploy/horror-game/tools/apply_parity_floor_wear.py\", line 9, in <listcomp>\n    R['materials']=[combined.floor(name,value).get_path_name() for name,value in [('M_Parity_CombinedFloor',1.),('M_Parity_CombinedFloorLight',1.18),('M_Parity_CombinedFloorDark',.82)]]\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Projects\\to-deploy\\horror-game\\tools\\apply_parity_combined.py\", line 39, in floor\n    weight=node(m,u.MaterialExpressionClamp,min_default=0.,max_default=1.);link(gradient,weight,'Input')\n                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Projects\\to-deploy\\horror-game\\tools\\apply_parity_look.py\", line 18, in link\n    assert M.connect_material_expressions(a,output,b,pin),(str(b),pin,names)\nAssertionError: (\"<Object '/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedFloor.M_Parity_CombinedFloor:MaterialExpressionClamp_0' (0x0000020706EE9D80) Class 'MaterialExpressionClamp'>\", 'Input', ['None', 'Min', 'Max'])\n"
+}

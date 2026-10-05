@@ -1,0 +1,677 @@
+{
+  "created_utc": "2026-10-05T05:54:06.195618+00:00",
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "evidence": {
+    "gallery": "evidence\\implementation\\20261005T054732-capture_room_gallery",
+    "qa": "evidence\\implementation\\20261005T054434-verify_full_room",
+    "keys": "evidence\\implementation\\20261005T054646-verify_encounter_keys",
+    "native": "evidence\\full-room\\20261005T050433Z\\native-motion-20261005T054842"
+  },
+  "preservation": {
+    "passed": true,
+    "pre_room_files": 158,
+    "changed_pre_room_files": [
+      "ENCOUNTER.md",
+      "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+      "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_Stitchling.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_TeddyBoss.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_Concrete.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_TeddyCloth.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Materials/M_TeddyCloth.uasset",
+      "tools/author_qa_native_motion.py",
+      "tools/capture_qa_native_motion.py",
+      "WORK_STATUS.md"
+    ],
+    "changed_existing_game_assets": [
+      "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+      "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_Stitchling.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_TeddyBoss.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_Concrete.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_TeddyCloth.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Materials/M_TeddyCloth.uasset"
+    ],
+    "original_baseline_files_unchanged": 555,
+    "authorized_grok_surface_changes": [
+      "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_Stitchling.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_TeddyBoss.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_Concrete.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_TeddyCloth.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Materials/M_TeddyCloth.uasset"
+    ],
+    "combined_state_validation": {
+      "passed": true,
+      "snapshot_created_utc": "2026-10-05T05:44:33.720034+00:00",
+      "files_unchanged": 113,
+      "active_asset_set_unchanged": true,
+      "fresh_runs": {
+        "gallery": "evidence\\implementation\\20261005T054732-capture_room_gallery",
+        "qa": "evidence\\implementation\\20261005T054434-verify_full_room",
+        "keys": "evidence\\implementation\\20261005T054646-verify_encounter_keys",
+        "native": "evidence\\full-room\\20261005T050433Z\\native-motion-20261005T054842"
+      },
+      "handoff": "Grok final assistant completion confirmed, latest final plate 20261005T053842-capture_encounter; no editor running",
+      "surface_receipt_sha256": "afc0e7e7e3b1e08a1982735dc952ee3e3f1b801af9852c0c89cd3faaf39f9899"
+    },
+    "originals": {
+      "reference_video": {
+        "path": "C:\\Projects\\to-deploy\\horror-scene\\WhatsApp Video 2026-10-04 at 16.53.31.mp4",
+        "sha256": "289b314d3578e76e7a8e916c31ef653c0bbea2fb97e21eea2100cb063069fdeb",
+        "unchanged": true
+      },
+      "source_archive": {
+        "path": "C:\\Projects\\to-deploy\\horror-scene\\BossShot.zip",
+        "sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+        "unchanged": true
+      },
+      "teddy_model": {
+        "path": "C:\\Projects\\to-deploy\\horror-game\\Assets\\ThirdParty\\HorrorTeddyBear\\horror-teddy-bear-monster.glb",
+        "sha256": "9fe8c87ab5eab6d05f19c936d8ae993d07727aa9871100118aa21452f7a9a8bb",
+        "unchanged": true
+      }
+    },
+    "archive_sha256": "cb97355718d6a44acd5b618b7c224ff1632b11f0fbc0650e6a9545a4f2ebad4a"
+  },
+  "files": [
+    {
+      "path": "Assets/Adapted/Arena/ai-provenance.json",
+      "size": 663,
+      "sha256": "d965ed77187916d9a4f3f177515070b5b5ba122565c12875945954da75f46da5"
+    },
+    {
+      "path": "Assets/Adapted/Arena/Arena_Art.blend",
+      "size": 105042,
+      "sha256": "fda506236700a98bbcd68c577d8a66941a27f0aa914a85e7d45110177c24d732"
+    },
+    {
+      "path": "Assets/Adapted/Arena/Arena_Art.blend1",
+      "size": 105024,
+      "sha256": "814d563210333af30813dbd4a2c494698331f584b124e032a9e1071289ea837c"
+    },
+    {
+      "path": "Assets/Adapted/Arena/AttackRing.fbx",
+      "size": 14236,
+      "sha256": "7b3995d5cc89d1192442e382b8c39d8d05a21fc1c3fd3cd49ca1b3b34fd4a657"
+    },
+    {
+      "path": "Assets/Adapted/Arena/Encounter_Details.blend",
+      "size": 90098,
+      "sha256": "8a11d17864ecfc81044278dd23eb389edc84b511a921a38f6f3196c61bc91de3"
+    },
+    {
+      "path": "Assets/Adapted/Arena/provenance.json",
+      "size": 138,
+      "sha256": "19343f629ce35511c48e14a78b08ac04e6da0cdf284d472a6732cf1c166d39ff"
+    },
+    {
+      "path": "Assets/Adapted/Arena/ServiceRifle.fbx",
+      "size": 29628,
+      "sha256": "0d4cede232170cbb48ef728410af74f328d5ebd949675665ec8e057ee6b692e2"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_AI_Decal_Crack.png",
+      "size": 59229,
+      "sha256": "7ad4af4e6714ca0e63c6acf0554a4b67f09d5fda8e840286cc1aaa86c2d345d9"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_AI_Decal_Debris.png",
+      "size": 132778,
+      "sha256": "652c47bbe76065755855d48ad5531afefe3abed559efe77b69f8bb18add179b7"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_AI_Decal_Scuff.png",
+      "size": 64999,
+      "sha256": "18e1f4cdeb1b482a928559be2b290a013427cb61342e97bebf342c9e205c187b"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_AI_Decal_Stain.png",
+      "size": 118827,
+      "sha256": "5f1bf873c9ac2cb677d7fbb559678722bbc62819c2df57741f35d27df0d32415"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_AI_Floor_Color.png",
+      "size": 1271589,
+      "sha256": "a07bfd33acf46fdbf174d24b6cb735642ad0b2c0bc35b3995eef169d2d82261a"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_AI_Floor_Normal.png",
+      "size": 1512495,
+      "sha256": "10fea3a984085062c7fd506ca5a3695b9d598a264ce3f544b87d8ff0a7aac1ef"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_AI_Floor_Roughness.png",
+      "size": 516326,
+      "sha256": "4910f18c4f84b3b03d741cfd73b87c2ffaffdc7cda4641c79f5dd7ebe3b7ddf3"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_AI_Plush_Normal.png",
+      "size": 1503044,
+      "sha256": "576a190d17df9f56f9e507690ced09f86b23391d28b5a11ebd86e3e95cce8738"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_AI_Plush_Roughness.png",
+      "size": 384821,
+      "sha256": "09e7c177c37ff49982b0af190c00d9da78441716a71779afc935eed55219e366"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_Concrete_Color.png",
+      "size": 1430721,
+      "sha256": "e919538e37fb2e5dce770998915280e8f76ce3f746709f053ecf90a06bd2a405"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_Concrete_Normal.png",
+      "size": 1243429,
+      "sha256": "40c3e8c5481347ee2da578f5916a28a4c04c61c1ea93df30db0ef6816041e16b"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_Concrete_Roughness.png",
+      "size": 507094,
+      "sha256": "f6a6993275769f15dbe10cc5f1d8f10c8644bf25496b3d578c5c4ff377373646"
+    },
+    {
+      "path": "Assets/Adapted/Room/IndustrialRoom_Kit.blend",
+      "size": 900081,
+      "sha256": "1f44cdb7b4d039015d86aef80bf353a6ad3f86c4ef32e9eaa2fc3d7300489932"
+    },
+    {
+      "path": "Assets/Adapted/Room/IndustrialRoom_Kit.blend1",
+      "size": 900129,
+      "sha256": "1ebaa6ea4f147a93961aa8bbffc2b9a08fb24e639a881d45bcf1de2accf27bfa"
+    },
+    {
+      "path": "Assets/Adapted/Room/kit-overview.png",
+      "size": 1973991,
+      "sha256": "9311c93a9b287918f050f2bb8fad270e67afa4679287a2f3cc266884236d746b"
+    },
+    {
+      "path": "Assets/Adapted/Room/manifest.json",
+      "size": 15540,
+      "sha256": "f80a63111e283d7e6466e1846664cbe6e0eae1cbff6e349e14316850fff2beff"
+    },
+    {
+      "path": "Assets/Adapted/Room/SM_RoomBulkhead.fbx",
+      "size": 155340,
+      "sha256": "179d1378ee98000c4635f0482c038892dd7fa164f5014f85213e8f6c8f8db445"
+    },
+    {
+      "path": "Assets/Adapted/Room/SM_RoomCableSpool.fbx",
+      "size": 221212,
+      "sha256": "c0f626e0c70acdbd79393f8f6690a42c23917e3ac007cbe1772101a2fc1e2059"
+    },
+    {
+      "path": "Assets/Adapted/Room/SM_RoomCargoCrate.fbx",
+      "size": 59596,
+      "sha256": "5b692ed112699b879d15d4ca92d2d97f650d2b2806943b89bb891f9bc7a4bae1"
+    },
+    {
+      "path": "Assets/Adapted/Room/SM_RoomFloorGrate.fbx",
+      "size": 87996,
+      "sha256": "ece829b35ea1dfce3480742f844c4ad5e3799c86e211e32cacbf7b344bd22f42"
+    },
+    {
+      "path": "Assets/Adapted/Room/SM_RoomPilaster.fbx",
+      "size": 55820,
+      "sha256": "2b728633192283cea49e0a4a498da3cb861465792bd5a259c1e082356c086a59"
+    },
+    {
+      "path": "Assets/Adapted/Room/SM_RoomPipeRack.fbx",
+      "size": 147948,
+      "sha256": "de1bead5153f6df28f918e741cbc8d8ee221b5b01b9b352ef29264807da839ae"
+    },
+    {
+      "path": "Assets/Adapted/Room/SM_RoomServiceCabinet.fbx",
+      "size": 93244,
+      "sha256": "dbd55e38b3da3628625d353f87f26db2b81a347376d2689222d56b6d2d09b44c"
+    },
+    {
+      "path": "Assets/Adapted/Room/SM_RoomStripLight.fbx",
+      "size": 41996,
+      "sha256": "3d0d1560ba0606fb545c0a039bf97373f9eb6ff660a8028fac00166e5149350a"
+    },
+    {
+      "path": "Assets/Adapted/Room/SM_RoomUtilityTank.fbx",
+      "size": 183068,
+      "sha256": "3cba242aa7357524fc344bb8006292d3cf3fa373a58ed6daac832e6dbed94882"
+    },
+    {
+      "path": "Assets/Adapted/Room/SM_RoomVentFan.fbx",
+      "size": 155660,
+      "sha256": "603c0cd49b68e996b4b29271555b192c58c4c815dd8f07482e5d75aca796d5ec"
+    },
+    {
+      "path": "evidence/implementation/ai-surfaces.json",
+      "size": 6032,
+      "sha256": "afc0e7e7e3b1e08a1982735dc952ee3e3f1b801af9852c0c89cd3faaf39f9899"
+    },
+    {
+      "path": "TeddyBlueprint/Config/DefaultEngine.ini",
+      "size": 3313,
+      "sha256": "f637b632b95a631f2c19499be43634290b1c912f8bc73c283d1b8658019c4469"
+    },
+    {
+      "path": "TeddyBlueprint/Config/DefaultGame.ini",
+      "size": 134,
+      "sha256": "6e8d04e19bdc7f41c74b6adba845978c4c6be9f93d4815025acf5bb58d341bdc"
+    },
+    {
+      "path": "TeddyBlueprint/Config/DefaultInput.ini",
+      "size": 8951,
+      "sha256": "c4dd662abe0881239745ff2ae0743a363487a7796439d7c7e8367d2224070164"
+    },
+    {
+      "path": "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+      "size": 653016,
+      "sha256": "cbae810dca990b9f74020583123ccdab3f808d8b4ce9d659eca2a9179e64f729"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/AttackRing.uasset",
+      "size": 19250,
+      "sha256": "0b1c91b545e23c58a80ba4115182a734ea95bb8a996c57c1f785b4c500a60903"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/ServiceRifle.uasset",
+      "size": 41454,
+      "sha256": "acc4e6fd62d4906eedbc38023f9d196840eaa8aeb40ed6b645abd39913a90ded"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_AI_Decal_Crack.uasset",
+      "size": 66165,
+      "sha256": "866b93f215dbff9043146119649519384248b194dccc6a59e0ecc954e6d1a972"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_AI_Decal_Debris.uasset",
+      "size": 138764,
+      "sha256": "b77096136c4c040aad5ded2345c80f2c4eb5c24ecc3c6de6d492cde77302eb15"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_AI_Decal_Scuff.uasset",
+      "size": 73011,
+      "sha256": "7b5c6e622b34c203bf6ba5b66e4194b357d3135617a940e1a454de3a85c9d2a4"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_AI_Decal_Stain.uasset",
+      "size": 121723,
+      "sha256": "051799b429bc27f7fe129113475974c5edbf1b0fd40753d61e1c0569b2da6dd7"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_AI_Floor_Color.uasset",
+      "size": 1238733,
+      "sha256": "9e265102027d6ae609f3b1ef19e531789e4129a00337bfc89fa9151eedc40a6b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_AI_Floor_Normal.uasset",
+      "size": 1676693,
+      "sha256": "c74096a703474bc56f5fc1666a3146809374163c7364af9e2011dda4463c7507"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_AI_Floor_Roughness.uasset",
+      "size": 546883,
+      "sha256": "c7197a201c3d30973d90bda8f47e39eaed8858709620c8591431aee54d7c15ac"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_AI_Plush_Normal.uasset",
+      "size": 1681064,
+      "sha256": "55b02a9d804aa1f40c28a8c68c7e6c2016e52c3d496b79f894f5b824d9cad48f"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_AI_Plush_Roughness.uasset",
+      "size": 421295,
+      "sha256": "9eaa152bb00fafee3800d6e972288d6aba35afc9157c325da387159162babda7"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_Concrete_Color.uasset",
+      "size": 1354193,
+      "sha256": "fcb72e4efebcacbceb3dd2efd687625c0a21f457365cbd7f909b11aeefafc56e"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_Concrete_Normal.uasset",
+      "size": 1206670,
+      "sha256": "c1a582ad21f72373fc10c1807dfe73a7800932d972f2e25424c47fdc4fa49fbe"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_Concrete_Roughness.uasset",
+      "size": 380435,
+      "sha256": "ad91401d454de2c5a029a8af7f4c776a68e243ff661afd72af68d75acd200903"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/ClothHit.uasset",
+      "size": 20635,
+      "sha256": "6f3825f5f868e2f53615f0cf8aac5bc02ac2c9103acb7b69bba0922fc81c87f8"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/Rifle.uasset",
+      "size": 18090,
+      "sha256": "f9016942e354f73d3432ed4886cc84a8452e70ae2886e3528ea4af86eb1970a5"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/RoomTone.uasset",
+      "size": 904303,
+      "sha256": "92b9e51278b1576d6f5ac85a685d74564d9bd87ba611b19519d5ef94949f58f7"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/Slam.uasset",
+      "size": 57284,
+      "sha256": "8df719acf31c667497ccdf9a71f47c71fa0d492d5eac89cf0c6e8f2ec28c553d"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_CombatCamera.uasset",
+      "size": 107761,
+      "sha256": "eb82a93a996ac4692939fa9559f51edf887b60e751956d5226b12758babc7c02"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterController.uasset",
+      "size": 94100,
+      "sha256": "c620130584135b6040316f419943b33be2764c656936259b68ad0bee3725e03b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterGameMode.uasset",
+      "size": 21878,
+      "sha256": "ea34f51e0890496c21251f4fe9379e91698bfb2dc3b23c7dd9bac32a5d50cee1"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterHUD.uasset",
+      "size": 123703,
+      "sha256": "75e35cb6b7ef70e878466784699e1048c07f965a509bd596d73164d22a122002"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterPlayer.uasset",
+      "size": 557460,
+      "sha256": "10742a066c630cdffef9959c0fa61794caad9d93683f7534efae66e084779214"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterProjectile.uasset",
+      "size": 56728,
+      "sha256": "48f8e2e7d1af2b4ef2d63a62bc32992473dafe778a2012aa1e5a0d07e86cc3d6"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_Stitchling.uasset",
+      "size": 323599,
+      "sha256": "95c6804bccdeaffa737ef88d5b42746c61c9e61801e1c1203f40a0c5bf90c281"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_TeddyBoss.uasset",
+      "size": 296642,
+      "sha256": "6a62a3c143b74b4a49efd5c3706a297047433aaee21f97eaac38817eea879fe5"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Input/IA_Pause.uasset",
+      "size": 1621,
+      "sha256": "332431397fa8ff23fb2ab36c1b1ca32e450d1a15bc19295732e381d6b7c94542"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Input/IA_Restart.uasset",
+      "size": 1629,
+      "sha256": "c2417272334b4982ecd4fdf514c85827b3267a23ca56af7a9ff28dcbf30cd6ee"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Input/IMC_Encounter.uasset",
+      "size": 10299,
+      "sha256": "90f846607eb876957851c7ebce44170b9fa2098123a882c0be04870cb2b598b5"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_AI_Decal_Crack.uasset",
+      "size": 6495,
+      "sha256": "f107897f41281f5c91097737fb744dc3d79ad8de97076ae3f52ac32a563d6266"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_AI_Decal_Debris.uasset",
+      "size": 6502,
+      "sha256": "5b97d9969b5702541eeb1b8170b057e7fe993abf2fb8303239b59401de805ee1"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_AI_Decal_Scuff.uasset",
+      "size": 6495,
+      "sha256": "2e3f66e4f3234f1e0836f0fdc001a2c193d6790cbf862ca19572389c039a93b4"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_AI_Decal_Stain.uasset",
+      "size": 6495,
+      "sha256": "b35ad372ea5b27ff2858b39f551ac305eeb4c3677bd4633b1f539d453d4b2baf"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_AimLine.uasset",
+      "size": 5817,
+      "sha256": "77ec65ca5c3bc4d8d12079cf19cc484e9c18d99a5d40337f5ec626d5f9f46b43"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_AttackWarning.uasset",
+      "size": 5889,
+      "sha256": "0de33cab13f19b5d54eb967150aafe8041b78cb646765da443407cdf30bb3cad"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_Charcoal.uasset",
+      "size": 5218,
+      "sha256": "b96095d0f881ddd3048b94a482f3a1e154d0416149f6cde075bda3f986b841f5"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_Muzzle.uasset",
+      "size": 6112,
+      "sha256": "98fcb1ced1bf51e8a627ec8e34cc12a6ac8bd59bd1fe6c82c2d9aba72ceefecd"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_OxidisedIron.uasset",
+      "size": 5238,
+      "sha256": "2aad3a82133437838474049449c4b87b4daa77fb1dfa690418b6b31225a179cd"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_AttackWarning.uasset",
+      "size": 6204,
+      "sha256": "c090cac07b7ff6a8491f18f82ef761f5e1fc92fbe5df68a1096c9a4a2b50d4c5"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_Concrete.uasset",
+      "size": 11802,
+      "sha256": "60017b2dcf350f4f86ee3844b175d962e05229d0c75f14e5c537bf6cf9577337"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_TeddyCloth.uasset",
+      "size": 20279,
+      "sha256": "2c1bbd26ff887ff18ee7e04a792b5a8f14b4d682224885b636a484527fa56231"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_TeddyCloth.uasset",
+      "size": 20160,
+      "sha256": "a107689387fea0cdc827dc744bba87cb8deb3af396ad41f55f7ad0df4702cce9"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_WarningLamp.uasset",
+      "size": 6137,
+      "sha256": "9f895fc65c75ae6b12c5182ca50a68c03018853d67b27f49c1c65307ead8b0a6"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_WornConcrete.uasset",
+      "size": 7619,
+      "sha256": "f69686acca9422aaccf7e51d6d8dc23f3dfc123798e6414dbf9cddc009cd27c6"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Player/ABP_EncounterRifle.uasset",
+      "size": 390559,
+      "sha256": "561d55a0e7e4567641aa355031f60c0d19fa36b844eb0686df58d24e5742763b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Player/BS_RifleLocomotion.uasset",
+      "size": 49453,
+      "sha256": "bc765e91a0ae42b5a065b76bc50070badec0d4217561d59e5524b0328c790b5c"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Materials/M_Room_Concrete.uasset",
+      "size": 9920,
+      "sha256": "340d62f29bfc53960eee24d3609f602fabf488b356899fb6915641c991e032bb"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Materials/M_Room_CoolFixture.uasset",
+      "size": 7455,
+      "sha256": "53b51b2b17a9e5ffc667b83e293d5d9414ccd33714c866b8e1d976650d38d5f3"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Materials/M_Room_DampStain.uasset",
+      "size": 12268,
+      "sha256": "71a8a1d368f1ca3355c42d01e81f4d131fbf4e655b836c8fda093fe2758cee5b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Materials/M_Room_EdgeSteel.uasset",
+      "size": 9954,
+      "sha256": "aeb9901c3a7ecc90b7948c21ad3e512166f0b4e1dd92d82cc36f4b4e18496efe"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Materials/M_Room_Oxide.uasset",
+      "size": 9934,
+      "sha256": "0bdf0f54fcc69b7fbc1d9c6ba5a2593ca95977d583b78f11f68eb5a9a25a6584"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Materials/M_Room_PaintedSteel.uasset",
+      "size": 9969,
+      "sha256": "00a34d5a12d61e673d4a59f5b054536a10b0ad00a3cf90074f03d4713ec48c03"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Materials/M_Room_Recess.uasset",
+      "size": 9939,
+      "sha256": "24a4a3c86dd63ce8d2a869cd4c463a4f832f2d7feb29b18fc6674ee66d0abdae"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Materials/M_Room_WarningLens.uasset",
+      "size": 7455,
+      "sha256": "6a3ed800e7833cd8b7a19bb2aab3f67d4d2fb541311957cdc9740f183469e6eb"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Meshes/SM_RoomBulkhead.uasset",
+      "size": 207472,
+      "sha256": "177dd930960be9098c1f0bf4b3281d24694e9ea67683a27054f755a79a72222e"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Meshes/SM_RoomCableSpool.uasset",
+      "size": 318051,
+      "sha256": "fdb9278954058e4f7733a041ba15965da437de66b7795210dd95b9f9f3968c3a"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Meshes/SM_RoomCargoCrate.uasset",
+      "size": 74920,
+      "sha256": "5325bbd4fd6cb7e6c75936ea8d132d637356a564fd1274d7f060b0bbabd79722"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.uasset",
+      "size": 120946,
+      "sha256": "b342bb0f33a459eb64ec7ee734bfecf7dd64bc91c7fbf7a81a44cec1c5b65192"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Meshes/SM_RoomPilaster.uasset",
+      "size": 67737,
+      "sha256": "91a01e6db9b9f4e30b513004c1e741499f6879346ff1df9ce278c6e2c09adc04"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Meshes/SM_RoomPipeRack.uasset",
+      "size": 177222,
+      "sha256": "9c31b70c5f0756e53ce374b930f0d03f28dd80b8a6b01ca6a30a619618eedf54"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Meshes/SM_RoomServiceCabinet.uasset",
+      "size": 127828,
+      "sha256": "286f70c5ab0379038fbdd2b956d12807647830d5aaf5633908c082d98962cbd6"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Meshes/SM_RoomStripLight.uasset",
+      "size": 45486,
+      "sha256": "417f6ab6149dc1e76f2fa9c29b6b635fe19f74a9fe21e9a584da5dad6901343f"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Meshes/SM_RoomUtilityTank.uasset",
+      "size": 266065,
+      "sha256": "b0952796925805bd5d864c832a9461ad565b461137844744798e6a97dee6e0af"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Room/Meshes/SM_RoomVentFan.uasset",
+      "size": 208688,
+      "sha256": "e5e75e95760c7e61ef9713065bbfe2a0ff684400941f7748a0800670fce58145"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Attack/A_Teddy_Attack.uasset",
+      "size": 48758,
+      "sha256": "80a55f7317b1ac44cbce91eb0fb5bf5ff64201029118831001fd46af93558992"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.uasset",
+      "size": 58977,
+      "sha256": "e13175226feef3db49fbbd8ca360846e225a4ef855d40421747f71f9807f613c"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.uasset",
+      "size": 56822,
+      "sha256": "db71bdea8be1cb177425c8fb2169c32fc5aba45ccbcfb1ad45ad5bfdd0971236"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Hit/A_Teddy_Hit.uasset",
+      "size": 25566,
+      "sha256": "336002d8436c533e1661c912d1994656da2ea18c0f96331b917786f28c9d294e"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Idle/A_Teddy_Idle.uasset",
+      "size": 30393,
+      "sha256": "978948b70eaa6f12ccd4f12b51174a01726f9b660a312019dd059ad52cb8849d"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Idle/SK_Teddy.uasset",
+      "size": 3821083,
+      "sha256": "84a1becf9529426ba0f434a8e7ec38bd39219de0c0de4e4b45c93d9258c3970b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.uasset",
+      "size": 5365,
+      "sha256": "61e59728f72c8da74c2c61b680e7a4a762e5a7768ecfbe4f1d72a7b49fcd29c1"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/T_Teddy_BaseColor.uasset",
+      "size": 6441670,
+      "sha256": "349944d07731fa4c53da3d145f23fa72025ddfbd79a738c3ef9e60be2642af70"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Walk/A_Teddy_Walk.uasset",
+      "size": 58886,
+      "sha256": "386d95b3353f9f4a629796b4af988c6760660ddd47065587fd9eba9d24da0826"
+    },
+    {
+      "path": "tools/apply_ai_surfaces.py",
+      "size": 16119,
+      "sha256": "d40903078fbb606e09839668961f5734410efa92cc2faacd43acda58fb0674d2"
+    },
+    {
+      "path": "tools/author_qa_native_motion.py",
+      "size": 4760,
+      "sha256": "fe96c90948ed792c1845614cbe927593af1fa5a52cffb215070aa664bec0d428"
+    },
+    {
+      "path": "tools/build_full_room.py",
+      "size": 16421,
+      "sha256": "37f053b344031ae2e8dcdb7cc2827e84e73a88fcb2387a0030bf24c0324c731a"
+    },
+    {
+      "path": "tools/capture_qa_native_motion.py",
+      "size": 7384,
+      "sha256": "a5069e44cb01759e654365e55c5b206c1096dbb71715aaa1b75badc92c64444b"
+    },
+    {
+      "path": "tools/capture_room_gallery.py",
+      "size": 10988,
+      "sha256": "8a1eb2bcf8baa1e932be7c8e60bec7e891ce44022f5544734a4e67f2e48b43e7"
+    },
+    {
+      "path": "tools/finalize_full_room.py",
+      "size": 20573,
+      "sha256": "03b0f7cba00345a42aefa9a7bd08867778bd418a4f532969c0b2328be3704707"
+    },
+    {
+      "path": "tools/make_ai_surfaces.py",
+      "size": 4856,
+      "sha256": "0dcdffa0299d92fb5df1504594e53528963854edfe553fb4ff43413d155b6f7e"
+    },
+    {
+      "path": "tools/make_industrial_room.py",
+      "size": 23206,
+      "sha256": "d22f6d4ac6d355ff488504939b2ea22022501a60b006d5690986e699f798355a"
+    },
+    {
+      "path": "tools/verify_full_room.py",
+      "size": 24864,
+      "sha256": "b10e1554841bf9fad097985f3cf1d68543d6589a2185b057bc8712a5d382c5c8"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"passed":false,"reason":"Repeated HighResShot still requests did not yield continuous useful gameplay. Stopped only the identified test editor PID 11724, created 2026-10-04T23:41:07 local. No authoring writes occurred in this runtime test. Frames and logs preserved. Replaced with ordinary viewport Shot capture; this run is not delivery evidence."}

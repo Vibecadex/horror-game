@@ -1,0 +1,164 @@
+{
+  "source_receipt_sha256": "a6fea310475c9ff4535e6a4a94b99957f62bf37299e30c4d0fdbc25c661004a9",
+  "before_receipt_sha256": "deb933dfab8216f502d24a66bea494a427dbb66b4b8bf8a0bdf00e9392d280b8",
+  "before_image_sha256": "112bc2f581bd460c1e8f25899005bc29f849ddbccf17d7c166f4db1ea710e6b8",
+  "before_camera_case": {
+    "index": 3,
+    "player": [
+      1300.0,
+      0.0,
+      85.14999911324225
+    ],
+    "boss": [
+      250.0,
+      -230.0,
+      227.15000200271606
+    ],
+    "camera": [
+      -1944.4872429713828,
+      -115.0,
+      2900.0
+    ],
+    "viewport": [
+      1014,
+      550
+    ],
+    "fov": 54.0,
+    "bounds_normalized": {
+      "player": [
+        0.5158028687245747,
+        0.30241152676669036,
+        0.5355742866470969,
+        0.38383078835227274
+      ],
+      "boss": [
+        0.4082646115997134,
+        0.48885564630681816,
+        0.5225579075559357,
+        0.7879937189275568
+      ]
+    },
+    "traces": [
+      {
+        "target": "player",
+        "height_above_base": 45,
+        "hit": {
+          "blocking": false
+        }
+      },
+      {
+        "target": "player",
+        "height_above_base": 110,
+        "hit": {
+          "blocking": false
+        }
+      },
+      {
+        "target": "player",
+        "height_above_base": 170,
+        "hit": {
+          "blocking": false
+        }
+      },
+      {
+        "target": "boss",
+        "height_above_base": 80,
+        "hit": {
+          "blocking": false
+        }
+      },
+      {
+        "target": "boss",
+        "height_above_base": 250,
+        "hit": {
+          "blocking": false
+        }
+      },
+      {
+        "target": "boss",
+        "height_above_base": 430,
+        "hit": {
+          "blocking": false
+        }
+      }
+    ],
+    "decoration_box_review_hints": [],
+    "in_frame": true,
+    "collision_trace_clear": true
+  },
+  "after_images": [
+    {
+      "path": "evidence\\implementation\\20261005T092532-capture_parity_rear_visibility\\rear-center-1000.png",
+      "sha256": "a11bdd4b68c599e63bdb3d99ca138031eff5fad149572eb43ef4f28e52649e68",
+      "player_x": 1000,
+      "held_state": {
+        "player": [
+          1000.0,
+          0.0,
+          85.0
+        ],
+        "camera": [
+          -1552.0153045755628,
+          -115.0,
+          2360.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "decoded": true
+    },
+    {
+      "path": "evidence\\implementation\\20261005T092532-capture_parity_rear_visibility\\rear-center-1300.png",
+      "sha256": "e6ef5550ccc24e6670432007dc4500b9256da167452b9531c2637f0080232672",
+      "player_x": 1300,
+      "held_state": {
+        "player": [
+          1300.0,
+          0.0,
+          85.0
+        ],
+        "camera": [
+          -1944.4872429713828,
+          -115.0,
+          2900.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "decoded": true
+    },
+    {
+      "path": "evidence\\implementation\\20261005T092532-capture_parity_rear_visibility\\rear-center-1400.png",
+      "sha256": "1a1b7bc8f8fae108bd58ceceaf4faa39434be924c0f659b217988fc9914a4c0f",
+      "player_x": 1400,
+      "held_state": {
+        "player": [
+          1400.0,
+          0.0,
+          85.0
+        ],
+        "camera": [
+          -2075.311222436656,
+          -115.0,
+          3080.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "decoded": true
+    }
+  ],
+  "image_transform": "Full-frame 50% thumbnails and explicitly labelled 4x nearest pixel crops. No exposure/color adjustment. Before and after NPC poses can differ; camera/character placement is recorded."
+}

@@ -1,0 +1,183 @@
+{
+  "passed": true,
+  "assets": [
+    {
+      "path": "/Game/TeddyEncounter/Arena/AttackRing.AttackRing",
+      "class": "StaticMesh"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Arena/ServiceRifle.ServiceRifle",
+      "class": "StaticMesh"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Arena/T_Concrete_Color.T_Concrete_Color",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Arena/T_Concrete_Normal.T_Concrete_Normal",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Arena/T_Concrete_Roughness.T_Concrete_Roughness",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Audio/ClothHit.ClothHit",
+      "class": "SoundWave"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Audio/Rifle.Rifle",
+      "class": "SoundWave"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Audio/RoomTone.RoomTone",
+      "class": "SoundWave"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Audio/Slam.Slam",
+      "class": "SoundWave"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Blueprints/BP_CombatCamera.BP_CombatCamera",
+      "class": "Blueprint"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Blueprints/BP_EncounterController.BP_EncounterController",
+      "class": "Blueprint"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Blueprints/BP_EncounterGameMode.BP_EncounterGameMode",
+      "class": "Blueprint"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Blueprints/BP_EncounterHUD.BP_EncounterHUD",
+      "class": "Blueprint"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Blueprints/BP_EncounterPlayer.BP_EncounterPlayer",
+      "class": "Blueprint"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Blueprints/BP_EncounterProjectile.BP_EncounterProjectile",
+      "class": "Blueprint"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling",
+      "class": "Blueprint"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Blueprints/BP_TeddyBoss.BP_TeddyBoss",
+      "class": "Blueprint"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Input/IA_Pause.IA_Pause",
+      "class": "InputAction"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Input/IA_Restart.IA_Restart",
+      "class": "InputAction"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Input/IMC_Encounter.IMC_Encounter",
+      "class": "InputMappingContext"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Materials/M_AimLine.M_AimLine",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Materials/M_AttackWarning.M_AttackWarning",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Materials/M_Charcoal.M_Charcoal",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Materials/M_Muzzle.M_Muzzle",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Materials/M_OxidisedIron.M_OxidisedIron",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Materials/M_TeddyCloth.M_TeddyCloth",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Materials/M_WarningLamp.M_WarningLamp",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Materials/M_WornConcrete.M_WornConcrete",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Player/ABP_EncounterRifle.ABP_EncounterRifle",
+      "class": "AnimBlueprint"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Player/BS_RifleLocomotion.BS_RifleLocomotion",
+      "class": "BlendSpace"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Attack/A_Teddy_Attack.A_Teddy_Attack",
+      "class": "AnimSequence"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.A_Teddy_Crawl",
+      "class": "AnimSequence"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat",
+      "class": "AnimSequence"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Hit/A_Teddy_Hit.A_Teddy_Hit",
+      "class": "AnimSequence"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Idle/A_Teddy_Idle.A_Teddy_Idle",
+      "class": "AnimSequence"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy.SK_Teddy",
+      "class": "SkeletalMesh"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.SK_Teddy_Skeleton",
+      "class": "Skeleton"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/T_Teddy_BaseColor.T_Teddy_BaseColor",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Walk/A_Teddy_Walk.A_Teddy_Walk",
+      "class": "AnimSequence"
+    }
+  ],
+  "blueprints": [
+    "/Game/TeddyEncounter/Blueprints/BP_CombatCamera.BP_CombatCamera",
+    "/Game/TeddyEncounter/Blueprints/BP_EncounterController.BP_EncounterController",
+    "/Game/TeddyEncounter/Blueprints/BP_EncounterGameMode.BP_EncounterGameMode",
+    "/Game/TeddyEncounter/Blueprints/BP_EncounterHUD.BP_EncounterHUD",
+    "/Game/TeddyEncounter/Blueprints/BP_EncounterPlayer.BP_EncounterPlayer",
+    "/Game/TeddyEncounter/Blueprints/BP_EncounterProjectile.BP_EncounterProjectile",
+    "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling",
+    "/Game/TeddyEncounter/Blueprints/BP_TeddyBoss.BP_TeddyBoss",
+    "/Game/TeddyEncounter/Player/ABP_EncounterRifle.ABP_EncounterRifle"
+  ],
+  "map": "/Game/Maps/TeddyEncounter.TeddyEncounter",
+  "game_mode": "<Object '/Game/TeddyEncounter/Blueprints/BP_EncounterGameMode.BP_EncounterGameMode_C' (0x00000267161DCB00) Class 'BlueprintGeneratedClass'>",
+  "actors": 210,
+  "named_encounter_actors": [
+    "TE_CombatView",
+    "TE_Stitchling_3",
+    "TE_Stitchling_1",
+    "TE_Stitchling_2",
+    "TE_MainTeddy"
+  ],
+  "reopened": true
+}

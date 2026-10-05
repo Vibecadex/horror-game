@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "settings": {
+    "revision": "look-03",
+    "camera_fov": 54,
+    "key_location": [
+      900,
+      60,
+      1600
+    ],
+    "key_target": [
+      100,
+      0,
+      -5
+    ],
+    "key_intensity": 165000,
+    "key_color": [
+      0.5,
+      0.94,
+      1.0
+    ],
+    "key_radius": 4400,
+    "key_source": 70,
+    "key_inner": 22,
+    "key_outer": 40,
+    "ambient": 0.12,
+    "room_light_scale": 0.17,
+    "corner_light": 2200,
+    "floor_scale": 0.62,
+    "floor_tile_cm": 540,
+    "floor_normal": 0.8,
+    "cloth_base_scale": 0.48,
+    "cloth_desaturation": 0.18,
+    "cloth_normal": 1.0,
+    "cloth_uv": [
+      1.3,
+      1.1
+    ],
+    "cloth_amount": 0.24,
+    "player_light_intensity": 16000,
+    "player_light_location": [
+      105,
+      0,
+      170
+    ],
+    "player_light_pitch": -80,
+    "fog_density": 0.017,
+    "far_fog_density": 0.45,
+    "far_fog_emission": [
+      0.018,
+      0.075,
+      0.075
+    ]
+  },
+  "changes": [],
+  "new_materials": [
+    "/Game/TeddyEncounter/Parity/Materials/M_Parity_Floor.M_Parity_Floor",
+    "/Game/TeddyEncounter/Parity/Materials/M_Parity_TeddyCloth.M_Parity_TeddyCloth",
+    "/Game/TeddyEncounter/Parity/Materials/M_Parity_Warning.M_Parity_Warning"
+  ],
+  "graph_changes": false,
+  "cloth_attribute_inputs": [
+    "BaseColor",
+    "Metallic",
+    "Specular",
+    "Roughness",
+    "Anisotropy",
+    "EmissiveColor",
+    "Opacity",
+    "OpacityMask",
+    "Normal",
+    "Tangent",
+    "WorldPositionOffset",
+    "SubsurfaceColor",
+    "ClearCoat",
+    "ClearCoatRoughness",
+    "AmbientOcclusion",
+    "Refraction",
+    "CustomizedUVs_0",
+    "CustomizedUVs_1",
+    "CustomizedUVs_2",
+    "CustomizedUVs_3",
+    "CustomizedUVs_4",
+    "CustomizedUVs_5",
+    "CustomizedUVs_6",
+    "CustomizedUVs_7",
+    "PixelDepthOffset",
+    "ShadingModel",
+    "Displacement"
+  ],
+  "cloth_shading_model": "<MaterialShadingModel.MSM_CLOTH: 8>",
+  "player_component": "ParityPlayerLight_GEN_VARIABLE",
+  "camera_fov": 54,
+  "camera_tracking_and_input_unchanged": true,
+  "source_materials_preserved": true
+}

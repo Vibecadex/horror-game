@@ -1,0 +1,21 @@
+{
+  "author": "Original generated surfaces for this encounter",
+  "date": "2026-10-05",
+  "source": "Imagine color maps, then local flatten, tile, and DirectX normal derivation",
+  "not_from_reference_clip": true,
+  "files": [
+    "T_AI_Decal_Crack.png",
+    "T_AI_Decal_Debris.png",
+    "T_AI_Decal_Scuff.png",
+    "T_AI_Decal_Stain.png",
+    "T_AI_Floor_Color.png",
+    "T_AI_Floor_Normal.png",
+    "T_AI_Floor_Roughness.png",
+    "T_AI_Plush_Normal.png",
+    "T_AI_Plush_Roughness.png"
+  ],
+  "normal_space": "DirectX, green positive up",
+  "floor_source": "images/3.jpg",
+  "plush_source": "images/6.jpg",
+  "decal_sheet": "images/5.jpg"
+}

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "socket": "hand_r",
+  "relative_yaw": 180,
+  "reason": "Native imported rifle +X opposed the animated hand forward; runtime inspection measured dot -0.968 before and +0.968 with this correction."
+}

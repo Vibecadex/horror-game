@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "states": {
+    "0": "chase",
+    "1": "anticipation",
+    "2": "strike recovery",
+    "3": "dead",
+    "4": "hit reaction"
+  }
+}

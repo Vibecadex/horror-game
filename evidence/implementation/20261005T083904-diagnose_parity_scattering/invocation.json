@@ -1,0 +1,19 @@
+{
+  "arguments": [
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "C:\\Projects\\to-deploy\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject",
+    "-ExecutePythonScript=C:\\Projects\\to-deploy\\horror-game\\tools\\diagnose_parity_scattering.py",
+    "-RenderOffscreen",
+    "-ResX=1280",
+    "-ResY=720",
+    "-unattended",
+    "-nosplash",
+    "-nop4",
+    "-NoSound",
+    "-abslog=C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T083904-diagnose_parity_scattering\\engine.log",
+    "-DDC=InstalledNoZenLocalFallback",
+    "-LocalDataCachePath=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\derived-data",
+    "-UserDir=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\unreal-user"
+  ],
+  "script_sha256": "cb74d6519394a267e2783febe172891142f9ab1f3244e73d495649e649badb47"
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "map": "/Game/SetupValidation/NativeMotion_native_motion_20261005T115126/Encounter",
+  "source_map": "/Game/Maps/TeddyEncounter",
+  "method": "Isolated map copy; original saved gameplay, normal AI and health. Driver emits key events and continuous aim action, with no actor teleports, health editing or AI freezes.",
+  "driver": "/Game/SetupValidation/NativeMotion_native_motion_20261005T115126/BP_CaptureDriver.BP_CaptureDriver",
+  "expected_seconds": 22.15,
+  "final_observation_seconds": 4,
+  "final_observation_reason": "Retain the settled collapse after the normal-input firing sequence; no gameplay changes."
+}

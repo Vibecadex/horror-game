@@ -1,0 +1,261 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "captures": [
+    {
+      "name": "01-close-vsi-08",
+      "kind": "gameplay",
+      "value": 8,
+      "caption": "DIAGNOSTIC: scattering intensity 8 in PIE; saved geometry/camera/exposure unchanged.",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T083904-diagnose_parity_scattering\\01-close-vsi-08.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 181,
+      "game_time": 10.004578813910484,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1363465,
+        "sha256": "4dc8440b6d1eedc8442afee8a6bc504a97c689c6dcb5b8c268b518f77a4cc608",
+        "pixel_sha256": "f50f2c808a0aa65ca3adfe90e7a0cb566c40ebfb81717a93e6e2c66e5d80b657",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "02-close-vsi-25",
+      "kind": "gameplay",
+      "value": 25,
+      "caption": "DIAGNOSTIC: scattering intensity 25 in PIE; saved geometry/camera/exposure unchanged.",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T083904-diagnose_parity_scattering\\02-close-vsi-25.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 182,
+      "game_time": 13.00762902200222,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1374101,
+        "sha256": "4a6dcdd4e30bee0e24bfb9086d33259c14c42707ebe5056f806c48f54b1a70bb",
+        "pixel_sha256": "a2c35e9cd169acfd56af19121b649447089f81bb29b7e44c0f8faaf2f45d636f",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "03-close-vsi-75",
+      "kind": "gameplay",
+      "value": 75,
+      "caption": "DIAGNOSTIC: scattering intensity 75 in PIE; saved geometry/camera/exposure unchanged.",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T083904-diagnose_parity_scattering\\03-close-vsi-75.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 181,
+      "game_time": 16.010586127638817,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1321797,
+        "sha256": "363567610002e61623091dac59b03b1417b0ff8cfe04c85ccb4d51a443089719",
+        "pixel_sha256": "24625e019a363ee6b6a2885c3f5483280c6f2d4d1c65468b2663bf4b78f21feb",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "04-wide-vsi-08",
+      "kind": "gameplay-staged",
+      "value": 8,
+      "caption": "DIAGNOSTIC: scattering intensity 8 in PIE; saved geometry/camera/exposure unchanged.",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T083904-diagnose_parity_scattering\\04-wide-vsi-08.png",
+      "held_state": {
+        "player": [
+          -1300.0,
+          -1350.0,
+          96.0
+        ],
+        "camera": [
+          -5456.846934950482,
+          -25.0,
+          5600.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 183,
+      "game_time": 19.015864934772253,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 348657,
+        "sha256": "f63a046999a7623e7e61ce50ba687058625dc84c0c25c8e11d89bc1b85ed57ff",
+        "pixel_sha256": "992a2427ea7f4c23b371dc03633ab989cd0598934fe07f58074df21c7b8b50e0",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "05-wide-vsi-25",
+      "kind": "gameplay-staged",
+      "value": 25,
+      "caption": "DIAGNOSTIC: scattering intensity 25 in PIE; saved geometry/camera/exposure unchanged.",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T083904-diagnose_parity_scattering\\05-wide-vsi-25.png",
+      "held_state": {
+        "player": [
+          -1300.0,
+          -1350.0,
+          96.0
+        ],
+        "camera": [
+          -5456.846934950482,
+          -25.0,
+          5600.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 180,
+      "game_time": 22.01981794089079,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 355762,
+        "sha256": "3abe765aea43130e6c7986cfdc19026dc22d35056237db13fc466eee9df013d0",
+        "pixel_sha256": "0ca8d289ffd6b0957b0670a8eb1e4a05783de1f7000aedf512f29f6dad2273cc",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "06-wide-vsi-75",
+      "kind": "gameplay-staged",
+      "value": 75,
+      "caption": "DIAGNOSTIC: scattering intensity 75 in PIE; saved geometry/camera/exposure unchanged.",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T083904-diagnose_parity_scattering\\06-wide-vsi-75.png",
+      "held_state": {
+        "player": [
+          -1300.0,
+          -1350.0,
+          96.0
+        ],
+        "camera": [
+          -5456.846934950482,
+          -25.0,
+          5600.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 183,
+      "game_time": 25.02649114653468,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 350587,
+        "sha256": "336bc99c80f4abd0bc1c5b0df77b330556c8d0a30bbc1594f1db2ff911045c1f",
+        "pixel_sha256": "c314bfc841be79265c2f19cbfda395a59aeef1b708be1d1938957feefa35b7ec",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    }
+  ],
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "method": "PIE-only fog-light scattering calibration. Not all plates represent saved settings; no asset writes.",
+  "world": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter",
+  "postprocess": [
+    {
+      "auto_exposure_method": "<AutoExposureMethod.AEM_MANUAL: 2>",
+      "auto_exposure_bias": "3.799999952316284",
+      "auto_exposure_apply_physical_camera_exposure": "True",
+      "vignette_intensity": "0.3799999952316284",
+      "bloom_intensity": "0.25"
+    }
+  ],
+  "wall_seconds": 36.60899999993853
+}

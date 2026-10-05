@@ -1,0 +1,108 @@
+{
+  "capture_receipt": "evidence/implementation/20261005T105217-capture_chamber_views/receipt.json",
+  "capture_receipt_sha256": "890815509b8babd3cb1361c68dca591a785d201ae95c34215988074407cd9320",
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "capture_method": "Editor PIE architectural comparison only; saved actors frozen, HUD hidden. Native 3:2 HighResShot viewport, no crop/warp. Lighting/exposure unchanged. Environment Blueprint ticks remain enabled so the native camera-dependent cutaway can react; visibility is recorded, never forced.",
+  "sources": [
+    {
+      "view": "front",
+      "reference": {
+        "path": "study/visuals/chamber-target-front.png",
+        "sha256": "f853bc67bfb3973f8c3097c829973634590bfb4b42df17ed54fcf65b156b6960",
+        "size": [
+          571,
+          378
+        ],
+        "kind": "user concept target"
+      },
+      "candidate": {
+        "path": "evidence/implementation/20261005T105217-capture_chamber_views/01-chamber-front.png",
+        "sha256": "7ae6ef185c2ae408fbdd02ad6d8962ff94dd22e7c04f0e8d9c57d6ba9c0e44de",
+        "size": [
+          1920,
+          1280
+        ],
+        "kind": "architecture",
+        "held_state": {
+          "player": [
+            -230.0,
+            570.0,
+            85.14999961853027
+          ],
+          "camera": [
+            -4050.0,
+            180.0,
+            2780.0
+          ],
+          "rotation": [
+            -33.04812486997527,
+            0.0,
+            -0.0
+          ],
+          "fov": 41.5
+        },
+        "caption": "ARCHITECTURAL FRONT: looks +X toward pressure bulkhead; saved actors/art/exposure. Camera outside front wall; native owned tall-wall cutaway may hide, retained sill remains. Reframed camera revision chamber-02.",
+        "hash_matches_capture_receipt": true,
+        "full_pixel_decode": true
+      }
+    },
+    {
+      "view": "reverse",
+      "reference": {
+        "path": "study/visuals/chamber-target-reverse.png",
+        "sha256": "1728fb8239d4edde652c93c92bb441c211fe4b491fbf9c14d79413e1c60eff42",
+        "size": [
+          475,
+          320
+        ],
+        "kind": "user concept target"
+      },
+      "candidate": {
+        "path": "evidence/implementation/20261005T105217-capture_chamber_views/02-chamber-reverse.png",
+        "sha256": "ca4a4fc8e336fa9836f8e55429f9195ae6693d5eb9d2901120edda28f1e7ce8d",
+        "size": [
+          1920,
+          1280
+        ],
+        "kind": "architecture",
+        "held_state": {
+          "player": [
+            -230.0,
+            570.0,
+            85.14999961853027
+          ],
+          "camera": [
+            1450.0,
+            100.0,
+            1450.0
+          ],
+          "rotation": [
+            -35.27242144859835,
+            180.0,
+            8.051856345342334e-07
+          ],
+          "fov": 64.0
+        },
+        "caption": "ARCHITECTURAL REVERSE: looks -X toward complete reverse service wall; camera inside far wall. Saved actors/art/exposure; native reverse wall must be visible. Lower camera revision chamber-02, approximately 35 degrees down.",
+        "hash_matches_capture_receipt": true,
+        "full_pixel_decode": true
+      }
+    }
+  ],
+  "comparison": {
+    "path": "evidence/chamber-qa/iteration-105217/comparison.png",
+    "size": [
+      1600,
+      1230
+    ],
+    "sha256": "4f9a79110dfb204f5cd969181d54983a066d0aee948831095ec3246d97cbde22",
+    "full_pixel_decode": true
+  },
+  "limitations": [
+    "Reference concepts are small and differ slightly in aspect ratio. All full images remain unwarped, ungraded and uncropped.",
+    "Display resizes each image separately with Lanczos and retains all source bounds. The originals remain primary evidence.",
+    "Architectural cameras and frozen actors are disclosed. This comparison does not establish ordinary gameplay or user acceptance.",
+    "No similarity percentage, automatic parity score or physical-light measurement is computed."
+  ]
+}

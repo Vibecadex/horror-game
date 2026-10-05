@@ -1,0 +1,20 @@
+{
+  "arguments": [
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "C:\\Projects\\to-deploy\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject",
+    "-ExecutePythonScript=C:\\Projects\\to-deploy\\horror-game\\evidence\\independent-qa\\20261005T034938Z\\qa_engine.py",
+    "-RenderOffscreen",
+    "-ResX=1280",
+    "-ResY=720",
+    "-unattended",
+    "-nosplash",
+    "-nop4",
+    "-NoSound",
+    "-abslog=C:\\Projects\\to-deploy\\horror-game\\evidence\\independent-qa\\20261005T034938Z\\engine\\engine.log",
+    "-DDC=InstalledNoZenLocalFallback",
+    "-LocalDataCachePath=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\derived-data",
+    "-UserDir=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\unreal-user"
+  ],
+  "script_sha256": "4d021d4c6567ecd6ec00d1d3b5662da45fdffc274a070f92d28c993861590ecf",
+  "reviewer": "independent QA in parent chat"
+}

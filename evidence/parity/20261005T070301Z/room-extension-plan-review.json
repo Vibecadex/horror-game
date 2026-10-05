@@ -1,0 +1,2787 @@
+{
+  "scope": "source review only",
+  "meshes": 21,
+  "counts": {
+    "shell": 46,
+    "dressing": 38
+  },
+  "placements": [
+    {
+      "key": "FarBay_0",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        -1400,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        0.9078947368421053
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1660.0000035762787,
+          -1600.0,
+          -5.0
+        ],
+        [
+          1780.0000023841858,
+          -1200.0,
+          684.9999913416411
+        ]
+      ]
+    },
+    {
+      "key": "FarBay_1",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        -1000,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        0.9078947368421053
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1660.0000035762787,
+          -1200.0,
+          -5.0
+        ],
+        [
+          1780.0000023841858,
+          -800.0,
+          684.9999913416411
+        ]
+      ]
+    },
+    {
+      "key": "FarBay_2",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        -600,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        0.9078947368421053
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1660.0000035762787,
+          -800.0,
+          -5.0
+        ],
+        [
+          1780.0000023841858,
+          -400.0,
+          684.9999913416411
+        ]
+      ]
+    },
+    {
+      "key": "FarBay_3",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        -200,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        0.9078947368421053
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1660.0000035762787,
+          -400.0,
+          -5.0
+        ],
+        [
+          1780.0000023841858,
+          3.6739401784581476e-15,
+          684.9999913416411
+        ]
+      ]
+    },
+    {
+      "key": "FarBay_4",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        200,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        0.9078947368421053
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1660.0000035762787,
+          -3.673940543431334e-15,
+          -5.0
+        ],
+        [
+          1780.0000023841858,
+          400.0,
+          684.9999913416411
+        ]
+      ]
+    },
+    {
+      "key": "FarBay_5",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        600,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        0.9078947368421053
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1660.0000035762787,
+          400.0,
+          -5.0
+        ],
+        [
+          1780.0000023841858,
+          800.0,
+          684.9999913416411
+        ]
+      ]
+    },
+    {
+      "key": "FarBay_6",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        1000,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        0.9078947368421053
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1660.0000035762787,
+          800.0,
+          -5.0
+        ],
+        [
+          1780.0000023841858,
+          1200.0,
+          684.9999913416411
+        ]
+      ]
+    },
+    {
+      "key": "FarBay_7",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        1400,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        0.9078947368421053
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1660.0000035762787,
+          1200.0,
+          -5.0
+        ],
+        [
+          1780.0000023841858,
+          1600.0,
+          684.9999913416411
+        ]
+      ]
+    },
+    {
+      "key": "FarEnd_-1",
+      "mesh": "SM_ShellWallBayNarrow",
+      "location_cm": [
+        1720,
+        -1670,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        0.7,
+        1,
+        0.9078947368421053
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1660.0000035762787,
+          -1740.0,
+          -5.0
+        ],
+        [
+          1780.0000023841858,
+          -1600.0,
+          684.9999913416411
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_-1_0",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -1370,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.85,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -1540.0,
+          -1800.0000023841858,
+          -5.0
+        ],
+        [
+          -1200.0,
+          -1680.0000035762787,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_-1_1",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -1000,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -1200.0,
+          -1800.0000023841858,
+          -5.0
+        ],
+        [
+          -800.0,
+          -1680.0000035762787,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_-1_2",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -600,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -800.0,
+          -1800.0000023841858,
+          -5.0
+        ],
+        [
+          -400.0,
+          -1680.0000035762787,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_-1_3",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -200,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -400.0,
+          -1800.0000023841858,
+          -5.0
+        ],
+        [
+          0.0,
+          -1680.0000035762787,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_-1_4",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        200,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          0.0,
+          -1800.0000023841858,
+          -5.0
+        ],
+        [
+          400.0,
+          -1680.0000035762787,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_-1_5",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        600,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          400.0,
+          -1800.0000023841858,
+          -5.0
+        ],
+        [
+          800.0,
+          -1680.0000035762787,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_-1_6",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1000,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          800.0,
+          -1800.0000023841858,
+          -5.0
+        ],
+        [
+          1200.0,
+          -1680.0000035762787,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_-1_7",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1400,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1200.0,
+          -1800.0000023841858,
+          -5.0
+        ],
+        [
+          1600.0,
+          -1680.0000035762787,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideEnd_-1",
+      "mesh": "SM_ShellWallBayNarrow",
+      "location_cm": [
+        1660,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.6,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1600.0,
+          -1800.0000023841858,
+          -5.0
+        ],
+        [
+          1720.0,
+          -1680.0000035762787,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "FarEnd_1",
+      "mesh": "SM_ShellWallBayNarrow",
+      "location_cm": [
+        1720,
+        1670,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        0.7,
+        1,
+        0.9078947368421053
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1660.0000035762787,
+          1600.0,
+          -5.0
+        ],
+        [
+          1780.0000023841858,
+          1740.0,
+          684.9999913416411
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_1_0",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -1370,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        0.85,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -1540.0,
+          1680.0000035762787,
+          -5.0
+        ],
+        [
+          -1200.0,
+          1800.0000023841858,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_1_1",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -1000,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -1200.0,
+          1680.0000035762787,
+          -5.0
+        ],
+        [
+          -800.0,
+          1800.0000023841858,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_1_2",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -600,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -800.0,
+          1680.0000035762787,
+          -5.0
+        ],
+        [
+          -400.0,
+          1800.0000023841858,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_1_3",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -200,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -400.0,
+          1680.0000035762787,
+          -5.0
+        ],
+        [
+          7.347881086862668e-15,
+          1800.0000023841858,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_1_4",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        200,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -7.347880356916295e-15,
+          1680.0000035762787,
+          -5.0
+        ],
+        [
+          400.0,
+          1800.0000023841858,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_1_5",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        600,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          400.0,
+          1680.0000035762787,
+          -5.0
+        ],
+        [
+          800.0,
+          1800.0000023841858,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_1_6",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1000,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          800.0,
+          1680.0000035762787,
+          -5.0
+        ],
+        [
+          1200.0,
+          1800.0000023841858,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideBay_1_7",
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1400,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1200.0,
+          1680.0000035762787,
+          -5.0
+        ],
+        [
+          1600.0,
+          1800.0000023841858,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "SideEnd_1",
+      "mesh": "SM_ShellWallBayNarrow",
+      "location_cm": [
+        1660,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        0.6,
+        1,
+        0.8289473684210527
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          1600.0,
+          1680.0000035762787,
+          -5.0
+        ],
+        [
+          1720.0,
+          1800.0000023841858,
+          624.9999920945419
+        ]
+      ]
+    },
+    {
+      "key": "Cutaway_0",
+      "mesh": "SM_ShellCutawaySill",
+      "location_cm": [
+        -1530,
+        -1270,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1.911764705882353,
+        1.3934426229508197,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Fit existing 650cm sill span and 170cm depth; keep low broken top.",
+      "expected_world_bounds_cm": [
+        [
+          -1615.0000019933357,
+          -1595.0000091160045,
+          -5.0
+        ],
+        [
+          -1444.9999980066643,
+          -944.9999908839955,
+          66.99999690055847
+        ]
+      ]
+    },
+    {
+      "key": "Cutaway_1",
+      "mesh": "SM_ShellCutawaySill",
+      "location_cm": [
+        -1530,
+        -480,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1.911764705882353,
+        1.3934426229508197,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Fit existing 650cm sill span and 170cm depth; keep low broken top.",
+      "expected_world_bounds_cm": [
+        [
+          -1615.0000019933357,
+          -805.0000091160045,
+          -5.0
+        ],
+        [
+          -1444.9999980066643,
+          -154.9999908839955,
+          66.99999690055847
+        ]
+      ]
+    },
+    {
+      "key": "Cutaway_2",
+      "mesh": "SM_ShellCutawaySill",
+      "location_cm": [
+        -1530,
+        400,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1.911764705882353,
+        1.3934426229508197,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Fit existing 650cm sill span and 170cm depth; keep low broken top.",
+      "expected_world_bounds_cm": [
+        [
+          -1615.0000019933357,
+          74.99999088399551,
+          -5.0
+        ],
+        [
+          -1444.9999980066643,
+          725.0000091160045,
+          66.99999690055847
+        ]
+      ]
+    },
+    {
+      "key": "Cutaway_3",
+      "mesh": "SM_ShellCutawaySill",
+      "location_cm": [
+        -1530,
+        1220,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1.911764705882353,
+        1.3934426229508197,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Fit existing 650cm sill span and 170cm depth; keep low broken top.",
+      "expected_world_bounds_cm": [
+        [
+          -1615.0000019933357,
+          894.9999908839955,
+          -5.0
+        ],
+        [
+          -1444.9999980066643,
+          1545.0000091160045,
+          66.99999690055847
+        ]
+      ]
+    },
+    {
+      "key": "CutawayReturn_-1",
+      "mesh": "SM_ShellCutawayReturn",
+      "location_cm": [
+        -1540,
+        -1680,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -1601.0000014305115,
+          -1737.499998807907,
+          -5.0
+        ],
+        [
+          -1478.9999985694885,
+          -1614.9999964237213,
+          100.9999942779541
+        ]
+      ]
+    },
+    {
+      "key": "CutawayReturn_1",
+      "mesh": "SM_ShellCutawayReturn",
+      "location_cm": [
+        -1540,
+        1680,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -1601.0000014305115,
+          1614.9999964237213,
+          -5.0
+        ],
+        [
+          -1478.9999985694885,
+          1737.499998807907,
+          100.9999942779541
+        ]
+      ]
+    },
+    {
+      "key": "RearInset_0",
+      "mesh": "SM_ShellRearInset",
+      "location_cm": [
+        1651,
+        -1120,
+        161.91758544603957
+      ],
+      "yaw": 90,
+      "scale": [
+        1.0654205607476634,
+        1,
+        1.0274724978609466
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Recess/header union Z165..539; plan Z340 would raise its top to707.",
+      "expected_world_bounds_cm": [
+        [
+          1627.9999995827675,
+          -1348.0000111767065,
+          165.0
+        ],
+        [
+          1669.0000007152557,
+          -891.9999888232935,
+          539.0
+        ]
+      ]
+    },
+    {
+      "key": "RearInset_1",
+      "mesh": "SM_ShellRearInset",
+      "location_cm": [
+        1651,
+        -540,
+        161.91758544603957
+      ],
+      "yaw": 90,
+      "scale": [
+        1.0654205607476634,
+        1,
+        1.0274724978609466
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Recess/header union Z165..539; plan Z340 would raise its top to707.",
+      "expected_world_bounds_cm": [
+        [
+          1627.9999995827675,
+          -768.0000111767065,
+          165.0
+        ],
+        [
+          1669.0000007152557,
+          -311.9999888232935,
+          539.0
+        ]
+      ]
+    },
+    {
+      "key": "RearInset_2",
+      "mesh": "SM_ShellRearInset",
+      "location_cm": [
+        1651,
+        870,
+        161.91758544603957
+      ],
+      "yaw": 90,
+      "scale": [
+        1.0654205607476634,
+        1,
+        1.0274724978609466
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Recess/header union Z165..539; plan Z340 would raise its top to707.",
+      "expected_world_bounds_cm": [
+        [
+          1627.9999995827675,
+          641.9999888232935,
+          165.0
+        ],
+        [
+          1669.0000007152557,
+          1098.0000111767065,
+          539.0
+        ]
+      ]
+    },
+    {
+      "key": "RearInset_3",
+      "mesh": "SM_ShellRearInset",
+      "location_cm": [
+        1651,
+        1360,
+        161.91758544603957
+      ],
+      "yaw": 90,
+      "scale": [
+        1.0654205607476634,
+        1,
+        1.0274724978609466
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Recess/header union Z165..539; plan Z340 would raise its top to707.",
+      "expected_world_bounds_cm": [
+        [
+          1627.9999995827675,
+          1131.9999888232935,
+          165.0
+        ],
+        [
+          1669.0000007152557,
+          1588.0000111767065,
+          539.0
+        ]
+      ]
+    },
+    {
+      "key": "PipeSaddle_0",
+      "mesh": "SM_ShellPipeStandoff",
+      "location_cm": [
+        -1000,
+        -1620,
+        425
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Saddle is local Z36cm; seat at existing rack Z461.",
+      "expected_world_bounds_cm": [
+        [
+          -1018.0000007152557,
+          -1642.4000006914139,
+          427.0000010728836
+        ],
+        [
+          -981.9999992847443,
+          -1579.1035306453705,
+          483.0000042915344
+        ]
+      ]
+    },
+    {
+      "key": "PipeSaddle_1",
+      "mesh": "SM_ShellPipeStandoff",
+      "location_cm": [
+        -500,
+        -1620,
+        425
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Saddle is local Z36cm; seat at existing rack Z461.",
+      "expected_world_bounds_cm": [
+        [
+          -518.0000007152557,
+          -1642.4000006914139,
+          427.0000010728836
+        ],
+        [
+          -481.99999928474426,
+          -1579.1035306453705,
+          483.0000042915344
+        ]
+      ]
+    },
+    {
+      "key": "PipeSaddle_2",
+      "mesh": "SM_ShellPipeStandoff",
+      "location_cm": [
+        0,
+        -1620,
+        425
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Saddle is local Z36cm; seat at existing rack Z461.",
+      "expected_world_bounds_cm": [
+        [
+          -18.000000715255737,
+          -1642.4000006914139,
+          427.0000010728836
+        ],
+        [
+          18.000000715255737,
+          -1579.1035306453705,
+          483.0000042915344
+        ]
+      ]
+    },
+    {
+      "key": "PipeSaddle_3",
+      "mesh": "SM_ShellPipeStandoff",
+      "location_cm": [
+        500,
+        -1620,
+        425
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Saddle is local Z36cm; seat at existing rack Z461.",
+      "expected_world_bounds_cm": [
+        [
+          481.99999928474426,
+          -1642.4000006914139,
+          427.0000010728836
+        ],
+        [
+          518.0000007152557,
+          -1579.1035306453705,
+          483.0000042915344
+        ]
+      ]
+    },
+    {
+      "key": "PipeSaddle_4",
+      "mesh": "SM_ShellPipeStandoff",
+      "location_cm": [
+        1000,
+        -1620,
+        425
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "Saddle is local Z36cm; seat at existing rack Z461.",
+      "expected_world_bounds_cm": [
+        [
+          981.9999992847443,
+          -1642.4000006914139,
+          427.0000010728836
+        ],
+        [
+          1018.0000007152557,
+          -1579.1035306453705,
+          483.0000042915344
+        ]
+      ]
+    },
+    {
+      "key": "CableTray_0",
+      "mesh": "SM_ShellCableTray",
+      "location_cm": [
+        -600,
+        1660,
+        520
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -710.0000023841858,
+          1643.5999995470047,
+          521.3999998569489
+        ],
+        [
+          -489.9999976158142,
+          1691.999996304512,
+          551.9999992847443
+        ]
+      ]
+    },
+    {
+      "key": "CableTray_1",
+      "mesh": "SM_ShellCableTray",
+      "location_cm": [
+        100,
+        1660,
+        520
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          -10.000002384185793,
+          1643.5999995470047,
+          521.3999998569489
+        ],
+        [
+          210.0000023841858,
+          1691.999996304512,
+          551.9999992847443
+        ]
+      ]
+    },
+    {
+      "key": "CableTray_2",
+      "mesh": "SM_ShellCableTray",
+      "location_cm": [
+        800,
+        1660,
+        520
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "reason": "",
+      "expected_world_bounds_cm": [
+        [
+          689.9999976158142,
+          1643.5999995470047,
+          521.3999998569489
+        ],
+        [
+          910.0000023841858,
+          1691.999996304512,
+          551.9999992847443
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        -1300,
+        -1686.9999997615814,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall tile.",
+      "id": "p149",
+      "x": -1300,
+      "y": -1665,
+      "z": 160,
+      "zone": "left pipe run",
+      "key": "Dress_148",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -1420.0000047683716,
+          -1693.0,
+          160.0
+        ],
+        [
+          -1179.9999952316284,
+          -1679.099998652935,
+          480.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanelAlt",
+      "location_cm": [
+        -700,
+        -1686.9999997615814,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall tile.",
+      "id": "p151",
+      "x": -700,
+      "y": -1665,
+      "z": 160,
+      "zone": "left pipe run",
+      "key": "Dress_150",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -820.0000047683716,
+          -1693.0,
+          160.0
+        ],
+        [
+          -579.9999952316284,
+          -1679.099998652935,
+          480.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        100,
+        -1686.9999997615814,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall tile.",
+      "id": "p153",
+      "x": 100,
+      "y": -1665,
+      "z": 160,
+      "zone": "left pipe run",
+      "key": "Dress_152",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -20.000004768371582,
+          -1693.0,
+          160.0
+        ],
+        [
+          220.00000476837158,
+          -1679.099998652935,
+          480.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanelAlt",
+      "location_cm": [
+        900,
+        -1686.9999997615814,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall tile.",
+      "id": "p155",
+      "x": 900,
+      "y": -1665,
+      "z": 160,
+      "zone": "left pipe run",
+      "key": "Dress_154",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          779.9999952316284,
+          -1693.0,
+          160.0
+        ],
+        [
+          1020.0000047683716,
+          -1679.099998652935,
+          480.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        -1250,
+        1686.9999997615814,
+        160
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall tile.",
+      "id": "p157",
+      "x": -1250,
+      "y": 1665,
+      "z": 160,
+      "zone": "right electrical bay",
+      "key": "Dress_156",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -1370.0000047683716,
+          1679.099998652935,
+          160.0
+        ],
+        [
+          -1129.9999952316284,
+          1693.0,
+          480.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanelNarrow",
+      "location_cm": [
+        -1070,
+        1686.9999997615814,
+        200
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p158",
+      "x": -1070,
+      "y": 1668,
+      "z": 200,
+      "zone": "right electrical bay",
+      "key": "Dress_157",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -1130.0000023841858,
+          1679.099998652935,
+          200.0
+        ],
+        [
+          -1009.9999976158142,
+          1693.0,
+          520.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanelAlt",
+      "location_cm": [
+        -350,
+        1686.9999997615814,
+        160
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall tile.",
+      "id": "p159",
+      "x": -350,
+      "y": 1665,
+      "z": 160,
+      "zone": "right electrical bay",
+      "key": "Dress_158",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -470.0000047683716,
+          1679.099998652935,
+          160.0
+        ],
+        [
+          -229.99999523162842,
+          1693.0,
+          480.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanelNarrow",
+      "location_cm": [
+        -170,
+        1686.9999997615814,
+        200
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p160",
+      "x": -170,
+      "y": 1668,
+      "z": 200,
+      "zone": "right electrical bay",
+      "key": "Dress_159",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -230.0000023841858,
+          1679.099998652935,
+          200.0
+        ],
+        [
+          -109.99999761581421,
+          1693.0,
+          520.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        550,
+        1686.9999997615814,
+        160
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall tile.",
+      "id": "p161",
+      "x": 550,
+      "y": 1665,
+      "z": 160,
+      "zone": "right electrical bay",
+      "key": "Dress_160",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          429.9999952316284,
+          1679.099998652935,
+          160.0
+        ],
+        [
+          670.0000047683716,
+          1693.0,
+          480.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanelNarrow",
+      "location_cm": [
+        730,
+        1686.9999997615814,
+        200
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p162",
+      "x": 730,
+      "y": 1668,
+      "z": 200,
+      "zone": "right electrical bay",
+      "key": "Dress_161",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          669.9999976158142,
+          1679.099998652935,
+          200.0
+        ],
+        [
+          790.0000023841858,
+          1693.0,
+          520.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanelAlt",
+      "location_cm": [
+        1250,
+        1686.9999997615814,
+        160
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall tile.",
+      "id": "p163",
+      "x": 1250,
+      "y": 1665,
+      "z": 160,
+      "zone": "right electrical bay",
+      "key": "Dress_162",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          1129.9999952316284,
+          1679.099998652935,
+          160.0
+        ],
+        [
+          1370.0000047683716,
+          1693.0,
+          480.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressPanelNarrow",
+      "location_cm": [
+        1430,
+        1686.9999997615814,
+        200
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p164",
+      "x": 1430,
+      "y": 1668,
+      "z": 200,
+      "zone": "right electrical bay",
+      "key": "Dress_163",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          1369.9999976158142,
+          1679.099998652935,
+          200.0
+        ],
+        [
+          1490.0000023841858,
+          1693.0,
+          520.0000047683716
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressRepairPlate",
+      "location_cm": [
+        -1100,
+        1679.69999858737,
+        280
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p166",
+      "x": -1100,
+      "y": 1672,
+      "z": 280,
+      "zone": "right electrical bay",
+      "key": "Dress_165",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth. Mounted on panel face where footprints overlap.",
+      "expected_world_bounds_cm": [
+        [
+          -1140.9999996423721,
+          1675.2999986112118,
+          286.0000002384186
+        ],
+        [
+          -1059.0000003576279,
+          1680.099998652935,
+          337.99999833106995
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressWallSpall",
+      "location_cm": [
+        -1100,
+        -1686.5000002384186,
+        90
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p167",
+      "x": -1100,
+      "y": -1670,
+      "z": 90,
+      "zone": "left pipe run",
+      "key": "Dress_166",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -1146.000000834465,
+          -1693.0,
+          90.0
+        ],
+        [
+          -1053.999999165535,
+          -1682.5000010728836,
+          150.0000023841858
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressRepairPlate",
+      "location_cm": [
+        -200,
+        1679.69999858737,
+        280
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p168",
+      "x": -200,
+      "y": 1672,
+      "z": 280,
+      "zone": "right electrical bay",
+      "key": "Dress_167",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth. Mounted on panel face where footprints overlap.",
+      "expected_world_bounds_cm": [
+        [
+          -240.99999964237213,
+          1675.2999986112118,
+          286.0000002384186
+        ],
+        [
+          -159.00000035762787,
+          1680.099998652935,
+          337.99999833106995
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressWallSpall",
+      "location_cm": [
+        -200,
+        -1686.5000002384186,
+        90
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p169",
+      "x": -200,
+      "y": -1670,
+      "z": 90,
+      "zone": "left pipe run",
+      "key": "Dress_168",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -246.00000083446503,
+          -1693.0,
+          90.0
+        ],
+        [
+          -153.99999916553497,
+          -1682.5000010728836,
+          150.0000023841858
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressRepairPlate",
+      "location_cm": [
+        700,
+        1679.69999858737,
+        280
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p170",
+      "x": 700,
+      "y": 1672,
+      "z": 280,
+      "zone": "right electrical bay",
+      "key": "Dress_169",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth. Mounted on panel face where footprints overlap.",
+      "expected_world_bounds_cm": [
+        [
+          659.0000003576279,
+          1675.2999986112118,
+          286.0000002384186
+        ],
+        [
+          740.9999996423721,
+          1680.099998652935,
+          337.99999833106995
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressWallSpall",
+      "location_cm": [
+        700,
+        -1686.5000002384186,
+        90
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p171",
+      "x": 700,
+      "y": -1670,
+      "z": 90,
+      "zone": "left pipe run",
+      "key": "Dress_170",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          653.999999165535,
+          -1693.0,
+          90.0
+        ],
+        [
+          746.000000834465,
+          -1682.5000010728836,
+          150.0000023841858
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressJunctionBox",
+      "location_cm": [
+        -650,
+        1681.000000268221,
+        355
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p186",
+      "x": -1000,
+      "y": 1642,
+      "z": 360,
+      "zone": "right electrical bay",
+      "key": "Dress_185",
+      "reason": "Under corresponding tray/drop, with cable entering upper box.",
+      "expected_world_bounds_cm": [
+        [
+          -686.0000014305115,
+          1674.1000004410744,
+          347.00000166893005
+        ],
+        [
+          -613.9999985694885,
+          1693.0,
+          389.00000035762787
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressJunctionBox",
+      "location_cm": [
+        100,
+        1681.000000268221,
+        355
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p187",
+      "x": 100,
+      "y": 1642,
+      "z": 390,
+      "zone": "right electrical bay",
+      "key": "Dress_186",
+      "reason": "Under corresponding tray/drop, with cable entering upper box.",
+      "expected_world_bounds_cm": [
+        [
+          63.999998569488525,
+          1674.1000004410744,
+          347.00000166893005
+        ],
+        [
+          136.00000143051147,
+          1693.0,
+          389.00000035762787
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressJunctionBox",
+      "location_cm": [
+        850,
+        1681.000000268221,
+        355
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p188",
+      "x": 1200,
+      "y": 1642,
+      "z": 350,
+      "zone": "right electrical bay",
+      "key": "Dress_187",
+      "reason": "Under corresponding tray/drop, with cable entering upper box.",
+      "expected_world_bounds_cm": [
+        [
+          813.9999985694885,
+          1674.1000004410744,
+          347.00000166893005
+        ],
+        [
+          886.0000014305115,
+          1693.0,
+          389.00000035762787
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressCableLoop",
+      "location_cm": [
+        -900,
+        1688.499999821186,
+        300
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p189",
+      "x": -900,
+      "y": 1628,
+      "z": 300,
+      "zone": "right electrical bay",
+      "key": "Dress_188",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -944.9999988079071,
+          1678.3297635912895,
+          301.9401900470257
+        ],
+        [
+          -855.0000011920929,
+          1693.0,
+          356.99999928474426
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressCableLoop",
+      "location_cm": [
+        -100,
+        1675.599998474121,
+        300
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p190",
+      "x": -100,
+      "y": 1628,
+      "z": 300,
+      "zone": "right electrical bay",
+      "key": "Dress_189",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth. Mounted on panel face where footprints overlap.",
+      "expected_world_bounds_cm": [
+        [
+          -144.9999988079071,
+          1665.4297622442245,
+          301.9401900470257
+        ],
+        [
+          -55.000001192092896,
+          1680.099998652935,
+          356.99999928474426
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressCableLoop",
+      "location_cm": [
+        600,
+        1675.599998474121,
+        300
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p191",
+      "x": 600,
+      "y": 1628,
+      "z": 300,
+      "zone": "right electrical bay",
+      "key": "Dress_190",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth. Mounted on panel face where footprints overlap.",
+      "expected_world_bounds_cm": [
+        [
+          555.0000011920929,
+          1665.4297622442245,
+          301.9401900470257
+        ],
+        [
+          644.9999988079071,
+          1680.099998652935,
+          356.99999928474426
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressCableLoop",
+      "location_cm": [
+        1300,
+        1675.599998474121,
+        300
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p192",
+      "x": 1300,
+      "y": 1628,
+      "z": 300,
+      "zone": "right electrical bay",
+      "key": "Dress_191",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth. Mounted on panel face where footprints overlap.",
+      "expected_world_bounds_cm": [
+        [
+          1255.000001192093,
+          1665.4297622442245,
+          301.9401900470257
+        ],
+        [
+          1344.999998807907,
+          1680.099998652935,
+          356.99999928474426
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressCableDrop",
+      "location_cm": [
+        -650,
+        1689.000000089407,
+        376.9811005592346
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p193",
+      "x": -700,
+      "y": 1610,
+      "z": 220,
+      "zone": "right electrical bay",
+      "key": "Dress_192",
+      "reason": "Top clip meets tray underside at Z522.",
+      "expected_world_bounds_cm": [
+        [
+          -655.0000000745058,
+          1681.000000268221,
+          378.98110051453114
+        ],
+        [
+          -644.9999999254942,
+          1693.0,
+          522.0
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressCableDrop",
+      "location_cm": [
+        100,
+        1689.000000089407,
+        376.9811005592346
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p194",
+      "x": 300,
+      "y": 1610,
+      "z": 220,
+      "zone": "right electrical bay",
+      "key": "Dress_193",
+      "reason": "Top clip meets tray underside at Z522.",
+      "expected_world_bounds_cm": [
+        [
+          94.9999999254942,
+          1681.000000268221,
+          378.98110051453114
+        ],
+        [
+          105.0000000745058,
+          1693.0,
+          522.0
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressCableDrop",
+      "location_cm": [
+        850,
+        1689.000000089407,
+        376.9811005592346
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p195",
+      "x": 1100,
+      "y": 1610,
+      "z": 220,
+      "zone": "right electrical bay",
+      "key": "Dress_194",
+      "reason": "Top clip meets tray underside at Z522.",
+      "expected_world_bounds_cm": [
+        [
+          844.9999999254942,
+          1681.000000268221,
+          378.98110051453114
+        ],
+        [
+          855.0000000745058,
+          1693.0,
+          522.0
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressBreaker",
+      "location_cm": [
+        480,
+        1667.0999991297722,
+        150
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall only.",
+      "id": "p196",
+      "x": 480,
+      "y": 1605,
+      "z": 150,
+      "zone": "right electrical bay",
+      "key": "Dress_195",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth. Mounted on panel face where footprints overlap.",
+      "expected_world_bounds_cm": [
+        [
+          445.01688063144684,
+          1659.09999781847,
+          150.99999904632568
+        ],
+        [
+          505.0,
+          1680.099998652935,
+          234.18035507202148
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressGangBox",
+      "location_cm": [
+        -1100,
+        1687.9999999254942,
+        145
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p197",
+      "x": -1100,
+      "y": 1612,
+      "z": 145,
+      "zone": "right electrical bay",
+      "key": "Dress_196",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -1117.000000178814,
+          1685.0999998226762,
+          145.99999979138374
+        ],
+        [
+          -1082.999999821186,
+          1693.0,
+          160.00000059604645
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressGangBox",
+      "location_cm": [
+        -200,
+        1687.9999999254942,
+        145
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p198",
+      "x": -200,
+      "y": 1612,
+      "z": 145,
+      "zone": "right electrical bay",
+      "key": "Dress_197",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          -217.00000017881393,
+          1685.0999998226762,
+          145.99999979138374
+        ],
+        [
+          -182.99999982118607,
+          1693.0,
+          160.00000059604645
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressGangBox",
+      "location_cm": [
+        700,
+        1687.9999999254942,
+        145
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p199",
+      "x": 700,
+      "y": 1612,
+      "z": 145,
+      "zone": "right electrical bay",
+      "key": "Dress_198",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          682.9999998211861,
+          1685.0999998226762,
+          145.99999979138374
+        ],
+        [
+          717.0000001788139,
+          1693.0,
+          160.00000059604645
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressGangBox",
+      "location_cm": [
+        1400,
+        1687.9999999254942,
+        145
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p200",
+      "x": 1400,
+      "y": 1612,
+      "z": 145,
+      "zone": "right electrical bay",
+      "key": "Dress_199",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          1382.999999821186,
+          1685.0999998226762,
+          145.99999979138374
+        ],
+        [
+          1417.000000178814,
+          1693.0,
+          160.00000059604645
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressLouver",
+      "location_cm": [
+        1450,
+        1673.0999986231327,
+        260
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p203",
+      "x": 1450,
+      "y": 1615,
+      "z": 260,
+      "zone": "right electrical bay",
+      "key": "Dress_202",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth. Mounted on panel face where footprints overlap.",
+      "expected_world_bounds_cm": [
+        [
+          1403.999999165535,
+          1667.208762332797,
+          261.0000020265579
+        ],
+        [
+          1496.000000834465,
+          1680.099998652935,
+          331.00000381469727
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressLouver",
+      "location_cm": [
+        -200,
+        1673.0999986231327,
+        240
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p204",
+      "x": -200,
+      "y": 1615,
+      "z": 240,
+      "zone": "right electrical bay",
+      "key": "Dress_203",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth. Mounted on panel face where footprints overlap.",
+      "expected_world_bounds_cm": [
+        [
+          -246.00000083446503,
+          1667.208762332797,
+          241.00000202655792
+        ],
+        [
+          -153.99999916553497,
+          1680.099998652935,
+          311.00000381469727
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressHatch",
+      "location_cm": [
+        1100,
+        1673.5999988913536,
+        180
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Dogs are handles. Not a wheel.",
+      "id": "p205",
+      "x": 1100,
+      "y": 1648,
+      "z": 180,
+      "zone": "right electrical bay",
+      "key": "Dress_204",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth. Mounted on panel face where footprints overlap.",
+      "expected_world_bounds_cm": [
+        [
+          1061.0000014305115,
+          1667.0999983847141,
+          181.00000202655792
+        ],
+        [
+          1138.9999985694885,
+          1680.099998652935,
+          258.99999618530273
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressMeter",
+      "location_cm": [
+        -1350,
+        -1670.0999992489815,
+        150
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p227",
+      "x": -1350,
+      "y": -1605,
+      "z": 150,
+      "zone": "left pipe run",
+      "key": "Dress_226",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth. Mounted on panel face where footprints overlap.",
+      "expected_world_bounds_cm": [
+        [
+          -1364.0000000596046,
+          -1680.099998652935,
+          151.0000005364418
+        ],
+        [
+          -1321.9999998807907,
+          -1664.49999833107,
+          185.0000023841858
+        ]
+      ]
+    },
+    {
+      "mesh": "SM_DressDownspout",
+      "location_cm": [
+        1400,
+        -1688.0000002980232,
+        80
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p228",
+      "x": 1400,
+      "y": -1610,
+      "z": 80,
+      "zone": "left pipe run",
+      "key": "Dress_227",
+      "reason": "Selected wall-mounted detail; recomputed mounting depth.",
+      "expected_world_bounds_cm": [
+        [
+          1394.0000001341105,
+          -1693.0,
+          86.08614385128021
+        ],
+        [
+          1409.6630677580833,
+          -1674.9244012236595,
+          250.00000476837158
+        ]
+      ]
+    }
+  ],
+  "conceal_preserve_collision": [
+    "TE_Room_FarWall",
+    "TE_Room_SideWall_-1",
+    "TE_Room_SideWall_1",
+    "TE_Room_FarLowerDamp",
+    "TE_Room_SideLowerDamp_-1",
+    "TE_Room_SideLowerDamp_1",
+    "TE_Room_CutawaySill_0",
+    "TE_Room_CutawaySill_1",
+    "TE_Room_CutawaySill_2",
+    "TE_Room_CutawaySill_3",
+    "TE_Room_CutawayCap_0",
+    "TE_Room_CutawayCap_1",
+    "TE_Room_CutawayCap_2",
+    "TE_Room_CutawayCap_3",
+    "TE_Room_RearInset_0",
+    "TE_Room_RearInset_1",
+    "TE_Room_RearInset_2",
+    "TE_Room_RearInset_3",
+    "TE_Room_RearHeader_0",
+    "TE_Room_RearHeader_1",
+    "TE_Room_RearHeader_2",
+    "TE_Room_RearHeader_3",
+    "TE_Room_PipeStandoff_0",
+    "TE_Room_PipeStandoff_1",
+    "TE_Room_PipeStandoff_2",
+    "TE_Room_PipeStandoff_3",
+    "TE_Room_PipeStandoff_4"
+  ]
+}

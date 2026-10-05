@@ -1,0 +1,19 @@
+{
+  "arguments": [
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "C:\\Projects\\to-deploy\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject",
+    "-ExecutePythonScript=C:\\Projects\\to-deploy\\horror-game\\tools\\record_encounter.py",
+    "-RenderOffscreen",
+    "-ResX=1280",
+    "-ResY=720",
+    "-unattended",
+    "-nosplash",
+    "-nop4",
+    "-abslog=C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T222920-record_encounter\\engine.log",
+    "-DDC=InstalledNoZenLocalFallback",
+    "-LocalDataCachePath=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\derived-data",
+    "-UserDir=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\unreal-user",
+    "-ini:Engine:[Audio]:UnfocusedVolumeMultiplier=1.0"
+  ],
+  "script_sha256": "0e97b9788fdbb9ee43e368286c641d7948ffbb65131a9ec1ff213748bc58cb60"
+}

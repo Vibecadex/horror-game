@@ -1,0 +1,1011 @@
+{
+  "owner": "teddy-parity-floor-20261005",
+  "revision": "placements-v2",
+  "generator": "Placement-only art direction following iteration 2 comparison; existing FBXs unchanged",
+  "based_on_manifest_sha256": "e6f595b878e2bafe57b2d25ea633387f35de2141533b4e9fafbe21945dcd3da9",
+  "reviewed_gameplay": "evidence/implementation/20261005T071701-capture_parity_look/01-matched-gameplay.png",
+  "target": "study/visuals/direction-close-best.jpg",
+  "goal": "Raise common visible fragment scale from about 1-4 screen pixels toward 5-20 pixels, add occasional larger broken slabs and connect debris patches in the visible peripheral ring. Pixel sizes are visual targets, not measured acceptance.",
+  "changes": [
+    "Four EdgeSpall banks moved inward into the visible left, foreground and right art ring",
+    "Main RubbleScatter instances enlarged only in XY, with overlapping rotated supporting scatters",
+    "Only two FractureField_B branch meshes remain; no foreground scratch diagrams",
+    "MicroChips stays at prior physical scale; all Z scales remain one",
+    "No source mesh, original manifest, material, collision, actor or Unreal asset changed by this placement file"
+  ],
+  "recommended_placements": [
+    {
+      "mesh": "SM_ParityFractureField_A",
+      "location_cm": [
+        -680,
+        -450,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        17,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.07,
+        0.94,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Foreground damaged slab field"
+    },
+    {
+      "mesh": "SM_ParityFractureField_A",
+      "location_cm": [
+        490,
+        1020,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        79,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.92,
+        1.02,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Right perimeter broken plate field"
+    },
+    {
+      "mesh": "SM_ParityFractureField_B",
+      "location_cm": [
+        -400,
+        -870,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        82,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.63,
+        0.76,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Left bank fine fracture continuation"
+    },
+    {
+      "mesh": "SM_ParityFractureField_B",
+      "location_cm": [
+        650,
+        840,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -18,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.65,
+        0.72,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Right bank fine fracture continuation"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        -100,
+        -855,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        6,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.04,
+        0.96,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible left rubble bank"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        -680,
+        -730,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        38,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.98,
+        1.06,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Foreground-left rubble bank"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        -930,
+        0,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        84,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.02,
+        0.95,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Foreground rubble bank"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        410,
+        955,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -7,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.06,
+        1,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible right rubble bank"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        880,
+        -1200,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        1,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.89,
+        0.9,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Far left perimeter"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        1220,
+        420,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        90,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.95,
+        0.9,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Far perimeter"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        -230,
+        1350,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -4,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.94,
+        0.88,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Outer right perimeter"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        -390,
+        -780,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        23,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.67,
+        1.52,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        -90,
+        -830,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -51,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.8,
+        1.62,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        -690,
+        -520,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        81,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.61,
+        1.54,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        -850,
+        -850,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -34,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.72,
+        1.64,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        -1030,
+        -70,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        103,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.58,
+        1.65,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        -960,
+        450,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -7,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.76,
+        1.61,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        -390,
+        1080,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        88,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.66,
+        1.54,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        220,
+        995,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -33,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.82,
+        1.62,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        660,
+        860,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        22,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.61,
+        1.65,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        1080,
+        380,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        71,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.71,
+        1.61,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        790,
+        -810,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -22,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.6,
+        1.51,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        390,
+        -980,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        102,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.75,
+        1.64,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Visible medium-fragment ring"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        -60,
+        -760,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        72,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.17,
+        1.03,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Overlapping secondary breakup"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        -550,
+        -790,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -63,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.08,
+        1.19,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Overlapping secondary breakup"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        -850,
+        -200,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        14,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.14,
+        1.02,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Overlapping secondary breakup"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        280,
+        1010,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -75,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.12,
+        1.03,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Overlapping secondary breakup"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        900,
+        -470,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        54,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.06,
+        1.08,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Overlapping secondary breakup"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        810,
+        540,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -9,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.2,
+        1.09,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Overlapping secondary breakup"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        60,
+        -500,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        36,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.22,
+        1.13,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Sparse interior fragments"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        550,
+        240,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -37,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.33,
+        1.21,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Sparse interior fragments"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        -580,
+        40,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        117,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.27,
+        1.13,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Sparse interior fragments"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        -550,
+        700,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        32,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        1.16,
+        1.08,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Sparse interior fragments"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -500,
+        -830,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        33,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.95,
+        0.95,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -920,
+        -450,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        93,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.93,
+        0.93,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -1040,
+        270,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -44,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.87,
+        0.87,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -640,
+        830,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        69,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.93,
+        0.93,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        80,
+        1050,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -12,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.9,
+        0.9,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        650,
+        850,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        109,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.92,
+        0.92,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        1100,
+        230,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        68,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.88,
+        0.88,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        900,
+        -650,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -25,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.97,
+        0.97,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        400,
+        -980,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        97,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.9,
+        0.9,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -100,
+        -310,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        -46,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.8,
+        0.8,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -560,
+        80,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        125,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.81,
+        0.81,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        380,
+        290,
+        -5
+      ],
+      "rotation_deg": [
+        0,
+        13,
+        0
+      ],
+      "rotation_convention": "Unreal Rotator(pitch,yaw,roll)",
+      "scale": [
+        0.83,
+        0.83,
+        1
+      ],
+      "collision_profile": "NoCollision",
+      "cast_shadow": true,
+      "art_role": "Unchanged-scale fine aggregate"
+    }
+  ],
+  "count": 45,
+  "required_integration": "Use this recommended_placements array instead of original manifest transforms; existing imported static meshes can be reused. Set NoCollision and actor collision false. Review actual gameplay after applying brighter Aggregate and new abrasion material.",
+  "limits": "Placement proposal is based on the held reference-angle capture. Corner composition and movement visibility still need validation in the combined level."
+}

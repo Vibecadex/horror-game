@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "mode": "play",
+  "window": {
+    "Id": 6772,
+    "ProcessName": "UnrealEditor",
+    "MainWindowHandle": 5903360,
+    "MainWindowTitle": "TeddyBlueprint (64-bit Development PCD3D_SM6) ",
+    "Responding": true
+  },
+  "duplicate_launch_refused": true,
+  "physical_device_verified": false
+}

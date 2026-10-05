@@ -1,0 +1,509 @@
+{
+  "method": "Independent receipt/detail consistency, source-file hashes, original PNG pixel decode, full movie decode during lossless sampling; no Unreal invocation or binary asset inspection.",
+  "chamber": {
+    "path": "evidence/implementation/20261005T114820-verify_chamber_runtime/receipt.json",
+    "sha256": "e6ff17a7193e7eb8065f6dbc93b90847b35c749b1edbf962d15c33b4abb9c6cb",
+    "checks_passed": 28,
+    "host_exit_code": 0,
+    "details": {
+      "path": "evidence/implementation/20261005T114820-verify_chamber_runtime/details.json",
+      "sha256": "c610f266ec8c10521e6fac849e901718b4bc730a992f57091245064bf97f9b2b"
+    },
+    "detail_hash_matches_receipt": true,
+    "saved_actors": 35,
+    "surface_groups": {
+      "ChamberFloorOwned": {
+        "actor_count": 5,
+        "meshes": [
+          "/Game/TeddyEncounter/Chamber/Floor/SM_ChamberFractureBank_B_V2.SM_ChamberFractureBank_B_V2",
+          "/Game/TeddyEncounter/Chamber/Floor/SM_ChamberFractureDrift_C_V2.SM_ChamberFractureDrift_C_V2",
+          "/Game/TeddyEncounter/Chamber/Floor/SM_ChamberFractureFork_A_V2.SM_ChamberFractureFork_A_V2"
+        ]
+      },
+      "ChamberSlabsOwned": {
+        "actor_count": 4,
+        "meshes": [
+          "/Game/TeddyEncounter/Chamber/Floor/SM_ChamberSparseSlabs_V2.SM_ChamberSparseSlabs_V2"
+        ]
+      },
+      "ChamberCrustOwned": {
+        "actor_count": 5,
+        "meshes": [
+          "/Game/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_A_V2.SM_ChamberCrustBank_A_V2",
+          "/Game/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_B_V2.SM_ChamberCrustBank_B_V2"
+        ]
+      }
+    },
+    "runtime_cases": [
+      {
+        "name": "architectural-front-outside",
+        "samples": 12,
+        "fov_values": [
+          41.5
+        ],
+        "hidden_values": [
+          true
+        ],
+        "native_tick_retained": true
+      },
+      {
+        "name": "architectural-reverse-inside",
+        "samples": 12,
+        "fov_values": [
+          68.0
+        ],
+        "hidden_values": [
+          false
+        ],
+        "native_tick_retained": true
+      },
+      {
+        "name": "threshold-outside",
+        "samples": 12,
+        "fov_values": [
+          54.0
+        ],
+        "hidden_values": [
+          true
+        ],
+        "native_tick_retained": true
+      },
+      {
+        "name": "threshold-inside",
+        "samples": 12,
+        "fov_values": [
+          54.0
+        ],
+        "hidden_values": [
+          false
+        ],
+        "native_tick_retained": true
+      },
+      {
+        "name": "ordinary-gameplay-return",
+        "samples": 12,
+        "fov_values": [
+          54.0
+        ],
+        "hidden_values": [
+          true
+        ],
+        "native_tick_retained": true
+      }
+    ]
+  },
+  "room": {
+    "path": "evidence/implementation/20261005T114928-verify_full_room/receipt.json",
+    "sha256": "13cc47243a02bba61a3fdef23f5789082e02c5e96a45ab8a10c23738da0f793d",
+    "checks_passed": 28,
+    "host_exit_code": 0,
+    "old_extension_actor_count": 84,
+    "exact_cutaway_reuse_rows": 1,
+    "images": [
+      {
+        "path": "evidence/implementation/20261005T114928-verify_full_room/room-case-00.png",
+        "sha256": "3a92d9744c8759f455aa304dfb443a844907a92d3f0f96db076bfaaff916e183",
+        "case": 0,
+        "full_pixel_decode": true
+      },
+      {
+        "path": "evidence/implementation/20261005T114928-verify_full_room/room-case-02.png",
+        "sha256": "4c62d750528206c840ae195969c7f784ddd6bf27c9f6ca2ed9529b4590fbb3d5",
+        "case": 2,
+        "full_pixel_decode": true
+      },
+      {
+        "path": "evidence/implementation/20261005T114928-verify_full_room/room-case-03.png",
+        "sha256": "31b2a3c496c5afe4fccd204cf297f466a0743da5baf3d41c1582ea9ee12ca440",
+        "case": 3,
+        "full_pixel_decode": true
+      },
+      {
+        "path": "evidence/implementation/20261005T114928-verify_full_room/room-case-06.png",
+        "sha256": "3309a676789a5260a0b67636e334f4e992e6587f1e82ba05c1040c0f8bd1bb57",
+        "case": 6,
+        "full_pixel_decode": true
+      },
+      {
+        "path": "evidence/implementation/20261005T114928-verify_full_room/room-case-09.png",
+        "sha256": "96cac0e2a88bbfc11bdc12bd2b0283a4b193906a3df5507708108e591131c8ac",
+        "case": 9,
+        "full_pixel_decode": true
+      },
+      {
+        "path": "evidence/implementation/20261005T114928-verify_full_room/room-case-11.png",
+        "sha256": "c588850d6cbfa1ef1766988520ff595fe3b43c091292b4eb6598714dfb9da2db",
+        "case": 11,
+        "full_pixel_decode": true
+      }
+    ]
+  },
+  "native": {
+    "path": "evidence/chamber/20261005T095028Z/native-motion-20261005T115126/native-motion.mp4",
+    "sha256": "ac50f46812804509f4815f4d97310ad7e3beab8926eb6bba9ccc918cbfeac67d",
+    "hash_matches_receipt": true,
+    "receipt": {
+      "path": "evidence/chamber/20261005T095028Z/native-motion-20261005T115126/receipt.json",
+      "sha256": "564d61f826c41f962bf1aac3e5a192558daabc783382904101db7d4c9c7d8dce"
+    },
+    "width": 1280,
+    "height": 720,
+    "duration_seconds": 19.166667,
+    "decoded_frame_count": 572,
+    "full_decode_exit_code": 0,
+    "sampling": "Every fifteenth decoded frame, exact source PTS recorded; entire uncropped ungraded frames retained. This is sampled visual inspection, not continuous real-time playback or physical-device testing.",
+    "frames": [
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-001.png",
+        "sha256": "3e545c25cb71f1e95999601153fe6fe7d55f386f09090921e46a0bf7e46c20a5",
+        "source_frame_index": 0,
+        "source_timestamp_seconds": 0.0
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-002.png",
+        "sha256": "32174c3812d28ab3d2c26a0146c94762dd67e69c4f05f2a3a82a2ac187fc6051",
+        "source_frame_index": 15,
+        "source_timestamp_seconds": 0.533333
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-003.png",
+        "sha256": "122ff498e85435e1fb2315bc1f6d7e02b21483380e978a5d92326863fb361326",
+        "source_frame_index": 30,
+        "source_timestamp_seconds": 1.066667
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-004.png",
+        "sha256": "aa893d0c81492ceaea0d02ada212dcbe1e315da6974728cc51e3e71be75405ea",
+        "source_frame_index": 45,
+        "source_timestamp_seconds": 1.566667
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-005.png",
+        "sha256": "dcd5953853087804f9b1956d5a5eda0b14aedc6b648de2bb65619cd1b8c9578e",
+        "source_frame_index": 60,
+        "source_timestamp_seconds": 2.066667
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-006.png",
+        "sha256": "d911fffa44dded8c50ef6a60976a8c22ea2f74d7a4e50eeaccf44ebdaf5c6d1f",
+        "source_frame_index": 75,
+        "source_timestamp_seconds": 2.566667
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-007.png",
+        "sha256": "79e1e0d4b1c54507f47a565e210bc0d676d675aa8028f7682de6ecac4a6f9467",
+        "source_frame_index": 90,
+        "source_timestamp_seconds": 3.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-008.png",
+        "sha256": "174bbc47145ec2fb20fef512074de732122189d3e947e15878c7f7ef29ef744d",
+        "source_frame_index": 105,
+        "source_timestamp_seconds": 3.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-009.png",
+        "sha256": "0784ae9b9a0d2873885e9bbb8edc9f53526079564fe590546a48cb5aa612be05",
+        "source_frame_index": 120,
+        "source_timestamp_seconds": 4.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-010.png",
+        "sha256": "a0b4a943114f6de763a46aa364f18b13494183ca4518b5a0898b542f0d65d643",
+        "source_frame_index": 135,
+        "source_timestamp_seconds": 4.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-011.png",
+        "sha256": "82b61ac96e129ec8420663dbc67b54ed15b76eb7c947f00766c8f664c8da6d95",
+        "source_frame_index": 150,
+        "source_timestamp_seconds": 5.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-012.png",
+        "sha256": "920f2f09a1c3bd9745edeb211629671c47b60bc286b9ef852d69c4b558bb0a99",
+        "source_frame_index": 165,
+        "source_timestamp_seconds": 5.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-013.png",
+        "sha256": "2d91af2243b9ee4b4f2187ad33c9d99ed32b1499de980217e797d2e0ee9d793c",
+        "source_frame_index": 180,
+        "source_timestamp_seconds": 6.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-014.png",
+        "sha256": "1205e4d558a71b360ab7a448c29525df636d207e301009072dc4f977bb933f7e",
+        "source_frame_index": 195,
+        "source_timestamp_seconds": 6.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-015.png",
+        "sha256": "05686e040f1c80d5931e523f9cd4cc4a489752c26a805300cc8cfd6764e16742",
+        "source_frame_index": 210,
+        "source_timestamp_seconds": 7.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-016.png",
+        "sha256": "c6002156a4072f756f3207e258227fe74fd2a511a53993016f4c1a552eb1686a",
+        "source_frame_index": 225,
+        "source_timestamp_seconds": 7.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-017.png",
+        "sha256": "8e246387478da3aea9f8c5ad997f694c5032b9e1fbe712c8eeaae7312bf825dc",
+        "source_frame_index": 240,
+        "source_timestamp_seconds": 8.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-018.png",
+        "sha256": "65c405cc4a39f23bd2addd55e45d77571ee8bcf5b8f10c34593d0722097137fb",
+        "source_frame_index": 255,
+        "source_timestamp_seconds": 8.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-019.png",
+        "sha256": "423263574c297e733fcc2ab7c7c9395f5a85513e5ae15ca57b90789b7dee3695",
+        "source_frame_index": 270,
+        "source_timestamp_seconds": 9.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-020.png",
+        "sha256": "ad2c69ea76718c7815986530aa79d34d6dc456699c5fb4fa28fedf415797417b",
+        "source_frame_index": 285,
+        "source_timestamp_seconds": 9.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-021.png",
+        "sha256": "7cc4a216f46cb0053eb3a0f72674eaa16fe424348442bd06c59b189b4950ab6c",
+        "source_frame_index": 300,
+        "source_timestamp_seconds": 10.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-022.png",
+        "sha256": "ae8b50a3cbbd0408aba1517c2459771a284c1241032b6f4cbbe269538ec69a24",
+        "source_frame_index": 315,
+        "source_timestamp_seconds": 10.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-023.png",
+        "sha256": "d614e74722ceaa23404c1c67d708af09164c2874031f1782c7c53baf9616a175",
+        "source_frame_index": 330,
+        "source_timestamp_seconds": 11.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-024.png",
+        "sha256": "074502ba27db7b938670b1fe1c4dec9db48e4c50ac20a5ada56f684d1e01ba5f",
+        "source_frame_index": 345,
+        "source_timestamp_seconds": 11.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-025.png",
+        "sha256": "4b45c51670ad84325fbddccd78e0d8276127c3838f49c5b0f75580b25021db64",
+        "source_frame_index": 360,
+        "source_timestamp_seconds": 12.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-026.png",
+        "sha256": "59abfdc95eba1803c962691508712f9ef5095414b99092704acfad20fc174062",
+        "source_frame_index": 375,
+        "source_timestamp_seconds": 12.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-027.png",
+        "sha256": "b9ed6ab62633e603b74319626e9ed3554c409cc718a804cbb22da5c9ae50f060",
+        "source_frame_index": 390,
+        "source_timestamp_seconds": 13.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-028.png",
+        "sha256": "04977356fd8e824ff07346de13410f2d4f7374cb0b475d88f5fa1a04050579d4",
+        "source_frame_index": 405,
+        "source_timestamp_seconds": 13.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-029.png",
+        "sha256": "296856f7bda6fd526669a2fdb8b1c7209c0affea57daf4a244ede9abde02a55c",
+        "source_frame_index": 420,
+        "source_timestamp_seconds": 14.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-030.png",
+        "sha256": "c0dea695e09b2e8d5c3a78b7f1e974b83bf06d771533f80daaa3f1d5e738ab1c",
+        "source_frame_index": 435,
+        "source_timestamp_seconds": 14.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-031.png",
+        "sha256": "2b51c316339744ae002e5d8a89969cc24e0df0940bddbf72149845352d342b00",
+        "source_frame_index": 450,
+        "source_timestamp_seconds": 15.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-032.png",
+        "sha256": "4bca2238aa382d0b9753eaa64595e007095b7a59980bfc90c220a837a8b5fd4f",
+        "source_frame_index": 465,
+        "source_timestamp_seconds": 15.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-033.png",
+        "sha256": "af0b8432d4dc06697730834e38cc0db14b7884e2a9537c5c0dffaa80ecb78aae",
+        "source_frame_index": 480,
+        "source_timestamp_seconds": 16.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-034.png",
+        "sha256": "02bf2868a6b50d087ce1922424ecd2774eed29ac44680a8c37da520f85922171",
+        "source_frame_index": 495,
+        "source_timestamp_seconds": 16.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-035.png",
+        "sha256": "b78c27c1db4660020dc6fbce990e4c2f5a255c47b9f354af3fadb49327da1a25",
+        "source_frame_index": 510,
+        "source_timestamp_seconds": 17.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-036.png",
+        "sha256": "2da3f83efdedfbeb425a0c8e9fc54050abf986a31267f77de8c99040f83c56e7",
+        "source_frame_index": 525,
+        "source_timestamp_seconds": 17.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-037.png",
+        "sha256": "2551cf5be8a2a90b11300507d783d401859dd8a55b4d30adb60abbe20fe036ac",
+        "source_frame_index": 540,
+        "source_timestamp_seconds": 18.1
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-038.png",
+        "sha256": "0072c9a3f6a84875ccd88977521a2a69a83bce6aea03d8f6c4bb6469289ac47d",
+        "source_frame_index": 555,
+        "source_timestamp_seconds": 18.6
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-frames-15/frame-039.png",
+        "sha256": "2504f469fa689544de5095353a28c99594603dd336e8e4a481d8739d7485c303",
+        "source_frame_index": 570,
+        "source_timestamp_seconds": 19.1
+      }
+    ],
+    "contact_sheets": [
+      {
+        "path": "evidence/chamber-qa/final/native-samples-01.png",
+        "sha256": "a3839edbd020eca16edbe8d1969077202612c45f37b6c72e11fd49cb288ad5d9"
+      },
+      {
+        "path": "evidence/chamber-qa/final/native-samples-02.png",
+        "sha256": "945e8ef5fb87e07ce076277bbe0ee68712653e2d1195da13bf0a05cdb5b3617b"
+      }
+    ],
+    "no_audio_stream": true,
+    "isolated_map_automated_normal_input": true
+  },
+  "preservation": {
+    "path": "evidence/chamber/20261005T095028Z/final-preservation.json",
+    "sha256": "c40fd199e4885691f74e50b1b2b9d14888b28136e88b6ec520eb6d7d9963c2cd",
+    "result": {
+      "passed": true,
+      "utc": "2026-10-05T11:52:57.131012+00:00",
+      "method": "Byte hashes only, no binary asset inspection",
+      "validation_snapshot": "C:\\Projects\\to-deploy\\horror-game\\evidence\\chamber\\20261005T095028Z\\final-surface-v2-baseline.json",
+      "active_assets": 175,
+      "validation_drift": [],
+      "preexisting_changed": [
+        "TeddyBlueprint/Content/Maps/TeddyEncounter.umap"
+      ],
+      "new_assets": [
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Blueprints/BP_ChamberCutaway.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_A.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_A_V2.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_B.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_B_V2.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureBank_B.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureBank_B_V2.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureDrift_C.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureDrift_C_V2.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureFork_A.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureFork_A_V2.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberSparseSlabs.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberSparseSlabs_V2.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Concrete.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Dark.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Emissive.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorAggregate.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorConcrete.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorConcreteDark.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorConcreteLight.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorCrack.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorCrustConcrete.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorCrustConcreteDark.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorCrustConcreteLight.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorDark.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorSlabSurface.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Metal.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_PracticalLens.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Rust.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_ServiceIndicator.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Stencil.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberBulkhead.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberBulkheadWheel.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberDrum.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberDrumPair.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberServiceDoorBay.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Concrete_Color.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Concrete_Normal.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Concrete_Roughness.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Oxide_Color.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Oxide_Normal.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Oxide_Roughness.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Recess_Color.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Recess_Normal.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Recess_Roughness.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Steel_Color.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Steel_Normal.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Steel_Roughness.uasset",
+        "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_WallPatinaColor.uasset"
+      ],
+      "original_failures": [],
+      "sources": [
+        {
+          "name": "reference_video",
+          "path": "C:\\Projects\\to-deploy\\horror-scene\\WhatsApp Video 2026-10-04 at 16.53.31.mp4",
+          "sha256": "289b314d3578e76e7a8e916c31ef653c0bbea2fb97e21eea2100cb063069fdeb",
+          "unchanged": true
+        },
+        {
+          "name": "source_archive",
+          "path": "C:\\Projects\\to-deploy\\horror-scene\\BossShot.zip",
+          "sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+          "unchanged": true
+        },
+        {
+          "name": "teddy_model",
+          "path": "C:\\Projects\\to-deploy\\horror-game\\Assets\\ThirdParty\\HorrorTeddyBear\\horror-teddy-bear-monster.glb",
+          "sha256": "9fe8c87ab5eab6d05f19c936d8ae993d07727aa9871100118aa21452f7a9a8bb",
+          "unchanged": true
+        },
+        {
+          "name": "chamber-target-front.png",
+          "sha256": "f853bc67bfb3973f8c3097c829973634590bfb4b42df17ed54fcf65b156b6960",
+          "unchanged": true
+        },
+        {
+          "name": "chamber-target-reverse.png",
+          "sha256": "1728fb8239d4edde652c93c92bb441c211fe4b491fbf9c14d79413e1c60eff42",
+          "unchanged": true
+        },
+        {
+          "name": "direction-close-best.jpg",
+          "sha256": "93fbe5a65dd56b5015bdd951fbefa5d1a3d60951688a00d28b33343a721107a8",
+          "unchanged": true
+        }
+      ],
+      "original_files": 555,
+      "config_and_launcher_unchanged": true
+    },
+    "scope": "QA independently read and consistency-checked the integrator hash receipt. QA did not reread or hash Unreal binary assets."
+  }
+}

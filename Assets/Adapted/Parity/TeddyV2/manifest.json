@@ -1,0 +1,977 @@
+{
+  "owner": "teddy-parity-stitches-v2-20261005",
+  "status": "verified_skin_and_clips_ready_for_unreal",
+  "source": "Assets\\Adapted\\Teddy\\Teddy_Encounter.blend",
+  "source_sha256_before": "d03bc4a0ee204e260be6036cd7636390ea789fe9f13793f39d70093d47b5b565",
+  "source_sha256_after": "d03bc4a0ee204e260be6036cd7636390ea789fe9f13793f39d70093d47b5b565",
+  "provenance": "Original local V2 seam/thread geometry added to the preserved CC0-derived adapted teddy. Source and V1 outputs are retained. Existing source mesh, rig, UVs, weights and clips retained.",
+  "revision": "V2: crown route rotated from source X to source Y, dark seam diameter 2.4 cm, 13 weighted bridges, no crossing back continuation",
+  "generator": "tools/make_parity_teddy_v2.py",
+  "blender_version": "5.2.0 LTS",
+  "mesh_file": "Teddy_ParityV2.fbx",
+  "mesh_sha256": "e27c3a137136ed9b027c040eac7f12017734b4760e6c8c799ec016da55b12ded",
+  "source_body_vertices": 10982,
+  "added_vertices": 5388,
+  "added_triangles": 2738,
+  "total_triangles": 24698,
+  "total_vertices": 16370,
+  "source_body_vertices_uvs_weights_unchanged": true,
+  "bind_bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "head_local_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tail_local_m": [
+        0.0,
+        0.0,
+        0.46000000834465027
+      ],
+      "matrix_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "pelvis",
+      "parent": "root",
+      "head_local_m": [
+        0.0,
+        0.2759999930858612,
+        1.3799999952316284
+      ],
+      "tail_local_m": [
+        0.0,
+        0.2759999930858612,
+        1.9780000448226929
+      ],
+      "matrix_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          0.2759999930858612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.3799999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "spine",
+      "parent": "pelvis",
+      "head_local_m": [
+        0.0,
+        0.2759999930858612,
+        1.9780000448226929
+      ],
+      "tail_local_m": [
+        0.0,
+        0.09199999272823334,
+        2.943999767303467
+      ],
+      "matrix_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.18711215257644653,
+          -0.982338547706604,
+          0.2759999930858612
+        ],
+        [
+          0.0,
+          0.982338547706604,
+          -0.18711215257644653,
+          1.9780000448226929
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "spine",
+      "head_local_m": [
+        0.0,
+        0.09199999272823334,
+        2.943999767303467
+      ],
+      "tail_local_m": [
+        0.0,
+        -0.23000000417232513,
+        4.093999862670898
+      ],
+      "matrix_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.26962989568710327,
+          -0.9629639983177185,
+          0.09200000762939453
+        ],
+        [
+          0.0,
+          0.9629639983177185,
+          -0.26962989568710327,
+          2.943999767303467
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "upperarm_L",
+      "parent": "spine",
+      "head_local_m": [
+        1.1039999723434448,
+        0.18399998545646667,
+        2.989999771118164
+      ],
+      "tail_local_m": [
+        1.3799999952316284,
+        -0.2070000022649765,
+        2.115999937057495
+      ],
+      "matrix_local": [
+        [
+          0.8737376928329468,
+          0.27698034048080444,
+          0.3998294472694397,
+          1.1039999723434448
+        ],
+        [
+          -0.2769809365272522,
+          -0.3923889696598053,
+          0.8771039247512817,
+          0.18400000035762787
+        ],
+        [
+          0.3998294174671173,
+          -0.8771045207977295,
+          -0.266127347946167,
+          2.989999771118164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "forearm_L",
+      "parent": "upperarm_L",
+      "head_local_m": [
+        1.3799999952316284,
+        -0.2070000022649765,
+        2.115999937057495
+      ],
+      "tail_local_m": [
+        1.5180000066757202,
+        -0.7359999418258667,
+        1.3339999914169312
+      ],
+      "matrix_local": [
+        [
+          0.9530540704727173,
+          0.14463075995445251,
+          0.2660245895385742,
+          1.3799998760223389
+        ],
+        [
+          -0.1446315199136734,
+          -0.5544178485870361,
+          0.8195739388465881,
+          -0.2070000022649765
+        ],
+        [
+          0.2660243809223175,
+          -0.819574236869812,
+          -0.507472813129425,
+          2.115999937057495
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "hand_L",
+      "parent": "forearm_L",
+      "head_local_m": [
+        1.5180000066757202,
+        -0.7359999418258667,
+        1.3339999914169312
+      ],
+      "tail_local_m": [
+        1.5640000104904175,
+        -0.8739999532699585,
+        0.9200000166893005
+      ],
+      "matrix_local": [
+        [
+          0.9839691519737244,
+          0.10482844710350037,
+          0.1442728340625763,
+          1.5179998874664307
+        ],
+        [
+          -0.10482918471097946,
+          -0.31448543071746826,
+          0.943455696105957,
+          -0.7359999418258667
+        ],
+        [
+          0.1442725658416748,
+          -0.9434559941291809,
+          -0.2984555959701538,
+          1.3339999914169312
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "upperarm_R",
+      "parent": "spine",
+      "head_local_m": [
+        -1.1039999723434448,
+        0.18399998545646667,
+        2.989999771118164
+      ],
+      "tail_local_m": [
+        -1.3799999952316284,
+        -0.2070000022649765,
+        2.115999937057495
+      ],
+      "matrix_local": [
+        [
+          0.8737376928329468,
+          -0.27698034048080444,
+          -0.3998294472694397,
+          -1.1039999723434448
+        ],
+        [
+          0.2769809365272522,
+          -0.3923889696598053,
+          0.8771039247512817,
+          0.18400000035762787
+        ],
+        [
+          -0.3998294174671173,
+          -0.8771045207977295,
+          -0.266127347946167,
+          2.989999771118164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "forearm_R",
+      "parent": "upperarm_R",
+      "head_local_m": [
+        -1.3799999952316284,
+        -0.2070000022649765,
+        2.115999937057495
+      ],
+      "tail_local_m": [
+        -1.5180000066757202,
+        -0.7359999418258667,
+        1.3339999914169312
+      ],
+      "matrix_local": [
+        [
+          0.9530540704727173,
+          -0.14463075995445251,
+          -0.2660245895385742,
+          -1.3799998760223389
+        ],
+        [
+          0.1446315199136734,
+          -0.5544178485870361,
+          0.8195739388465881,
+          -0.2070000022649765
+        ],
+        [
+          -0.2660243809223175,
+          -0.819574236869812,
+          -0.507472813129425,
+          2.115999937057495
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "hand_R",
+      "parent": "forearm_R",
+      "head_local_m": [
+        -1.5180000066757202,
+        -0.7359999418258667,
+        1.3339999914169312
+      ],
+      "tail_local_m": [
+        -1.5640000104904175,
+        -0.8739999532699585,
+        0.9200000166893005
+      ],
+      "matrix_local": [
+        [
+          0.9839691519737244,
+          -0.10482844710350037,
+          -0.1442728340625763,
+          -1.5179998874664307
+        ],
+        [
+          0.10482918471097946,
+          -0.31448543071746826,
+          0.943455696105957,
+          -0.7359999418258667
+        ],
+        [
+          -0.1442725658416748,
+          -0.9434559941291809,
+          -0.2984555959701538,
+          1.3339999914169312
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "thigh_L",
+      "parent": "pelvis",
+      "head_local_m": [
+        0.5979999899864197,
+        0.32199999690055847,
+        1.4719998836517334
+      ],
+      "tail_local_m": [
+        0.828000009059906,
+        0.2070000022649765,
+        0.7820000052452087
+      ],
+      "matrix_local": [
+        [
+          0.884381890296936,
+          0.3123475909233093,
+          0.34685218334198,
+          0.5979999899864197
+        ],
+        [
+          -0.31234800815582275,
+          -0.15617375075817108,
+          0.9370423555374146,
+          0.32199999690055847
+        ],
+        [
+          0.34685176610946655,
+          -0.9370425343513489,
+          -0.040556401014328,
+          1.4719998836517334
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "shin_L",
+      "parent": "thigh_L",
+      "head_local_m": [
+        0.828000009059906,
+        0.2070000022649765,
+        0.7820000052452087
+      ],
+      "tail_local_m": [
+        1.0579999685287476,
+        -0.0689999982714653,
+        0.2529999911785126
+      ],
+      "matrix_local": [
+        [
+          0.7723983526229858,
+          0.35967496037483215,
+          0.5234819650650024,
+          0.828000009059906
+        ],
+        [
+          -0.35967525839805603,
+          -0.4316099286079407,
+          0.8272523283958435,
+          0.2070000171661377
+        ],
+        [
+          0.5234817266464233,
+          -0.8272525668144226,
+          -0.20400914549827576,
+          0.781999945640564
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "foot_L",
+      "parent": "shin_L",
+      "head_local_m": [
+        1.0579999685287476,
+        -0.0689999982714653,
+        0.2529999911785126
+      ],
+      "tail_local_m": [
+        1.0579999685287476,
+        -0.6899999976158142,
+        0.11500000208616257
+      ],
+      "matrix_local": [
+        [
+          0.9999992847442627,
+          0.0,
+          -1.4156103134155273e-06,
+          1.0579999685287476
+        ],
+        [
+          1.7881393432617188e-07,
+          -0.9761871099472046,
+          0.21693040430545807,
+          -0.06899994611740112
+        ],
+        [
+          -2.0936131477355957e-06,
+          -0.21693043410778046,
+          -0.976186990737915,
+          0.25299984216690063
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "thigh_R",
+      "parent": "pelvis",
+      "head_local_m": [
+        -0.5979999899864197,
+        0.32199999690055847,
+        1.4719998836517334
+      ],
+      "tail_local_m": [
+        -0.828000009059906,
+        0.2070000022649765,
+        0.7820000052452087
+      ],
+      "matrix_local": [
+        [
+          0.884381890296936,
+          -0.3123475909233093,
+          -0.34685218334198,
+          -0.5979999899864197
+        ],
+        [
+          0.31234800815582275,
+          -0.15617375075817108,
+          0.9370423555374146,
+          0.32199999690055847
+        ],
+        [
+          -0.34685176610946655,
+          -0.9370425343513489,
+          -0.040556401014328,
+          1.4719998836517334
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "shin_R",
+      "parent": "thigh_R",
+      "head_local_m": [
+        -0.828000009059906,
+        0.2070000022649765,
+        0.7820000052452087
+      ],
+      "tail_local_m": [
+        -1.0579999685287476,
+        -0.0689999982714653,
+        0.2529999911785126
+      ],
+      "matrix_local": [
+        [
+          0.7723983526229858,
+          -0.35967496037483215,
+          -0.5234819650650024,
+          -0.828000009059906
+        ],
+        [
+          0.35967525839805603,
+          -0.4316099286079407,
+          0.8272523283958435,
+          0.2070000171661377
+        ],
+        [
+          -0.5234817266464233,
+          -0.8272525668144226,
+          -0.20400914549827576,
+          0.781999945640564
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "foot_R",
+      "parent": "shin_R",
+      "head_local_m": [
+        -1.0579999685287476,
+        -0.0689999982714653,
+        0.2529999911785126
+      ],
+      "tail_local_m": [
+        -1.0579999685287476,
+        -0.6899999976158142,
+        0.11500000208616257
+      ],
+      "matrix_local": [
+        [
+          0.9999992847442627,
+          0.0,
+          1.4156103134155273e-06,
+          -1.0579999685287476
+        ],
+        [
+          -1.7881393432617188e-07,
+          -0.9761871099472046,
+          0.21693040430545807,
+          -0.06899994611740112
+        ],
+        [
+          2.0936131477355957e-06,
+          -0.21693043410778046,
+          -0.976186990737915,
+          0.25299984216690063
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "added_geometry_weighting": "Nearest source triangle barycentric interpolation of existing skin weights; no new bones.",
+  "added_geometry_influencing_bones": [
+    "head",
+    "spine"
+  ],
+  "maximum_weight_normalization_error": 2.7370200765153285e-05,
+  "material_slots": [
+    "Material_0",
+    "SeamDark",
+    "StitchThread"
+  ],
+  "material_guidance": {
+    "Material_0": "Assign current tuned teddy cloth material.",
+    "SeamDark": "Near-black warm neutral, roughness .98; not emissive.",
+    "StitchThread": "Desaturated worn tan thread, roughness .87, low specular. About 1.5-2.1 cm diameter at full-size boss."
+  },
+  "stitches": [
+    {
+      "kind": "crown",
+      "span_cm": 12.573339635980988,
+      "diameter_cm": 1.652105064597326,
+      "center_m": [
+        0.12034763395786285,
+        -1.3343846797943115,
+        4.270269870758057
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 13.171044669780722,
+      "diameter_cm": 1.9252978992123952,
+      "center_m": [
+        0.13872100412845612,
+        -1.2355881929397583,
+        4.375459671020508
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 15.227355001432647,
+      "diameter_cm": 1.636007220427565,
+      "center_m": [
+        0.13214156031608582,
+        -1.0953677892684937,
+        4.467369556427002
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 12.373662687170427,
+      "diameter_cm": 2.0338805040253196,
+      "center_m": [
+        0.1088983416557312,
+        -1.0027145147323608,
+        4.506814002990723
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 12.065438613364398,
+      "diameter_cm": 1.9863617791690644,
+      "center_m": [
+        0.07109179347753525,
+        -0.8603693246841431,
+        4.560229301452637
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 16.416507490174382,
+      "diameter_cm": 1.7521723915668257,
+      "center_m": [
+        0.06089885160326958,
+        -0.7620901465415955,
+        4.5787672996521
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 14.216934623246868,
+      "diameter_cm": 1.6105040462910964,
+      "center_m": [
+        0.07399442046880722,
+        -0.6521813869476318,
+        4.582061290740967
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 12.024913275495786,
+      "diameter_cm": 2.056721834726437,
+      "center_m": [
+        0.11039955168962479,
+        -0.5190771222114563,
+        4.560959339141846
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 14.515012523171963,
+      "diameter_cm": 2.061859148463589,
+      "center_m": [
+        0.1357024908065796,
+        -0.406658411026001,
+        4.522969722747803
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 14.01826520421201,
+      "diameter_cm": 1.7974649566761254,
+      "center_m": [
+        0.1353222280740738,
+        -0.2618359923362732,
+        4.460666179656982
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 14.957799114347397,
+      "diameter_cm": 1.7289386014108308,
+      "center_m": [
+        0.11552674323320389,
+        -0.17381826043128967,
+        4.415038585662842
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 16.08136767764636,
+      "diameter_cm": 1.7931880127574467,
+      "center_m": [
+        0.07970783859491348,
+        -0.047415848821401596,
+        4.335914134979248
+      ]
+    },
+    {
+      "kind": "crown",
+      "span_cm": 15.699491135544157,
+      "diameter_cm": 1.9118796095986077,
+      "center_m": [
+        0.06067692115902901,
+        0.09339422732591629,
+        4.175890922546387
+      ]
+    }
+  ],
+  "clips": [
+    {
+      "name": "Idle",
+      "frames": 90,
+      "fps": 30,
+      "file": "Teddy_ParityV2_Idle.fbx",
+      "sha256": "3431cc79e3a7d1a6acff2c169f5078c4d149ac6947b287f7e6b9628048d69e64"
+    },
+    {
+      "name": "Walk",
+      "frames": 37,
+      "fps": 30,
+      "file": "Teddy_ParityV2_Walk.fbx",
+      "sha256": "4d9cfbc413daf4043f74bcb4b16a75bd6f22d246d7c846081504746f41e1b2eb"
+    },
+    {
+      "name": "Crawl",
+      "frames": 37,
+      "fps": 30,
+      "file": "Teddy_ParityV2_Crawl.fbx",
+      "sha256": "d66a535321891c64bbfb6aa0bb95addd77a417eaa9ad215671c2c93c06188fc6"
+    },
+    {
+      "name": "Attack",
+      "frames": 54,
+      "fps": 30,
+      "file": "Teddy_ParityV2_Attack.fbx",
+      "sha256": "ddabceb1b945edfa714cca29a15a73acf381a34186a80deb308fdfd7492b1ed7"
+    },
+    {
+      "name": "Hit",
+      "frames": 16,
+      "fps": 30,
+      "file": "Teddy_ParityV2_Hit.fbx",
+      "sha256": "fbefff5e1688977009da44a0a1ef9cff436b9a18613e20d1442c8aed424c1478"
+    },
+    {
+      "name": "Defeat",
+      "frames": 72,
+      "fps": 30,
+      "file": "Teddy_ParityV2_Defeat.fbx",
+      "sha256": "1e65d26ea563b9b427de0392a0709642b263058cb90243dae9e6102a82ef1761"
+    }
+  ],
+  "original_body_pose_checks": [
+    {
+      "clip": "Idle",
+      "frame": 1,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Idle",
+      "frame": 45,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Idle",
+      "frame": 90,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Walk",
+      "frame": 1,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Walk",
+      "frame": 19,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Walk",
+      "frame": 37,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Crawl",
+      "frame": 1,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Crawl",
+      "frame": 19,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Crawl",
+      "frame": 37,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Attack",
+      "frame": 1,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Attack",
+      "frame": 27,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Attack",
+      "frame": 54,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Hit",
+      "frame": 1,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Hit",
+      "frame": 8,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Hit",
+      "frame": 16,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Defeat",
+      "frame": 1,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Defeat",
+      "frame": 36,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    },
+    {
+      "clip": "Defeat",
+      "frame": 72,
+      "max_original_body_deformation_error_m": 0.0,
+      "passed": true
+    }
+  ],
+  "fbx_roundtrip": {
+    "passed": true,
+    "bone_count": 16,
+    "same_bone_names_and_hierarchy": true,
+    "max_bind_bone_head_error_m": 8.018984822674817e-07,
+    "triangles": 24698,
+    "material_slots": [
+      "Material_0",
+      "SeamDark",
+      "StitchThread"
+    ]
+  },
+  "unreal_import_guidance": "Import Teddy_ParityV2.fbx as a NEW SkeletalMesh using the existing encounter teddy Skeleton. Import materials/textures/animations false. Preserve original physics asset and six runtime clips. Map material slots by name. Reopen and render all active poses.",
+  "limits": "Local Blender source and FBX skeleton verified. Compatibility with the saved Unreal Skeleton, slot overrides, runtime animation and silhouette/visual parity still requires integration verification."
+}

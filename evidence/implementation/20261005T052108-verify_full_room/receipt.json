@@ -1,0 +1,23 @@
+{
+  "passed": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "independent_qa": true,
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "checks": {},
+  "room_actors": [],
+  "capsule_probes": [],
+  "walls": [],
+  "cases": [],
+  "images": [],
+  "method": "Fresh saved-map readback, transient PIE staging, saved key-route movement/dash, Pawn-profile capsule sweeps, projected character bounds and Visibility traces.",
+  "limitations": [
+    "NPC ticking/movement disabled for deterministic room checks; this is not a combat recording.",
+    "Player and boss are deliberately staged for edge/corner camera coverage.",
+    "NO_COLLISION decoration does not block traces. Its box intersections are hints; inspect the images.",
+    "Held screenshots hide the HUD to exclude the pause tint. They retain saved lighting/materials.",
+    "Passing geometry checks do not establish visual fidelity, physical input or user acceptance."
+  ],
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/verify_full_room.py\", line 477, in <module>\n    'hit_result_property_readback': {name: str(u.HitResult().get_editor_property(name))\n                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:/Projects/to-deploy/horror-game/tools/verify_full_room.py\", line 477, in <dictcomp>\n    'hit_result_property_readback': {name: str(u.HitResult().get_editor_property(name))\n                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nException: HitResult: Failed to find property 'blocking_hit' for attribute 'blocking_hit' on 'HitResult'\n",
+  "wall_seconds": 0.39000000013038516
+}

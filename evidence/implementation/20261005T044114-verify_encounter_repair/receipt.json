@@ -1,0 +1,561 @@
+{
+  "map": "/Game/Maps/TeddyEncounter",
+  "independent_qa": true,
+  "input_method": "Enhanced Input actions in a fresh PIE instance; physical keys not verified",
+  "staging": "No teleporting, health editing, asset saving or AI disabling. World paused temporarily for held screenshots.",
+  "checks": {
+    "no_input_stationary": true,
+    "movement_responds": true,
+    "aim_independent_of_movement": true,
+    "firing_creates_player_owned_shots": true,
+    "dash_accelerates": true,
+    "pause_action_freezes_time": true,
+    "pause_action_resumes_time": true,
+    "restart_action_restores_health": true
+  },
+  "states": [
+    {
+      "label": "no-input-before",
+      "wall_seconds": 2.75,
+      "game_seconds": 2.0071693062782288,
+      "pawn": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "yaw": -145.0,
+      "health": 100.0,
+      "boss": [
+        141.56859070702092,
+        -49.28098451170164,
+        227.15000200271606
+      ],
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "camera": [
+        -1707.2528350240577,
+        251.35348969499918,
+        1860.0036421355449
+      ],
+      "camera_rotation": [
+        -46.000000000000114,
+        0.0,
+        -0.0
+      ],
+      "fov": 48.0,
+      "paused": false
+    },
+    {
+      "label": "01-initial-composition-held",
+      "wall_seconds": 3.203999999910593,
+      "game_seconds": 2.461826805025339,
+      "pawn": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "yaw": -145.0,
+      "health": 100.0,
+      "boss": [
+        117.00705861275905,
+        -8.345097687931899,
+        227.15000200271606
+      ],
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "camera": [
+        -1717.8122083406327,
+        271.8235491176956,
+        1860.0003518979252
+      ],
+      "camera_rotation": [
+        -46.000000000000114,
+        0.0,
+        -0.0
+      ],
+      "fov": 48.0,
+      "paused": true
+    },
+    {
+      "label": "move-before",
+      "wall_seconds": 5.078999999910593,
+      "game_seconds": 2.8618268109858036,
+      "pawn": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "yaw": -145.0,
+      "health": 100.0,
+      "boss": [
+        95.3982365628064,
+        27.669605728655853,
+        227.15000200271606
+      ],
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "camera": [
+        -1722.4578819685391,
+        280.82745115603404,
+        1860.0
+      ],
+      "camera_rotation": [
+        -46.000000000000114,
+        0.0,
+        -0.0
+      ],
+      "fov": 48.0,
+      "paused": false
+    },
+    {
+      "label": "move-and-independent-aim",
+      "wall_seconds": 5.625,
+      "game_seconds": 3.4167829118669033,
+      "pawn": [
+        -88.17678685056185,
+        570.0,
+        85.14999961853027
+      ],
+      "yaw": 90.45091247558597,
+      "health": 100.0,
+      "boss": [
+        69.39411012915741,
+        79.65341799809568,
+        227.15000200271606
+      ],
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "camera": [
+        -1693.8813698692013,
+        314.73243796132084,
+        1860.0
+      ],
+      "camera_rotation": [
+        -46.000000000000114,
+        0.0,
+        -0.0
+      ],
+      "fov": 48.0,
+      "paused": false
+    },
+    {
+      "label": "02-after-firing-held",
+      "wall_seconds": 6.734999999869615,
+      "game_seconds": 4.522306311875582,
+      "pawn": [
+        -67.40798385388534,
+        570.0,
+        85.14999961853027
+      ],
+      "yaw": -73.93605041503905,
+      "health": 100.0,
+      "boss": [
+        47.34807368947586,
+        158.32022905500196,
+        227.15000200271606
+      ],
+      "boss_health": 264.0,
+      "boss_state": 0,
+      "camera": [
+        -1657.7566629752068,
+        355.2690184240941,
+        1860.0
+      ],
+      "camera_rotation": [
+        -46.000000000000114,
+        0.0,
+        -0.0
+      ],
+      "fov": 48.0,
+      "paused": true
+    },
+    {
+      "label": "after-dash",
+      "wall_seconds": 8.375,
+      "game_seconds": 5.203879315406084,
+      "pawn": [
+        -411.34256688264753,
+        570.0,
+        85.15000097385405
+      ],
+      "yaw": -73.93605041503905,
+      "health": 100.0,
+      "boss": [
+        16.303372446305403,
+        220.30028212958587,
+        227.15000200271606
+      ],
+      "boss_health": 264.0,
+      "boss_state": 0,
+      "camera": [
+        -1788.9595012346722,
+        384.816367977009,
+        1860.0
+      ],
+      "camera_rotation": [
+        -46.000000000000114,
+        0.0,
+        -0.0
+      ],
+      "fov": 48.0,
+      "paused": false
+    },
+    {
+      "label": "input-pause",
+      "wall_seconds": 8.984999999869615,
+      "game_seconds": 5.213638715445995,
+      "pawn": [
+        -412.53914248009994,
+        570.0,
+        85.15000097385405
+      ],
+      "yaw": -73.93605041503905,
+      "health": 100.0,
+      "boss": [
+        15.509207630940438,
+        220.94788399322897,
+        227.15000200271606
+      ],
+      "boss_health": 264.0,
+      "boss_state": 0,
+      "camera": [
+        -1792.904654623531,
+        385.32062510443575,
+        1860.0
+      ],
+      "camera_rotation": [
+        -46.000000000000114,
+        0.0,
+        -0.0
+      ],
+      "fov": 48.0,
+      "paused": true
+    },
+    {
+      "label": "restart",
+      "wall_seconds": 9.453999999910593,
+      "game_seconds": 0.008500199764966965,
+      "pawn": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "yaw": -145.0,
+      "health": 100.0,
+      "boss": [
+        249.54080174656704,
+        -229.23466957761173,
+        227.15000200271606
+      ],
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "camera": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "camera_rotation": [
+        0.0,
+        -145.0,
+        0.0
+      ],
+      "fov": 90.0,
+      "paused": false
+    },
+    {
+      "label": "03-after-restart-held",
+      "wall_seconds": 9.890999999828637,
+      "game_seconds": 0.515684999525547,
+      "pawn": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "yaw": -145.0,
+      "health": 100.0,
+      "boss": [
+        222.14163694367832,
+        -183.56939490613053,
+        227.15000200271606
+      ],
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "camera": [
+        -1674.5599944833766,
+        173.81417776588157,
+        1876.2292964426654
+      ],
+      "camera_rotation": [
+        -46.000000000000114,
+        0.0,
+        -0.0
+      ],
+      "fov": 48.0,
+      "paused": true
+    }
+  ],
+  "captures": [
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T044114-verify_encounter_repair\\01-initial-composition.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 860041,
+        "sha256": "bb818559813fe2890f15a39d07d0322f24d2bca851af7a66e1c29c28c05150e3",
+        "pixel_sha256": "e383bc12cae29f893a015245092b1bd12d235d0a6ee85d3854b086bbed9422f4",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      },
+      "state": {
+        "label": "01-initial-composition-held",
+        "wall_seconds": 3.203999999910593,
+        "game_seconds": 2.461826805025339,
+        "pawn": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "yaw": -145.0,
+        "health": 100.0,
+        "boss": [
+          117.00705861275905,
+          -8.345097687931899,
+          227.15000200271606
+        ],
+        "boss_health": 300.0,
+        "boss_state": 0,
+        "camera": [
+          -1717.8122083406327,
+          271.8235491176956,
+          1860.0003518979252
+        ],
+        "camera_rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 48.0,
+        "paused": true
+      },
+      "hud_hidden": true
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T044114-verify_encounter_repair\\02-after-firing.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 296695,
+        "sha256": "53d663829a86985bcd583228f58d566b32d841ee246b28ed451fc0c98aeea622",
+        "pixel_sha256": "c41cb20a946449b132f2e671e1d9a63edba1597ae15857a57d700b2a77fb275c",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          13,
+          255
+        ]
+      },
+      "state": {
+        "label": "02-after-firing-held",
+        "wall_seconds": 6.734999999869615,
+        "game_seconds": 4.522306311875582,
+        "pawn": [
+          -67.40798385388534,
+          570.0,
+          85.14999961853027
+        ],
+        "yaw": -73.93605041503905,
+        "health": 100.0,
+        "boss": [
+          47.34807368947586,
+          158.32022905500196,
+          227.15000200271606
+        ],
+        "boss_health": 264.0,
+        "boss_state": 0,
+        "camera": [
+          -1657.7566629752068,
+          355.2690184240941,
+          1860.0
+        ],
+        "camera_rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 48.0,
+        "paused": true
+      },
+      "hud_hidden": false
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T044114-verify_encounter_repair\\03-after-restart.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 297132,
+        "sha256": "606d55b5e2359746fbaf7fd002534af6d183f7a78b9b153516df81586fea1b13",
+        "pixel_sha256": "7aeecfe1a8185183655166f36b919eb6f6b3488bff4e2bf06943ecc0ad76f332",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          13,
+          255
+        ]
+      },
+      "state": {
+        "label": "03-after-restart-held",
+        "wall_seconds": 9.890999999828637,
+        "game_seconds": 0.515684999525547,
+        "pawn": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "yaw": -145.0,
+        "health": 100.0,
+        "boss": [
+          222.14163694367832,
+          -183.56939490613053,
+          227.15000200271606
+        ],
+        "boss_health": 300.0,
+        "boss_state": 0,
+        "camera": [
+          -1674.5599944833766,
+          173.81417776588157,
+          1876.2292964426654
+        ],
+        "camera_rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 48.0,
+        "paused": true
+      },
+      "hud_hidden": false
+    }
+  ],
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "viewport": [
+    1014,
+    550
+  ],
+  "pawn_class": "/Game/TeddyEncounter/Blueprints/BP_EncounterPlayer.BP_EncounterPlayer_C",
+  "saved_bindings": [
+    {
+      "key": "Gamepad Left Thumbstick 2D-Axis",
+      "action": "IA_Action_Move",
+      "modifiers": [
+        "InputModifierSwizzleAxis"
+      ]
+    },
+    {
+      "key": "W",
+      "action": "IA_Action_Move",
+      "modifiers": []
+    },
+    {
+      "key": "S",
+      "action": "IA_Action_Move",
+      "modifiers": [
+        "InputModifierNegate"
+      ]
+    },
+    {
+      "key": "A",
+      "action": "IA_Action_Move",
+      "modifiers": [
+        "InputModifierSwizzleAxis",
+        "InputModifierNegate"
+      ]
+    },
+    {
+      "key": "D",
+      "action": "IA_Action_Move",
+      "modifiers": [
+        "InputModifierSwizzleAxis"
+      ]
+    },
+    {
+      "key": "Gamepad Right Thumbstick 2D-Axis",
+      "action": "IA_Action_StickAim",
+      "modifiers": [
+        "InputModifierSwizzleAxis",
+        "InputModifierDeadZone"
+      ]
+    },
+    {
+      "key": "F",
+      "action": "IA_Action_Fire",
+      "modifiers": []
+    },
+    {
+      "key": "Left Mouse Button",
+      "action": "IA_Action_Fire",
+      "modifiers": []
+    },
+    {
+      "key": "Gamepad Right Trigger (Digital)",
+      "action": "IA_Action_Fire",
+      "modifiers": []
+    },
+    {
+      "key": "G",
+      "action": "IA_Action_UseItem",
+      "modifiers": []
+    },
+    {
+      "key": "Gamepad Left Trigger (Digital)",
+      "action": "IA_Action_UseItem",
+      "modifiers": []
+    },
+    {
+      "key": "Left Shift",
+      "action": "IA_Action_Dash",
+      "modifiers": []
+    },
+    {
+      "key": "Gamepad Left Shoulder",
+      "action": "IA_Action_Dash",
+      "modifiers": []
+    },
+    {
+      "key": "Right Mouse Button",
+      "action": "IA_Action_UseItem",
+      "modifiers": []
+    },
+    {
+      "key": "Mouse XY 2D-Axis",
+      "action": "IA_Action_MouseAim",
+      "modifiers": []
+    },
+    {
+      "key": "Space Bar",
+      "action": "IA_Action_Dash",
+      "modifiers": []
+    },
+    {
+      "key": "Escape",
+      "action": "IA_Pause",
+      "modifiers": []
+    },
+    {
+      "key": "F5",
+      "action": "IA_Restart",
+      "modifiers": []
+    }
+  ],
+  "movement_distance": 141.82321314943815,
+  "owned_projectiles_observed": 4,
+  "boss_health_before_fire": 300.0,
+  "boss_health_after_fire": 264.0,
+  "dash_peak_speed": 2500.871651133869,
+  "dash_distance": 343.9345830287622,
+  "passed": true,
+  "wall_seconds": 11.187999999849126
+}

@@ -1,0 +1,213 @@
+{
+  "passed": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "checks": {
+    "all_saved_keys_valid_after_reopen": false,
+    "required_bindings_present_once": false,
+    "movement_key_routes_to_saved_action": true,
+    "space_triggers_dash": false,
+    "escape_pauses": false,
+    "pause_freezes_time_and_movement": false,
+    "pause_suppresses_fire": false,
+    "escape_resumes": true,
+    "mouse_button_routes_to_fire": true
+  },
+  "events": [
+    {
+      "command": "Input.+key S",
+      "game_time": 1.0002370066940784,
+      "wall_time": 1.047000000020489
+    },
+    {
+      "command": "Input.-key S",
+      "game_time": 1.3094846047461033,
+      "wall_time": 1.3599999998696148
+    },
+    {
+      "command": "Input.+key S",
+      "game_time": 1.3094846047461033,
+      "wall_time": 1.3599999998696148
+    },
+    {
+      "command": "Input.+key SpaceBar",
+      "game_time": 1.3761521056294441,
+      "wall_time": 1.422000000020489
+    },
+    {
+      "command": "Input.-key SpaceBar",
+      "game_time": 1.642829705029726,
+      "wall_time": 1.6879999998491257
+    },
+    {
+      "command": "Input.-key S",
+      "game_time": 1.642829705029726,
+      "wall_time": 1.6879999998491257
+    },
+    {
+      "command": "Input.+key Escape",
+      "game_time": 1.8428394049406052,
+      "wall_time": 1.8909999998286366
+    },
+    {
+      "command": "Input.-key Escape",
+      "game_time": 1.9345202073454857,
+      "wall_time": 1.9849999998696148
+    },
+    {
+      "command": "Input.+key W",
+      "game_time": 2.059524804353714,
+      "wall_time": 2.109999999869615
+    },
+    {
+      "command": "Input.+key LeftMouseButton",
+      "game_time": 2.059524804353714,
+      "wall_time": 2.109999999869615
+    },
+    {
+      "command": "Input.-key W",
+      "game_time": 2.418881304562092,
+      "wall_time": 2.4689999998081475
+    },
+    {
+      "command": "Input.-key LeftMouseButton",
+      "game_time": 2.418881304562092,
+      "wall_time": 2.4689999998081475
+    },
+    {
+      "command": "Input.+key Escape",
+      "game_time": 2.418881304562092,
+      "wall_time": 2.4689999998081475
+    },
+    {
+      "command": "Input.-key Escape",
+      "game_time": 2.5105647072196007,
+      "wall_time": 2.5629999998491257
+    },
+    {
+      "command": "Input.+key LeftMouseButton",
+      "game_time": 2.8939892053604126,
+      "wall_time": 2.9379999998491257
+    },
+    {
+      "command": "Input.-key LeftMouseButton",
+      "game_time": 3.394372306764126,
+      "wall_time": 3.4379999998491257
+    },
+    {
+      "command": "Input.+key F5",
+      "game_time": 3.394372306764126,
+      "wall_time": 3.4379999998491257
+    },
+    {
+      "command": "Input.-key F5",
+      "game_time": 10.077760696411133,
+      "wall_time": 11.437999999849126
+    }
+  ],
+  "method": "Input.+key / Input.-key console commands -> PlayerController::InputKey -> saved mapping -> Enhanced Input action -> saved gameplay Blueprint; no action injection",
+  "physical_device_verified": false,
+  "asset_writes": false,
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "viewport": [
+    1014,
+    550
+  ],
+  "saved_mappings": [
+    {
+      "action": "IA_Action_Move",
+      "key": "Gamepad_Left2D",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "W",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "S",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "A",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "D",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_StickAim",
+      "key": "Gamepad_Right2D",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "F",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "LeftMouseButton",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "Gamepad_RightTrigger",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "G",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "Gamepad_LeftTrigger",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "LeftShift",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "Gamepad_LeftShoulder",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "RightMouseButton",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_MouseAim",
+      "key": "Mouse2D",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "(",
+      "valid": false
+    },
+    {
+      "action": "IA_Pause",
+      "key": "(",
+      "valid": false
+    },
+    {
+      "action": "IA_Restart",
+      "key": "(",
+      "valid": false
+    }
+  ],
+  "movement_distance": 46.53265718778135,
+  "dash_peak_speed": 420.0,
+  "dash_distance": 110.8420102586224,
+  "owned_projectiles_created": 2,
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/verify_encounter_keys.py\", line 167, in tick\n    next(test)\n  File \"C:/Projects/to-deploy/horror-game/tools/verify_encounter_keys.py\", line 126, in run\n    assert view() and view()[0] != old_world, 'F5 did not reload the encounter'\n                      ^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: F5 did not reload the encounter\n",
+  "wall_seconds": 11.437999999849126
+}

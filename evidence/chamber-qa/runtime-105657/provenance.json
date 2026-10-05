@@ -1,0 +1,88 @@
+{
+  "independent_review": true,
+  "receipt": "evidence\\implementation\\20261005T105657-verify_full_room\\receipt.json",
+  "receipt_sha256": "db2e2f6c737f4ab1b2d4095f5a074235865cb3d91396d4efdc23aa57d8fcbdb0",
+  "host_exit_code": 0,
+  "checks_passed": 28,
+  "original_extension_actor_count": 84,
+  "original_extension_unique_mesh_count": 21,
+  "recorded_reuse_actors": [
+    {
+      "label": "TE_Chamber_FrontCutaway",
+      "class": "/Game/TeddyEncounter/Chamber/Blueprints/BP_ChamberCutaway.BP_ChamberCutaway_C",
+      "tags": [
+        "ChamberCutawayOwned",
+        "ChamberOwned",
+        "TeddyEncounterOwned"
+      ],
+      "mesh_count": 19
+    }
+  ],
+  "images": [
+    {
+      "case": 0,
+      "path": "evidence/implementation/20261005T105657-verify_full_room/room-case-00.png",
+      "sha256": "2719c97018753da0ff7e3b9b2b6e94e799b21876dd5dc2e847d15ca550c8534f",
+      "full_pixel_decode": true,
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "case": 2,
+      "path": "evidence/implementation/20261005T105657-verify_full_room/room-case-02.png",
+      "sha256": "97d5bfa5fd5bc761763fe3fad8e603987d299c22c056c58dbe6faf710074c031",
+      "full_pixel_decode": true,
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "case": 3,
+      "path": "evidence/implementation/20261005T105657-verify_full_room/room-case-03.png",
+      "sha256": "47a638535de5c9bf66bf02d12f9e74c8982d9113b84a0de6c1f6b27f056f12dd",
+      "full_pixel_decode": true,
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "case": 6,
+      "path": "evidence/implementation/20261005T105657-verify_full_room/room-case-06.png",
+      "sha256": "932717adc48531bbcfd48a47064b3312c8341dfb2f46a4d6f68be1bab1bb2976",
+      "full_pixel_decode": true,
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "case": 9,
+      "path": "evidence/implementation/20261005T105657-verify_full_room/room-case-09.png",
+      "sha256": "7e03c20743cea7eed6897589353c0464b70060955b0b1f45f603d6f8da290eb2",
+      "full_pixel_decode": true,
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "case": 11,
+      "path": "evidence/implementation/20261005T105657-verify_full_room/room-case-11.png",
+      "sha256": "f9c940c137bd3b5e1023abc47ceaf60a77bbdf1455b02f2d0fa0cf4c283117e5",
+      "full_pixel_decode": true,
+      "dimensions": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "limitations": [
+    "Staged poses and injected input, not physical-device validation.",
+    "Predates final wall patina and foreground light adjustment; collision geometry remains relevant if unchanged.",
+    "NoCollision geometry can be visually obstructive despite passing traces; all six original captures were independently inspected."
+  ]
+}

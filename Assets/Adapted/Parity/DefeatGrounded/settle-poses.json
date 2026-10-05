@@ -1,0 +1,47 @@
+[
+  {
+    "name": "rest_soft",
+    "parameters": [
+      0.3,
+      0.1,
+      0.25,
+      0.1
+    ],
+    "min_height": 0.011999845504760742,
+    "max_height": 2.5318586826324463,
+    "core_min": 0.054125070571899414,
+    "head_min": 0.1951007843017578,
+    "near_ground_5cm": 24,
+    "root_vertical": 1.334818398475647
+  },
+  {
+    "name": "rest_medium",
+    "parameters": [
+      0.48,
+      0.18,
+      0.3,
+      0.12
+    ],
+    "min_height": 0.01199987530708313,
+    "max_height": 2.5817034244537354,
+    "core_min": 0.10396981239318848,
+    "head_min": 0.24494552612304688,
+    "near_ground_5cm": 23,
+    "root_vertical": 1.384663140296936
+  },
+  {
+    "name": "rest_settled",
+    "parameters": [
+      0.65,
+      0.25,
+      0.4,
+      0.15
+    ],
+    "min_height": 0.011999964714050293,
+    "max_height": 2.669931650161743,
+    "core_min": 0.1921982765197754,
+    "head_min": 0.3331739902496338,
+    "near_ground_5cm": 21,
+    "root_vertical": 1.4728914852142334
+  }
+]

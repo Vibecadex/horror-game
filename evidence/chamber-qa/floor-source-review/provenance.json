@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "path": "Assets\\Adapted\\ChamberParity\\Floor\\fields-overview.png",
+      "sha256": "29d9d186f8080148b7d29caf4f03b895f0cc87e4801cf1bc649e9db7e6c60042",
+      "dimensions": [
+        2000,
+        1000
+      ],
+      "kind": "Blender source preview, not Unreal capture"
+    },
+    {
+      "path": "Assets\\Adapted\\ChamberParity\\Floor\\field-a-detail.png",
+      "sha256": "e4b7aa79500b49c6b6d5a4ad7aa362ad042f32b4a9654b6ae5060ef88fc5424b",
+      "dimensions": [
+        1300,
+        1100
+      ],
+      "kind": "Blender source preview, not Unreal capture"
+    },
+    {
+      "path": "Assets\\Adapted\\ChamberParity\\Floor\\field-b-detail.png",
+      "sha256": "e2dac85766a6afefdb1493286e1aa58992ef9d3be53da00d36db427902ee9f7a",
+      "dimensions": [
+        1300,
+        1100
+      ],
+      "kind": "Blender source preview, not Unreal capture"
+    },
+    {
+      "path": "Assets\\Adapted\\ChamberParity\\Floor\\field-c-detail.png",
+      "sha256": "c16777638b2732ecd0aafa616bec4d666df968ea2bfdf418338472054d995e33",
+      "dimensions": [
+        1300,
+        1100
+      ],
+      "kind": "Blender source preview, not Unreal capture"
+    }
+  ],
+  "source_manifest_sha256": "193563fd5ebbf91c83327d29be24539e914525c1237679143032e0c217288133"
+}

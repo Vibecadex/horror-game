@@ -1,0 +1,389 @@
+{
+  "views": [
+    {
+      "name": "Front",
+      "reference": "../../../study/visuals/chamber-target-front.png",
+      "candidate": "../../implementation/20261005T114712-capture_chamber_views/01-chamber-front.png",
+      "baseline": "../../implementation/20261005T095951-capture_chamber_views/01-chamber-front.png"
+    },
+    {
+      "name": "Reverse",
+      "reference": "../../../study/visuals/chamber-target-reverse.png",
+      "candidate": "../../implementation/20261005T114712-capture_chamber_views/02-chamber-reverse.png",
+      "baseline": "../../implementation/20261005T095951-capture_chamber_views/02-chamber-reverse.png"
+    }
+  ],
+  "checks": {
+    "chamber_qa": {
+      "passed": 28,
+      "total": 28
+    },
+    "room_qa": {
+      "passed": 28,
+      "total": 28
+    }
+  },
+  "references_are_concepts": true,
+  "architectural_cameras_are_staged": true,
+  "physical_device_verified": false,
+  "exact_reference_parity": false,
+  "acceptance": "Awaiting user visual review",
+  "preservation": {
+    "passed": true,
+    "utc": "2026-10-05T11:52:57.131012+00:00",
+    "method": "Byte hashes only, no binary asset inspection",
+    "validation_snapshot": "C:\\Projects\\to-deploy\\horror-game\\evidence\\chamber\\20261005T095028Z\\final-surface-v2-baseline.json",
+    "active_assets": 175,
+    "validation_drift": [],
+    "preexisting_changed": [
+      "TeddyBlueprint/Content/Maps/TeddyEncounter.umap"
+    ],
+    "new_assets": [
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Blueprints/BP_ChamberCutaway.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_A.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_A_V2.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_B.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_B_V2.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureBank_B.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureBank_B_V2.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureDrift_C.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureDrift_C_V2.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureFork_A.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureFork_A_V2.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberSparseSlabs.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberSparseSlabs_V2.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Concrete.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Dark.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Emissive.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorAggregate.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorConcrete.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorConcreteDark.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorConcreteLight.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorCrack.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorCrustConcrete.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorCrustConcreteDark.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorCrustConcreteLight.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorDark.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorSlabSurface.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Metal.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_PracticalLens.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Rust.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_ServiceIndicator.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Stencil.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberBulkhead.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberBulkheadWheel.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberDrum.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberDrumPair.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberServiceDoorBay.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Concrete_Color.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Concrete_Normal.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Concrete_Roughness.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Oxide_Color.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Oxide_Normal.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Oxide_Roughness.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Recess_Color.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Recess_Normal.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Recess_Roughness.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Steel_Color.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Steel_Normal.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Steel_Roughness.uasset",
+      "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_WallPatinaColor.uasset"
+    ],
+    "original_failures": [],
+    "sources": [
+      {
+        "name": "reference_video",
+        "path": "C:\\Projects\\to-deploy\\horror-scene\\WhatsApp Video 2026-10-04 at 16.53.31.mp4",
+        "sha256": "289b314d3578e76e7a8e916c31ef653c0bbea2fb97e21eea2100cb063069fdeb",
+        "unchanged": true
+      },
+      {
+        "name": "source_archive",
+        "path": "C:\\Projects\\to-deploy\\horror-scene\\BossShot.zip",
+        "sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+        "unchanged": true
+      },
+      {
+        "name": "teddy_model",
+        "path": "C:\\Projects\\to-deploy\\horror-game\\Assets\\ThirdParty\\HorrorTeddyBear\\horror-teddy-bear-monster.glb",
+        "sha256": "9fe8c87ab5eab6d05f19c936d8ae993d07727aa9871100118aa21452f7a9a8bb",
+        "unchanged": true
+      },
+      {
+        "name": "chamber-target-front.png",
+        "sha256": "f853bc67bfb3973f8c3097c829973634590bfb4b42df17ed54fcf65b156b6960",
+        "unchanged": true
+      },
+      {
+        "name": "chamber-target-reverse.png",
+        "sha256": "1728fb8239d4edde652c93c92bb441c211fe4b491fbf9c14d79413e1c60eff42",
+        "unchanged": true
+      },
+      {
+        "name": "direction-close-best.jpg",
+        "sha256": "93fbe5a65dd56b5015bdd951fbefa5d1a3d60951688a00d28b33343a721107a8",
+        "unchanged": true
+      }
+    ],
+    "original_files": 555,
+    "config_and_launcher_unchanged": true
+  },
+  "inputs": {
+    "capture": "evidence/implementation/20261005T114712-capture_chamber_views",
+    "chamber_qa": "evidence/implementation/20261005T114820-verify_chamber_runtime",
+    "room_qa": "evidence/implementation/20261005T114928-verify_full_room",
+    "motion": "evidence/chamber/20261005T095028Z/native-motion-20261005T115126",
+    "visual_review": "evidence/chamber-qa/final/INDEPENDENT_REVIEW.md"
+  },
+  "settings": {
+    "revision": "chamber-08-crust",
+    "wall_patina": {
+      "file": "Assets/Adapted/ChamberParity/WallSurface/T_ChamberWall_Albedo.png",
+      "sha256": "6ec78f1ac8b4f69bea1cae1839ab58b52ab9b4dc2987902a98ce1098da2cdbe3"
+    },
+    "floor": {
+      "tile_cm": 850,
+      "detail_weight": 0.65,
+      "value_scale": 0.68,
+      "foreground_damp": 0.25,
+      "foreground_dry": 0.9
+    },
+    "key_outer_cone": 48,
+    "rear_fog_scattering": 4,
+    "material_families": {
+      "Concrete": {
+        "source": "Concrete",
+        "tile_cm": 500,
+        "color_scale": 0.5,
+        "base_color": [
+          0.11,
+          0.12,
+          0.115
+        ],
+        "texture_weight": 0.8,
+        "metallic": 0.0,
+        "normal_strength": 0.22
+      },
+      "Metal": {
+        "source": "Steel",
+        "tile_cm": 500,
+        "color_scale": 0.3,
+        "base_color": [
+          0.07,
+          0.083,
+          0.078
+        ],
+        "texture_weight": 0.7,
+        "metallic": 0.32,
+        "normal_strength": 0.2
+      },
+      "Rust": {
+        "source": "Oxide",
+        "tile_cm": 310,
+        "color_scale": 1.15,
+        "base_color": [
+          0.07,
+          0.05,
+          0.036
+        ],
+        "texture_weight": 0.18,
+        "metallic": 0.1,
+        "normal_strength": 0.3
+      },
+      "Dark": {
+        "source": "Recess",
+        "tile_cm": 400,
+        "color_scale": 2.0,
+        "base_color": [
+          0.015,
+          0.021,
+          0.02
+        ],
+        "texture_weight": 0.15,
+        "metallic": 0.1,
+        "normal_strength": 0.2
+      }
+    },
+    "room_lights": [
+      {
+        "name": "RearWallWash",
+        "location": [
+          1250,
+          -500,
+          620
+        ],
+        "target": [
+          1630,
+          180,
+          300
+        ],
+        "intensity": 4500,
+        "radius": 1750,
+        "width": 400,
+        "height": 200,
+        "color": [
+          0.45,
+          0.73,
+          0.72
+        ]
+      },
+      {
+        "name": "LeftWallWash",
+        "location": [
+          0,
+          -1100,
+          560
+        ],
+        "target": [
+          150,
+          -1650,
+          250
+        ],
+        "intensity": 16000,
+        "radius": 2350,
+        "width": 1850,
+        "height": 120,
+        "color": [
+          0.4,
+          0.63,
+          0.66
+        ]
+      },
+      {
+        "name": "RightWallWash",
+        "location": [
+          120,
+          1100,
+          520
+        ],
+        "target": [
+          250,
+          1650,
+          240
+        ],
+        "intensity": 15000,
+        "radius": 2350,
+        "width": 1700,
+        "height": 120,
+        "color": [
+          0.43,
+          0.68,
+          0.69
+        ]
+      },
+      {
+        "name": "FrontWallWash",
+        "location": [
+          -1170,
+          460,
+          600
+        ],
+        "target": [
+          -1660,
+          0,
+          260
+        ],
+        "intensity": 4500,
+        "radius": 2050,
+        "width": 480,
+        "height": 130,
+        "color": [
+          0.38,
+          0.65,
+          0.67
+        ]
+      },
+      {
+        "name": "RearServiceAccent",
+        "location": [
+          1380,
+          800,
+          590
+        ],
+        "target": [
+          1612,
+          1130,
+          420
+        ],
+        "intensity": 2200,
+        "radius": 650,
+        "width": 180,
+        "height": 120,
+        "color": [
+          0.4,
+          0.63,
+          0.65
+        ]
+      },
+      {
+        "name": "ReverseCabinetAccent",
+        "location": [
+          -650,
+          1300,
+          550
+        ],
+        "target": [
+          -680,
+          1570,
+          210
+        ],
+        "intensity": 1500,
+        "radius": 700,
+        "width": 300,
+        "height": 100,
+        "color": [
+          0.4,
+          0.63,
+          0.65
+        ],
+        "specular": 0.2
+      },
+      {
+        "name": "ReversePipeAccent",
+        "location": [
+          -1000,
+          -1200,
+          620
+        ],
+        "target": [
+          -1000,
+          -1545,
+          440
+        ],
+        "intensity": 1200,
+        "radius": 700,
+        "width": 320,
+        "height": 80,
+        "color": [
+          0.4,
+          0.63,
+          0.65
+        ],
+        "specular": 0.2
+      }
+    ],
+    "front_floor_return": {
+      "location": [
+        -850,
+        40,
+        1100
+      ],
+      "target": [
+        -950,
+        40,
+        -5
+      ],
+      "intensity": 55000,
+      "radius": 2550,
+      "inner": 30,
+      "outer": 56,
+      "source": 180,
+      "color": [
+        0.34,
+        0.62,
+        0.62
+      ]
+    },
+    "cutaway_hide_below_camera_x": -1490
+  }
+}

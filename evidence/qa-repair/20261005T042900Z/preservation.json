@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-10-05T04:50:13.164996+00:00",
+  "passed": true,
+  "original_baseline_files_checked": 555,
+  "original_baseline_unchanged_count": 555,
+  "changed_baseline_paths": [],
+  "missing_baseline_paths": [],
+  "protected_content_changes": [],
+  "originals": {
+    "reference_video": {
+      "sha256": "289b314d3578e76e7a8e916c31ef653c0bbea2fb97e21eea2100cb063069fdeb",
+      "unchanged": true
+    },
+    "source_archive": {
+      "sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+      "unchanged": true
+    },
+    "teddy_model": {
+      "sha256": "9fe8c87ab5eab6d05f19c936d8ae993d07727aa9871100118aa21452f7a9a8bb",
+      "unchanged": true
+    }
+  },
+  "pre_repair_backup": "before-repair.zip",
+  "concurrent_guidance": "AGENTS.md gained an Agent context section during work; retained unchanged by root."
+}

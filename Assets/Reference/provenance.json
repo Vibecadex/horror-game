@@ -1,0 +1,17 @@
+{
+  "method": "Exact byte copies; originals unchanged",
+  "files": [
+    {
+      "file": "Assets/Reference/WhatsApp Video 2026-10-04 at 16.53.31.mp4",
+      "sha256": "289b314d3578e76e7a8e916c31ef653c0bbea2fb97e21eea2100cb063069fdeb",
+      "bytes": 3821687,
+      "original": "C:\\Projects\\to-deploy\\horror-scene\\WhatsApp Video 2026-10-04 at 16.53.31.mp4"
+    },
+    {
+      "file": "Assets/Reference/BossShot.zip",
+      "sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+      "bytes": 6751,
+      "original": "C:\\Projects\\to-deploy\\horror-scene\\BossShot.zip"
+    }
+  ]
+}

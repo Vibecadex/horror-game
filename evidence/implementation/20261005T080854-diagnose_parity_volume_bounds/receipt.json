@@ -1,0 +1,163 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "captures": [
+    {
+      "name": "01-initial",
+      "kind": "gameplay",
+      "caption": "DIAGNOSTIC: lowered far fog cap and localized perimeter fills, saved gameplay camera.",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T080854-diagnose_parity_volume_bounds\\01-initial.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 182,
+      "game_time": 10.01092042028904,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1412331,
+        "sha256": "aa7b37b7c824c6253aaa99e24623b12cd4d72eb71a7e6948602178e1a394908c",
+        "pixel_sha256": "51e69883edcda53508cdc72e07929d3a45611e72a75212d37f7c8c2780e8035a",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "02-wide",
+      "kind": "gameplay-staged",
+      "caption": "DIAGNOSTIC: opposite-corner separation, same staged lighting.",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T080854-diagnose_parity_volume_bounds\\02-wide.png",
+      "held_state": {
+        "player": [
+          -1300.0,
+          -1350.0,
+          96.0
+        ],
+        "camera": [
+          -5456.846934950482,
+          -25.0,
+          5600.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 182,
+      "game_time": 13.011134125292301,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 395168,
+        "sha256": "1ffc3fddddbe45237ac4dd836eb00e314aeb2d6abf3dd3745989471ab12679b6",
+        "pixel_sha256": "c5c007c957499dc2454a389e2825fda9de859d88d9ed01fc1b68ead1ae7caccb",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "03-room",
+      "kind": "architecture",
+      "caption": "DIAGNOSTIC: elevated room coverage, temporary camera and fog/fills.",
+      "location": [
+        -4300,
+        -2300,
+        4100
+      ],
+      "target": [
+        0,
+        0,
+        180
+      ],
+      "fov": 53,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T080854-diagnose_parity_volume_bounds\\03-room.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -4300.0,
+          -2300.0,
+          4100.0
+        ],
+        "rotation": [
+          -38.79439142620319,
+          28.14160123226174,
+          1.365799660896941e-07
+        ],
+        "fov": 53.0
+      },
+      "held_samples": 179,
+      "game_time": 16.021207831799984,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 547419,
+        "sha256": "afe1ad1fa5031c4fe0dc5a02dd28d0f366c15bf1700e8f87eb440455931cdaba",
+        "pixel_sha256": "31a537990f20ab28f38748f96524cac2f3d5e972c68297d16adbb18f6ad0ce9a",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    }
+  ],
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "method": "Transient volume-bounds and peripheral readability study. Asset writes false. This is not the saved game.",
+  "world": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter",
+  "postprocess": [
+    {
+      "auto_exposure_method": "<AutoExposureMethod.AEM_MANUAL: 2>",
+      "auto_exposure_bias": "3.799999952316284",
+      "auto_exposure_apply_physical_camera_exposure": "True",
+      "vignette_intensity": "0.3799999952316284",
+      "bloom_intensity": "0.25"
+    }
+  ],
+  "architectural_camera_original": {
+    "location": [
+      -5456.846934950482,
+      -25.0,
+      5600.0
+    ],
+    "rotation": [
+      -46.000000000000114,
+      0.0,
+      -0.0
+    ],
+    "fov": 54.0,
+    "method": "PIE director tick disabled and transform/FOV staged; PIE teardown discards changes"
+  },
+  "wall_seconds": 21.92200000002049
+}

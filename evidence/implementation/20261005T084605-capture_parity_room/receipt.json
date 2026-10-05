@@ -1,0 +1,163 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "captures": [
+    {
+      "name": "01-matched-gameplay",
+      "kind": "gameplay",
+      "caption": "Saved gameplay camera, spawns, exposure, lighting and surfaces; movement held and player yaw staged toward boss.",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T084605-capture_parity_room\\01-matched-gameplay.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 183,
+      "game_time": 10.008762512356043,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1353437,
+        "sha256": "ef6a77bb206c3300f6579e0e3bb641a18df106241864446836c25fded2ef8a33",
+        "pixel_sha256": "f9d5ff92e9649f0bbbb4ed2407285c6c464faaa5c0cdb6de37744a097f71aae2",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "02-gameplay-wide",
+      "kind": "gameplay-staged",
+      "caption": "Saved adaptive gameplay camera and art at opposite-corner separation; actors held for room coverage.",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T084605-capture_parity_room\\02-gameplay-wide.png",
+      "held_state": {
+        "player": [
+          -1300.0,
+          -1350.0,
+          96.0
+        ],
+        "camera": [
+          -5456.846934950482,
+          -25.0,
+          5600.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 182,
+      "game_time": 13.011773020029068,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 335223,
+        "sha256": "eaa5a0773c6f9964d22fb9a58f862873e05d2b8de71a8e09963717ac82e19e22",
+        "pixel_sha256": "e000153e0cd4210cee0a4613ba419f41be7cc5b24a0b8fd15b12bc531975773f",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "03-room-overview",
+      "kind": "architecture",
+      "caption": "Architectural cutaway with temporary camera; saved room lighting/surfaces.",
+      "location": [
+        -4300,
+        -2300,
+        4100
+      ],
+      "target": [
+        0,
+        0,
+        180
+      ],
+      "fov": 53,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T084605-capture_parity_room\\03-room-overview.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -4300.0,
+          -2300.0,
+          4100.0
+        ],
+        "rotation": [
+          -38.79439142620319,
+          28.14160123226174,
+          1.365799660896941e-07
+        ],
+        "fov": 53.0
+      },
+      "held_samples": 183,
+      "game_time": 16.017178524285555,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 454170,
+        "sha256": "63a81f314dd0015e900c1d226d44e453b8426952e527be2797044a2e6d48ef30",
+        "pixel_sha256": "2c60f11c323637f26bf929834f7d2428ae348e932dffb2b3fc794ba1d843298c",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    }
+  ],
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "method": "Editor PIE; NPC/player movement frozen, HUD hidden; game paused through capture completion. Saved exposure/lighting unchanged. Views explicitly identify gameplay versus architectural camera.",
+  "world": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter",
+  "postprocess": [
+    {
+      "auto_exposure_method": "<AutoExposureMethod.AEM_MANUAL: 2>",
+      "auto_exposure_bias": "3.799999952316284",
+      "auto_exposure_apply_physical_camera_exposure": "True",
+      "vignette_intensity": "0.3799999952316284",
+      "bloom_intensity": "0.25"
+    }
+  ],
+  "architectural_camera_original": {
+    "location": [
+      -5456.846934950482,
+      -25.0,
+      5600.0
+    ],
+    "rotation": [
+      -46.000000000000114,
+      0.0,
+      -0.0
+    ],
+    "fov": 54.0,
+    "method": "PIE director tick disabled and transform/FOV staged; PIE teardown discards changes"
+  },
+  "wall_seconds": 23.905999999959022
+}

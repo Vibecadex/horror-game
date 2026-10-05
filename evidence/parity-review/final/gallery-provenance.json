@@ -1,0 +1,151 @@
+{
+  "receipt_sha256": "79f13b563cad336138ef20f64ce470e6f6858d6a500675adb60ca2e1ac5f0835",
+  "source_captures": [
+    {
+      "source": "evidence\\implementation\\20261005T092659-capture_parity_delivery\\01-matched-gameplay.png",
+      "sha256": "9eba4038858703d3e542a6d02a51f85495f7b68653114dd5e5361e5636b97414",
+      "kind": "gameplay",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "decoded": true
+    },
+    {
+      "source": "evidence\\implementation\\20261005T092659-capture_parity_delivery\\02-gameplay-wide.png",
+      "sha256": "a81bc4bd2d85af67faf8029278613b94ee544e63253956f081223e743c9c7d75",
+      "kind": "gameplay-staged",
+      "held_state": {
+        "player": [
+          -1300.0,
+          -1350.0,
+          96.0
+        ],
+        "camera": [
+          -5456.846934950482,
+          -25.0,
+          5600.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "decoded": true
+    },
+    {
+      "source": "evidence\\implementation\\20261005T092659-capture_parity_delivery\\03-room-overview.png",
+      "sha256": "1bb6fa94c067a4e9620c63447863db1339a301684f1cfd62dcdd8b0600351515",
+      "kind": "architecture",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -4300.0,
+          -2300.0,
+          4100.0
+        ],
+        "rotation": [
+          -38.79439142620319,
+          28.14160123226174,
+          1.365799660896941e-07
+        ],
+        "fov": 53.0
+      },
+      "decoded": true
+    },
+    {
+      "source": "evidence\\implementation\\20261005T092659-capture_parity_delivery\\04-rear-bulkhead.png",
+      "sha256": "91f1d05e1ffaea8546f2e84e625bd5d0d2c46774cdcac224bef9f4cc5a9da5fb",
+      "kind": "architecture",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          650.0,
+          -300.0,
+          600.0
+        ],
+        "rotation": [
+          -14.1670162897172,
+          25.64100582430529,
+          4.861323131627572e-08
+        ],
+        "fov": 62.0
+      },
+      "decoded": true
+    },
+    {
+      "source": "evidence\\implementation\\20261005T092659-capture_parity_delivery\\05-side-services.png",
+      "sha256": "a3eda605f8ec09cff5c16cc26ad4d6036c2c89663139df9ca38f74cb17bb67ca",
+      "kind": "architecture",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -950.0,
+          100.0,
+          600.0
+        ],
+        "rotation": [
+          -7.297471478842339,
+          -51.81435288940975,
+          -5.098274828291174e-08
+        ],
+        "fov": 60.0
+      },
+      "decoded": true
+    },
+    {
+      "source": "evidence\\implementation\\20261005T092659-capture_parity_delivery\\06-electrical-bay.png",
+      "sha256": "15aa3a76cf3bdcb3fc132a12c3c7fe5abbf0068fff1b7a8eac4c623cbb7b67b9",
+      "kind": "architecture",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1100.0,
+          550.0,
+          430.0
+        ],
+        "rotation": [
+          -7.975712055683058,
+          58.04189052666195,
+          6.238539817810328e-08
+        ],
+        "fov": 64.0
+      },
+      "decoded": true
+    }
+  ],
+  "gallery_sha256": "20ae8ae84a80331fd3eb1387927fdb5c5fbd74f208f519780e8711ad5063ec01",
+  "image_transform": "Full-frame 50% thumbnails and explicit camera labels. No crop, retouch, exposure or color adjustment."
+}

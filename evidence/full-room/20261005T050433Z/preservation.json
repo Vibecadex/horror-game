@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "pre_room_files": 158,
+  "changed_pre_room_files": [
+    "ENCOUNTER.md",
+    "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+    "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_Stitchling.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_TeddyBoss.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_Concrete.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_TeddyCloth.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_TeddyCloth.uasset",
+    "tools/author_qa_native_motion.py",
+    "tools/capture_qa_native_motion.py",
+    "WORK_STATUS.md"
+  ],
+  "changed_existing_game_assets": [
+    "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+    "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_Stitchling.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_TeddyBoss.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_Concrete.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_TeddyCloth.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_TeddyCloth.uasset"
+  ],
+  "original_baseline_files_unchanged": 555,
+  "authorized_grok_surface_changes": [
+    "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_Stitchling.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_TeddyBoss.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_Concrete.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_TeddyCloth.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_TeddyCloth.uasset"
+  ],
+  "combined_state_validation": {
+    "passed": true,
+    "snapshot_created_utc": "2026-10-05T05:44:33.720034+00:00",
+    "files_unchanged": 113,
+    "active_asset_set_unchanged": true,
+    "fresh_runs": {
+      "gallery": "evidence\\implementation\\20261005T054732-capture_room_gallery",
+      "qa": "evidence\\implementation\\20261005T054434-verify_full_room",
+      "keys": "evidence\\implementation\\20261005T054646-verify_encounter_keys",
+      "native": "evidence\\full-room\\20261005T050433Z\\native-motion-20261005T054842"
+    },
+    "handoff": "Grok final assistant completion confirmed, latest final plate 20261005T053842-capture_encounter; no editor running",
+    "surface_receipt_sha256": "afc0e7e7e3b1e08a1982735dc952ee3e3f1b801af9852c0c89cd3faaf39f9899"
+  },
+  "originals": {
+    "reference_video": {
+      "path": "C:\\Projects\\to-deploy\\horror-scene\\WhatsApp Video 2026-10-04 at 16.53.31.mp4",
+      "sha256": "289b314d3578e76e7a8e916c31ef653c0bbea2fb97e21eea2100cb063069fdeb",
+      "unchanged": true
+    },
+    "source_archive": {
+      "path": "C:\\Projects\\to-deploy\\horror-scene\\BossShot.zip",
+      "sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+      "unchanged": true
+    },
+    "teddy_model": {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\Assets\\ThirdParty\\HorrorTeddyBear\\horror-teddy-bear-monster.glb",
+      "sha256": "9fe8c87ab5eab6d05f19c936d8ae993d07727aa9871100118aa21452f7a9a8bb",
+      "unchanged": true
+    }
+  },
+  "archive_sha256": "cb97355718d6a44acd5b618b7c224ff1632b11f0fbc0650e6a9545a4f2ebad4a"
+}

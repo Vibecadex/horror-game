@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "settings": {
+    "revision": "atmosphere-08",
+    "fog": [],
+    "height_fog": {
+      "fog_density": 0.035,
+      "fog_height_falloff": 0.65,
+      "volumetric_fog_extinction_scale": 3.0
+    },
+    "fog_lights": [
+      {
+        "name": "FarFog_Light",
+        "location": [
+          1550,
+          150,
+          650
+        ],
+        "target": [
+          700,
+          150,
+          -100
+        ],
+        "intensity": 30000,
+        "color": [
+          0.35,
+          1.0,
+          0.97
+        ],
+        "radius": 2400,
+        "source": 60,
+        "scattering": 20,
+        "inner": 25,
+        "outer": 38
+      }
+    ],
+    "perimeter_character_fill": {
+      "height": 600,
+      "radius": 950,
+      "intensity": 14000
+    }
+  },
+  "material_camera_key_and_player_light_changes": false,
+  "fog_readback": [],
+  "fill_readback": [
+    {
+      "label": "TE_Room_CornerBounce_0",
+      "channels": "<Struct 'LightingChannels' (0x000001BD01FFAD4C) {channel0: False, channel1: True, channel2: False}>",
+      "intensity": 14000.0
+    },
+    {
+      "label": "TE_Room_CornerBounce_1",
+      "channels": "<Struct 'LightingChannels' (0x000001BD01FFB24C) {channel0: False, channel1: True, channel2: False}>",
+      "intensity": 14000.0
+    },
+    {
+      "label": "TE_Room_CornerBounce_2",
+      "channels": "<Struct 'LightingChannels' (0x000001BD01FFE44C) {channel0: False, channel1: True, channel2: False}>",
+      "intensity": 14000.0
+    },
+    {
+      "label": "TE_Room_CornerBounce_3",
+      "channels": "<Struct 'LightingChannels' (0x000001BD01FFDA4C) {channel0: False, channel1: True, channel2: False}>",
+      "intensity": 14000.0
+    }
+  ],
+  "fog_light_count": 1
+}

@@ -1,0 +1,154 @@
+{
+  "source_receipt_sha256": "a23f8f7ab8a22031463913306648fce7929eb0de491c1e0058fe09d4480e8e7d",
+  "capture_receipt_passed": true,
+  "sources": [
+    {
+      "source": "evidence\\implementation\\20261005T090957-capture_parity_delivery\\01-matched-gameplay.png",
+      "sha256": "51681efc01feb74e7b2c0a62bfd0b15df4a1aa46c0950dc329d2d10cc6182189",
+      "decoded": true,
+      "kind": "gameplay",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      }
+    },
+    {
+      "source": "evidence\\implementation\\20261005T090957-capture_parity_delivery\\02-gameplay-wide.png",
+      "sha256": "2489c520e51e85c55be438310f00c1f905e1d7c018dc8411d04f55fd982ea49f",
+      "decoded": true,
+      "kind": "gameplay-staged",
+      "held_state": {
+        "player": [
+          -1300.0,
+          -1350.0,
+          96.0
+        ],
+        "camera": [
+          -5456.846934950482,
+          -25.0,
+          5600.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      }
+    },
+    {
+      "source": "evidence\\implementation\\20261005T090957-capture_parity_delivery\\03-room-overview.png",
+      "sha256": "a23e7cea015ea62cc849246c5a814b35af1ec9f41b1c3f2fb0e0c6cf1c675063",
+      "decoded": true,
+      "kind": "architecture",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -4300.0,
+          -2300.0,
+          4100.0
+        ],
+        "rotation": [
+          -38.79439142620319,
+          28.14160123226174,
+          1.365799660896941e-07
+        ],
+        "fov": 53.0
+      }
+    },
+    {
+      "source": "evidence\\implementation\\20261005T090957-capture_parity_delivery\\04-rear-bulkhead.png",
+      "sha256": "39cfa292ff3fe2e3347062d2242b1b7ac4cfa855b78669ef660f1db494be25b6",
+      "decoded": true,
+      "kind": "architecture",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          650.0,
+          -300.0,
+          600.0
+        ],
+        "rotation": [
+          -14.1670162897172,
+          25.64100582430529,
+          4.861323131627572e-08
+        ],
+        "fov": 62.0
+      }
+    },
+    {
+      "source": "evidence\\implementation\\20261005T090957-capture_parity_delivery\\05-side-services.png",
+      "sha256": "71011a7f1faabfdc418692114057ffe37200a17de6edd3e1d56264c918244590",
+      "decoded": true,
+      "kind": "architecture",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -950.0,
+          100.0,
+          600.0
+        ],
+        "rotation": [
+          -7.297471478842339,
+          -51.81435288940975,
+          -5.098274828291174e-08
+        ],
+        "fov": 60.0
+      }
+    },
+    {
+      "source": "evidence\\implementation\\20261005T090957-capture_parity_delivery\\06-electrical-bay.png",
+      "sha256": "3dc15c2a0036aa682039641fbcc527ce4fc5bbbc880deb338fd357193e24ee6b",
+      "decoded": true,
+      "kind": "architecture",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1100.0,
+          550.0,
+          430.0
+        ],
+        "rotation": [
+          -7.975712055683058,
+          58.04189052666195,
+          6.238539817810328e-08
+        ],
+        "fov": 64.0
+      }
+    }
+  ],
+  "gallery_sha256": "e547482f59b95dec9fba7e7e67ef81bbfaea5a7ce45cea936c64a1fe44caa332",
+  "gallery_transform": "Full-frame 50% thumbnails, no crop, exposure adjustment or retouch; labels disclose gameplay versus temporary architectural cameras",
+  "independent_engine_run": false,
+  "visual_parity_accepted": false
+}

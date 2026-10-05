@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "html_local_references_checked": 37,
+  "distinct_images_decoded": 10,
+  "markdown_local_links_checked": 135,
+  "movie_hash_matches_decoded_receipt": true,
+  "method": "Parse generated HTML and Markdown links, resolve local files, fully decode embedded images, compare native movie hash to its all-frames-decoded receipt. Browser layout/physical input not established by this check."
+}

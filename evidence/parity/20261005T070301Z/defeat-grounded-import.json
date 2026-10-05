@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "source": "C:\\Projects\\to-deploy\\horror-game\\Assets\\Adapted\\Parity\\DefeatGrounded\\Teddy_DefeatGrounded.fbx",
+  "destination": "/Game/TeddyEncounter/Parity/Animation/A_Teddy_DefeatGrounded",
+  "bindings": [
+    {
+      "blueprint": "/Game/TeddyEncounter/Blueprints/BP_TeddyBoss.BP_TeddyBoss",
+      "nodes": [
+        "K2Node_CallFunction_20"
+      ],
+      "before": [
+        "/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat"
+      ],
+      "after": [
+        "/Game/TeddyEncounter/Parity/Animation/A_Teddy_DefeatGrounded.A_Teddy_DefeatGrounded"
+      ],
+      "other_animation_bindings_unchanged": true
+    },
+    {
+      "blueprint": "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling",
+      "nodes": [
+        "K2Node_CallFunction_20",
+        "K2Node_CallFunction_25"
+      ],
+      "before": [
+        "/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat",
+        "/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat"
+      ],
+      "after": [
+        "/Game/TeddyEncounter/Parity/Animation/A_Teddy_DefeatGrounded.A_Teddy_DefeatGrounded",
+        "/Game/TeddyEncounter/Parity/Animation/A_Teddy_DefeatGrounded.A_Teddy_DefeatGrounded"
+      ],
+      "other_animation_bindings_unchanged": true
+    }
+  ],
+  "length": 2.366666555404663,
+  "skeleton": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.SK_Teddy_Skeleton",
+  "original_asset_count": 9,
+  "original_asset_hashes_unchanged": true,
+  "source_sha256": "41c3ab85c9034b1ee2dd6f6bfabeeb74d301e65aac781558cde4bcee461d3acf",
+  "original_hashes": {
+    "TeddyBlueprint\\Content\\TeddyEncounter\\Teddy\\T_Teddy_BaseColor.uasset": "349944d07731fa4c53da3d145f23fa72025ddfbd79a738c3ef9e60be2642af70",
+    "TeddyBlueprint\\Content\\TeddyEncounter\\Teddy\\Attack\\A_Teddy_Attack.uasset": "80a55f7317b1ac44cbce91eb0fb5bf5ff64201029118831001fd46af93558992",
+    "TeddyBlueprint\\Content\\TeddyEncounter\\Teddy\\Crawl\\A_Teddy_Crawl.uasset": "e13175226feef3db49fbbd8ca360846e225a4ef855d40421747f71f9807f613c",
+    "TeddyBlueprint\\Content\\TeddyEncounter\\Teddy\\Defeat\\A_Teddy_Defeat.uasset": "db71bdea8be1cb177425c8fb2169c32fc5aba45ccbcfb1ad45ad5bfdd0971236",
+    "TeddyBlueprint\\Content\\TeddyEncounter\\Teddy\\Hit\\A_Teddy_Hit.uasset": "336002d8436c533e1661c912d1994656da2ea18c0f96331b917786f28c9d294e",
+    "TeddyBlueprint\\Content\\TeddyEncounter\\Teddy\\Idle\\A_Teddy_Idle.uasset": "978948b70eaa6f12ccd4f12b51174a01726f9b660a312019dd059ad52cb8849d",
+    "TeddyBlueprint\\Content\\TeddyEncounter\\Teddy\\Idle\\SK_Teddy.uasset": "84a1becf9529426ba0f434a8e7ec38bd39219de0c0de4e4b45c93d9258c3970b",
+    "TeddyBlueprint\\Content\\TeddyEncounter\\Teddy\\Idle\\SK_Teddy_Skeleton.uasset": "61e59728f72c8da74c2c61b680e7a4a762e5a7768ecfbe4f1d72a7b49fcd29c1",
+    "TeddyBlueprint\\Content\\TeddyEncounter\\Teddy\\Walk\\A_Teddy_Walk.uasset": "386d95b3353f9f4a629796b4af988c6760660ddd47065587fd9eba9d24da0826"
+  }
+}

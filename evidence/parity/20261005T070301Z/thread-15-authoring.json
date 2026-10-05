@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "base_color": [
+    0.06,
+    0.055,
+    0.045
+  ],
+  "scene_writes": false,
+  "material": "/Game/TeddyEncounter/Parity/Materials/M_Parity_ThreadV2.M_Parity_ThreadV2"
+}

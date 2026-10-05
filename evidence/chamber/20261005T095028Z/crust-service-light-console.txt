@@ -1,0 +1,2 @@
+Running Unreal script: C:\Projects\to-deploy\horror-game\tools\apply_chamber_lighting.py
+Log: C:\Projects\to-deploy\horror-game\evidence\editor-runs\20261005T111230-a1e394\editor.log

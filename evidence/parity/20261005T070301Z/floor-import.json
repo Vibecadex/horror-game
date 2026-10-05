@@ -1,0 +1,959 @@
+{
+  "passed": true,
+  "meshes": [
+    {
+      "name": "SM_ParityFractureField_A",
+      "dimensions_cm": [
+        626.7772827148438,
+        497.6949462890625,
+        2.1548186987638474
+      ]
+    },
+    {
+      "name": "SM_ParityFractureField_B",
+      "dimensions_cm": [
+        637.7384948730469,
+        351.33485412597656,
+        2.1067344397306442
+      ]
+    },
+    {
+      "name": "SM_ParityEdgeSpall",
+      "dimensions_cm": [
+        596.2561645507812,
+        168.5764923095703,
+        10.448150560259819
+      ]
+    },
+    {
+      "name": "SM_ParityRubbleScatter_A",
+      "dimensions_cm": [
+        410.9315185546875,
+        319.8533630371094,
+        3.749049589037895
+      ]
+    },
+    {
+      "name": "SM_ParityRubbleScatter_B",
+      "dimensions_cm": [
+        329.191162109375,
+        239.87348175048828,
+        3.4405338019132614
+      ]
+    },
+    {
+      "name": "SM_ParityMicroChips",
+      "dimensions_cm": [
+        556.0025024414062,
+        483.8789367675781,
+        1.238140508532524
+      ]
+    }
+  ],
+  "actors": [
+    {
+      "label": "TE_Parity_Floor_000",
+      "mesh": "SM_ParityFractureField_A",
+      "location": [
+        -750,
+        -650,
+        -5
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        1
+      ],
+      "yaw": 23
+    },
+    {
+      "label": "TE_Parity_Floor_001",
+      "mesh": "SM_ParityFractureField_A",
+      "location": [
+        120,
+        920,
+        -5
+      ],
+      "scale": [
+        0.78,
+        0.78,
+        1
+      ],
+      "yaw": -31
+    },
+    {
+      "label": "TE_Parity_Floor_002",
+      "mesh": "SM_ParityFractureField_A",
+      "location": [
+        900,
+        -380,
+        -5
+      ],
+      "scale": [
+        0.72,
+        0.72,
+        1
+      ],
+      "yaw": 71
+    },
+    {
+      "label": "TE_Parity_Floor_003",
+      "mesh": "SM_ParityFractureField_B",
+      "location": [
+        -440,
+        80,
+        -5
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 24
+    },
+    {
+      "label": "TE_Parity_Floor_004",
+      "mesh": "SM_ParityFractureField_B",
+      "location": [
+        -530,
+        920,
+        -5
+      ],
+      "scale": [
+        0.72,
+        0.72,
+        1
+      ],
+      "yaw": -23
+    },
+    {
+      "label": "TE_Parity_Floor_005",
+      "mesh": "SM_ParityFractureField_B",
+      "location": [
+        620,
+        200,
+        -5
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        1
+      ],
+      "yaw": 101
+    },
+    {
+      "label": "TE_Parity_Floor_006",
+      "mesh": "SM_ParityFractureField_B",
+      "location": [
+        180,
+        -970,
+        -5
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        1
+      ],
+      "yaw": 10
+    },
+    {
+      "label": "TE_Parity_Floor_007",
+      "mesh": "SM_ParityFractureField_B",
+      "location": [
+        1060,
+        840,
+        -5
+      ],
+      "scale": [
+        0.75,
+        0.75,
+        1
+      ],
+      "yaw": 118
+    },
+    {
+      "label": "TE_Parity_Floor_008",
+      "mesh": "SM_ParityFractureField_B",
+      "location": [
+        -1080,
+        -140,
+        -5
+      ],
+      "scale": [
+        0.68,
+        0.68,
+        1
+      ],
+      "yaw": 85
+    },
+    {
+      "label": "TE_Parity_Floor_009",
+      "mesh": "SM_ParityEdgeSpall",
+      "location": [
+        -920,
+        -1260,
+        -5
+      ],
+      "scale": [
+        0.86,
+        0.86,
+        1
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "TE_Parity_Floor_010",
+      "mesh": "SM_ParityEdgeSpall",
+      "location": [
+        -120,
+        -1330,
+        -5
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        1
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "TE_Parity_Floor_011",
+      "mesh": "SM_ParityEdgeSpall",
+      "location": [
+        770,
+        -1300,
+        -5
+      ],
+      "scale": [
+        0.91,
+        0.91,
+        1
+      ],
+      "yaw": -8
+    },
+    {
+      "label": "TE_Parity_Floor_012",
+      "mesh": "SM_ParityEdgeSpall",
+      "location": [
+        -1050,
+        1250,
+        -5
+      ],
+      "scale": [
+        0.72,
+        0.72,
+        1
+      ],
+      "yaw": 0
+    },
+    {
+      "label": "TE_Parity_Floor_013",
+      "mesh": "SM_ParityEdgeSpall",
+      "location": [
+        -280,
+        1320,
+        -5
+      ],
+      "scale": [
+        0.88,
+        0.88,
+        1
+      ],
+      "yaw": 8
+    },
+    {
+      "label": "TE_Parity_Floor_014",
+      "mesh": "SM_ParityEdgeSpall",
+      "location": [
+        690,
+        1300,
+        -5
+      ],
+      "scale": [
+        0.93,
+        0.93,
+        1
+      ],
+      "yaw": -4
+    },
+    {
+      "label": "TE_Parity_Floor_015",
+      "mesh": "SM_ParityEdgeSpall",
+      "location": [
+        1240,
+        580,
+        -5
+      ],
+      "scale": [
+        0.92,
+        0.92,
+        1
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "TE_Parity_Floor_016",
+      "mesh": "SM_ParityEdgeSpall",
+      "location": [
+        1280,
+        -500,
+        -5
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        1
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "TE_Parity_Floor_017",
+      "mesh": "SM_ParityEdgeSpall",
+      "location": [
+        -1270,
+        220,
+        -5
+      ],
+      "scale": [
+        0.8,
+        0.8,
+        1
+      ],
+      "yaw": 90
+    },
+    {
+      "label": "TE_Parity_Floor_018",
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location": [
+        -980,
+        -850,
+        -5
+      ],
+      "scale": [
+        0.6982376172727287,
+        0.6982376172727287,
+        1
+      ],
+      "yaw": -64.90911693558411
+    },
+    {
+      "label": "TE_Parity_Floor_019",
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location": [
+        -500,
+        -1090,
+        -5
+      ],
+      "scale": [
+        0.893706797216834,
+        0.893706797216834,
+        1
+      ],
+      "yaw": -179.20243396443703
+    },
+    {
+      "label": "TE_Parity_Floor_020",
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location": [
+        90,
+        -1090,
+        -5
+      ],
+      "scale": [
+        0.6813069990466137,
+        0.6813069990466137,
+        1
+      ],
+      "yaw": 12.306447621856108
+    },
+    {
+      "label": "TE_Parity_Floor_021",
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location": [
+        660,
+        -930,
+        -5
+      ],
+      "scale": [
+        0.8517647680889294,
+        0.8517647680889294,
+        1
+      ],
+      "yaw": 0.2021680787584046
+    },
+    {
+      "label": "TE_Parity_Floor_022",
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location": [
+        1010,
+        -660,
+        -5
+      ],
+      "scale": [
+        0.6864208525929751,
+        0.6864208525929751,
+        1
+      ],
+      "yaw": -128.08604041943914
+    },
+    {
+      "label": "TE_Parity_Floor_023",
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location": [
+        1010,
+        -50,
+        -5
+      ],
+      "scale": [
+        0.9655343118054427,
+        0.9655343118054427,
+        1
+      ],
+      "yaw": 160.52313074085868
+    },
+    {
+      "label": "TE_Parity_Floor_024",
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location": [
+        980,
+        640,
+        -5
+      ],
+      "scale": [
+        0.8384349426974835,
+        0.8384349426974835,
+        1
+      ],
+      "yaw": 48.726287792854606
+    },
+    {
+      "label": "TE_Parity_Floor_025",
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location": [
+        590,
+        980,
+        -5
+      ],
+      "scale": [
+        0.9268232137763746,
+        0.9268232137763746,
+        1
+      ],
+      "yaw": -100.8657658587108
+    },
+    {
+      "label": "TE_Parity_Floor_026",
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location": [
+        10,
+        1050,
+        -5
+      ],
+      "scale": [
+        0.8647339015665289,
+        0.8647339015665289,
+        1
+      ],
+      "yaw": -4.787671503453538
+    },
+    {
+      "label": "TE_Parity_Floor_027",
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location": [
+        -630,
+        930,
+        -5
+      ],
+      "scale": [
+        0.7266971365248923,
+        0.7266971365248923,
+        1
+      ],
+      "yaw": -93.98179469527605
+    },
+    {
+      "label": "TE_Parity_Floor_028",
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location": [
+        -1020,
+        550,
+        -5
+      ],
+      "scale": [
+        0.8471879557614903,
+        0.8471879557614903,
+        1
+      ],
+      "yaw": -95.01514462544334
+    },
+    {
+      "label": "TE_Parity_Floor_029",
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location": [
+        -1110,
+        0,
+        -5
+      ],
+      "scale": [
+        0.9385131217323373,
+        0.9385131217323373,
+        1
+      ],
+      "yaw": -120.75821436219854
+    },
+    {
+      "label": "TE_Parity_Floor_030",
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location": [
+        -750,
+        -400,
+        -5
+      ],
+      "scale": [
+        0.7296108225556738,
+        0.7296108225556738,
+        1
+      ],
+      "yaw": 30.60513631900355
+    },
+    {
+      "label": "TE_Parity_Floor_031",
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location": [
+        300,
+        530,
+        -5
+      ],
+      "scale": [
+        0.8825114640565985,
+        0.8825114640565985,
+        1
+      ],
+      "yaw": -132.9391511776361
+    },
+    {
+      "label": "TE_Parity_Floor_032",
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location": [
+        450,
+        -500,
+        -5
+      ],
+      "scale": [
+        0.7167509301393679,
+        0.7167509301393679,
+        1
+      ],
+      "yaw": 36.39843752603517
+    },
+    {
+      "label": "TE_Parity_Floor_033",
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location": [
+        -240,
+        210,
+        -5
+      ],
+      "scale": [
+        0.8143526969255639,
+        0.8143526969255639,
+        1
+      ],
+      "yaw": -143.66563799136983
+    },
+    {
+      "label": "TE_Parity_Floor_034",
+      "mesh": "SM_ParityMicroChips",
+      "location": [
+        -900,
+        -700,
+        -5
+      ],
+      "scale": [
+        0.9960009417411912,
+        0.9960009417411912,
+        1
+      ],
+      "yaw": 121.54389702807401
+    },
+    {
+      "label": "TE_Parity_Floor_035",
+      "mesh": "SM_ParityMicroChips",
+      "location": [
+        -300,
+        -950,
+        -5
+      ],
+      "scale": [
+        0.7552968210754909,
+        0.7552968210754909,
+        1
+      ],
+      "yaw": -85.26556877896364
+    },
+    {
+      "label": "TE_Parity_Floor_036",
+      "mesh": "SM_ParityMicroChips",
+      "location": [
+        350,
+        -880,
+        -5
+      ],
+      "scale": [
+        0.7524382291628013,
+        0.7524382291628013,
+        1
+      ],
+      "yaw": -55.98463678556041
+    },
+    {
+      "label": "TE_Parity_Floor_037",
+      "mesh": "SM_ParityMicroChips",
+      "location": [
+        900,
+        -510,
+        -5
+      ],
+      "scale": [
+        0.7681887414167724,
+        0.7681887414167724,
+        1
+      ],
+      "yaw": 4.534556928207564
+    },
+    {
+      "label": "TE_Parity_Floor_038",
+      "mesh": "SM_ParityMicroChips",
+      "location": [
+        920,
+        350,
+        -5
+      ],
+      "scale": [
+        0.9262489921820645,
+        0.9262489921820645,
+        1
+      ],
+      "yaw": -157.8052582111704
+    },
+    {
+      "label": "TE_Parity_Floor_039",
+      "mesh": "SM_ParityMicroChips",
+      "location": [
+        540,
+        920,
+        -5
+      ],
+      "scale": [
+        0.9971257100230247,
+        0.9971257100230247,
+        1
+      ],
+      "yaw": 44.13960090096947
+    },
+    {
+      "label": "TE_Parity_Floor_040",
+      "mesh": "SM_ParityMicroChips",
+      "location": [
+        -170,
+        970,
+        -5
+      ],
+      "scale": [
+        0.7625116412531184,
+        0.7625116412531184,
+        1
+      ],
+      "yaw": 40.50529818607285
+    },
+    {
+      "label": "TE_Parity_Floor_041",
+      "mesh": "SM_ParityMicroChips",
+      "location": [
+        -850,
+        600,
+        -5
+      ],
+      "scale": [
+        0.9275076265958068,
+        0.9275076265958068,
+        1
+      ],
+      "yaw": -109.5037595313156
+    },
+    {
+      "label": "TE_Parity_Floor_042",
+      "mesh": "SM_ParityMicroChips",
+      "location": [
+        -950,
+        30,
+        -5
+      ],
+      "scale": [
+        0.7643768049450747,
+        0.7643768049450747,
+        1
+      ],
+      "yaw": 44.609604741459265
+    },
+    {
+      "label": "TE_Parity_Floor_043",
+      "mesh": "SM_ParityMicroChips",
+      "location": [
+        -280,
+        190,
+        -5
+      ],
+      "scale": [
+        0.9000374184978196,
+        0.9000374184978196,
+        1
+      ],
+      "yaw": 39.157042615556264
+    },
+    {
+      "label": "TE_Parity_Floor_044",
+      "mesh": "SM_ParityMicroChips",
+      "location": [
+        370,
+        -170,
+        -5
+      ],
+      "scale": [
+        0.9395641618706987,
+        0.9395641618706987,
+        1
+      ],
+      "yaw": 124.37465722356768
+    }
+  ],
+  "new_mesh_collision": "NoCollision",
+  "source_unchanged": true,
+  "saved_readback": [
+    {
+      "label": "TE_Parity_Floor_000",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_001",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_002",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_003",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_004",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_005",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_006",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_007",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_008",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_009",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_010",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_011",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_012",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_013",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_014",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_015",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_016",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_017",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_018",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_019",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_020",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_021",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_022",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_023",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_024",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_025",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_026",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_027",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_028",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_029",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_030",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_031",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_032",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_033",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_034",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_035",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_036",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_037",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_038",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_039",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_040",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_041",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_042",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_043",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    },
+    {
+      "label": "TE_Parity_Floor_044",
+      "profile": "NoCollision",
+      "enabled": "<CollisionEnabled.NO_COLLISION: 0>"
+    }
+  ]
+}

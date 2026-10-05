@@ -1,0 +1,60 @@
+{
+  "independent_byte_hash_and_placement_checks": true,
+  "manifest": "Assets/Adapted/ChamberParity/CrustNormalsV2/manifest.json",
+  "manifest_sha256": "c3e16e52b8611bc6fd5024f2530824bd06f7e6512319b2eea6e7ea052d21acef",
+  "original_frozen_manifest": "evidence/chamber/20261005T095028Z/chamber-crust-reviewed.json",
+  "originals": [
+    {
+      "path": "Assets/Adapted/ChamberParity/Crust/SM_ChamberCrustBank_A.fbx",
+      "sha256": "292e188d0396ac4ae08418f916aad3cf4e32d22ef3fe2bf149ddd87f5152a7b5",
+      "matches_frozen_original": true
+    },
+    {
+      "path": "Assets/Adapted/ChamberParity/Crust/SM_ChamberCrustBank_B.fbx",
+      "sha256": "990579267c6039a666b778a21f6dc28ffc8d896a41768990ca7fdba02d95edcd",
+      "matches_frozen_original": true
+    }
+  ],
+  "same_five_placement_values_and_bounds": true,
+  "normal_audit_source": "Artist-produced before/after and FBX roundtrip records; read and consistency-checked by QA, not re-executed by QA.",
+  "normal_audits": [
+    {
+      "name": "SM_ChamberCrustBank_A_V2",
+      "original_wrong_cap_or_underside_triangles": 624,
+      "stages": {
+        "source_after": {
+          "wrong_cap_or_underside_triangles": 0,
+          "closed_solid_components": 39,
+          "positive_closed_solid_volumes": true
+        },
+        "fbx_roundtrip": {
+          "wrong_cap_or_underside_triangles": 0,
+          "closed_solid_components": 39,
+          "positive_closed_solid_volumes": true
+        }
+      },
+      "source_reported_position_preservation": true,
+      "source_reported_uv_preservation": true
+    },
+    {
+      "name": "SM_ChamberCrustBank_B_V2",
+      "original_wrong_cap_or_underside_triangles": 536,
+      "stages": {
+        "source_after": {
+          "wrong_cap_or_underside_triangles": 0,
+          "closed_solid_components": 39,
+          "positive_closed_solid_volumes": true
+        },
+        "fbx_roundtrip": {
+          "wrong_cap_or_underside_triangles": 0,
+          "closed_solid_components": 39,
+          "positive_closed_solid_volumes": true
+        }
+      },
+      "source_reported_position_preservation": true,
+      "source_reported_uv_preservation": true
+    }
+  ],
+  "source_preview_inspected": true,
+  "engine_visual_repair_verified": false
+}

@@ -1,0 +1,38 @@
+{
+  "server": "http://127.0.0.1:8195",
+  "model": "flux-2-klein-4b-fp8",
+  "clip": "qwen_3_4b",
+  "vae": "flux2-vae",
+  "steps": 4,
+  "cfg": 1.0,
+  "sampler": "euler",
+  "scheduler": "simple",
+  "size": [
+    1024,
+    1024
+  ],
+  "not_from_reference_clip": true,
+  "jobs": [
+    {
+      "name": "cloth-weave",
+      "file": "cloth-weave.png",
+      "bytes": 2480965,
+      "seed": 61917,
+      "prompt_id": "existing"
+    },
+    {
+      "name": "cloth-height",
+      "file": "cloth-height.png",
+      "bytes": 2102997,
+      "seed": 61918,
+      "prompt_id": "217a73d4-9204-4b53-b5f0-a28583523346"
+    },
+    {
+      "name": "concrete-damp",
+      "file": "concrete-damp.png",
+      "bytes": 2205012,
+      "seed": 61919,
+      "prompt_id": "3414980d-1046-4c65-8ed4-d795f65d38db"
+    }
+  ]
+}

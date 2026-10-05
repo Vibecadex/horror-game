@@ -1,0 +1,372 @@
+{
+  "last_frame": {
+    "index": 252,
+    "wall_time": 19.937000000150874,
+    "game_time": 1.4516431167721748,
+    "phase": 10,
+    "player": [
+      -230.0,
+      570.0,
+      85.14999961853027
+    ],
+    "boss": [
+      171.57925669263872,
+      -99.29876115439791,
+      227.15000200271606
+    ],
+    "player_health": 100.0,
+    "boss_health": 300.0,
+    "boss_state": 0,
+    "player_yaw": -145.0,
+    "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T044237-record_encounter\\frames\\frame-00252.png",
+    "sha256": "5e72b85c40a23196baa94ca8a493e5ef72bec10b8d9231854478ba7321eb48c9",
+    "crc_and_stream_complete": true
+  },
+  "events": [
+    {
+      "name": "start",
+      "wall": 0.0,
+      "game": 0.0,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 0.0,
+      "game": 0.0,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 1.375,
+      "game": 1.3108339048922062,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1
+    },
+    {
+      "name": "first_strike_dodge",
+      "wall": 2.0160000000614673,
+      "game": 1.9621624127030373,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 2.327999999979511,
+      "game": 2.267248310148716,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 3.5160000000614673,
+      "game": 3.4556234031915665,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 3.594000000040978,
+      "game": 3.5273298025131226,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1
+    },
+    {
+      "name": "second_strike_taken",
+      "wall": 4.594000000040978,
+      "game": 4.521592907607555,
+      "player_health": 76.0,
+      "boss_health": 300.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 4.594000000040978,
+      "game": 4.521592907607555,
+      "player_health": 76.0,
+      "boss_health": 300.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 4.75,
+      "game": 4.6826063096523285,
+      "player_health": 76.0,
+      "boss_health": 288.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 5.077999999979511,
+      "game": 5.009809009730816,
+      "player_health": 76.0,
+      "boss_health": 276.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 5.405999999959022,
+      "game": 5.338007308542728,
+      "player_health": 76.0,
+      "boss_health": 264.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 5.797000000020489,
+      "game": 5.7421644032001495,
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 6.844000000040978,
+      "game": 6.762222699820995,
+      "player_health": 76.0,
+      "boss_health": 240.0,
+      "boss_state": 4
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 6.922000000020489,
+      "game": 6.859923899173737,
+      "player_health": 66.0,
+      "boss_health": 240.0,
+      "boss_state": 4
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 7.094000000040978,
+      "game": 7.023855000734329,
+      "player_health": 66.0,
+      "boss_health": 240.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 7.422000000020489,
+      "game": 7.350545302033424,
+      "player_health": 66.0,
+      "boss_health": 228.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 7.766000000061467,
+      "game": 7.701939009130001,
+      "player_health": 66.0,
+      "boss_health": 216.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 8.094000000040978,
+      "game": 8.025726608932018,
+      "player_health": 66.0,
+      "boss_health": 204.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 8.405999999959022,
+      "game": 8.338745005428791,
+      "player_health": 66.0,
+      "boss_health": 192.0,
+      "boss_state": 4
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 8.655999999959022,
+      "game": 8.5813580006361,
+      "player_health": 66.0,
+      "boss_health": 192.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 8.734000000171363,
+      "game": 8.667777501046658,
+      "player_health": 66.0,
+      "boss_health": 180.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 9.109000000171363,
+      "game": 9.04384010285139,
+      "player_health": 66.0,
+      "boss_health": 168.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 9.484000000171363,
+      "game": 9.392409205436707,
+      "player_health": 66.0,
+      "boss_health": 156.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 9.797000000020489,
+      "game": 9.713609404861927,
+      "player_health": 66.0,
+      "boss_health": 144.0,
+      "boss_state": 4
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 10.141000000061467,
+      "game": 10.038106299936771,
+      "player_health": 66.0,
+      "boss_health": 132.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 10.422000000020489,
+      "game": 10.35231800377369,
+      "player_health": 66.0,
+      "boss_health": 120.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 10.75,
+      "game": 10.673989601433277,
+      "player_health": 66.0,
+      "boss_health": 108.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 11.077999999979511,
+      "game": 11.019958898425102,
+      "player_health": 66.0,
+      "boss_health": 96.0,
+      "boss_state": 4
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 11.405999999959022,
+      "game": 11.334106504917145,
+      "player_health": 66.0,
+      "boss_health": 84.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 11.766000000061467,
+      "game": 11.697577312588692,
+      "player_health": 66.0,
+      "boss_health": 72.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 12.077999999979511,
+      "game": 12.017314709722996,
+      "player_health": 66.0,
+      "boss_health": 60.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 12.405999999959022,
+      "game": 12.341223306953907,
+      "player_health": 66.0,
+      "boss_health": 48.0,
+      "boss_state": 4
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 12.655999999959022,
+      "game": 12.586261004209518,
+      "player_health": 66.0,
+      "boss_health": 48.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 12.734000000171363,
+      "game": 12.66572280228138,
+      "player_health": 66.0,
+      "boss_health": 36.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 13.062000000150874,
+      "game": 12.989361494779587,
+      "player_health": 66.0,
+      "boss_health": 24.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 13.422000000020489,
+      "game": 13.33426108956337,
+      "player_health": 66.0,
+      "boss_health": 12.0,
+      "boss_state": 0
+    },
+    {
+      "name": "boss_defeat",
+      "wall": 13.719000000040978,
+      "game": 13.648071497678757,
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 13.719000000040978,
+      "game": 13.648071497678757,
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3
+    },
+    {
+      "name": "pause",
+      "wall": 16.594000000040978,
+      "game": 16.525403022766113,
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3
+    },
+    {
+      "name": "unpause",
+      "wall": 17.734000000171363,
+      "game": 16.607389017939568,
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3
+    },
+    {
+      "name": "restart",
+      "wall": 18.391000000061467,
+      "game": 17.183923713862896,
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 18.641000000061467,
+      "game": 0.0827120989561081,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0
+    }
+  ],
+  "phase": 10
+}

@@ -1,0 +1,38 @@
+{
+  "checked_at_utc": "2026-10-04T17:11:44.062081+00:00",
+  "source": "C:\\Projects\\to-deploy\\horror-scene\\BossShot.zip",
+  "source_sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+  "destination": "C:\\Projects\\to-deploy\\horror-game\\BossShot",
+  "files": [
+    {
+      "path": "BossShot/BLUEPRINT.txt",
+      "bytes": 1249,
+      "sha256": "d551c0e3aebfa98aa5897ca0fd63afcb35471c38fab13157c2ea19bacb935261"
+    },
+    {
+      "path": "BossShot/BossShot.uproject",
+      "bytes": 401,
+      "sha256": "e13868a52f0afb1c6f7f89026cec8967e5fe45f784d88a1a454d547e80d92d53"
+    },
+    {
+      "path": "BossShot/Config/DefaultEngine.ini",
+      "bytes": 484,
+      "sha256": "e9042f91914ba4ed9dd10b8b303d6a5ffc8c208086b811c5c8a7093038abde4b"
+    },
+    {
+      "path": "BossShot/Config/DefaultGame.ini",
+      "bytes": 208,
+      "sha256": "3287b24b0257e70cd83111a2a250127b2ea9074dfff256be4311368d16358014"
+    },
+    {
+      "path": "BossShot/Content/Python/create_boss_arena.py",
+      "bytes": 7975,
+      "sha256": "01ef7fa4ededfef9d3bd812c8be52ff95744658dca9db1186dbf1238bf76d3d5"
+    },
+    {
+      "path": "BossShot/README.txt",
+      "bytes": 1974,
+      "sha256": "2c4b835650feb7114b4b5044284516a664f0b1bda624a64016de72e1c4d0ca49"
+    }
+  ]
+}

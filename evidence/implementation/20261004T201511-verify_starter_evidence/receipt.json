@@ -1,0 +1,405 @@
+{
+  "passed": false,
+  "checks": {
+    "possession": true,
+    "no_input_stationary": true,
+    "mapped_move_positive_x": true,
+    "aim_180": true,
+    "aim_90": true,
+    "fire_new_player_origin_projectiles": false,
+    "dash_faster_than_walk": true,
+    "held_complete_png": true
+  },
+  "phases": {
+    "no_input_start": {
+      "pawn": [
+        1000.0,
+        1810.0,
+        90.21249914169312
+      ],
+      "yaw": 0.0,
+      "camera": [
+        -414.1327413103868,
+        1810.0,
+        1776.2446955173498
+      ],
+      "camera_rotation": [
+        -49.999999999999915,
+        0.0,
+        -0.0
+      ],
+      "fov": 75.0,
+      "game_time": 2.407560896128416
+    },
+    "no_input_end": {
+      "pawn": [
+        1000.0,
+        1810.0,
+        90.21249914169312
+      ],
+      "yaw": 0.0,
+      "camera": [
+        -414.1327413103868,
+        1810.0,
+        1775.9552216465786
+      ],
+      "camera_rotation": [
+        -49.999999999999915,
+        0.0,
+        -0.0
+      ],
+      "fov": 75.0,
+      "game_time": 3.4077240973711014
+    },
+    "move_end": {
+      "pawn": [
+        1177.5477232100448,
+        1810.0,
+        95.21007204055786
+      ],
+      "yaw": 0.0,
+      "camera": [
+        -397.36983632348506,
+        1810.0,
+        1776.2796340130694
+      ],
+      "camera_rotation": [
+        -49.999999999999915,
+        0.0,
+        -0.0
+      ],
+      "fov": 75.0,
+      "game_time": 4.007803797721863
+    },
+    "aim_180": {
+      "pawn": [
+        1212.8864299115846,
+        1810.0,
+        95.21007204055786
+      ],
+      "yaw": 179.52410888671875,
+      "camera": [
+        -340.0474343653784,
+        1810.0,
+        1777.5251069236988
+      ],
+      "camera_rotation": [
+        -49.99999999999995,
+        -7.313140126349729e-17,
+        3.923964732578678e-17
+      ],
+      "fov": 75.0,
+      "game_time": 4.709741499274969
+    },
+    "aim_90": {
+      "pawn": [
+        1212.8864299115846,
+        1810.0,
+        95.21007204055786
+      ],
+      "yaw": 90.45120239257815,
+      "camera": [
+        -298.96134302146106,
+        1810.0000000000002,
+        1778.4080185644489
+      ],
+      "camera_rotation": [
+        -49.99999999999998,
+        8.968939137803113e-15,
+        -4.182285005483683e-15
+      ],
+      "fov": 75.0,
+      "game_time": 5.41020929813385
+    },
+    "fire_start": {
+      "pawn": [
+        1212.8864299115846,
+        1810.0,
+        95.21007204055786
+      ],
+      "yaw": 90.45120239257815,
+      "camera": [
+        -223.44526089681244,
+        1810.0000000000005,
+        1780.0308068558338
+      ],
+      "camera_rotation": [
+        -49.99999999999998,
+        8.968939137803113e-15,
+        -4.182285005483683e-15
+      ],
+      "fov": 75.0,
+      "game_time": 8.412394799757749
+    },
+    "fire_end": {
+      "pawn": [
+        1212.8864299115846,
+        1810.0,
+        95.21007204055786
+      ],
+      "yaw": 90.45120239257815,
+      "camera": [
+        -217.59508974678806,
+        1810.0,
+        1780.1565229811645
+      ],
+      "camera_rotation": [
+        -49.99999999999998,
+        8.968939137803113e-15,
+        -4.182285005483683e-15
+      ],
+      "fov": 75.0,
+      "game_time": 9.02257150085643
+    },
+    "dash_start": {
+      "pawn": [
+        1181.5743239926908,
+        1810.0,
+        95.21007204055786
+      ],
+      "yaw": 90.45120239257815,
+      "camera": [
+        -216.9909128730544,
+        1810.0000000000002,
+        1780.1984888464035
+      ],
+      "camera_rotation": [
+        -49.99999999999998,
+        8.968939137803113e-15,
+        -4.182285005483683e-15
+      ],
+      "fov": 75.0,
+      "game_time": 9.276324898470193
+    },
+    "dash_end": {
+      "pawn": [
+        727.3265916186505,
+        1810.0,
+        90.21249841859424
+      ],
+      "yaw": 90.45120239257815,
+      "camera": [
+        -264.04841880311017,
+        1810.0000000000005,
+        1779.6300797926806
+      ],
+      "camera_rotation": [
+        -49.99999999999998,
+        8.968939137803113e-15,
+        -4.182285005483683e-15
+      ],
+      "fov": 75.0,
+      "game_time": 9.58293639915064
+    }
+  },
+  "map": "/Game/SetupValidation/Evidence_20261004/StarterEvidence",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "physical_device_verified": false,
+  "input_method": "Enhanced Input actions; separate no-input, movement, aim, fire and dash windows",
+  "images": [
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T201511-verify_starter_evidence\\starter-held.png",
+      "width": 1280,
+      "height": 720,
+      "bytes": 1151694,
+      "sha256": "a2a57898b89b6e74da44cb6adb8cb7baa792d21eb8c4ec9ccd827a3cc618be3b",
+      "pixel_sha256": "c9e21a1c049da6f1656abdec33cf43aa1844a6c26c19bf295a8326bcb98fcd59",
+      "all_chunk_crcs_valid": true,
+      "full_pixel_decode": true,
+      "range": [
+        0,
+        255
+      ],
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IEND"
+      ]
+    }
+  ],
+  "world": "/Game/SetupValidation/Evidence_20261004/UEDPIE_0_StarterEvidence.StarterEvidence",
+  "rendering": {
+    "r.Shadow.Virtual.Enable": 1,
+    "r.DynamicGlobalIlluminationMethod": 1,
+    "r.ReflectionMethod": 1,
+    "r.DefaultFeature.AutoExposure": 1,
+    "sg.ShadowQuality": 3,
+    "sg.PostProcessQuality": 3,
+    "r.ScreenPercentage": 0
+  },
+  "capture_contract": {
+    "method": "World paused; pawn and gameplay camera sampled every Slate tick across warmup, request and full PNG completion",
+    "loading_barrier": "AutomationLibrary.finish_loading_before_screenshot",
+    "additional_paused_history_warmup_seconds": 3,
+    "exact_dynamic_frame_identity_claimed": false,
+    "held_state": {
+      "pawn": [
+        720.4525088613315,
+        1810.0,
+        90.21249841859424
+      ],
+      "yaw": 90.45120239257815,
+      "camera": [
+        -434.1396850702366,
+        1810.0,
+        1777.9986850152977
+      ],
+      "camera_rotation": [
+        -49.99999999999998,
+        8.968939137803113e-15,
+        -4.182285005483683e-15
+      ],
+      "fov": 75.0
+    },
+    "held_samples": 161
+  },
+  "movement_delta": [
+    177.54772321004475,
+    0.0,
+    4.997572898864746
+  ],
+  "new_projectiles": {},
+  "dash_peak_speed": 2503.846541246994,
+  "projectile_attribution": "New names during fire-only phase, spawned near player in player facing direction; stock owner/instigator values recorded separately",
+  "wall_seconds": 15.452999999979511
+}

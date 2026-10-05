@@ -1,0 +1,14 @@
+{
+  "dimensions": [
+    1280,
+    720
+  ],
+  "duration_seconds": 17.1,
+  "fps": "5120/171",
+  "decoded_frames": 512,
+  "successive_frames_changed_at_256x144": 511,
+  "fraction_successive_frames_changed": 1.0,
+  "native_audio_peak_linear": 0.196533203125,
+  "audio_alignment": "Recorded separately from the native game master; no sync claim or dubbing",
+  "note": "Changed encoded frames establish motion sampling, not an engine performance benchmark or exact source-frame identity."
+}

@@ -1,0 +1,3607 @@
+{
+  "passed": true,
+  "preserved_old_materials": true,
+  "character_and_floor_changes": false,
+  "materials": [
+    "/Game/TeddyEncounter/Chamber/Materials/M_Chamber_Concrete.M_Chamber_Concrete",
+    "/Game/TeddyEncounter/Chamber/Materials/M_Chamber_Metal.M_Chamber_Metal",
+    "/Game/TeddyEncounter/Chamber/Materials/M_Chamber_Rust.M_Chamber_Rust",
+    "/Game/TeddyEncounter/Chamber/Materials/M_Chamber_Dark.M_Chamber_Dark"
+  ],
+  "actors": [
+    {
+      "label": "TE_Room_FarWall",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SideWall_-1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SideLowerDamp_-1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SideCornice_-1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SideFoundation_-1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SideGutter_-1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SideWall_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SideLowerDamp_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SideCornice_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SideFoundation_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SideGutter_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FarLowerDamp",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FarCornice",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FarFoundation",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_BulkheadDoor",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_-1360",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_-780",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_780",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_1380",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearFan",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearTank",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_4",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_4",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_LeftFan",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RightCabinetA",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RightCabinetB",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RightTank",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RightPipeRun",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RightFan",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_LeftCrate",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RightSpool",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearCrate",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_4",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_4",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconHousing_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconHousing_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearFixture_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_RearFixture_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_4",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_5",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_6",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_7",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_8",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_9",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_10",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_11",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_12",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_13",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_14",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_15",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_16",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_17",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_18",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_19",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_20",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_21",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_22",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_23",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_24",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_25",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_26",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_27",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_FarBay_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_FarBay_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_FarBay_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_FarBay_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_FarBay_4",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_FarBay_5",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_FarBay_6",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_FarBay_7",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_FarEnd_-1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_-1_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_-1_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_-1_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_-1_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_-1_4",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_-1_5",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_-1_6",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_-1_7",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideEnd_-1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_FarEnd_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_1_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_1_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_1_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_1_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_1_4",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_1_5",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_1_6",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideBay_1_7",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_SideEnd_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Cutaway_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Cutaway_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Cutaway_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Cutaway_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_CutawayReturn_-1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_CutawayReturn_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_RearInset_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_RearInset_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_RearInset_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_RearInset_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_PipeSaddle_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_PipeSaddle_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_PipeSaddle_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_PipeSaddle_3",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_PipeSaddle_4",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_CableTray_0",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_CableTray_1",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_CableTray_2",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_148",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_150",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_152",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_154",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_156",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_157",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_158",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_159",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_160",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_161",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_162",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_163",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_165",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_166",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_167",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_168",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_169",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_170",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_185",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_186",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_187",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_188",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_189",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_190",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_191",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_192",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_193",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_194",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_195",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_196",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_197",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_198",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_199",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_202",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_203",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_204",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_226",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Parity_RoomExt_Dress_227",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Chamber_RearBulkhead",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Concrete"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          3,
+          "Dark"
+        ],
+        [
+          "StaticMeshComponent0",
+          4,
+          "Stencil"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Chamber_RearBulkheadWheel",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Chamber_ReverseDrumL",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Chamber_ReverseDrumR",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Chamber_RightServiceDrums",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Chamber_LeftServiceDrums",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Chamber_RearDrum",
+      "overrides": [
+        [
+          "StaticMeshComponent0",
+          0,
+          "Metal"
+        ],
+        [
+          "StaticMeshComponent0",
+          1,
+          "Rust"
+        ],
+        [
+          "StaticMeshComponent0",
+          2,
+          "Dark"
+        ]
+      ]
+    },
+    {
+      "label": "TE_Chamber_FrontCutaway",
+      "overrides": [
+        [
+          "FrontPanel_0",
+          0,
+          "Metal"
+        ],
+        [
+          "FrontPanel_0",
+          1,
+          "Concrete"
+        ],
+        [
+          "FrontPanel_0",
+          2,
+          "Rust"
+        ],
+        [
+          "FrontPanel_0",
+          3,
+          "Dark"
+        ],
+        [
+          "FrontPanel_1",
+          0,
+          "Metal"
+        ],
+        [
+          "FrontPanel_1",
+          1,
+          "Concrete"
+        ],
+        [
+          "FrontPanel_1",
+          2,
+          "Rust"
+        ],
+        [
+          "FrontPanel_1",
+          3,
+          "Dark"
+        ],
+        [
+          "FrontPanel_2",
+          0,
+          "Metal"
+        ],
+        [
+          "FrontPanel_2",
+          1,
+          "Concrete"
+        ],
+        [
+          "FrontPanel_2",
+          2,
+          "Rust"
+        ],
+        [
+          "FrontPanel_2",
+          3,
+          "Dark"
+        ],
+        [
+          "FrontPanel_3",
+          0,
+          "Metal"
+        ],
+        [
+          "FrontPanel_3",
+          1,
+          "Concrete"
+        ],
+        [
+          "FrontPanel_3",
+          2,
+          "Rust"
+        ],
+        [
+          "FrontPanel_3",
+          3,
+          "Dark"
+        ],
+        [
+          "FrontPanel_4",
+          0,
+          "Metal"
+        ],
+        [
+          "FrontPanel_4",
+          1,
+          "Concrete"
+        ],
+        [
+          "FrontPanel_4",
+          2,
+          "Rust"
+        ],
+        [
+          "FrontPanel_4",
+          3,
+          "Dark"
+        ],
+        [
+          "FrontPanel_5",
+          0,
+          "Metal"
+        ],
+        [
+          "FrontPanel_5",
+          1,
+          "Concrete"
+        ],
+        [
+          "FrontPanel_5",
+          2,
+          "Rust"
+        ],
+        [
+          "FrontPanel_5",
+          3,
+          "Dark"
+        ],
+        [
+          "FrontPanel_6",
+          0,
+          "Metal"
+        ],
+        [
+          "FrontPanel_6",
+          1,
+          "Concrete"
+        ],
+        [
+          "FrontPanel_6",
+          2,
+          "Rust"
+        ],
+        [
+          "FrontPanel_6",
+          3,
+          "Dark"
+        ],
+        [
+          "FrontPanel_7",
+          0,
+          "Metal"
+        ],
+        [
+          "FrontPanel_7",
+          1,
+          "Concrete"
+        ],
+        [
+          "FrontPanel_7",
+          2,
+          "Rust"
+        ],
+        [
+          "FrontPanel_7",
+          3,
+          "Dark"
+        ],
+        [
+          "FrontEnd_M1",
+          0,
+          "Metal"
+        ],
+        [
+          "FrontEnd_M1",
+          1,
+          "Concrete"
+        ],
+        [
+          "FrontEnd_M1",
+          2,
+          "Rust"
+        ],
+        [
+          "FrontEnd_M1",
+          3,
+          "Dark"
+        ],
+        [
+          "FrontEnd_1",
+          0,
+          "Metal"
+        ],
+        [
+          "FrontEnd_1",
+          1,
+          "Concrete"
+        ],
+        [
+          "FrontEnd_1",
+          2,
+          "Rust"
+        ],
+        [
+          "FrontEnd_1",
+          3,
+          "Dark"
+        ],
+        [
+          "ReverseDoorL",
+          0,
+          "Metal"
+        ],
+        [
+          "ReverseDoorL",
+          1,
+          "Concrete"
+        ],
+        [
+          "ReverseDoorL",
+          2,
+          "Dark"
+        ],
+        [
+          "ReverseDoorR",
+          0,
+          "Metal"
+        ],
+        [
+          "ReverseDoorR",
+          1,
+          "Concrete"
+        ],
+        [
+          "ReverseDoorR",
+          2,
+          "Dark"
+        ],
+        [
+          "FrontPier_0",
+          0,
+          "Concrete"
+        ],
+        [
+          "FrontPier_1",
+          0,
+          "Concrete"
+        ],
+        [
+          "FrontPier_2",
+          0,
+          "Concrete"
+        ],
+        [
+          "FrontPier_3",
+          0,
+          "Concrete"
+        ],
+        [
+          "FrontPier_4",
+          0,
+          "Concrete"
+        ],
+        [
+          "FrontHeader",
+          0,
+          "Metal"
+        ],
+        [
+          "FrontFooting",
+          0,
+          "Concrete"
+        ]
+      ]
+    }
+  ],
+  "function_inputs": {
+    "WorldAlignedTexture": [
+      "TextureObject",
+      "TextureSize",
+      "WorldPosition",
+      "Export Float 4",
+      "World Space Normal",
+      "ProjectionTransitionContrast"
+    ],
+    "WorldAlignedNormal": [
+      "TextureObject",
+      "TextureSize",
+      "WorldSpace",
+      "Normal",
+      "ProjectionTransitionContrast",
+      "WorldPosition",
+      "Use High Quality Normals"
+    ]
+  }
+}

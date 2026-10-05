@@ -1,0 +1,7 @@
+{
+  "capture": "evidence/implementation/20261005T114712-capture_chamber_views",
+  "chamber_qa": "evidence/implementation/20261005T114820-verify_chamber_runtime",
+  "room_qa": "evidence/implementation/20261005T114928-verify_full_room",
+  "motion": "evidence/chamber/20261005T095028Z/native-motion-20261005T115126",
+  "visual_review": "evidence/chamber-qa/final/INDEPENDENT_REVIEW.md"
+}

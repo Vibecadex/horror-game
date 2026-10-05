@@ -1,0 +1,49 @@
+BossShot/Binaries/
+BossShot/DerivedDataCache/
+BossShot/Intermediate/
+BossShot/Saved/
+BossShot/.vs/
+**/__pycache__/
+*.sln
+*.suo
+
+# Generated Unreal and local tool output. Antigravity Strict mode follows this file.
+**/Binaries/
+**/DerivedDataCache/
+**/Intermediate/
+**/Saved/
+**/Build/
+**/.vs/
+**/.tool-cache/
+*.pdb
+*.obj
+*.lib
+
+# Workstation settings, credentials and exact local recovery copies.
+/.team-local/
+/tools/project-settings.local.json
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Preserved native experiment: the team continues TeddyBlueprint instead.
+/BossShot/
+
+# Historical raw recording frames, machine receipts, binaries and backups.
+/evidence/**/frames/
+/evidence/**/*.zip
+/evidence/**/*.exe
+/evidence/**/*.dll
+/evidence/**/*.log
+/evidence/setup/
+/evidence/editor-runs/
+/evidence/revisions/
+/evidence/reviews/
+*.blend1
+*.blend2
+*.tmp
+*.lock

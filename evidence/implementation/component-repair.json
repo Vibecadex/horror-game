@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "before": {
+    "BP_TeddyBoss": {
+      "AttackWarning_GEN_VARIABLE": {
+        "static_mesh": "<Object '/Game/TeddyEncounter/Arena/AttackRing.AttackRing' (0x000002D5FD3A9000) Class 'StaticMesh'>",
+        "relative_location": "<Struct 'Vector' (0x000002D5FD578D80) {x: 0.000000, y: 0.000000, z: -226.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x000002D5FD578DB0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_AttackWarning.M_AttackWarning'\"]"
+      }
+    },
+    "BP_Stitchling": {
+      "AttackWarning_GEN_VARIABLE": {
+        "static_mesh": "<Object '/Game/TeddyEncounter/Arena/AttackRing.AttackRing' (0x000002D5FD3A9000) Class 'StaticMesh'>",
+        "relative_location": "<Struct 'Vector' (0x000002D5FD575180) {x: 0.000000, y: 0.000000, z: -156.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x000002D5FD5751B0) {x: 1.250000, y: 1.250000, z: 1.000000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_AttackWarning.M_AttackWarning'\"]"
+      }
+    },
+    "BP_EncounterPlayer": {
+      "AimGuide_GEN_VARIABLE": {
+        "static_mesh": "<Object '/Engine/BasicShapes/Cube.Cube' (0x000002D5EEBCB800) Class 'StaticMesh'>",
+        "relative_location": "<Struct 'Vector' (0x000002D5066B6580) {x: 525.000000, y: 0.000000, z: 30.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x000002D5066B65B0) {x: 9.000000, y: 0.007000, z: 0.007000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_AimLine.M_AimLine'\"]"
+      },
+      "ServiceRifle_GEN_VARIABLE": {
+        "static_mesh": "<Object '/Game/TeddyEncounter/Arena/ServiceRifle.ServiceRifle' (0x000002D565A03000) Class 'StaticMesh'>",
+        "relative_location": "<Struct 'Vector' (0x000002D5066B5B80) {x: 17.000000, y: 43.000000, z: 123.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x000002D5066B5BB0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_Charcoal.M_Charcoal'\"]"
+      }
+    }
+  },
+  "actors": {
+    "TE_MainTeddy": {
+      "AttackWarning": {
+        "static_mesh": "<Object '/Engine/BasicShapes/Cylinder.Cylinder' (0x000002D5EEBCD000) Class 'StaticMesh'>",
+        "relative_location": "<Struct 'Vector' (0x000002D507E29780) {x: 0.000000, y: 0.000000, z: -226.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x000002D507E297B0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_WarningLamp.M_WarningLamp'\"]"
+      }
+    },
+    "TE_Stitchling_1": {
+      "AttackWarning": {
+        "static_mesh": "<Object '/Game/TeddyEncounter/Arena/AttackRing.AttackRing' (0x000002D5FD3A9000) Class 'StaticMesh'>",
+        "relative_location": "<Struct 'Vector' (0x000002D507E2B580) {x: 0.000000, y: 0.000000, z: -156.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x000002D507E2B5B0) {x: 1.250000, y: 1.250000, z: 1.000000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_AttackWarning.M_AttackWarning'\"]"
+      }
+    },
+    "TE_Stitchling_2": {
+      "AttackWarning": {
+        "static_mesh": "<Object '/Game/TeddyEncounter/Arena/AttackRing.AttackRing' (0x000002D5FD3A9000) Class 'StaticMesh'>",
+        "relative_location": "<Struct 'Vector' (0x000002D507E2BF80) {x: 0.000000, y: 0.000000, z: -156.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x000002D507E2BFB0) {x: 1.250000, y: 1.250000, z: 1.000000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_AttackWarning.M_AttackWarning'\"]"
+      }
+    },
+    "TE_Stitchling_3": {
+      "AttackWarning": {
+        "static_mesh": "<Object '/Game/TeddyEncounter/Arena/AttackRing.AttackRing' (0x000002D5FD3A9000) Class 'StaticMesh'>",
+        "relative_location": "<Struct 'Vector' (0x000002D507E2C980) {x: 0.000000, y: 0.000000, z: -156.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x000002D507E2C9B0) {x: 1.250000, y: 1.250000, z: 1.000000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_AttackWarning.M_AttackWarning'\"]"
+      }
+    }
+  }
+}

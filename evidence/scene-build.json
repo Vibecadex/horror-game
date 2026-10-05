@@ -1,0 +1,40 @@
+{
+  "actor_count": 10,
+  "labels": [
+    "BossBlockout",
+    "CameraVolume",
+    "Floor",
+    "Grade",
+    "HeightFog",
+    "HeroCam",
+    "KeyLight",
+    "PlayerStart",
+    "RedFar",
+    "RedNear"
+  ],
+  "point_light_count": 2,
+  "exposure": "manual; physical-camera exposure disabled",
+  "runtime_verified": false,
+  "visual_approval": "pending",
+  "action": "tuned_first_visual_pass_saved_and_reopened",
+  "hero_camera": {
+    "location_cm": [
+      220,
+      1900,
+      85
+    ],
+    "focal_length_mm": 18
+  },
+  "red_lights_candelas": [
+    110,
+    60
+  ],
+  "floor_center_cm": [
+    0,
+    500,
+    -10
+  ],
+  "map": "/Game/Maps/BossArena",
+  "engine_version": "5.8.3-58210709+++UE5+Release-5.8",
+  "recorded_at_utc": "2026-10-04T17:32:11.844164+00:00"
+}

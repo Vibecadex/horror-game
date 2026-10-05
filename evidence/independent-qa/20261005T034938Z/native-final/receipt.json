@@ -1,0 +1,31 @@
+{
+  "map": "/Game/Maps/TeddyEncounter",
+  "method": "Windows SendInput into the owned ordinary -game window; no pawn teleports, AI freezes, health edits or asset changes",
+  "physical_human_test": false,
+  "events": [],
+  "captures": [],
+  "arguments": [
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "C:\\Projects\\to-deploy\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject",
+    "/Game/Maps/TeddyEncounter",
+    "-game",
+    "-windowed",
+    "-ResX=1280",
+    "-ResY=720",
+    "-ForceRes",
+    "-WinX=60",
+    "-WinY=60",
+    "-nosplash",
+    "-nop4",
+    "-ExecCmds=t.MaxFPS 60",
+    "-abslog=C:\\Projects\\to-deploy\\horror-game\\evidence\\independent-qa\\20261005T034938Z\\native-final\\engine.log",
+    "-DDC=InstalledNoZenLocalFallback",
+    "-LocalDataCachePath=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\derived-data",
+    "-UserDir=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\unreal-user"
+  ],
+  "frame_cap_for_capture": 60,
+  "process_id": 21900,
+  "error": "Traceback (most recent call last):\n  File \"C:\\Projects\\to-deploy\\horror-game\\evidence\\independent-qa\\20261005T034938Z\\qa_native.py\", line 118, in <module>\n    u.SetForegroundWindow(hwnd);time.sleep(.4);owned_foreground()\n                                               ~~~~~~~~~~~~~~~~^^\n  File \"C:\\Projects\\to-deploy\\horror-game\\evidence\\independent-qa\\20261005T034938Z\\qa_native.py\", line 55, in owned_foreground\n    raise RuntimeError(f'Game lost foreground to PID {foreground_pid.value}; refusing to send input elsewhere')\nRuntimeError: Game lost foreground to PID 49248; refusing to send input elsewhere\n",
+  "game_exit_code": 0,
+  "wall_seconds": 13.095
+}

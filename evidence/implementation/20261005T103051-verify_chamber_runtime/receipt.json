@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "independent_qa": true,
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "checks": {
+    "new_chamber_geometry_present_and_labels_unique": true,
+    "new_geometry_ownership_explicit": true,
+    "exactly_one_saved_native_cutaway_actor": true,
+    "new_geometry_actual_actor_and_component_collision_disabled": true,
+    "source_kit_static_landmarks_present_once": true,
+    "exactly_one_new_bulkhead_body_and_one_wheel": true,
+    "saved_cutaway_has_exact_19_mesh_components": true,
+    "cutaway_contains_both_actual_service_door_meshes": true,
+    "cutaway_includes_wall_panels_piers_header_and_footing": true,
+    "four_owned_rear_beacon_shapes_are_exact_allowlisted_cubes": true,
+    "new_static_mesh_sources_owned_or_explicitly_allowlisted": true,
+    "saved_owned_floor_placements_and_unique_meshes_match_frozen_manifest": true,
+    "saved_floor_vertical_scale_is_unmodified": true,
+    "new_geometry_world_bounds_keep_combat_space_open": true,
+    "ordinary_initial_native_cutaway_matches_camera": true,
+    "native_cutaway_architectural_front_outside": true,
+    "native_cutaway_architectural_reverse_inside": true,
+    "native_cutaway_threshold_outside": true,
+    "native_cutaway_threshold_inside": true,
+    "native_cutaway_ordinary_gameplay_return": true
+  },
+  "method": "Independent saved-world component readback followed by frame-driven PIE camera changes. Native chamber Blueprint ticks are never disabled and visibility is never forced.",
+  "limitations": [
+    "Conservative component boxes establish placement, not exact mesh contact or visual parity.",
+    "Architectural camera staging and held subjects are test-only and discarded with PIE.",
+    "The old full-room/input suites remain separate. This narrow audit does not duplicate or replace them.",
+    "Passing native cutaway state transitions does not establish that the pop/cutaway is artistically acceptable; inspect architectural and ordinary gameplay captures."
+  ],
+  "declared_cutaway_threshold_cm": -1490.0,
+  "settings_sha256": "63d1127e2dd530e510692d05a225c117b87e6e4bee8d915300c14035b429f5de",
+  "source_manifest_sha256": "741b4690f675d25206b205a5999a67a8f18d61e5b1d4d84477ab3fc05c3d75e6",
+  "frozen_source_manifest": "C:\\Projects\\to-deploy\\horror-game\\evidence\\chamber\\20261005T095028Z\\chamber-kit-reviewed.json",
+  "frozen_floor_manifest": "C:\\Projects\\to-deploy\\horror-game\\evidence\\chamber\\20261005T095028Z\\chamber-floor-reviewed.json",
+  "floor_manifest_sha256": "193563fd5ebbf91c83327d29be24539e914525c1237679143032e0c217288133",
+  "expected_floor_placement_count": 5,
+  "expected_floor_unique_mesh_count": 3,
+  "bounds_method": {
+    "combat_open_xy_cm": [
+      [
+        -1400,
+        -1500
+      ],
+      [
+        1480,
+        1500
+      ]
+    ],
+    "floor_maximum_world_z_cm": 6,
+    "wall_and_prop_maximum_world_z_cm": 700,
+    "tolerance_cm": 0.05,
+    "source": "Actual loaded component world bounds, not importer pass flags or manifest bounds."
+  },
+  "wall_seconds": 12.859999999869615,
+  "details": {
+    "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T103051-verify_chamber_runtime\\details.json",
+    "sha256": "8f78a34395f28f85e9fe4dba68f314eb9cf1398e4384b75d4012db30b10c0603",
+    "saved_actor_count": 22,
+    "placement_component_count": 35,
+    "runtime_case_count": 5
+  }
+}

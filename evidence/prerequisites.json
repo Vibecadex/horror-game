@@ -1,0 +1,33 @@
+{
+  "checkedAtUtc": "2026-10-04T17:22:53.7821367Z",
+  "engineRoot": "C:\\Program Files\\Epic Games\\UE_5.8",
+  "engineVersion": {
+    "MajorVersion": 5,
+    "MinorVersion": 8,
+    "PatchVersion": 3,
+    "Changelist": 58210709,
+    "CompatibleChangelist": 55116800,
+    "IsLicenseeVersion": 0,
+    "IsPromotedBuild": 1,
+    "BranchName": "++UE5+Release-5.8"
+  },
+  "editor": true,
+  "commandlet": true,
+  "buildTool": true,
+  "pythonPlugin": true,
+  "editorScriptingPlugin": true,
+  "project": "C:\\Projects\\to-deploy\\horror-game\\BossShot\\BossShot.uproject",
+  "sourceArchiveSha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+  "graphics": [
+    {
+      "Name": "AMD Radeon(TM) Graphics",
+      "DriverVersion": "32.0.21036.18"
+    },
+    {
+      "Name": "NVIDIA GeForce RTX 5080",
+      "DriverVersion": "32.0.16.1088"
+    }
+  ],
+  "memoryBytes": 50556403712,
+  "freeBytes": 180550344704
+}

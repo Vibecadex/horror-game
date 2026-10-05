@@ -1,0 +1,250 @@
+{
+  "owner": "teddy-parity-fracture-v3-20261005",
+  "status": "verified_fbx_ready_for_unreal",
+  "generator": "tools\\make_parity_fracture_v3.py",
+  "source": "Original deterministic local fracture repair; reuses reviewed geometry definitions from make_parity_floor.py without executing its authoring body.",
+  "blender_version": "5.2.0 LTS",
+  "coordinate_system": "Metres, +Z up, local XY centre near original field; Z=0 underlying floor. FBX axis -Y/+Z, apply_unit_scale true, FBX_SCALE_NONE.",
+  "assets": [
+    {
+      "name": "SM_ParityFractureField_A_V3",
+      "file": "SM_ParityFractureField_A_V3.fbx",
+      "triangles": 11752,
+      "vertices": 23844,
+      "bounds_m": {
+        "min": [
+          -3.1995229721069336,
+          -2.265132427215576,
+          0.0010000000474974513
+        ],
+        "max": [
+          3.1714038848876953,
+          2.231558084487915,
+          0.03204917162656784
+        ]
+      },
+      "dimensions_m": [
+        6.370926856994629,
+        4.496690511703491,
+        0.03104917157907039
+      ],
+      "expected_dimensions_cm": [
+        637.0926856994629,
+        449.6690511703491,
+        3.104917157907039
+      ],
+      "highest_point_cm": 3.204917162656784,
+      "material_slots": [
+        "Concrete",
+        "Aggregate",
+        "Dark",
+        "ConcreteLight",
+        "ConcreteDark"
+      ],
+      "sha256": "77b0718d5c4ff8c1c6018dd04ede4f15af85564340bf1863129e725e2e6b3b1a"
+    }
+  ],
+  "material_guidance": {
+    "Concrete": "Same world-aligned floor material.",
+    "ConcreteLight": "Same floor material, base colour multiplied by1.18; preserve aligned maps.",
+    "ConcreteDark": "Same floor material, base colour multiplied by0.82; preserve aligned maps.",
+    "Aggregate": "Subdued slightly lighter fracture edge material, no emission.",
+    "Dark": "Dark low-reflectance narrow recesses, no emission."
+  },
+  "uv0": "Local XY metres /4; world-aligned material recommended for seamless base-floor blending.",
+  "construction": {
+    "plate_count": 68,
+    "plate_material_counts": {
+      "Concrete": 43,
+      "Aggregate": 0,
+      "Dark": 0,
+      "ConcreteLight": 13,
+      "ConcreteDark": 12
+    },
+    "distinct_edges": 236,
+    "fully_interrupted_edges": 78,
+    "drawn_segments": 540,
+    "interrupted_segments": 461,
+    "detached_fragments": [
+      {
+        "centre_m": [
+          2.915947373417041,
+          -0.5415555790244555
+        ],
+        "actual_max_span_cm": 39.099686907435576,
+        "height_cm": 1.3600211452209583
+      },
+      {
+        "centre_m": [
+          -0.6082083131973809,
+          1.7394991511603037
+        ],
+        "actual_max_span_cm": 27.59170588246157,
+        "height_cm": 2.5350911556596465
+      },
+      {
+        "centre_m": [
+          -1.164389487997184,
+          -1.4707287686412962
+        ],
+        "actual_max_span_cm": 22.76641887833444,
+        "height_cm": 3.101377693543473
+      },
+      {
+        "centre_m": [
+          2.4841827830260677,
+          -1.226041254618875
+        ],
+        "actual_max_span_cm": 29.335939527538855,
+        "height_cm": 1.3671118826265176
+      },
+      {
+        "centre_m": [
+          0.2209567234935981,
+          2.068781580801234
+        ],
+        "actual_max_span_cm": 29.10804064293539,
+        "height_cm": 2.456712845701293
+      },
+      {
+        "centre_m": [
+          -2.462770757612475,
+          1.3589567821342659
+        ],
+        "actual_max_span_cm": 21.56603251549514,
+        "height_cm": 1.2208714447052806
+      },
+      {
+        "centre_m": [
+          1.3458416569471394,
+          -1.8919385802205992
+        ],
+        "actual_max_span_cm": 38.066495064527466,
+        "height_cm": 2.24995899326036
+      },
+      {
+        "centre_m": [
+          -0.3161783968735768,
+          1.9847939216563704
+        ],
+        "actual_max_span_cm": 26.871780263871564,
+        "height_cm": 2.5309649383726005
+      },
+      {
+        "centre_m": [
+          2.815677440312983,
+          0.27823549568731515
+        ],
+        "actual_max_span_cm": 29.17691355866096,
+        "height_cm": 2.556431060156422
+      },
+      {
+        "centre_m": [
+          -2.7623611806166712,
+          0.6201791369241831
+        ],
+        "actual_max_span_cm": 34.465781781824,
+        "height_cm": 1.8142920985790172
+      },
+      {
+        "centre_m": [
+          2.71550120331482,
+          1.0248441675783786
+        ],
+        "actual_max_span_cm": 27.182285476044694,
+        "height_cm": 2.1043154994647657
+      },
+      {
+        "centre_m": [
+          -2.079864280698717,
+          -1.3295194918407416
+        ],
+        "actual_max_span_cm": 27.500062378891137,
+        "height_cm": 3.0023082571075355
+      },
+      {
+        "centre_m": [
+          2.0682979831665653,
+          0.6243861612483216
+        ],
+        "actual_max_span_cm": 29.44788297207665,
+        "height_cm": 2.197850882637443
+      },
+      {
+        "centre_m": [
+          3.0154642093873867,
+          -0.7473467466472089
+        ],
+        "actual_max_span_cm": 23.794703731406642,
+        "height_cm": 1.940208258887988
+      },
+      {
+        "centre_m": [
+          0.6400846271168565,
+          -1.7857609675016606
+        ],
+        "actual_max_span_cm": 38.2180647867616,
+        "height_cm": 2.985288534102216
+      },
+      {
+        "centre_m": [
+          -0.11519157857283614,
+          -1.8463239672323126
+        ],
+        "actual_max_span_cm": 33.03031621457183,
+        "height_cm": 1.8047097312985336
+      },
+      {
+        "centre_m": [
+          2.1259995203045814,
+          1.6653821739731232
+        ],
+        "actual_max_span_cm": 24.634025159573547,
+        "height_cm": 2.152385118513573
+      }
+    ],
+    "notes": "Shared jittered paths, variable fracture width, selective missing chips, mostly flush faces with sparse tilted lifted plates. Correlated wear crosses cell groups."
+  },
+  "fbx_roundtrip_checks": [
+    {
+      "passed": true,
+      "dimensions_m": [
+        6.370926856994629,
+        4.496690511703491,
+        0.03104917157907039
+      ],
+      "max_dimension_error_m": 0.0,
+      "triangles": 11752,
+      "material_slots": [
+        "Concrete",
+        "Aggregate",
+        "Dark",
+        "ConcreteLight",
+        "ConcreteDark"
+      ],
+      "uv_layers": 1
+    }
+  ],
+  "placement": "Replacement Field_A at existing local origin/rotation/XY scale. Put actor at measured floor top; keep Z scale1. NoCollision and actor collision false. Never overwrite previous mesh.",
+  "preserved_source_hashes": {
+    "Assets\\Adapted\\Parity\\Floor\\fracture-depth-detail.png": "c1bdfb33ed1ae8ea19d20e36c9edcd08d1332e631a0b90e64d40270d15660b98",
+    "Assets\\Adapted\\Parity\\Floor\\kit-overview.png": "46c8be8c84bb2bfdeefdf5a7bdf3d0e68cb225f6a7d4647331ecaa8ee037af04",
+    "Assets\\Adapted\\Parity\\Floor\\manifest.json": "e6f595b878e2bafe57b2d25ea633387f35de2141533b4e9fafbe21945dcd3da9",
+    "Assets\\Adapted\\Parity\\Floor\\ParityFloor_Kit.blend": "ff1e9bed76c3ddb59d413f746e6489cd32671f570b19dae068cf1ac161bea618",
+    "Assets\\Adapted\\Parity\\Floor\\ParityFloor_Kit.blend1": "3cc35186ba9453210a2821cdcc8b049f1579168c1ed9d55b8391ac3222c17e29",
+    "Assets\\Adapted\\Parity\\Floor\\placements-v2.json": "a8ec2f901bf783b65f917d67a6eac32fcbc23575659a7b87ce4b128fba1cf00b",
+    "Assets\\Adapted\\Parity\\Floor\\README.md": "b9769acada9ea286176a5f14bc38be66e89d1fb5110dcf53ec5c7da627f9c892",
+    "Assets\\Adapted\\Parity\\Floor\\SM_ParityEdgeSpall.fbx": "b7fb24b701ccbe2e7698a7ecdc931278de263c32a17a1ec4b1e990fa71b898f5",
+    "Assets\\Adapted\\Parity\\Floor\\SM_ParityFractureField_A.fbx": "25ef7503ed6bcc8580f10afce14f262b44498aa3845c6fdfe09748785d076969",
+    "Assets\\Adapted\\Parity\\Floor\\SM_ParityFractureField_B.fbx": "013f55996acdd6e5200239e02ecab76348542ec35fa703e58cd3a08dfc2e28f0",
+    "Assets\\Adapted\\Parity\\Floor\\SM_ParityMicroChips.fbx": "5324e7211a33164083508560567691370a4f1e4a394ac441922425240cb775ae",
+    "Assets\\Adapted\\Parity\\Floor\\SM_ParityRubbleScatter_A.fbx": "ff1fb9b2f4c857451e117324965a4288ea458367a080cbcac8531140c72906e7",
+    "Assets\\Adapted\\Parity\\Floor\\SM_ParityRubbleScatter_B.fbx": "082a1771e00140800b2fc23cdf79ac81ebb153f02e4370bcf5fc6b6a26e99e4c"
+  },
+  "limits": "Blender source, FBX roundtrip and previews only. Root integrator must import separately, bind slots, disable collision and inspect actual gameplay rendering.",
+  "previews": [
+    "fracture-v3-overview.png",
+    "fracture-v3-depth.png"
+  ],
+  "preserved_original_kit_verified": true
+}

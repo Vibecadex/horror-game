@@ -1,0 +1,101 @@
+{
+  "all_local_links_resolve": true,
+  "unique_links_checked": 24,
+  "images_fully_decoded": [
+    {
+      "path": "../../implementation/20261004T222718-capture_encounter/position-01.png",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "../../implementation/20261004T222718-capture_encounter/position-02.png",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "../../implementation/20261004T222718-capture_encounter/position-03.png",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "comparison.png",
+      "size": [
+        1460,
+        505
+      ]
+    },
+    {
+      "path": "derived/original-gameplay-05.png",
+      "size": [
+        700,
+        384
+      ]
+    },
+    {
+      "path": "derived/original-gameplay-10.png",
+      "size": [
+        700,
+        384
+      ]
+    },
+    {
+      "path": "derived/original-gameplay-16.png",
+      "size": [
+        700,
+        384
+      ]
+    },
+    {
+      "path": "engine/01-initial-composition.png",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "native/desktop-confirmed-game-visible.png",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "reference/original-05.png",
+      "size": [
+        848,
+        384
+      ]
+    },
+    {
+      "path": "reference/original-10.png",
+      "size": [
+        848,
+        384
+      ]
+    },
+    {
+      "path": "reference/original-16.png",
+      "size": [
+        848,
+        384
+      ]
+    },
+    {
+      "path": "reference/original-motion-sheet.png",
+      "size": [
+        1711,
+        1368
+      ]
+    }
+  ],
+  "comparison_equal_width": 700,
+  "comparison_aspect_ratios_preserved": true,
+  "json_parsing_passed": true,
+  "build_hashes_rechecked": 68
+}

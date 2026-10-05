@@ -1,0 +1,16 @@
+{
+  "reference": "C:\\Projects\\to-deploy\\horror-game\\study\\visuals\\direction-close-best.jpg",
+  "concept": "C:\\Projects\\to-deploy\\horror-game\\study\\visuals\\parity-expanded-reference.png",
+  "captures": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T092659-capture_parity_delivery",
+  "motion": "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity\\20261005T070301Z\\native-motion-20261005T092830\\native-motion.mp4",
+  "rear_visibility": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T092532-capture_parity_rear_visibility",
+  "checks": {
+    "room": 28,
+    "animation_and_death": 48,
+    "keys": 12
+  },
+  "independent_review": "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity-review\\final\\INDEPENDENT_REVIEW.md",
+  "preservation": "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity\\20261005T070301Z\\final-preservation.json",
+  "play": "PLAY.cmd",
+  "visual_acceptance": "See independent review; user acceptance is separate."
+}

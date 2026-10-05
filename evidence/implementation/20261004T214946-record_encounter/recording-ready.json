@@ -1,0 +1,4535 @@
+{
+  "passed": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "method": "Unmodified saved encounter, Enhanced Input actions, no staging teleports, no health edits or AI freezes after initial loading pause",
+  "audio": "Actual Unreal master-submix output of proposed original sounds; not a match to the unauditioned reference",
+  "frame_identity": "Request-time telemetry is contextual, not asserted as exact rendered-frame identity",
+  "frames": [
+    {
+      "index": 0,
+      "wall_time": 0.0,
+      "game_time": 0.0,
+      "phase": 1,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00000.png",
+      "sha256": "d86e3973757580b38e390263007a4027dce3076255c750ae02aefab6e33fb3dc",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 1,
+      "wall_time": 0.10999999986961484,
+      "game_time": 0.10264440253376961,
+      "phase": 1,
+      "player": [
+        -227.12576297146032,
+        565.2096047304459,
+        85.14999961853027
+      ],
+      "boss": [
+        244.4549385100364,
+        -220.75823085153763,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -82.21885681152344,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00001.png",
+      "sha256": "2f2945e929a274c75c7bb298e6bfe244a18a39d9d93a36eff5b6c2e7c9ed2a52",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 2,
+      "wall_time": 0.21899999980814755,
+      "game_time": 0.21826470270752907,
+      "phase": 1,
+      "player": [
+        -217.56037669033094,
+        549.2672935231275,
+        85.14999961853027
+      ],
+      "boss": [
+        238.20889236975484,
+        -210.34815395971054,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -64.62091064453122,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00002.png",
+      "sha256": "d8c621921bb1891c256913c241a544686c1e357930e0e2565ac1ec1a16e8af29",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 3,
+      "wall_time": 0.32899999991059303,
+      "game_time": 0.33023200556635857,
+      "phase": 1,
+      "player": [
+        -201.3307621524467,
+        522.217934706513,
+        85.14999961853027
+      ],
+      "boss": [
+        232.16018864127463,
+        -200.26698110472506,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -59.832187652587876,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00003.png",
+      "sha256": "2bbc026eb7a5919d431f5fc736e567db9d775d10794c53618094ccc9c3a1afd5",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 4,
+      "wall_time": 0.43799999984912574,
+      "game_time": 0.43681230768561363,
+      "phase": 1,
+      "player": [
+        -179.96503291654585,
+        486.60838432985616,
+        85.14999961853027
+      ],
+      "boss": [
+        226.4025017498168,
+        -190.67083633309517,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00004.png",
+      "sha256": "fa60536002ceda12d1c87d4524475897e9ab899e9824b124de0c520b2afa1ee2",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 5,
+      "wall_time": 0.5470000000204891,
+      "game_time": 0.5408936031162739,
+      "phase": 1,
+      "player": [
+        -157.47429210113015,
+        449.1238145671192,
+        85.14999961853027
+      ],
+      "boss": [
+        220.77981632160453,
+        -181.29969402702594,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00005.png",
+      "sha256": "ae900110ffb3b08c1e72bb9dfad464d961ed9c5a6470d1bc9c50f4b0e82abdd7",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 6,
+      "wall_time": 0.6569999998901039,
+      "game_time": 0.6575738079845905,
+      "phase": 1,
+      "player": [
+        -132.2610754984292,
+        407.1017849486405,
+        85.14999961853027
+      ],
+      "boss": [
+        214.4765119027589,
+        -170.79418678330853,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00006.png",
+      "sha256": "a544d1186796ce355683474bda59e705df20db91c4f6333bb026aa398dc8da90",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 7,
+      "wall_time": 0.7659999998286366,
+      "game_time": 0.7621723115444183,
+      "phase": 1,
+      "player": [
+        -109.65857120451525,
+        369.4309447524554,
+        85.14999961853027
+      ],
+      "boss": [
+        208.8258858073194,
+        -161.3764767474388,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00007.png",
+      "sha256": "713a446b5e464cb0fa2272930ef76d1e06bb63da0293b9c2896d45f470d1581b",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 8,
+      "wall_time": 0.875,
+      "game_time": 0.8781079091131687,
+      "phase": 1,
+      "player": [
+        -84.60625375489923,
+        327.67708426704866,
+        85.14999961853027
+      ],
+      "boss": [
+        202.5628066086203,
+        -150.9380115278642,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00008.png",
+      "sha256": "bf580ff4bb3ceb208df5a13cd725ef2d0911acef73b9664693110dae39e96573",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 9,
+      "wall_time": 0.9849999998696148,
+      "game_time": 0.9836270064115524,
+      "phase": 1,
+      "player": [
+        -61.80482031403113,
+        289.674694783482,
+        85.14999961853027
+      ],
+      "boss": [
+        196.86244815527354,
+        -141.43741421285034,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00009.png",
+      "sha256": "da678a33581314a8d759b20fb6db7b045b7f93ae75c6cc9ebfdaccf9bde8adc3",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 10,
+      "wall_time": 1.0939999998081475,
+      "game_time": 1.0945259034633636,
+      "phase": 1,
+      "player": [
+        -37.84087592805679,
+        249.73478616742352,
+        85.14999961853027
+      ],
+      "boss": [
+        190.87146184634963,
+        -131.45243718629393,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00010.png",
+      "sha256": "5b8be065056edb76a4da9449448d38bf5ea95e84d477a3caab57094d9d059630",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 11,
+      "wall_time": 1.203999999910593,
+      "game_time": 1.2019927091896534,
+      "phase": 1,
+      "player": [
+        -14.618564967903378,
+        211.03093568697037,
+        85.14999961853027
+      ],
+      "boss": [
+        185.06588416317803,
+        -121.7764745320606,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00011.png",
+      "sha256": "108b44c6a685d725c98e330d26ab0a88a86758b0a74e5bc1f3fe22c801e4ff3d",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 12,
+      "wall_time": 1.3129999998491257,
+      "game_time": 1.3053595088422298,
+      "phase": 1,
+      "player": [
+        7.717783388623592,
+        173.80369045183062,
+        85.14999961853027
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00012.png",
+      "sha256": "4ad16d1cafffc17de71e5b9d62f08287b6ff0739f9e2caf2186e3ec61a42d2cb",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 13,
+      "wall_time": 1.422000000020489,
+      "game_time": 1.4186111129820347,
+      "phase": 1,
+      "player": [
+        30.88437495686167,
+        135.19270435155752,
+        85.14999961853027
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00013.png",
+      "sha256": "9e992d623b08372f1b00905f81a85ec08e356e31f01bab73698e12658d8b1043",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 14,
+      "wall_time": 1.531999999890104,
+      "game_time": 1.5286678075790405,
+      "phase": 1,
+      "player": [
+        34.03768233246088,
+        129.93719198204315,
+        85.14999961853027
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00014.png",
+      "sha256": "446710f19f930d5ccbf71a962588f4bea931db07cb1c482eee5ce28209ce7c32",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 15,
+      "wall_time": 1.6409999998286366,
+      "game_time": 1.6419481076300144,
+      "phase": 1,
+      "player": [
+        34.03768233246088,
+        129.93719198204315,
+        85.14999961853027
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00015.png",
+      "sha256": "97289793e484905bfb42d8c1e1b0f5d538beb8bf727ab130e3391fda62a6ce10",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 16,
+      "wall_time": 1.75,
+      "game_time": 1.7463561072945595,
+      "phase": 1,
+      "player": [
+        34.03768233246088,
+        129.93719198204315,
+        85.14999961853027
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00016.png",
+      "sha256": "b391eae0f940c9a37314d4ee2a9965ee51513cb936c3de74ee147928bf5cb87a",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 17,
+      "wall_time": 1.8599999998696148,
+      "game_time": 1.8576304093003273,
+      "phase": 1,
+      "player": [
+        34.03768233246088,
+        129.93719198204315,
+        85.14999961853027
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00017.png",
+      "sha256": "96917f38a0f962601871c00a4fdf28882c57bf878d358fd12f01489bd9bbb3c2",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 18,
+      "wall_time": 1.9689999998081475,
+      "game_time": 1.9697834067046642,
+      "phase": 2,
+      "player": [
+        -1.6595727002382965,
+        189.43261627913472,
+        84.583873273901
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00018.png",
+      "sha256": "2fd32bfc358559cd0438d6bd5c4a48f04fab0da42446fa441834a53c1f6330c6",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 19,
+      "wall_time": 2.078999999910593,
+      "game_time": 2.0719267055392265,
+      "phase": 2,
+      "player": [
+        -93.34254185382183,
+        342.23756292287715,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00019.png",
+      "sha256": "cd4b9f824c13aa5c8d72192abeb848e0db033903505e03beac5268575e7dba16",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 20,
+      "wall_time": 2.1879999998491257,
+      "game_time": 2.1830275021493435,
+      "phase": 2,
+      "player": [
+        -124.17416428282496,
+        393.6235996502845,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00020.png",
+      "sha256": "206e2830a9b516be592591b4a8b46f05091bc057aaaa79dc3697127a773c8e6a",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 21,
+      "wall_time": 2.297000000020489,
+      "game_time": 2.2939886040985584,
+      "phase": 3,
+      "player": [
+        -127.26121684002568,
+        398.768687191565,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00021.png",
+      "sha256": "a2dd9150fd253dbbbb5e966ebf644e92067b1b5d80e0f9f41540b962638274ff",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 22,
+      "wall_time": 2.406999999890104,
+      "game_time": 2.4075578078627586,
+      "phase": 3,
+      "player": [
+        -122.07926660522865,
+        390.13210396599385,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00022.png",
+      "sha256": "e3a80061d961418a6d72f875143d5c2ef336d7d5a1f9a1dc7adba49ff6f021c8",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 23,
+      "wall_time": 2.5159999998286366,
+      "game_time": 2.5141468085348606,
+      "phase": 3,
+      "player": [
+        -111.10695773494831,
+        371.8449222067997,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00023.png",
+      "sha256": "f0cda01e8c6ea0a623259346ccea437a814840b8b31207cd08f8f67f19a6c5bd",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 24,
+      "wall_time": 2.625,
+      "game_time": 2.6258673071861267,
+      "phase": 3,
+      "player": [
+        -93.39485013798293,
+        342.32474383840565,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00024.png",
+      "sha256": "8246e76fbd1333a5d319093c2bdfafcf390b33168f3a23820b3b72ad4c384606",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 25,
+      "wall_time": 2.734999999869615,
+      "game_time": 2.7306052073836327,
+      "phase": 3,
+      "player": [
+        -71.50467207859668,
+        305.8411133128994,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00025.png",
+      "sha256": "15ba536614c2a441a9f602e382af67cff971cbfbfcaa9982e3eeb4a3ae2734a6",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 26,
+      "wall_time": 2.8439999998081475,
+      "game_time": 2.844212207943201,
+      "phase": 3,
+      "player": [
+        -46.955537284847395,
+        264.9258899539864,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00026.png",
+      "sha256": "9a763ac6fbbdfaae90762036e194489151713d7a3c42bb370697c3db0d8e411d",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 27,
+      "wall_time": 2.953999999910593,
+      "game_time": 2.951921809464693,
+      "phase": 3,
+      "player": [
+        -23.680761709484905,
+        226.13459687208277,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00027.png",
+      "sha256": "42aaaecc1f457d644ce2db8051d5413c8ddd562916c923987ed0fdb3cda29f27",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 28,
+      "wall_time": 3.0629999998491257,
+      "game_time": 2.9706948064267635,
+      "phase": 3,
+      "player": [
+        -19.624138251403796,
+        219.373557801467,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00028.png",
+      "sha256": "e2c03475f028c3af8b1786bbfe373e4a4338b62349bd6a7a971ee882d2985dd9",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 29,
+      "wall_time": 3.172000000020489,
+      "game_time": 3.0849011056125164,
+      "phase": 3,
+      "player": [
+        5.054498918985022,
+        178.24249760125673,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00029.png",
+      "sha256": "cb2a577e1cc7c17c58db0bb2614797606d4de49755af08b207595098ee6db351",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 30,
+      "wall_time": 3.297000000020489,
+      "game_time": 3.288203302770853,
+      "phase": 3,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00030.png",
+      "sha256": "711d80e09718ba4eccbe086cb7f4b71c77080187c0e7de1e18c7e5a60d63b59e",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 31,
+      "wall_time": 3.406999999890104,
+      "game_time": 3.4084125012159348,
+      "phase": 3,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00031.png",
+      "sha256": "dd789ae437dec5e3d04845a67eac5311066a43f5c394416e28cbfa7a08089915",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 32,
+      "wall_time": 3.531999999890104,
+      "game_time": 3.5232734978199005,
+      "phase": 3,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00032.png",
+      "sha256": "b31f95e508c73c4dad6c18cc865e4fe95bde10179db825026486cbcb196b04d0",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 33,
+      "wall_time": 3.6409999998286366,
+      "game_time": 3.642211999744177,
+      "phase": 3,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00033.png",
+      "sha256": "419d0b048e641ff26e6ca7aa64a02aa08af47dc94d6e94305ce9f224fe16c29a",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 34,
+      "wall_time": 3.75,
+      "game_time": 3.7457901053130627,
+      "phase": 3,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00034.png",
+      "sha256": "ad176cbd408e85ba0e229ffc500b746f5d756a89062ddd00a41c99458b09da18",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 35,
+      "wall_time": 3.859999999869615,
+      "game_time": 3.8550045043230057,
+      "phase": 3,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00035.png",
+      "sha256": "6a2ecdf395719ff132ceee3666ea022065a2192a630878f5f23f8e5c9c1b8fb2",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 36,
+      "wall_time": 3.9689999998081475,
+      "game_time": 3.9610159024596214,
+      "phase": 3,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00036.png",
+      "sha256": "f7f2978ca3e8962db5512be3106440ddb3677a8d423502e6737b517d7c609404",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 37,
+      "wall_time": 4.078999999910593,
+      "game_time": 4.072218801826239,
+      "phase": 3,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00037.png",
+      "sha256": "b15cdbc72621b5f419d52eab41a817b1319c1188530f3168f10173ff5e96733f",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 38,
+      "wall_time": 4.187999999849126,
+      "game_time": 4.185128200799227,
+      "phase": 3,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00038.png",
+      "sha256": "7032a94bb200d882305d2252743845301e2daebbb3a38ae05710c69ff3aff931",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 39,
+      "wall_time": 4.297000000020489,
+      "game_time": 4.297332804650068,
+      "phase": 3,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00039.png",
+      "sha256": "871fd7e0c6bc3f88e847e6bee2820ac9fa073cc26e1077eb954996b3a5b1fda5",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 40,
+      "wall_time": 4.406999999890104,
+      "game_time": 4.403493106365204,
+      "phase": 3,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00040.png",
+      "sha256": "411fc5fefc7aebebe76a92b6a1b5419b5bd8fc9cfe6b0012c4178d8942fe152c",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 41,
+      "wall_time": 4.515999999828637,
+      "game_time": 4.509548004716635,
+      "phase": 4,
+      "player": [
+        32.862496455335645,
+        131.89583478616055,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 300.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00041.png",
+      "sha256": "30ef77299d20fc7d5d6dddbbb3e1f9f06c765f987fbc168d3df770b691ef2c9e",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 42,
+      "wall_time": 4.625,
+      "game_time": 4.617256905883551,
+      "phase": 4,
+      "player": [
+        33.50737945085027,
+        139.50679299382318,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 288.0,
+      "boss_state": 2,
+      "player_yaw": -59.200881958007805,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00042.png",
+      "sha256": "2f2c1cbbcad097d099423dbd2a26faba03e585063f1e5f6327260e296ade09d5",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 43,
+      "wall_time": 4.734999999869615,
+      "game_time": 4.730379302054644,
+      "phase": 4,
+      "player": [
+        35.517958031781724,
+        160.01469617454612,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 288.0,
+      "boss_state": 2,
+      "player_yaw": -60.19559478759763,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00043.png",
+      "sha256": "037e2bc8df1d7ec1d6642616195f270cf882c9269b9189bb0ecb7337994c68ba",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 44,
+      "wall_time": 4.8439999998081475,
+      "game_time": 4.8442697040736675,
+      "phase": 4,
+      "player": [
+        39.76027089716043,
+        193.15714513596402,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 288.0,
+      "boss_state": 2,
+      "player_yaw": -62.53810882568357,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00044.png",
+      "sha256": "09218a28a7cb3754bb65f784b9c34b8eba94dfda0abcaa0ade5d86029e3f0d87",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 45,
+      "wall_time": 4.953999999910593,
+      "game_time": 4.946254104375839,
+      "phase": 4,
+      "player": [
+        46.738370374756045,
+        233.17115959298593,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 276.0,
+      "boss_state": 2,
+      "player_yaw": -65.40625,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00045.png",
+      "sha256": "53f9ea7922fda81a15c71815d30a7975641481663fdd991fb107f3affec32461",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 46,
+      "wall_time": 5.062999999849126,
+      "game_time": 5.058513503521681,
+      "phase": 4,
+      "player": [
+        57.34277687282921,
+        279.1070856719986,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 276.0,
+      "boss_state": 2,
+      "player_yaw": -69.12772369384764,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00046.png",
+      "sha256": "b0160f11a4836abb0f626abbe7cec744a90b9b1c37f5b39648459f4ad56cf2e6",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 47,
+      "wall_time": 5.172000000020489,
+      "game_time": 5.16723320260644,
+      "phase": 4,
+      "player": [
+        70.32769536276167,
+        322.87944946001846,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 276.0,
+      "boss_state": 2,
+      "player_yaw": -72.58071899414062,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00047.png",
+      "sha256": "06192fd5f546dc14e8a46d437eb3d67fd56d8b1e7c7d76123eb419faf73f47c0",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 48,
+      "wall_time": 5.281999999890104,
+      "game_time": 5.276468798518181,
+      "phase": 4,
+      "player": [
+        86.57268577050641,
+        365.77589709777914,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 264.0,
+      "boss_state": 2,
+      "player_yaw": -75.7956314086914,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00048.png",
+      "sha256": "986a1dc15d14b65fe49829ad2d28a2c40e11658c32795389ea46c57cd3f5d7a4",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 49,
+      "wall_time": 5.390999999828637,
+      "game_time": 5.390307798981667,
+      "phase": 4,
+      "player": [
+        108.64025062537382,
+        407.7937009141171,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 264.0,
+      "boss_state": 2,
+      "player_yaw": -79.00656127929688,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00049.png",
+      "sha256": "c9a29e45f7d2a7cb40b03c5bfd9261e31432004d182f4748aa7d24ee4f27de8a",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 50,
+      "wall_time": 5.5,
+      "game_time": 5.500883895903826,
+      "phase": 4,
+      "player": [
+        132.0904514824686,
+        443.8510730180546,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 264.0,
+      "boss_state": 2,
+      "player_yaw": -65.2601852416992,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00050.png",
+      "sha256": "efc3499861f0f364adb675e4ec5f2a29856d9025a1fbe3137f89466e2c2bb5fd",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 51,
+      "wall_time": 5.609999999869615,
+      "game_time": 5.601293094456196,
+      "phase": 4,
+      "player": [
+        155.1433897762116,
+        471.0641706200595,
+        85.14999815474495
+      ],
+      "boss": [
+        184.5996955611548,
+        -120.999493540127,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 264.0,
+      "boss_state": 2,
+      "player_yaw": -8.98060131072998,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00051.png",
+      "sha256": "0104e4285eeb1dee52d830be042986876ae89d9869a18226568d2b2e521ce0b9",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 52,
+      "wall_time": 5.7189999998081475,
+      "game_time": 5.718835491687059,
+      "phase": 4,
+      "player": [
+        184.64823967150247,
+        496.43228156696597,
+        85.14999815474495
+      ],
+      "boss": [
+        184.59338142622525,
+        -118.41861791805104,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -5.321021080017091,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00052.png",
+      "sha256": "1b9a8a7821eecbacb1d4546d540373308d5d0f2cd6035875ac9d21b55658eacb",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 53,
+      "wall_time": 5.828999999910593,
+      "game_time": 5.815521191805601,
+      "phase": 4,
+      "player": [
+        212.08505347990297,
+        510.5597422246743,
+        85.14999815474495
+      ],
+      "boss": [
+        184.95609176263886,
+        -108.27365165611515,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -10.28173065185547,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00053.png",
+      "sha256": "6cf82e37c8838bc58d6928edb8923e3a1e15acd0f2e4a291658d9d82ec5e5e1f",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 54,
+      "wall_time": 5.937999999849126,
+      "game_time": 5.921512793749571,
+      "phase": 4,
+      "player": [
+        243.6442566000168,
+        521.9915473384629,
+        85.14999815474495
+      ],
+      "boss": [
+        185.79350371300316,
+        -97.17675618875333,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -17.125146865844723,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00054.png",
+      "sha256": "39d4aba6e0771d87cb519215f49029e9115b5e6be28513bac19403671739d952",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 55,
+      "wall_time": 6.047000000020489,
+      "game_time": 6.035809092223644,
+      "phase": 4,
+      "player": [
+        278.6961720224304,
+        530.6327466547029,
+        85.14999815474495
+      ],
+      "boss": [
+        187.38672418583744,
+        -85.28264247887621,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -25.74899101257325,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00055.png",
+      "sha256": "e36cb75d075345658e733e5ccec3aa44cf8c5cbbd50c3a3f659c18e101300d60",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 56,
+      "wall_time": 6.156999999890104,
+      "game_time": 6.138194590806961,
+      "phase": 4,
+      "player": [
+        310.52091966645185,
+        536.2081060049129,
+        85.14999815474495
+      ],
+      "boss": [
+        189.38880249103744,
+        -74.72095210933111,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -35.54273223876954,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00056.png",
+      "sha256": "49cefb6534026ee1f9dd53e92e41efc6b54aa6040a23351444e9e85fd43bd1b0",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 57,
+      "wall_time": 6.265999999828637,
+      "game_time": 6.247103493660688,
+      "phase": 4,
+      "player": [
+        344.6339237591816,
+        540.3140185613073,
+        85.14999815474495
+      ],
+      "boss": [
+        192.05873794121518,
+        -63.6023669337367,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -50.12353134155273,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00057.png",
+      "sha256": "43bbbe6cc27bba1d5c6a0a943a7b9dd0d8845f6df46382a3b770b8856ebc2a3c",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 58,
+      "wall_time": 6.375,
+      "game_time": 6.363546997308731,
+      "phase": 4,
+      "player": [
+        381.2910647904417,
+        542.6761264653032,
+        85.14999815474495
+      ],
+      "boss": [
+        195.53641235054621,
+        -51.88169586252791,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -71.34433746337889,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00058.png",
+      "sha256": "5a1e3079e13efa3739272c477d13f3986af68d5b4fc1d173fc017edfe6d21fb3",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 59,
+      "wall_time": 6.484999999869615,
+      "game_time": 6.468723393976688,
+      "phase": 4,
+      "player": [
+        414.4689386427325,
+        543.0184877848399,
+        85.14999815474495
+      ],
+      "boss": [
+        199.23944230904732,
+        -41.478209224428724,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -93.67220306396487,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00059.png",
+      "sha256": "dcc3e2fc7c91b468810db12a74d7858d5b69535dee9cc6105919e1e9b96f2c22",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 60,
+      "wall_time": 6.5939999998081475,
+      "game_time": 6.574695393443108,
+      "phase": 4,
+      "player": [
+        447.8751875847666,
+        541.6948982917681,
+        85.14999815474495
+      ],
+      "boss": [
+        203.4866979309231,
+        -31.19437681624797,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -114.68771362304688,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00060.png",
+      "sha256": "c296efdf47975b8792cbdf5e764eac0e7bdc92b87090a00baf224a44d7be1554",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 61,
+      "wall_time": 6.703999999910593,
+      "game_time": 6.688033189624548,
+      "phase": 4,
+      "player": [
+        483.48335144280526,
+        538.4299709906475,
+        85.14999815474495
+      ],
+      "boss": [
+        208.58677692806785,
+        -20.4430445546688,
+        227.15000200271606
+      ],
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -132.10760498046872,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00061.png",
+      "sha256": "26663f1311cb63d14eb4c322793c441b8302f14c9cb2da8be7e4bef7eb1d99c7",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 62,
+      "wall_time": 6.812999999849126,
+      "game_time": 6.8019276894629,
+      "phase": 4,
+      "player": [
+        519.0369694802258,
+        533.2121827376576,
+        85.14999815474495
+      ],
+      "boss": [
+        214.2889026237194,
+        -9.931970237443432,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -144.6634979248047,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00062.png",
+      "sha256": "d862a7edb10121793aca8528f95077eb76a1ee22409b697aa858a0a51ac26e06",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 63,
+      "wall_time": 6.922000000020489,
+      "game_time": 6.907114390283823,
+      "phase": 4,
+      "player": [
+        551.5762645937831,
+        526.6783783134952,
+        85.14999815474495
+      ],
+      "boss": [
+        220.06277470365526,
+        -0.5175791694431232,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -146.24790954589844,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00063.png",
+      "sha256": "cfc566db41733ecaf7ea08c64e5a90e80499c41494d56233cc6464f9fccac5ea",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 64,
+      "wall_time": 7.031999999890104,
+      "game_time": 7.013514988124371,
+      "phase": 4,
+      "player": [
+        584.1229805886345,
+        518.439410382244,
+        85.14999815474495
+      ],
+      "boss": [
+        226.3755348100209,
+        8.699188818058774,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -126.86032104492185,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00064.png",
+      "sha256": "0b875d3a2a98387929dae4af98dce93ae9fe9bb3b8d5960664eb68d10aa32350",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 65,
+      "wall_time": 7.140999999828637,
+      "game_time": 7.127912487834692,
+      "phase": 4,
+      "player": [
+        618.6089504680141,
+        507.77588146360245,
+        85.14999815474495
+      ],
+      "boss": [
+        233.66389453711133,
+        18.246023441516748,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -126.1694564819336,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00065.png",
+      "sha256": "7a3aa72ddac36bdb088fc9a866a144978cf6280b8b3662f7d62785ddc2d80315",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 66,
+      "wall_time": 7.25,
+      "game_time": 7.234552592039108,
+      "phase": 4,
+      "player": [
+        650.1825954267392,
+        496.1394956865338,
+        85.14999815474495
+      ],
+      "boss": [
+        240.92424423380854,
+        26.769504187243534,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 252.0,
+      "boss_state": 0,
+      "player_yaw": -128.48213195800778,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00066.png",
+      "sha256": "647e5e4ae2312046fa603ca41a8a63ffb5860552b219901e1b2cafc81644c4d4",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 67,
+      "wall_time": 7.359999999869615,
+      "game_time": 7.342221595346928,
+      "phase": 4,
+      "player": [
+        681.351233790591,
+        482.8277930808922,
+        85.14999815474495
+      ],
+      "boss": [
+        241.637605738798,
+        27.579592426539598,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 240.0,
+      "boss_state": 4,
+      "player_yaw": -131.31402587890622,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00067.png",
+      "sha256": "6cc613f503ade5d4d0d3356991084f320d7b4d29b3d5267fc213bdbaffaf147b",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 68,
+      "wall_time": 7.4689999998081475,
+      "game_time": 7.451004598289728,
+      "phase": 4,
+      "player": [
+        711.0692776864837,
+        466.97809642157074,
+        85.14999815474495
+      ],
+      "boss": [
+        241.637605738798,
+        27.579592426539598,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 240.0,
+      "boss_state": 4,
+      "player_yaw": -134.23410034179688,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00068.png",
+      "sha256": "d64b0b59486963b40d0af77e8dc86a6e10253aebda2d1e8329096db01f877d02",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 69,
+      "wall_time": 7.578999999910593,
+      "game_time": 7.567135598510504,
+      "phase": 4,
+      "player": [
+        740.4840643987422,
+        447.04504154196536,
+        85.14999815474495
+      ],
+      "boss": [
+        241.637605738798,
+        27.579592426539598,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 240.0,
+      "boss_state": 0,
+      "player_yaw": -137.31158447265625,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00069.png",
+      "sha256": "9231d824c7dae645865b3cf60f123f740cda93ed5aa8fdec70e9cf14e20af78a",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 70,
+      "wall_time": 7.687999999849126,
+      "game_time": 7.672179892659187,
+      "phase": 4,
+      "player": [
+        764.9588230758584,
+        426.44094087042976,
+        85.14999815474495
+      ],
+      "boss": [
+        250.33798558252553,
+        34.35772858184301,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 228.0,
+      "boss_state": 0,
+      "player_yaw": -140.07022094726562,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00070.png",
+      "sha256": "b99438ab808179f576aea26d501f47ea28dcfb52bbff8f862776fda617cccbc5",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 71,
+      "wall_time": 7.797000000020489,
+      "game_time": 7.785204987972975,
+      "phase": 4,
+      "player": [
+        790.1895828997049,
+        402.7905346202105,
+        85.14999815474495
+      ],
+      "boss": [
+        260.0497374830947,
+        41.17723982017065,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 228.0,
+      "boss_state": 0,
+      "player_yaw": -143.04698181152344,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00071.png",
+      "sha256": "eff603a0fb26fd5266faccfed94301fbd3a06855f313c6e91367ecfd89117fde",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 72,
+      "wall_time": 7.906999999890104,
+      "game_time": 7.890905786305666,
+      "phase": 4,
+      "player": [
+        813.2315619356649,
+        379.862326240657,
+        85.14999815474495
+      ],
+      "boss": [
+        269.44816598665034,
+        47.07923247354139,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 228.0,
+      "boss_state": 0,
+      "player_yaw": -145.85867309570312,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00072.png",
+      "sha256": "e0722fbc4b30c77f4d21de30d74111bc52dab700133129d82a99fd51eddcc7b3",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 73,
+      "wall_time": 8.015999999828637,
+      "game_time": 8.003219984471798,
+      "phase": 4,
+      "player": [
+        837.2012306441683,
+        354.7540292547881,
+        85.14999815474495
+      ],
+      "boss": [
+        279.7381528303339,
+        52.838882489944595,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 216.0,
+      "boss_state": 0,
+      "player_yaw": -148.86889648437503,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00073.png",
+      "sha256": "2848f7e5dcdf193db4ab800fd01336c86341183e367c2a0b60bac29297f75760",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 74,
+      "wall_time": 8.125,
+      "game_time": 8.106355890631676,
+      "phase": 4,
+      "player": [
+        858.627365973785,
+        330.97195370018727,
+        85.14999815474495
+      ],
+      "boss": [
+        289.4487060035603,
+        57.631090908686566,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 216.0,
+      "boss_state": 0,
+      "player_yaw": -151.64743041992193,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00074.png",
+      "sha256": "84629af91585a210bfc7f03d72e91df093e511c11ecdf6f790f890fb5a8bbdb3",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 75,
+      "wall_time": 8.234999999869615,
+      "game_time": 8.220175888389349,
+      "phase": 4,
+      "player": [
+        881.4772985079588,
+        303.86770171464235,
+        85.14999815474495
+      ],
+      "boss": [
+        300.428391945821,
+        62.34855637832381,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 216.0,
+      "boss_state": 0,
+      "player_yaw": -154.72320556640625,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00075.png",
+      "sha256": "a81ad825c711fcaa22a41c9a160715709a734c820802342a32143feac2966aa8",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 76,
+      "wall_time": 8.343999999808148,
+      "game_time": 8.328005593270063,
+      "phase": 4,
+      "player": [
+        902.1922768754051,
+        277.3094869330123,
+        85.14999815474495
+      ],
+      "boss": [
+        311.0596804172953,
+        66.24061438654324,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 204.0,
+      "boss_state": 0,
+      "player_yaw": -157.6423797607422,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00076.png",
+      "sha256": "08ac61d783c653150f0ed542c3cf54dcd19a25657bec585586e00409c4488b62",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 77,
+      "wall_time": 8.453999999910593,
+      "game_time": 8.440702993422747,
+      "phase": 4,
+      "player": [
+        922.7800958725669,
+        248.6463681878726,
+        85.14999815474495
+      ],
+      "boss": [
+        322.35127196141656,
+        69.77709666245713,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 204.0,
+      "boss_state": 0,
+      "player_yaw": -160.69653320312503,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00077.png",
+      "sha256": "a7234b307efce3a1584f65441a20ff3f1485ffaf1ed9b83038a68328424db2a3",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 78,
+      "wall_time": 8.562999999849126,
+      "game_time": 8.544859491288662,
+      "phase": 4,
+      "player": [
+        940.6321293808226,
+        221.28283781223394,
+        85.14999815474495
+      ],
+      "boss": [
+        332.9431418984418,
+        72.49808725076525,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 204.0,
+      "boss_state": 0,
+      "player_yaw": -163.52496337890625,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00078.png",
+      "sha256": "926752d05e0e2faeb319bd6f77b36721a2ac8d2f6bb3e30abe6e6dbd8a897339",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 79,
+      "wall_time": 8.672000000020489,
+      "game_time": 8.656396098434925,
+      "phase": 4,
+      "player": [
+        958.3697572424544,
+        191.20438042285866,
+        85.14999815474495
+      ],
+      "boss": [
+        333.83576197417,
+        72.71269938314447,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 192.0,
+      "boss_state": 4,
+      "player_yaw": -166.55519104003906,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00079.png",
+      "sha256": "0363e712004f62cedef163344825f5f959769981ad68faa72e2e1c0a711e78ff",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 80,
+      "wall_time": 8.781999999890104,
+      "game_time": 8.767384100705385,
+      "phase": 4,
+      "player": [
+        973.1318324271431,
+        160.32153326394592,
+        85.14999815474495
+      ],
+      "boss": [
+        333.83576197417,
+        72.71269938314447,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 192.0,
+      "boss_state": 4,
+      "player_yaw": -169.5403594970703,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00080.png",
+      "sha256": "9344ab59ef09cc4d7bbb4727c3d4010b75de58f184b59bb133c32c8c5aec859f",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 81,
+      "wall_time": 8.890999999828637,
+      "game_time": 8.872422903776169,
+      "phase": 4,
+      "player": [
+        983.923365081753,
+        130.10017751310914,
+        85.14999815474495
+      ],
+      "boss": [
+        333.83576197417,
+        72.71269938314447,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 192.0,
+      "boss_state": 4,
+      "player_yaw": -172.3238983154297,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00081.png",
+      "sha256": "54d29a799aa5570a9b2f99ce61c41e13230d46887bd3872e106f1acaf9d90b6b",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 82,
+      "wall_time": 9.0,
+      "game_time": 8.98661870136857,
+      "phase": 4,
+      "player": [
+        992.3195474293262,
+        96.3817853884956,
+        85.14999815474495
+      ],
+      "boss": [
+        344.83770016112317,
+        73.22570011692197,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 180.0,
+      "boss_state": 0,
+      "player_yaw": -175.32456970214844,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00082.png",
+      "sha256": "5b08146d79837b9a7df33bf6da89abac2bbe607256f86794804bf7dc4e1e4ad3",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 83,
+      "wall_time": 9.109999999869615,
+      "game_time": 9.091174401342869,
+      "phase": 4,
+      "player": [
+        998.4973041993597,
+        65.02836555487379,
+        85.14999815474495
+      ],
+      "boss": [
+        355.81539057482496,
+        73.20112220516239,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 180.0,
+      "boss_state": 0,
+      "player_yaw": -178.0770721435547,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00083.png",
+      "sha256": "f4f0854b87515fef58a7211fab49c6b5935e7b791708dc2f4ae3910a205cb943",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 84,
+      "wall_time": 9.218999999808148,
+      "game_time": 9.205825105309486,
+      "phase": 4,
+      "player": [
+        1004.4027050604127,
+        30.29543737495709,
+        85.14999815474495
+      ],
+      "boss": [
+        367.83673580845254,
+        72.57631056201421,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 180.0,
+      "boss_state": 0,
+      "player_yaw": 178.87535095214844,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00084.png",
+      "sha256": "2c076313863a470505c2beb44cdfc0f88fb26b11edc0091d6a3edd9c10725ddd",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 85,
+      "wall_time": 9.328999999910593,
+      "game_time": 9.309772700071335,
+      "phase": 4,
+      "player": [
+        1009.0088680202148,
+        -1.4743241153862803,
+        85.14999815474495
+      ],
+      "boss": [
+        378.69134212004326,
+        71.44037121476238,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 168.0,
+      "boss_state": 0,
+      "player_yaw": 176.09066772460938,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00085.png",
+      "sha256": "7e34f561b55793781ca0b3742068ddd2837e4085cf61089f2dfe226e03a70325",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 86,
+      "wall_time": 9.437999999849126,
+      "game_time": 9.421030201017857,
+      "phase": 4,
+      "player": [
+        1013.0405680471024,
+        -35.75191887844705,
+        85.14999815474495
+      ],
+      "boss": [
+        390.23444017747636,
+        69.64857141636944,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 168.0,
+      "boss_state": 0,
+      "player_yaw": 173.0950927734375,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00086.png",
+      "sha256": "520a54b08d179a92c399955fa8c0cc66379b0d5f328eceaf218d17bc9840c0e0",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 87,
+      "wall_time": 9.547000000020489,
+      "game_time": 9.529653403908014,
+      "phase": 4,
+      "player": [
+        1015.8767752862735,
+        -69.45196672952014,
+        85.14999815474495
+      ],
+      "boss": [
+        401.39372461144865,
+        67.29522554848346,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 168.0,
+      "boss_state": 0,
+      "player_yaw": 170.15988159179688,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00087.png",
+      "sha256": "9e1bc5eb123a6e9832734991c2868c0454b7a1e1dbd2cc9618d3027bdabfea1f",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 88,
+      "wall_time": 9.656999999890104,
+      "game_time": 9.64238440617919,
+      "phase": 4,
+      "player": [
+        1017.5414748232389,
+        -104.62110783123319,
+        85.14999815474495
+      ],
+      "boss": [
+        412.8364462853975,
+        64.26943566219173,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 156.0,
+      "boss_state": 0,
+      "player_yaw": 167.10733032226562,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00088.png",
+      "sha256": "0f2220abf852bd2f7f0a5ed2252cc0447730dddcd630e7586947e1cf2eb41565",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 89,
+      "wall_time": 9.765999999828637,
+      "game_time": 9.746796999126673,
+      "phase": 4,
+      "player": [
+        1017.7515978727425,
+        -137.30677718671964,
+        85.14999815474495
+      ],
+      "boss": [
+        423.2744502366801,
+        60.91856057934848,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 156.0,
+      "boss_state": 0,
+      "player_yaw": 164.27449035644534,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00089.png",
+      "sha256": "73699c7fb4c1ca38f8e75178c2b9b6e1fd1f942f4a92a9390e14e3cfc6fa3936",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 90,
+      "wall_time": 9.875,
+      "game_time": 9.862052395939827,
+      "phase": 4,
+      "player": [
+        1016.416405655681,
+        -173.42889613680148,
+        85.14999815474495
+      ],
+      "boss": [
+        434.5839024373986,
+        56.61401700564802,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 156.0,
+      "boss_state": 0,
+      "player_yaw": 161.1442108154297,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00090.png",
+      "sha256": "b0067ef74831856ac13a82e86db64c1200569e947509d5dca9a1f3bdcce77f24",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 91,
+      "wall_time": 9.984999999869615,
+      "game_time": 9.970887500792742,
+      "phase": 4,
+      "player": [
+        1013.5816438036427,
+        -207.41968896320137,
+        85.14999815474495
+      ],
+      "boss": [
+        435.8655660400287,
+        56.09797083750114,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 144.0,
+      "boss_state": 4,
+      "player_yaw": 158.18667602539062,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00091.png",
+      "sha256": "6a526ec5d397b750e3140b0727f10a5c19698d3d4411f3808df1fcd6d35497c1",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 92,
+      "wall_time": 10.093999999808148,
+      "game_time": 10.0747250020504,
+      "phase": 4,
+      "player": [
+        1008.391380433779,
+        -239.06775667375587,
+        85.14999815474495
+      ],
+      "boss": [
+        435.8655660400287,
+        56.09797083750114,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 144.0,
+      "boss_state": 4,
+      "player_yaw": 155.3875274658203,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00092.png",
+      "sha256": "d5285dcc73f02c4d9b69bcdd23929bea8af44df5a6d398f18092c5b92edf7d18",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 93,
+      "wall_time": 10.203999999910593,
+      "game_time": 10.189902700483799,
+      "phase": 4,
+      "player": [
+        999.1852819249203,
+        -273.04650872084335,
+        85.14999815474495
+      ],
+      "boss": [
+        435.8655660400287,
+        56.09797083750114,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 144.0,
+      "boss_state": 4,
+      "player_yaw": 152.33328247070315,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00093.png",
+      "sha256": "7dd1330f16af99dcbea057e7fdbe947bf156e9bef6b1046c83fb478be03b6f94",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 94,
+      "wall_time": 10.312999999849126,
+      "game_time": 10.303712904453278,
+      "phase": 4,
+      "player": [
+        986.6093988678322,
+        -305.31883535349374,
+        85.14999815474495
+      ],
+      "boss": [
+        445.1556639989217,
+        50.14215695539946,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 132.0,
+      "boss_state": 0,
+      "player_yaw": 149.34292602539062,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00094.png",
+      "sha256": "94bd28629e9fef319694ba38eda6a786a74a5b8a6ab3c55be97a6c4ed5b8ec07",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 95,
+      "wall_time": 10.422000000020489,
+      "game_time": 10.403191104531288,
+      "phase": 4,
+      "player": [
+        974.2007335575257,
+        -333.07491924810347,
+        85.14999815474495
+      ],
+      "boss": [
+        453.6660440301201,
+        44.08725911630705,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 132.0,
+      "boss_state": 0,
+      "player_yaw": 146.72451782226562,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00095.png",
+      "sha256": "23c2c1fecf1d160025daf4a8b348933604e7305c5d1b3020fbb5584f07b608ae",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 96,
+      "wall_time": 10.531999999890104,
+      "game_time": 10.512516304850578,
+      "phase": 4,
+      "player": [
+        959.7251545288602,
+        -363.38063496447387,
+        85.14999815474495
+      ],
+      "boss": [
+        462.69372227999,
+        36.99818858653417,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 132.0,
+      "boss_state": 0,
+      "player_yaw": 143.82046508789062,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00096.png",
+      "sha256": "4ec77afa869e4f3a0c8d748e94c8ffaf3420ad056f572eb5ba5144ec325b25ec",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 97,
+      "wall_time": 10.640999999828637,
+      "game_time": 10.630132108926773,
+      "phase": 4,
+      "player": [
+        943.2504707649534,
+        -395.75371864624327,
+        85.14999815474495
+      ],
+      "boss": [
+        471.9887195683936,
+        28.868285553948688,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 120.0,
+      "boss_state": 0,
+      "player_yaw": 140.6704559326172,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00097.png",
+      "sha256": "a0fa84e05697316f4e646ec39922024ac6b56bb8a6dfbb67c5dd59469c9ca5f2",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 98,
+      "wall_time": 10.75,
+      "game_time": 10.740231107920408,
+      "phase": 4,
+      "player": [
+        926.8716807852076,
+        -425.7284915561418,
+        85.14999815474495
+      ],
+      "boss": [
+        480.25944556087546,
+        20.79242091266203,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 120.0,
+      "boss_state": 0,
+      "player_yaw": 137.7054901123047,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00098.png",
+      "sha256": "b4bd886553ef377d1c3a2aa2e0369856ed5b2eed864d2f224c135e3c82aa4676",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 99,
+      "wall_time": 10.859999999869615,
+      "game_time": 10.845338203012943,
+      "phase": 4,
+      "player": [
+        910.2709291326408,
+        -453.9360637546491,
+        85.14999815474495
+      ],
+      "boss": [
+        487.75778537698005,
+        12.695538786203615,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 120.0,
+      "boss_state": 0,
+      "player_yaw": 134.86590576171872,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00099.png",
+      "sha256": "330a8b176d41e58409ee78425d9fe5100a0adab5b875646f9e8e77ad41c721aa",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 100,
+      "wall_time": 10.968999999808148,
+      "game_time": 10.957415107637644,
+      "phase": 4,
+      "player": [
+        891.4239439665383,
+        -483.4347712553498,
+        85.14999815474495
+      ],
+      "boss": [
+        495.30824272837395,
+        3.6699910614970124,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 108.0,
+      "boss_state": 0,
+      "player_yaw": 131.83053588867185,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00100.png",
+      "sha256": "24ee52153ad8a7232812f2be1e70cafc52aebfa47bbf7db3d81b21a641c5b62d",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 101,
+      "wall_time": 11.078999999910593,
+      "game_time": 11.061968706548214,
+      "phase": 4,
+      "player": [
+        872.6916840716711,
+        -510.2747419154829,
+        85.14999815474495
+      ],
+      "boss": [
+        501.8981678342167,
+        -5.109427010516935,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 108.0,
+      "boss_state": 0,
+      "player_yaw": 128.9936828613281,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00101.png",
+      "sha256": "95308d46110a8d89e055f87f218a824845cb7ea8a3e900289755a648d9589d58",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 102,
+      "wall_time": 11.187999999849126,
+      "game_time": 11.174296207726002,
+      "phase": 4,
+      "player": [
+        851.3180761720491,
+        -538.2792535614574,
+        85.14999815474495
+      ],
+      "boss": [
+        508.48465639124885,
+        -14.892380497698555,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 108.0,
+      "boss_state": 0,
+      "player_yaw": 125.94313049316405,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00102.png",
+      "sha256": "234afc42b079745d9dfdf2cd05f4f6034ea0c61fab3829e2b6b0aeb6732d66d7",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 103,
+      "wall_time": 11.297000000020489,
+      "game_time": 11.284153912216425,
+      "phase": 4,
+      "player": [
+        829.1980496298389,
+        -564.6536164429971,
+        85.14999815474495
+      ],
+      "boss": [
+        509.0587786186228,
+        -15.778082754997678,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 96.0,
+      "boss_state": 4,
+      "player_yaw": 122.95799255371094,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00103.png",
+      "sha256": "fbc3502e682f9e94247ad0c1f0e3525a3d11ea6e5dbc71d5c87100395c09e152",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 104,
+      "wall_time": 11.406999999890104,
+      "game_time": 11.39629341289401,
+      "phase": 4,
+      "player": [
+        804.8349967453665,
+        -589.2139993307452,
+        85.14999815474495
+      ],
+      "boss": [
+        509.0587786186228,
+        -15.778082754997678,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 96.0,
+      "boss_state": 4,
+      "player_yaw": 119.94001007080078,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00104.png",
+      "sha256": "4bdd4b1b00707106e536c8edcf28d27d2d7a19fcec97ca6b1be7c7b279d2478d",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 105,
+      "wall_time": 11.515999999828637,
+      "game_time": 11.500790610909462,
+      "phase": 4,
+      "player": [
+        780.1057645477166,
+        -609.4061685567425,
+        85.14999815474495
+      ],
+      "boss": [
+        509.0587786186228,
+        -15.778082754997678,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 96.0,
+      "boss_state": 4,
+      "player_yaw": 117.17181396484376,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00105.png",
+      "sha256": "b8332c6d1da846d5e08b94672aef467135eb04830971c585ee8b2aca3d7971fa",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 106,
+      "wall_time": 11.625,
+      "game_time": 11.61019740998745,
+      "phase": 4,
+      "player": [
+        752.3556363571839,
+        -627.7858361626543,
+        85.14999815474495
+      ],
+      "boss": [
+        513.0440713894395,
+        -25.58782257563423,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 84.0,
+      "boss_state": 0,
+      "player_yaw": 114.29716491699222,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00106.png",
+      "sha256": "85cc6dfb2e5e8aae4a5ae188e035e784e9d56be2c74b98c35590dc0aa5b800b6",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 107,
+      "wall_time": 11.734999999869615,
+      "game_time": 11.724339812994003,
+      "phase": 4,
+      "player": [
+        722.3544072300848,
+        -645.607446019532,
+        85.14999815474495
+      ],
+      "boss": [
+        517.033770319481,
+        -36.8884405612135,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 84.0,
+      "boss_state": 0,
+      "player_yaw": 111.29278564453128,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00107.png",
+      "sha256": "118121f0ff519841ebb02fe146535dea6b03c8fd2d9898b5f3399aec0d294942",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 108,
+      "wall_time": 11.843999999808148,
+      "game_time": 11.830216109752655,
+      "phase": 4,
+      "player": [
+        693.9422310004336,
+        -661.461716393678,
+        85.14999815474495
+      ],
+      "boss": [
+        520.1829574817241,
+        -47.54944009793323,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 84.0,
+      "boss_state": 0,
+      "player_yaw": 108.47785186767581,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00108.png",
+      "sha256": "fe7c44a8e587361d673372f2e73f62cb8b93cf8e7f0c432b7b8381f3644c052d",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 109,
+      "wall_time": 11.953999999910593,
+      "game_time": 11.936410803347826,
+      "phase": 4,
+      "player": [
+        664.9388677577908,
+        -676.7691059867271,
+        85.14999815474495
+      ],
+      "boss": [
+        522.8043119988638,
+        -58.386669215472146,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 72.0,
+      "boss_state": 0,
+      "player_yaw": 105.63364410400396,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00109.png",
+      "sha256": "a09c74d466b2aad665ae0bae3e6829a72177b19bced838233433c24adf2da583",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 110,
+      "wall_time": 12.062999999849126,
+      "game_time": 12.047832507640123,
+      "phase": 4,
+      "player": [
+        633.9408749209314,
+        -692.0619662639862,
+        85.14999815474495
+      ],
+      "boss": [
+        524.9782630808342,
+        -69.88149473403276,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 72.0,
+      "boss_state": 0,
+      "player_yaw": 102.6338806152344,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00110.png",
+      "sha256": "d209f262db8bc32336aa2e082e61c1e23c17ee5dd9e8223b04f120be53454e0c",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 111,
+      "wall_time": 12.172000000020489,
+      "game_time": 12.153655208647251,
+      "phase": 4,
+      "player": [
+        603.9317542588692,
+        -705.6642633902492,
+        85.14999815474495
+      ],
+      "boss": [
+        526.4688252963468,
+        -80.89178251890921,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 72.0,
+      "boss_state": 0,
+      "player_yaw": 99.77433776855473,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00111.png",
+      "sha256": "a0d4b09d944291aae01057e833ba2ddbfc77aa426c41b0e228aac1758d550746",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 112,
+      "wall_time": 12.281999999890104,
+      "game_time": 12.267925508320332,
+      "phase": 4,
+      "player": [
+        570.9101504787155,
+        -719.1861859515728,
+        85.14999815474495
+      ],
+      "boss": [
+        527.4342558541459,
+        -92.85047566700156,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 60.0,
+      "boss_state": 0,
+      "player_yaw": 96.68030548095707,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00112.png",
+      "sha256": "71c24630897b553f04cbab5c10da41c78089dea0e0a30444e62abf4248c3189f",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 113,
+      "wall_time": 12.390999999828637,
+      "game_time": 12.374328702688217,
+      "phase": 4,
+      "player": [
+        539.6024529240021,
+        -730.559177866274,
+        85.14999815474495
+      ],
+      "boss": [
+        527.771721770787,
+        -104.01704021077427,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 60.0,
+      "boss_state": 0,
+      "player_yaw": 93.79574584960939,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00113.png",
+      "sha256": "2c01971da674aeecc0ce54a9a299b3d56abcc08f65cc9ee540c981d72e4eebd5",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 114,
+      "wall_time": 12.5,
+      "game_time": 12.489838104695082,
+      "phase": 4,
+      "player": [
+        505.04020550628655,
+        -741.4182715212625,
+        85.14999815474495
+      ],
+      "boss": [
+        527.5140463882303,
+        -116.14201190558673,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 60.0,
+      "boss_state": 0,
+      "player_yaw": 90.65950012207034,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00114.png",
+      "sha256": "19fe48e95c14ba0602a8ed791cf3bfa50d1524359966047a59a721621cab76fc",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 115,
+      "wall_time": 12.609999999869615,
+      "game_time": 12.595046799629927,
+      "phase": 4,
+      "player": [
+        473.16451763518796,
+        -749.8218341199448,
+        85.14999815474495
+      ],
+      "boss": [
+        527.4739008710875,
+        -117.13441636955217,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 48.0,
+      "boss_state": 4,
+      "player_yaw": 87.79988861083986,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00115.png",
+      "sha256": "89c4b4545665fdc3a01adc3986dad78972fdb1928c0275c62e6777cb5ddd0325",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 116,
+      "wall_time": 12.718999999808148,
+      "game_time": 12.708453498780727,
+      "phase": 4,
+      "player": [
+        438.7084887737488,
+        -755.9840156526553,
+        85.14999815474495
+      ],
+      "boss": [
+        527.4739008710875,
+        -117.13441636955217,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 48.0,
+      "boss_state": 4,
+      "player_yaw": 84.74577331542969,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00116.png",
+      "sha256": "f7c9d77a3d4bf648d25d8f85fcccea86a62001abb52ac82b5aa9ee203e07862a",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 117,
+      "wall_time": 12.828999999910593,
+      "game_time": 12.812478601932526,
+      "phase": 4,
+      "player": [
+        406.99843315162644,
+        -758.3234101868691,
+        85.14999815474495
+      ],
+      "boss": [
+        527.4739008710875,
+        -117.13441636955217,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 48.0,
+      "boss_state": 4,
+      "player_yaw": 81.98875427246095,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00117.png",
+      "sha256": "8be2ba72b2b18fc3f907ad93c1bb1c8bb43628dfb9c36ac813a0aeab7ac31e26",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 118,
+      "wall_time": 12.937999999849126,
+      "game_time": 12.919258899986744,
+      "phase": 4,
+      "player": [
+        374.53248347547753,
+        -757.4731771239191,
+        85.14999815474495
+      ],
+      "boss": [
+        525.1862226373853,
+        -126.91156339332467,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 36.0,
+      "boss_state": 0,
+      "player_yaw": 79.1837387084961,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00118.png",
+      "sha256": "b4bfe9c7bacde0691ee071709f0ccf697fed43a1ef58aedb16806a6ed7067fae",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 119,
+      "wall_time": 13.047000000020489,
+      "game_time": 13.035766802728176,
+      "phase": 4,
+      "player": [
+        339.0672994760675,
+        -754.6896371993458,
+        85.14999815474495
+      ],
+      "boss": [
+        521.7610393471241,
+        -138.65433502174804,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 36.0,
+      "boss_state": 0,
+      "player_yaw": 76.27848815917966,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00119.png",
+      "sha256": "5fad118de6414daeb9646812d563fd59b301571953742a7320f1a8af2d69683b",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 120,
+      "wall_time": 13.172000000020489,
+      "game_time": 13.053726304322481,
+      "phase": 4,
+      "player": [
+        333.57902061341207,
+        -754.1802006418021,
+        85.14999815474495
+      ],
+      "boss": [
+        521.2097084561495,
+        -140.45768704333713,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 36.0,
+      "boss_state": 0,
+      "player_yaw": 75.77616882324216,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00120.png",
+      "sha256": "1ecd0da607c5eeb769a0c1fba074831c7fd59e5aca3d3fbf02ee77a67dd0a488",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 121,
+      "wall_time": 13.297000000020489,
+      "game_time": 13.27716750279069,
+      "phase": 4,
+      "player": [
+        265.26930811110424,
+        -745.9328047321774,
+        85.14999815474495
+      ],
+      "boss": [
+        512.6221873803469,
+        -162.28344504572684,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 24.0,
+      "boss_state": 0,
+      "player_yaw": 69.82201385498044,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00121.png",
+      "sha256": "2779ae81046c716ab03e04040aea43147062d47cdb4e60441f46d22dd59e4bf0",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 122,
+      "wall_time": 13.422000000020489,
+      "game_time": 13.403173103928566,
+      "phase": 4,
+      "player": [
+        226.6892406594303,
+        -739.5847559548336,
+        85.14999815474495
+      ],
+      "boss": [
+        506.8284722846185,
+        -174.17583923243652,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 24.0,
+      "boss_state": 0,
+      "player_yaw": 66.59004211425781,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00122.png",
+      "sha256": "0f6b6408af13b374ba26dc71940168a3d629b242feda58c8bb9da6a971ca84b0",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 123,
+      "wall_time": 13.531999999890104,
+      "game_time": 13.419391304254532,
+      "phase": 4,
+      "player": [
+        221.71940078493142,
+        -738.6839114560644,
+        85.14999815474495
+      ],
+      "boss": [
+        506.06076335775003,
+        -175.69588166411287,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 24.0,
+      "boss_state": 0,
+      "player_yaw": 66.11212921142578,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00123.png",
+      "sha256": "c834bb03e0d8c070a6f4c233b3740db3a3e417d4d6a20b1ebf1c9ea8a5632817",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 124,
+      "wall_time": 13.640999999828637,
+      "game_time": 13.628413513302803,
+      "phase": 4,
+      "player": [
+        158.14252130201908,
+        -724.2558699676218,
+        85.14999815474495
+      ],
+      "boss": [
+        494.7495334476538,
+        -194.49749475410604,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 12.0,
+      "boss_state": 0,
+      "player_yaw": 60.28622817993161,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00124.png",
+      "sha256": "5ef0598a19f78a1c1c702f85e8e9cdf91d0321342e62e9b71ba8e97b8a3878f5",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 125,
+      "wall_time": 13.75,
+      "game_time": 13.737735513597727,
+      "phase": 4,
+      "player": [
+        125.277002643124,
+        -714.696453049687,
+        85.14999815474495
+      ],
+      "boss": [
+        488.18590733296065,
+        -203.91339010168858,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 12.0,
+      "boss_state": 0,
+      "player_yaw": 57.31595230102539,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00125.png",
+      "sha256": "221d0034f46d498fb67a3472e9493b45136c8ddfe6b180105bc1e9d9a77f0a91",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 126,
+      "wall_time": 13.859999999869615,
+      "game_time": 13.844563510268927,
+      "phase": 4,
+      "player": [
+        93.56668929920139,
+        -703.8875656510133,
+        85.14999815474495
+      ],
+      "boss": [
+        481.3085813314183,
+        -212.7736358213519,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 12.0,
+      "boss_state": 0,
+      "player_yaw": 54.42025756835938,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00126.png",
+      "sha256": "389cb0cb845cfefc0eef439a1de753a8ae9567d023199e8d1612bbd80280dea9",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 127,
+      "wall_time": 13.968999999808148,
+      "game_time": 13.950217511504889,
+      "phase": 5,
+      "player": [
+        62.713493284234204,
+        -691.8042851788706,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 51.5538673400879,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00127.png",
+      "sha256": "d6d94daa6fe393915ca9cbee082c190dc35bf32cba34e6dab0a2163de1d71611",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 128,
+      "wall_time": 14.078999999910593,
+      "game_time": 14.064566910266876,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00128.png",
+      "sha256": "ca2464df88e5ac791aa3b679904e9eda71730f1ff84eb0b8c77d9766de9aaf35",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 129,
+      "wall_time": 14.187999999849126,
+      "game_time": 14.170782417058945,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00129.png",
+      "sha256": "6dc8e26e00d8d49fa1860cb8ba62e0720ac23e0b9c539f7b0b909c7e5c26a071",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 130,
+      "wall_time": 14.297000000020489,
+      "game_time": 14.282425221055746,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00130.png",
+      "sha256": "ef415fd4560dec177a0e90b5d4653c4d46141da218e5f9111da0e3ccf6693ae0",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 131,
+      "wall_time": 14.406999999890104,
+      "game_time": 14.394173320382833,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00131.png",
+      "sha256": "2ab4ca606e1076211ee7e83cd582dfa6e69421beba7bc78af40e182bcc51bb70",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 132,
+      "wall_time": 14.515999999828637,
+      "game_time": 14.505232218652964,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00132.png",
+      "sha256": "412e8ebfeaf9646a7b4f9542db2a63e9e551de9ab65697a0ab9594cb46597d92",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 133,
+      "wall_time": 14.625,
+      "game_time": 14.61582051590085,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00133.png",
+      "sha256": "f827047869f3741e81b83881b4d210aecad217e2e9c382414169f54f8b027848",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 134,
+      "wall_time": 14.734999999869615,
+      "game_time": 14.719913616776466,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00134.png",
+      "sha256": "2e14eba6aa50357bf05baf7c56da7ad6ec8370d633dfc7a321685613af2aa1f2",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 135,
+      "wall_time": 14.843999999808148,
+      "game_time": 14.833626314997673,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00135.png",
+      "sha256": "d60c3ce76f65f11078decac1997fd84d854ad313ea341ad7b37c93931b8ac8e8",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 136,
+      "wall_time": 14.953999999910593,
+      "game_time": 14.942203115671873,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00136.png",
+      "sha256": "981a111515d77182a84552b8a1da9a2aec2981ef519b38d06460986c24c3bf69",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 137,
+      "wall_time": 15.062999999849126,
+      "game_time": 15.051331613212824,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00137.png",
+      "sha256": "a7c069922ad1e285491ae2789de309848fef2d252b14f6c7f20f50afe5d40c4c",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 138,
+      "wall_time": 15.172000000020489,
+      "game_time": 15.16007911041379,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00138.png",
+      "sha256": "276ba904487254cb965e5fcc93384683ceaf7a17bad5a5d717da484b37a5b2ce",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 139,
+      "wall_time": 15.281999999890104,
+      "game_time": 15.264309011399746,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00139.png",
+      "sha256": "c7eba0fd7955f6a669103fd8ebbc6444312151177ca39fd206211beef9518312",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 140,
+      "wall_time": 15.390999999828637,
+      "game_time": 15.378941908478737,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00140.png",
+      "sha256": "8147971f0ed1c107790cbca94bb44a8c3730579d680864e31e930368d3350620",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 141,
+      "wall_time": 15.5,
+      "game_time": 15.490076005458832,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00141.png",
+      "sha256": "46d8eb36ef085376352a37606e8ed5390080cf87119ed7eeb004b324edff04f9",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 142,
+      "wall_time": 15.609999999869615,
+      "game_time": 15.593915909528732,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00142.png",
+      "sha256": "81b6d8fb49f1799633c7654598790542958d29fb7f0cf417241c30302a9a0eb2",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 143,
+      "wall_time": 15.718999999808148,
+      "game_time": 15.708765007555485,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00143.png",
+      "sha256": "33c716e76d4614f0f2b6190b90269f0aea57a0dab6e706fb9fcbe330d81d1409",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 144,
+      "wall_time": 15.828999999910593,
+      "game_time": 15.815705209970474,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00144.png",
+      "sha256": "ebf941498f4431699dc3d4b83f10da17e0a25e8051c60c5276a3fc8d6032fda3",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 145,
+      "wall_time": 15.937999999849126,
+      "game_time": 15.925923209637403,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00145.png",
+      "sha256": "d6e6e003d44284f6b6e383b53ac15a2848e76948080bb9321c4ff6381ef659ac",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 146,
+      "wall_time": 16.04700000002049,
+      "game_time": 16.03347320854664,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00146.png",
+      "sha256": "fa2262b3e9e007f4fa074b54249f45582e46d46433a813b0ae61ceac00da6521",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 147,
+      "wall_time": 16.156999999890104,
+      "game_time": 16.143889512866735,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00147.png",
+      "sha256": "2d38d6a103a4331dfd9d1ac933e6cff3a1a37b2bdd274df9cf9b79d247c3f526",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 148,
+      "wall_time": 16.265999999828637,
+      "game_time": 16.251829206943512,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00148.png",
+      "sha256": "f20df4ff91d2302c106309ba7e85e97970b6307a0b1733c240debf6161232177",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 149,
+      "wall_time": 16.375,
+      "game_time": 16.35830720886588,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00149.png",
+      "sha256": "5da6281c555c29c69ecd0f2c64dbf374fbfab8bd85f1ffe45189c1c04d9834ef",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 150,
+      "wall_time": 16.484999999869615,
+      "game_time": 16.467996507883072,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00150.png",
+      "sha256": "5f374a775dc3df440de8dbc99744ab035101a5334cfb5d115f93c30b80c278aa",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 151,
+      "wall_time": 16.593999999808148,
+      "game_time": 16.578810904175043,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00151.png",
+      "sha256": "6c807db7517b2591c14213fec555d2a5e08671ff752bb6633f5c3b75fac98112",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 152,
+      "wall_time": 16.703999999910593,
+      "game_time": 16.68591920286417,
+      "phase": 5,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00152.png",
+      "sha256": "a3533d786b087da80bba4391708b6f1eedb1c79442c0bdd8481d178bb0153929",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 153,
+      "wall_time": 16.812999999849126,
+      "game_time": 16.779006600379944,
+      "phase": 6,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00153.png",
+      "sha256": "ac068fe7aa652164bbbc28543679c9a89064dfaf7315ef461f4c1479ae6bdb2a",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 154,
+      "wall_time": 16.92200000002049,
+      "game_time": 16.779006600379944,
+      "phase": 6,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00154.png",
+      "sha256": "7c532a975bd4fe391a7871c1f22f275ac7d07ded3669e3a2f992ec71a0f5366b",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 155,
+      "wall_time": 17.031999999890104,
+      "game_time": 16.779006600379944,
+      "phase": 6,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00155.png",
+      "sha256": "e170b934c4528c63aa0f6bb61ba2d3277ac3a00eb7099f76d6950dc79a12869a",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 156,
+      "wall_time": 17.140999999828637,
+      "game_time": 16.779006600379944,
+      "phase": 6,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00156.png",
+      "sha256": "2e572a7418435bbb5d2f8bbfa7727c9ca34df7a1bfded683d7cb701f55d0e043",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 157,
+      "wall_time": 17.25,
+      "game_time": 16.779006600379944,
+      "phase": 6,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00157.png",
+      "sha256": "46da54450f4c7b8754e148e973b8a4ef50bbde610455de0b11851eec0ea17c75",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 158,
+      "wall_time": 17.359999999869615,
+      "game_time": 16.779006600379944,
+      "phase": 6,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00158.png",
+      "sha256": "aad2839edb61889232f0b08b76024462d664e1644d36369489b277057f7ec363",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 159,
+      "wall_time": 17.468999999808148,
+      "game_time": 16.779006600379944,
+      "phase": 6,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00159.png",
+      "sha256": "00b6249d6483b89f9511483ebb538825884722b32950dc90141ff108fc53b527",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 160,
+      "wall_time": 17.578999999910593,
+      "game_time": 16.779006600379944,
+      "phase": 6,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00160.png",
+      "sha256": "1733525bb9eb9e1a117d2ba28ddee9ea17b529cb636ee084d45bca504ae73ab6",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 161,
+      "wall_time": 17.687999999849126,
+      "game_time": 16.779006600379944,
+      "phase": 6,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00161.png",
+      "sha256": "9270912a334bf104dc1cbb0f9b38727ecd8066edce27a825fa1db51a940788cb",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 162,
+      "wall_time": 17.79700000002049,
+      "game_time": 16.779006600379944,
+      "phase": 6,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00162.png",
+      "sha256": "522ef4a20b3e7b9880bd674fd10859b20594834ceee2e7d1ef9ba0f52c435518",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 163,
+      "wall_time": 17.906999999890104,
+      "game_time": 16.787340000271797,
+      "phase": 7,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00163.png",
+      "sha256": "e76f4229cb3c69afb07b263ea82e8e1cb576c4c9711362fb45db3659a3d0bb6d",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 164,
+      "wall_time": 18.015999999828637,
+      "game_time": 16.888426896184683,
+      "phase": 7,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00164.png",
+      "sha256": "9704cf968aeb5e3b101dc6cb81dab4c0c6a7dd688e1d2c48144b148828ddf585",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 165,
+      "wall_time": 18.125,
+      "game_time": 16.99863639101386,
+      "phase": 7,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00165.png",
+      "sha256": "0f8570fa726f8c073e1254c2bb9c431413770b4b63cf1be62150a566ed08bf6e",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 166,
+      "wall_time": 18.234999999869615,
+      "game_time": 17.111072689294815,
+      "phase": 7,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00166.png",
+      "sha256": "d5d9825bf26c5544d9b7e02dd0f74228173f2ff46d5a3649f3373325c14f0a5a",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 167,
+      "wall_time": 18.343999999808148,
+      "game_time": 17.22055869549513,
+      "phase": 7,
+      "player": [
+        55.739917865836595,
+        -688.9865916153905,
+        85.14999815474495
+      ],
+      "boss": [
+        480.6445073619616,
+        -213.60646152240452,
+        227.15000200271606
+      ],
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3,
+      "player_yaw": 49.570781707763686,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00167.png",
+      "sha256": "7df53a1628b67c6ec3c73f1ed1c5a3c515c24e11c9f79e154e5e7b27f3b69897",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 168,
+      "wall_time": 18.54700000002049,
+      "game_time": 0.00897889956831932,
+      "phase": 9,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        249.5149413997874,
+        -229.19156899964568,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00168.png",
+      "sha256": "2e863047e33ca4dbb296e36b75b1a59f4f96716ea13d37118fce5b7afc6a67d5",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 169,
+      "wall_time": 18.656999999890104,
+      "game_time": 0.21715790405869484,
+      "phase": 9,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        238.26868391094766,
+        -210.4478065182461,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00169.png",
+      "sha256": "3976cac59b26997df026dfba4ec76159d091925e0dade274dd63c5ec2cb8fae4",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 170,
+      "wall_time": 18.765999999828637,
+      "game_time": 0.3301452100276947,
+      "phase": 9,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        232.16487753043228,
+        -200.2747958840538,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00170.png",
+      "sha256": "b4a82e945c9a066eebdba7765e5d476b5082c4d6efd9aa2455d2398cda69eb95",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 171,
+      "wall_time": 18.875,
+      "game_time": 0.4324779100716114,
+      "phase": 9,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        226.63665484995877,
+        -191.06109141659795,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00171.png",
+      "sha256": "a06b4898e5f75e7c5d24af1506ccf81092f54923778ab06b516444707894e63e",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 172,
+      "wall_time": 18.984999999869615,
+      "game_time": 0.5459796041250229,
+      "phase": 9,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        220.5050601684058,
+        -180.841766947343,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00172.png",
+      "sha256": "11fc28aa4a80d3131af66183d73739957ebfe7ac8e4473b284b1ede8863af764",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 173,
+      "wall_time": 19.093999999808148,
+      "game_time": 0.6577869094908237,
+      "phase": 9,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        214.46499984457392,
+        -170.7749997409566,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00173.png",
+      "sha256": "85c134e973336fecd48877863d46029bc32feb613c6456027145f5af0bd282cc",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 174,
+      "wall_time": 19.203999999910593,
+      "game_time": 0.7612560093402863,
+      "phase": 9,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        208.87538651207615,
+        -161.45897752012692,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00174.png",
+      "sha256": "e4d819ddca4413e4dd40f1e88c5d2db90ccae2b9a7a684003d02dfd4c4dca98a",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 175,
+      "wall_time": 19.312999999849126,
+      "game_time": 0.8735279068350792,
+      "phase": 9,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        202.81022796701527,
+        -151.3503799450255,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00175.png",
+      "sha256": "2c118b94e86d632fafb4fb466ff0752aad440ae948189368204b02afa39e68c2",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 176,
+      "wall_time": 19.42200000002049,
+      "game_time": 0.9863875098526478,
+      "phase": 9,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        196.71332036227892,
+        -141.18886727046493,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00176.png",
+      "sha256": "90613e25c0817921fdd5a72871231ef15fe31b452f10a88ac7811b24ff4a3775",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 177,
+      "wall_time": 19.531999999890104,
+      "game_time": 1.090112205594778,
+      "phase": 9,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        191.1098992145835,
+        -131.84983202430584,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00177.png",
+      "sha256": "ab8603be461ed34f090fd647db99961ce0886b2388ea49e7f3614f366bb168e2",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 178,
+      "wall_time": 19.640999999828637,
+      "game_time": 1.2013362050056458,
+      "phase": 9,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        185.10135027673414,
+        -121.83558379455692,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00178.png",
+      "sha256": "75e15e0d4dab6e62ca477be50255898eade82b3ef0253df68769aff56a930059",
+      "crc_and_stream_complete": true
+    },
+    {
+      "index": 179,
+      "wall_time": 19.75,
+      "game_time": 1.3142540007829666,
+      "phase": 10,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "boss": [
+        179.00129897956944,
+        -111.66883163261575,
+        227.15000200271606
+      ],
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0,
+      "player_yaw": -145.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T214946-record_encounter\\frames\\frame-00179.png",
+      "sha256": "cb1d970aafc077327cd6c31d6185df08bd4738478a22c804051b43dc4069bf39",
+      "crc_and_stream_complete": true
+    }
+  ],
+  "events": [
+    {
+      "name": "start",
+      "wall": 0.0,
+      "game": 0.0,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 0.0,
+      "game": 0.0,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 1.281999999890104,
+      "game": 1.286160308867693,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1
+    },
+    {
+      "name": "first_strike_dodge",
+      "wall": 1.9379999998491257,
+      "game": 1.9420302100479603,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 2.2659999998286366,
+      "game": 2.2662473060190678,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 3.5,
+      "game": 3.4221509993076324,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 3.531999999890104,
+      "game": 3.5232734978199005,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 1
+    },
+    {
+      "name": "second_strike_taken",
+      "wall": 4.5,
+      "game": 4.50018510594964,
+      "player_health": 76.0,
+      "boss_health": 300.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 4.5,
+      "game": 4.50018510594964,
+      "player_health": 76.0,
+      "boss_health": 300.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 4.609999999869615,
+      "game": 4.599576603621244,
+      "player_health": 76.0,
+      "boss_health": 288.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 4.937999999849126,
+      "game": 4.93501390516758,
+      "player_health": 76.0,
+      "boss_health": 276.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 5.25,
+      "game": 5.2561624981462955,
+      "player_health": 76.0,
+      "boss_health": 264.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 5.672000000020489,
+      "game": 5.612794693559408,
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 2
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 5.703999999910593,
+      "game": 5.694255594164133,
+      "player_health": 76.0,
+      "boss_health": 252.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 6.781999999890104,
+      "game": 6.773741487413645,
+      "player_health": 66.0,
+      "boss_health": 252.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 7.328999999910593,
+      "game": 7.323192596435547,
+      "player_health": 66.0,
+      "boss_health": 240.0,
+      "boss_state": 4
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 7.578999999910593,
+      "game": 7.567135598510504,
+      "player_health": 66.0,
+      "boss_health": 240.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 7.672000000020489,
+      "game": 7.652562294155359,
+      "player_health": 66.0,
+      "boss_health": 228.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 7.984999999869615,
+      "game": 7.975244086235762,
+      "player_health": 66.0,
+      "boss_health": 216.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 8.328999999910593,
+      "game": 8.31760199368,
+      "player_health": 66.0,
+      "boss_health": 204.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 8.640999999828637,
+      "game": 8.628686595708132,
+      "player_health": 66.0,
+      "boss_health": 192.0,
+      "boss_state": 4
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 8.953999999910593,
+      "game": 8.881723504513502,
+      "player_health": 66.0,
+      "boss_health": 192.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 8.968999999808148,
+      "game": 8.957922201603651,
+      "player_health": 66.0,
+      "boss_health": 180.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 9.297000000020489,
+      "game": 9.290251702070236,
+      "player_health": 66.0,
+      "boss_health": 168.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 9.625,
+      "game": 9.61484070494771,
+      "player_health": 66.0,
+      "boss_health": 156.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 9.968999999808148,
+      "game": 9.952319499105215,
+      "player_health": 66.0,
+      "boss_health": 144.0,
+      "boss_state": 4
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 10.265999999828637,
+      "game": 10.19861390069127,
+      "player_health": 66.0,
+      "boss_health": 144.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 10.281999999890104,
+      "game": 10.275071803480387,
+      "player_health": 66.0,
+      "boss_health": 132.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 10.609999999869615,
+      "game": 10.601060006767511,
+      "player_health": 66.0,
+      "boss_health": 120.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 10.937999999849126,
+      "game": 10.930044706910849,
+      "player_health": 66.0,
+      "boss_health": 108.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 11.281999999890104,
+      "game": 11.264766212552786,
+      "player_health": 66.0,
+      "boss_health": 96.0,
+      "boss_state": 4
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 11.593999999808148,
+      "game": 11.509355410933495,
+      "player_health": 66.0,
+      "boss_health": 96.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 11.609999999869615,
+      "game": 11.590937912464142,
+      "player_health": 66.0,
+      "boss_health": 84.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 11.922000000020489,
+      "game": 11.916279304772615,
+      "player_health": 66.0,
+      "boss_health": 72.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 12.265999999828637,
+      "game": 12.248101707547903,
+      "player_health": 66.0,
+      "boss_health": 60.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 12.593999999808148,
+      "game": 12.57542259991169,
+      "player_health": 66.0,
+      "boss_health": 48.0,
+      "boss_state": 4
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 12.906999999890104,
+      "game": 12.823628101497889,
+      "player_health": 66.0,
+      "boss_health": 48.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 12.922000000020489,
+      "game": 12.907757300883532,
+      "player_health": 66.0,
+      "boss_health": 36.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 13.297000000020489,
+      "game": 13.27716750279069,
+      "player_health": 66.0,
+      "boss_health": 24.0,
+      "boss_state": 0
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 13.640999999828637,
+      "game": 13.628413513302803,
+      "player_health": 66.0,
+      "boss_health": 12.0,
+      "boss_state": 0
+    },
+    {
+      "name": "boss_defeat",
+      "wall": 13.953999999910593,
+      "game": 13.940034810453653,
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 13.953999999910593,
+      "game": 13.940034810453653,
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3
+    },
+    {
+      "name": "pause",
+      "wall": 16.781999999890104,
+      "game": 16.76991080120206,
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3
+    },
+    {
+      "name": "unpause",
+      "wall": 17.890999999828637,
+      "game": 16.779006600379944,
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3
+    },
+    {
+      "name": "restart",
+      "wall": 18.42200000002049,
+      "game": 17.305049397051334,
+      "player_health": 66.0,
+      "boss_health": 0.0,
+      "boss_state": 3
+    },
+    {
+      "name": "state_or_damage",
+      "wall": 18.54700000002049,
+      "game": 0.00897889956831932,
+      "player_health": 100.0,
+      "boss_health": 300.0,
+      "boss_state": 0
+    }
+  ],
+  "physical_device_verified": false,
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "resolution": [
+    1014,
+    550
+  ],
+  "minions_after_victory": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "restart_health": {
+    "player": 100.0,
+    "boss": 300.0
+  },
+  "duration_wall_seconds": 19.79700000002049
+}

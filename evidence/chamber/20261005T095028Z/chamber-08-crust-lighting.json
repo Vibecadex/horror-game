@@ -1,0 +1,440 @@
+{
+  "passed": true,
+  "settings": [
+    {
+      "name": "RearWallWash",
+      "location": [
+        1250,
+        -500,
+        620
+      ],
+      "target": [
+        1630,
+        180,
+        300
+      ],
+      "intensity": 4500,
+      "radius": 1750,
+      "width": 400,
+      "height": 200,
+      "color": [
+        0.45,
+        0.73,
+        0.72
+      ]
+    },
+    {
+      "name": "LeftWallWash",
+      "location": [
+        0,
+        -1100,
+        560
+      ],
+      "target": [
+        150,
+        -1650,
+        250
+      ],
+      "intensity": 16000,
+      "radius": 2350,
+      "width": 1850,
+      "height": 120,
+      "color": [
+        0.4,
+        0.63,
+        0.66
+      ]
+    },
+    {
+      "name": "RightWallWash",
+      "location": [
+        120,
+        1100,
+        520
+      ],
+      "target": [
+        250,
+        1650,
+        240
+      ],
+      "intensity": 15000,
+      "radius": 2350,
+      "width": 1700,
+      "height": 120,
+      "color": [
+        0.43,
+        0.68,
+        0.69
+      ]
+    },
+    {
+      "name": "FrontWallWash",
+      "location": [
+        -1170,
+        460,
+        600
+      ],
+      "target": [
+        -1660,
+        0,
+        260
+      ],
+      "intensity": 4500,
+      "radius": 2050,
+      "width": 480,
+      "height": 130,
+      "color": [
+        0.38,
+        0.65,
+        0.67
+      ]
+    },
+    {
+      "name": "RearServiceAccent",
+      "location": [
+        1380,
+        800,
+        590
+      ],
+      "target": [
+        1612,
+        1130,
+        420
+      ],
+      "intensity": 2200,
+      "radius": 650,
+      "width": 180,
+      "height": 120,
+      "color": [
+        0.4,
+        0.63,
+        0.65
+      ]
+    },
+    {
+      "name": "ReverseCabinetAccent",
+      "location": [
+        -650,
+        1300,
+        550
+      ],
+      "target": [
+        -680,
+        1570,
+        210
+      ],
+      "intensity": 1500,
+      "radius": 700,
+      "width": 300,
+      "height": 100,
+      "color": [
+        0.4,
+        0.63,
+        0.65
+      ],
+      "specular": 0.2
+    },
+    {
+      "name": "ReversePipeAccent",
+      "location": [
+        -1000,
+        -1200,
+        620
+      ],
+      "target": [
+        -1000,
+        -1545,
+        440
+      ],
+      "intensity": 1200,
+      "radius": 700,
+      "width": 320,
+      "height": 80,
+      "color": [
+        0.4,
+        0.63,
+        0.65
+      ],
+      "specular": 0.2
+    }
+  ],
+  "gameplay_and_key_light_changed": "Only key outer cone; gameplay unchanged",
+  "key_outer_cone_only_changed": 48,
+  "channel2_environment_components": [
+    "TE_Room_FarWall:StaticMeshComponent0",
+    "TE_Room_SideWall_-1:StaticMeshComponent0",
+    "TE_Room_SideLowerDamp_-1:StaticMeshComponent0",
+    "TE_Room_SideCornice_-1:StaticMeshComponent0",
+    "TE_Room_SideFoundation_-1:StaticMeshComponent0",
+    "TE_Room_SideGutter_-1:StaticMeshComponent0",
+    "TE_Room_SideWall_1:StaticMeshComponent0",
+    "TE_Room_SideLowerDamp_1:StaticMeshComponent0",
+    "TE_Room_SideCornice_1:StaticMeshComponent0",
+    "TE_Room_SideFoundation_1:StaticMeshComponent0",
+    "TE_Room_SideGutter_1:StaticMeshComponent0",
+    "TE_Room_FarLowerDamp:StaticMeshComponent0",
+    "TE_Room_FarCornice:StaticMeshComponent0",
+    "TE_Room_FarFoundation:StaticMeshComponent0",
+    "TE_Room_CutawaySill_0:StaticMeshComponent0",
+    "TE_Room_CutawayCap_0:StaticMeshComponent0",
+    "TE_Room_CutawaySill_1:StaticMeshComponent0",
+    "TE_Room_CutawayCap_1:StaticMeshComponent0",
+    "TE_Room_CutawaySill_2:StaticMeshComponent0",
+    "TE_Room_CutawayCap_2:StaticMeshComponent0",
+    "TE_Room_CutawaySill_3:StaticMeshComponent0",
+    "TE_Room_CutawayCap_3:StaticMeshComponent0",
+    "TE_Room_BulkheadDoor:StaticMeshComponent0",
+    "TE_Room_RearPilaster_-1360:StaticMeshComponent0",
+    "TE_Room_RearPilaster_-780:StaticMeshComponent0",
+    "TE_Room_RearPilaster_780:StaticMeshComponent0",
+    "TE_Room_RearPilaster_1380:StaticMeshComponent0",
+    "TE_Room_RearInset_0:StaticMeshComponent0",
+    "TE_Room_RearHeader_0:StaticMeshComponent0",
+    "TE_Room_RearInset_1:StaticMeshComponent0",
+    "TE_Room_RearHeader_1:StaticMeshComponent0",
+    "TE_Room_RearInset_2:StaticMeshComponent0",
+    "TE_Room_RearHeader_2:StaticMeshComponent0",
+    "TE_Room_RearInset_3:StaticMeshComponent0",
+    "TE_Room_RearHeader_3:StaticMeshComponent0",
+    "TE_Room_RearFan:StaticMeshComponent0",
+    "TE_Room_RearTank:StaticMeshComponent0",
+    "TE_Room_SidePilaster_-1_0:StaticMeshComponent0",
+    "TE_Room_SidePilaster_-1_1:StaticMeshComponent0",
+    "TE_Room_SidePilaster_-1_2:StaticMeshComponent0",
+    "TE_Room_SidePilaster_-1_3:StaticMeshComponent0",
+    "TE_Room_SidePilaster_1_0:StaticMeshComponent0",
+    "TE_Room_SidePilaster_1_1:StaticMeshComponent0",
+    "TE_Room_SidePilaster_1_2:StaticMeshComponent0",
+    "TE_Room_SidePilaster_1_3:StaticMeshComponent0",
+    "TE_Room_LeftPipeRun_0:StaticMeshComponent0",
+    "TE_Room_PipeStandoff_0:StaticMeshComponent0",
+    "TE_Room_LeftPipeRun_1:StaticMeshComponent0",
+    "TE_Room_PipeStandoff_1:StaticMeshComponent0",
+    "TE_Room_LeftPipeRun_2:StaticMeshComponent0",
+    "TE_Room_PipeStandoff_2:StaticMeshComponent0",
+    "TE_Room_LeftPipeRun_3:StaticMeshComponent0",
+    "TE_Room_PipeStandoff_3:StaticMeshComponent0",
+    "TE_Room_LeftPipeRun_4:StaticMeshComponent0",
+    "TE_Room_PipeStandoff_4:StaticMeshComponent0",
+    "TE_Room_LeftFan:StaticMeshComponent0",
+    "TE_Room_RightCabinetA:StaticMeshComponent0",
+    "TE_Room_RightCabinetB:StaticMeshComponent0",
+    "TE_Room_RightTank:StaticMeshComponent0",
+    "TE_Room_RightPipeRun:StaticMeshComponent0",
+    "TE_Room_RightFan:StaticMeshComponent0",
+    "TE_Room_LeftCrate:StaticMeshComponent0",
+    "TE_Room_RightSpool:StaticMeshComponent0",
+    "TE_Room_RearCrate:StaticMeshComponent0",
+    "TE_Room_DrainGrate_-1_0:StaticMeshComponent0",
+    "TE_Room_DrainGrate_-1_1:StaticMeshComponent0",
+    "TE_Room_DrainGrate_-1_2:StaticMeshComponent0",
+    "TE_Room_DrainGrate_-1_3:StaticMeshComponent0",
+    "TE_Room_DrainGrate_-1_4:StaticMeshComponent0",
+    "TE_Room_DrainGrate_1_0:StaticMeshComponent0",
+    "TE_Room_DrainGrate_1_1:StaticMeshComponent0",
+    "TE_Room_DrainGrate_1_2:StaticMeshComponent0",
+    "TE_Room_DrainGrate_1_3:StaticMeshComponent0",
+    "TE_Room_DrainGrate_1_4:StaticMeshComponent0",
+    "TE_Room_BeaconHousing_0:StaticMeshComponent0",
+    "TE_Room_BeaconLens_0:StaticMeshComponent0",
+    "TE_Room_BeaconHousing_1:StaticMeshComponent0",
+    "TE_Room_BeaconLens_1:StaticMeshComponent0",
+    "TE_Room_RearFixture_0:StaticMeshComponent0",
+    "TE_Room_RearFixture_1:StaticMeshComponent0",
+    "TE_Room_FootDebris_0:StaticMeshComponent0",
+    "TE_Room_FootDebris_1:StaticMeshComponent0",
+    "TE_Room_FootDebris_2:StaticMeshComponent0",
+    "TE_Room_FootDebris_3:StaticMeshComponent0",
+    "TE_Room_FootDebris_4:StaticMeshComponent0",
+    "TE_Room_FootDebris_5:StaticMeshComponent0",
+    "TE_Room_FootDebris_6:StaticMeshComponent0",
+    "TE_Room_FootDebris_7:StaticMeshComponent0",
+    "TE_Room_FootDebris_8:StaticMeshComponent0",
+    "TE_Room_FootDebris_9:StaticMeshComponent0",
+    "TE_Room_FootDebris_10:StaticMeshComponent0",
+    "TE_Room_FootDebris_11:StaticMeshComponent0",
+    "TE_Room_FootDebris_12:StaticMeshComponent0",
+    "TE_Room_FootDebris_13:StaticMeshComponent0",
+    "TE_Room_FootDebris_14:StaticMeshComponent0",
+    "TE_Room_FootDebris_15:StaticMeshComponent0",
+    "TE_Room_FootDebris_16:StaticMeshComponent0",
+    "TE_Room_FootDebris_17:StaticMeshComponent0",
+    "TE_Room_FootDebris_18:StaticMeshComponent0",
+    "TE_Room_FootDebris_19:StaticMeshComponent0",
+    "TE_Room_FootDebris_20:StaticMeshComponent0",
+    "TE_Room_FootDebris_21:StaticMeshComponent0",
+    "TE_Room_FootDebris_22:StaticMeshComponent0",
+    "TE_Room_FootDebris_23:StaticMeshComponent0",
+    "TE_Room_FootDebris_24:StaticMeshComponent0",
+    "TE_Room_FootDebris_25:StaticMeshComponent0",
+    "TE_Room_FootDebris_26:StaticMeshComponent0",
+    "TE_Room_FootDebris_27:StaticMeshComponent0",
+    "TE_Parity_RoomExt_FarBay_0:StaticMeshComponent0",
+    "TE_Parity_RoomExt_FarBay_1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_FarBay_2:StaticMeshComponent0",
+    "TE_Parity_RoomExt_FarBay_3:StaticMeshComponent0",
+    "TE_Parity_RoomExt_FarBay_4:StaticMeshComponent0",
+    "TE_Parity_RoomExt_FarBay_5:StaticMeshComponent0",
+    "TE_Parity_RoomExt_FarBay_6:StaticMeshComponent0",
+    "TE_Parity_RoomExt_FarBay_7:StaticMeshComponent0",
+    "TE_Parity_RoomExt_FarEnd_-1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_-1_0:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_-1_1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_-1_2:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_-1_3:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_-1_4:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_-1_5:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_-1_6:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_-1_7:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideEnd_-1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_FarEnd_1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_1_0:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_1_1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_1_2:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_1_3:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_1_4:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_1_5:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_1_6:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideBay_1_7:StaticMeshComponent0",
+    "TE_Parity_RoomExt_SideEnd_1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Cutaway_0:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Cutaway_1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Cutaway_2:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Cutaway_3:StaticMeshComponent0",
+    "TE_Parity_RoomExt_CutawayReturn_-1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_CutawayReturn_1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_RearInset_0:StaticMeshComponent0",
+    "TE_Parity_RoomExt_RearInset_1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_RearInset_2:StaticMeshComponent0",
+    "TE_Parity_RoomExt_RearInset_3:StaticMeshComponent0",
+    "TE_Parity_RoomExt_PipeSaddle_0:StaticMeshComponent0",
+    "TE_Parity_RoomExt_PipeSaddle_1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_PipeSaddle_2:StaticMeshComponent0",
+    "TE_Parity_RoomExt_PipeSaddle_3:StaticMeshComponent0",
+    "TE_Parity_RoomExt_PipeSaddle_4:StaticMeshComponent0",
+    "TE_Parity_RoomExt_CableTray_0:StaticMeshComponent0",
+    "TE_Parity_RoomExt_CableTray_1:StaticMeshComponent0",
+    "TE_Parity_RoomExt_CableTray_2:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_148:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_150:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_152:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_154:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_156:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_157:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_158:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_159:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_160:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_161:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_162:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_163:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_165:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_166:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_167:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_168:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_169:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_170:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_185:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_186:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_187:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_188:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_189:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_190:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_191:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_192:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_193:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_194:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_195:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_196:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_197:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_198:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_199:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_202:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_203:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_204:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_226:StaticMeshComponent0",
+    "TE_Parity_RoomExt_Dress_227:StaticMeshComponent0",
+    "TE_Chamber_RearBulkhead:StaticMeshComponent0",
+    "TE_Chamber_RearBulkheadWheel:StaticMeshComponent0",
+    "TE_Chamber_ReverseDrumL:StaticMeshComponent0",
+    "TE_Chamber_ReverseDrumR:StaticMeshComponent0",
+    "TE_Chamber_RightServiceDrums:StaticMeshComponent0",
+    "TE_Chamber_LeftServiceDrums:StaticMeshComponent0",
+    "TE_Chamber_RearDrum:StaticMeshComponent0",
+    "TE_Chamber_BulkheadBeaconLHousing:StaticMeshComponent0",
+    "TE_Chamber_BulkheadBeaconLLens:StaticMeshComponent0",
+    "TE_Chamber_BulkheadBeaconRHousing:StaticMeshComponent0",
+    "TE_Chamber_BulkheadBeaconRLens:StaticMeshComponent0",
+    "TE_Chamber_FrontCutaway:FrontPanel_0",
+    "TE_Chamber_FrontCutaway:FrontPanel_1",
+    "TE_Chamber_FrontCutaway:FrontPanel_2",
+    "TE_Chamber_FrontCutaway:FrontPanel_3",
+    "TE_Chamber_FrontCutaway:FrontPanel_4",
+    "TE_Chamber_FrontCutaway:FrontPanel_5",
+    "TE_Chamber_FrontCutaway:FrontPanel_6",
+    "TE_Chamber_FrontCutaway:FrontPanel_7",
+    "TE_Chamber_FrontCutaway:FrontEnd_M1",
+    "TE_Chamber_FrontCutaway:FrontEnd_1",
+    "TE_Chamber_FrontCutaway:ReverseDoorL",
+    "TE_Chamber_FrontCutaway:ReverseDoorR",
+    "TE_Chamber_FrontCutaway:FrontPier_0",
+    "TE_Chamber_FrontCutaway:FrontPier_1",
+    "TE_Chamber_FrontCutaway:FrontPier_2",
+    "TE_Chamber_FrontCutaway:FrontPier_3",
+    "TE_Chamber_FrontCutaway:FrontPier_4",
+    "TE_Chamber_FrontCutaway:FrontHeader",
+    "TE_Chamber_FrontCutaway:FrontFooting"
+  ],
+  "rear_fog_scattering": 4,
+  "front_floor_return": {
+    "location": [
+      -850,
+      40,
+      1100
+    ],
+    "target": [
+      -950,
+      40,
+      -5
+    ],
+    "intensity": 55000,
+    "radius": 2550,
+    "inner": 30,
+    "outer": 56,
+    "source": 180,
+    "color": [
+      0.34,
+      0.62,
+      0.62
+    ]
+  },
+  "readback": [
+    {
+      "label": "TE_Chamber_RearWallWash",
+      "intensity": 4500.0
+    },
+    {
+      "label": "TE_Chamber_LeftWallWash",
+      "intensity": 16000.0
+    },
+    {
+      "label": "TE_Chamber_RightWallWash",
+      "intensity": 15000.0
+    },
+    {
+      "label": "TE_Chamber_FrontWallWash",
+      "intensity": 4500.0
+    },
+    {
+      "label": "TE_Chamber_RearServiceAccent",
+      "intensity": 2200.0
+    },
+    {
+      "label": "TE_Chamber_ReverseCabinetAccent",
+      "intensity": 1500.0
+    },
+    {
+      "label": "TE_Chamber_ReversePipeAccent",
+      "intensity": 1200.0
+    }
+  ]
+}

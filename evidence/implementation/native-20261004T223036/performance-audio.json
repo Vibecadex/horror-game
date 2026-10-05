@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "map": "/Game/SetupValidation/Encounter_native_20261004T223036/Standalone",
+  "source_map": "/Game/Maps/TeddyEncounter",
+  "resolution": [
+    1280,
+    720
+  ],
+  "process": "UnrealEditor.exe -game -RenderOffscreen",
+  "capture_window": "Saved Blueprint starts CSV after 3 game seconds and stops after another 5; capture finishes before screenshot.",
+  "conditions": "Development runtime, warm local shader cache, no input injected; ordinary boss pursuit/attack. Not a packaged-build or long-session benchmark.",
+  "metrics": {
+    "FrameTime": {
+      "samples": 1162,
+      "median_ms": 4.0428,
+      "p95_ms": 6.564535,
+      "max_ms": 9.7093
+    },
+    "GameThreadTime": {
+      "samples": 1162,
+      "median_ms": 1.79345,
+      "p95_ms": 2.938,
+      "max_ms": 5.9812
+    },
+    "RenderThreadTime": {
+      "samples": 1162,
+      "median_ms": 4.03435,
+      "p95_ms": 6.570970000000001,
+      "max_ms": 16.4252
+    },
+    "GPUTime": {
+      "samples": 1162,
+      "median_ms": 3.20685,
+      "p95_ms": 3.38355,
+      "max_ms": 3.8305
+    }
+  },
+  "csv": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\native-20261004T223036\\runtime-profile.csv",
+  "csv_sha256": "fdc7fde298dde7ae81e3fe242e479d64a696f49ba474c1aea219b17ca39fa125",
+  "metadata": {
+    "[HasHeaderRowAtEnd]": "1",
+    "[EventTimestamps]": "1",
+    "[platform]": "Windows",
+    "[config]": "Development",
+    "[buildversion]": "++UE5+Release-5.8-CL-58210709",
+    "[engineversion]": "5.8.3-58210709+++UE5+Release-5.8",
+    "[enginereleaseversion]": "5.8.3",
+    "[os]": "Windows 11 (25H2) [10.0.26200.9457] ",
+    "[cpu]": "AuthenticAMD|AMD Ryzen 9 9900X 12-Core Processor",
+    "[pgoenabled]": "0",
+    "[pgoprofilingenabled]": "0",
+    "[ltoenabled]": "0",
+    "[asan]": "0",
+    "[mergedmodules]": "0",
+    "[compacttset]": "0",
+    "[loginid]": "c2cbf6bb4bea69119addbbb150776c0d",
+    "[llm]": "0",
+    "[zenstreaming]": "0",
+    "[systemresolution.resx]": "1280",
+    "[systemresolution.resy]": "720",
+    "[extradevelopmentmemorymb]": "0",
+    "[verbatimrhiname]": "D3D12",
+    "[rhiname]": "D3D12",
+    "[rhifeaturelevel]": "SM6",
+    "[shaderplatform]": "PCD3D_SM6",
+    "[gpu]": "NVIDIA GeForce RTX 5080",
+    "[gpudriver]": "610.88",
+    "[deviceprofile]": "WindowsEditor",
+    "[largeworldcoordinates]": "1",
+    "[raytracing]": "0",
+    "[streamingpoolsizemb]": "1000",
+    "[csvid]": "9D0033D34C039A67019CCF9D11A5B8EF",
+    "[targetframerate]": "60",
+    "[starttimestamp]": "1791153052",
+    "[namedevents]": "0",
+    "[hasgtstalls]": "0",
+    "[vsyncenabled]": "0",
+    "[csvbench_timingstat_ns]": "47.457500",
+    "[csvbench_customstat_ns]": "24.502500",
+    "[csvbench_duration_ms]": "2.878700",
+    "[endtimestamp]": "1791153057",
+    "[captureduration]": "4.998751",
+    "[csvmaxfilebytesreached]": "0",
+    "[commandline]": " C:\\Projects\\to-deploy\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject /Game/SetupValidation/Encounter_native_20261004T223036/Standalone -game -RenderOffscreen -windowed -ResX=1280 -ResY=720 -unattended -nosplash -nop4 -csvGpuStats -ini:Engine:[Audio]:UnfocusedVolumeMultiplier=1.0 -abslog=C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\native-20261004T223036\\engine.log -DDC=InstalledNoZenLocalFallback -LocalDataCachePath=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\derived-data -UserDir=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\unreal-user"
+  },
+  "audio": {
+    "sample_count_all_channels": 1925120,
+    "peak_dbfs": -15.314272387813137,
+    "rms_dbfs": -43.22305473028177,
+    "nonzero": true,
+    "scope": "Native game master output; proposed original ambience and boss impacts. Source reference audio not auditioned."
+  }
+}

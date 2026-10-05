@@ -1,0 +1,1454 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "actors": [
+    {
+      "label": "TE_Room_FarWall",
+      "tag": "RoomShell",
+      "location": [
+        1720,
+        0,
+        340
+      ]
+    },
+    {
+      "label": "TE_Room_SideWall_-1",
+      "tag": "RoomShell",
+      "location": [
+        90,
+        -1740,
+        310
+      ]
+    },
+    {
+      "label": "TE_Room_SideLowerDamp_-1",
+      "tag": "RoomDecor",
+      "location": [
+        90,
+        -1674,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_SideCornice_-1",
+      "tag": "RoomDecor",
+      "location": [
+        90,
+        -1645,
+        620
+      ]
+    },
+    {
+      "label": "TE_Room_SideFoundation_-1",
+      "tag": "RoomDecor",
+      "location": [
+        90,
+        -1575,
+        28
+      ]
+    },
+    {
+      "label": "TE_Room_SideGutter_-1",
+      "tag": "RoomDecor",
+      "location": [
+        90,
+        -1550,
+        63
+      ]
+    },
+    {
+      "label": "TE_Room_SideWall_1",
+      "tag": "RoomShell",
+      "location": [
+        90,
+        1740,
+        310
+      ]
+    },
+    {
+      "label": "TE_Room_SideLowerDamp_1",
+      "tag": "RoomDecor",
+      "location": [
+        90,
+        1674,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_SideCornice_1",
+      "tag": "RoomDecor",
+      "location": [
+        90,
+        1645,
+        620
+      ]
+    },
+    {
+      "label": "TE_Room_SideFoundation_1",
+      "tag": "RoomDecor",
+      "location": [
+        90,
+        1575,
+        28
+      ]
+    },
+    {
+      "label": "TE_Room_SideGutter_1",
+      "tag": "RoomDecor",
+      "location": [
+        90,
+        1550,
+        63
+      ]
+    },
+    {
+      "label": "TE_Room_FarLowerDamp",
+      "tag": "RoomDecor",
+      "location": [
+        1656,
+        0,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_FarCornice",
+      "tag": "RoomDecor",
+      "location": [
+        1630,
+        0,
+        678
+      ]
+    },
+    {
+      "label": "TE_Room_FarFoundation",
+      "tag": "RoomDecor",
+      "location": [
+        1570,
+        0,
+        28
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_0",
+      "tag": "RoomShell",
+      "location": [
+        -1530,
+        -1270,
+        25
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_0",
+      "tag": "RoomDecor",
+      "location": [
+        -1530,
+        -1270,
+        57
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_1",
+      "tag": "RoomShell",
+      "location": [
+        -1530,
+        -480,
+        25
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_1",
+      "tag": "RoomDecor",
+      "location": [
+        -1530,
+        -480,
+        57
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_2",
+      "tag": "RoomShell",
+      "location": [
+        -1530,
+        400,
+        25
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_2",
+      "tag": "RoomDecor",
+      "location": [
+        -1530,
+        400,
+        57
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_3",
+      "tag": "RoomShell",
+      "location": [
+        -1530,
+        1220,
+        25
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_3",
+      "tag": "RoomDecor",
+      "location": [
+        -1530,
+        1220,
+        57
+      ]
+    },
+    {
+      "label": "TE_Room_BulkheadDoor",
+      "tag": "RoomDecor",
+      "location": [
+        1630,
+        180,
+        62
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_-1360",
+      "tag": "RoomDecor",
+      "location": [
+        1635,
+        -1360,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_-780",
+      "tag": "RoomDecor",
+      "location": [
+        1635,
+        -780,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_780",
+      "tag": "RoomDecor",
+      "location": [
+        1635,
+        780,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_1380",
+      "tag": "RoomDecor",
+      "location": [
+        1635,
+        1380,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_0",
+      "tag": "RoomDecor",
+      "location": [
+        1651,
+        -1120,
+        340
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_0",
+      "tag": "RoomDecor",
+      "location": [
+        1620,
+        -1120,
+        529
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_1",
+      "tag": "RoomDecor",
+      "location": [
+        1651,
+        -540,
+        340
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_1",
+      "tag": "RoomDecor",
+      "location": [
+        1620,
+        -540,
+        529
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_2",
+      "tag": "RoomDecor",
+      "location": [
+        1651,
+        870,
+        340
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_2",
+      "tag": "RoomDecor",
+      "location": [
+        1620,
+        870,
+        529
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_3",
+      "tag": "RoomDecor",
+      "location": [
+        1651,
+        1360,
+        340
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_3",
+      "tag": "RoomDecor",
+      "location": [
+        1620,
+        1360,
+        529
+      ]
+    },
+    {
+      "label": "TE_Room_RearFan",
+      "tag": "RoomDecor",
+      "location": [
+        1612,
+        -1100,
+        365
+      ]
+    },
+    {
+      "label": "TE_Room_RearTank",
+      "tag": "RoomDecor",
+      "location": [
+        1570,
+        1080,
+        62
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_0",
+      "tag": "RoomDecor",
+      "location": [
+        -1180,
+        -1650,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_1",
+      "tag": "RoomDecor",
+      "location": [
+        -460,
+        -1650,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_2",
+      "tag": "RoomDecor",
+      "location": [
+        420,
+        -1650,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_3",
+      "tag": "RoomDecor",
+      "location": [
+        1350,
+        -1650,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_0",
+      "tag": "RoomDecor",
+      "location": [
+        -1150,
+        1650,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_1",
+      "tag": "RoomDecor",
+      "location": [
+        -120,
+        1650,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_2",
+      "tag": "RoomDecor",
+      "location": [
+        680,
+        1650,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_3",
+      "tag": "RoomDecor",
+      "location": [
+        1360,
+        1650,
+        -5
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_0",
+      "tag": "RoomDecor",
+      "location": [
+        -1000,
+        -1550,
+        460
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_0",
+      "tag": "RoomDecor",
+      "location": [
+        -1000,
+        -1620,
+        461
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_1",
+      "tag": "RoomDecor",
+      "location": [
+        -500,
+        -1550,
+        460
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_1",
+      "tag": "RoomDecor",
+      "location": [
+        -500,
+        -1620,
+        461
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_2",
+      "tag": "RoomDecor",
+      "location": [
+        0,
+        -1550,
+        460
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_2",
+      "tag": "RoomDecor",
+      "location": [
+        0,
+        -1620,
+        461
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_3",
+      "tag": "RoomDecor",
+      "location": [
+        500,
+        -1550,
+        460
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_3",
+      "tag": "RoomDecor",
+      "location": [
+        500,
+        -1620,
+        461
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_4",
+      "tag": "RoomDecor",
+      "location": [
+        1000,
+        -1550,
+        460
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_4",
+      "tag": "RoomDecor",
+      "location": [
+        1000,
+        -1620,
+        461
+      ]
+    },
+    {
+      "label": "TE_Room_LeftFan",
+      "tag": "RoomDecor",
+      "location": [
+        -20,
+        -1630,
+        275
+      ]
+    },
+    {
+      "label": "TE_Room_RightCabinetA",
+      "tag": "RoomDecor",
+      "location": [
+        -770,
+        1580,
+        62
+      ]
+    },
+    {
+      "label": "TE_Room_RightCabinetB",
+      "tag": "RoomDecor",
+      "location": [
+        -545,
+        1580,
+        62
+      ]
+    },
+    {
+      "label": "TE_Room_RightTank",
+      "tag": "RoomDecor",
+      "location": [
+        970,
+        1555,
+        62
+      ]
+    },
+    {
+      "label": "TE_Room_RightPipeRun",
+      "tag": "RoomDecor",
+      "location": [
+        890,
+        1550,
+        470
+      ]
+    },
+    {
+      "label": "TE_Room_RightFan",
+      "tag": "RoomDecor",
+      "location": [
+        225,
+        1630,
+        340
+      ]
+    },
+    {
+      "label": "TE_Room_LeftCrate",
+      "tag": "RoomDecor",
+      "location": [
+        -825,
+        -1565,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_RightSpool",
+      "tag": "RoomDecor",
+      "location": [
+        -50,
+        1580,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_RearCrate",
+      "tag": "RoomDecor",
+      "location": [
+        1530,
+        -585,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_0",
+      "tag": "RoomDecor",
+      "location": [
+        -1070,
+        -1548,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_1",
+      "tag": "RoomDecor",
+      "location": [
+        -550,
+        -1548,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_2",
+      "tag": "RoomDecor",
+      "location": [
+        -10,
+        -1548,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_3",
+      "tag": "RoomDecor",
+      "location": [
+        550,
+        -1548,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_4",
+      "tag": "RoomDecor",
+      "location": [
+        1090,
+        -1548,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_0",
+      "tag": "RoomDecor",
+      "location": [
+        -1070,
+        1548,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_1",
+      "tag": "RoomDecor",
+      "location": [
+        -550,
+        1548,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_2",
+      "tag": "RoomDecor",
+      "location": [
+        -10,
+        1548,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_3",
+      "tag": "RoomDecor",
+      "location": [
+        550,
+        1548,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_4",
+      "tag": "RoomDecor",
+      "location": [
+        1090,
+        1548,
+        65
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconHousing_0",
+      "tag": "RoomDecor",
+      "location": [
+        740,
+        -1530,
+        230
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconLens_0",
+      "tag": "RoomDecor",
+      "location": [
+        716,
+        -1530,
+        232
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconLight_0",
+      "tag": "RoomLight",
+      "location": [
+        682,
+        -1530,
+        235
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconHousing_1",
+      "tag": "RoomDecor",
+      "location": [
+        -920,
+        1530,
+        230
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconLens_1",
+      "tag": "RoomDecor",
+      "location": [
+        -944,
+        1530,
+        232
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconLight_1",
+      "tag": "RoomLight",
+      "location": [
+        -978,
+        1530,
+        235
+      ]
+    },
+    {
+      "label": "TE_Room_RearFixture_0",
+      "tag": "RoomDecor",
+      "location": [
+        1630,
+        -620,
+        545
+      ]
+    },
+    {
+      "label": "TE_Room_RearGrazing_0",
+      "tag": "RoomLight",
+      "location": [
+        1430,
+        -620,
+        510
+      ]
+    },
+    {
+      "label": "TE_Room_RearFixture_1",
+      "tag": "RoomDecor",
+      "location": [
+        1630,
+        720,
+        545
+      ]
+    },
+    {
+      "label": "TE_Room_RearGrazing_1",
+      "tag": "RoomLight",
+      "location": [
+        1430,
+        720,
+        510
+      ]
+    },
+    {
+      "label": "TE_Room_LeftServiceLight",
+      "tag": "RoomLight",
+      "location": [
+        -280,
+        -1440,
+        470
+      ]
+    },
+    {
+      "label": "TE_Room_RightServiceLight",
+      "tag": "RoomLight",
+      "location": [
+        180,
+        1430,
+        450
+      ]
+    },
+    {
+      "label": "TE_Room_CornerBounce_0",
+      "tag": "RoomLight",
+      "location": [
+        -1050,
+        -1050,
+        850
+      ]
+    },
+    {
+      "label": "TE_Room_CornerBounce_1",
+      "tag": "RoomLight",
+      "location": [
+        -1050,
+        1050,
+        850
+      ]
+    },
+    {
+      "label": "TE_Room_CornerBounce_2",
+      "tag": "RoomLight",
+      "location": [
+        1080,
+        -1080,
+        850
+      ]
+    },
+    {
+      "label": "TE_Room_CornerBounce_3",
+      "tag": "RoomLight",
+      "location": [
+        1080,
+        1080,
+        850
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_0",
+      "tag": "RoomFloorDetail",
+      "location": [
+        1080,
+        -790,
+        -4.6
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_1",
+      "tag": "RoomFloorDetail",
+      "location": [
+        740,
+        1180,
+        -4.6
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_2",
+      "tag": "RoomFloorDetail",
+      "location": [
+        -750,
+        -1120,
+        -4.6
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_3",
+      "tag": "RoomFloorDetail",
+      "location": [
+        -990,
+        1010,
+        -4.6
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_4",
+      "tag": "RoomFloorDetail",
+      "location": [
+        1110,
+        350,
+        -4.6
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_5",
+      "tag": "RoomFloorDetail",
+      "location": [
+        -540,
+        1050,
+        -4.6
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_6",
+      "tag": "RoomFloorDetail",
+      "location": [
+        350,
+        -1100,
+        -4.6
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_7",
+      "tag": "RoomFloorDetail",
+      "location": [
+        -790,
+        160,
+        -4.6
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_0",
+      "tag": "RoomDecor",
+      "location": [
+        -1199.3048330744896,
+        1530.747968926525,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_1",
+      "tag": "RoomDecor",
+      "location": [
+        -167.1972912603551,
+        -1511.87265221336,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_2",
+      "tag": "RoomDecor",
+      "location": [
+        82.46539785179584,
+        1528.7372988362383,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_3",
+      "tag": "RoomDecor",
+      "location": [
+        -546.7693204470781,
+        -1558.6402517339666,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_4",
+      "tag": "RoomDecor",
+      "location": [
+        -1193.7025238713522,
+        1504.7648462498817,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_5",
+      "tag": "RoomDecor",
+      "location": [
+        67.11391385674256,
+        -1542.0501600782416,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_6",
+      "tag": "RoomDecor",
+      "location": [
+        809.5058149254933,
+        1531.3460107998403,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_7",
+      "tag": "RoomDecor",
+      "location": [
+        1325.3631045173825,
+        -1515.3422881079016,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_8",
+      "tag": "RoomDecor",
+      "location": [
+        -1048.649186554185,
+        1524.5751773920513,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_9",
+      "tag": "RoomDecor",
+      "location": [
+        1005.8326653586528,
+        -1566.0677393311744,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_10",
+      "tag": "RoomDecor",
+      "location": [
+        493.7281185963691,
+        1506.7434756762857,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_11",
+      "tag": "RoomDecor",
+      "location": [
+        874.4775403143981,
+        -1560.4637829645842,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_12",
+      "tag": "RoomDecor",
+      "location": [
+        981.5475271899809,
+        1520.3328133568616,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_13",
+      "tag": "RoomDecor",
+      "location": [
+        1142.6093235354833,
+        -1516.4187505495004,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_14",
+      "tag": "RoomDecor",
+      "location": [
+        866.6928260964428,
+        1535.7730500222492,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_15",
+      "tag": "RoomDecor",
+      "location": [
+        -373.2052705154158,
+        -1539.1660981966882,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_16",
+      "tag": "RoomDecor",
+      "location": [
+        289.9464637555143,
+        1559.6210467535245,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_17",
+      "tag": "RoomDecor",
+      "location": [
+        -611.3566698892787,
+        -1536.3919222458135,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_18",
+      "tag": "RoomDecor",
+      "location": [
+        -568.6619556153298,
+        1533.8741291388394,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_19",
+      "tag": "RoomDecor",
+      "location": [
+        -116.85741825012701,
+        -1547.745946855597,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_20",
+      "tag": "RoomDecor",
+      "location": [
+        673.7893378079455,
+        1568.8639868663374,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_21",
+      "tag": "RoomDecor",
+      "location": [
+        921.9834935094004,
+        -1557.9276556626248,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_22",
+      "tag": "RoomDecor",
+      "location": [
+        1372.9444281805963,
+        1547.6072526788196,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_23",
+      "tag": "RoomDecor",
+      "location": [
+        1155.589525321635,
+        -1538.9547127424426,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_24",
+      "tag": "RoomDecor",
+      "location": [
+        -466.4504525346541,
+        1569.2978812037359,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_25",
+      "tag": "RoomDecor",
+      "location": [
+        -45.3494275318119,
+        -1551.0068390563774,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_26",
+      "tag": "RoomDecor",
+      "location": [
+        1067.5631398341648,
+        1568.6580317351134,
+        68
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_27",
+      "tag": "RoomDecor",
+      "location": [
+        -620.1293310930869,
+        -1519.6637217146708,
+        68
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "name": "SM_RoomBulkhead",
+      "bounds": "<Struct 'BoxSphereBounds' (0x0000016BEA31CE80) {origin: {x: 0.000000, y: 16.625823, z: 240.000015}, box_extent: {x: 251.000000, y: 44.625844, z: 240.000015}, sphere_radius: 347.999580}>",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "path": "/Game/TeddyEncounter/Room/Meshes/SM_RoomBulkhead.SM_RoomBulkhead"
+    },
+    {
+      "name": "SM_RoomCableSpool",
+      "bounds": "<Struct 'BoxSphereBounds' (0x0000016BEA31CF00) {origin: {x: 0.000000, y: 0.000000, z: 50.650002}, box_extent: {x: 67.000000, y: 67.000000, z: 48.150001}, sphere_radius: 81.770088}>",
+      "material_slots": [
+        "Metal",
+        "Rust",
+        "Dark"
+      ],
+      "path": "/Game/TeddyEncounter/Room/Meshes/SM_RoomCableSpool.SM_RoomCableSpool"
+    },
+    {
+      "name": "SM_RoomCargoCrate",
+      "bounds": "<Struct 'BoxSphereBounds' (0x0000016BEA311F40) {origin: {x: 0.000000, y: 0.000000, z: 60.375000}, box_extent: {x: 71.000000, y: 66.365997, z: 60.375000}, sphere_radius: 106.579213}>",
+      "material_slots": [
+        "Metal",
+        "Rust",
+        "Dark"
+      ],
+      "path": "/Game/TeddyEncounter/Room/Meshes/SM_RoomCargoCrate.SM_RoomCargoCrate"
+    },
+    {
+      "name": "SM_RoomFloorGrate",
+      "bounds": "<Struct 'BoxSphereBounds' (0x0000016BEA3129C0) {origin: {x: 0.000000, y: 0.000000, z: -1.650000}, box_extent: {x: 200.449997, y: 46.050018, z: 6.350000}, sphere_radius: 205.130121}>",
+      "material_slots": [
+        "Metal",
+        "Rust",
+        "Dark"
+      ],
+      "path": "/Game/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.SM_RoomFloorGrate"
+    },
+    {
+      "name": "SM_RoomPilaster",
+      "bounds": "<Struct 'BoxSphereBounds' (0x0000016BEA31EF80) {origin: {x: 0.000000, y: 8.650000, z: 250.000000}, box_extent: {x: 49.000004, y: 43.650003, z: 250.000000}, sphere_radius: 254.973866}>",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust"
+      ],
+      "path": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster"
+    },
+    {
+      "name": "SM_RoomPipeRack",
+      "bounds": "<Struct 'BoxSphereBounds' (0x0000016BEA31E4C0) {origin: {x: 0.000000, y: 4.249989, z: -3.299997}, box_extent: {x: 250.000000, y: 38.750004, z: 47.300001}, sphere_radius: 252.748395}>",
+      "material_slots": [
+        "Metal",
+        "Rust",
+        "Dark"
+      ],
+      "path": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPipeRack.SM_RoomPipeRack"
+    },
+    {
+      "name": "SM_RoomServiceCabinet",
+      "bounds": "<Struct 'BoxSphereBounds' (0x0000016BEA31C180) {origin: {x: 4.500000, y: 7.322668, z: 132.750015}, box_extent: {x: 88.500000, y: 43.322676, z: 132.750015}, sphere_radius: 163.061777}>",
+      "material_slots": [
+        "Metal",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "path": "/Game/TeddyEncounter/Room/Meshes/SM_RoomServiceCabinet.SM_RoomServiceCabinet"
+    },
+    {
+      "name": "SM_RoomStripLight",
+      "bounds": "<Struct 'BoxSphereBounds' (0x0000016BEA31EB40) {origin: {x: 0.000000, y: 6.000000, z: 0.000000}, box_extent: {x: 103.000000, y: 18.000009, z: 17.400000}, sphere_radius: 104.888037}>",
+      "material_slots": [
+        "Metal",
+        "Dark",
+        "Emissive"
+      ],
+      "path": "/Game/TeddyEncounter/Room/Meshes/SM_RoomStripLight.SM_RoomStripLight"
+    },
+    {
+      "name": "SM_RoomUtilityTank",
+      "bounds": "<Struct 'BoxSphereBounds' (0x0000016BEA310C40) {origin: {x: -6.599998, y: 4.325001, z: 212.424988}, box_extent: {x: 78.099998, y: 75.825001, z: 212.424988}, sphere_radius: 232.406897}>",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark"
+      ],
+      "path": "/Game/TeddyEncounter/Room/Meshes/SM_RoomUtilityTank.SM_RoomUtilityTank"
+    },
+    {
+      "name": "SM_RoomVentFan",
+      "bounds": "<Struct 'BoxSphereBounds' (0x0000016BEA3185C0) {origin: {x: 0.000000, y: 3.499996, z: 0.000000}, box_extent: {x: 125.000000, y: 27.000008, z: 125.000000}, sphere_radius: 176.949231}>",
+      "material_slots": [
+        "Metal",
+        "Rust",
+        "Dark"
+      ],
+      "path": "/Game/TeddyEncounter/Room/Meshes/SM_RoomVentFan.SM_RoomVentFan"
+    }
+  ],
+  "legacy_dressing_hidden": [
+    "TE_WallNorth",
+    "TE_WallSouth",
+    "TE_WallWest",
+    "TE_WallEast",
+    "TE_Buttress",
+    "TE_BeaconHousing",
+    "TE_RedSlit",
+    "TE_RedPractical",
+    "TE_Buttress",
+    "TE_BeaconHousing",
+    "TE_RedSlit",
+    "TE_RedPractical",
+    "TE_Buttress",
+    "TE_BeaconHousing",
+    "TE_RedSlit",
+    "TE_RedPractical",
+    "TE_Buttress",
+    "TE_BeaconHousing",
+    "TE_RedSlit",
+    "TE_RedPractical",
+    "TE_Buttress",
+    "TE_BeaconHousing",
+    "TE_RedSlit",
+    "TE_RedPractical",
+    "TE_Buttress",
+    "TE_BeaconHousing",
+    "TE_RedSlit",
+    "TE_RedPractical",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_Rubble",
+    "TE_DrainRecess",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainRecess",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_DrainGrille",
+    "TE_EdgePillar",
+    "TE_EdgeLamp",
+    "TE_EdgeGlow",
+    "TE_EdgePillar",
+    "TE_EdgeLamp",
+    "TE_EdgeGlow",
+    "TE_EdgePillar",
+    "TE_EdgeLamp",
+    "TE_EdgeGlow",
+    "TE_EdgePillar",
+    "TE_EdgeLamp",
+    "TE_EdgeGlow"
+  ],
+  "design": "Industrial containment and pump chamber; near-wall/ceiling cutaway for elevated gameplay.",
+  "preserved_gameplay": [
+    "TE_PlayerStart",
+    "TE_CombatView",
+    "TE_MainTeddy",
+    "TE_Stitchling_3",
+    "TE_Stitchling_1",
+    "TE_Stitchling_2"
+  ],
+  "saved_room_actor_count": 126,
+  "saved_reopened": true,
+  "decoration_collision_profile_saved": true,
+  "gameplay_assets_changed": false,
+  "rendered_fidelity_verified": false
+}

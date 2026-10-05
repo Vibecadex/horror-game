@@ -1,0 +1,245 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "checks": {
+    "all_saved_keys_valid_after_reopen": true,
+    "required_bindings_present_once": true,
+    "movement_key_routes_to_saved_action": true,
+    "space_triggers_dash": true,
+    "escape_pauses": true,
+    "pause_freezes_time_and_movement": true,
+    "pause_suppresses_fire": true,
+    "escape_resumes": true,
+    "mouse_button_routes_to_fire": true,
+    "f5_restarts_with_fresh_possession": true,
+    "escape_still_works_after_restart": true,
+    "f5_restarts_while_paused": true
+  },
+  "events": [
+    {
+      "command": "Input.+key S",
+      "game_time": 1.0078863985836506,
+      "wall_time": 1.4690000000409782
+    },
+    {
+      "command": "Input.-key S",
+      "game_time": 1.316246297210455,
+      "wall_time": 1.7809999999590218
+    },
+    {
+      "command": "Input.+key S",
+      "game_time": 1.316246297210455,
+      "wall_time": 1.7809999999590218
+    },
+    {
+      "command": "Input.+key SpaceBar",
+      "game_time": 1.3829178996384144,
+      "wall_time": 1.8440000000409782
+    },
+    {
+      "command": "Input.-key SpaceBar",
+      "game_time": 1.6512497998774052,
+      "wall_time": 2.1090000001713634
+    },
+    {
+      "command": "Input.-key S",
+      "game_time": 1.6512497998774052,
+      "wall_time": 2.1090000001713634
+    },
+    {
+      "command": "Input.+key Escape",
+      "game_time": 1.8512625992298126,
+      "wall_time": 2.3120000001508743
+    },
+    {
+      "command": "Input.-key Escape",
+      "game_time": 1.8679296001791954,
+      "wall_time": 2.405999999959022
+    },
+    {
+      "command": "Input.+key W",
+      "game_time": 1.8679296001791954,
+      "wall_time": 2.530999999959022
+    },
+    {
+      "command": "Input.+key LeftMouseButton",
+      "game_time": 1.8679296001791954,
+      "wall_time": 2.530999999959022
+    },
+    {
+      "command": "Input.-key W",
+      "game_time": 1.8679296001791954,
+      "wall_time": 2.8910000000614673
+    },
+    {
+      "command": "Input.-key LeftMouseButton",
+      "game_time": 1.8679296001791954,
+      "wall_time": 2.8910000000614673
+    },
+    {
+      "command": "Input.+key Escape",
+      "game_time": 1.8679296001791954,
+      "wall_time": 2.8910000000614673
+    },
+    {
+      "command": "Input.-key Escape",
+      "game_time": 1.9429309032857418,
+      "wall_time": 2.9840000001713634
+    },
+    {
+      "command": "Input.+key LeftMouseButton",
+      "game_time": 2.3179384022951126,
+      "wall_time": 3.3590000001713634
+    },
+    {
+      "command": "Input.-key LeftMouseButton",
+      "game_time": 2.8187716007232666,
+      "wall_time": 3.8590000001713634
+    },
+    {
+      "command": "Input.+key F5",
+      "game_time": 2.8187716007232666,
+      "wall_time": 3.8590000001713634
+    },
+    {
+      "command": "Input.-key F5",
+      "game_time": 0.008333399891853333,
+      "wall_time": 3.952999999979511
+    },
+    {
+      "command": "Input.+key S",
+      "game_time": 0.7985746040940285,
+      "wall_time": 4.766000000061467
+    },
+    {
+      "command": "Input.-key S",
+      "game_time": 0.998577605932951,
+      "wall_time": 4.969000000040978
+    },
+    {
+      "command": "Input.+key Escape",
+      "game_time": 0.998577605932951,
+      "wall_time": 4.969000000040978
+    },
+    {
+      "command": "Input.-key Escape",
+      "game_time": 1.0152445062994957,
+      "wall_time": 5.062000000150874
+    },
+    {
+      "command": "Input.+key F5",
+      "game_time": 1.0152445062994957,
+      "wall_time": 5.187000000150874
+    },
+    {
+      "command": "Input.-key F5",
+      "game_time": 0.008333500474691391,
+      "wall_time": 5.280999999959022
+    }
+  ],
+  "method": "Input.+key / Input.-key console commands -> PlayerController::InputKey -> saved mapping -> Enhanced Input action -> saved gameplay Blueprint; no action injection",
+  "physical_device_verified": false,
+  "asset_writes": false,
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "viewport": [
+    1014,
+    550
+  ],
+  "saved_mappings": [
+    {
+      "action": "IA_Action_Move",
+      "key": "Gamepad_Left2D",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "W",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "S",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "A",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "D",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_StickAim",
+      "key": "Gamepad_Right2D",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "F",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "LeftMouseButton",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "Gamepad_RightTrigger",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "G",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "Gamepad_LeftTrigger",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "LeftShift",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "Gamepad_LeftShoulder",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "RightMouseButton",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_MouseAim",
+      "key": "Mouse2D",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "SpaceBar",
+      "valid": true
+    },
+    {
+      "action": "IA_Pause",
+      "key": "Escape",
+      "valid": true
+    },
+    {
+      "action": "IA_Restart",
+      "key": "F5",
+      "valid": true
+    }
+  ],
+  "movement_distance": 46.25817099410034,
+  "dash_peak_speed": 2501.0802510979015,
+  "dash_distance": 351.69877324912875,
+  "owned_projectiles_created": 2,
+  "wall_seconds": 5.280999999959022
+}

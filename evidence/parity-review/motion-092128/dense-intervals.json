@@ -1,0 +1,261 @@
+[
+  {
+    "interval": "attack",
+    "command": [
+      "C:/Users/4elut/scoop/shims/ffmpeg.exe",
+      "-v",
+      "error",
+      "-xerror",
+      "-ss",
+      "7.8",
+      "-i",
+      "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity\\20261005T070301Z\\native-motion-20261005T092128\\native-motion.mp4",
+      "-t",
+      "1.8",
+      "-vf",
+      "fps=10",
+      "-an",
+      "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity-review\\motion-092128\\attack-10fps\\frame-%03d.png"
+    ],
+    "decoded_samples": 18,
+    "records": [
+      {
+        "approximate_seconds": 7.8,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-001.png",
+        "sha256": "1f2d31a466a80047ea10afb1daf6f7d84ee791a0b21cacafc7de7e08d6d8a1c7"
+      },
+      {
+        "approximate_seconds": 7.9,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-002.png",
+        "sha256": "1e4739c4d83cf631226e8f9776300a607fe39668673cc5891df9a4072c8d1f46"
+      },
+      {
+        "approximate_seconds": 8.0,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-003.png",
+        "sha256": "8574ff3c954d26ce12f64e79af59ff3898c4eef054cfc04c183f02982eb8c5a8"
+      },
+      {
+        "approximate_seconds": 8.1,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-004.png",
+        "sha256": "3b92e1220eee92e96e59c37bc5436e9b766c5d0ccb69175da1e518b77d1337d7"
+      },
+      {
+        "approximate_seconds": 8.2,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-005.png",
+        "sha256": "d70226604b4ca85617c0e27a6620c65871abb6be21d5170fc677a295b972b31f"
+      },
+      {
+        "approximate_seconds": 8.3,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-006.png",
+        "sha256": "a06238b044e92d7d8053c6cc647490ab26e16f05aa35e4a20f774f147c470096"
+      },
+      {
+        "approximate_seconds": 8.4,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-007.png",
+        "sha256": "0f43604a1c6822eff245fab4d02e7a1c800109a31a414e8ebf9e19607a24e41d"
+      },
+      {
+        "approximate_seconds": 8.5,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-008.png",
+        "sha256": "b4d104bdcfb17a9a4b2fe53505a88e914fc18701908e487dd32794e25d50f17d"
+      },
+      {
+        "approximate_seconds": 8.6,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-009.png",
+        "sha256": "abc84cbdcfa52b038466603b91c7e22cacdea0d80481e6c4e3cb90b004a24c1d"
+      },
+      {
+        "approximate_seconds": 8.7,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-010.png",
+        "sha256": "fc0236fb03ad5f3647eb09d3d17d1de6b734930eb17aa57af174af24320a9ed6"
+      },
+      {
+        "approximate_seconds": 8.8,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-011.png",
+        "sha256": "7cc3e4fd6a2137a1d7f41649145c18703b15491852456d130b25e8ff6d2d42a2"
+      },
+      {
+        "approximate_seconds": 8.9,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-012.png",
+        "sha256": "d49931fc1ba1ab6c0f06cf392d288213695b0238619f90afa681a392a30e1392"
+      },
+      {
+        "approximate_seconds": 9.0,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-013.png",
+        "sha256": "389370fbb1284c1a5564566f17421774b82abb36b5cd2a0359f85967f8c37203"
+      },
+      {
+        "approximate_seconds": 9.1,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-014.png",
+        "sha256": "98e71802f1d20f9428a463dc32fddd6fd3684f5d4c7550a79865cbf116a1ea44"
+      },
+      {
+        "approximate_seconds": 9.2,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-015.png",
+        "sha256": "7a322179075fee64f3b8d42497217b5f90ee1158cbefcc893bc90425247c4e6d"
+      },
+      {
+        "approximate_seconds": 9.3,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-016.png",
+        "sha256": "15a370b4d9c17bc35ca3383e2d3ca23cb3e685a82f6a42068300732208602a22"
+      },
+      {
+        "approximate_seconds": 9.4,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-017.png",
+        "sha256": "afc288680511dd40cd3ce471b414667586c56fa1eb7029331d0c602552049f19"
+      },
+      {
+        "approximate_seconds": 9.5,
+        "path": "evidence\\parity-review\\motion-092128\\attack-10fps\\frame-018.png",
+        "sha256": "e314e1f981f357606df2e0be1f894f144ff7d1e8c6b20f9e9af3de0502bc9ecc"
+      }
+    ]
+  },
+  {
+    "interval": "death",
+    "command": [
+      "C:/Users/4elut/scoop/shims/ffmpeg.exe",
+      "-v",
+      "error",
+      "-xerror",
+      "-ss",
+      "14.1",
+      "-i",
+      "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity\\20261005T070301Z\\native-motion-20261005T092128\\native-motion.mp4",
+      "-t",
+      "2.466",
+      "-vf",
+      "fps=10",
+      "-an",
+      "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity-review\\motion-092128\\death-10fps\\frame-%03d.png"
+    ],
+    "decoded_samples": 25,
+    "records": [
+      {
+        "approximate_seconds": 14.1,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-001.png",
+        "sha256": "c38d48986bf5d9bf37510b007148daf9b764c0071233dcb1ff7d810f19fafe78"
+      },
+      {
+        "approximate_seconds": 14.2,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-002.png",
+        "sha256": "6a021ebea3636627d5c10a11adf0e2e93b112aef5ef45316bf60c1902b363c1d"
+      },
+      {
+        "approximate_seconds": 14.3,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-003.png",
+        "sha256": "0dec387e651954ff52742aeb65effd6a1a589c313ee566d61d6044e841ed6640"
+      },
+      {
+        "approximate_seconds": 14.4,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-004.png",
+        "sha256": "0d8b7e13cf59ef6685a864852e213477345343628d73bfd8080fa0f9a96d3de7"
+      },
+      {
+        "approximate_seconds": 14.5,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-005.png",
+        "sha256": "cde21e3d35c1cc671e937a2215b78cb78641c7706e7f840ee51241dda39e14fb"
+      },
+      {
+        "approximate_seconds": 14.6,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-006.png",
+        "sha256": "3d402f84a493e7952b1bf1c4bfddf31e433f9c3a088fb19903142a426445ce3a"
+      },
+      {
+        "approximate_seconds": 14.7,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-007.png",
+        "sha256": "fe980ee454a3e9ce0c6bab7315626a91466a5bad428cfb20b0e093b4f16fcc16"
+      },
+      {
+        "approximate_seconds": 14.8,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-008.png",
+        "sha256": "ff8d3f6f43bce5b98a201f0b8d06a546798de627182f909b2f8e6d95d62225a3"
+      },
+      {
+        "approximate_seconds": 14.9,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-009.png",
+        "sha256": "9ed461908fc8d33a7cf416e16dbcdbfd0ad61a9f8041f79d1bb8ac0118de2413"
+      },
+      {
+        "approximate_seconds": 15.0,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-010.png",
+        "sha256": "7fcc1779e72b051fe5e58f16e766a702856f832e2b90f6735f362a84f22e9a76"
+      },
+      {
+        "approximate_seconds": 15.1,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-011.png",
+        "sha256": "68f8173583fdca0e57eaa8cc5feaa4d94cd5c32ce9dbf6d957891b9fc3ae7309"
+      },
+      {
+        "approximate_seconds": 15.2,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-012.png",
+        "sha256": "e981f07b0495c148c05c7e38ea0e7e2f0991d7735238d58afb4b27da44fed81e"
+      },
+      {
+        "approximate_seconds": 15.3,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-013.png",
+        "sha256": "7c1257508f5cdd2889b520cd7729bd0b2cdc87d91b9dc190775e8e4871fddfa6"
+      },
+      {
+        "approximate_seconds": 15.4,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-014.png",
+        "sha256": "a8d66a38f50e7e190d6c8ea287cc30615ffa4bb6311361035b02570c81bc628b"
+      },
+      {
+        "approximate_seconds": 15.5,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-015.png",
+        "sha256": "d7a8bd26b524c32858deb35e9955688a294c4e468efd3bfe063f66b14dd87ba5"
+      },
+      {
+        "approximate_seconds": 15.6,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-016.png",
+        "sha256": "fdfa25920442d2ae5206763dbcb316b8a23dd4497687e6830307a3666c84c8e9"
+      },
+      {
+        "approximate_seconds": 15.7,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-017.png",
+        "sha256": "900499ca7f852205fc700ad6b42163ad8652b5ef97e96dda01db1e5fc4751e23"
+      },
+      {
+        "approximate_seconds": 15.8,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-018.png",
+        "sha256": "4bd363c695c2617ce99fc7cacf74740a767dbac42ef89d3886d76e5e56f7a1b1"
+      },
+      {
+        "approximate_seconds": 15.9,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-019.png",
+        "sha256": "87dca0c164b4d46de274625594ecdcc41c01b16e52e01a43f488eb37e05d67d4"
+      },
+      {
+        "approximate_seconds": 16.0,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-020.png",
+        "sha256": "ef228f8da5830fbb7929d71fc2e84826a5af672a24a7a7cc7f9e90b1e1c19fbb"
+      },
+      {
+        "approximate_seconds": 16.1,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-021.png",
+        "sha256": "ee5a5e9676fbe643c7cf4021186426699fbb1a7cbb90286b326bf8335579c736"
+      },
+      {
+        "approximate_seconds": 16.2,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-022.png",
+        "sha256": "c836f7630927177660638a4208be16defeafdfdc8fd7a8ac4dedec9f20a5de49"
+      },
+      {
+        "approximate_seconds": 16.3,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-023.png",
+        "sha256": "ac45b11d26c86b150f92faa82d808790fe722aa64b036a42987452555d18b5bc"
+      },
+      {
+        "approximate_seconds": 16.4,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-024.png",
+        "sha256": "2bda22305f1c7668180637c13587447a3eaf9f09c71be0a534acad9045799b90"
+      },
+      {
+        "approximate_seconds": 16.5,
+        "path": "evidence\\parity-review\\motion-092128\\death-10fps\\frame-025.png",
+        "sha256": "dd1879b642a00ab7f45a8f54c141b77b7c0de85a50bba037a5cd3e8ef719b49f"
+      }
+    ]
+  }
+]

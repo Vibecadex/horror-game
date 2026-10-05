@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "actors": 189,
+  "boss_bounds": "<Struct 'BoxSphereBounds' (0x00000210F91AC9C0) {origin: {x: 1.337975, y: 6.765877, z: 229.861045}, box_extent: {x: 171.010994, y: 180.398476, z: 229.397500}, sphere_radius: 338.247813}>"
+}

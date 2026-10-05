@@ -1,0 +1,28 @@
+{
+  "origin": "Original locally synthesized, deterministic seed 74",
+  "reference_audio_auditioned": false,
+  "sound_design": "Proposed original encounter audio",
+  "rate": 48000,
+  "assets": [
+    {
+      "name": "Rifle",
+      "seconds": 0.19,
+      "sha256": "34f05e602599074f1577e01d19d2cc42a470eb6226ae0c20fa5bb95924428259"
+    },
+    {
+      "name": "Slam",
+      "seconds": 0.8,
+      "sha256": "c3ac09bd026e8c0f7813a2129811037beb99f6bf47cf5e1a07a255036cc7fad4"
+    },
+    {
+      "name": "ClothHit",
+      "seconds": 0.22,
+      "sha256": "8e67c93461fd2b03988c489d06062262e1a268cbb329fd502ed7f9bbfcd7e7f1"
+    },
+    {
+      "name": "RoomTone",
+      "seconds": 16.0,
+      "sha256": "c8e5dfb418e50469c38fc4e5969813c8f7d01949e53fb527b430ee40e472d148"
+    }
+  ]
+}

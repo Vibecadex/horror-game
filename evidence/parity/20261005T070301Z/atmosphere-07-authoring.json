@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "settings": {
+    "revision": "atmosphere-07",
+    "fog": [
+      {
+        "name": "FarFog",
+        "location": [
+          1100,
+          150,
+          -100
+        ],
+        "scale": 1.5,
+        "density": 0.85,
+        "emission": [
+          24.5,
+          70,
+          67.9
+        ]
+      },
+      {
+        "name": "FarFog_Left",
+        "location": [
+          1200,
+          -650,
+          -200
+        ],
+        "scale": 1.6,
+        "density": 0.85,
+        "emission": [
+          21,
+          60,
+          58.2
+        ]
+      },
+      {
+        "name": "FarFog_Right",
+        "location": [
+          1200,
+          900,
+          -200
+        ],
+        "scale": 1.6,
+        "density": 0.85,
+        "emission": [
+          21,
+          60,
+          58.2
+        ]
+      }
+    ],
+    "perimeter_character_fill": {
+      "height": 600,
+      "radius": 950,
+      "intensity": 14000
+    }
+  },
+  "material_camera_key_and_player_light_changes": false,
+  "fog_readback": [
+    {
+      "label": "TE_Parity_FarFog",
+      "location": "<Struct 'Vector' (0x0000012DAF9C7940) {x: 1100.000000, y: 150.000000, z: -100.000000}>",
+      "scale": "<Struct 'Vector' (0x0000012DAF9C7940) {x: 1.500000, y: 1.500000, z: 1.500000}>",
+      "emission": "<Struct 'LinearColor' (0x0000012DB45DB3B4) {r: 24.500000, g: 70.000000, b: 67.900002, a: 1.000000}>"
+    },
+    {
+      "label": "TE_Parity_FarFog_Left",
+      "location": "<Struct 'Vector' (0x0000012DAF9C6E00) {x: 1200.000000, y: -650.000000, z: -200.000000}>",
+      "scale": "<Struct 'Vector' (0x0000012DAF9C6E00) {x: 1.600000, y: 1.600000, z: 1.600000}>",
+      "emission": "<Struct 'LinearColor' (0x0000012DB45DB0B4) {r: 21.000000, g: 60.000000, b: 58.200001, a: 1.000000}>"
+    },
+    {
+      "label": "TE_Parity_FarFog_Right",
+      "location": "<Struct 'Vector' (0x0000012DAF9E01A0) {x: 1200.000000, y: 900.000000, z: -200.000000}>",
+      "scale": "<Struct 'Vector' (0x0000012DAF9E01A0) {x: 1.600000, y: 1.600000, z: 1.600000}>",
+      "emission": "<Struct 'LinearColor' (0x0000012DB45DD4B4) {r: 21.000000, g: 60.000000, b: 58.200001, a: 1.000000}>"
+    }
+  ],
+  "fill_readback": [
+    {
+      "label": "TE_Room_CornerBounce_0",
+      "channels": "<Struct 'LightingChannels' (0x0000012DB427034C) {channel0: False, channel1: True, channel2: False}>",
+      "intensity": 14000.0
+    },
+    {
+      "label": "TE_Room_CornerBounce_1",
+      "channels": "<Struct 'LightingChannels' (0x0000012DB4277B4C) {channel0: False, channel1: True, channel2: False}>",
+      "intensity": 14000.0
+    },
+    {
+      "label": "TE_Room_CornerBounce_2",
+      "channels": "<Struct 'LightingChannels' (0x0000012DB427DF4C) {channel0: False, channel1: True, channel2: False}>",
+      "intensity": 14000.0
+    },
+    {
+      "label": "TE_Room_CornerBounce_3",
+      "channels": "<Struct 'LightingChannels' (0x0000012DAC6DDA4C) {channel0: False, channel1: True, channel2: False}>",
+      "intensity": 14000.0
+    }
+  ]
+}

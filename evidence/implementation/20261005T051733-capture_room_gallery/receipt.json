@@ -1,0 +1,263 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "captures": [
+    {
+      "name": "01-gameplay-initial",
+      "caption": "Saved initial gameplay composition; normal combat camera, NPCs held and HUD hidden.",
+      "kind": "gameplay",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T051733-capture_room_gallery\\01-gameplay-initial.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 48.0
+      },
+      "held_samples": 183,
+      "game_time": 10.012583214789629,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 925456,
+        "sha256": "1178bf9d258a18146fb7be2e0867e6fb41324d7af3fbae189357df2a88baf36f",
+        "pixel_sha256": "bca3014a0b52276a45f5ea6ca90b5f0aa29864139d5d2eb94ec46fe308d6915a",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "02-gameplay-wide",
+      "caption": "Normal adaptive gameplay camera at staged opposite-corner separation; this is a coverage view, not an input test.",
+      "kind": "gameplay-staged",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T051733-capture_room_gallery\\02-gameplay-wide.png",
+      "held_state": {
+        "player": [
+          -1300.0,
+          -1350.0,
+          96.0
+        ],
+        "camera": [
+          -5456.846934950482,
+          -25.0,
+          5600.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 48.0
+      },
+      "held_samples": 183,
+      "game_time": 13.015733018517494,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 402788,
+        "sha256": "3d77c970a4497cea8840492aa6b75ff854cdc9677a2422173ea6d55547805056",
+        "pixel_sha256": "8bc2bf78550ac649f9ea28d364a9f909a9d1d447363c28a377aa45bdce7fda37",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "03-architecture-overview",
+      "caption": "Cutaway architectural overview: existing PIE camera temporarily staged; not the playable framing.",
+      "kind": "architecture",
+      "location": [
+        -3300,
+        -2100,
+        3600
+      ],
+      "target": [
+        250,
+        0,
+        200
+      ],
+      "fov": 55.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T051733-capture_room_gallery\\03-architecture-overview.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -3300.0,
+          -2100.0,
+          3600.0
+        ],
+        "rotation": [
+          -39.499376962696395,
+          30.60640703150951,
+          1.5080481281037118e-07
+        ],
+        "fov": 55.0
+      },
+      "held_samples": 183,
+      "game_time": 16.021632723510265,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 620325,
+        "sha256": "eda17c9424ce85b50cbc823f6a8319a5989afb676ecb7b233396e3f1c2b99db4",
+        "pixel_sha256": "829b327b4bf5a258a953a3fa07d694a71bde042ba220d2d15bacb87401254c8a",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "04-rear-bulkhead",
+      "caption": "Rear bulkhead and service-door detail at saved lighting/exposure; existing PIE camera temporarily staged.",
+      "kind": "architecture",
+      "location": [
+        -250,
+        -120,
+        610
+      ],
+      "target": [
+        1650,
+        150,
+        340
+      ],
+      "fov": 60.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T051733-capture_room_gallery\\04-rear-bulkhead.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -250.0,
+          -120.0,
+          610.0
+        ],
+        "rotation": [
+          -8.008482229346896,
+          8.087879974538012,
+          8.728613531701627e-09
+        ],
+        "fov": 60.0
+      },
+      "held_samples": 181,
+      "game_time": 19.025626227259636,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 893184,
+        "sha256": "ff074af5c618830e0d6700ce0a4a1c87ef9947f6c39d9d7038a808f0c243dde2",
+        "pixel_sha256": "8189dade797af53582acf3588282ca33cc5c5b4bdd60c44613f10b0fd3d7ce79",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "05-side-services",
+      "caption": "Side machinery and pipework detail at saved lighting/exposure; existing PIE camera temporarily staged.",
+      "kind": "architecture",
+      "location": [
+        -950,
+        100,
+        600
+      ],
+      "target": [
+        450,
+        -1680,
+        310
+      ],
+      "fov": 60.0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T051733-capture_room_gallery\\05-side-services.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -950.0,
+          100.0,
+          600.0
+        ],
+        "rotation": [
+          -7.297471478842339,
+          -51.81435288940975,
+          -5.098274828291174e-08
+        ],
+        "fov": 60.0
+      },
+      "held_samples": 183,
+      "game_time": 22.032070234417915,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 777972,
+        "sha256": "73010f18df9d3e3c29e2d662e40d22c5bc214ebd742a52c5f200568cc41cd6d7",
+        "pixel_sha256": "79215e3dd8eab7eb24790addf40e1f93af3d496f5af5e06fd4148d95b0d108b1",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    }
+  ],
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "method": "Editor PIE; NPC/player movement frozen, HUD hidden; game paused through capture completion. Saved exposure/lighting unchanged. Views explicitly identify gameplay versus architectural camera.",
+  "world": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter",
+  "postprocess": [
+    {
+      "auto_exposure_method": "<AutoExposureMethod.AEM_MANUAL: 2>",
+      "auto_exposure_bias": "3.799999952316284",
+      "auto_exposure_apply_physical_camera_exposure": "True",
+      "vignette_intensity": "0.3799999952316284",
+      "bloom_intensity": "0.25"
+    }
+  ],
+  "architectural_camera_original": {
+    "location": [
+      -5456.846934950482,
+      -25.0,
+      5600.0
+    ],
+    "rotation": [
+      -46.000000000000114,
+      0.0,
+      -0.0
+    ],
+    "fov": 48.0,
+    "method": "PIE director tick disabled and transform/FOV staged; PIE teardown discards changes"
+  },
+  "wall_seconds": 32.436999999918044
+}

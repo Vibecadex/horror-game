@@ -1,0 +1,108 @@
+{
+  "capture_receipt": "evidence/implementation/20261005T095951-capture_chamber_views/receipt.json",
+  "capture_receipt_sha256": "f5e0bc0b79ac28a8aff963e54ec7a4ec2984ea0af2bea9db9db97ed3bf2f5e22",
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "capture_method": "Editor PIE architectural comparison only; saved actors frozen, HUD hidden. Native 3:2 HighResShot viewport, no crop/warp. Lighting/exposure unchanged. Environment Blueprint ticks remain enabled so the native camera-dependent cutaway can react; visibility is recorded, never forced.",
+  "sources": [
+    {
+      "view": "front",
+      "reference": {
+        "path": "study/visuals/chamber-target-front.png",
+        "sha256": "f853bc67bfb3973f8c3097c829973634590bfb4b42df17ed54fcf65b156b6960",
+        "size": [
+          571,
+          378
+        ],
+        "kind": "user concept target"
+      },
+      "candidate": {
+        "path": "evidence/implementation/20261005T095951-capture_chamber_views/01-chamber-front.png",
+        "sha256": "cc83631e9accb93766cf6e7a2187c2bd9b112e0058e893a8b33e86f5b0ce796d",
+        "size": [
+          1920,
+          1280
+        ],
+        "kind": "architecture",
+        "held_state": {
+          "player": [
+            -230.0,
+            570.0,
+            85.14999961853027
+          ],
+          "camera": [
+            -4460.0,
+            180.0,
+            2820.0
+          ],
+          "rotation": [
+            -30.909482049242236,
+            0.0,
+            -0.0
+          ],
+          "fov": 41.5
+        },
+        "caption": "ARCHITECTURAL FRONT: looks +X toward pressure bulkhead; saved actors/art/exposure. Camera outside front wall; native owned tall-wall cutaway may hide, retained sill remains.",
+        "hash_matches_capture_receipt": true,
+        "full_pixel_decode": true
+      }
+    },
+    {
+      "view": "reverse",
+      "reference": {
+        "path": "study/visuals/chamber-target-reverse.png",
+        "sha256": "1728fb8239d4edde652c93c92bb441c211fe4b491fbf9c14d79413e1c60eff42",
+        "size": [
+          475,
+          320
+        ],
+        "kind": "user concept target"
+      },
+      "candidate": {
+        "path": "evidence/implementation/20261005T095951-capture_chamber_views/02-chamber-reverse.png",
+        "sha256": "55c5b1fbc7538a081b5573743aeb444f30c8adfe4c5b29e371c910ee5f904593",
+        "size": [
+          1920,
+          1280
+        ],
+        "kind": "architecture",
+        "held_state": {
+          "player": [
+            -230.0,
+            570.0,
+            85.14999961853027
+          ],
+          "camera": [
+            1450.0,
+            100.0,
+            1800.0
+          ],
+          "rotation": [
+            -42.70938995736149,
+            180.0,
+            9.45757161265646e-07
+          ],
+          "fov": 68.0
+        },
+        "caption": "ARCHITECTURAL REVERSE: looks -X toward complete reverse service wall; camera inside far wall. Saved actors/art/exposure; native reverse wall must be visible.",
+        "hash_matches_capture_receipt": true,
+        "full_pixel_decode": true
+      }
+    }
+  ],
+  "comparison": {
+    "path": "evidence/chamber-qa/baseline-095951/comparison.png",
+    "size": [
+      1600,
+      1230
+    ],
+    "sha256": "b029a08998b897504f910af5a635f9bd994cbafd3e6c28025ce96330fcc0438c",
+    "full_pixel_decode": true
+  },
+  "limitations": [
+    "Reference concepts are small and differ slightly in aspect ratio. All full images remain unwarped, ungraded and uncropped.",
+    "Display resizes each image separately with Lanczos and retains all source bounds. The originals remain primary evidence.",
+    "Architectural cameras and frozen actors are disclosed. This comparison does not establish ordinary gameplay or user acceptance.",
+    "No similarity percentage, automatic parity score or physical-light measurement is computed."
+  ]
+}

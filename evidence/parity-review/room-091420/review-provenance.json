@@ -1,0 +1,56 @@
+{
+  "receipt_sha256": "deb933dfab8216f502d24a66bea494a427dbb66b4b8bf8a0bdf00e9392d280b8",
+  "host": {
+    "passed": true,
+    "exit_code": 0,
+    "log": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T091420-verify_full_room\\process.log"
+  },
+  "passed": true,
+  "check_count": 28,
+  "passed_check_count": 28,
+  "extension_actor_count": 84,
+  "extension_mesh_count": 21,
+  "camera_cases": 12,
+  "total_decoration_box_hints": 0,
+  "images": [
+    {
+      "case": 0,
+      "path": "evidence\\implementation\\20261005T091420-verify_full_room\\room-case-00.png",
+      "sha256": "b659662c53fb851dce6545c4b63249076382d235a77aa1e422f7c73b330a66fa",
+      "decoded": true
+    },
+    {
+      "case": 2,
+      "path": "evidence\\implementation\\20261005T091420-verify_full_room\\room-case-02.png",
+      "sha256": "fa3d58d023634a1e91135f6804b73e88566880fe2e2221f605cc61ab3564c1f2",
+      "decoded": true
+    },
+    {
+      "case": 3,
+      "path": "evidence\\implementation\\20261005T091420-verify_full_room\\room-case-03.png",
+      "sha256": "112bc2f581bd460c1e8f25899005bc29f849ddbccf17d7c166f4db1ea710e6b8",
+      "decoded": true
+    },
+    {
+      "case": 6,
+      "path": "evidence\\implementation\\20261005T091420-verify_full_room\\room-case-06.png",
+      "sha256": "e2e0b31e3e56108acbc73ad0fb501f8548c564ed9fac33b8e49cdddb27923a7d",
+      "decoded": true
+    },
+    {
+      "case": 9,
+      "path": "evidence\\implementation\\20261005T091420-verify_full_room\\room-case-09.png",
+      "sha256": "96a82eee95a6a5230b23bf24710fc065348fec4fe232c7153079ba0fe5137a09",
+      "decoded": true
+    },
+    {
+      "case": 11,
+      "path": "evidence\\implementation\\20261005T091420-verify_full_room\\room-case-11.png",
+      "sha256": "f9f4c743297cb71c328d3df01e06386ad5fc235dc333f62164c15608676f776b",
+      "decoded": true
+    }
+  ],
+  "all_original_room_checks_retained": true,
+  "physical_device_verified": false,
+  "engine_invoked_by_reviewer": false
+}

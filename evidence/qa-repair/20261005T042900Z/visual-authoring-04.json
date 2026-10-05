@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "visual_acceptance": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "changes": [
+    {
+      "camera_pin": "B",
+      "old": -0.9325150861376617,
+      "new": -0.9656887748070739
+    },
+    {
+      "camera_pin": "Min",
+      "old": 1850.0,
+      "new": 1700.0
+    },
+    {
+      "camera_pin": "B",
+      "old": 1.52,
+      "new": 1.8
+    },
+    {
+      "camera_pin": "B",
+      "old": 0.8,
+      "new": 1.0
+    },
+    {
+      "camera_pin": "B",
+      "old": 1200.0,
+      "new": 850.0
+    }
+  ],
+  "before": {
+    "/Game/TeddyEncounter/Blueprints/BP_TeddyBoss.BP_TeddyBoss_C:AttackWarning_GEN_VARIABLE:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_AttackWarning.M_QA_AttackWarning'\"]",
+    "/Game/TeddyEncounter/Blueprints/BP_TeddyBoss.Default__BP_TeddyBoss_C:CharacterMesh0:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth'\"]",
+    "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling_C:AttackWarning_GEN_VARIABLE:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_AttackWarning.M_QA_AttackWarning'\"]",
+    "/Game/TeddyEncounter/Blueprints/BP_Stitchling.Default__BP_Stitchling_C:CharacterMesh0:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth'\"]",
+    "/Game/TeddyEncounter/Blueprints/BP_CombatCamera.BP_CombatCamera_C:CombatCamera_GEN_VARIABLE:field_of_view": "50.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_Concrete.M_QA_Concrete'\"]",
+    "TE_Key:location": "<Struct 'Vector' (0x000001C1186DFF30) {x: 0.000000, y: -300.000000, z: 1350.000000}>",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_6.LightComponent0:intensity": "95000.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_6.LightComponent0:attenuation_radius": "2300.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_6.LightComponent0:source_radius": "150.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_6.LightComponent0:volumetric_scattering_intensity": "0.18000000715255737",
+    "TE_Rim:location": "<Struct 'Vector' (0x000001C10D8133A0) {x: 780.000000, y: 720.000000, z: 1250.000000}>",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_7.LightComponent0:intensity": "14000.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_7.LightComponent0:attenuation_radius": "2050.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_7.LightComponent0:source_radius": "160.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_7.LightComponent0:volumetric_scattering_intensity": "0.18000000715255737",
+    "TE_PlayerFill:location": "<Struct 'Vector' (0x000001C10D811910) {x: -750.000000, y: 300.000000, z: 1100.000000}>",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_8.LightComponent0:intensity": "9000.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_8.LightComponent0:attenuation_radius": "2150.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_8.LightComponent0:source_radius": "200.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_8.LightComponent0:volumetric_scattering_intensity": "0.18000000715255737",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0:fog_density": "0.027000000700354576",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0:fog_height_falloff": "0.15000000596046448",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0:enable_volumetric_fog": "True",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0:fog_max_opacity": "0.699999988079071",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0:fog_inscattering_luminance": "<Struct 'LinearColor' (0x000001C094AF66B4) {r: 0.012000, g: 0.027000, b: 0.033000, a: 1.000000}>",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.DirectionalLight_0.LightComponent0:intensity": "4.5",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_9.LightComponent0:intensity": "140.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_10.LightComponent0:intensity": "140.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_11.LightComponent0:intensity": "140.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_12.LightComponent0:intensity": "140.0",
+    "TE_FaceFill:location": "<Struct 'Vector' (0x000001C118706090) {x: -1450.000000, y: -350.000000, z: 1000.000000}>",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_13.LightComponent0:intensity": "4500.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_13.LightComponent0:attenuation_radius": "2200.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_13.LightComponent0:source_radius": "200.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.PointLight_13.LightComponent0:volumetric_scattering_intensity": "1.0",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.BP_TeddyBoss_C_0.CharacterMesh0:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth'\"]",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.BP_TeddyBoss_C_0.AttackWarning:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_AttackWarning.M_QA_AttackWarning'\"]",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.BP_Stitchling_C_2.CharacterMesh0:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth'\"]",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.BP_Stitchling_C_2.AttackWarning:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_AttackWarning.M_QA_AttackWarning'\"]",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.BP_Stitchling_C_0.CharacterMesh0:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth'\"]",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.BP_Stitchling_C_0.AttackWarning:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_AttackWarning.M_QA_AttackWarning'\"]",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.BP_Stitchling_C_1.CharacterMesh0:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth'\"]",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.BP_Stitchling_C_1.AttackWarning:override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_AttackWarning.M_QA_AttackWarning'\"]",
+    "camera_rotation": "<Struct 'Rotator' (0x000001C118706B30) {pitch: -47.000000, yaw: 0.000000, roll: -0.000000}>",
+    "/Game/Maps/TeddyEncounter.TeddyEncounter:PersistentLevel.BP_CombatCamera_C_0.CombatCamera:field_of_view": "48.0"
+  },
+  "requires": [
+    "saved reopen",
+    "camera edge verification",
+    "three reference comparisons",
+    "attack-warning readability",
+    "gameplay regression"
+  ],
+  "material_paths": [
+    "/Game/TeddyEncounter/Materials/M_QA_Concrete.M_QA_Concrete",
+    "/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth",
+    "/Game/TeddyEncounter/Materials/M_QA_AttackWarning.M_QA_AttackWarning"
+  ],
+  "camera_pitch": -46,
+  "field_of_view": 48,
+  "height": "clamp(max(1.8*abs(dx),1.0*abs(dy))+850,1700,5600)",
+  "behavior": "Attack timing, radius, collision, input and animation preserved; warning material only",
+  "note": "Authoring saved/reopened; rendered fidelity and edge coverage still require review"
+}

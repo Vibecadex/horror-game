@@ -1,0 +1,33 @@
+# Iteration 2 independent visual review
+
+Reviewed [the actual 1280×720 Unreal capture](../../implementation/20261005T071701-capture_parity_look/01-matched-gameplay.png) and its receipt, then inspected the [full comparison](comparison.jpg) and [detail crops](details.png). The source hash matches the capture receipt. The capture uses saved FOV54, pitch −46°, manual exposure +3.8EV, vignette0.38 and bloom0.25. Subjects are held, the HUD is hidden, and player rotation is transiently aimed toward the boss. No camera/light/exposure override is reported by the capture method. This is a staged comparison of saved appearance, not an ordinary-play recording.
+
+**Disposition: the composition, player light and overall tonal balance are materially closer; visual parity is still incomplete.** The next pass should concentrate on upper-frame atmospheric depth, material detail and physically convincing fractured ground. Further large global brightness/camera changes would disturb parts that now work.
+
+| Axis | Independent finding | Next correction |
+| --- | --- | --- |
+| Composition and scale | Boss framing is close: its marked center differs by −5px horizontally and −15.5px vertically, dimensions +7.5% width/−5.4% height. Player center differs by +11px/+5.5px; width +8.2%, height +15.29%. The tiny miss above the suggested 15% height band is pose/mask dependent. | Preserve this useful comparable framing. Do not churn camera settings to erase a fraction-of-a-percent diagnostic miss. Inspect saved ordinary play separately. |
+| Key and ground shadow | The long boss shadow is now much closer in scale and direction. Its approximate bounds extend 25px farther left and 22px farther down than the target. It remains a very crisp black silhouette; the target has softer edges and more environmental fill. The player's shadow is similarly hard. | Slightly soften source shadow edges while retaining contact and the main dark mass. Avoid broad fill that destroys the horror contrast. |
+| Far haze and dark perimeter | The upper third recedes into nearly black empty space instead of the selected luminous cyan haze. Tiny red distant warning points are absent. The lower corners remain visibly lit while the selected corners are near black. The equal average perimeter luma hides this wrong spatial distribution. | Restore localized far-field teal scattering/backfill and the restrained red points in this gameplay composition. Keep the lower corners darker; do not solve the far field by raising global exposure. |
+| Player pool and readability | Aim staging now places the pool correctly to the player's left. Body brightness and sampled pool core are close to reference. The light patch reads as a smooth, fairly uniform circular disc with a conspicuous falloff boundary. The reference pool is irregular and broken by detailed ground. | Preserve brightness and approximate placement. Break up its surface response through better underlying roughness/fracture detail and moderately softer falloff, not an emissive decal. Verify player/aim attachment in motion and corners. |
+| Woven cloth and seams | Olive cloth is no longer white clay. A dark seam is visible along the upper head/back, which is real progress. Its thread crossings are too thin/subtle at gameplay distance, and the body still shows soft mottling/facets instead of the reference's woven grain, raised cross-stitches and worn seam margins. Current upper cloth is slightly darker than the target, losing detail. | Add a readable weave scale and thicker/raised but attached stitched seam treatment, with gentle cloth luminance increase. Keep dark cavities. Check seams against animated mesh deformation; a static image cannot establish attachment. |
+| Fractured floor and rubble depth | Oversized graphic decals are gone. Small fragments cast visible tiny dark marks. However, most floor is broad smooth/cloudy color with isolated thin scratch-like networks and clusters of tiny pebbles. The target has dense interlocking fractured plates, varied fissure widths, chipped plate edges, several larger broken pieces and subtle accumulation. Current placement still exposes repeated separated patches. | Introduce connected damaged areas at several scales, stronger chipped-edge relief and some larger irregular fragments concentrated toward margins. Integrate patches into the base concrete instead of laying separate line-drawing islands on a smooth floor. Preserve movement routes. |
+| Restrained effects | Thin cyan aiming line remains legible and does not dominate. The missing red accents weaken the intended depth and palette. The current still has no shot/attack effects or HUD. | Add only the subdued distant practical cues; review firing/telegraph visibility and the normal HUD in actual motion. |
+
+## Supporting diagnostics
+
+| Region/cue | Target | Iteration2 | Interpretation |
+| --- | ---: | ---: | --- |
+| Central floor display luma | 117.28 | 103.14 | Much closer; a modest local adjustment at most. |
+| Player body display luma | 53.46 | 55.19 | Approximate mask values and visible silhouette are close. |
+| Player-pool core display luma | 219.44 | 217.08 | Peak-region brightness is close; spatial/material quality remains. |
+| Far haze display luma | 78.61 | 33.47 | Defining atmospheric gap. |
+| Four corner patches display luma | 0.53 | 10.59 | Candidate lower corners remain lifted. |
+| Upper cloth display luma | 48.65 | 37.93 | Cloth is now a little too dark, especially without fine detail. |
+| Cloth 2px detail residual | 12.33 | 3.90 | Supports visibly missing weave/stitch detail; not a physical fabric measurement. |
+| Floor 2px detail residual | 7.71 | 3.73 | Supports visibly smooth ground; not proof that added geometry is absent. |
+| Boss shadow / nearby floor | 0.20 | 0.17 | Contrast is close; shape and penumbra still differ. |
+
+All values describe the delivered image. Masks are approximate and not perfect semantic segmentation. The floor/cloth detail cue measures local image variation, so increasing arbitrary noise would improve a number without improving the art. The declared matched composition is explicit; its recorded framing diagnostic remains false because the marked player height is15.29% above target, not because a screenshot was silently warped or cropped.
+
+The [four artifact images](artifact-integrity.json) fully decoded. This review has not inspected the five remaining room gallery angles, new edge/corner gameplay or ordinary motion for iteration2. Controls, shadow stability, flashlight trails, cloth swimming, collision and user acceptance remain separate from this still review. No averaged parity score is assigned.

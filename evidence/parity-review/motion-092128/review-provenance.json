@@ -1,0 +1,200 @@
+{
+  "video_source": "evidence\\parity\\20261005T070301Z\\native-motion-20261005T092128\\native-motion.mp4",
+  "video_sha256": "1a0490bc2366c8a21e7cdde95d2717c598abe8d244a21c58ad1863d2af13c6f0",
+  "receipt_sha256": "1ec116eafc4110cd3a0fdc5badf177fbcd5c59c90af90aa2ac8eb74b287c209c",
+  "duration_seconds": 16.566667,
+  "encoded_frames": 496,
+  "audio_streams": 0,
+  "decode_and_sample_command": [
+    "C:/Users/4elut/scoop/shims/ffmpeg.exe",
+    "-v",
+    "error",
+    "-xerror",
+    "-i",
+    "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity\\20261005T070301Z\\native-motion-20261005T092128\\native-motion.mp4",
+    "-vf",
+    "fps=2",
+    "-an",
+    "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity-review\\motion-092128\\frames-2fps\\frame-%03d.png"
+  ],
+  "sample_count": 33,
+  "sample_method": "2 fps unaltered full-frame extracts; nominal timestamps describe fps-filter output and are not event-precise render identity",
+  "records": [
+    {
+      "approximate_movie_seconds": 0.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-001.png",
+      "sha256": "aeb8539f8b3a1e2082c01146e5c4193f2b7616f516c1e7cfd6069eb9e7f57c0d"
+    },
+    {
+      "approximate_movie_seconds": 0.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-002.png",
+      "sha256": "d9b7dc40a534c4afdd51d8775be6126814bdf8f4fe869592d22c7ec023a24d63"
+    },
+    {
+      "approximate_movie_seconds": 1.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-003.png",
+      "sha256": "62f31ce26c12eda67bc9633035d7123e690ce117b9b9f39ed03e799251e76de0"
+    },
+    {
+      "approximate_movie_seconds": 1.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-004.png",
+      "sha256": "f8d0336d62876b050145b6e56172fddf2a4c2e20ceccffcd81852f415a9a5c3b"
+    },
+    {
+      "approximate_movie_seconds": 2.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-005.png",
+      "sha256": "f61c44dbc155147f39783fdbb2f9613b3ac06933c9beb8d2c5656c69bdd5ace4"
+    },
+    {
+      "approximate_movie_seconds": 2.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-006.png",
+      "sha256": "232a1f8bbcb130097d8fdb9f8c0f930719344e0965e10353bf4df0b1e0ad8bd2"
+    },
+    {
+      "approximate_movie_seconds": 3.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-007.png",
+      "sha256": "608a0cc366c89854d75555d289b9d7122fc3bbe537fabba0fe037853194d1e08"
+    },
+    {
+      "approximate_movie_seconds": 3.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-008.png",
+      "sha256": "3f9b46d4e7de71022b70daf2067e32e4cc02ff9786a422b7a33368eab732cd94"
+    },
+    {
+      "approximate_movie_seconds": 4.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-009.png",
+      "sha256": "50df727e60ead2403334cd58a05d820ca690adc6535beb2ffe7d4e70e4380154"
+    },
+    {
+      "approximate_movie_seconds": 4.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-010.png",
+      "sha256": "816c30e880cdb11e47215394ef1200b6462d8b49824792c77082b31868db8a71"
+    },
+    {
+      "approximate_movie_seconds": 5.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-011.png",
+      "sha256": "a4eb1f249a627c04ca8d3ce257817909c21e04c33aba4862104955b59d6381c3"
+    },
+    {
+      "approximate_movie_seconds": 5.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-012.png",
+      "sha256": "dc558d18f8966272ed03e79586b17ec7df11a00f0c542c92b6f9942595d2c9f1"
+    },
+    {
+      "approximate_movie_seconds": 6.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-013.png",
+      "sha256": "d60dc6817beb64e8eb4707b1a56e9fe9c41822c3d1d6d3dd7107ceb4254cc005"
+    },
+    {
+      "approximate_movie_seconds": 6.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-014.png",
+      "sha256": "8fbe36169c1b5b9f5b2cabe72b749d76d560b9b3f5ac4df2099ffd961560471c"
+    },
+    {
+      "approximate_movie_seconds": 7.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-015.png",
+      "sha256": "9b10f972041d427d824e864cb22aab456e683d7e2f13aa154b539a5224284396"
+    },
+    {
+      "approximate_movie_seconds": 7.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-016.png",
+      "sha256": "5337b6cfff462bf0861e2d8762c2dce2735d1033203178b1b186bf51679f2fd6"
+    },
+    {
+      "approximate_movie_seconds": 8.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-017.png",
+      "sha256": "d70226604b4ca85617c0e27a6620c65871abb6be21d5170fc677a295b972b31f"
+    },
+    {
+      "approximate_movie_seconds": 8.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-018.png",
+      "sha256": "fc0236fb03ad5f3647eb09d3d17d1de6b734930eb17aa57af174af24320a9ed6"
+    },
+    {
+      "approximate_movie_seconds": 9.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-019.png",
+      "sha256": "7a322179075fee64f3b8d42497217b5f90ee1158cbefcc893bc90425247c4e6d"
+    },
+    {
+      "approximate_movie_seconds": 9.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-020.png",
+      "sha256": "9f6f4d5748d6308c0b4f1a0d3cb85cf8f1a1c2abcad9351a320c2b16380d0ef4"
+    },
+    {
+      "approximate_movie_seconds": 10.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-021.png",
+      "sha256": "f918e7af8116eb1a1a080092bffac3fd82b3db8f3a35b93e379a624080f77ce1"
+    },
+    {
+      "approximate_movie_seconds": 10.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-022.png",
+      "sha256": "8c3afe4e49636cfe57a8d0aa60069523741a85a012046b9be35ed631066d4ae2"
+    },
+    {
+      "approximate_movie_seconds": 11.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-023.png",
+      "sha256": "3137e1e25d6094318b09620b0af87fcc284f91379877989000dce20505941461"
+    },
+    {
+      "approximate_movie_seconds": 11.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-024.png",
+      "sha256": "b373feb02a49b888413b042f2979b878afe691f41778f6c0b4bd314594ac3b95"
+    },
+    {
+      "approximate_movie_seconds": 12.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-025.png",
+      "sha256": "acd9367786e16eca306119f787979b323119b3323f0faa6dab1383a8d20b6320"
+    },
+    {
+      "approximate_movie_seconds": 12.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-026.png",
+      "sha256": "1ce2e19a02f38736ef8542dc8798fcee57cf0484fbfa66ef3f577480179fc352"
+    },
+    {
+      "approximate_movie_seconds": 13.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-027.png",
+      "sha256": "c4b2c10b0e763eddc1c58dcde51e83f2bce3d3f087ca785976655dc72d12e716"
+    },
+    {
+      "approximate_movie_seconds": 13.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-028.png",
+      "sha256": "b530d5b0f515397f4562c4b8cf25aa2e0b91240e8ee3a55bc31c9cf0fc6cc427"
+    },
+    {
+      "approximate_movie_seconds": 14.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-029.png",
+      "sha256": "6a021ebea3636627d5c10a11adf0e2e93b112aef5ef45316bf60c1902b363c1d"
+    },
+    {
+      "approximate_movie_seconds": 14.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-030.png",
+      "sha256": "fe980ee454a3e9ce0c6bab7315626a91466a5bad428cfb20b0e093b4f16fcc16"
+    },
+    {
+      "approximate_movie_seconds": 15.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-031.png",
+      "sha256": "e981f07b0495c148c05c7e38ea0e7e2f0991d7735238d58afb4b27da44fed81e"
+    },
+    {
+      "approximate_movie_seconds": 15.5,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-032.png",
+      "sha256": "900499ca7f852205fc700ad6b42163ad8652b5ef97e96dda01db1e5fc4751e23"
+    },
+    {
+      "approximate_movie_seconds": 16.0,
+      "path": "evidence\\parity-review\\motion-092128\\frames-2fps\\frame-033.png",
+      "sha256": "c836f7630927177660638a4208be16defeafdfdc8fd7a8ac4dedec9f20a5de49"
+    }
+  ],
+  "reviewer_engine_invocation": false,
+  "physical_device_verified": false,
+  "original_method": "30 fps desktop capture restricted to owned game client rectangle held topmost; no SendInput, no physical-device claim. Input driver is in a separate QA map.",
+  "authoring": {
+    "passed": true,
+    "map": "/Game/SetupValidation/NativeMotion_native_motion_20261005T092128/Encounter",
+    "source_map": "/Game/Maps/TeddyEncounter",
+    "method": "Isolated map copy; original saved gameplay, normal AI and health. Driver emits key events and continuous aim action, with no actor teleports, health editing or AI freezes.",
+    "driver": "/Game/SetupValidation/NativeMotion_native_motion_20261005T092128/BP_CaptureDriver.BP_CaptureDriver",
+    "expected_seconds": 19.65
+  }
+}

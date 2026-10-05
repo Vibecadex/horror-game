@@ -1,0 +1,1910 @@
+{
+  "owner": "teddy-room-dressing-20261005",
+  "source": "Original dressing modules for the chamber. Room kit and room shell were not modified.",
+  "generator": "tools/make_room_dressing.py",
+  "blender_version": "5.2.0 LTS",
+  "coordinate_system": "Metres, Z up, detailed face -Y. Same FBX axis setup as the room kit.",
+  "fbx_settings": {
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "global_scale": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_NONE"
+  },
+  "material_slots": [
+    "Metal",
+    "Concrete",
+    "Rust",
+    "Dark",
+    "Emissive"
+  ],
+  "total_triangles": 8104,
+  "assets": [
+    {
+      "name": "SM_DressPanel",
+      "file": "SM_DressPanel.fbx",
+      "triangles": 432,
+      "vertices": 240,
+      "bounds_m": {
+        "min": [
+          -1.2000000476837158,
+          -0.07900001108646393,
+          0.0
+        ],
+        "max": [
+          1.2000000476837158,
+          0.06000000238418579,
+          3.200000047683716
+        ]
+      },
+      "dimensions_m": [
+        2.4000000953674316,
+        0.13900001347064972,
+        3.200000047683716
+      ],
+      "expected_dimensions_cm": [
+        240.0,
+        13.9,
+        320.0
+      ],
+      "origin": "Floor Z=0. Back sits on +Y. Recess faces -Y.",
+      "front": "Blender local -Y",
+      "placement": "Tile on the interior face of the shell bays. Vary yaw only to face the room. Alternate with SM_DressPanelAlt.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "0f7ce3236d8d4790a737d42068c309c0092387a6c8c589741e1763b75ea2cb21"
+    },
+    {
+      "name": "SM_DressPanelAlt",
+      "file": "SM_DressPanelAlt.fbx",
+      "triangles": 432,
+      "vertices": 240,
+      "bounds_m": {
+        "min": [
+          -1.2000000476837158,
+          -0.07900001108646393,
+          0.0
+        ],
+        "max": [
+          1.2000000476837158,
+          0.06000000238418579,
+          3.200000047683716
+        ]
+      },
+      "dimensions_m": [
+        2.4000000953674316,
+        0.13900001347064972,
+        3.200000047683716
+      ],
+      "expected_dimensions_cm": [
+        240.0,
+        13.9,
+        320.0
+      ],
+      "origin": "Same module as the first panel, rib and seam shifted.",
+      "front": "Blender local -Y",
+      "placement": "Pair with SM_DressPanel so a wall is not one repeated stamp.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "4abc6b4f8e337ab176e1a5517208b7ac609201ed04fe05a286a41fb365d5ab16"
+    },
+    {
+      "name": "SM_DressPanelNarrow",
+      "file": "SM_DressPanelNarrow.fbx",
+      "triangles": 432,
+      "vertices": 240,
+      "bounds_m": {
+        "min": [
+          -0.6000000238418579,
+          -0.07900001108646393,
+          0.0
+        ],
+        "max": [
+          0.6000000238418579,
+          0.06000000238418579,
+          3.200000047683716
+        ]
+      },
+      "dimensions_m": [
+        1.2000000476837158,
+        0.13900001347064972,
+        3.200000047683716
+      ],
+      "expected_dimensions_cm": [
+        120.0,
+        13.9,
+        320.0
+      ],
+      "origin": "1.20 m wide, same depth and height.",
+      "front": "Blender local -Y",
+      "placement": "Close a bay that the 2.40 m panel does not fill.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "fcb08d0676b0d600d5499290c15aae1a2c59e4ae1f7fe2d775f339424c3853c3"
+    },
+    {
+      "name": "SM_DressPanelTall",
+      "file": "SM_DressPanelTall.fbx",
+      "triangles": 472,
+      "vertices": 264,
+      "bounds_m": {
+        "min": [
+          -1.2000000476837158,
+          -0.07900000363588333,
+          0.0
+        ],
+        "max": [
+          1.2000000476837158,
+          0.06499999761581421,
+          4.800000190734863
+        ]
+      },
+      "dimensions_m": [
+        2.4000000953674316,
+        0.14400000125169754,
+        4.800000190734863
+      ],
+      "expected_dimensions_cm": [
+        240.0,
+        14.4,
+        480.0
+      ],
+      "origin": "Floor Z=0. Two stacked recesses. Faces -Y.",
+      "front": "Blender local -Y",
+      "placement": "Far wall and the taller side bays. One or two per cluster, not a full grid of identical tall panels.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "b428b9887237fb8a886a98ba997c1e39ae43f2b095dc168da065e2ad730d3d35"
+    },
+    {
+      "name": "SM_DressRib",
+      "file": "SM_DressRib.fbx",
+      "triangles": 168,
+      "vertices": 96,
+      "bounds_m": {
+        "min": [
+          -0.12999999523162842,
+          -0.07800000160932541,
+          0.0
+        ],
+        "max": [
+          0.12999999523162842,
+          0.09999999403953552,
+          3.200000047683716
+        ]
+      },
+      "dimensions_m": [
+        0.25999999046325684,
+        0.17799999564886093,
+        3.200000047683716
+      ],
+      "expected_dimensions_cm": [
+        26.0,
+        17.8,
+        320.0
+      ],
+      "origin": "Floor Z=0. Projects toward -Y.",
+      "front": "Blender local -Y",
+      "placement": "Vertical cover between panels. Thinner than SM_RoomPilaster. Do not replace the pilaster.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "4d39c29431b3eb5caacba9e79ac86977b1bd7318c1fa990c95dbf655bc032fb2"
+    },
+    {
+      "name": "SM_DressRepairPlate",
+      "file": "SM_DressRepairPlate.fbx",
+      "triangles": 168,
+      "vertices": 96,
+      "bounds_m": {
+        "min": [
+          -0.4099999964237213,
+          -0.04399999976158142,
+          0.06000000238418579
+        ],
+        "max": [
+          0.4099999964237213,
+          0.0040000006556510925,
+          0.5799999833106995
+        ]
+      },
+      "dimensions_m": [
+        0.8199999928474426,
+        0.04800000041723251,
+        0.5199999809265137
+      ],
+      "expected_dimensions_cm": [
+        82.0,
+        4.8,
+        52.0
+      ],
+      "origin": "Bottom at Z=0. Face -Y.",
+      "front": "Blender local -Y",
+      "placement": "One bolted patch per service cluster. Not a row.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "fe2040409fac28e8f63f9f7ca744c4be91156f77d788ff2292b758af2ca99fba"
+    },
+    {
+      "name": "SM_DressWallSpall",
+      "file": "SM_DressWallSpall.fbx",
+      "triangles": 176,
+      "vertices": 96,
+      "bounds_m": {
+        "min": [
+          -0.46000000834465027,
+          -0.03999999165534973,
+          0.0
+        ],
+        "max": [
+          0.46000000834465027,
+          0.06499999761581421,
+          0.6000000238418579
+        ]
+      },
+      "dimensions_m": [
+        0.9200000166893005,
+        0.10499998927116394,
+        0.6000000238418579
+      ],
+      "expected_dimensions_cm": [
+        92.0,
+        10.5,
+        60.0
+      ],
+      "origin": "Bottom at Z=0. Broken face -Y.",
+      "front": "Blender local -Y",
+      "placement": "A few bites on the lower wall. This is wall damage, not a floor debris card.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "bffe76610ec26cebf7b5d4326955846c67d729179973ed1abe0af1097a9f68ee"
+    },
+    {
+      "name": "SM_DressConduitStraight",
+      "file": "SM_DressConduitStraight.fbx",
+      "triangles": 232,
+      "vertices": 156,
+      "bounds_m": {
+        "min": [
+          -1.0,
+          -0.11999999731779099,
+          0.004999999888241291
+        ],
+        "max": [
+          1.0,
+          0.11999999731779099,
+          0.11598076671361923
+        ]
+      },
+      "dimensions_m": [
+        2.0,
+        0.23999999463558197,
+        0.11098076682537794
+      ],
+      "expected_dimensions_cm": [
+        200.0,
+        24.0,
+        11.1
+      ],
+      "origin": "Mount at Z=0. Long axis X. 2 m.",
+      "front": "Blender local -Y",
+      "placement": "Right wall and short jumps on the left. Smaller than SM_RoomPipeRack. Do not replace that rack.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "736f129d6e5ba9979b51fe7a2cefc8b4eba1e40681622ca8bb63085570d7c45a"
+    },
+    {
+      "name": "SM_DressConduitElbow",
+      "file": "SM_DressConduitElbow.fbx",
+      "triangles": 96,
+      "vertices": 66,
+      "bounds_m": {
+        "min": [
+          -0.07000000029802322,
+          -0.22006894648075104,
+          -0.019999999552965164
+        ],
+        "max": [
+          0.4222988188266754,
+          0.04999999701976776,
+          0.1059807687997818
+        ]
+      },
+      "dimensions_m": [
+        0.49229881912469864,
+        0.2700689435005188,
+        0.12598076835274696
+      ],
+      "expected_dimensions_cm": [
+        49.23,
+        27.01,
+        12.6
+      ],
+      "origin": "Corner near the origin. Turn goes toward -Y.",
+      "front": "Blender local -Y",
+      "placement": "Ends of a conduit run. Keep the turn outside the walk ring.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "37192a3b218b03460d09dfe8667306588f007597c66ed723a797c4cf2764f005"
+    },
+    {
+      "name": "SM_DressConduitTee",
+      "file": "SM_DressConduitTee.fbx",
+      "triangles": 160,
+      "vertices": 108,
+      "bounds_m": {
+        "min": [
+          -0.3799999952316284,
+          -0.3400000035762787,
+          0.012999996542930603
+        ],
+        "max": [
+          0.3799999952316284,
+          0.03200000151991844,
+          0.1469999998807907
+        ]
+      },
+      "dimensions_m": [
+        0.7599999904632568,
+        0.37200000509619713,
+        0.1340000033378601
+      ],
+      "expected_dimensions_cm": [
+        76.0,
+        37.2,
+        13.4
+      ],
+      "origin": "Branch leaves toward -Y.",
+      "front": "Blender local -Y",
+      "placement": "One or two where a run splits. No valve.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "8e543546bc8cd73af140f87727df3a778ef4775ab24319599b57d71810ff8971"
+    },
+    {
+      "name": "SM_DressJunctionBox",
+      "file": "SM_DressJunctionBox.fbx",
+      "triangles": 228,
+      "vertices": 168,
+      "bounds_m": {
+        "min": [
+          -0.36000001430511475,
+          -0.0689999982714653,
+          -0.07999998331069946
+        ],
+        "max": [
+          0.36000001430511475,
+          0.11999999731779099,
+          0.3400000035762787
+        ]
+      },
+      "dimensions_m": [
+        0.7200000286102295,
+        0.1889999955892563,
+        0.41999998688697815
+      ],
+      "expected_dimensions_cm": [
+        72.0,
+        18.9,
+        42.0
+      ],
+      "origin": "Back on +Y. Cover faces -Y.",
+      "front": "Blender local -Y",
+      "placement": "Where conduits meet. Right wall mostly. The down stub may hang below the origin.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "1bcb1f716de9ec5de19da60f6bdaf60d34db91d640ee68d5bef958501039af90"
+    },
+    {
+      "name": "SM_DressCableLoop",
+      "file": "SM_DressCableLoop.fbx",
+      "triangles": 144,
+      "vertices": 90,
+      "bounds_m": {
+        "min": [
+          -0.44999998807907104,
+          -0.10170236229896545,
+          0.019401900470256805
+        ],
+        "max": [
+          0.44999998807907104,
+          0.04500000178813934,
+          0.5699999928474426
+        ]
+      },
+      "dimensions_m": [
+        0.8999999761581421,
+        0.1467023640871048,
+        0.5505980923771858
+      ],
+      "expected_dimensions_cm": [
+        90.0,
+        14.67,
+        55.06
+      ],
+      "origin": "Clamps near Z=0.55. The loop sags toward -Y.",
+      "front": "Blender local -Y",
+      "placement": "One short loop in a cluster, as the art direction describes. Not a hanging mass over the fight.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "b6f13a882ba128fb874b80159ef78246d88a2f892bb4af457f57cf0cf80e45d9"
+    },
+    {
+      "name": "SM_DressCableDrop",
+      "file": "SM_DressCableDrop.fbx",
+      "triangles": 184,
+      "vertices": 138,
+      "bounds_m": {
+        "min": [
+          -0.05000000074505806,
+          -0.07999999821186066,
+          0.019999999552965164
+        ],
+        "max": [
+          0.05000000074505806,
+          0.03999999910593033,
+          1.4501889944076538
+        ]
+      },
+      "dimensions_m": [
+        0.10000000149011612,
+        0.11999999731779099,
+        1.4301889948546886
+      ],
+      "expected_dimensions_cm": [
+        10.0,
+        12.0,
+        143.02
+      ],
+      "origin": "Top clip at Z=1.45. Bundle hangs to the floor.",
+      "front": "Blender local -Y",
+      "placement": "From the cable tray down to a junction box. Right wall.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "ef04ea10609aba89dc49c738c23320f458220693f82f9ae5fd42357e62f0e18a"
+    },
+    {
+      "name": "SM_DressPipeElbow",
+      "file": "SM_DressPipeElbow.fbx",
+      "triangles": 324,
+      "vertices": 176,
+      "bounds_m": {
+        "min": [
+          -0.0989999994635582,
+          -0.09651786088943481,
+          0.08668521046638489
+        ],
+        "max": [
+          0.43331480026245117,
+          0.09651786088943481,
+          0.5789999961853027
+        ]
+      },
+      "dimensions_m": [
+        0.5323147997260094,
+        0.19303572177886963,
+        0.49231478571891785
+      ],
+      "expected_dimensions_cm": [
+        53.23,
+        19.3,
+        49.23
+      ],
+      "origin": "Vertical leg on Z, horizontal leg toward +X. No wheel.",
+      "front": "Blender local -Y",
+      "placement": "Turn at the end of a left-wall pipe run. The rack already has its valve. Do not add one.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "a97a89e5048adc28c23a76ea7e05f2c7013a1111a9056b12c6e18e402895f620"
+    },
+    {
+      "name": "SM_DressFlangeJoint",
+      "file": "SM_DressFlangeJoint.fbx",
+      "triangles": 336,
+      "vertices": 172,
+      "bounds_m": {
+        "min": [
+          -0.20000000298023224,
+          -0.09749279171228409,
+          -2.2052142334416658e-09
+        ],
+        "max": [
+          0.20000000298023224,
+          0.09749279171228409,
+          0.20000001788139343
+        ]
+      },
+      "dimensions_m": [
+        0.4000000059604645,
+        0.19498558342456818,
+        0.20000002008660767
+      ],
+      "expected_dimensions_cm": [
+        40.0,
+        19.5,
+        20.0
+      ],
+      "origin": "Pipe along X at Z=0.10.",
+      "front": "Blender local -Y",
+      "placement": "Visible joint in a pipe run. Bolted flanges, muted rust.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "943b2f5a1dfc23b15c2e00c0eb1e8cc51e9b8a2dabbbe2bad444eb6582327e95"
+    },
+    {
+      "name": "SM_DressPipeHanger",
+      "file": "SM_DressPipeHanger.fbx",
+      "triangles": 100,
+      "vertices": 56,
+      "bounds_m": {
+        "min": [
+          -0.11999999731779099,
+          -0.0949999988079071,
+          -0.07230809330940247
+        ],
+        "max": [
+          0.11999999731779099,
+          0.03500000014901161,
+          0.3100000023841858
+        ]
+      },
+      "dimensions_m": [
+        0.23999999463558197,
+        0.12999999895691872,
+        0.38230809569358826
+      ],
+      "expected_dimensions_cm": [
+        24.0,
+        13.0,
+        38.23
+      ],
+      "origin": "Plate at the top. Clevis hangs below Z=0.",
+      "front": "Blender local -Y",
+      "placement": "Under a left-wall run, between the larger saddles.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "cbd973151fe97cece80b0a2340c341daa7084d9a605a307c366cf440abf659df"
+    },
+    {
+      "name": "SM_DressBreaker",
+      "file": "SM_DressBreaker.fbx",
+      "triangles": 176,
+      "vertices": 96,
+      "bounds_m": {
+        "min": [
+          -0.25,
+          -0.08000001311302185,
+          0.009999990463256836
+        ],
+        "max": [
+          0.3498311936855316,
+          0.12999999523162842,
+          0.8418035507202148
+        ]
+      },
+      "dimensions_m": [
+        0.5998311936855316,
+        0.21000000834465027,
+        0.831803560256958
+      ],
+      "expected_dimensions_cm": [
+        59.98,
+        21.0,
+        83.18
+      ],
+      "origin": "Floor Z=0. Door ajar toward -Y.",
+      "front": "Blender local -Y",
+      "placement": "Right wall only. Smaller than SM_RoomServiceCabinet. Door stays dark. No glowing panel.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "61a947474528be5b4fb5741c6b28b2b2957f5bd89feced7aa7263b489398a204"
+    },
+    {
+      "name": "SM_DressGangBox",
+      "file": "SM_DressGangBox.fbx",
+      "triangles": 236,
+      "vertices": 132,
+      "bounds_m": {
+        "min": [
+          -0.17000000178813934,
+          -0.029000001028180122,
+          0.009999997913837433
+        ],
+        "max": [
+          0.17000000178813934,
+          0.05000000074505806,
+          0.15000000596046448
+        ]
+      },
+      "dimensions_m": [
+        0.3400000035762787,
+        0.07900000177323818,
+        0.14000000804662704
+      ],
+      "expected_dimensions_cm": [
+        34.0,
+        7.9,
+        14.0
+      ],
+      "origin": "Back on +Y.",
+      "front": "Blender local -Y",
+      "placement": "Small blank covers beside the breaker. Right wall.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "16d88f4f293e902c8de8b7eed7d28db6f16da66d3f51d569e61443ac3ffd3f82"
+    },
+    {
+      "name": "SM_DressBundle",
+      "file": "SM_DressBundle.fbx",
+      "triangles": 192,
+      "vertices": 144,
+      "bounds_m": {
+        "min": [
+          -0.9000933170318604,
+          -0.04500000178813934,
+          0.02499999850988388
+        ],
+        "max": [
+          0.9000933170318604,
+          0.04500000178813934,
+          0.0949999988079071
+        ]
+      },
+      "dimensions_m": [
+        1.8001866340637207,
+        0.09000000357627869,
+        0.07000000029802322
+      ],
+      "expected_dimensions_cm": [
+        180.02,
+        9.0,
+        7.0
+      ],
+      "origin": "Long axis X, on the floor line.",
+      "front": "Blender local -Y",
+      "placement": "Along the right-wall foot. Not a second cable spool.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "e2395c8ab797880147d0bf4859401ed979b60e616da3030d04114bbacc334ae6"
+    },
+    {
+      "name": "SM_DressThreshold",
+      "file": "SM_DressThreshold.fbx",
+      "triangles": 104,
+      "vertices": 64,
+      "bounds_m": {
+        "min": [
+          -0.8999999761581421,
+          -0.17399999499320984,
+          0.0030000004917383194
+        ],
+        "max": [
+          0.8999999761581421,
+          0.17000000178813934,
+          0.03100000135600567
+        ]
+      },
+      "dimensions_m": [
+        1.7999999523162842,
+        0.3439999967813492,
+        0.02800000086426735
+      ],
+      "expected_dimensions_cm": [
+        180.0,
+        34.4,
+        2.8
+      ],
+      "origin": "Floor Z=0. Long axis X. Nose toward -Y.",
+      "front": "Blender local -Y",
+      "placement": "At the bulkhead sill. One plate. Not a ramp into a hall.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "b4f810a3f5aa60ee06754ab8b9b47e6580275fcd0047114bf30d330377eba098"
+    },
+    {
+      "name": "SM_DressAnchor",
+      "file": "SM_DressAnchor.fbx",
+      "triangles": 124,
+      "vertices": 72,
+      "bounds_m": {
+        "min": [
+          -0.1899999976158142,
+          -0.1899999976158142,
+          0.0040000006556510925
+        ],
+        "max": [
+          0.1899999976158142,
+          0.1899999976158142,
+          0.057499997317790985
+        ]
+      },
+      "dimensions_m": [
+        0.3799999952316284,
+        0.3799999952316284,
+        0.05349999666213989
+      ],
+      "expected_dimensions_cm": [
+        38.0,
+        38.0,
+        5.35
+      ],
+      "origin": "Floor Z=0.",
+      "front": "Blender local -Y",
+      "placement": "A few floor anchors along the far utility strip and wall foot.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "456cbd1ba005222676ee6bc11effa2d225fac41ac79bd0a4f624b579e967cb6a"
+    },
+    {
+      "name": "SM_DressDrainBox",
+      "file": "SM_DressDrainBox.fbx",
+      "triangles": 352,
+      "vertices": 192,
+      "bounds_m": {
+        "min": [
+          -0.25999999046325684,
+          -0.25999999046325684,
+          0.004999999888241291
+        ],
+        "max": [
+          0.25999999046325684,
+          0.25999999046325684,
+          0.09000000357627869
+        ]
+      },
+      "dimensions_m": [
+        0.5199999809265137,
+        0.5199999809265137,
+        0.0850000036880374
+      ],
+      "expected_dimensions_cm": [
+        52.0,
+        52.0,
+        8.5
+      ],
+      "origin": "Floor Z=0. Square local drain.",
+      "front": "Blender local -Y",
+      "placement": "Perimeter only, beside the gutter. Not a substitute for SM_RoomFloorGrate and not a stripe.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "03b7c3a853046e907991a761c6ad7b583d16d65e669125ef06f4aca0cf349fdb"
+    },
+    {
+      "name": "SM_DressKicker",
+      "file": "SM_DressKicker.fbx",
+      "triangles": 88,
+      "vertices": 48,
+      "bounds_m": {
+        "min": [
+          -0.6000000238418579,
+          -0.09000000357627869,
+          0.0
+        ],
+        "max": [
+          0.6000000238418579,
+          0.09000000357627869,
+          0.14000000059604645
+        ]
+      },
+      "dimensions_m": [
+        1.2000000476837158,
+        0.18000000715255737,
+        0.14000000059604645
+      ],
+      "expected_dimensions_cm": [
+        120.0,
+        18.0,
+        14.0
+      ],
+      "origin": "Floor Z=0. Long axis X.",
+      "front": "Blender local -Y",
+      "placement": "Short footing blocks along the cutaway and the far strip. Low. Not a wall.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "4136172fc490e85ca2902256b8b50767a16d896ec82c716724620628530c4af2"
+    },
+    {
+      "name": "SM_DressLouver",
+      "file": "SM_DressLouver.fbx",
+      "triangles": 264,
+      "vertices": 144,
+      "bounds_m": {
+        "min": [
+          -0.46000000834465027,
+          -0.05891236290335655,
+          0.010000020265579224
+        ],
+        "max": [
+          0.46000000834465027,
+          0.07000000029802322,
+          0.7100000381469727
+        ]
+      },
+      "dimensions_m": [
+        0.9200000166893005,
+        0.12891236320137978,
+        0.7000000178813934
+      ],
+      "expected_dimensions_cm": [
+        92.0,
+        12.89,
+        70.0
+      ],
+      "origin": "Bottom at Z=0. Slats face -Y.",
+      "front": "Blender local -Y",
+      "placement": "Small wall vent. The big fan remains SM_RoomVentFan. One or two louvers, not a row.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "8fc58a1a26adc449bd99705cc77f335f6afed451caab00868fa999eb1e193845"
+    },
+    {
+      "name": "SM_DressHatch",
+      "file": "SM_DressHatch.fbx",
+      "triangles": 192,
+      "vertices": 108,
+      "bounds_m": {
+        "min": [
+          -0.38999998569488525,
+          -0.0650000050663948,
+          0.010000020265579224
+        ],
+        "max": [
+          0.38999998569488525,
+          0.06499999761581421,
+          0.7899999618530273
+        ]
+      },
+      "dimensions_m": [
+        0.7799999713897705,
+        0.13000000268220901,
+        0.7799999415874481
+      ],
+      "expected_dimensions_cm": [
+        78.0,
+        13.0,
+        78.0
+      ],
+      "origin": "Bottom at Z=0. Closed cover faces -Y.",
+      "front": "Blender local -Y",
+      "placement": "Closed maintenance hatch. The dogs are handles, not a locking wheel. No path behind it.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "cd6da7567fc1f9883ca8d7051cb35597b6be055bcd5dc5457ff3637510c707b9"
+    },
+    {
+      "name": "SM_DressHoseCoil",
+      "file": "SM_DressHoseCoil.fbx",
+      "triangles": 564,
+      "vertices": 298,
+      "bounds_m": {
+        "min": [
+          -0.2280000001192093,
+          -0.1993435174226761,
+          0.0036731790751218796
+        ],
+        "max": [
+          0.2368391752243042,
+          0.07000000029802322,
+          0.6299999952316284
+        ]
+      },
+      "dimensions_m": [
+        0.4648391753435135,
+        0.2693435177206993,
+        0.6263268161565065
+      ],
+      "expected_dimensions_cm": [
+        46.48,
+        26.93,
+        62.63
+      ],
+      "origin": "Hook above the coil. Coil faces -Y.",
+      "front": "Blender local -Y",
+      "placement": "One coil on a side wall. Not a second spool family and not a tank.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "80e83e83497165b7e6171c7cee1cd4379a67e7e90e81d765a44910a6f5668266"
+    },
+    {
+      "name": "SM_DressColumn",
+      "file": "SM_DressColumn.fbx",
+      "triangles": 344,
+      "vertices": 192,
+      "bounds_m": {
+        "min": [
+          -0.36000001430511475,
+          -0.36000001430511475,
+          0.0
+        ],
+        "max": [
+          0.36000001430511475,
+          0.36000001430511475,
+          4.210000038146973
+        ]
+      },
+      "dimensions_m": [
+        0.7200000286102295,
+        0.7200000286102295,
+        4.210000038146973
+      ],
+      "expected_dimensions_cm": [
+        72.0,
+        72.0,
+        421.0
+      ],
+      "origin": "Floor Z=0. 0.50 m shaft, 4.20 m tall.",
+      "front": "Blender local -Y",
+      "placement": "Far corners only, outside X=1480 and |Y|=1500. Not a pilaster and not a tank.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "1ff4a90b7ad72c55bfe68413e26449286d1f47777d9a18ab425521bb26d8f266"
+    },
+    {
+      "name": "SM_DressHeader",
+      "file": "SM_DressHeader.fbx",
+      "triangles": 220,
+      "vertices": 120,
+      "bounds_m": {
+        "min": [
+          -1.7000000476837158,
+          -0.23000000417232513,
+          0.01000000536441803
+        ],
+        "max": [
+          1.7000000476837158,
+          0.23000000417232513,
+          0.3799999952316284
+        ]
+      },
+      "dimensions_m": [
+        3.4000000953674316,
+        0.46000000834465027,
+        0.3699999898672104
+      ],
+      "expected_dimensions_cm": [
+        340.0,
+        46.0,
+        37.0
+      ],
+      "origin": "Soffit toward -Y. Seat the top against the wall.",
+      "front": "Blender local -Y",
+      "placement": "Above the bulkhead opening if the door head needs a separate lintel. Not a roof beam across the room.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "74c1c043ba5ec099b3a3f62b68e8a64748295dac3b15f50945807533099da132"
+    },
+    {
+      "name": "SM_DressCornerGuard",
+      "file": "SM_DressCornerGuard.fbx",
+      "triangles": 148,
+      "vertices": 84,
+      "bounds_m": {
+        "min": [
+          -0.008000001311302185,
+          -0.01600000075995922,
+          0.0
+        ],
+        "max": [
+          0.09000000357627869,
+          0.09000000357627869,
+          1.2000000476837158
+        ]
+      },
+      "dimensions_m": [
+        0.09800000488758087,
+        0.10600000433623791,
+        1.2000000476837158
+      ],
+      "expected_dimensions_cm": [
+        9.8,
+        10.6,
+        120.0
+      ],
+      "origin": "The angle wraps +X and +Y. Height 1.20 m.",
+      "front": "Blender local -Y",
+      "placement": "Outside corners of pilasters and the cutaway returns.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "94c5a033208c9273126586fc08a244406c476430d7fd958887ee6b7e70feb109"
+    },
+    {
+      "name": "SM_DressUnistrut",
+      "file": "SM_DressUnistrut.fbx",
+      "triangles": 104,
+      "vertices": 64,
+      "bounds_m": {
+        "min": [
+          -1.0,
+          -0.020500000566244125,
+          -0.0005000010132789612
+        ],
+        "max": [
+          1.0,
+          0.020500000566244125,
+          0.04050000011920929
+        ]
+      },
+      "dimensions_m": [
+        2.0,
+        0.04100000113248825,
+        0.04100000113248825
+      ],
+      "expected_dimensions_cm": [
+        200.0,
+        4.1,
+        4.1
+      ],
+      "origin": "Long axis X. Open side -Y.",
+      "front": "Blender local -Y",
+      "placement": "Short perimeter support. Do not link copies into a truss across the arena.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "5aa4eb7e64750ac2de144b91c6568d59c794931a4d22f038b0b200ba52eaab54"
+    },
+    {
+      "name": "SM_DressDripTray",
+      "file": "SM_DressDripTray.fbx",
+      "triangles": 188,
+      "vertices": 104,
+      "bounds_m": {
+        "min": [
+          -0.550000011920929,
+          -0.20000000298023224,
+          0.003999999724328518
+        ],
+        "max": [
+          0.550000011920929,
+          0.20000000298023224,
+          0.07000000029802322
+        ]
+      },
+      "dimensions_m": [
+        1.100000023841858,
+        0.4000000059604645,
+        0.0660000005736947
+      ],
+      "expected_dimensions_cm": [
+        110.0,
+        40.0,
+        6.6
+      ],
+      "origin": "Floor Z=0.",
+      "front": "Blender local -Y",
+      "placement": "Under a pipe joint on the left wall. One or two.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "e96f352075bd460c635aefae6942078ab92fa2068cc194ad8c283a5ba5f748ed"
+    },
+    {
+      "name": "SM_DressDownspout",
+      "file": "SM_DressDownspout.fbx",
+      "triangles": 120,
+      "vertices": 78,
+      "bounds_m": {
+        "min": [
+          -0.05999999865889549,
+          -0.13075599074363708,
+          0.060861438512802124
+        ],
+        "max": [
+          0.09663067758083344,
+          0.04999999701976776,
+          1.7000000476837158
+        ]
+      },
+      "dimensions_m": [
+        0.15663067623972893,
+        0.18075598776340485,
+        1.6391386091709137
+      ],
+      "expected_dimensions_cm": [
+        15.66,
+        18.08,
+        163.91
+      ],
+      "origin": "Wall straps on +Y. Outlet turns toward -Y.",
+      "front": "Blender local -Y",
+      "placement": "Vertical drop at a wall, outlet above the gutter. Not a second pipe rack.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "1814ee2947c93589bd7ffd24c812c34fba5be44f213c229fda6a2ca178218318"
+    },
+    {
+      "name": "SM_DressMeter",
+      "file": "SM_DressMeter.fbx",
+      "triangles": 152,
+      "vertices": 96,
+      "bounds_m": {
+        "min": [
+          -0.14000000059604645,
+          -0.056000009179115295,
+          0.01000000536441803
+        ],
+        "max": [
+          0.2800000011920929,
+          0.09999999403953552,
+          0.3500000238418579
+        ]
+      },
+      "dimensions_m": [
+        0.42000000178813934,
+        0.15600000321865082,
+        0.3400000184774399
+      ],
+      "expected_dimensions_cm": [
+        42.0,
+        15.6,
+        34.0
+      ],
+      "origin": "Face -Y. Glass is dark.",
+      "front": "Blender local -Y",
+      "placement": "One gauge on the pipe side. The face stays unlit.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "cd37179f6753d2059c6d398e79fa54ae558159cbc01225df7ecd83c5c1b3942d"
+    },
+    {
+      "name": "SM_DressClamp",
+      "file": "SM_DressClamp.fbx",
+      "triangles": 112,
+      "vertices": 64,
+      "bounds_m": {
+        "min": [
+          -0.07000000029802322,
+          -0.07000000774860382,
+          0.009999997913837433
+        ],
+        "max": [
+          0.07000000029802322,
+          0.04100000113248825,
+          0.10999999940395355
+        ]
+      },
+      "dimensions_m": [
+        0.14000000059604645,
+        0.11100000888109207,
+        0.10000000149011612
+      ],
+      "expected_dimensions_cm": [
+        14.0,
+        11.1,
+        10.0
+      ],
+      "origin": "Plate on +Y.",
+      "front": "Blender local -Y",
+      "placement": "Single pipe clamp. Use to break the rhythm of a run.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "9440fea4e3744721d61cbad4e73904bea134cbcb129becf2389ddfd2bb37cd09"
+    },
+    {
+      "name": "SM_DressEscutcheon",
+      "file": "SM_DressEscutcheon.fbx",
+      "triangles": 160,
+      "vertices": 92,
+      "bounds_m": {
+        "min": [
+          -0.1599999964237213,
+          -0.028999999165534973,
+          0.0
+        ],
+        "max": [
+          0.1599999964237213,
+          0.009999999776482582,
+          0.3199999928474426
+        ]
+      },
+      "dimensions_m": [
+        0.3199999928474426,
+        0.038999998942017555,
+        0.3199999928474426
+      ],
+      "expected_dimensions_cm": [
+        32.0,
+        3.9,
+        32.0
+      ],
+      "origin": "Plate in the Y=0 plane. Pipe read faces -Y.",
+      "front": "Blender local -Y",
+      "placement": "Where a pipe passes through a panel. The dark cylinder is the penetration, not a hole you can enter.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "d5800caa1a8ed2da1a6ba4d02658c2e5772d1f2a0b54b57ecfa565368cb32784"
+    },
+    {
+      "name": "SM_DressDuctBoot",
+      "file": "SM_DressDuctBoot.fbx",
+      "triangles": 180,
+      "vertices": 96,
+      "bounds_m": {
+        "min": [
+          -0.3700000047683716,
+          -0.25999999046325684,
+          -0.019999995827674866
+        ],
+        "max": [
+          0.3700000047683716,
+          0.23499999940395355,
+          0.5
+        ]
+      },
+      "dimensions_m": [
+        0.7400000095367432,
+        0.4949999898672104,
+        0.5199999958276749
+      ],
+      "expected_dimensions_cm": [
+        74.0,
+        49.5,
+        52.0
+      ],
+      "origin": "Flange on +Y, round outlet toward -Y.",
+      "front": "Blender local -Y",
+      "placement": "A short duct transition. Not another fan and not a ceiling run.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative. Keep it outside the combat footprint.",
+      "sha256": "6aa7c3e69eaae0b9e66204109d1945ba2dcdc279d202b29a7437d80572f93a2c"
+    }
+  ],
+  "fbx_roundtrip_checks": [
+    {
+      "name": "SM_DressPanel",
+      "dimensions_m": [
+        2.4000000953674316,
+        0.13900022208690643,
+        3.200000047683716
+      ],
+      "max_dimension_error_m": 2.086162567138672e-07,
+      "triangles": 432,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressPanelAlt",
+      "dimensions_m": [
+        2.4000000953674316,
+        0.13900022208690643,
+        3.200000047683716
+      ],
+      "max_dimension_error_m": 2.086162567138672e-07,
+      "triangles": 432,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressPanelNarrow",
+      "dimensions_m": [
+        1.2000000476837158,
+        0.13900011777877808,
+        3.200000047683716
+      ],
+      "max_dimension_error_m": 1.043081283569336e-07,
+      "triangles": 432,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressPanelTall",
+      "dimensions_m": [
+        2.4000000953674316,
+        0.14400020986795425,
+        4.800000190734863
+      ],
+      "max_dimension_error_m": 2.086162567138672e-07,
+      "triangles": 472,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressRib",
+      "dimensions_m": [
+        0.26000000536441803,
+        0.17800002545118332,
+        3.200000047683716
+      ],
+      "max_dimension_error_m": 2.9802322387695312e-08,
+      "triangles": 168,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressRepairPlate",
+      "dimensions_m": [
+        0.8199999928474426,
+        0.04800007352605462,
+        0.5199999809265137
+      ],
+      "max_dimension_error_m": 7.310882210731506e-08,
+      "triangles": 168,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressWallSpall",
+      "dimensions_m": [
+        0.9200000166893005,
+        0.10500006750226021,
+        0.6000000238418579
+      ],
+      "max_dimension_error_m": 7.82310962677002e-08,
+      "triangles": 176,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressConduitStraight",
+      "dimensions_m": [
+        2.0,
+        0.2400001734495163,
+        0.11098076682537794
+      ],
+      "max_dimension_error_m": 1.7881393432617188e-07,
+      "triangles": 232,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressConduitElbow",
+      "dimensions_m": [
+        0.4922988563776016,
+        0.2700689807534218,
+        0.12598076835274696
+      ],
+      "max_dimension_error_m": 3.725290298461914e-08,
+      "triangles": 96,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressConduitTee",
+      "dimensions_m": [
+        0.7600000202655792,
+        0.3720000684261322,
+        0.1340000033378601
+      ],
+      "max_dimension_error_m": 6.332993507385254e-08,
+      "triangles": 160,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressJunctionBox",
+      "dimensions_m": [
+        0.7200000286102295,
+        0.18900005519390106,
+        0.41999998688697815
+      ],
+      "max_dimension_error_m": 5.960464477539063e-08,
+      "triangles": 228,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressCableLoop",
+      "dimensions_m": [
+        0.8999999761581421,
+        0.14670244231820107,
+        0.5505980923771858
+      ],
+      "max_dimension_error_m": 7.82310962677002e-08,
+      "triangles": 144,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressCableDrop",
+      "dimensions_m": [
+        0.10000001266598701,
+        0.12000000849366188,
+        1.4301889948546886
+      ],
+      "max_dimension_error_m": 1.1175870895385742e-08,
+      "triangles": 184,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressPipeElbow",
+      "dimensions_m": [
+        0.53231480717659,
+        0.1930357664823532,
+        0.49231478571891785
+      ],
+      "max_dimension_error_m": 4.470348358154297e-08,
+      "triangles": 324,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressFlangeJoint",
+      "dimensions_m": [
+        0.40000003576278687,
+        0.19498561322689056,
+        0.20000002008660767
+      ],
+      "max_dimension_error_m": 2.9802322387695312e-08,
+      "triangles": 336,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressPipeHanger",
+      "dimensions_m": [
+        0.24000000208616257,
+        0.1300000175833702,
+        0.38230809569358826
+      ],
+      "max_dimension_error_m": 1.862645149230957e-08,
+      "triangles": 100,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressBreaker",
+      "dimensions_m": [
+        0.5998311936855316,
+        0.21000006049871445,
+        0.831803560256958
+      ],
+      "max_dimension_error_m": 5.21540641784668e-08,
+      "triangles": 176,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressGangBox",
+      "dimensions_m": [
+        0.3400000035762787,
+        0.07900003157556057,
+        0.14000000804662704
+      ],
+      "max_dimension_error_m": 2.9802322387695312e-08,
+      "triangles": 236,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressBundle",
+      "dimensions_m": [
+        1.8001866340637207,
+        0.09000016003847122,
+        0.07000000029802322
+      ],
+      "max_dimension_error_m": 1.564621925354004e-07,
+      "triangles": 192,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressThreshold",
+      "dimensions_m": [
+        1.7999999523162842,
+        0.3440001457929611,
+        0.02800000086426735
+      ],
+      "max_dimension_error_m": 1.4901161193847656e-07,
+      "triangles": 104,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressAnchor",
+      "dimensions_m": [
+        0.3800000250339508,
+        0.3800000250339508,
+        0.05349999666213989
+      ],
+      "max_dimension_error_m": 2.9802322387695312e-08,
+      "triangles": 124,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressDrainBox",
+      "dimensions_m": [
+        0.5200000405311584,
+        0.5200000405311584,
+        0.0850000036880374
+      ],
+      "max_dimension_error_m": 5.960464477539063e-08,
+      "triangles": 352,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressKicker",
+      "dimensions_m": [
+        1.2000000476837158,
+        0.18000011146068573,
+        0.14000000059604645
+      ],
+      "max_dimension_error_m": 1.043081283569336e-07,
+      "triangles": 88,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressLouver",
+      "dimensions_m": [
+        0.9200000166893005,
+        0.12891244143247604,
+        0.7000000178813934
+      ],
+      "max_dimension_error_m": 7.82310962677002e-08,
+      "triangles": 264,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressHatch",
+      "dimensions_m": [
+        0.7799999713897705,
+        0.13000007718801498,
+        0.7799999415874481
+      ],
+      "max_dimension_error_m": 7.450580596923828e-08,
+      "triangles": 192,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressHoseCoil",
+      "dimensions_m": [
+        0.4648391902446747,
+        0.2693435549736023,
+        0.6263268161565065
+      ],
+      "max_dimension_error_m": 3.725290298461914e-08,
+      "triangles": 564,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressColumn",
+      "dimensions_m": [
+        0.7200000882148743,
+        0.7200000882148743,
+        4.210000038146973
+      ],
+      "max_dimension_error_m": 5.960464477539063e-08,
+      "triangles": 344,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressHeader",
+      "dimensions_m": [
+        3.4000000953674316,
+        0.46000030636787415,
+        0.3699999898672104
+      ],
+      "max_dimension_error_m": 2.980232238769531e-07,
+      "triangles": 220,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressCornerGuard",
+      "dimensions_m": [
+        0.09800001233816147,
+        0.1060000117868185,
+        1.2000000476837158
+      ],
+      "max_dimension_error_m": 7.450580596923828e-09,
+      "triangles": 148,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressUnistrut",
+      "dimensions_m": [
+        2.0,
+        0.04100017622113228,
+        0.04100000113248825
+      ],
+      "max_dimension_error_m": 1.7508864402770996e-07,
+      "triangles": 104,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressDripTray",
+      "dimensions_m": [
+        1.100000023841858,
+        0.40000009536743164,
+        0.0660000005736947
+      ],
+      "max_dimension_error_m": 8.940696716308594e-08,
+      "triangles": 188,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressDownspout",
+      "dimensions_m": [
+        0.15663069486618042,
+        0.18075599521398544,
+        1.6391386091709137
+      ],
+      "max_dimension_error_m": 1.862645149230957e-08,
+      "triangles": 120,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressMeter",
+      "dimensions_m": [
+        0.42000001668930054,
+        0.1560000367462635,
+        0.3400000184774399
+      ],
+      "max_dimension_error_m": 3.3527612686157227e-08,
+      "triangles": 152,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressClamp",
+      "dimensions_m": [
+        0.14000000804662704,
+        0.11100002378225327,
+        0.10000000149011612
+      ],
+      "max_dimension_error_m": 1.4901161193847656e-08,
+      "triangles": 112,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressEscutcheon",
+      "dimensions_m": [
+        0.3199999928474426,
+        0.03900002781301737,
+        0.3199999928474426
+      ],
+      "max_dimension_error_m": 2.8870999813079834e-08,
+      "triangles": 160,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_DressDuctBoot",
+      "dimensions_m": [
+        0.7400000691413879,
+        0.49500004947185516,
+        0.5199999958276749
+      ],
+      "max_dimension_error_m": 5.960464477539063e-08,
+      "triangles": 180,
+      "material_slots": 5,
+      "passed": true
+    }
+  ],
+  "not_included": [
+    "ceiling slab",
+    "valve wheel",
+    "locking wheel",
+    "second tank",
+    "second crate",
+    "barrel",
+    "luminous sign",
+    "baked teal",
+    "baked player pool"
+  ],
+  "limits": "On disk only. Place outside the combat footprint. No collision. Repeat panels and fittings in clusters, with gaps, rather than one continuous stripe."
+}

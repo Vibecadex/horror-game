@@ -1,0 +1,212 @@
+{
+  "passed": true,
+  "visual_acceptance": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "lights_fog_exposure_camera_combat_unchanged": true,
+  "mesh_replaced": false,
+  "textures": [
+    {
+      "name": "T_AI_Floor_Color",
+      "kind": "color",
+      "path": "/Game/TeddyEncounter/Arena/T_AI_Floor_Color.T_AI_Floor_Color",
+      "srgb": true,
+      "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+    },
+    {
+      "name": "T_AI_Floor_Normal",
+      "kind": "normal",
+      "path": "/Game/TeddyEncounter/Arena/T_AI_Floor_Normal.T_AI_Floor_Normal",
+      "srgb": false,
+      "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+    },
+    {
+      "name": "T_AI_Floor_Roughness",
+      "kind": "rough",
+      "path": "/Game/TeddyEncounter/Arena/T_AI_Floor_Roughness.T_AI_Floor_Roughness",
+      "srgb": false,
+      "compression": "<TextureCompressionSettings.TC_GRAYSCALE: 3>"
+    },
+    {
+      "name": "T_AI_Plush_Normal",
+      "kind": "normal",
+      "path": "/Game/TeddyEncounter/Arena/T_AI_Plush_Normal.T_AI_Plush_Normal",
+      "srgb": false,
+      "compression": "<TextureCompressionSettings.TC_NORMALMAP: 1>"
+    },
+    {
+      "name": "T_AI_Plush_Roughness",
+      "kind": "rough",
+      "path": "/Game/TeddyEncounter/Arena/T_AI_Plush_Roughness.T_AI_Plush_Roughness",
+      "srgb": false,
+      "compression": "<TextureCompressionSettings.TC_GRAYSCALE: 3>"
+    },
+    {
+      "name": "T_AI_Decal_Crack",
+      "kind": "decal",
+      "path": "/Game/TeddyEncounter/Arena/T_AI_Decal_Crack.T_AI_Decal_Crack",
+      "srgb": true,
+      "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+    },
+    {
+      "name": "T_AI_Decal_Stain",
+      "kind": "decal",
+      "path": "/Game/TeddyEncounter/Arena/T_AI_Decal_Stain.T_AI_Decal_Stain",
+      "srgb": true,
+      "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+    },
+    {
+      "name": "T_AI_Decal_Scuff",
+      "kind": "decal",
+      "path": "/Game/TeddyEncounter/Arena/T_AI_Decal_Scuff.T_AI_Decal_Scuff",
+      "srgb": true,
+      "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+    },
+    {
+      "name": "T_AI_Decal_Debris",
+      "kind": "decal",
+      "path": "/Game/TeddyEncounter/Arena/T_AI_Decal_Debris.T_AI_Decal_Debris",
+      "srgb": true,
+      "compression": "<TextureCompressionSettings.TC_DEFAULT: 0>"
+    }
+  ],
+  "materials": [
+    {
+      "name": "M_QA_Concrete",
+      "path": "/Game/TeddyEncounter/Materials/M_QA_Concrete.M_QA_Concrete",
+      "uv": [
+        9.0,
+        7.0
+      ],
+      "albedo_scale": 0.2
+    },
+    {
+      "name": "M_QA_TeddyCloth",
+      "path": "/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth",
+      "shading_model": "MSM_DEFAULT_LIT",
+      "cloth_pin": null,
+      "base_color": "/Game/TeddyEncounter/Teddy/T_Teddy_BaseColor.T_Teddy_BaseColor",
+      "fiber_uv": [
+        7.5,
+        6.2
+      ],
+      "normal_strength": 0.62
+    },
+    {
+      "name": "M_TeddyCloth",
+      "path": "/Game/TeddyEncounter/Materials/M_TeddyCloth.M_TeddyCloth",
+      "shading_model": "MSM_DEFAULT_LIT",
+      "cloth_pin": null,
+      "base_color": "/Game/TeddyEncounter/Teddy/T_Teddy_BaseColor.T_Teddy_BaseColor",
+      "fiber_uv": [
+        7.5,
+        6.2
+      ],
+      "normal_strength": 0.62
+    },
+    {
+      "name": "M_AI_Decal_Crack",
+      "path": "/Game/TeddyEncounter/Materials/M_AI_Decal_Crack.M_AI_Decal_Crack",
+      "domain": "MD_DEFERRED_DECAL",
+      "color_scale": 0.18,
+      "opacity_scale": 0.5
+    },
+    {
+      "name": "M_AI_Decal_Stain",
+      "path": "/Game/TeddyEncounter/Materials/M_AI_Decal_Stain.M_AI_Decal_Stain",
+      "domain": "MD_DEFERRED_DECAL",
+      "color_scale": 0.28,
+      "opacity_scale": 0.46
+    },
+    {
+      "name": "M_AI_Decal_Scuff",
+      "path": "/Game/TeddyEncounter/Materials/M_AI_Decal_Scuff.M_AI_Decal_Scuff",
+      "domain": "MD_DEFERRED_DECAL",
+      "color_scale": 0.24,
+      "opacity_scale": 0.4
+    },
+    {
+      "name": "M_AI_Decal_Debris",
+      "path": "/Game/TeddyEncounter/Materials/M_AI_Decal_Debris.M_AI_Decal_Debris",
+      "domain": "MD_DEFERRED_DECAL",
+      "color_scale": 0.22,
+      "opacity_scale": 0.44
+    }
+  ],
+  "decals": [
+    {
+      "label": "TE_AI_Decal_01",
+      "material": "Crack",
+      "location": [
+        80,
+        360,
+        35.0
+      ],
+      "yaw": 18,
+      "decal_size": [
+        220,
+        760,
+        240
+      ]
+    },
+    {
+      "label": "TE_AI_Decal_02",
+      "material": "Stain",
+      "location": [
+        -460,
+        40,
+        35.0
+      ],
+      "yaw": -33,
+      "decal_size": [
+        200,
+        520,
+        460
+      ]
+    },
+    {
+      "label": "TE_AI_Decal_03",
+      "material": "Scuff",
+      "location": [
+        700,
+        -60,
+        35.0
+      ],
+      "yaw": 72,
+      "decal_size": [
+        180,
+        340,
+        220
+      ]
+    },
+    {
+      "label": "TE_AI_Decal_04",
+      "material": "Debris",
+      "location": [
+        -40,
+        -560,
+        35.0
+      ],
+      "yaw": 148,
+      "decal_size": [
+        200,
+        400,
+        320
+      ]
+    }
+  ],
+  "notes": [
+    "M_QA_TeddyCloth cloth shading fallback: int() argument must be a string, a bytes-like object or a real number, not 'MaterialProperty'",
+    "M_TeddyCloth cloth shading fallback: int() argument must be a string, a bytes-like object or a real number, not 'MaterialProperty'",
+    "BP_TeddyBoss.CharacterMesh0 override -> M_QA_TeddyCloth",
+    "BP_Stitchling.CharacterMesh0 override -> M_QA_TeddyCloth"
+  ],
+  "floor_top_z": -5.0,
+  "floor_material": "/Game/TeddyEncounter/Materials/M_QA_Concrete.M_QA_Concrete",
+  "decal_labels": [
+    "TE_AI_Decal_01",
+    "TE_AI_Decal_02",
+    "TE_AI_Decal_03",
+    "TE_AI_Decal_04"
+  ],
+  "note": "Surfaces saved and the map reopened. Lighting and rendered grade are a later plate."
+}

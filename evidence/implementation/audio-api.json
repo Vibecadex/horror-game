@@ -1,0 +1,8 @@
+{
+  "start_recording_output": "X.start_recording_output(world_context_object, expected_duration, submix_to_record=None) -> None\r\nStart recording audio. By leaving the Submix To Record field blank, you can record the master output of the game.\r\n\r\nArgs:\r\n    world_context_object (Object): \r\n    expected_duration (float): \r\n    submix_to_record (SoundSubmix):",
+  "stop_recording_output": "X.stop_recording_output(world_context_object, export_type, name, path, submix_to_record=None, existing_sound_wave_to_overwrite=None) -> SoundWave\r\nStop recording audio. Path can be absolute, or relative (to the /Saved/BouncedWavFiles folder). By leaving the Submix To Record field blank, you can record the master output of the game.\r\n\r\nArgs:\r\n    world_context_object (Object): \r\n    export_type (AudioRecordingExportType): \r\n    name (str): \r\n    path (str): \r\n    submix_to_record (SoundSubmix): \r\n    existing_sound_wave_to_overwrite (SoundWave): \r\n\r\nReturns:\r\n    SoundWave:",
+  "enum": [
+    "SOUND_WAVE",
+    "WAV_FILE"
+  ]
+}

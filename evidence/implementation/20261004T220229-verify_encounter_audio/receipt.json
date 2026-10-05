@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "game_sound_before": true,
+  "components": [
+    {
+      "name": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_CombatCamera_C_0.RoomTone",
+      "sound": "<Object '/Game/TeddyEncounter/Audio/RoomTone.RoomTone' (0x000001E2EC0F2800) Class 'SoundWave'>",
+      "volume": 0.5,
+      "playing": true,
+      "active": true
+    }
+  ],
+  "sounds": [
+    {
+      "name": "Rifle",
+      "duration": 0.1899999976158142
+    },
+    {
+      "name": "Slam",
+      "duration": 0.800000011920929
+    },
+    {
+      "name": "RoomTone",
+      "duration": 16.0
+    }
+  ],
+  "game_sound_enabled": true
+}

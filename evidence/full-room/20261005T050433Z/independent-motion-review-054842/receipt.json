@@ -1,0 +1,88 @@
+{
+  "method": "Independent read-only review frames from existing final native recording; no game or asset writes. No audio audition or full-speed playback claimed.",
+  "source": "C:\\Projects\\to-deploy\\horror-game\\evidence\\full-room\\20261005T050433Z\\native-motion-20261005T054842\\native-motion.mp4",
+  "source_sha256": "89d1ec4e6b97305c049b44bd6b2c885bf3a2c68fca8ba82142ffcbd4bfd4f05b",
+  "frames": [
+    {
+      "requested_seconds": 0,
+      "file": "motion-00s.png",
+      "size": [
+        1280,
+        720
+      ],
+      "exit_code": 0
+    },
+    {
+      "requested_seconds": 2,
+      "file": "motion-02s.png",
+      "size": [
+        1280,
+        720
+      ],
+      "exit_code": 0
+    },
+    {
+      "requested_seconds": 4,
+      "file": "motion-04s.png",
+      "size": [
+        1280,
+        720
+      ],
+      "exit_code": 0
+    },
+    {
+      "requested_seconds": 6,
+      "file": "motion-06s.png",
+      "size": [
+        1280,
+        720
+      ],
+      "exit_code": 0
+    },
+    {
+      "requested_seconds": 8,
+      "file": "motion-08s.png",
+      "size": [
+        1280,
+        720
+      ],
+      "exit_code": 0
+    },
+    {
+      "requested_seconds": 10,
+      "file": "motion-10s.png",
+      "size": [
+        1280,
+        720
+      ],
+      "exit_code": 0
+    },
+    {
+      "requested_seconds": 12,
+      "file": "motion-12s.png",
+      "size": [
+        1280,
+        720
+      ],
+      "exit_code": 0
+    },
+    {
+      "requested_seconds": 14,
+      "file": "motion-14s.png",
+      "size": [
+        1280,
+        720
+      ],
+      "exit_code": 0
+    },
+    {
+      "requested_seconds": 16,
+      "file": "motion-16s.png",
+      "size": [
+        1280,
+        720
+      ],
+      "exit_code": 0
+    }
+  ]
+}

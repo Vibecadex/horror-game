@@ -1,0 +1,271 @@
+{
+  "command": [
+    "C:/Users/4elut/scoop/shims/ffmpeg.exe",
+    "-v",
+    "error",
+    "-xerror",
+    "-ss",
+    "14.0",
+    "-i",
+    "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity\\20261005T070301Z\\native-motion-20261005T092830\\native-motion.mp4",
+    "-t",
+    "5.0",
+    "-vf",
+    "fps=10",
+    "-an",
+    "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity-review\\final\\motion\\death-10fps\\frame-%03d.png"
+  ],
+  "sample_count": 50,
+  "records": [
+    {
+      "approximate_seconds": 14.0,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-001.png",
+      "sha256": "3fe36bc27af55714b91e701471b8d07e9a290f7b8a3ad26cbe88d15bfc61a23c"
+    },
+    {
+      "approximate_seconds": 14.1,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-002.png",
+      "sha256": "00b6ba4ec5a5e7d0e1c542b236c2cb45cb204d147ca70338dfccc3ddf241bfa6"
+    },
+    {
+      "approximate_seconds": 14.2,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-003.png",
+      "sha256": "456107a5777a3ac72660c312053fd8292f5bd1a33c2d30c314651f4241379769"
+    },
+    {
+      "approximate_seconds": 14.3,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-004.png",
+      "sha256": "747cbcff98bc45d7a2700714fb295d45565f2ed4ac24c024211f2fc8e3dfc60f"
+    },
+    {
+      "approximate_seconds": 14.4,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-005.png",
+      "sha256": "b3d3be2c291f4a65368de11bc1509c5ce42fca8b854e2fb31cfe513a5f4f9cd4"
+    },
+    {
+      "approximate_seconds": 14.5,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-006.png",
+      "sha256": "faa585c05d19c4740f588d05563a48bfda6544ddd7961d261be2d83ca785a878"
+    },
+    {
+      "approximate_seconds": 14.6,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-007.png",
+      "sha256": "d205745b0e2180795662f1939db5101cb3554f3f0d2b2defdc3ea27f2519eabb"
+    },
+    {
+      "approximate_seconds": 14.7,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-008.png",
+      "sha256": "03d25d5a2939fdafe502e43ce49ff5ecdb561eca70fbed7038bfca9f94e89114"
+    },
+    {
+      "approximate_seconds": 14.8,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-009.png",
+      "sha256": "064a8c1291f9d8a6c76fc01c222cd514f8ca1a1bf41f42a41f72beb1206b5e51"
+    },
+    {
+      "approximate_seconds": 14.9,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-010.png",
+      "sha256": "521c9d9b2518382f8c4a2939bfbfe258e7b7525bf441630a18ff91c7002de7b4"
+    },
+    {
+      "approximate_seconds": 15.0,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-011.png",
+      "sha256": "4a383ffa7c6f24d5198021f2a6528a03a1aaa0a1a4300e5085387f3af5cea464"
+    },
+    {
+      "approximate_seconds": 15.1,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-012.png",
+      "sha256": "92c117bd6fe6581b08e4469a3639811c5b564debf1648c1f3b7ee22ea0326816"
+    },
+    {
+      "approximate_seconds": 15.2,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-013.png",
+      "sha256": "76f4e190692bdf602abbe36f75513eccd90242cc6cbbef900075e06242def04c"
+    },
+    {
+      "approximate_seconds": 15.3,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-014.png",
+      "sha256": "04c8f775ed79487edb08429c28a1874e4d431ce0e9949781582f003eb03eea5f"
+    },
+    {
+      "approximate_seconds": 15.4,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-015.png",
+      "sha256": "c661500bb45fb6729e1651afe8a411911bef6cb1782568a62de1b7dc9ddecbbf"
+    },
+    {
+      "approximate_seconds": 15.5,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-016.png",
+      "sha256": "b4ea4abbdce9e93189d02516bfc61a33f8c9a95fbce8b11c544c5d808cf19a99"
+    },
+    {
+      "approximate_seconds": 15.6,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-017.png",
+      "sha256": "ae6d85da64ab71dc5e0c26427aec08fff42b26ee6b06aecfe4e768bc47aa85c8"
+    },
+    {
+      "approximate_seconds": 15.7,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-018.png",
+      "sha256": "04086fe641cb9e9a2d2efc7c2a12d325c8a825628308b1f78472a7267cf5f487"
+    },
+    {
+      "approximate_seconds": 15.8,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-019.png",
+      "sha256": "307d86535ef2bd6922ade0bdef6512dbb695a9d1e34861008b1d7abf0827f277"
+    },
+    {
+      "approximate_seconds": 15.9,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-020.png",
+      "sha256": "caabf2dfef3eed82518f29eef0ae19931b285c47df02ef6e5b26d5f509c7a9dd"
+    },
+    {
+      "approximate_seconds": 16.0,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-021.png",
+      "sha256": "c658778927416df84e7c9193ca14fb0c1817eaea98e05e8c4cec6a396ed0b4e9"
+    },
+    {
+      "approximate_seconds": 16.1,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-022.png",
+      "sha256": "70ae3b6454bd5f301a090693dfcc0d31bdcc7fcebe6fc70b08561a83e3785373"
+    },
+    {
+      "approximate_seconds": 16.2,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-023.png",
+      "sha256": "b97922de2888a13a4120fbd2c406f0d7070a23fb1561f28ae90a16f0888068c6"
+    },
+    {
+      "approximate_seconds": 16.3,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-024.png",
+      "sha256": "8819800a589d1183f099d102886ff830dbee91a1986c1ef6cf28bf9f3430e6a8"
+    },
+    {
+      "approximate_seconds": 16.4,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-025.png",
+      "sha256": "39c30af69640a3c116cfa7ed181b3bfb641fa3fc2efbcfebe26bbd85dc872f2d"
+    },
+    {
+      "approximate_seconds": 16.5,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-026.png",
+      "sha256": "af2bf2f6db51a62160e4acc53c541cb706ec6bd651fc68891a7bf3147a11a159"
+    },
+    {
+      "approximate_seconds": 16.6,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-027.png",
+      "sha256": "ee48e4716b9e728bf95c973a2c2e1b5226f190200536d32a13917919a4ef3d6f"
+    },
+    {
+      "approximate_seconds": 16.7,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-028.png",
+      "sha256": "d369a1c7083a86283f377568fe2f4c79ca2c8ba681cccca09b5c8841e3b5c93f"
+    },
+    {
+      "approximate_seconds": 16.8,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-029.png",
+      "sha256": "e74e71fb2e9be11440f6d9d95ec2727ee4444f68664c379691de571ff5c618c1"
+    },
+    {
+      "approximate_seconds": 16.9,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-030.png",
+      "sha256": "19ab91f0c3121c253873936f25a2dfaac0a26a55d9cb09f2b3c5af36ee2c899e"
+    },
+    {
+      "approximate_seconds": 17.0,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-031.png",
+      "sha256": "4cd3c1d6af55f11b52c3e0482965360a2370ee6e984ea68541cdfe6005d687c5"
+    },
+    {
+      "approximate_seconds": 17.1,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-032.png",
+      "sha256": "f7831b7383b56776a9cb15c07fe11e26edf6906eca173fc71f23cae60a4cee65"
+    },
+    {
+      "approximate_seconds": 17.2,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-033.png",
+      "sha256": "61b1b5fea56d300d348cd93d7ce99d9d60ecbc541dc47b0eecedf07e551e4f42"
+    },
+    {
+      "approximate_seconds": 17.3,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-034.png",
+      "sha256": "ff57567dae426220b6edc27b735e4a8833071338170f460db2163260a0dfd867"
+    },
+    {
+      "approximate_seconds": 17.4,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-035.png",
+      "sha256": "63d94b46175afc74a371ca0ced9632510c75f56ea07cf06eb4ffc60ed7506bb5"
+    },
+    {
+      "approximate_seconds": 17.5,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-036.png",
+      "sha256": "d6544a532996cf1998c6d40a159704bda38678122c8cd4dfa92c95d6d28e8120"
+    },
+    {
+      "approximate_seconds": 17.6,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-037.png",
+      "sha256": "cbecf832850f75a00d95261941f4d85401f6a4a5ce4ee385e93fda20d757ece4"
+    },
+    {
+      "approximate_seconds": 17.7,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-038.png",
+      "sha256": "712a4b906263919e4ef3d00395439fdc82e3b14d3beb6f2ff7d8506c5aa12202"
+    },
+    {
+      "approximate_seconds": 17.8,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-039.png",
+      "sha256": "8308cb01161aa3da0d52851625d106eea3dee54847ccb74b5da5883c497b759a"
+    },
+    {
+      "approximate_seconds": 17.9,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-040.png",
+      "sha256": "5426070bde501bd993f86c97bda6d488aa46b79c1884ee11e1ef9bf4ca2a500d"
+    },
+    {
+      "approximate_seconds": 18.0,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-041.png",
+      "sha256": "555935e948496500a8481a092553d0926b02cd45fdcda7da2e4cb3c53592a281"
+    },
+    {
+      "approximate_seconds": 18.1,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-042.png",
+      "sha256": "90115cb05fad54062da900df9348c86e465999f05ddfa0507e6afe59e3440ca8"
+    },
+    {
+      "approximate_seconds": 18.2,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-043.png",
+      "sha256": "30eaaa462e8f20b700a8aef4a1c535062c4c6384efedf8e0c0753f7052f9704d"
+    },
+    {
+      "approximate_seconds": 18.3,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-044.png",
+      "sha256": "0ebd55ca3c72526daea3799b420b828bcbf7d5aa909cac1416c1606ebe8af4b8"
+    },
+    {
+      "approximate_seconds": 18.4,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-045.png",
+      "sha256": "cd5cb147d9a7f418b2553680b8361a397bbd5208d8acf179a122b3533a042948"
+    },
+    {
+      "approximate_seconds": 18.5,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-046.png",
+      "sha256": "79724da26d0d15fc9c2c8c1533cd6cf1d9d93449c2e168e3d9b92a9dba93b526"
+    },
+    {
+      "approximate_seconds": 18.6,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-047.png",
+      "sha256": "0c0e19cc98bf486e27db9384d81c2d96fbafa527352074a8d0dc52acc627e7fd"
+    },
+    {
+      "approximate_seconds": 18.7,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-048.png",
+      "sha256": "d8ec793de4a0b06946f5c82a177d6c8e2585830aebc2e199e6ef380e4f7ed0b0"
+    },
+    {
+      "approximate_seconds": 18.8,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-049.png",
+      "sha256": "1c9061909622ea02e662d56150c5db8fe7a64260b715b8a55d14e4dc669f4e07"
+    },
+    {
+      "approximate_seconds": 18.9,
+      "path": "evidence\\parity-review\\final\\motion\\death-10fps\\frame-050.png",
+      "sha256": "86b07a0b3a7d98aa1d5924807eef76baa02d939c1599b098dbadc8c0a42db097"
+    }
+  ]
+}

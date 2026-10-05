@@ -1,0 +1,30 @@
+{
+  "comparison.jpg": {
+    "size": [
+      2560,
+      770
+    ],
+    "sha256": "540a44d83e00a9d7e30c4935494536b1c5766ab2ef4caf0b1ecc7f351c9cd098"
+  },
+  "regions.jpg": {
+    "size": [
+      2560,
+      770
+    ],
+    "sha256": "ca5cbaa55f8a0a7ce8dfc288569a659af9c32206d51b5bb0225eb9670d384b58"
+  },
+  "details.png": {
+    "size": [
+      960,
+      1820
+    ],
+    "sha256": "8cc8c1732da16a00dae5f679aa01e3c58195c1a09c1a7f4f542d666a089c1ff4"
+  },
+  "luminance.png": {
+    "size": [
+      2560,
+      770
+    ],
+    "sha256": "679c947b7ab7a18a852ad61e4c3cbb3359636fcb19792d7bcedbc33cfd6cac2f"
+  }
+}

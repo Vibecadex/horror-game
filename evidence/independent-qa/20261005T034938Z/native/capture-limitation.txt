@@ -1,0 +1,1 @@
+Direct GDI capture by game window title returned a black surface. The screenshot helper captured the rendered game correctly from its visible client area. No test inputs were sent in this first attempt; it timed out waiting for inspection and closed its game cleanly. The replacement run captures only the owned visible game rectangle.

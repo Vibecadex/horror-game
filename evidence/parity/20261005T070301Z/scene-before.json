@@ -1,0 +1,988 @@
+{
+  "actors": [
+    {
+      "label": "TE_ArenaFloor",
+      "class": "StaticMeshActor",
+      "location": "<Struct 'Vector' (0x0000015707FE5050) {x: 0.000000, y: 0.000000, z: -55.000000}>",
+      "rotation": "<Struct 'Rotator' (0x0000015707FE5050) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x0000015707FE5050) {x: 60.000000, y: 60.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "StaticMeshComponent0",
+          "class": "StaticMeshComponent",
+          "static_mesh": "<Object '/Engine/BasicShapes/Cube.Cube' (0x00000156D0023800) Class 'StaticMesh'>",
+          "relative_location": "<Struct 'Vector' (0x00000156BBFC0180) {x: 0.000000, y: 0.000000, z: -55.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156BBFC0198) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156BBFC01B0) {x: 60.000000, y: 60.000000, z: 1.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_RedPractical",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x00000156F6EF1870) {x: -2360.000000, y: -2180.000000, z: 190.000000}>",
+      "rotation": "<Struct 'Rotator' (0x00000156F6EF1870) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x00000156F6EF1870) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "0.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570D3AF2B8) {b: 29, g: 44, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "1000.0",
+          "source_radius": "0.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "1.0",
+          "relative_location": "<Struct 'Vector' (0x000001570D3AF180) {x: -2360.000000, y: -2180.000000, z: 190.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570D3AF198) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570D3AF1B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000157125BEF80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000157125BEF98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000157125BEFB0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_RedPractical",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x00000156F6F196E0) {x: -2360.000000, y: 2180.000000, z: 190.000000}>",
+      "rotation": "<Struct 'Rotator' (0x00000156F6F196E0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x00000156F6F196E0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "0.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570D3AFCB8) {b: 29, g: 44, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "1000.0",
+          "source_radius": "0.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "1.0",
+          "relative_location": "<Struct 'Vector' (0x000001570D3AFB80) {x: -2360.000000, y: 2180.000000, z: 190.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570D3AFB98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570D3AFBB0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000157125BF680) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000157125BF698) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000157125BF6B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_RedPractical",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570805B8F0) {x: -160.000000, y: -2180.000000, z: 190.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570805B8F0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570805B8F0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "0.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA6BB8) {b: 29, g: 44, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "1000.0",
+          "source_radius": "0.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "1.0",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA6A80) {x: -160.000000, y: -2180.000000, z: 190.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA6A98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA6AB0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x000001570DA8A280) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DA8A298) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DA8A2B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_RedPractical",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570805B9E0) {x: -160.000000, y: 2180.000000, z: 190.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570805B9E0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570805B9E0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "0.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA9DB8) {b: 29, g: 44, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "1000.0",
+          "source_radius": "0.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "1.0",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA9C80) {x: -160.000000, y: 2180.000000, z: 190.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA9C98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA9CB0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156EDA48D80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156EDA48D98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156EDA48DB0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_RedPractical",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570805BB20) {x: 2040.000000, y: -2180.000000, z: 190.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570805BB20) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570805BB20) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "0.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAAA7B8) {b: 29, g: 44, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "1000.0",
+          "source_radius": "0.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "1.0",
+          "relative_location": "<Struct 'Vector' (0x000001570DAAA680) {x: 2040.000000, y: -2180.000000, z: 190.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAAA698) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAAA6B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x000001570D614E80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570D614E98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570D614EB0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_RedPractical",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570805BC60) {x: 2040.000000, y: 2180.000000, z: 190.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570805BC60) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570805BC60) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "0.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAAB1B8) {b: 29, g: 44, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "1000.0",
+          "source_radius": "0.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "1.0",
+          "relative_location": "<Struct 'Vector' (0x000001570DAAB080) {x: 2040.000000, y: 2180.000000, z: 190.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAAB098) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAAB0B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x0000015706613980) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x0000015706613998) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000157066139B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Key",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570805BDA0) {x: 0.000000, y: -300.000000, z: 1350.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570805BDA0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570805BDA0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "65000.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAABBB8) {b: 230, g: 216, r: 153, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "2300.0",
+          "source_radius": "150.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.6499999761581421",
+          "relative_location": "<Struct 'Vector' (0x000001570DAABA80) {x: 0.000000, y: -300.000000, z: 1350.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAABA98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAABAB0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x0000015706613280) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x0000015706613298) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000157066132B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Rim",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570805BF30) {x: 780.000000, y: 720.000000, z: 1250.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570805BF30) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570805BF30) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "14000.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAAC5B8) {b: 221, g: 196, r: 134, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "2050.0",
+          "source_radius": "160.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.25",
+          "relative_location": "<Struct 'Vector' (0x000001570DAAC480) {x: 780.000000, y: 720.000000, z: 1250.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAAC498) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAAC4B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x0000015706614E80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x0000015706614E98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x0000015706614EB0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_PlayerFill",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570807C0B0) {x: -750.000000, y: 300.000000, z: 1100.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570807C0B0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570807C0B0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "9000.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAACFB8) {b: 200, g: 179, r: 132, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "2150.0",
+          "source_radius": "200.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.25",
+          "relative_location": "<Struct 'Vector' (0x000001570DAACE80) {x: -750.000000, y: 300.000000, z: 1100.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAACE98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAACEB0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x0000015706614780) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x0000015706614798) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000157066147B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_LowMist",
+      "class": "ExponentialHeightFog",
+      "location": "<Struct 'Vector' (0x000001570807C240) {x: 0.000000, y: 0.000000, z: -150.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570807C240) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570807C240) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "Sprite",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x000001570DA88680) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DA88698) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DA886B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "HeightFogComponent0",
+          "class": "ExponentialHeightFogComponent",
+          "fog_density": "0.03500000014901161",
+          "fog_height_falloff": "0.15000000596046448",
+          "volumetric_fog_scattering_distribution": "0.20000000298023224",
+          "volumetric_fog_albedo": "<Struct 'Color' (0x00000156729C6744) {b: 255, g: 255, r: 255, a: 255}>",
+          "volumetric_fog_extinction_scale": "1.0",
+          "fog_inscattering_luminance": "<Struct 'LinearColor' (0x00000156729C66B4) {r: 0.012000, g: 0.027000, b: 0.033000, a: 1.000000}>",
+          "relative_location": "<Struct 'Vector' (0x00000156729C6580) {x: 0.000000, y: 0.000000, z: -150.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156729C6598) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156729C65B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_AmbientFill",
+      "class": "DirectionalLight",
+      "location": "<Struct 'Vector' (0x000001570807C470) {x: 0.000000, y: 0.000000, z: 1000.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570807C470) {pitch: -65.000000, yaw: 15.000000, roll: -0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570807C470) {x: 2.500000, y: 2.500000, z: 2.500000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "DirectionalLightComponent",
+          "intensity": "2.0",
+          "light_color": "<Struct 'Color' (0x000001570BE9F8B8) {b: 166, g: 153, r: 124, a: 255}>",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "1.0",
+          "relative_location": "<Struct 'Vector' (0x000001570BE9F780) {x: 0.000000, y: 0.000000, z: 1000.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570BE9F798) {pitch: -65.000000, yaw: 15.000000, roll: -0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570BE9F7B0) {x: 2.500000, y: 2.500000, z: 2.500000}>"
+        },
+        {
+          "name": "ArrowComponent0",
+          "class": "ArrowComponent",
+          "relative_location": "<Struct 'Vector' (0x000001570DA86380) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DA86398) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DA863B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E0180) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E0198) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E01B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_EdgeGlow",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570807C5B0) {x: -930.000000, y: -1445.000000, z: 190.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570807C5B0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570807C5B0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "0.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAAD9B8) {b: 24, g: 39, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "400.0",
+          "source_radius": "0.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "1.0",
+          "relative_location": "<Struct 'Vector' (0x000001570DAAD880) {x: -930.000000, y: -1445.000000, z: 190.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAAD898) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAAD8B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E0880) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E0898) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E08B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_EdgeGlow",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570807C6A0) {x: -930.000000, y: 1445.000000, z: 190.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570807C6A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570807C6A0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "0.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA07B8) {b: 24, g: 39, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "400.0",
+          "source_radius": "0.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "1.0",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA0680) {x: -930.000000, y: 1445.000000, z: 190.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA0698) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA06B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E0F80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E0F98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E0FB0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_EdgeGlow",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570807F800) {x: 700.000000, y: -1445.000000, z: 190.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570807F800) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570807F800) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "0.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA11B8) {b: 24, g: 39, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "400.0",
+          "source_radius": "0.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "1.0",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA1080) {x: 700.000000, y: -1445.000000, z: 190.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA1098) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA10B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E1680) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E1698) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E16B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_EdgeGlow",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570807F940) {x: 700.000000, y: 1445.000000, z: 190.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570807F940) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570807F940) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "0.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA1BB8) {b: 24, g: 39, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "400.0",
+          "source_radius": "0.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "1.0",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA1A80) {x: 700.000000, y: 1445.000000, z: 190.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA1A98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA1AB0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E1D80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E1D98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E1DB0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_FaceFill",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570807FA80) {x: -1450.000000, y: -350.000000, z: 1000.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570807FA80) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570807FA80) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "4500.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA25B8) {b: 173, g: 168, r: 142, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "2200.0",
+          "source_radius": "200.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.25",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA2480) {x: -1450.000000, y: -350.000000, z: 1000.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA2498) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA24B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E2480) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E2498) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E24B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconLight_0",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570807FBC0) {x: 682.000000, y: -1530.000000, z: 235.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570807FBC0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570807FBC0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "180.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA2FB8) {b: 31, g: 52, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "380.0",
+          "source_radius": "12.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.15000000596046448",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA2E80) {x: 682.000000, y: -1530.000000, z: 235.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA2E98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA2EB0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E3980) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E3998) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E39B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconLight_1",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570807FDF0) {x: -978.000000, y: 1530.000000, z: 235.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570807FDF0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570807FDF0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "180.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA39B8) {b: 31, g: 52, r: 255, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "380.0",
+          "source_radius": "12.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.15000000596046448",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA3880) {x: -978.000000, y: 1530.000000, z: 235.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA3898) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA38B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E4080) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E4098) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E40B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearGrazing_0",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x000001570807FF80) {x: 1430.000000, y: -620.000000, z: 510.000000}>",
+      "rotation": "<Struct 'Rotator' (0x000001570807FF80) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x000001570807FF80) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "3600.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA43B8) {b: 208, g: 202, r: 160, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "980.0",
+          "source_radius": "95.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.15000000596046448",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA4280) {x: 1430.000000, y: -620.000000, z: 510.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA4298) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA42B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E4780) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E4798) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E47B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearGrazing_1",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x00000157080941A0) {x: 1430.000000, y: 720.000000, z: 510.000000}>",
+      "rotation": "<Struct 'Rotator' (0x00000157080941A0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x00000157080941A0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "3600.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA4DB8) {b: 208, g: 202, r: 160, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "980.0",
+          "source_radius": "95.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.15000000596046448",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA4C80) {x: 1430.000000, y: 720.000000, z: 510.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA4C98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA4CB0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E4E80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E4E98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E4EB0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_LeftServiceLight",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x00000157080943D0) {x: -280.000000, y: -1440.000000, z: 470.000000}>",
+      "rotation": "<Struct 'Rotator' (0x00000157080943D0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x00000157080943D0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "4100.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA57B8) {b: 192, g: 186, r: 142, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "1020.0",
+          "source_radius": "85.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.15000000596046448",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA5680) {x: -280.000000, y: -1440.000000, z: 470.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA5698) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA56B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E5580) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E5598) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E55B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RightServiceLight",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x00000157080945B0) {x: 180.000000, y: 1430.000000, z: 450.000000}>",
+      "rotation": "<Struct 'Rotator' (0x00000157080945B0) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x00000157080945B0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "3600.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA61B8) {b: 184, g: 175, r: 139, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "930.0",
+          "source_radius": "85.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.15000000596046448",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA6080) {x: 180.000000, y: 1430.000000, z: 450.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA6098) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA60B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E5C80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E5C98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E5CB0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CornerBounce_0",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x0000015708094790) {x: -1050.000000, y: -1050.000000, z: 850.000000}>",
+      "rotation": "<Struct 'Rotator' (0x0000015708094790) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x0000015708094790) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "14500.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA75B8) {b: 175, g: 168, r: 137, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "1380.0",
+          "source_radius": "240.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.15000000596046448",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA7480) {x: -1050.000000, y: -1050.000000, z: 850.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA7498) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA74B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E6380) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E6398) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E63B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CornerBounce_1",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x0000015708094970) {x: -1050.000000, y: 1050.000000, z: 850.000000}>",
+      "rotation": "<Struct 'Rotator' (0x0000015708094970) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x0000015708094970) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "14500.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA7FB8) {b: 175, g: 168, r: 137, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "1380.0",
+          "source_radius": "240.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.15000000596046448",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA7E80) {x: -1050.000000, y: 1050.000000, z: 850.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA7E98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA7EB0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E6A80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E6A98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E6AB0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CornerBounce_2",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x0000015708094B50) {x: 1080.000000, y: -1080.000000, z: 850.000000}>",
+      "rotation": "<Struct 'Rotator' (0x0000015708094B50) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x0000015708094B50) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "14500.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA89B8) {b: 175, g: 168, r: 137, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "1380.0",
+          "source_radius": "240.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.15000000596046448",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA8880) {x: 1080.000000, y: -1080.000000, z: 850.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA8898) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA88B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E7180) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E7198) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E71B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CornerBounce_3",
+      "class": "PointLight",
+      "location": "<Struct 'Vector' (0x0000015708094D30) {x: 1080.000000, y: 1080.000000, z: 850.000000}>",
+      "rotation": "<Struct 'Rotator' (0x0000015708094D30) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+      "scale": "<Struct 'Vector' (0x0000015708094D30) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "LightComponent0",
+          "class": "PointLightComponent",
+          "intensity": "14500.0",
+          "intensity_units": "<LightUnits.CANDELAS: 1>",
+          "light_color": "<Struct 'Color' (0x000001570DAA93B8) {b: 175, g: 168, r: 137, a: 255}>",
+          "use_inverse_squared_falloff": "True",
+          "light_falloff_exponent": "8.0",
+          "attenuation_radius": "1380.0",
+          "source_radius": "240.0",
+          "cast_shadows": "True",
+          "volumetric_scattering_intensity": "0.15000000596046448",
+          "relative_location": "<Struct 'Vector' (0x000001570DAA9280) {x: 1080.000000, y: 1080.000000, z: 850.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DAA9298) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DAA92B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "BillboardComponent_0",
+          "class": "BillboardComponent",
+          "relative_location": "<Struct 'Vector' (0x00000156F79E7880) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x00000156F79E7898) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x00000156F79E78B0) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+        }
+      ]
+    },
+    {
+      "label": "TE_MainTeddy",
+      "class": "BP_TeddyBoss_C",
+      "location": "<Struct 'Vector' (0x0000015708094F10) {x: 250.000000, y: -230.000000, z: 232.000000}>",
+      "rotation": "<Struct 'Rotator' (0x0000015708094F10) {pitch: 0.000000, yaw: 121.000000, roll: -0.000000}>",
+      "scale": "<Struct 'Vector' (0x0000015708094F10) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+      "components": [
+        {
+          "name": "CollisionCylinder",
+          "class": "CapsuleComponent",
+          "relative_location": "<Struct 'Vector' (0x000001570DA81D80) {x: 250.000000, y: -230.000000, z: 232.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DA81D98) {pitch: 0.000000, yaw: 121.000000, roll: -0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DA81DB0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "Arrow",
+          "class": "ArrowComponent",
+          "relative_location": "<Struct 'Vector' (0x000001570DA82480) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DA82498) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DA824B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "CharacterMesh0",
+          "class": "SkeletalMeshComponent",
+          "skeletal_mesh_asset": "<Object '/Game/TeddyEncounter/Teddy/Idle/SK_Teddy.SK_Teddy' (0x0000015709262800) Class 'SkeletalMesh'>",
+          "relative_location": "<Struct 'Vector' (0x000001570DA90180) {x: 0.000000, y: 0.000000, z: -230.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001570DA90198) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001570DA901B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        },
+        {
+          "name": "AttackWarning",
+          "class": "StaticMeshComponent",
+          "static_mesh": "<Object '/Game/TeddyEncounter/Arena/AttackRing.AttackRing' (0x00000156E136A000) Class 'StaticMesh'>",
+          "relative_location": "<Struct 'Vector' (0x000001571169E780) {x: 0.000000, y: 0.000000, z: -226.000000}>",
+          "relative_rotation": "<Struct 'Rotator' (0x000001571169E798) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+          "relative_scale3d": "<Struct 'Vector' (0x000001571169E7B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+        }
+      ]
+    }
+  ],
+  "blueprints": {
+    "BP_TeddyBoss": [
+      {
+        "name": "Default__BP_TeddyBoss_C",
+        "class": "BP_TeddyBoss_C"
+      },
+      {
+        "name": "CollisionCylinder",
+        "class": "CapsuleComponent",
+        "relative_location": "<Struct 'Vector' (0x00000156EEA05580) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+        "relative_rotation": "<Struct 'Rotator' (0x00000156EEA05598) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x00000156EEA055B0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+      },
+      {
+        "name": "AttackWarning_GEN_VARIABLE",
+        "class": "StaticMeshComponent",
+        "relative_location": "<Struct 'Vector' (0x0000015709263D80) {x: 0.000000, y: 0.000000, z: -226.000000}>",
+        "relative_rotation": "<Struct 'Rotator' (0x0000015709263D98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x0000015709263DB0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_AttackWarning.M_QA_AttackWarning'\"]"
+      },
+      {
+        "name": "CharacterMesh0",
+        "class": "SkeletalMeshComponent",
+        "skeletal_mesh_asset": "<Object '/Game/TeddyEncounter/Teddy/Idle/SK_Teddy.SK_Teddy' (0x0000015709262800) Class 'SkeletalMesh'>",
+        "anim_class": "None",
+        "relative_location": "<Struct 'Vector' (0x00000157095A1580) {x: 0.000000, y: 0.000000, z: -230.000000}>",
+        "relative_rotation": "<Struct 'Rotator' (0x00000157095A1598) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x00000157095A15B0) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth'\"]"
+      },
+      {
+        "name": "CharMoveComp",
+        "class": "CharacterMovementComponent"
+      }
+    ],
+    "BP_Stitchling": [
+      {
+        "name": "Default__BP_Stitchling_C",
+        "class": "BP_Stitchling_C"
+      },
+      {
+        "name": "CollisionCylinder",
+        "class": "CapsuleComponent",
+        "relative_location": "<Struct 'Vector' (0x0000015709601D80) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+        "relative_rotation": "<Struct 'Rotator' (0x0000015709601D98) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x0000015709601DB0) {x: 1.000000, y: 1.000000, z: 1.000000}>"
+      },
+      {
+        "name": "AttackWarning_GEN_VARIABLE",
+        "class": "StaticMeshComponent",
+        "relative_location": "<Struct 'Vector' (0x0000015709266580) {x: 0.000000, y: 0.000000, z: -156.000000}>",
+        "relative_rotation": "<Struct 'Rotator' (0x0000015709266598) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x00000157092665B0) {x: 1.250000, y: 1.250000, z: 1.000000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_AttackWarning.M_QA_AttackWarning'\"]"
+      },
+      {
+        "name": "CharacterMesh0",
+        "class": "SkeletalMeshComponent",
+        "skeletal_mesh_asset": "<Object '/Game/TeddyEncounter/Teddy/Idle/SK_Teddy.SK_Teddy' (0x0000015709262800) Class 'SkeletalMesh'>",
+        "anim_class": "None",
+        "relative_location": "<Struct 'Vector' (0x00000157095AB580) {x: 0.000000, y: 0.000000, z: -160.000000}>",
+        "relative_rotation": "<Struct 'Rotator' (0x00000157095AB598) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+        "relative_scale3d": "<Struct 'Vector' (0x00000157095AB5B0) {x: 1.000000, y: 1.000000, z: 0.650000}>",
+        "override_materials": "[\"/Script/Engine.Material'/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth'\"]"
+      },
+      {
+        "name": "CharMoveComp",
+        "class": "CharacterMovementComponent"
+      }
+    ]
+  },
+  "material_property": {
+    "MP_AMBIENT_OCCLUSION": "<MaterialProperty.MP_AMBIENT_OCCLUSION: 18>",
+    "MP_ANISOTROPY": "<MaterialProperty.MP_ANISOTROPY: 9>",
+    "MP_BASE_COLOR": "<MaterialProperty.MP_BASE_COLOR: 5>",
+    "MP_EMISSIVE_COLOR": "<MaterialProperty.MP_EMISSIVE_COLOR: 0>",
+    "MP_FRONT_MATERIAL": "<MaterialProperty.MP_FRONT_MATERIAL: 30>",
+    "MP_LAST_CUSTOMIZED_U_VS": "<MaterialProperty.MP_LAST_CUSTOMIZED_U_VS: 27>",
+    "MP_MATERIAL_ATTRIBUTES": "<MaterialProperty.MP_MATERIAL_ATTRIBUTES: 33>",
+    "MP_MAX": "<MaterialProperty.MP_MAX: 35>",
+    "MP_METALLIC": "<MaterialProperty.MP_METALLIC: 6>",
+    "MP_NORMAL": "<MaterialProperty.MP_NORMAL: 10>",
+    "MP_OPACITY": "<MaterialProperty.MP_OPACITY: 1>",
+    "MP_OPACITY_MASK": "<MaterialProperty.MP_OPACITY_MASK: 2>",
+    "MP_REFRACTION": "<MaterialProperty.MP_REFRACTION: 19>",
+    "MP_ROUGHNESS": "<MaterialProperty.MP_ROUGHNESS: 8>",
+    "MP_SPECULAR": "<MaterialProperty.MP_SPECULAR: 7>",
+    "MP_SUBSURFACE_COLOR": "<MaterialProperty.MP_SUBSURFACE_COLOR: 15>",
+    "MP_TANGENT": "<MaterialProperty.MP_TANGENT: 11>",
+    "MP_WORLD_POSITION_OFFSET": "<MaterialProperty.MP_WORLD_POSITION_OFFSET: 12>",
+    "ctor16": "MaterialProperty: Cannot create instances of enum types",
+    "cast16": "MaterialProperty: Cannot cast type 'int' to 'MaterialProperty'",
+    "enumvalue": "15"
+  },
+  "asset_writes": false,
+  "local_fog_class": "<class 'LocalFogVolume'>"
+}

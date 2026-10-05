@@ -1,0 +1,2104 @@
+{
+  "schema": "visual-parity-diagnostics-v1",
+  "created_utc": "2026-10-05T09:14:38.358960+00:00",
+  "artifact_generation_complete": true,
+  "visual_parity": "requires_independent_visual_review",
+  "reference": {
+    "path": "C:\\Projects\\to-deploy\\horror-game\\study\\visuals\\direction-close-best.jpg",
+    "sha256": "93fbe5a65dd56b5015bdd951fbefa5d1a3d60951688a00d28b33343a721107a8",
+    "size": [
+      1280,
+      720
+    ],
+    "role": "User-selected look study, not an engine capture"
+  },
+  "candidate": {
+    "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T090957-capture_parity_delivery\\01-matched-gameplay.png",
+    "sha256": "51681efc01feb74e7b2c0a62bfd0b15df4a1aa46c0950dc329d2d10cc6182189",
+    "size": [
+      1280,
+      720
+    ],
+    "label": "Saved delivery 090957: expanded room and corrected cloth tint",
+    "capture_kind": "staged-gameplay"
+  },
+  "declared_framing": "matched",
+  "manually_annotated_candidate": true,
+  "framing_diagnostics": {
+    "boss_body": {
+      "center_displacement_pixels_xy": [
+        -5.0,
+        -15.5
+      ],
+      "candidate_over_reference_width_height": [
+        1.0745,
+        0.9463
+      ],
+      "within_suggested_3_percent_frame_and_15_percent_size_band": true
+    },
+    "player_body": {
+      "center_displacement_pixels_xy": [
+        11.0,
+        5.5
+      ],
+      "candidate_over_reference_width_height": [
+        1.0816,
+        1.1529
+      ],
+      "within_suggested_3_percent_frame_and_15_percent_size_band": false
+    }
+  },
+  "within_suggested_framing_band": false,
+  "pixelwise_error_or_similarity": null,
+  "limitations": [
+    "No numeric score or automatic visual-parity acceptance is produced.",
+    "Regions are manually selected approximate masks, not semantic ground truth.",
+    "Without candidate annotations, reference coordinates are exploratory fixed screen regions and are not valid subject comparisons.",
+    "Different poses, geometry, texture placement and generated-reference inconsistencies invalidate literal pixelwise error.",
+    "Display luma is computed on sRGB values; separately reported linear luminance does not recover scene radiance or exposure.",
+    "Blur residual is a texture/detail cue, not proof of geometric depth, cloth, good anti-aliasing or art quality.",
+    "A still does not verify animation, temporal fog, moving-light behavior, controls, physical input or performance."
+  ],
+  "capture_receipt": {
+    "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T090957-capture_parity_delivery\\receipt.json",
+    "sha256": "a23f8f7ab8a22031463913306648fce7929eb0de491c1e0058fe09d4480e8e7d",
+    "reported_passed": true,
+    "method": "Editor PIE; NPC/player movement frozen, HUD hidden; game paused through capture completion. Saved exposure/lighting unchanged. Views explicitly identify gameplay versus architectural camera.",
+    "corresponding_capture": [
+      {
+        "name": "01-matched-gameplay",
+        "kind": "gameplay",
+        "caption": "Saved gameplay camera, spawns, exposure, lighting and surfaces; movement held and player yaw staged toward boss.",
+        "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T090957-capture_parity_delivery\\01-matched-gameplay.png",
+        "held_state": {
+          "player": [
+            -230.0,
+            570.0,
+            85.14999961853027
+          ],
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        "held_samples": 183,
+        "game_time": 10.012967005372047,
+        "validation": {
+          "width": 1280,
+          "height": 720,
+          "bytes": 1322435,
+          "sha256": "51681efc01feb74e7b2c0a62bfd0b15df4a1aa46c0950dc329d2d10cc6182189",
+          "pixel_sha256": "529cede9d6fdf6d9f789ec50f06ed78430ca7c93d0b772ced6efb1af62b847a7",
+          "all_chunk_crcs_valid": true,
+          "full_pixel_decode": true,
+          "range": [
+            0,
+            255
+          ]
+        }
+      }
+    ],
+    "postprocess": [
+      {
+        "auto_exposure_method": "<AutoExposureMethod.AEM_MANUAL: 2>",
+        "auto_exposure_bias": "3.799999952316284",
+        "auto_exposure_apply_physical_camera_exposure": "True",
+        "vignette_intensity": "0.3799999952316284",
+        "bloom_intensity": "0.25"
+      }
+    ],
+    "candidate_hash_matches_reported_capture": true
+  },
+  "regions": {
+    "reference": {
+      "boss_body": {
+        "polygon": [
+          [
+            498,
+            134
+          ],
+          [
+            516,
+            160
+          ],
+          [
+            504,
+            177
+          ],
+          [
+            525,
+            205
+          ],
+          [
+            530,
+            230
+          ],
+          [
+            510,
+            252
+          ],
+          [
+            493,
+            264
+          ],
+          [
+            489,
+            287
+          ],
+          [
+            471,
+            283
+          ],
+          [
+            449,
+            265
+          ],
+          [
+            419,
+            280
+          ],
+          [
+            416,
+            307
+          ],
+          [
+            432,
+            321
+          ],
+          [
+            419,
+            338
+          ],
+          [
+            392,
+            326
+          ],
+          [
+            373,
+            282
+          ],
+          [
+            370,
+            254
+          ],
+          [
+            387,
+            220
+          ],
+          [
+            390,
+            190
+          ],
+          [
+            420,
+            166
+          ],
+          [
+            468,
+            159
+          ]
+        ]
+      },
+      "player_body": {
+        "polygon": [
+          [
+            818,
+            420
+          ],
+          [
+            843,
+            438
+          ],
+          [
+            851,
+            436
+          ],
+          [
+            860,
+            441
+          ],
+          [
+            866,
+            449
+          ],
+          [
+            860,
+            463
+          ],
+          [
+            857,
+            480
+          ],
+          [
+            865,
+            496
+          ],
+          [
+            858,
+            504
+          ],
+          [
+            848,
+            481
+          ],
+          [
+            834,
+            501
+          ],
+          [
+            826,
+            499
+          ],
+          [
+            837,
+            474
+          ],
+          [
+            838,
+            457
+          ],
+          [
+            829,
+            450
+          ],
+          [
+            836,
+            445
+          ]
+        ]
+      },
+      "player_pool": {
+        "ellipse": [
+          734,
+          436,
+          831,
+          508
+        ]
+      },
+      "pool_surround": {
+        "polygon": [
+          [
+            688,
+            442
+          ],
+          [
+            728,
+            449
+          ],
+          [
+            730,
+            505
+          ],
+          [
+            777,
+            520
+          ],
+          [
+            813,
+            523
+          ],
+          [
+            813,
+            546
+          ],
+          [
+            710,
+            527
+          ],
+          [
+            676,
+            485
+          ]
+        ]
+      },
+      "boss_shadow": {
+        "polygon": [
+          [
+            393,
+            313
+          ],
+          [
+            434,
+            308
+          ],
+          [
+            477,
+            280
+          ],
+          [
+            509,
+            283
+          ],
+          [
+            536,
+            315
+          ],
+          [
+            518,
+            345
+          ],
+          [
+            501,
+            390
+          ],
+          [
+            451,
+            452
+          ],
+          [
+            414,
+            476
+          ],
+          [
+            375,
+            466
+          ],
+          [
+            377,
+            414
+          ],
+          [
+            347,
+            393
+          ],
+          [
+            358,
+            350
+          ]
+        ]
+      },
+      "shadow_surround": {
+        "polygon": [
+          [
+            550,
+            298
+          ],
+          [
+            606,
+            320
+          ],
+          [
+            605,
+            421
+          ],
+          [
+            529,
+            459
+          ],
+          [
+            476,
+            473
+          ],
+          [
+            483,
+            449
+          ],
+          [
+            521,
+            404
+          ],
+          [
+            548,
+            352
+          ]
+        ]
+      },
+      "cloth_detail": {
+        "polygon": [
+          [
+            413,
+            190
+          ],
+          [
+            448,
+            167
+          ],
+          [
+            478,
+            175
+          ],
+          [
+            497,
+            204
+          ],
+          [
+            477,
+            228
+          ],
+          [
+            426,
+            225
+          ],
+          [
+            404,
+            218
+          ]
+        ]
+      },
+      "floor_detail": {
+        "polygon": [
+          [
+            480,
+            506
+          ],
+          [
+            642,
+            463
+          ],
+          [
+            700,
+            552
+          ],
+          [
+            633,
+            654
+          ],
+          [
+            434,
+            642
+          ]
+        ]
+      },
+      "far_haze": {
+        "rectangle": [
+          245,
+          22,
+          1090,
+          127
+        ]
+      },
+      "central_floor": {
+        "polygon": [
+          [
+            548,
+            246
+          ],
+          [
+            771,
+            236
+          ],
+          [
+            965,
+            293
+          ],
+          [
+            971,
+            405
+          ],
+          [
+            843,
+            402
+          ],
+          [
+            681,
+            413
+          ],
+          [
+            566,
+            467
+          ],
+          [
+            549,
+            398
+          ]
+        ]
+      },
+      "left_debris": {
+        "rectangle": [
+          34,
+          348,
+          286,
+          550
+        ]
+      },
+      "dark_perimeter": {
+        "edge_fraction": 0.045
+      },
+      "dark_corners": {
+        "rectangles": [
+          [
+            0,
+            0,
+            95,
+            71
+          ],
+          [
+            1184,
+            0,
+            1279,
+            71
+          ],
+          [
+            0,
+            648,
+            95,
+            719
+          ],
+          [
+            1184,
+            648,
+            1279,
+            719
+          ]
+        ]
+      }
+    },
+    "candidate": {
+      "boss_body": {
+        "polygon": [
+          [
+            490,
+            124
+          ],
+          [
+            506,
+            125
+          ],
+          [
+            507,
+            138
+          ],
+          [
+            500,
+            148
+          ],
+          [
+            511,
+            167
+          ],
+          [
+            517,
+            186
+          ],
+          [
+            525,
+            211
+          ],
+          [
+            531,
+            224
+          ],
+          [
+            528,
+            236
+          ],
+          [
+            515,
+            237
+          ],
+          [
+            509,
+            226
+          ],
+          [
+            503,
+            215
+          ],
+          [
+            497,
+            229
+          ],
+          [
+            484,
+            250
+          ],
+          [
+            477,
+            263
+          ],
+          [
+            484,
+            274
+          ],
+          [
+            475,
+            284
+          ],
+          [
+            457,
+            278
+          ],
+          [
+            449,
+            263
+          ],
+          [
+            430,
+            270
+          ],
+          [
+            426,
+            290
+          ],
+          [
+            435,
+            298
+          ],
+          [
+            426,
+            307
+          ],
+          [
+            408,
+            305
+          ],
+          [
+            401,
+            285
+          ],
+          [
+            391,
+            288
+          ],
+          [
+            386,
+            310
+          ],
+          [
+            376,
+            317
+          ],
+          [
+            366,
+            306
+          ],
+          [
+            367,
+            286
+          ],
+          [
+            363,
+            260
+          ],
+          [
+            359,
+            242
+          ],
+          [
+            365,
+            224
+          ],
+          [
+            382,
+            210
+          ],
+          [
+            391,
+            182
+          ],
+          [
+            411,
+            161
+          ],
+          [
+            437,
+            145
+          ],
+          [
+            466,
+            141
+          ]
+        ]
+      },
+      "player_body": {
+        "polygon": [
+          [
+            829,
+            419
+          ],
+          [
+            851,
+            433
+          ],
+          [
+            859,
+            435
+          ],
+          [
+            864,
+            432
+          ],
+          [
+            871,
+            438
+          ],
+          [
+            872,
+            445
+          ],
+          [
+            879,
+            450
+          ],
+          [
+            875,
+            460
+          ],
+          [
+            868,
+            464
+          ],
+          [
+            869,
+            481
+          ],
+          [
+            866,
+            497
+          ],
+          [
+            874,
+            511
+          ],
+          [
+            870,
+            516
+          ],
+          [
+            859,
+            505
+          ],
+          [
+            859,
+            485
+          ],
+          [
+            849,
+            489
+          ],
+          [
+            844,
+            505
+          ],
+          [
+            837,
+            507
+          ],
+          [
+            837,
+            497
+          ],
+          [
+            843,
+            480
+          ],
+          [
+            847,
+            462
+          ],
+          [
+            842,
+            456
+          ],
+          [
+            839,
+            445
+          ],
+          [
+            849,
+            444
+          ],
+          [
+            849,
+            439
+          ],
+          [
+            827,
+            422
+          ]
+        ]
+      },
+      "pool_surround": {
+        "polygon": [
+          [
+            670,
+            424
+          ],
+          [
+            717,
+            432
+          ],
+          [
+            718,
+            490
+          ],
+          [
+            740,
+            516
+          ],
+          [
+            787,
+            519
+          ],
+          [
+            804,
+            537
+          ],
+          [
+            743,
+            547
+          ],
+          [
+            691,
+            514
+          ],
+          [
+            659,
+            469
+          ]
+        ]
+      },
+      "boss_shadow": {
+        "polygon": [
+          [
+            375,
+            308
+          ],
+          [
+            418,
+            296
+          ],
+          [
+            457,
+            286
+          ],
+          [
+            480,
+            285
+          ],
+          [
+            505,
+            300
+          ],
+          [
+            496,
+            314
+          ],
+          [
+            522,
+            325
+          ],
+          [
+            525,
+            341
+          ],
+          [
+            492,
+            352
+          ],
+          [
+            466,
+            369
+          ],
+          [
+            482,
+            390
+          ],
+          [
+            492,
+            416
+          ],
+          [
+            489,
+            439
+          ],
+          [
+            468,
+            457
+          ],
+          [
+            426,
+            478
+          ],
+          [
+            392,
+            498
+          ],
+          [
+            366,
+            498
+          ],
+          [
+            352,
+            485
+          ],
+          [
+            349,
+            464
+          ],
+          [
+            353,
+            442
+          ],
+          [
+            330,
+            432
+          ],
+          [
+            322,
+            412
+          ],
+          [
+            342,
+            399
+          ],
+          [
+            360,
+            379
+          ],
+          [
+            367,
+            350
+          ]
+        ]
+      },
+      "shadow_surround": {
+        "polygon": [
+          [
+            548,
+            309
+          ],
+          [
+            609,
+            336
+          ],
+          [
+            608,
+            416
+          ],
+          [
+            530,
+            459
+          ],
+          [
+            475,
+            482
+          ],
+          [
+            476,
+            463
+          ],
+          [
+            518,
+            420
+          ],
+          [
+            545,
+            351
+          ]
+        ]
+      },
+      "cloth_detail": {
+        "polygon": [
+          [
+            418,
+            165
+          ],
+          [
+            448,
+            151
+          ],
+          [
+            477,
+            156
+          ],
+          [
+            491,
+            173
+          ],
+          [
+            496,
+            190
+          ],
+          [
+            477,
+            208
+          ],
+          [
+            439,
+            204
+          ],
+          [
+            413,
+            192
+          ]
+        ]
+      },
+      "floor_detail": {
+        "polygon": [
+          [
+            480,
+            506
+          ],
+          [
+            642,
+            463
+          ],
+          [
+            700,
+            552
+          ],
+          [
+            633,
+            654
+          ],
+          [
+            434,
+            642
+          ]
+        ]
+      },
+      "far_haze": {
+        "rectangle": [
+          245,
+          22,
+          1090,
+          122
+        ]
+      },
+      "central_floor": {
+        "polygon": [
+          [
+            548,
+            246
+          ],
+          [
+            771,
+            236
+          ],
+          [
+            965,
+            293
+          ],
+          [
+            971,
+            405
+          ],
+          [
+            843,
+            402
+          ],
+          [
+            681,
+            413
+          ],
+          [
+            566,
+            467
+          ],
+          [
+            549,
+            398
+          ]
+        ]
+      },
+      "dark_perimeter": {
+        "edge_fraction": 0.045
+      },
+      "dark_corners": {
+        "rectangles": [
+          [
+            0,
+            0,
+            95,
+            71
+          ],
+          [
+            1184,
+            0,
+            1279,
+            71
+          ],
+          [
+            0,
+            648,
+            95,
+            719
+          ],
+          [
+            1184,
+            648,
+            1279,
+            719
+          ]
+        ]
+      },
+      "player_pool": {
+        "ellipse": [
+          728,
+          429,
+          832,
+          505
+        ]
+      },
+      "left_debris": {
+        "rectangle": [
+          34,
+          348,
+          286,
+          550
+        ]
+      }
+    }
+  },
+  "measurements": {
+    "reference": {
+      "boss_body": {
+        "pixels": 17630,
+        "image_fraction": 0.0191,
+        "bounds_xyxy": [
+          370,
+          134,
+          531,
+          339
+        ],
+        "display_rgb_mean_0_255": [
+          36.5779,
+          52.4381,
+          49.1935
+        ],
+        "display_luma_mean_0_255": 48.8319,
+        "display_luma_p10_p50_p90": [
+          9.7244,
+          31.7783,
+          110.5596
+        ],
+        "display_luma_std": 40.3986,
+        "linear_luminance_mean_0_1": 0.0538,
+        "fraction_display_luma_below_8": 0.0584,
+        "fraction_display_luma_above_40": 0.4404,
+        "fraction_display_luma_above_80": 0.2752,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.2647,
+          0.3794,
+          0.3559
+        ],
+        "detail_rms_after_2px_blur_display_luma": 11.3723
+      },
+      "player_body": {
+        "pixels": 1725,
+        "image_fraction": 0.0019,
+        "bounds_xyxy": [
+          818,
+          420,
+          867,
+          505
+        ],
+        "display_rgb_mean_0_255": [
+          38.1664,
+          57.4,
+          59.52
+        ],
+        "display_luma_mean_0_255": 53.464,
+        "display_luma_p10_p50_p90": [
+          5.6562,
+          41.5984,
+          114.1691
+        ],
+        "display_luma_std": 43.6493,
+        "linear_luminance_mean_0_1": 0.0633,
+        "fraction_display_luma_below_8": 0.1919,
+        "fraction_display_luma_above_40": 0.5067,
+        "fraction_display_luma_above_80": 0.3583,
+        "fraction_display_luma_above_160": 0.0017,
+        "channel_share_r_g_b": [
+          0.2461,
+          0.3701,
+          0.3838
+        ],
+        "detail_rms_after_2px_blur_display_luma": 21.1789
+      },
+      "player_pool": {
+        "pixels": 5618,
+        "image_fraction": 0.0061,
+        "bounds_xyxy": [
+          734,
+          436,
+          832,
+          509
+        ],
+        "display_rgb_mean_0_255": [
+          213.3316,
+          220.6666,
+          225.2371
+        ],
+        "display_luma_mean_0_255": 219.4372,
+        "display_luma_p10_p50_p90": [
+          187.8912,
+          220.7232,
+          250.9318
+        ],
+        "display_luma_std": 24.1181,
+        "linear_luminance_mean_0_1": 0.7246,
+        "fraction_display_luma_below_8": 0.0,
+        "fraction_display_luma_above_40": 1.0,
+        "fraction_display_luma_above_80": 1.0,
+        "fraction_display_luma_above_160": 0.9899,
+        "channel_share_r_g_b": [
+          0.3236,
+          0.3347,
+          0.3417
+        ],
+        "detail_rms_after_2px_blur_display_luma": 4.6118
+      },
+      "pool_surround": {
+        "pixels": 5370,
+        "image_fraction": 0.0058,
+        "bounds_xyxy": [
+          676,
+          442,
+          814,
+          547
+        ],
+        "display_rgb_mean_0_255": [
+          84.6181,
+          115.5032,
+          118.0389
+        ],
+        "display_luma_mean_0_255": 109.1201,
+        "display_luma_p10_p50_p90": [
+          65.1194,
+          112.0197,
+          157.336
+        ],
+        "display_luma_std": 35.7754,
+        "linear_luminance_mean_0_1": 0.1778,
+        "fraction_display_luma_below_8": 0.0,
+        "fraction_display_luma_above_40": 1.0,
+        "fraction_display_luma_above_80": 0.6709,
+        "fraction_display_luma_above_160": 0.0845,
+        "channel_share_r_g_b": [
+          0.266,
+          0.363,
+          0.371
+        ],
+        "detail_rms_after_2px_blur_display_luma": 5.6052
+      },
+      "boss_shadow": {
+        "pixels": 22051,
+        "image_fraction": 0.0239,
+        "bounds_xyxy": [
+          347,
+          280,
+          537,
+          477
+        ],
+        "display_rgb_mean_0_255": [
+          12.3669,
+          29.4047,
+          29.9048
+        ],
+        "display_luma_mean_0_255": 25.8186,
+        "display_luma_p10_p50_p90": [
+          6.1536,
+          16.5984,
+          65.1194
+        ],
+        "display_luma_std": 27.7792,
+        "linear_luminance_mean_0_1": 0.0208,
+        "fraction_display_luma_below_8": 0.1591,
+        "fraction_display_luma_above_40": 0.1285,
+        "fraction_display_luma_above_80": 0.0859,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.1725,
+          0.4102,
+          0.4172
+        ],
+        "detail_rms_after_2px_blur_display_luma": 3.1912
+      },
+      "shadow_surround": {
+        "pixels": 11089,
+        "image_fraction": 0.012,
+        "bounds_xyxy": [
+          476,
+          298,
+          607,
+          474
+        ],
+        "display_rgb_mean_0_255": [
+          96.3685,
+          138.3482,
+          136.3448
+        ],
+        "display_luma_mean_0_255": 129.2787,
+        "display_luma_p10_p50_p90": [
+          80.3464,
+          141.9264,
+          158.5734
+        ],
+        "display_luma_std": 33.7873,
+        "linear_luminance_mean_0_1": 0.2454,
+        "fraction_display_luma_below_8": 0.0,
+        "fraction_display_luma_above_40": 0.9663,
+        "fraction_display_luma_above_80": 0.9025,
+        "fraction_display_luma_above_160": 0.0758,
+        "channel_share_r_g_b": [
+          0.2597,
+          0.3728,
+          0.3674
+        ],
+        "detail_rms_after_2px_blur_display_luma": 6.0575
+      },
+      "cloth_detail": {
+        "pixels": 3989,
+        "image_fraction": 0.0043,
+        "bounds_xyxy": [
+          404,
+          167,
+          498,
+          229
+        ],
+        "display_rgb_mean_0_255": [
+          43.8042,
+          50.5866,
+          43.6721
+        ],
+        "display_luma_mean_0_255": 48.6454,
+        "display_luma_p10_p50_p90": [
+          5.58,
+          47.8568,
+          97.449
+        ],
+        "display_luma_std": 36.0685,
+        "linear_luminance_mean_0_1": 0.0476,
+        "fraction_display_luma_below_8": 0.1833,
+        "fraction_display_luma_above_40": 0.559,
+        "fraction_display_luma_above_80": 0.2199,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.3173,
+          0.3664,
+          0.3163
+        ],
+        "detail_rms_after_2px_blur_display_luma": 12.3337
+      },
+      "floor_detail": {
+        "pixels": 35215,
+        "image_fraction": 0.0382,
+        "bounds_xyxy": [
+          434,
+          463,
+          701,
+          655
+        ],
+        "display_rgb_mean_0_255": [
+          61.1805,
+          96.5745,
+          94.8922
+        ],
+        "display_luma_mean_0_255": 88.9283,
+        "display_luma_p10_p50_p90": [
+          56.8976,
+          89.6994,
+          120.076
+        ],
+        "display_luma_std": 23.787,
+        "linear_luminance_mean_0_1": 0.112,
+        "fraction_display_luma_below_8": 0.0,
+        "fraction_display_luma_above_40": 0.9868,
+        "fraction_display_luma_above_80": 0.6334,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.2422,
+          0.3823,
+          0.3756
+        ],
+        "detail_rms_after_2px_blur_display_luma": 7.7138
+      },
+      "far_haze": {
+        "pixels": 89676,
+        "image_fraction": 0.0973,
+        "bounds_xyxy": [
+          245,
+          22,
+          1091,
+          128
+        ],
+        "display_rgb_mean_0_255": [
+          41.1981,
+          88.7439,
+          88.3233
+        ],
+        "display_luma_mean_0_255": 78.6053,
+        "display_luma_p10_p50_p90": [
+          33.9357,
+          81.2978,
+          118.3214
+        ],
+        "display_luma_std": 31.6482,
+        "linear_luminance_mean_0_1": 0.0987,
+        "fraction_display_luma_below_8": 0.0005,
+        "fraction_display_luma_above_40": 0.8491,
+        "fraction_display_luma_above_80": 0.5068,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.1888,
+          0.4066,
+          0.4047
+        ],
+        "detail_rms_after_2px_blur_display_luma": 0.7678
+      },
+      "central_floor": {
+        "pixels": 69020,
+        "image_fraction": 0.0749,
+        "bounds_xyxy": [
+          548,
+          236,
+          972,
+          468
+        ],
+        "display_rgb_mean_0_255": [
+          83.08,
+          126.6076,
+          125.5852
+        ],
+        "display_luma_mean_0_255": 117.2798,
+        "display_luma_p10_p50_p90": [
+          77.6994,
+          113.9986,
+          157.5734
+        ],
+        "display_luma_std": 29.5267,
+        "linear_luminance_mean_0_1": 0.1994,
+        "fraction_display_luma_below_8": 0.0,
+        "fraction_display_luma_above_40": 0.9999,
+        "fraction_display_luma_above_80": 0.8828,
+        "fraction_display_luma_above_160": 0.0696,
+        "channel_share_r_g_b": [
+          0.2478,
+          0.3776,
+          0.3746
+        ],
+        "detail_rms_after_2px_blur_display_luma": 4.7581
+      },
+      "left_debris": {
+        "pixels": 51359,
+        "image_fraction": 0.0557,
+        "bounds_xyxy": [
+          34,
+          348,
+          287,
+          551
+        ],
+        "display_rgb_mean_0_255": [
+          30.0047,
+          52.8852,
+          51.7256
+        ],
+        "display_luma_mean_0_255": 47.9371,
+        "display_luma_p10_p50_p90": [
+          21.5984,
+          48.8976,
+          73.1246
+        ],
+        "display_luma_std": 18.9412,
+        "linear_luminance_mean_0_1": 0.0353,
+        "fraction_display_luma_below_8": 0.0195,
+        "fraction_display_luma_above_40": 0.661,
+        "fraction_display_luma_above_80": 0.0265,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.2229,
+          0.3929,
+          0.3842
+        ],
+        "detail_rms_after_2px_blur_display_luma": 5.0882
+      },
+      "dark_perimeter": {
+        "pixels": 123904,
+        "image_fraction": 0.1344,
+        "bounds_xyxy": [
+          0,
+          0,
+          1280,
+          720
+        ],
+        "display_rgb_mean_0_255": [
+          12.9043,
+          26.9115,
+          26.8352
+        ],
+        "display_luma_mean_0_255": 23.928,
+        "display_luma_p10_p50_p90": [
+          0.0,
+          8.7244,
+          75.4002
+        ],
+        "display_luma_std": 32.699,
+        "linear_luminance_mean_0_1": 0.023,
+        "fraction_display_luma_below_8": 0.4918,
+        "fraction_display_luma_above_40": 0.231,
+        "fraction_display_luma_above_80": 0.0941,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.1936,
+          0.4038,
+          0.4026
+        ],
+        "detail_rms_after_2px_blur_display_luma": 1.6865
+      },
+      "dark_corners": {
+        "pixels": 27648,
+        "image_fraction": 0.03,
+        "bounds_xyxy": [
+          0,
+          0,
+          1280,
+          720
+        ],
+        "display_rgb_mean_0_255": [
+          0.1784,
+          0.6285,
+          0.657
+        ],
+        "display_luma_mean_0_255": 0.5349,
+        "display_luma_p10_p50_p90": [
+          0.0,
+          0.0,
+          2.0
+        ],
+        "display_luma_std": 1.5381,
+        "linear_luminance_mean_0_1": 0.0002,
+        "fraction_display_luma_below_8": 0.9935,
+        "fraction_display_luma_above_40": 0.0,
+        "fraction_display_luma_above_80": 0.0,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.1219,
+          0.4293,
+          0.4488
+        ],
+        "detail_rms_after_2px_blur_display_luma": 0.2138
+      },
+      "whole_image": {
+        "pixels": 921600,
+        "image_fraction": 1.0,
+        "bounds_xyxy": [
+          0,
+          0,
+          1280,
+          720
+        ],
+        "display_rgb_mean_0_255": [
+          35.826,
+          63.2332,
+          62.6539
+        ],
+        "display_luma_mean_0_255": 57.3646,
+        "display_luma_p10_p50_p90": [
+          6.4436,
+          49.6758,
+          115.5734
+        ],
+        "display_luma_std": 42.5876,
+        "linear_luminance_mean_0_1": 0.0698,
+        "fraction_display_luma_below_8": 0.1098,
+        "fraction_display_luma_above_40": 0.5891,
+        "fraction_display_luma_above_80": 0.2876,
+        "fraction_display_luma_above_160": 0.0146,
+        "channel_share_r_g_b": [
+          0.2215,
+          0.391,
+          0.3874
+        ],
+        "detail_rms_after_2px_blur_display_luma": 4.2629
+      }
+    },
+    "candidate": {
+      "boss_body": {
+        "pixels": 18673,
+        "image_fraction": 0.0203,
+        "bounds_xyxy": [
+          359,
+          124,
+          532,
+          318
+        ],
+        "display_rgb_mean_0_255": [
+          44.7621,
+          60.4941,
+          56.0336
+        ],
+        "display_luma_mean_0_255": 56.8274,
+        "display_luma_p10_p50_p90": [
+          4.0774,
+          45.387,
+          138.2338
+        ],
+        "display_luma_std": 52.0211,
+        "linear_luminance_mean_0_1": 0.0801,
+        "fraction_display_luma_below_8": 0.3193,
+        "fraction_display_luma_above_40": 0.5174,
+        "fraction_display_luma_above_80": 0.3381,
+        "fraction_display_luma_above_160": 0.016,
+        "channel_share_r_g_b": [
+          0.2775,
+          0.3751,
+          0.3474
+        ],
+        "detail_rms_after_2px_blur_display_luma": 12.6834
+      },
+      "player_body": {
+        "pixels": 2088,
+        "image_fraction": 0.0023,
+        "bounds_xyxy": [
+          827,
+          419,
+          880,
+          517
+        ],
+        "display_rgb_mean_0_255": [
+          43.8127,
+          70.9468,
+          71.6925
+        ],
+        "display_luma_mean_0_255": 65.232,
+        "display_luma_p10_p50_p90": [
+          10.8523,
+          64.1667,
+          118.5176
+        ],
+        "display_luma_std": 45.7491,
+        "linear_luminance_mean_0_1": 0.0857,
+        "fraction_display_luma_below_8": 0.0565,
+        "fraction_display_luma_above_40": 0.59,
+        "fraction_display_luma_above_80": 0.4526,
+        "fraction_display_luma_above_160": 0.0244,
+        "channel_share_r_g_b": [
+          0.235,
+          0.3805,
+          0.3845
+        ],
+        "detail_rms_after_2px_blur_display_luma": 22.4387
+      },
+      "pool_surround": {
+        "pixels": 6645,
+        "image_fraction": 0.0072,
+        "bounds_xyxy": [
+          659,
+          424,
+          805,
+          548
+        ],
+        "display_rgb_mean_0_255": [
+          74.5433,
+          117.7612,
+          120.7837
+        ],
+        "display_luma_mean_0_255": 108.7913,
+        "display_luma_p10_p50_p90": [
+          95.3556,
+          109.0748,
+          121.437
+        ],
+        "display_luma_std": 9.8611,
+        "linear_luminance_mean_0_1": 0.1592,
+        "fraction_display_luma_below_8": 0.0,
+        "fraction_display_luma_above_40": 1.0,
+        "fraction_display_luma_above_80": 1.0,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.2381,
+          0.3761,
+          0.3858
+        ],
+        "detail_rms_after_2px_blur_display_luma": 4.0875
+      },
+      "boss_shadow": {
+        "pixels": 25659,
+        "image_fraction": 0.0278,
+        "bounds_xyxy": [
+          322,
+          285,
+          526,
+          499
+        ],
+        "display_rgb_mean_0_255": [
+          15.6468,
+          29.7378,
+          30.1573
+        ],
+        "display_luma_mean_0_255": 26.7723,
+        "display_luma_p10_p50_p90": [
+          0.7874,
+          5.7244,
+          99.5722
+        ],
+        "display_luma_std": 40.574,
+        "linear_luminance_mean_0_1": 0.0326,
+        "fraction_display_luma_below_8": 0.5449,
+        "fraction_display_luma_above_40": 0.2102,
+        "fraction_display_luma_above_80": 0.1386,
+        "fraction_display_luma_above_160": 0.0001,
+        "channel_share_r_g_b": [
+          0.2071,
+          0.3937,
+          0.3992
+        ],
+        "detail_rms_after_2px_blur_display_luma": 6.09
+      },
+      "shadow_surround": {
+        "pixels": 10464,
+        "image_fraction": 0.0114,
+        "bounds_xyxy": [
+          475,
+          309,
+          610,
+          483
+        ],
+        "display_rgb_mean_0_255": [
+          95.9386,
+          143.0215,
+          145.8451
+        ],
+        "display_luma_mean_0_255": 133.2156,
+        "display_luma_p10_p50_p90": [
+          116.5092,
+          133.2244,
+          150.2244
+        ],
+        "display_luma_std": 12.8764,
+        "linear_luminance_mean_0_1": 0.2451,
+        "fraction_display_luma_below_8": 0.0,
+        "fraction_display_luma_above_40": 1.0,
+        "fraction_display_luma_above_80": 1.0,
+        "fraction_display_luma_above_160": 0.0083,
+        "channel_share_r_g_b": [
+          0.2493,
+          0.3717,
+          0.379
+        ],
+        "detail_rms_after_2px_blur_display_luma": 4.5278
+      },
+      "cloth_detail": {
+        "pixels": 3518,
+        "image_fraction": 0.0038,
+        "bounds_xyxy": [
+          413,
+          151,
+          497,
+          209
+        ],
+        "display_rgb_mean_0_255": [
+          65.7086,
+          75.1814,
+          64.1768
+        ],
+        "display_luma_mean_0_255": 72.3729,
+        "display_luma_p10_p50_p90": [
+          10.9422,
+          78.5778,
+          114.3538
+        ],
+        "display_luma_std": 35.7411,
+        "linear_luminance_mean_0_1": 0.084,
+        "fraction_display_luma_below_8": 0.0856,
+        "fraction_display_luma_above_40": 0.7868,
+        "fraction_display_luma_above_80": 0.4798,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.3204,
+          0.3666,
+          0.313
+        ],
+        "detail_rms_after_2px_blur_display_luma": 8.1017
+      },
+      "floor_detail": {
+        "pixels": 35215,
+        "image_fraction": 0.0382,
+        "bounds_xyxy": [
+          434,
+          463,
+          701,
+          655
+        ],
+        "display_rgb_mean_0_255": [
+          61.3981,
+          100.1151,
+          102.9891
+        ],
+        "display_luma_mean_0_255": 92.0914,
+        "display_luma_p10_p50_p90": [
+          69.4856,
+          92.7126,
+          114.8622
+        ],
+        "display_luma_std": 18.0663,
+        "linear_luminance_mean_0_1": 0.1165,
+        "fraction_display_luma_below_8": 0.0001,
+        "fraction_display_luma_above_40": 0.996,
+        "fraction_display_luma_above_80": 0.7222,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.2321,
+          0.3785,
+          0.3894
+        ],
+        "detail_rms_after_2px_blur_display_luma": 6.2393
+      },
+      "far_haze": {
+        "pixels": 85446,
+        "image_fraction": 0.0927,
+        "bounds_xyxy": [
+          245,
+          22,
+          1091,
+          123
+        ],
+        "display_rgb_mean_0_255": [
+          34.2024,
+          78.3642,
+          77.3655
+        ],
+        "display_luma_mean_0_255": 68.9033,
+        "display_luma_p10_p50_p90": [
+          15.5984,
+          78.0852,
+          103.1666
+        ],
+        "display_luma_std": 32.0569,
+        "linear_luminance_mean_0_1": 0.0791,
+        "fraction_display_luma_below_8": 0.0269,
+        "fraction_display_luma_above_40": 0.7633,
+        "fraction_display_luma_above_80": 0.4743,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.1801,
+          0.4126,
+          0.4073
+        ],
+        "detail_rms_after_2px_blur_display_luma": 0.8963
+      },
+      "central_floor": {
+        "pixels": 69020,
+        "image_fraction": 0.0749,
+        "bounds_xyxy": [
+          548,
+          236,
+          972,
+          468
+        ],
+        "display_rgb_mean_0_255": [
+          95.3494,
+          142.0852,
+          144.6622
+        ],
+        "display_luma_mean_0_255": 132.3353,
+        "display_luma_p10_p50_p90": [
+          105.0748,
+          135.7952,
+          153.6548
+        ],
+        "display_luma_std": 19.257,
+        "linear_luminance_mean_0_1": 0.2452,
+        "fraction_display_luma_below_8": 0.0,
+        "fraction_display_luma_above_40": 0.9999,
+        "fraction_display_luma_above_80": 0.9866,
+        "fraction_display_luma_above_160": 0.0376,
+        "channel_share_r_g_b": [
+          0.2495,
+          0.3719,
+          0.3786
+        ],
+        "detail_rms_after_2px_blur_display_luma": 4.921
+      },
+      "dark_perimeter": {
+        "pixels": 123904,
+        "image_fraction": 0.1344,
+        "bounds_xyxy": [
+          0,
+          0,
+          1280,
+          720
+        ],
+        "display_rgb_mean_0_255": [
+          14.7819,
+          35.0819,
+          35.421
+        ],
+        "display_luma_mean_0_255": 30.7906,
+        "display_luma_p10_p50_p90": [
+          0.7874,
+          26.3176,
+          74.2978
+        ],
+        "display_luma_std": 26.9407,
+        "linear_luminance_mean_0_1": 0.0234,
+        "fraction_display_luma_below_8": 0.2854,
+        "fraction_display_luma_above_40": 0.3588,
+        "fraction_display_luma_above_80": 0.0743,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.1733,
+          0.4113,
+          0.4153
+        ],
+        "detail_rms_after_2px_blur_display_luma": 2.7919
+      },
+      "dark_corners": {
+        "pixels": 27648,
+        "image_fraction": 0.03,
+        "bounds_xyxy": [
+          0,
+          0,
+          1280,
+          720
+        ],
+        "display_rgb_mean_0_255": [
+          3.5351,
+          11.3324,
+          11.5464
+        ],
+        "display_luma_mean_0_255": 9.6901,
+        "display_luma_p10_p50_p90": [
+          0.0,
+          5.937,
+          25.458
+        ],
+        "display_luma_std": 10.1963,
+        "linear_luminance_mean_0_1": 0.0037,
+        "fraction_display_luma_below_8": 0.5651,
+        "fraction_display_luma_above_40": 0.0052,
+        "fraction_display_luma_above_80": 0.0,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.1338,
+          0.429,
+          0.4371
+        ],
+        "detail_rms_after_2px_blur_display_luma": 2.3816
+      },
+      "player_pool": {
+        "pixels": 6337,
+        "image_fraction": 0.0069,
+        "bounds_xyxy": [
+          728,
+          429,
+          833,
+          506
+        ],
+        "display_rgb_mean_0_255": [
+          203.0259,
+          211.9146,
+          212.5522
+        ],
+        "display_luma_mean_0_255": 210.0709,
+        "display_luma_p10_p50_p90": [
+          182.8559,
+          213.584,
+          231.1496
+        ],
+        "display_luma_std": 19.0089,
+        "linear_luminance_mean_0_1": 0.6531,
+        "fraction_display_luma_below_8": 0.0,
+        "fraction_display_luma_above_40": 1.0,
+        "fraction_display_luma_above_80": 1.0,
+        "fraction_display_luma_above_160": 0.9872,
+        "channel_share_r_g_b": [
+          0.3236,
+          0.3377,
+          0.3387
+        ],
+        "detail_rms_after_2px_blur_display_luma": 3.8324
+      },
+      "left_debris": {
+        "pixels": 51359,
+        "image_fraction": 0.0557,
+        "bounds_xyxy": [
+          34,
+          348,
+          287,
+          551
+        ],
+        "display_rgb_mean_0_255": [
+          43.9423,
+          77.773,
+          79.8011
+        ],
+        "display_luma_mean_0_255": 70.727,
+        "display_luma_p10_p50_p90": [
+          42.8294,
+          69.6312,
+          100.79
+        ],
+        "display_luma_std": 22.1854,
+        "linear_luminance_mean_0_1": 0.0727,
+        "fraction_display_luma_below_8": 0.0028,
+        "fraction_display_luma_above_40": 0.9323,
+        "fraction_display_luma_above_80": 0.3519,
+        "fraction_display_luma_above_160": 0.0,
+        "channel_share_r_g_b": [
+          0.2181,
+          0.3859,
+          0.396
+        ],
+        "detail_rms_after_2px_blur_display_luma": 7.2746
+      },
+      "whole_image": {
+        "pixels": 921600,
+        "image_fraction": 1.0,
+        "bounds_xyxy": [
+          0,
+          0,
+          1280,
+          720
+        ],
+        "display_rgb_mean_0_255": [
+          40.8,
+          70.6637,
+          71.6671
+        ],
+        "display_luma_mean_0_255": 64.3871,
+        "display_luma_p10_p50_p90": [
+          4.1496,
+          59.8386,
+          133.3648
+        ],
+        "display_luma_std": 47.4068,
+        "linear_luminance_mean_0_1": 0.0875,
+        "fraction_display_luma_below_8": 0.1423,
+        "fraction_display_luma_above_40": 0.6431,
+        "fraction_display_luma_above_80": 0.3578,
+        "fraction_display_luma_above_160": 0.028,
+        "channel_share_r_g_b": [
+          0.2228,
+          0.3859,
+          0.3913
+        ],
+        "detail_rms_after_2px_blur_display_luma": 4.9048
+      }
+    }
+  },
+  "contrast_cues": {
+    "reference": {
+      "player_pool_over_pool_surround": 2.011,
+      "boss_shadow_over_shadow_surround": 0.1997,
+      "central_floor_over_dark_perimeter": 4.9014,
+      "far_haze_over_dark_perimeter": 3.2851
+    },
+    "candidate": {
+      "player_pool_over_pool_surround": 1.931,
+      "boss_shadow_over_shadow_surround": 0.201,
+      "central_floor_over_dark_perimeter": 4.2979,
+      "far_haze_over_dark_perimeter": 2.2378
+    }
+  },
+  "review_axes": {
+    "composition": "pending_visual_review",
+    "key_and_long_ground_shadow": "pending_visual_review",
+    "far_haze_dark_perimeter": "pending_visual_review",
+    "player_pool_and_readability": "pending_visual_review",
+    "woven_cloth_and_seams": "pending_visual_review",
+    "fractured_floor_and_rubble_depth": "pending_visual_review",
+    "restrained_gameplay_effects": "pending_visual_review"
+  }
+}

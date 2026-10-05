@@ -1,0 +1,23 @@
+{
+  "source": "study/comfy-raw",
+  "model": "flux-2-klein-4b-fp8 local ComfyUI",
+  "not_from_reference_clip": true,
+  "normal_space": "DirectX, green positive up",
+  "floor_dry": "0 is damp, 1 is dry. Material remaps to roughness 0.42-0.93.",
+  "cloth_roughness_stored_range": [
+    0.88,
+    0.97
+  ],
+  "files": [
+    "Assets\\Adapted\\Parity\\Surfaces\\T_Comfy_Cloth_Weave.png",
+    "study\\assets\\T_Comfy_Cloth_Weave.png",
+    "Assets\\Adapted\\Parity\\Surfaces\\T_Comfy_Cloth_Normal.png",
+    "study\\assets\\T_Comfy_Cloth_Normal.png",
+    "Assets\\Adapted\\Parity\\Surfaces\\T_Comfy_Cloth_Roughness.png",
+    "study\\assets\\T_Comfy_Cloth_Roughness.png",
+    "Assets\\Adapted\\Parity\\Surfaces\\T_Comfy_Floor_Variation.png",
+    "study\\assets\\T_Comfy_Floor_Variation.png",
+    "Assets\\Adapted\\Parity\\Surfaces\\T_Comfy_Floor_Dry.png",
+    "study\\assets\\T_Comfy_Floor_Dry.png"
+  ]
+}

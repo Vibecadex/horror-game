@@ -1,0 +1,9 @@
+# Broad crust-bank source review
+
+Inspected the [overview](../../../Assets/Adapted/ChamberParity/Crust/crust-overview.png), [bank A depth view](../../../Assets/Adapted/ChamberParity/Crust/crust-a-depth.png), [bank B depth view](../../../Assets/Adapted/ChamberParity/Crust/crust-b-depth.png) and the [frozen manifest](../../chamber/20261005T095028Z/chamber-crust-reviewed.json). The manifest hash is `89e2c3b844876594cbff18be22428d6c75df60ff49490404b2df5daa08d643f3`. These are source previews, not the engine result.
+
+The two banks add broad connected plate faces, irregular branching gaps, chipped boundaries and loose angular fragments. That is a meaningful geometric change from the prior thin crack web and curved fine-chip banks. Source bank A is approximately 4.30×3.24m and bank B 4.57×3.20m; together they contain 5422 unique triangles. Their maximum local heights are 4.514 and 4.491cm, with five declared placements at world Z−5 and unit vertical scale.
+
+Advance to the saved-camera review. The chief watchpoint is the perimeter: each source bank has a discernible outer shape. The final world-space top colour and tapered outer depth should join the underlying floor so the result reads as broken concrete, not five contrasting isolated patches. Inspect varied directions for repeated shapes, excessively uniform gap widths, bright edges, floating debris and the visibility of the larger faces at ordinary gameplay distance.
+
+The independent harness requires the exact two owned meshes and five separately frozen labels/transforms, unchanged vertical scale and actual component bounds between world Z−5.05 and +1.05cm. Existing global NoCollision and combat-space checks still apply. The original five connected-field instances and four loose-slab groups keep their separate unchanged assertions. Source readback and shape approval do not establish final rendered parity.

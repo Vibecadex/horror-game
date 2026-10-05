@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "settings": [
+    {
+      "name": "RearWallWash",
+      "location": [
+        1100,
+        0,
+        560
+      ],
+      "target": [
+        1650,
+        0,
+        290
+      ],
+      "intensity": 8500,
+      "radius": 1550,
+      "width": 1500,
+      "height": 200,
+      "color": [
+        0.45,
+        0.73,
+        0.72
+      ]
+    },
+    {
+      "name": "LeftWallWash",
+      "location": [
+        0,
+        -1100,
+        560
+      ],
+      "target": [
+        150,
+        -1650,
+        250
+      ],
+      "intensity": 6500,
+      "radius": 1750,
+      "width": 1850,
+      "height": 120,
+      "color": [
+        0.4,
+        0.63,
+        0.66
+      ]
+    },
+    {
+      "name": "RightWallWash",
+      "location": [
+        120,
+        1100,
+        520
+      ],
+      "target": [
+        250,
+        1650,
+        240
+      ],
+      "intensity": 6000,
+      "radius": 1650,
+      "width": 1700,
+      "height": 120,
+      "color": [
+        0.43,
+        0.68,
+        0.69
+      ]
+    },
+    {
+      "name": "FrontWallWash",
+      "location": [
+        -1040,
+        0,
+        580
+      ],
+      "target": [
+        -1660,
+        0,
+        260
+      ],
+      "intensity": 6500,
+      "radius": 1650,
+      "width": 1550,
+      "height": 130,
+      "color": [
+        0.38,
+        0.65,
+        0.67
+      ]
+    }
+  ],
+  "gameplay_and_key_light_changed": false,
+  "rear_fog_scattering": 4,
+  "readback": [
+    {
+      "label": "TE_Chamber_RearWallWash",
+      "intensity": 8500.0
+    },
+    {
+      "label": "TE_Chamber_LeftWallWash",
+      "intensity": 6500.0
+    },
+    {
+      "label": "TE_Chamber_RightWallWash",
+      "intensity": 6000.0
+    },
+    {
+      "label": "TE_Chamber_FrontWallWash",
+      "intensity": 6500.0
+    }
+  ]
+}

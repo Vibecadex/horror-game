@@ -1,0 +1,272 @@
+{
+  "passed": true,
+  "checks": {
+    "saved_map_and_possession": true,
+    "no_input_stationary": true,
+    "move_in_mapped_direction": true,
+    "independent_aim_while_moving": true,
+    "fire_spawns_owned_projectiles": true,
+    "projectiles_damage_boss": true,
+    "dodge_displaces_player": true,
+    "telegraph_precedes_damage": true,
+    "boss_attack_damages_player": true,
+    "pause_freezes_world": true,
+    "unpause_resumes_time": true,
+    "boss_defeat_state": true,
+    "dead_boss_no_collision": true,
+    "restart_resets_health_1": true,
+    "restart_resets_health_2": true
+  },
+  "phases": {
+    "no_input_start": {
+      "time": 2.0061179026961327,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "health": 100.0,
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "boss_health": 300.0,
+      "state": 0,
+      "yaw": -145.0
+    },
+    "no_input_end": {
+      "time": 2.6090753003954887,
+      "player": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "health": 100.0,
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "boss_health": 300.0,
+      "state": 0,
+      "yaw": -145.0
+    },
+    "move_aim": {
+      "time": 3.214308701455593,
+      "player": [
+        -67.04618778768844,
+        570.0,
+        85.14999961853027
+      ],
+      "health": 100.0,
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "boss_health": 300.0,
+      "state": 0,
+      "yaw": 90.49799346923831
+    },
+    "fire_start": {
+      "time": 3.7151175029575825,
+      "player": [
+        -44.64120403974404,
+        570.0,
+        85.14999961853027
+      ],
+      "health": 100.0,
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "boss_health": 300.0,
+      "state": 0,
+      "yaw": -68.8857421875
+    },
+    "fire_end": {
+      "time": 5.222671199589968,
+      "player": [
+        -44.64120403974404,
+        570.0,
+        85.14999961853027
+      ],
+      "health": 100.0,
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "boss_health": 252.0,
+      "state": 4,
+      "yaw": -69.32518005371094
+    },
+    "dash_start": {
+      "time": 5.425753302872181,
+      "player": [
+        -64.19262285485557,
+        570.0,
+        85.14999961853027
+      ],
+      "health": 100.0,
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "boss_health": 240.0,
+      "state": 4,
+      "yaw": -69.32518005371094
+    },
+    "dash_end": {
+      "time": 5.713640701025724,
+      "player": [
+        -411.03191496815003,
+        570.0,
+        85.1499981177218
+      ],
+      "health": 100.0,
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "boss_health": 240.0,
+      "state": 4,
+      "yaw": -69.32518005371094
+    },
+    "attack_wait": {
+      "time": 5.713640701025724,
+      "player": [
+        -50.0,
+        -230.0,
+        87.15000200271606
+      ],
+      "health": 100.0,
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "boss_health": 240.0,
+      "state": 4,
+      "yaw": -69.32518005371094
+    },
+    "boss_strike": {
+      "time": 6.972844701260328,
+      "player": [
+        -50.0,
+        -230.0,
+        85.14999961853027
+      ],
+      "health": 76.0,
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "boss_health": 240.0,
+      "state": 2,
+      "yaw": -69.32518005371094
+    },
+    "pause_before": {
+      "time": 7.482761401683092,
+      "player": [
+        -50.0,
+        -230.0,
+        85.14999961853027
+      ],
+      "health": 76.0,
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "boss_health": 240.0,
+      "state": 2,
+      "yaw": -69.32518005371094
+    },
+    "boss_defeated": {
+      "time": 14.566036399453878,
+      "player": [
+        -500.0,
+        -230.0,
+        85.14999961853027
+      ],
+      "health": 76.0,
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "boss_health": 0.0,
+      "state": 3,
+      "yaw": -0.48417860269546514
+    }
+  },
+  "physical_device_verified": false,
+  "input_method": "Enhanced Input action injection including pause/restart; staging teleports isolate phases",
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "viewport_dimensions": [
+    1014,
+    550
+  ],
+  "telegraph_seconds": 0.9245297014713287,
+  "wall_seconds": 17.889999999897555,
+  "shots": {
+    "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterProjectile_C_0": {
+      "owner_is_player": true,
+      "instigator_is_player": true,
+      "location": [
+        210.68343830326327,
+        -93.98567614287357,
+        85.14999961853027
+      ]
+    },
+    "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterProjectile_C_1": {
+      "owner_is_player": true,
+      "instigator_is_player": true,
+      "location": [
+        209.1681047026558,
+        -102.58062161650773,
+        85.14999961853027
+      ]
+    },
+    "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterProjectile_C_2": {
+      "owner_is_player": true,
+      "instigator_is_player": true,
+      "location": [
+        209.03727268277018,
+        -102.2339240030698,
+        85.14999961853027
+      ]
+    },
+    "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterProjectile_C_3": {
+      "owner_is_player": true,
+      "instigator_is_player": true,
+      "location": [
+        207.59293095524595,
+        -98.40649834412709,
+        85.14999961853027
+      ]
+    },
+    "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterProjectile_C_4": {
+      "owner_is_player": true,
+      "instigator_is_player": true,
+      "location": [
+        196.63111850553213,
+        -69.3583018965526,
+        85.14999961853027
+      ]
+    }
+  },
+  "restarts": 2,
+  "frame_ms": {
+    "median": 9.7322016954422,
+    "p95": 12.619100511074066,
+    "samples": 1189
+  }
+}

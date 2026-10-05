@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "validation_baseline": "C:\\Projects\\to-deploy\\horror-game\\evidence\\parity\\20261005T070301Z\\final-validation-baseline.json",
+  "checked_utc": "2026-10-05T09:30:01.850069+00:00",
+  "active_assets": 126,
+  "active_changed_during_validation": [],
+  "active_added_during_validation": [],
+  "original_baseline_files": 555,
+  "original_baseline_failures": [],
+  "sources": [
+    {
+      "name": "reference_video",
+      "path": "C:\\Projects\\to-deploy\\horror-scene\\WhatsApp Video 2026-10-04 at 16.53.31.mp4",
+      "sha256": "289b314d3578e76e7a8e916c31ef653c0bbea2fb97e21eea2100cb063069fdeb",
+      "unchanged": true
+    },
+    {
+      "name": "source_archive",
+      "path": "C:\\Projects\\to-deploy\\horror-scene\\BossShot.zip",
+      "sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+      "unchanged": true
+    },
+    {
+      "name": "teddy_model",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\Assets\\ThirdParty\\HorrorTeddyBear\\horror-teddy-bear-monster.glb",
+      "sha256": "9fe8c87ab5eab6d05f19c936d8ae993d07727aa9871100118aa21452f7a9a8bb",
+      "unchanged": true
+    },
+    {
+      "name": "selected_reference",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\study\\visuals\\direction-close-best.jpg",
+      "sha256": "93fbe5a65dd56b5015bdd951fbefa5d1a3d60951688a00d28b33343a721107a8",
+      "unchanged": true
+    }
+  ],
+  "method": "Byte hashes only; separate SetupValidation capture-map assets are outside the playable encounter snapshot."
+}

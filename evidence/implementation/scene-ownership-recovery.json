@@ -1,0 +1,6 @@
+{
+  "reason": "Recover our new empty map after the first scene script failed before its final save.\nThe map was absent in the pre-run inventory and baseline; this is not adoption of an external asset.\n",
+  "before_sha256": "aaaca712f99eef1c8a99f7567ef4bd1c631110c2199f8e33047bf4e0032dab71",
+  "actors": [],
+  "source_run": "evidence/editor-runs/20261004T203947-d49316"
+}

@@ -1,0 +1,2 @@
+Running Unreal script: C:\Projects\to-deploy\horror-game\tools\import_chamber_surface_normals.py
+Log: C:\Projects\to-deploy\horror-game\evidence\editor-runs\20261005T114554-beb1ea\editor.log

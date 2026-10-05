@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-05T04:54:12.567982+00:00",
+  "local_links_checked": 29,
+  "images_fully_decoded": [
+    {
+      "path": "../../implementation/20261005T044114-verify_encounter_repair/01-initial-composition.png",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "../../independent-qa/20261005T034938Z/derived/original-gameplay-05.png",
+      "size": [
+        700,
+        384
+      ]
+    },
+    {
+      "path": "../../independent-qa/20261005T034938Z/derived/original-gameplay-10.png",
+      "size": [
+        700,
+        384
+      ]
+    },
+    {
+      "path": "../../independent-qa/20261005T034938Z/derived/original-gameplay-16.png",
+      "size": [
+        700,
+        384
+      ]
+    },
+    {
+      "path": "../../independent-qa/20261005T034938Z/engine/01-initial-composition.png",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "comparison-original-before-after.png",
+      "size": [
+        1740,
+        390
+      ]
+    },
+    {
+      "path": "native-motion-044641/motion-still.png",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "native-motion-contact-sheet.png",
+      "size": [
+        1278,
+        1440
+      ]
+    }
+  ],
+  "changed_assets_match_authorized_scope": true,
+  "python_syntax_valid": true,
+  "successful_final_engine_runs": 5,
+  "gameplay_assets_in_manifest": 43
+}

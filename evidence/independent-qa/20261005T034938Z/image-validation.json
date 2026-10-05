@@ -1,0 +1,41 @@
+[
+  {
+    "reference_second": 5,
+    "fresh_extraction_matches_prior_pixels": false
+  },
+  {
+    "reference_second": 10,
+    "fresh_extraction_matches_prior_pixels": false
+  },
+  {
+    "reference_second": 16,
+    "fresh_extraction_matches_prior_pixels": false
+  },
+  {
+    "image": "engine\\01-initial-composition.png",
+    "pixels": [
+      1280,
+      720
+    ],
+    "full_independent_decode": true,
+    "sha256": "eb4d414346de42f16a6d181fac607718dab50e17cb49528c6f5a17f6dc4e2ab5"
+  },
+  {
+    "image": "engine\\02-after-firing.png",
+    "pixels": [
+      1280,
+      720
+    ],
+    "full_independent_decode": true,
+    "sha256": "c5efbafa8def877f5079468ede84436f614b1b804c68d85389706ab9520fe716"
+  },
+  {
+    "image": "engine\\03-after-restart.png",
+    "pixels": [
+      1280,
+      720
+    ],
+    "full_independent_decode": true,
+    "sha256": "eb90d22515c4fd8d8d63f44c6270084611fef5c6c20169c117bd37a9ac9b8432"
+  }
+]

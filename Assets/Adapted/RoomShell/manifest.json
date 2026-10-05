@@ -1,0 +1,952 @@
+{
+  "owner": "teddy-room-shell-20261005",
+  "source": "Original deterministic shell meshes for the chamber boxes. The ten-piece room kit was not modified.",
+  "generator": "tools/make_room_shell.py",
+  "blender_version": "5.2.0 LTS",
+  "coordinate_system": "Source metres, Z up, architectural fronts -Y. Same FBX axis setup as Assets/Adapted/Room. Unreal may present that front toward +Y. Confirm before placement, the way the bulkhead was confirmed.",
+  "fbx_settings": {
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "global_scale": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_NONE"
+  },
+  "material_slots": [
+    "Metal",
+    "Concrete",
+    "Rust",
+    "Dark",
+    "Emissive"
+  ],
+  "maps": "Assets/Adapted/RoomShell/Surfaces. Four families, no teal and no player pool. Not imported.",
+  "replaces_boxes": [
+    "FarWall",
+    "SideWall",
+    "SideLowerDamp",
+    "SideCornice",
+    "SideFoundation",
+    "SideGutter",
+    "FarLowerDamp",
+    "FarCornice",
+    "FarFoundation",
+    "CutawaySill",
+    "CutawayCap",
+    "RearInset",
+    "RearHeader",
+    "PipeStandoff",
+    "BeaconHousing",
+    "BeaconLens"
+  ],
+  "leave_alone": [
+    "Assets/Adapted/Room kit",
+    "bulkhead locking wheel",
+    "pipe-rack valve wheel",
+    "parity floor chips",
+    "TeddyV2",
+    "level actors"
+  ],
+  "not_included": [
+    "ceiling slab",
+    "second wheel",
+    "second tank",
+    "second crate",
+    "barrels",
+    "spotlight row",
+    "stage truss",
+    "luminous sign",
+    "baked player pool",
+    "baked teal",
+    "flat debris card",
+    "fourth creature"
+  ],
+  "total_triangles": 5800,
+  "assets": [
+    {
+      "name": "SM_ShellWallBay",
+      "file": "SM_ShellWallBay.fbx",
+      "triangles": 860,
+      "vertices": 496,
+      "bounds_m": {
+        "min": [
+          -2.0,
+          -0.5999999642372131,
+          0.0
+        ],
+        "max": [
+          2.0,
+          0.6000000238418579,
+          7.599999904632568
+        ]
+      },
+      "dimensions_m": [
+        4.0,
+        1.199999988079071,
+        7.599999904632568
+      ],
+      "expected_dimensions_cm": [
+        400.0,
+        120.0,
+        760.0
+      ],
+      "origin": "Floor Z=0. Thickness center X/Y. Interior face local Y=-0.60. Top Z=7.60.",
+      "front": "Blender local -Y",
+      "placement": "Replace FarWall and SideWall boxes. Far wall: yaw like the bulkhead so the interior face sits on X=1660, step 400 cm along Y. Sides: yaw 0 at Y=-1740 and yaw 180 at Y=+1740, step 400 cm along X. Do not also leave the wall boxes up.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "817b331a2e4004df327e531fe8504bb66b5b80b7caf837e205d138d687fd30f4"
+    },
+    {
+      "name": "SM_ShellWallBayNarrow",
+      "file": "SM_ShellWallBayNarrow.fbx",
+      "triangles": 748,
+      "vertices": 432,
+      "bounds_m": {
+        "min": [
+          -1.0,
+          -0.5999999642372131,
+          0.0
+        ],
+        "max": [
+          1.0,
+          0.6000000238418579,
+          7.599999904632568
+        ]
+      },
+      "dimensions_m": [
+        2.0,
+        1.199999988079071,
+        7.599999904632568
+      ],
+      "expected_dimensions_cm": [
+        200.0,
+        120.0,
+        760.0
+      ],
+      "origin": "Same section as the 4 m bay, 2.00 m wide.",
+      "front": "Blender local -Y",
+      "placement": "Close a span that is not a multiple of 400 cm. One narrow bay plus eight wide bays covers the far 34 m span. Do not scale.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "289fbe19d5193506a7ae39453ddfda6a091ab43945a138f91ffa82b92b408ce0"
+    },
+    {
+      "name": "SM_ShellCornice",
+      "file": "SM_ShellCornice.fbx",
+      "triangles": 264,
+      "vertices": 144,
+      "bounds_m": {
+        "min": [
+          -2.0,
+          -0.5,
+          -0.30000001192092896
+        ],
+        "max": [
+          2.0,
+          0.019999995827674866,
+          0.24000000953674316
+        ]
+      },
+      "dimensions_m": [
+        4.0,
+        0.5199999958276749,
+        0.5400000214576721
+      ],
+      "expected_dimensions_cm": [
+        400.0,
+        52.0,
+        54.0
+      ],
+      "origin": "Z=0 seats on the wall top. Shelf projects toward -Y. Brackets extend below 0.",
+      "front": "Blender local -Y",
+      "placement": "Place at Z=760 on each wall bay, same yaw as that wall. This is the upper ledge, not a roof.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "e1aa0acd3a35472fef97402e98789de4784f21c482076cc848fed233a68c8b6f"
+    },
+    {
+      "name": "SM_ShellFoundation",
+      "file": "SM_ShellFoundation.fbx",
+      "triangles": 212,
+      "vertices": 120,
+      "bounds_m": {
+        "min": [
+          -2.0,
+          -0.5899999737739563,
+          0.0
+        ],
+        "max": [
+          2.0,
+          0.12999999523162842,
+          0.3774999976158142
+        ]
+      },
+      "dimensions_m": [
+        4.0,
+        0.7199999690055847,
+        0.3774999976158142
+      ],
+      "expected_dimensions_cm": [
+        400.0,
+        72.0,
+        37.75
+      ],
+      "origin": "Floor Z=0. Most of the mass projects toward -Y, 13 cm tucks toward +Y.",
+      "front": "Blender local -Y",
+      "placement": "Along the interior foot of each wall, 400 cm centers. Replaces SideFoundation and FarFoundation boxes.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "07882612007085d2e37eb8df8c1132b581c277279286a36df690cbad959d9c6c"
+    },
+    {
+      "name": "SM_ShellGutter",
+      "file": "SM_ShellGutter.fbx",
+      "triangles": 220,
+      "vertices": 120,
+      "bounds_m": {
+        "min": [
+          -2.0199999809265137,
+          -0.24000000953674316,
+          0.0
+        ],
+        "max": [
+          2.0199999809265137,
+          0.24000000953674316,
+          0.18000000715255737
+        ]
+      },
+      "dimensions_m": [
+        4.039999961853027,
+        0.48000001907348633,
+        0.18000000715255737
+      ],
+      "expected_dimensions_cm": [
+        404.0,
+        48.0,
+        18.0
+      ],
+      "origin": "Floor Z=0. Open recess is the middle 2.2 m. Long axis X.",
+      "front": "Blender local -Y",
+      "placement": "Near Y=\u00b11560, outside the walk ring, 400 cm centers. The recess is the dark strip. Set the existing grate beside it. Do not scale the grate down into the slot, and do not run one channel across the arena.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "2bf0cf430e3080130d041d871fd9c4752ce68a6cf6226b562df61a745056a31c"
+    },
+    {
+      "name": "SM_ShellCutawaySill",
+      "file": "SM_ShellCutawaySill.fbx",
+      "triangles": 264,
+      "vertices": 144,
+      "bounds_m": {
+        "min": [
+          -1.7000000476837158,
+          -0.6100000143051147,
+          0.0
+        ],
+        "max": [
+          1.7000000476837158,
+          0.6100000143051147,
+          0.7199999690055847
+        ]
+      },
+      "dimensions_m": [
+        3.4000000953674316,
+        1.2200000286102295,
+        0.7199999690055847
+      ],
+      "expected_dimensions_cm": [
+        340.0,
+        122.0,
+        72.0
+      ],
+      "origin": "Floor Z=0. Broken end is the -X side at 42 cm. High stub is about 68 cm plus a short metal cap. Long axis X.",
+      "front": "Blender local -Y",
+      "placement": "Around X=-1540, spanning \u00b1Y, with gaps between copies. Present the chipped face toward world -X. Replaces CutawaySill and CutawayCap boxes. Do not raise it into a wall.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "630ba9f15413f26e7e65586d1436f964a9e9ae5e767cbf6b2bba66ffd696d49d"
+    },
+    {
+      "name": "SM_ShellCutawayReturn",
+      "file": "SM_ShellCutawayReturn.fbx",
+      "triangles": 132,
+      "vertices": 72,
+      "bounds_m": {
+        "min": [
+          -0.6100000143051147,
+          -0.6500000357627869,
+          0.0
+        ],
+        "max": [
+          0.6100000143051147,
+          0.574999988079071,
+          1.059999942779541
+        ]
+      },
+      "dimensions_m": [
+        1.2200000286102295,
+        1.225000023841858,
+        1.059999942779541
+      ],
+      "expected_dimensions_cm": [
+        122.0,
+        122.5,
+        106.0
+      ],
+      "origin": "Floor Z=0. Top about 1.06 m. Footprint about 1.2 m.",
+      "front": "Blender local -Y",
+      "placement": "Two copies only, at the near corners where the side walls meet the sill, outside X=-1480 and |Y|=1500. Not a fourth wall.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "38496f1fffade3f0f03d0414596506c1c2a6d9656869e74d06b564563984cc09"
+    },
+    {
+      "name": "SM_ShellRearInset",
+      "file": "SM_ShellRearInset.fbx",
+      "triangles": 244,
+      "vertices": 136,
+      "bounds_m": {
+        "min": [
+          -2.140000104904175,
+          -0.23000000417232513,
+          0.029999971389770508
+        ],
+        "max": [
+          2.140000104904175,
+          0.18000000715255737,
+          3.6700000762939453
+        ]
+      },
+      "dimensions_m": [
+        4.28000020980835,
+        0.4100000113248825,
+        3.640000104904175
+      ],
+      "expected_dimensions_cm": [
+        428.0,
+        41.0,
+        364.0
+      ],
+      "origin": "Floor of the opening at Z=0. Opening faces -Y. About 4.2 m wide and 3.6 m tall.",
+      "front": "Blender local -Y",
+      "placement": "Far wall between pilasters, yaw matched to that wall. Replaces RearInset and RearHeader boxes. The bulkhead door stays the landmark. No sign.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "124f04238c76850bf34ab6c30373d46f1f21c8a8e3488a35cff19c82e17e4a9f"
+    },
+    {
+      "name": "SM_ShellShutterNiche",
+      "file": "SM_ShellShutterNiche.fbx",
+      "triangles": 396,
+      "vertices": 216,
+      "bounds_m": {
+        "min": [
+          -0.9300000071525574,
+          -0.1899999976158142,
+          0.029999971389770508
+        ],
+        "max": [
+          0.9300000071525574,
+          0.15000000596046448,
+          2.5
+        ]
+      },
+      "dimensions_m": [
+        1.8600000143051147,
+        0.3400000035762787,
+        2.4700000286102295
+      ],
+      "expected_dimensions_cm": [
+        186.0,
+        34.0,
+        247.0
+      ],
+      "origin": "Floor Z=0. Opening faces -Y. Shutter covers only the upper part of the bay.",
+      "front": "Blender local -Y",
+      "placement": "Right wall only, one copy, outside Y=1500. The service cabinets stay. This is the shuttered niche, not a second cabinet.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "2a1cf6c55ebc2f21b1f8c0019ee5fb0a36db5d000e16d1a023da47d83b3a9d01"
+    },
+    {
+      "name": "SM_ShellPipeStandoff",
+      "file": "SM_ShellPipeStandoff.fbx",
+      "triangles": 320,
+      "vertices": 176,
+      "bounds_m": {
+        "min": [
+          -0.18000000715255737,
+          -0.40896469354629517,
+          0.02000001072883606
+        ],
+        "max": [
+          0.18000000715255737,
+          0.2240000069141388,
+          0.5800000429153442
+        ]
+      },
+      "dimensions_m": [
+        0.36000001430511475,
+        0.632964700460434,
+        0.5600000321865082
+      ],
+      "expected_dimensions_cm": [
+        36.0,
+        63.3,
+        56.0
+      ],
+      "origin": "Plate center near the origin. Saddle faces -Y.",
+      "front": "Blender local -Y",
+      "placement": "Under the left-wall pipe runs, replacing PipeStandoff boxes. Keep the rack's own valve wheel. Do not add another.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "b4996349d1d420f2e3315ab10abaaf1417a35ecbfba48e99dda89b07444d32b4"
+    },
+    {
+      "name": "SM_ShellBeaconHousing",
+      "file": "SM_ShellBeaconHousing.fbx",
+      "triangles": 264,
+      "vertices": 144,
+      "bounds_m": {
+        "min": [
+          -0.20000000298023224,
+          -0.13999998569488525,
+          0.02000001072883606
+        ],
+        "max": [
+          0.20000000298023224,
+          0.18000000715255737,
+          0.7000000476837158
+        ]
+      },
+      "dimensions_m": [
+        0.4000000059604645,
+        0.3199999928474426,
+        0.6800000369548798
+      ],
+      "expected_dimensions_cm": [
+        40.0,
+        32.0,
+        68.0
+      ],
+      "origin": "Floor of the housing at Z=0. Slit faces -Y. Slit is 4 cm by 18 cm.",
+      "front": "Blender local -Y",
+      "placement": "Replaces BeaconHousing and BeaconLens boxes at the two existing practicals. Assign the warning lens on the emissive slot if a red slit is required. The red point stays the light actor. No new fixture row.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "58cf8f4ae4f7ffbeda310fcb2c13245a3de9c241d82e0e9c48e3acbda03b107e"
+    },
+    {
+      "name": "SM_ShellCornerRiser",
+      "file": "SM_ShellCornerRiser.fbx",
+      "triangles": 884,
+      "vertices": 468,
+      "bounds_m": {
+        "min": [
+          -0.5600000023841858,
+          -0.5600000023841858,
+          0.0
+        ],
+        "max": [
+          1.0799999237060547,
+          0.5600000023841858,
+          7.599999904632568
+        ]
+      },
+      "dimensions_m": [
+        1.6399999260902405,
+        1.1200000047683716,
+        7.599999904632568
+      ],
+      "expected_dimensions_cm": [
+        164.0,
+        112.0,
+        760.0
+      ],
+      "origin": "Floor Z=0. Pier is 0.96 m square. Elbow leaves toward +X and stays on that side.",
+      "front": "Blender local -Y",
+      "placement": "Far corners around (1500, \u00b11550), entirely outside X=1480 and |Y|=1500. Turn the +X elbow along the outside of the far wall. Not a second tank. No valve wheel.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "94c8ac7264bfee680920072f2da6f4af805f75b5437a1874dc319256b29c789a"
+    },
+    {
+      "name": "SM_ShellUtilityCurb",
+      "file": "SM_ShellUtilityCurb.fbx",
+      "triangles": 264,
+      "vertices": 164,
+      "bounds_m": {
+        "min": [
+          -2.0,
+          -0.18000000715255737,
+          0.0
+        ],
+        "max": [
+          2.0,
+          0.3199999928474426,
+          0.3100000023841858
+        ]
+      },
+      "dimensions_m": [
+        4.0,
+        0.5,
+        0.3100000023841858
+      ],
+      "expected_dimensions_cm": [
+        400.0,
+        50.0,
+        31.0
+      ],
+      "origin": "Floor Z=0. Long axis X. Sediment is part of this mesh, clustered at -X.",
+      "front": "Blender local -Y",
+      "placement": "Far utility strip X=1530 to 1620, behind the playable limit. Replaces the empty join at the wall foot. The parity floor chips remain the scatter. Do not spawn the old foot-debris boxes, and do not treat these lumps as a crate or a debris card.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "cb957132021df7895f89b6c69bfac5368137b2bdab5e1c22c96ed7008ac46614"
+    },
+    {
+      "name": "SM_ShellUpperBracket",
+      "file": "SM_ShellUpperBracket.fbx",
+      "triangles": 176,
+      "vertices": 96,
+      "bounds_m": {
+        "min": [
+          -0.3499999940395355,
+          -0.7929908037185669,
+          0.010000020265579224
+        ],
+        "max": [
+          0.3499999940395355,
+          0.04999999701976776,
+          1.0101022720336914
+        ]
+      },
+      "dimensions_m": [
+        0.699999988079071,
+        0.8429908007383347,
+        1.0001022517681122
+      ],
+      "expected_dimensions_cm": [
+        70.0,
+        84.3,
+        100.01
+      ],
+      "origin": "Plate bottom at Z=0. Arms reach about 0.78 m toward -Y and stop.",
+      "front": "Blender local -Y",
+      "placement": "A few copies on the upper interior face, plate bottom near Z=690. They suggest structure past the open centre. No truss, no lamp, no span across the arena.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "661a9b449692695998ce86cdcb80194985d00ae123c36c24cccf9e41a208c075"
+    },
+    {
+      "name": "SM_ShellCableTray",
+      "file": "SM_ShellCableTray.fbx",
+      "triangles": 440,
+      "vertices": 256,
+      "bounds_m": {
+        "min": [
+          -1.100000023841858,
+          -0.164000004529953,
+          0.013999998569488525
+        ],
+        "max": [
+          1.100000023841858,
+          0.31999996304512024,
+          0.3199999928474426
+        ]
+      },
+      "dimensions_m": [
+        2.200000047683716,
+        0.48399996757507324,
+        0.3059999942779541
+      ],
+      "expected_dimensions_cm": [
+        220.0,
+        48.4,
+        30.6
+      ],
+      "origin": "Long axis X. Hangers are +Y, toward the wall. Open upward.",
+      "front": "Blender local -Y",
+      "placement": "Right wall only, one or two copies around Z=420, outside Y=1500. Not a pipe rack and not a second valve.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "7259fc0c4232b8d1f7b61b801083a46266d239fc22d097cae4f5502d4d820c6c"
+    },
+    {
+      "name": "SM_ShellDarkBacking",
+      "file": "SM_ShellDarkBacking.fbx",
+      "triangles": 88,
+      "vertices": 48,
+      "bounds_m": {
+        "min": [
+          -3.0,
+          -0.18999998271465302,
+          0.0
+        ],
+        "max": [
+          3.0,
+          0.28999999165534973,
+          7.800000190734863
+        ]
+      },
+      "dimensions_m": [
+        6.0,
+        0.47999997437000275,
+        7.800000190734863
+      ],
+      "expected_dimensions_cm": [
+        600.0,
+        48.0,
+        780.0
+      ],
+      "origin": "Floor Z=0. Shaded face is -Y. 6.0 m wide, about 7.8 m tall.",
+      "front": "Blender local -Y",
+      "placement": "Outside the outer face of the three tall walls. Not a ceiling and not a hall behind the door.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "4c14160752cb183497a6ebe38cee623dcff6635c5db63a30b9fe70584ca7018b"
+    },
+    {
+      "name": "SM_ShellOuterApron",
+      "file": "SM_ShellOuterApron.fbx",
+      "triangles": 24,
+      "vertices": 16,
+      "bounds_m": {
+        "min": [
+          -3.0,
+          -3.0,
+          0.0
+        ],
+        "max": [
+          3.0,
+          3.0,
+          0.11100000143051147
+        ]
+      },
+      "dimensions_m": [
+        6.0,
+        6.0,
+        0.11100000143051147
+      ],
+      "expected_dimensions_cm": [
+        600.0,
+        600.0,
+        11.1
+      ],
+      "origin": "Top near Z=0.10. Centered.",
+      "front": "Blender local -Y",
+      "placement": "Tile outside the walls only, top flush with the exterior ground. No collision. Does not enter X=-1400..1480 or Y=-1500..1500.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "None. Decorative shell. Do not add a second collision volume.",
+      "sha256": "ca74809799b5b4bc3a54e48b96c049b5b11569dce1c058eeff06b097448f1b2e"
+    }
+  ],
+  "fbx_roundtrip_checks": [
+    {
+      "name": "SM_ShellWallBay",
+      "dimensions_m": [
+        4.0,
+        1.2000003457069397,
+        7.599999904632568
+      ],
+      "max_dimension_error_m": 3.5762786865234375e-07,
+      "triangles": 860,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellWallBayNarrow",
+      "dimensions_m": [
+        2.0,
+        1.2000001072883606,
+        7.599999904632568
+      ],
+      "max_dimension_error_m": 1.1920928955078125e-07,
+      "triangles": 748,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellCornice",
+      "dimensions_m": [
+        4.0,
+        0.5200003497302532,
+        0.5400000214576721
+      ],
+      "max_dimension_error_m": 3.5390257835388184e-07,
+      "triangles": 264,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellFoundation",
+      "dimensions_m": [
+        4.0,
+        0.7200003266334534,
+        0.3774999976158142
+      ],
+      "max_dimension_error_m": 3.5762786865234375e-07,
+      "triangles": 212,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellGutter",
+      "dimensions_m": [
+        4.039999961853027,
+        0.480000376701355,
+        0.18000000715255737
+      ],
+      "max_dimension_error_m": 3.5762786865234375e-07,
+      "triangles": 220,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellCutawaySill",
+      "dimensions_m": [
+        3.4000000953674316,
+        1.2200002670288086,
+        0.7199999690055847
+      ],
+      "max_dimension_error_m": 2.384185791015625e-07,
+      "triangles": 264,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellCutawayReturn",
+      "dimensions_m": [
+        1.220000147819519,
+        1.2250001430511475,
+        1.059999942779541
+      ],
+      "max_dimension_error_m": 1.1920928955078125e-07,
+      "triangles": 132,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellRearInset",
+      "dimensions_m": [
+        4.28000020980835,
+        0.41000039875507355,
+        3.640000104904175
+      ],
+      "max_dimension_error_m": 3.8743019104003906e-07,
+      "triangles": 244,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellShutterNiche",
+      "dimensions_m": [
+        1.8600000143051147,
+        0.3400001525878906,
+        2.4700000286102295
+      ],
+      "max_dimension_error_m": 1.4901161193847656e-07,
+      "triangles": 396,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellPipeStandoff",
+      "dimensions_m": [
+        0.3600000590085983,
+        0.6329647451639175,
+        0.5600000321865082
+      ],
+      "max_dimension_error_m": 4.470348358154297e-08,
+      "triangles": 320,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellBeaconHousing",
+      "dimensions_m": [
+        0.40000003576278687,
+        0.320000022649765,
+        0.6800000369548798
+      ],
+      "max_dimension_error_m": 2.9802322387695312e-08,
+      "triangles": 264,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellCornerRiser",
+      "dimensions_m": [
+        1.6399999856948853,
+        1.120000183582306,
+        7.599999904632568
+      ],
+      "max_dimension_error_m": 1.7881393432617188e-07,
+      "triangles": 884,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellUtilityCurb",
+      "dimensions_m": [
+        4.0,
+        0.5000003576278687,
+        0.3100000023841858
+      ],
+      "max_dimension_error_m": 3.5762786865234375e-07,
+      "triangles": 264,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellUpperBracket",
+      "dimensions_m": [
+        0.7000000476837158,
+        0.8429908901453018,
+        1.0001022517681122
+      ],
+      "max_dimension_error_m": 8.940696716308594e-08,
+      "triangles": 176,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellCableTray",
+      "dimensions_m": [
+        2.200000047683716,
+        0.48400014638900757,
+        0.3059999942779541
+      ],
+      "max_dimension_error_m": 1.7881393432617188e-07,
+      "triangles": 440,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellDarkBacking",
+      "dimensions_m": [
+        6.0,
+        0.4800005108118057,
+        7.800000190734863
+      ],
+      "max_dimension_error_m": 5.364418029785156e-07,
+      "triangles": 88,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_ShellOuterApron",
+      "dimensions_m": [
+        6.000000476837158,
+        6.000000476837158,
+        0.11100000143051147
+      ],
+      "max_dimension_error_m": 4.76837158203125e-07,
+      "triangles": 24,
+      "material_slots": 5,
+      "passed": true
+    }
+  ],
+  "limits": "Files on disk only. Placement, collision, and materials belong to the scene pass. Decorative meshes stay non-colliding. Existing blockers stay."
+}

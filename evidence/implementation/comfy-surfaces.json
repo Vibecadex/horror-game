@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "textures": [
+    {
+      "name": "T_Comfy_Cloth_Weave",
+      "kind": "color",
+      "path": "/Game/TeddyEncounter/Parity/Surfaces/T_Comfy_Cloth_Weave.T_Comfy_Cloth_Weave",
+      "srgb": true
+    },
+    {
+      "name": "T_Comfy_Cloth_Normal",
+      "kind": "normal",
+      "path": "/Game/TeddyEncounter/Parity/Surfaces/T_Comfy_Cloth_Normal.T_Comfy_Cloth_Normal",
+      "srgb": false
+    },
+    {
+      "name": "T_Comfy_Cloth_Roughness",
+      "kind": "data",
+      "path": "/Game/TeddyEncounter/Parity/Surfaces/T_Comfy_Cloth_Roughness.T_Comfy_Cloth_Roughness",
+      "srgb": false
+    },
+    {
+      "name": "T_Comfy_Floor_Variation",
+      "kind": "data",
+      "path": "/Game/TeddyEncounter/Parity/Surfaces/T_Comfy_Floor_Variation.T_Comfy_Floor_Variation",
+      "srgb": false
+    },
+    {
+      "name": "T_Comfy_Floor_Dry",
+      "kind": "data",
+      "path": "/Game/TeddyEncounter/Parity/Surfaces/T_Comfy_Floor_Dry.T_Comfy_Floor_Dry",
+      "srgb": false
+    }
+  ],
+  "notes": [],
+  "floor": "/Game/TeddyEncounter/Parity/Materials/M_Parity_Floor.M_Parity_Floor",
+  "cloth": "/Game/TeddyEncounter/Parity/Materials/M_Parity_TeddyCloth.M_Parity_TeddyCloth",
+  "stitchling": "/Game/TeddyEncounter/Parity/Materials/M_Parity_StitchlingCloth.M_Parity_StitchlingCloth",
+  "hidden": [
+    "TE_Room_FootDebris_0",
+    "TE_Room_FootDebris_1",
+    "TE_Room_FootDebris_2",
+    "TE_Room_FootDebris_3",
+    "TE_Room_FootDebris_4",
+    "TE_Room_FootDebris_5",
+    "TE_Room_FootDebris_6",
+    "TE_Room_FootDebris_7",
+    "TE_Room_FootDebris_8",
+    "TE_Room_FootDebris_9",
+    "TE_Room_FootDebris_10",
+    "TE_Room_FootDebris_11",
+    "TE_Room_FootDebris_12",
+    "TE_Room_FootDebris_13",
+    "TE_Room_FootDebris_14",
+    "TE_Room_FootDebris_15",
+    "TE_Room_FootDebris_16",
+    "TE_Room_FootDebris_17",
+    "TE_Room_FootDebris_18",
+    "TE_Room_FootDebris_19",
+    "TE_Room_FootDebris_20",
+    "TE_Room_FootDebris_21",
+    "TE_Room_FootDebris_22",
+    "TE_Room_FootDebris_23",
+    "TE_Room_FootDebris_24",
+    "TE_Room_FootDebris_25",
+    "TE_Room_FootDebris_26",
+    "TE_Room_FootDebris_27",
+    "TE_AI_Decal_01",
+    "TE_AI_Decal_02",
+    "TE_AI_Decal_03",
+    "TE_AI_Decal_04"
+  ],
+  "player_pool": "ParityPlayerLight_GEN_VARIABLE",
+  "shading": "<MaterialShadingModel.MSM_CLOTH: 8>",
+  "cloth_scale": 1.05,
+  "key_fog_camera_unchanged": true
+}

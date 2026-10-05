@@ -1,0 +1,885 @@
+{
+  "owner": "teddy-chamber-connected-floor-20261005",
+  "status": "source-ready-for-engine-review",
+  "generator": "tools/make_chamber_floor.py",
+  "generator_sha256": "128da2c40157a02318e71a472c9b7da76ffcdcc8c0d8d28cbc8744a2f0155af1",
+  "editable_blend": "Assets/Adapted/ChamberParity/Floor/ChamberFloor_Kit.blend",
+  "blend_sha256": "d20a20d7240663c933ccdea19dd4ad30060685e942602ef3e85330be0a1734d6",
+  "source": "Original deterministic geometry from hierarchical stress splits with shared meandering paths and T-junctions, not a texture/card or downloaded scan.",
+  "references": [
+    "study/visuals/chamber-target-front.png",
+    "study/visuals/chamber-target-reverse.png"
+  ],
+  "preserved": "All previous Floor/FloorV3 meshes, materials, placements, characters and Unreal assets are unchanged.",
+  "coordinate_system": "Metres,+Z up, localZ0 underlying floor. StaticFBX mirrors Y in project importer.",
+  "fbx_settings": {
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "global_scale": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_NONE"
+  },
+  "material_slots": [
+    "Concrete",
+    "ConcreteLight",
+    "ConcreteDark",
+    "Aggregate",
+    "Dark",
+    "Crack"
+  ],
+  "material_guidance": {
+    "Concrete": "Existing world-aligned base-floor material, identical texture scale and world coordinates.",
+    "ConcreteLight": "Existing world-aligned floor with subtle lift. Keep within about1.05\u20131.10 of base, not bright tiles.",
+    "ConcreteDark": "Existing world-aligned floor slightly darker; cohesive wear regions, not alternating tiles.",
+    "Aggregate": "Sparse detached slab edges only; muted rough concrete, not bright outlines.",
+    "Dark": "Low-reflectance vertical sides of detached chips; no emission.",
+    "Crack": "Nonemissive very dark, rough, zero-specular narrow recesses. Avoid reflective filament artifacts."
+  },
+  "uv0": "SourceXYmetres/4. World-aligned base-floor binding recommended to eliminate patch seams.",
+  "assets": [
+    {
+      "name": "SM_ChamberFractureFork_A",
+      "file": "SM_ChamberFractureFork_A.fbx",
+      "triangles": 21076,
+      "vertices": 37228,
+      "bounds_m": {
+        "min": [
+          -4.792457103729248,
+          -4.201190948486328,
+          9.999999747378752e-05
+        ],
+        "max": [
+          4.773754596710205,
+          4.079128265380859,
+          0.033426277339458466
+        ]
+      },
+      "dimensions_m": [
+        9.566211700439453,
+        8.280319213867188,
+        0.03332627734198468
+      ],
+      "material_slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "plate_count": 139,
+      "detached_slabs": [
+        {
+          "centre_m": [
+            -2.5285249758575943,
+            -0.5919439659753745
+          ],
+          "nominal_span_cm": 50.16460916724319,
+          "top_cm": 2.862628128317753
+        },
+        {
+          "centre_m": [
+            2.5411562278771185,
+            2.5184351218255205
+          ],
+          "nominal_span_cm": 21.914120265344085,
+          "top_cm": 2.3988436952935235
+        },
+        {
+          "centre_m": [
+            -3.0813746432353826,
+            -2.137500474597142
+          ],
+          "nominal_span_cm": 14.894239685190733,
+          "top_cm": 2.5116191378684656
+        },
+        {
+          "centre_m": [
+            3.102202855054778,
+            2.5150535382296293
+          ],
+          "nominal_span_cm": 19.244010827450158,
+          "top_cm": 2.8759375827989695
+        },
+        {
+          "centre_m": [
+            -2.13146080429512,
+            -3.5
+          ],
+          "nominal_span_cm": 21.373158119632624,
+          "top_cm": 2.0932084447564843
+        },
+        {
+          "centre_m": [
+            2.2777806144262187,
+            2.2450839648480896
+          ],
+          "nominal_span_cm": 51.13748572447408,
+          "top_cm": 2.2791439480418196
+        },
+        {
+          "centre_m": [
+            -3.6171409400568715,
+            -1.1674169113182002
+          ],
+          "nominal_span_cm": 28.695827726467794,
+          "top_cm": 3.004692097110039
+        },
+        {
+          "centre_m": [
+            2.555691200927388,
+            2.0864189312083106
+          ],
+          "nominal_span_cm": 25.341844721016333,
+          "top_cm": 2.873943769143541
+        },
+        {
+          "centre_m": [
+            -2.9965625610565554,
+            -1.8825452627606007
+          ],
+          "nominal_span_cm": 26.84415648693035,
+          "top_cm": 2.4375444519751515
+        },
+        {
+          "centre_m": [
+            2.9903456751713735,
+            1.807370440652205
+          ],
+          "nominal_span_cm": 28.003215479020994,
+          "top_cm": 2.193507916331846
+        },
+        {
+          "centre_m": [
+            -3.2429532116767033,
+            -1.8589649439998284
+          ],
+          "nominal_span_cm": 55.49171826736949,
+          "top_cm": 2.600100416213473
+        },
+        {
+          "centre_m": [
+            1.759292303983183,
+            1.5492350716853043
+          ],
+          "nominal_span_cm": 25.13851092892214,
+          "top_cm": 1.992494632045687
+        },
+        {
+          "centre_m": [
+            -3.60523136282826,
+            -1.2007898447870606
+          ],
+          "nominal_span_cm": 19.383487371305836,
+          "top_cm": 3.0608777550869504
+        },
+        {
+          "centre_m": [
+            2.0524700933916904,
+            3.5
+          ],
+          "nominal_span_cm": 21.45945413961316,
+          "top_cm": 2.2861311651483036
+        },
+        {
+          "centre_m": [
+            -2.596414134902063,
+            -2.4589347815460583
+          ],
+          "nominal_span_cm": 18.18604094166738,
+          "top_cm": 2.306359021680606
+        },
+        {
+          "centre_m": [
+            2.9733477476987655,
+            1.5875948615835491
+          ],
+          "nominal_span_cm": 58.84670406106507,
+          "top_cm": 3.070286476426015
+        },
+        {
+          "centre_m": [
+            -2.98923289941449,
+            -2.4538319910210697
+          ],
+          "nominal_span_cm": 27.793276444401414,
+          "top_cm": 2.790560160791106
+        },
+        {
+          "centre_m": [
+            1.2982786886082103,
+            1.6710002949195697
+          ],
+          "nominal_span_cm": 20.65206968532079,
+          "top_cm": 2.47958225898122
+        }
+      ],
+      "surface_material_counts": {
+        "Concrete": 110,
+        "ConcreteLight": 15,
+        "ConcreteDark": 14
+      },
+      "internal_crack_edges": 325,
+      "visible_crack_edges": 288,
+      "connected_shared_edge_topology": true,
+      "plate_top_range_cm": [
+        0.3785075530914452,
+        1.4495813497654304
+      ],
+      "origin": "Underlying floor Z=0; field centred on XY. NoCollision decoration; never scale Z.",
+      "sha256": "17a648fe155fc40c3a90db5dd45d8644d82bf1efc6b6289115eea4afe27522b6",
+      "expected_dimensions_cm": [
+        956.6211700439453,
+        828.0319213867188,
+        3.332627734198468
+      ],
+      "highest_point_cm": 3.3426277339458466
+    },
+    {
+      "name": "SM_ChamberFractureBank_B",
+      "file": "SM_ChamberFractureBank_B.fbx",
+      "triangles": 23040,
+      "vertices": 40778,
+      "bounds_m": {
+        "min": [
+          -4.54038667678833,
+          -4.386538028717041,
+          9.999999747378752e-05
+        ],
+        "max": [
+          4.660908222198486,
+          4.270084857940674,
+          0.03389358893036842
+        ]
+      },
+      "dimensions_m": [
+        9.201294898986816,
+        8.656622886657715,
+        0.033793588932894636
+      ],
+      "material_slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "plate_count": 167,
+      "detached_slabs": [
+        {
+          "centre_m": [
+            -2.044957893972919,
+            2.7796574287364137
+          ],
+          "nominal_span_cm": 42.10279597240641,
+          "top_cm": 2.860096176617789
+        },
+        {
+          "centre_m": [
+            1.0631635349326762,
+            -2.6597998548249477
+          ],
+          "nominal_span_cm": 18.02471244308461,
+          "top_cm": 2.2286857480478677
+        },
+        {
+          "centre_m": [
+            -3.3426597339935116,
+            1.4440791143388152
+          ],
+          "nominal_span_cm": 18.287651509438923,
+          "top_cm": 2.419746236333986
+        },
+        {
+          "centre_m": [
+            1.2245273214467356,
+            -1.5105209846941636
+          ],
+          "nominal_span_cm": 23.16608778186761,
+          "top_cm": 2.3982086294875296
+        },
+        {
+          "centre_m": [
+            -2.171578599115117,
+            2.3051968852846194
+          ],
+          "nominal_span_cm": 26.854371229986096,
+          "top_cm": 2.934837581459196
+        },
+        {
+          "centre_m": [
+            2.8776905884693598,
+            -2.6294156407375726
+          ],
+          "nominal_span_cm": 53.91607625040684,
+          "top_cm": 3.031155328942704
+        },
+        {
+          "centre_m": [
+            -2.5464599736103937,
+            0.7550714358650108
+          ],
+          "nominal_span_cm": 14.074144483904416,
+          "top_cm": 1.9710392510360664
+        },
+        {
+          "centre_m": [
+            0.7017300154476552,
+            -3.5
+          ],
+          "nominal_span_cm": 20.303268252058125,
+          "top_cm": 2.0741228512123344
+        },
+        {
+          "centre_m": [
+            -2.9344178509972823,
+            0.08679200370253204
+          ],
+          "nominal_span_cm": 18.03095930028987,
+          "top_cm": 2.974164429459488
+        },
+        {
+          "centre_m": [
+            2.7586082093694526,
+            -2.29908091960204
+          ],
+          "nominal_span_cm": 20.89134087736579,
+          "top_cm": 2.1963570923449702
+        },
+        {
+          "centre_m": [
+            -3.393588777103792,
+            1.2721282394049351
+          ],
+          "nominal_span_cm": 46.19464367060994,
+          "top_cm": 2.540762696231839
+        },
+        {
+          "centre_m": [
+            2.690597292365007,
+            -3.20950776098633
+          ],
+          "nominal_span_cm": 27.35234467799621,
+          "top_cm": 3.2242943217825926
+        },
+        {
+          "centre_m": [
+            -2.9486240830573323,
+            2.002135068768914
+          ],
+          "nominal_span_cm": 26.136179442344577,
+          "top_cm": 2.2143648384143
+        },
+        {
+          "centre_m": [
+            1.1992816201117487,
+            -2.5937504006377607
+          ],
+          "nominal_span_cm": 16.210832711908925,
+          "top_cm": 2.161127744375334
+        },
+        {
+          "centre_m": [
+            -2.6767507742595726,
+            1.8571237268283007
+          ],
+          "nominal_span_cm": 21.926206428612797,
+          "top_cm": 2.635681868554423
+        },
+        {
+          "centre_m": [
+            1.1250470120861267,
+            -2.216574522753153
+          ],
+          "nominal_span_cm": 45.52562801199992,
+          "top_cm": 2.572849367155071
+        },
+        {
+          "centre_m": [
+            -2.5489715814543623,
+            1.6200162052013218
+          ],
+          "nominal_span_cm": 18.8235138580508,
+          "top_cm": 2.5240979443061007
+        },
+        {
+          "centre_m": [
+            2.528063486223132,
+            -2.1430497098326686
+          ],
+          "nominal_span_cm": 29.76640145148709,
+          "top_cm": 2.1426113527041957
+        },
+        {
+          "centre_m": [
+            -3.684785806112507,
+            0.6874973551259227
+          ],
+          "nominal_span_cm": 21.70510664255533,
+          "top_cm": 2.6400156689617873
+        },
+        {
+          "centre_m": [
+            2.8972194692780375,
+            -2.42212024954227
+          ],
+          "nominal_span_cm": 14.726883572500718,
+          "top_cm": 1.9725059415243094
+        },
+        {
+          "centre_m": [
+            -2.9357458946309647,
+            1.6919153222250747
+          ],
+          "nominal_span_cm": 55.2400103510982,
+          "top_cm": 2.3827765640990703
+        },
+        {
+          "centre_m": [
+            2.308530168124919,
+            -1.5664477369519627
+          ],
+          "nominal_span_cm": 22.245803863926277,
+          "top_cm": 2.23360896994424
+        },
+        {
+          "centre_m": [
+            -3.6605163961831138,
+            1.0907600184148487
+          ],
+          "nominal_span_cm": 26.29779587727889,
+          "top_cm": 2.981448796686302
+        },
+        {
+          "centre_m": [
+            2.3770635277840553,
+            -3.5
+          ],
+          "nominal_span_cm": 16.547422025380314,
+          "top_cm": 1.8318280629093144
+        }
+      ],
+      "surface_material_counts": {
+        "Concrete": 135,
+        "ConcreteDark": 21,
+        "ConcreteLight": 11
+      },
+      "internal_crack_edges": 392,
+      "visible_crack_edges": 356,
+      "connected_shared_edge_topology": true,
+      "plate_top_range_cm": [
+        0.420181930387038,
+        1.7120880651815897
+      ],
+      "origin": "Underlying floor Z=0; field centred on XY. NoCollision decoration; never scale Z.",
+      "sha256": "7f081e4a34148930690a2f1aae2519160f2caff680bfa39f17ae17b158cb59ca",
+      "expected_dimensions_cm": [
+        920.1294898986816,
+        865.6622886657715,
+        3.3793588932894636
+      ],
+      "highest_point_cm": 3.3893588930368423
+    },
+    {
+      "name": "SM_ChamberFractureDrift_C",
+      "file": "SM_ChamberFractureDrift_C.fbx",
+      "triangles": 17816,
+      "vertices": 31404,
+      "bounds_m": {
+        "min": [
+          -4.885814666748047,
+          -4.084272384643555,
+          9.999999747378752e-05
+        ],
+        "max": [
+          4.858291149139404,
+          3.990126132965088,
+          0.0351242758333683
+        ]
+      },
+      "dimensions_m": [
+        9.744105815887451,
+        8.074398517608643,
+        0.035024275835894514
+      ],
+      "material_slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "plate_count": 99,
+      "detached_slabs": [
+        {
+          "centre_m": [
+            -4.05,
+            -0.9896844262695557
+          ],
+          "nominal_span_cm": 56.2078184574287,
+          "top_cm": 2.533148753685661
+        },
+        {
+          "centre_m": [
+            1.8745083653835102,
+            1.5796089485441893
+          ],
+          "nominal_span_cm": 24.48519606181146,
+          "top_cm": 2.8876544147730345
+        },
+        {
+          "centre_m": [
+            -2.3211928982163137,
+            -1.6054227750277072
+          ],
+          "nominal_span_cm": 24.108408910590022,
+          "top_cm": 1.8357270577368092
+        },
+        {
+          "centre_m": [
+            3.3956964063586015,
+            3.1262866774753864
+          ],
+          "nominal_span_cm": 23.071733971379476,
+          "top_cm": 2.100530851479506
+        },
+        {
+          "centre_m": [
+            -3.5554781909488957,
+            -2.266144025590755
+          ],
+          "nominal_span_cm": 21.15592130582673,
+          "top_cm": 1.9108544591848475
+        },
+        {
+          "centre_m": [
+            3.083441798959197,
+            2.5599502139630026
+          ],
+          "nominal_span_cm": 59.25839457497152,
+          "top_cm": 2.5259893506549185
+        },
+        {
+          "centre_m": [
+            -3.4877635940092335,
+            -1.789681677808172
+          ],
+          "nominal_span_cm": 17.93367125197964,
+          "top_cm": 2.208089975447901
+        },
+        {
+          "centre_m": [
+            1.7319737702268792,
+            2.635928207628216
+          ],
+          "nominal_span_cm": 27.868398151941005,
+          "top_cm": 2.369419213084559
+        },
+        {
+          "centre_m": [
+            -2.7751729151401117,
+            -1.5990471674996456
+          ],
+          "nominal_span_cm": 19.834936370272036,
+          "top_cm": 2.8112456765525624
+        },
+        {
+          "centre_m": [
+            2.187515678183645,
+            2.5593651610252186
+          ],
+          "nominal_span_cm": 16.70483821293191,
+          "top_cm": 2.6633776546423857
+        },
+        {
+          "centre_m": [
+            -2.5564281496686565,
+            -0.21451082779726827
+          ],
+          "nominal_span_cm": 45.4076897353734,
+          "top_cm": 3.184973755381758
+        },
+        {
+          "centre_m": [
+            3.1442846820083306,
+            1.092468212847752
+          ],
+          "nominal_span_cm": 18.865526403522722,
+          "top_cm": 3.340994151174079
+        },
+        {
+          "centre_m": [
+            -3.16954608051733,
+            -1.833320283689861
+          ],
+          "nominal_span_cm": 17.124594049836457,
+          "top_cm": 2.627600277065883
+        },
+        {
+          "centre_m": [
+            2.377208207419802,
+            0.37066536979982256
+          ],
+          "nominal_span_cm": 17.14690173983025,
+          "top_cm": 2.119184826666759
+        },
+        {
+          "centre_m": [
+            -2.2694235332517283,
+            -1.4010660414987726
+          ],
+          "nominal_span_cm": 25.198676899115704,
+          "top_cm": 1.809163886007445
+        },
+        {
+          "centre_m": [
+            1.7557728069398735,
+            2.4532298802730885
+          ],
+          "nominal_span_cm": 47.743725394093026,
+          "top_cm": 1.9330546117732856
+        },
+        {
+          "centre_m": [
+            -3.050545982623733,
+            -1.6428678056020358
+          ],
+          "nominal_span_cm": 26.82447846932784,
+          "top_cm": 2.237773458600009
+        },
+        {
+          "centre_m": [
+            2.05182348386046,
+            2.459511616203411
+          ],
+          "nominal_span_cm": 17.37446080053656,
+          "top_cm": 2.4251560153548546
+        }
+      ],
+      "surface_material_counts": {
+        "Concrete": 81,
+        "ConcreteDark": 10,
+        "ConcreteLight": 8
+      },
+      "internal_crack_edges": 233,
+      "visible_crack_edges": 214,
+      "connected_shared_edge_topology": true,
+      "plate_top_range_cm": [
+        0.5147522429028305,
+        1.5389059400747633
+      ],
+      "origin": "Underlying floor Z=0; field centred on XY. NoCollision decoration; never scale Z.",
+      "sha256": "43fbeda42340aef8be9b26ed7a1dd479171d182052bd5f325a99686dfbb9544f",
+      "expected_dimensions_cm": [
+        974.4105815887451,
+        807.4398517608643,
+        3.5024275835894514
+      ],
+      "highest_point_cm": 3.51242758333683
+    }
+  ],
+  "total_unique_triangles": 61932,
+  "fbx_roundtrip_checks": [
+    {
+      "name": "SM_ChamberFractureFork_A",
+      "max_dimension_error_m": 9.5367431640625e-07,
+      "triangles": 21076,
+      "slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "passed": true
+    },
+    {
+      "name": "SM_ChamberFractureBank_B",
+      "max_dimension_error_m": 9.5367431640625e-07,
+      "triangles": 23040,
+      "slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "passed": true
+    },
+    {
+      "name": "SM_ChamberFractureDrift_C",
+      "max_dimension_error_m": 4.76837158203125e-07,
+      "triangles": 17816,
+      "slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "passed": true
+    }
+  ],
+  "recommended_placements": [
+    {
+      "label": "ForegroundLeft",
+      "mesh": "SM_ChamberFractureFork_A",
+      "location_cm": [
+        -800,
+        -700,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -1279.2457103729248,
+          -1107.912826538086,
+          -4.990000000252621
+        ],
+        "max": [
+          -322.6245403289795,
+          -279.8809051513672,
+          -1.6573722660541534
+        ]
+      }
+    },
+    {
+      "label": "ForegroundRight",
+      "mesh": "SM_ChamberFractureBank_B",
+      "location_cm": [
+        -780,
+        480,
+        -5
+      ],
+      "yaw": 9,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -1297.0692712358318,
+          -12.778598839902259,
+          -4.990000000252621
+        ],
+        "max": [
+          -252.8486851922204,
+          986.1659150882235,
+          -1.6106411069631577
+        ]
+      }
+    },
+    {
+      "label": "MidLeftDrift",
+      "mesh": "SM_ChamberFractureDrift_C",
+      "location_cm": [
+        230,
+        -740,
+        -5
+      ],
+      "yaw": -12,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -330.8641764790539,
+          -1231.3027830887586,
+          -4.990000000252621
+        ],
+        "max": [
+          790.1293808448517,
+          -238.9160777831774,
+          -1.4875724166631699
+        ]
+      }
+    },
+    {
+      "label": "RearRightFork",
+      "mesh": "SM_ChamberFractureFork_A",
+      "location_cm": [
+        820,
+        600,
+        -5
+      ],
+      "yaw": 177,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          321.2914322406548,
+          155.3748812421012,
+          -4.990000000252621
+        ],
+        "max": [
+          1319.9374286234718,
+          1032.3376973549498,
+          -1.6573722660541534
+        ]
+      }
+    },
+    {
+      "label": "RightSideBank",
+      "mesh": "SM_ChamberFractureBank_B",
+      "location_cm": [
+        10,
+        920,
+        -5
+      ],
+      "yaw": 87,
+      "scale": [
+        0.7,
+        0.7,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -313.2706336470369,
+          586.9649753751914,
+          -4.990000000252621
+        ],
+        "max": [
+          325.5716160672042,
+          1261.8865990257752,
+          -1.6106411069631577
+        ]
+      }
+    }
+  ],
+  "construction_limits": "Actual shallow relief0.01\u20133.6cm. No displacement below original floor. Thin dark valley meshes mask the underlying floor in incised seams; real plate bevels and detached slabs provide depth. Neutral source renders do not establish recess-depth parity.",
+  "integration_notes": [
+    "Use actorZ=-5cm, XYscales as listed, Zscale exactly1 and NoCollision.",
+    "New fields are alternatives to old isolated A/B fracturefields and many fine-grain scatter clusters. Preserve originals and hide only overlapping old dressing after live review.",
+    "Broad worn/damp mass separation remains a material/lighting job. Do not brighten every fracture edge to create detail.",
+    "Exterior relief tapers toward basefloor; no surrounding black boundary/card is authored. Use same world-aligned floor colour to conceal the patch edge.",
+    "Five recommendations keep broad central passages open; rotated near-border field overlap is shallow and requires actual engine z-fighting review.",
+    "Root integrates and captures both chamber directions; Blender proof is source QA, not final rendered parity."
+  ],
+  "renders": [
+    "fields-overview.png",
+    "field-a-detail.png",
+    "field-b-detail.png",
+    "field-c-detail.png"
+  ]
+}

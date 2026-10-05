@@ -1,0 +1,53 @@
+{
+  "source": "C:\\Projects\\to-deploy\\horror-game\\Assets\\ThirdParty\\HorrorTeddyBear\\horror-teddy-bear-monster.glb",
+  "source_sha256": "9fe8c87ab5eab6d05f19c936d8ae993d07727aa9871100118aa21452f7a9a8bb",
+  "height_m": 4.6,
+  "bones": [
+    "root",
+    "pelvis",
+    "spine",
+    "head",
+    "upperarm_L",
+    "forearm_L",
+    "hand_L",
+    "thigh_L",
+    "shin_L",
+    "foot_L",
+    "upperarm_R",
+    "forearm_R",
+    "hand_R",
+    "thigh_R",
+    "shin_R",
+    "foot_R"
+  ],
+  "clips": {
+    "Idle": {
+      "frames": 90,
+      "fps": 30,
+      "export": "C:\\Projects\\to-deploy\\horror-game\\Assets\\Adapted\\Teddy\\Teddy_Idle.fbx"
+    },
+    "Walk": {
+      "frames": 48,
+      "fps": 30,
+      "export": "C:\\Projects\\to-deploy\\horror-game\\Assets\\Adapted\\Teddy\\Teddy_Walk.fbx"
+    },
+    "Attack": {
+      "frames": 54,
+      "fps": 30,
+      "export": "C:\\Projects\\to-deploy\\horror-game\\Assets\\Adapted\\Teddy\\Teddy_Attack.fbx"
+    },
+    "Hit": {
+      "frames": 16,
+      "fps": 30,
+      "export": "C:\\Projects\\to-deploy\\horror-game\\Assets\\Adapted\\Teddy\\Teddy_Hit.fbx"
+    },
+    "Defeat": {
+      "frames": 72,
+      "fps": 30,
+      "export": "C:\\Projects\\to-deploy\\horror-game\\Assets\\Adapted\\Teddy\\Teddy_Defeat.fbx"
+    }
+  },
+  "vertices": 10982,
+  "triangles": 21960,
+  "notes": "Original-derived, smoothed and bulked mesh; custom weighted skeleton and original sampled clips. Ground-contact review pending in Unreal."
+}

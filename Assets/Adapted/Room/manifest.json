@@ -1,0 +1,547 @@
+{
+  "owner": "teddy-industrial-room-20261005",
+  "source": "Original deterministic local mesh authoring for this project; no external models or textures.",
+  "generator": "tools/make_industrial_room.py",
+  "blender_version": "5.2.0 LTS",
+  "coordinate_system": "Source metres, Z up, architectural fronts -Y. Unreal importer may rotate local axes; check imported bounds before placement.",
+  "fbx_settings": {
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "global_scale": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_NONE"
+  },
+  "material_slots": [
+    "Metal",
+    "Concrete",
+    "Rust",
+    "Dark",
+    "Emissive"
+  ],
+  "total_triangles": 49280,
+  "assets": [
+    {
+      "name": "SM_RoomPilaster",
+      "file": "SM_RoomPilaster.fbx",
+      "triangles": 1740,
+      "vertices": 896,
+      "bounds_m": {
+        "min": [
+          -0.49000000953674316,
+          -0.5230000019073486,
+          0.0
+        ],
+        "max": [
+          0.49000000953674316,
+          0.3499999940395355,
+          5.0
+        ]
+      },
+      "dimensions_m": [
+        0.9800000190734863,
+        0.8729999959468842,
+        5.0
+      ],
+      "expected_dimensions_cm": [
+        98.00000190734863,
+        87.29999959468842,
+        500.0
+      ],
+      "origin": "Floor at Z=0, centered in X/Y.",
+      "front": "Blender local -Y",
+      "placement": "Full-height perimeter support; front projects toward -Y.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "Environment prop; author simple collision only where required. Perimeter placements recommended.",
+      "sha256": "2b728633192283cea49e0a4a498da3cb861465792bd5a259c1e082356c086a59"
+    },
+    {
+      "name": "SM_RoomBulkhead",
+      "file": "SM_RoomBulkhead.fbx",
+      "triangles": 6428,
+      "vertices": 3312,
+      "bounds_m": {
+        "min": [
+          -2.509999990463257,
+          -0.6125166416168213,
+          0.0
+        ],
+        "max": [
+          2.509999990463257,
+          0.2800000011920929,
+          4.800000190734863
+        ]
+      },
+      "dimensions_m": [
+        5.019999980926514,
+        0.8925166428089142,
+        4.800000190734863
+      ],
+      "expected_dimensions_cm": [
+        501.99999809265137,
+        89.25166428089142,
+        480.0000190734863
+      ],
+      "origin": "Floor at Z=0; centered door width X=0.",
+      "front": "Blender local -Y",
+      "placement": "Closed dressing door, 5.02m wide; rear depth +Y, detailed face -Y.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "Environment prop; author simple collision only where required. Perimeter placements recommended.",
+      "sha256": "179d1378ee98000c4635f0482c038892dd7fa164f5014f85213e8f6c8f8db445"
+    },
+    {
+      "name": "SM_RoomVentFan",
+      "file": "SM_RoomVentFan.fbx",
+      "triangles": 6036,
+      "vertices": 3068,
+      "bounds_m": {
+        "min": [
+          -1.25,
+          -0.30500003695487976,
+          -1.25
+        ],
+        "max": [
+          1.25,
+          0.23500001430511475,
+          1.25
+        ]
+      },
+      "dimensions_m": [
+        2.5,
+        0.5400000512599945,
+        2.5
+      ],
+      "expected_dimensions_cm": [
+        250.0,
+        54.00000512599945,
+        250.0
+      ],
+      "origin": "Wall mount, origin at fan center.",
+      "front": "Blender local -Y",
+      "placement": "Mount center >=2.7m above floor. Face local -Y; fan is static environmental dressing.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "Environment prop; author simple collision only where required. Perimeter placements recommended.",
+      "sha256": "603c0cd49b68e996b4b29271555b192c58c4c815dd8f07482e5d75aca796d5ec"
+    },
+    {
+      "name": "SM_RoomUtilityTank",
+      "file": "SM_RoomUtilityTank.fbx",
+      "triangles": 7628,
+      "vertices": 3884,
+      "bounds_m": {
+        "min": [
+          -0.847000002861023,
+          -0.8015000224113464,
+          0.0
+        ],
+        "max": [
+          0.7150000333786011,
+          0.7150000333786011,
+          4.248499870300293
+        ]
+      },
+      "dimensions_m": [
+        1.562000036239624,
+        1.5165000557899475,
+        4.248499870300293
+      ],
+      "expected_dimensions_cm": [
+        156.2000036239624,
+        151.65000557899475,
+        424.8499870300293
+      ],
+      "origin": "Floor Z=0; cylindrical vessel center X/Y=0.",
+      "front": "Blender local -Y",
+      "placement": "Put at rear/side corners outside the combat boundary. Front gauge faces -Y.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "Environment prop; author simple collision only where required. Perimeter placements recommended.",
+      "sha256": "3cba242aa7357524fc344bb8006292d3cf3fa373a58ed6daac832e6dbed94882"
+    },
+    {
+      "name": "SM_RoomServiceCabinet",
+      "file": "SM_RoomServiceCabinet.fbx",
+      "triangles": 3668,
+      "vertices": 1912,
+      "bounds_m": {
+        "min": [
+          -0.8399999737739563,
+          -0.5064533948898315,
+          0.0
+        ],
+        "max": [
+          0.9300000071525574,
+          0.36000001430511475,
+          2.6550002098083496
+        ]
+      },
+      "dimensions_m": [
+        1.7699999809265137,
+        0.8664534091949463,
+        2.6550002098083496
+      ],
+      "expected_dimensions_cm": [
+        176.99999809265137,
+        86.64534091949463,
+        265.50002098083496
+      ],
+      "origin": "Floor Z=0, center X/Y=0.",
+      "front": "Blender local -Y",
+      "placement": "Tall front detailed cabinet with raised switches, vents and three tiny indicator lamps.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "Environment prop; author simple collision only where required. Perimeter placements recommended.",
+      "sha256": "dbd55e38b3da3628625d353f87f26db2b81a347376d2689222d56b6d2d09b44c"
+    },
+    {
+      "name": "SM_RoomPipeRack",
+      "file": "SM_RoomPipeRack.fbx",
+      "triangles": 5940,
+      "vertices": 3024,
+      "bounds_m": {
+        "min": [
+          -2.5,
+          -0.429999977350235,
+          -0.5059999823570251
+        ],
+        "max": [
+          2.5,
+          0.3449999988079071,
+          0.4400000274181366
+        ]
+      },
+      "dimensions_m": [
+        5.0,
+        0.7749999761581421,
+        0.9460000097751617
+      ],
+      "expected_dimensions_cm": [
+        500.0,
+        77.49999761581421,
+        94.60000097751617
+      ],
+      "origin": "Centered pipe run; local X spans -2.5 to +2.5m.",
+      "front": "Blender local -Y",
+      "placement": "Mount horizontally on wall, center at desired height; front/valve is -Y.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "Environment prop; author simple collision only where required. Perimeter placements recommended.",
+      "sha256": "de1bead5153f6df28f918e741cbc8d8ee221b5b01b9b352ef29264807da839ae"
+    },
+    {
+      "name": "SM_RoomFloorGrate",
+      "file": "SM_RoomFloorGrate.fbx",
+      "triangles": 4212,
+      "vertices": 2184,
+      "bounds_m": {
+        "min": [
+          -2.004499912261963,
+          -0.46050000190734863,
+          -0.07999999821186066
+        ],
+        "max": [
+          2.004499912261963,
+          0.46050000190734863,
+          0.04699999839067459
+        ]
+      },
+      "dimensions_m": [
+        4.008999824523926,
+        0.9210000038146973,
+        0.12699999660253525
+      ],
+      "expected_dimensions_cm": [
+        400.8999824523926,
+        92.10000038146973,
+        12.699999660253525
+      ],
+      "origin": "Top surface near Z=0 (+0.047m); center X/Y.",
+      "front": "Blender local -Y",
+      "placement": "Recess into floor or place at Z=-4.7cm to avoid a step. Local X length 4m.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "Environment prop; author simple collision only where required. Perimeter placements recommended.",
+      "sha256": "ece829b35ea1dfce3480742f844c4ad5e3799c86e211e32cacbf7b344bd22f42"
+    },
+    {
+      "name": "SM_RoomCableSpool",
+      "file": "SM_RoomCableSpool.fbx",
+      "triangles": 10280,
+      "vertices": 5160,
+      "bounds_m": {
+        "min": [
+          -0.6700000166893005,
+          -0.6700000166893005,
+          0.025000005960464478
+        ],
+        "max": [
+          0.6700000166893005,
+          0.6700000166893005,
+          0.9880000352859497
+        ]
+      },
+      "dimensions_m": [
+        1.340000033378601,
+        1.340000033378601,
+        0.9630000293254852
+      ],
+      "expected_dimensions_cm": [
+        134.0000033378601,
+        134.0000033378601,
+        96.30000293254852
+      ],
+      "origin": "Floor Z=0.025m, center X/Y=0.",
+      "front": "Blender local -Y",
+      "placement": "Low peripheral clutter; metallic flanges with visibly wound black cable.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "Environment prop; author simple collision only where required. Perimeter placements recommended.",
+      "sha256": "c0f626e0c70acdbd79393f8f6690a42c23917e3ac007cbe1772101a2fc1e2059"
+    },
+    {
+      "name": "SM_RoomCargoCrate",
+      "file": "SM_RoomCargoCrate.fbx",
+      "triangles": 2160,
+      "vertices": 1120,
+      "bounds_m": {
+        "min": [
+          -0.7099999785423279,
+          -0.6636599898338318,
+          0.0
+        ],
+        "max": [
+          0.7099999785423279,
+          0.6636599898338318,
+          1.2074999809265137
+        ]
+      },
+      "dimensions_m": [
+        1.4199999570846558,
+        1.3273199796676636,
+        1.2074999809265137
+      ],
+      "expected_dimensions_cm": [
+        141.99999570846558,
+        132.73199796676636,
+        120.74999809265137
+      ],
+      "origin": "Floor Z=0; center X/Y=0.",
+      "front": "Blender local -Y",
+      "placement": "Low perimeter cargo dressing; elevated camera reads inset lid and brace bands.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "Environment prop; author simple collision only where required. Perimeter placements recommended.",
+      "sha256": "5b692ed112699b879d15d4ca92d2d97f650d2b2806943b89bb891f9bc7a4bae1"
+    },
+    {
+      "name": "SM_RoomStripLight",
+      "file": "SM_RoomStripLight.fbx",
+      "triangles": 1188,
+      "vertices": 616,
+      "bounds_m": {
+        "min": [
+          -1.0299999713897705,
+          -0.24000000953674316,
+          -0.17399999499320984
+        ],
+        "max": [
+          1.0299999713897705,
+          0.11999999731779099,
+          0.17399999499320984
+        ]
+      },
+      "dimensions_m": [
+        2.059999942779541,
+        0.36000000685453415,
+        0.3479999899864197
+      ],
+      "expected_dimensions_cm": [
+        205.9999942779541,
+        36.000000685453415,
+        34.79999899864197
+      ],
+      "origin": "Centered fixture; long axis X, light faces -Y.",
+      "front": "Blender local -Y",
+      "placement": "Mount on high wall or rotate for overhead use. Emissive slot 4; add actual Unreal lighting separately.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "collision": "Environment prop; author simple collision only where required. Perimeter placements recommended.",
+      "sha256": "3d0d1560ba0606fb545c0a039bf97373f9eb6ff660a8028fac00166e5149350a"
+    }
+  ],
+  "fbx_roundtrip_checks": [
+    {
+      "name": "SM_RoomPilaster",
+      "dimensions_m": [
+        0.9800001084804535,
+        0.8730000853538513,
+        5.0
+      ],
+      "max_dimension_error_m": 8.940696716308594e-08,
+      "triangles": 1740,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_RoomBulkhead",
+      "dimensions_m": [
+        5.019999980926514,
+        0.89251708984375,
+        4.800000190734863
+      ],
+      "max_dimension_error_m": 4.470348358154297e-07,
+      "triangles": 6428,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_RoomVentFan",
+      "dimensions_m": [
+        2.5,
+        0.5400002747774124,
+        2.5
+      ],
+      "max_dimension_error_m": 2.2351741790771484e-07,
+      "triangles": 6036,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_RoomUtilityTank",
+      "dimensions_m": [
+        1.5620001554489136,
+        1.516500174999237,
+        4.248499870300293
+      ],
+      "max_dimension_error_m": 1.1920928955078125e-07,
+      "triangles": 7628,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_RoomServiceCabinet",
+      "dimensions_m": [
+        1.7700001001358032,
+        0.8664535582065582,
+        2.6550002098083496
+      ],
+      "max_dimension_error_m": 1.4901161193847656e-07,
+      "triangles": 3668,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_RoomPipeRack",
+      "dimensions_m": [
+        5.0,
+        0.7750003933906555,
+        0.9460000097751617
+      ],
+      "max_dimension_error_m": 4.172325134277344e-07,
+      "triangles": 5940,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_RoomFloorGrate",
+      "dimensions_m": [
+        4.008999824523926,
+        0.9210003614425659,
+        0.12699999660253525
+      ],
+      "max_dimension_error_m": 3.5762786865234375e-07,
+      "triangles": 4212,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_RoomCableSpool",
+      "dimensions_m": [
+        1.3400001525878906,
+        1.3400001525878906,
+        0.9630000293254852
+      ],
+      "max_dimension_error_m": 1.1920928955078125e-07,
+      "triangles": 10280,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_RoomCargoCrate",
+      "dimensions_m": [
+        1.4200000762939453,
+        1.3273200988769531,
+        1.2074999809265137
+      ],
+      "max_dimension_error_m": 1.1920928955078125e-07,
+      "triangles": 2160,
+      "material_slots": 5,
+      "passed": true
+    },
+    {
+      "name": "SM_RoomStripLight",
+      "dimensions_m": [
+        2.059999942779541,
+        0.3600001856684685,
+        0.3479999899864197
+      ],
+      "max_dimension_error_m": 1.7881393432617188e-07,
+      "triangles": 1188,
+      "material_slots": 5,
+      "passed": true
+    }
+  ],
+  "limits": "Static scenery kit only. Unreal material overrides, placement, lighting, collision and camera visibility must be verified in the game."
+}

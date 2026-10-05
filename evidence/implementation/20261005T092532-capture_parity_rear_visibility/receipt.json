@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "captures": [
+    {
+      "name": "rear-center-1000",
+      "caption": "Saved gameplay lighting/camera, player staged at (1000, 0), boss held at original spawn. Visibility coverage only.",
+      "kind": "rear-visibility",
+      "player_x": 1000,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T092532-capture_parity_rear_visibility\\rear-center-1000.png",
+      "held_state": {
+        "player": [
+          1000.0,
+          0.0,
+          85.0
+        ],
+        "camera": [
+          -1552.0153045755628,
+          -115.0,
+          2360.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 182,
+      "game_time": 10.0103621147573,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1077124,
+        "sha256": "a11bdd4b68c599e63bdb3d99ca138031eff5fad149572eb43ef4f28e52649e68",
+        "pixel_sha256": "bb60d5dbf205254ba7c43f4918a46eb481166fb8393867f8c4d302f3a66e7223",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "rear-center-1300",
+      "caption": "Saved gameplay lighting/camera, player staged at (1300, 0), boss held at original spawn. Visibility coverage only.",
+      "kind": "rear-visibility",
+      "player_x": 1300,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T092532-capture_parity_rear_visibility\\rear-center-1300.png",
+      "held_state": {
+        "player": [
+          1300.0,
+          0.0,
+          85.0
+        ],
+        "camera": [
+          -1944.4872429713828,
+          -115.0,
+          2900.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 173,
+      "game_time": 13.01107332110405,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 879188,
+        "sha256": "e6ef5550ccc24e6670432007dc4500b9256da167452b9531c2637f0080232672",
+        "pixel_sha256": "5e0ceecefd2353910ff40e6f907b0cdedc468a4abd4827f7ccecfc483e4bdb15",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "rear-center-1400",
+      "caption": "Saved gameplay lighting/camera, player staged at (1400, 0), boss held at original spawn. Visibility coverage only.",
+      "kind": "rear-visibility",
+      "player_x": 1400,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T092532-capture_parity_rear_visibility\\rear-center-1400.png",
+      "held_state": {
+        "player": [
+          1400.0,
+          0.0,
+          85.0
+        ],
+        "camera": [
+          -2075.311222436656,
+          -115.0,
+          3080.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 182,
+      "game_time": 16.019223026931286,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 838040,
+        "sha256": "1a1b7bc8f8fae108bd58ceceaf4faa39434be924c0f659b217988fc9914a4c0f",
+        "pixel_sha256": "3726c0fac5c8b85197d81df19d502774d48c2fd6f17cce599596e0073ef3d03a",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    }
+  ],
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "method": "Editor PIE; NPC/player movement frozen, HUD hidden; game paused through capture completion. Saved exposure/lighting unchanged. Views explicitly identify gameplay versus architectural camera.",
+  "world": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter",
+  "postprocess": [
+    {
+      "auto_exposure_method": "<AutoExposureMethod.AEM_MANUAL: 2>",
+      "auto_exposure_bias": "3.799999952316284",
+      "auto_exposure_apply_physical_camera_exposure": "True",
+      "vignette_intensity": "0.3799999952316284",
+      "bloom_intensity": "0.25"
+    }
+  ],
+  "wall_seconds": 22.5
+}

@@ -1,0 +1,40 @@
+{
+  "glb_valid": true,
+  "bytes": 3665376,
+  "generator": {
+    "generator": "pygltflib@v1.16.5",
+    "version": "2.0"
+  },
+  "meshes": 1,
+  "triangles": 3660,
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8,
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        }
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "bufferView": 4
+    }
+  ],
+  "skins": 0,
+  "animations": 0,
+  "external_uris": [],
+  "extensions_required": []
+}

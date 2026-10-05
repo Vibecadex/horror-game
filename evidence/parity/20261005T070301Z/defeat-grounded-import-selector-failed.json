@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "source": "C:\\Projects\\to-deploy\\horror-game\\Assets\\Adapted\\Parity\\DefeatGrounded\\Teddy_DefeatGrounded.fbx",
+  "destination": "/Game/TeddyEncounter/Parity/Animation/A_Teddy_DefeatGrounded",
+  "bindings": [],
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/import_parity_defeat.py\", line 64, in <module>\n    try:main()\n        ^^^^^^\n  File \"C:/Projects/to-deploy/horror-game/tools/import_parity_defeat.py\", line 33, in main\n    assert len(choices)==1,(name,[(n.get_name(),v) for n,p,v in pins(bp)])\n           ^^^^^^^^^^^^^^^\nAssertionError: ('BP_Stitchling', [('K2Node_CallFunction_0', '/Game/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.A_Teddy_Crawl'), ('K2Node_CallFunction_13', '/Game/TeddyEncounter/Teddy/Attack/A_Teddy_Attack.A_Teddy_Attack'), ('K2Node_CallFunction_18', '/Game/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.A_Teddy_Crawl'), ('K2Node_CallFunction_20', '/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat'), ('K2Node_CallFunction_23', '/Game/TeddyEncounter/Teddy/Hit/A_Teddy_Hit.A_Teddy_Hit'), ('K2Node_CallFunction_25', '/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat')])\n"
+}

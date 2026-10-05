@@ -1,0 +1,44 @@
+{
+  "capture": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T222718-capture_encounter",
+  "recording": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261004T222920-record_encounter",
+  "source_crop": [
+    76,
+    0,
+    700,
+    384
+  ],
+  "source_overlay_masks_xywh": [
+    [
+      0,
+      10,
+      43,
+      40
+    ],
+    [
+      482,
+      9,
+      211,
+      40
+    ],
+    [
+      0,
+      235,
+      275,
+      68
+    ],
+    [
+      302,
+      267,
+      398,
+      42
+    ],
+    [
+      0,
+      320,
+      700,
+      64
+    ]
+  ],
+  "target_resize": "700 pixels wide, original aspect ratio retained",
+  "comparison": "Visual review of composition, lighting, scale and floor contact; source overlays remain masked, never inpainted. Not a pixel fidelity score or user acceptance."
+}

@@ -1,0 +1,42 @@
+{
+  "recorded_at_utc": "2026-10-04T17:36:48.848509+00:00",
+  "scope": "Playable primitive greybox checkpoint",
+  "engine": "5.8.3",
+  "build_succeeded": true,
+  "runtime_checks_passed": 21,
+  "runtime_report": "C:\\Projects\\to-deploy\\horror-game\\BossShot\\Saved\\Verification\\20261004-173327\\verification.json",
+  "builder_protection_tests_passed": 3,
+  "builder_rerun_verified": true,
+  "source_archive_unchanged": true,
+  "source_archive_sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+  "original_reference_video_inspected": false,
+  "visual_approval": "pending user review",
+  "packaged_build_tested": false,
+  "artifacts": [
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\BossShot\\BossShot.uproject",
+      "bytes": 485,
+      "sha256": "66796ed0d5328823e1ba81f612f666b8aa3e37266dccd90f64069ff4803a6e64"
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\BossShot\\Content\\Maps\\BossArena.umap",
+      "bytes": 39399,
+      "sha256": "143cd5c6eb7a6310bcc03a90ee3ff0d1401e91dfa4b393486b11de98a8e51319"
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\BossShot\\Binaries\\Win64\\UnrealEditor-BossShot.dll",
+      "bytes": 276992,
+      "sha256": "2680aa26b87bf8cfbd52d2b9cea29613193b26e23ba744610b500e3e25b5ae33"
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\BossShot-greybox-review.mp4",
+      "bytes": 540138,
+      "sha256": "22e28d23e5c07a26a2918d7fff899aa1f5ea041d24ac7a3e509874f6018d9455"
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\BossShot\\Saved\\Verification\\20261004-173327\\verification.json",
+      "bytes": 1259,
+      "sha256": "195783c379a3880cc1e3373b75254c54b3a277ae94594db0bf6868a7e889ff59"
+    }
+  ]
+}

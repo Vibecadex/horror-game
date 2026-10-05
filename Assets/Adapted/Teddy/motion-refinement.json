@@ -1,0 +1,54 @@
+{
+  "Walk": {
+    "stride_cm_local": 75.6,
+    "cycle_seconds": 1.2,
+    "stance_fraction": 0.6,
+    "matched_world_speed_cm_s": 105,
+    "scale_for_speed": 1,
+    "frames": 37,
+    "ground_correction_range_m": [
+      0.23366547179222108,
+      0.4128907973766327
+    ]
+  },
+  "Crawl": {
+    "stride_cm_local": 112.99999999999999,
+    "cycle_seconds": 1.2,
+    "stance_fraction": 0.6,
+    "matched_world_speed_cm_s": 55,
+    "scale_for_speed": 0.35,
+    "frames": 37,
+    "ground_correction_range_m": [
+      0.6818600053787232,
+      0.9649203772544861
+    ]
+  },
+  "Idle": {
+    "frames": 90,
+    "ground_correction_range_m": [
+      0.00747893600538373,
+      0.00747893600538373
+    ]
+  },
+  "Attack": {
+    "frames": 54,
+    "ground_correction_range_m": [
+      0.00747893600538373,
+      0.00747893600538373
+    ]
+  },
+  "Hit": {
+    "frames": 16,
+    "ground_correction_range_m": [
+      0.00747893600538373,
+      0.00747893600538373
+    ]
+  },
+  "Defeat": {
+    "frames": 72,
+    "ground_correction_range_m": [
+      0.00747893600538373,
+      1.6600693817138672
+    ]
+  }
+}

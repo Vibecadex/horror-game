@@ -1,0 +1,26 @@
+{
+  "title": "Horror Teddy Bear Monster",
+  "creator": "Aiden Reynolds",
+  "sourcePage": "https://www.summerengine.com/asset-store/horror-teddy-bear-monster-a2f0ecaa",
+  "downloadUrl": "https://res.cloudinary.com/dol86wsz1/raw/upload/v1789951431/summer_3d/3d_8e066aa0a46148b6942b489c_1789951430135.glb",
+  "downloadedAtUtc": "2026-10-04T17:48:51.9375388Z",
+  "licenseAsListed": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "authoringAsListed": "AI-generated using Meshy 6; existing published asset downloaded, no generation commissioned",
+  "sourcePageSnapshot": "evidence/asset-research/summerengine-horror-teddy-source.html",
+  "localFile": "Assets/ThirdParty/HorrorTeddyBear/horror-teddy-bear-monster.glb",
+  "bytes": 3665376,
+  "sha256": "9fe8c87ab5eab6d05f19c936d8ae993d07727aa9871100118aa21452f7a9a8bb",
+  "meshes": 1,
+  "triangles": 3660,
+  "textureSize": [
+    2048,
+    2048
+  ],
+  "textures": 1,
+  "skeletons": 0,
+  "animations": 0,
+  "importedInBlender": true,
+  "importedInUnreal": false,
+  "status": "Downloaded candidate base. Needs art refinement, rigging, animation and in-engine visual review."
+}

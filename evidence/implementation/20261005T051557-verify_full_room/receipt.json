@@ -1,0 +1,23 @@
+{
+  "passed": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "independent_qa": true,
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "checks": {},
+  "room_actors": [],
+  "capsule_probes": [],
+  "walls": [],
+  "cases": [],
+  "images": [],
+  "method": "Fresh saved-map readback, transient PIE staging, saved key-route movement/dash, Pawn-profile capsule sweeps, projected character bounds and Visibility traces.",
+  "limitations": [
+    "NPC ticking/movement disabled for deterministic room checks; this is not a combat recording.",
+    "Player and boss are deliberately staged for edge/corner camera coverage.",
+    "NO_COLLISION decoration does not block traces. Its box intersections are hints; inspect the images.",
+    "Held screenshots hide the HUD to exclude the pause tint. They retain saved lighting/materials.",
+    "Passing geometry checks do not establish visual fidelity, physical input or user acceptance."
+  ],
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/verify_full_room.py\", line 449, in <module>\n    'break_hit_available': callable(u.GameplayStatics.break_hit_result),\n                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: type object 'GameplayStatics' has no attribute 'break_hit_result'\n",
+  "wall_seconds": 0.4220000000204891
+}

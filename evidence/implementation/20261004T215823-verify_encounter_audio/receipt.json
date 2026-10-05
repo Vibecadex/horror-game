@@ -1,0 +1,27 @@
+{
+  "passed": false,
+  "components": [
+    {
+      "name": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_CombatCamera_C_0.RoomTone",
+      "sound": "<Object '/Game/TeddyEncounter/Audio/RoomTone.RoomTone' (0x000002382923BE00) Class 'SoundWave'>",
+      "volume": 0.5,
+      "playing": true,
+      "active": true
+    }
+  ],
+  "sounds": [
+    {
+      "name": "Rifle",
+      "duration": 0.1899999976158142
+    },
+    {
+      "name": "Slam",
+      "duration": 0.800000011920929
+    },
+    {
+      "name": "RoomTone",
+      "duration": 16.0
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/verify_encounter_audio.py\", line 20, in tick\n    settings=u.get_default_object(u.LevelEditorPlaySettings);r['game_sound_enabled']=settings.get_editor_property('enable_game_sound')\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'unreal' has no attribute 'LevelEditorPlaySettings'\n"
+}

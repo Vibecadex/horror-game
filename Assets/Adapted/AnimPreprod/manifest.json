@@ -1,0 +1,215 @@
+{
+  "owner": "teddy-anim-preprod-20261005",
+  "source_blend": "Assets/Adapted/Teddy/Teddy_Encounter.blend",
+  "source_written": false,
+  "skeleton": "Teddy_Skeleton",
+  "bones": [
+    "root",
+    "pelvis",
+    "spine",
+    "head",
+    "upperarm_L",
+    "forearm_L",
+    "hand_L",
+    "upperarm_R",
+    "forearm_R",
+    "hand_R",
+    "thigh_L",
+    "shin_L",
+    "foot_L",
+    "thigh_R",
+    "shin_R",
+    "foot_R"
+  ],
+  "shipped_clips_unchanged": [
+    "Idle",
+    "Walk",
+    "Crawl",
+    "Attack",
+    "Hit",
+    "Defeat"
+  ],
+  "new_clips": [
+    {
+      "name": "TurnLeft",
+      "frames": 24,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_TurnLeft.fbx",
+      "sha256": "885592a9053399ac52001b897778d74a8cac9d6f03288b87a17522a5d5799b4a",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "TurnRight",
+      "frames": 24,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_TurnRight.fbx",
+      "sha256": "b8b7fa30a8818e28c85333f1f2064c0e1bce1ad5c39a1334fc22fcc52cc49232",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "StepLeft",
+      "frames": 20,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_StepLeft.fbx",
+      "sha256": "ce7f10871dfb97cf19494a188423d5d16f0c9cf0d6e7a2abf4000dff56cff601",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "StepRight",
+      "frames": 20,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_StepRight.fbx",
+      "sha256": "26ea367f8a64d61db58fff8b18667d1c44025cef94813ec02f2fe4bf905f8fba",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "Telegraph",
+      "frames": 18,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_Telegraph.fbx",
+      "sha256": "fedd8b9bd8d8dc6fe3d8599d2286348af6b43ba1835336e26e4ef5829e330897",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "Recover",
+      "frames": 16,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_Recover.fbx",
+      "sha256": "49617976a694b7f196c1360928d17872c56c774de461198c325502e913ec6818",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "AttackLeft",
+      "frames": 36,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_AttackLeft.fbx",
+      "sha256": "c5c923e8359ac82ca3f2056b71259eef0477d8230c871969c644e29565f22f99",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "Stagger",
+      "frames": 24,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_Stagger.fbx",
+      "sha256": "7fb167d8d637c0fe657c84d521ee82e617eac2ef7a9e67583face1fbd3e83755",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "IdleHeavy",
+      "frames": 120,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_IdleHeavy.fbx",
+      "sha256": "057e6bb389006907f1ba18134652fd1e3c00ab6243d3962312e49bad2f7e1fdd",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "Threat",
+      "frames": 45,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_Threat.fbx",
+      "sha256": "b7340638c4e4ded68910fac62cfe18df342134df45c3c71f92e1d2b0c3af3d76",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "WalkStop",
+      "frames": 16,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_WalkStop.fbx",
+      "sha256": "658b29c309d812f90f4bb192713a8f15968821f002736d26c8b650565cd31acd",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "StitchlingIdle",
+      "frames": 60,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_StitchlingIdle.fbx",
+      "sha256": "9a6f5413261a0d7542ab8e459fe6bca5cd65f7503e2650b5bd13dbf5591afaa3",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "StitchlingFlinch",
+      "frames": 12,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_StitchlingFlinch.fbx",
+      "sha256": "d7dfd823dffb9551b26518600cfbf1454bcad9a5856db8585c25cdc9bab84a72",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "DefeatBreath",
+      "frames": 48,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_DefeatBreath.fbx",
+      "sha256": "f872bfe2096bc42b1e1a6c9126a033cb43f57368f40ad2c39cd84fd7b39ba451",
+      "base": "Defeat frame 72"
+    },
+    {
+      "name": "Brace",
+      "frames": 20,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_Brace.fbx",
+      "sha256": "e81654ef8464c9e18c0bc469ff377949454eb1704644928237814928e5062308",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "HitLeft",
+      "frames": 18,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_HitLeft.fbx",
+      "sha256": "b91f15d8428a74029e4a874dd245ddf772b8a2d1b54feaab8c5ad64240958984",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "SwipeLow",
+      "frames": 28,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_SwipeLow.fbx",
+      "sha256": "33cc6c61c077a58136ce8e65ff9f74b7bb2e9316c9cca1878775e972e3f4ec6f",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "Search",
+      "frames": 72,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_Search.fbx",
+      "sha256": "62d607596d0dbebf1325262d668d7e81a5c16e4c44d977942de1eb260730c872",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "Slump",
+      "frames": 30,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_Slump.fbx",
+      "sha256": "7e310d028873fd54eaae9e62ca7152fe796db208926638ee4f2d37a330c175df",
+      "base": "Idle frame 1"
+    },
+    {
+      "name": "WeightShift",
+      "frames": 90,
+      "fps": 30,
+      "in_place": true,
+      "file": "Teddy_WeightShift.fbx",
+      "sha256": "07de3fcbf4d2cd17229d696b59fb3305342fc461a53e4da7e5b20977ab6396bd",
+      "base": "Idle frame 1"
+    }
+  ],
+  "notes": "In-place offsets for the existing rig. Import as animation only onto the encounter skeleton. Stitchling clips are the same bones; the actor stays at 0.35 scale. DefeatBreath holds the grounded defeat and does not stand up."
+}

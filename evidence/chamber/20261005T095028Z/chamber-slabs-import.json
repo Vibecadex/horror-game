@@ -1,0 +1,143 @@
+{
+  "passed": true,
+  "actors": [
+    {
+      "label": "TE_Chamber_Slabs_SparseForegroundLeft",
+      "placement": {
+        "label": "SparseForegroundLeft",
+        "mesh": "SM_ChamberSparseSlabs",
+        "location_cm": [
+          -1070,
+          -720,
+          -5
+        ],
+        "yaw": 15,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            -1261.4161194124538,
+            -889.0232084031176,
+            -4.939999997150153
+          ],
+          "max": [
+            -873.3600387991667,
+            -560.3375809726409,
+            -0.7318473607301712
+          ]
+        }
+      }
+    },
+    {
+      "label": "TE_Chamber_Slabs_SparseForegroundRight",
+      "placement": {
+        "label": "SparseForegroundRight",
+        "mesh": "SM_ChamberSparseSlabs",
+        "location_cm": [
+          -1030,
+          760,
+          -5
+        ],
+        "yaw": -28,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            -1237.8256261200736,
+            565.6100482279529,
+            -4.939999997150153
+          ],
+          "max": [
+            -824.7379408544797,
+            943.9812522791077,
+            -0.7318473607301712
+          ]
+        }
+      }
+    },
+    {
+      "label": "TE_Chamber_Slabs_SparseMidLeft",
+      "placement": {
+        "label": "SparseMidLeft",
+        "mesh": "SM_ChamberSparseSlabs",
+        "location_cm": [
+          120,
+          -1190,
+          -5
+        ],
+        "yaw": 63,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            -62.379665825348795,
+            -1397.1428319661854,
+            -4.939999997150153
+          ],
+          "max": [
+            312.8315204357088,
+            -985.2386877106665,
+            -0.7318473607301712
+          ]
+        }
+      }
+    },
+    {
+      "label": "TE_Chamber_Slabs_SparseRearRight",
+      "placement": {
+        "label": "SparseRearRight",
+        "mesh": "SM_ChamberSparseSlabs",
+        "location_cm": [
+          980,
+          870,
+          -5
+        ],
+        "yaw": -14,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            787.3736784758377,
+            702.5765354653006,
+            -4.939999997150153
+          ],
+          "max": [
+            1172.6569957567901,
+            1026.7037649186286,
+            -0.7318473607301712
+          ]
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "path": "/Game/TeddyEncounter/Chamber/Floor/SM_ChamberSparseSlabs.SM_ChamberSparseSlabs",
+      "bounds_cm": [
+        334.58982849121094,
+        250.62733459472656,
+        4.208152711391449
+      ],
+      "triangles_source": 590
+    }
+  ],
+  "collision": "NoCollision",
+  "source_assets_preserved": true,
+  "manifest_sha256": "054151f1c5c1ae61c2b342a1c1b2758862ec7274134f1152f5bad6f424bf4287"
+}

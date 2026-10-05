@@ -1,0 +1,68 @@
+{
+  "passed": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "independent_qa": true,
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "checks": {
+    "saved_five_spawn_locations_preserved": true,
+    "saved_one_boss_three_stitchlings": true
+  },
+  "room_actors": [],
+  "capsule_probes": [],
+  "walls": [],
+  "cases": [],
+  "images": [],
+  "method": "Fresh saved-map readback, transient PIE staging, saved key-route movement/dash, Pawn-profile capsule sweeps, projected character bounds and Visibility traces.",
+  "limitations": [
+    "NPC ticking/movement disabled for deterministic room checks; this is not a combat recording.",
+    "Player and boss are deliberately staged for edge/corner camera coverage.",
+    "NO_COLLISION decoration does not block traces. Its box intersections are hints; inspect the images.",
+    "Held screenshots hide the HUD to exclude the pause tint. They retain saved lighting/materials.",
+    "Passing geometry checks do not establish visual fidelity, physical input or user acceptance."
+  ],
+  "saved_spawns": {
+    "TE_PlayerStart": {
+      "position": [
+        -230.0,
+        570.0,
+        95.0
+      ],
+      "class": "/Script/Engine.PlayerStart"
+    },
+    "TE_MainTeddy": {
+      "position": [
+        250.0,
+        -230.0,
+        232.0
+      ],
+      "class": "/Game/TeddyEncounter/Blueprints/BP_TeddyBoss.BP_TeddyBoss_C"
+    },
+    "TE_Stitchling_1": {
+      "position": [
+        650.0,
+        600.0,
+        65.0
+      ],
+      "class": "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling_C"
+    },
+    "TE_Stitchling_2": {
+      "position": [
+        -480.0,
+        -500.0,
+        65.0
+      ],
+      "class": "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling_C"
+    },
+    "TE_Stitchling_3": {
+      "position": [
+        20.0,
+        1070.0,
+        65.0
+      ],
+      "class": "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling_C"
+    }
+  },
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/verify_full_room.py\", line 439, in <module>\n    saved_audit()\n  File \"C:/Projects/to-deploy/horror-game/tools/verify_full_room.py\", line 121, in saved_audit\n    component.get_collision_response_to_channel(u.CollisionChannel.ECC_PAWN) == u.CollisionResponse.BLOCK)\n                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: type object 'CollisionResponse' has no attribute 'BLOCK'\n",
+  "wall_seconds": 0.46899999980814755
+}

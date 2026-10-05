@@ -1,0 +1,267 @@
+{
+  "method": "Manual small rectangles within each source, marked in companion PNGs. Display luma = 0.2126R + 0.7152G + 0.0722B on encoded 8-bit RGB; it is not physical luminance or EV. No resizing before measurements. Boxes exclude text/borders and conspicuous characters or emissive fixtures. Different surfaces, perspective and haze remain confounders. No pass band, similarity score or automatic candidate masks are assigned.",
+  "sources": {
+    "front": {
+      "path": "study/visuals/chamber-target-front.png",
+      "sha256": "f853bc67bfb3973f8c3097c829973634590bfb4b42df17ed54fcf65b156b6960",
+      "dimensions": [
+        571,
+        378
+      ],
+      "regions": {
+        "rear_wall_plane": {
+          "rectangle_xyxy": [
+            119,
+            31,
+            161,
+            82
+          ],
+          "pixels": 2142,
+          "display_rgb_mean": [
+            12.751,
+            28.072,
+            29.155
+          ],
+          "display_luma_mean": 24.893,
+          "display_luma_p10_p50_p90": [
+            16.946,
+            25.598,
+            31.808
+          ]
+        },
+        "door_leaf": {
+          "rectangle_xyxy": [
+            225,
+            48,
+            268,
+            87
+          ],
+          "pixels": 1677,
+          "display_rgb_mean": [
+            31.255,
+            60.019,
+            62.213
+          ],
+          "display_luma_mean": 54.062,
+          "display_luma_p10_p50_p90": [
+            45.873,
+            52.979,
+            63.554
+          ]
+        },
+        "left_equipment_face": {
+          "rectangle_xyxy": [
+            46,
+            118,
+            59,
+            154
+          ],
+          "pixels": 468,
+          "display_rgb_mean": [
+            5.632,
+            13.479,
+            14.182
+          ],
+          "display_luma_mean": 11.861,
+          "display_luma_p10_p50_p90": [
+            5.081,
+            10.512,
+            15.818
+          ]
+        },
+        "right_wall_pipe_area": {
+          "rectangle_xyxy": [
+            500,
+            47,
+            517,
+            83
+          ],
+          "pixels": 612,
+          "display_rgb_mean": [
+            6.467,
+            15.712,
+            17.258
+          ],
+          "display_luma_mean": 13.859,
+          "display_luma_p10_p50_p90": [
+            7.656,
+            13.589,
+            19.224
+          ]
+        },
+        "central_clear_floor": {
+          "rectangle_xyxy": [
+            267,
+            152,
+            319,
+            182
+          ],
+          "pixels": 1560,
+          "display_rgb_mean": [
+            81.14,
+            123.912,
+            125.559
+          ],
+          "display_luma_mean": 114.937,
+          "display_luma_p10_p50_p90": [
+            97.278,
+            113.36,
+            135.015
+          ]
+        },
+        "near_fracture_floor": {
+          "rectangle_xyxy": [
+            208,
+            287,
+            260,
+            331
+          ],
+          "pixels": 2288,
+          "display_rgb_mean": [
+            72.072,
+            101.739,
+            104.038
+          ],
+          "display_luma_mean": 95.597,
+          "display_luma_p10_p50_p90": [
+            51.241,
+            96.194,
+            139.38
+          ]
+        }
+      },
+      "annotation": "evidence/chamber-qa/reference-observations/front-tone-regions.png"
+    },
+    "reverse": {
+      "path": "study/visuals/chamber-target-reverse.png",
+      "sha256": "1728fb8239d4edde652c93c92bb441c211fe4b491fbf9c14d79413e1c60eff42",
+      "dimensions": [
+        475,
+        320
+      ],
+      "regions": {
+        "rear_wall_plane": {
+          "rectangle_xyxy": [
+            204,
+            40,
+            260,
+            81
+          ],
+          "pixels": 2296,
+          "display_rgb_mean": [
+            40.74,
+            78.021,
+            79.94
+          ],
+          "display_luma_mean": 70.234,
+          "display_luma_p10_p50_p90": [
+            59.631,
+            70.428,
+            81.041
+          ]
+        },
+        "door_recess": {
+          "rectangle_xyxy": [
+            149,
+            55,
+            175,
+            92
+          ],
+          "pixels": 962,
+          "display_rgb_mean": [
+            13.011,
+            28.341,
+            29.656
+          ],
+          "display_luma_mean": 25.177,
+          "display_luma_p10_p50_p90": [
+            21.096,
+            25.168,
+            29.302
+          ]
+        },
+        "left_equipment_face": {
+          "rectangle_xyxy": [
+            20,
+            89,
+            40,
+            125
+          ],
+          "pixels": 720,
+          "display_rgb_mean": [
+            8.61,
+            14.231,
+            13.899
+          ],
+          "display_luma_mean": 13.012,
+          "display_luma_p10_p50_p90": [
+            2.568,
+            14.831,
+            22.255
+          ]
+        },
+        "right_wall_pipe_area": {
+          "rectangle_xyxy": [
+            369,
+            47,
+            391,
+            77
+          ],
+          "pixels": 660,
+          "display_rgb_mean": [
+            10.094,
+            20.812,
+            21.826
+          ],
+          "display_luma_mean": 18.607,
+          "display_luma_p10_p50_p90": [
+            9.371,
+            17.089,
+            29.031
+          ]
+        },
+        "central_clear_floor": {
+          "rectangle_xyxy": [
+            197,
+            163,
+            236,
+            200
+          ],
+          "pixels": 1443,
+          "display_rgb_mean": [
+            114.45,
+            148.233,
+            149.003
+          ],
+          "display_luma_mean": 141.106,
+          "display_luma_p10_p50_p90": [
+            108.977,
+            146.056,
+            165.524
+          ]
+        },
+        "near_fracture_floor": {
+          "rectangle_xyxy": [
+            173,
+            239,
+            237,
+            284
+          ],
+          "pixels": 2880,
+          "display_rgb_mean": [
+            54.831,
+            80.438,
+            82.356
+          ],
+          "display_luma_mean": 75.132,
+          "display_luma_p10_p50_p90": [
+            60.255,
+            74.51,
+            89.845
+          ]
+        }
+      },
+      "annotation": "evidence/chamber-qa/reference-observations/reverse-tone-regions.png"
+    }
+  }
+}

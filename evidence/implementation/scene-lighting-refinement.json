@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "before": {
+    "CharacterMesh0": {
+      "materials": [
+        "<Object '/Game/TeddyEncounter/Materials/M_TeddyCloth.M_TeddyCloth' (0x000001DF19C6A800) Class 'Material'>"
+      ],
+      "mesh": "<Object '/Game/TeddyEncounter/Teddy/Idle/SK_Teddy.SK_Teddy' (0x000001DEA630BE00) Class 'SkeletalMesh'>"
+    }
+  }
+}

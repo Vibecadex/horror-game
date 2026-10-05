@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "scene_writes": false,
+  "cloth_tint": [
+    0.86,
+    1.0,
+    1.05
+  ],
+  "base_scale": 0.82,
+  "materials": [
+    "/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedCloth.M_Parity_CombinedCloth",
+    "/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedStitchling.M_Parity_CombinedStitchling"
+  ]
+}

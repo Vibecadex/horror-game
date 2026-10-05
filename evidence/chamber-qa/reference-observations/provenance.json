@@ -1,0 +1,255 @@
+{
+  "purpose": "Qualitative chamber landmarks for independent front/reverse visual review. Boxes are approximate reviewer annotations, not segmentation ground truth or pass thresholds.",
+  "sources": [
+    {
+      "source": "study/visuals/chamber-target-front.png",
+      "kind": "user concept target, not actual engine output",
+      "source_size": [
+        571,
+        378
+      ],
+      "sha256": "f853bc67bfb3973f8c3097c829973634590bfb4b42df17ed54fcf65b156b6960",
+      "features": [
+        {
+          "number": "1",
+          "label": "Broad blast door; layered frame/threshold",
+          "bounds_xyxy": [
+            205,
+            15,
+            374,
+            117
+          ],
+          "normalized_bounds": [
+            0.359,
+            0.0397,
+            0.655,
+            0.3095
+          ]
+        },
+        {
+          "number": "2",
+          "label": "Thick wall returns and readable panels",
+          "bounds_xyxy": [
+            106,
+            6,
+            204,
+            122
+          ],
+          "normalized_bounds": [
+            0.1856,
+            0.0159,
+            0.3573,
+            0.3228
+          ]
+        },
+        {
+          "number": "3",
+          "label": "Electrical/service attachment along left wall",
+          "bounds_xyxy": [
+            30,
+            70,
+            111,
+            177
+          ],
+          "normalized_bounds": [
+            0.0525,
+            0.1852,
+            0.1944,
+            0.4683
+          ]
+        },
+        {
+          "number": "4",
+          "label": "Fan, tanks, cabinets and pipe connections",
+          "bounds_xyxy": [
+            391,
+            14,
+            548,
+            243
+          ],
+          "normalized_bounds": [
+            0.6848,
+            0.037,
+            0.9597,
+            0.6429
+          ]
+        },
+        {
+          "number": "5",
+          "label": "Connected foreground fractures and large chips",
+          "bounds_xyxy": [
+            166,
+            280,
+            371,
+            352
+          ],
+          "normalized_bounds": [
+            0.2907,
+            0.7407,
+            0.6497,
+            0.9312
+          ]
+        },
+        {
+          "number": "6",
+          "label": "Grouped dark wear within usable open floor",
+          "bounds_xyxy": [
+            296,
+            192,
+            379,
+            232
+          ],
+          "normalized_bounds": [
+            0.5184,
+            0.5079,
+            0.6637,
+            0.6138
+          ]
+        }
+      ],
+      "approximate_landmarks": {
+        "center_back_wall_floor_junction_y": 114,
+        "blast_door_frame_bounds_xyxy": [
+          205,
+          15,
+          374,
+          117
+        ],
+        "scene_border_and_caption_exclusions": "White outer border; FULL CHAMBER text at lower left. Do not use text/border contrast as scene detail."
+      }
+    },
+    {
+      "source": "study/visuals/chamber-target-reverse.png",
+      "kind": "user concept target, not actual engine output",
+      "source_size": [
+        475,
+        320
+      ],
+      "sha256": "1728fb8239d4edde652c93c92bb441c211fe4b491fbf9c14d79413e1c60eff42",
+      "features": [
+        {
+          "number": "1",
+          "label": "Left dark door bay with red indicator",
+          "bounds_xyxy": [
+            140,
+            40,
+            183,
+            108
+          ],
+          "normalized_bounds": [
+            0.2947,
+            0.125,
+            0.3853,
+            0.3375
+          ]
+        },
+        {
+          "number": "2",
+          "label": "Right dark door bay and separating structure",
+          "bounds_xyxy": [
+            278,
+            36,
+            339,
+            113
+          ],
+          "normalized_bounds": [
+            0.5853,
+            0.1125,
+            0.7137,
+            0.3531
+          ]
+        },
+        {
+          "number": "3",
+          "label": "Left electrical bank and coherent conduits",
+          "bounds_xyxy": [
+            6,
+            33,
+            108,
+            145
+          ],
+          "normalized_bounds": [
+            0.0126,
+            0.1031,
+            0.2274,
+            0.4531
+          ]
+        },
+        {
+          "number": "4",
+          "label": "Right elbowed pipes and floor-level tanks",
+          "bounds_xyxy": [
+            354,
+            20,
+            470,
+            153
+          ],
+          "normalized_bounds": [
+            0.7453,
+            0.0625,
+            0.9895,
+            0.4781
+          ]
+        },
+        {
+          "number": "5",
+          "label": "Same connected floor fracture scale close up",
+          "bounds_xyxy": [
+            100,
+            217,
+            262,
+            291
+          ],
+          "normalized_bounds": [
+            0.2105,
+            0.6781,
+            0.5516,
+            0.9094
+          ]
+        },
+        {
+          "number": "6",
+          "label": "Lit but enclosed wall visible through haze",
+          "bounds_xyxy": [
+            188,
+            8,
+            274,
+            114
+          ],
+          "normalized_bounds": [
+            0.3958,
+            0.025,
+            0.5768,
+            0.3563
+          ]
+        }
+      ],
+      "approximate_landmarks": {
+        "center_back_wall_floor_junction_y": 111,
+        "left_door_bounds_xyxy": [
+          140,
+          40,
+          183,
+          108
+        ],
+        "right_door_and_pier_bounds_xyxy": [
+          278,
+          36,
+          339,
+          113
+        ],
+        "scene_border_and_caption_exclusions": "White outer border; REVERSE VIEW text at lower left. Do not use text/border contrast as scene detail."
+      }
+    }
+  ],
+  "output": {
+    "path": "evidence/chamber-qa/reference-observations/reference-landmarks.png",
+    "size": [
+      1700,
+      870
+    ],
+    "sha256": "33a180703b0d642aa66c65782576adb6e095b02f901b7e7b8e8fdb46de096186",
+    "full_pixel_decode": true
+  },
+  "method": "Original source pixels are not color-adjusted, stretched or overwritten. Annotation board resizes each source with Lanczos while preserving its aspect ratio, then draws labelled rectangles. It is an annotated aid; original files remain the primary visual evidence."
+}

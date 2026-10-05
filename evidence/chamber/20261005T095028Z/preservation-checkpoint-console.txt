@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "utc": "2026-10-05T10:48:20.592586+00:00",
+  "method": "Byte hashes only, no binary asset inspection",
+  "validation_snapshot": "C:\\Projects\\to-deploy\\horror-game\\evidence\\chamber\\20261005T095028Z\\final-validation-baseline.json",
+  "active_assets": 161,
+  "validation_drift": [],
+  "preexisting_changed": [
+    "TeddyBlueprint/Content/Maps/TeddyEncounter.umap"
+  ],
+  "new_assets": [
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Blueprints/BP_ChamberCutaway.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureBank_B.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureDrift_C.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Floor/SM_ChamberFractureFork_A.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Concrete.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Dark.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Emissive.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorAggregate.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorConcrete.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorConcreteDark.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorConcreteLight.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorCrack.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_FloorDark.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Metal.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_PracticalLens.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Rust.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_ServiceIndicator.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Materials/M_Chamber_Stencil.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberBulkhead.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberBulkheadWheel.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberDrum.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberDrumPair.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Meshes/SM_ChamberServiceDoorBay.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Concrete_Color.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Concrete_Normal.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Concrete_Roughness.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Oxide_Color.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Oxide_Normal.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Oxide_Roughness.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Recess_Color.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Recess_Normal.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Recess_Roughness.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Steel_Color.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Steel_Normal.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Chamber/Textures/T_Chamber_Steel_Roughness.uasset"
+  ],
+  "original_failures": [],
+  "sources": [
+    {
+      "name": "reference_video",
+      "path": "C:\\Projects\\to-deploy\\horror-scene\\WhatsApp Video 2026-10-04 at 16.53.31.mp4",
+      "sha256": "289b314d3578e76e7a8e916c31ef653c0bbea2fb97e21eea2100cb063069fdeb",
+      "unchanged": true
+    },
+    {
+      "name": "source_archive",
+      "path": "C:\\Projects\\to-deploy\\horror-scene\\BossShot.zip",
+      "sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+      "unchanged": true
+    },
+    {
+      "name": "teddy_model",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\Assets\\ThirdParty\\HorrorTeddyBear\\horror-teddy-bear-monster.glb",
+      "sha256": "9fe8c87ab5eab6d05f19c936d8ae993d07727aa9871100118aa21452f7a9a8bb",
+      "unchanged": true
+    },
+    {
+      "name": "chamber-target-front.png",
+      "sha256": "f853bc67bfb3973f8c3097c829973634590bfb4b42df17ed54fcf65b156b6960",
+      "unchanged": true
+    },
+    {
+      "name": "chamber-target-reverse.png",
+      "sha256": "1728fb8239d4edde652c93c92bb441c211fe4b491fbf9c14d79413e1c60eff42",
+      "unchanged": true
+    },
+    {
+      "name": "direction-close-best.jpg",
+      "sha256": "93fbe5a65dd56b5015bdd951fbefa5d1a3d60951688a00d28b33343a721107a8",
+      "unchanged": true
+    }
+  ],
+  "original_files": 555,
+  "config_and_launcher_unchanged": true
+}

@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "visual_acceptance": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "changes": [],
+  "before": {},
+  "requires": [
+    "saved reopen",
+    "camera edge verification",
+    "three reference comparisons",
+    "attack-warning readability",
+    "gameplay regression"
+  ],
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/refine_qa_visuals.py\", line 259, in <module>\n    main()\n  File \"C:/Projects/to-deploy/horror-game/tools/refine_qa_visuals.py\", line 192, in main\n    floor, cloth, warning = make_floor(), make_cloth(), make_warning()\n                                          ^^^^^^^^^^^^\n  File \"C:/Projects/to-deploy/horror-game/tools/refine_qa_visuals.py\", line 124, in make_cloth\n    link(uv, mask, 'Input')\n  File \"C:/Projects/to-deploy/horror-game/tools/refine_qa_visuals.py\", line 38, in link\n    assert M.connect_material_expressions(source, output, target, pin), (source, target, pin, list(M.get_material_expression_input_names(target)), list(M.get_material_expression_output_names(source)))\nAssertionError: (<Object '/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth:MaterialExpressionTextureCoordinate_0' (0x0000015870BDD820) Class 'MaterialExpressionTextureCoordinate'>, <Object '/Game/TeddyEncounter/Materials/M_QA_TeddyCloth.M_QA_TeddyCloth:MaterialExpressionComponentMask_0' (0x0000015870F66B00) Class 'MaterialExpressionComponentMask'>, 'Input', ['None'], [''])\n"
+}

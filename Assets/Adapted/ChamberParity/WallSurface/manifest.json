@@ -1,0 +1,53 @@
+{
+  "owner": "teddy-chamber-wall-patina-20261005",
+  "status": "generated-source-inspected-ready-for-import",
+  "created_utc": "2026-10-05T10:58:46.740328+00:00",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "generate",
+  "model": "Not exposed by the built-in tool response; no model claim.",
+  "prompt_file": "Assets/Adapted/ChamberParity/WallSurface/prompt.txt",
+  "prompt_sha256": "14c07e95f635708315eafcfecc0767146a77f4d44e53a2deee1c0dfb39923ab0",
+  "original_generated_file": "C:\\Users\\4elut\\.codex\\generated_images\\01a10ad9-cc06-7dc2-bed5-746d139641d3\\exec-6512a389-4c55-4a28-ac35-3d9d778b6c3b.png",
+  "project_file": "Assets/Adapted/ChamberParity/WallSurface/T_ChamberWall_Albedo.png",
+  "sha256": "6ec78f1ac8b4f69bea1cae1839ab58b52ab9b4dc2987902a98ce1098da2cdbe3",
+  "byte_copy_verified": true,
+  "file_bytes": 3397826,
+  "dimensions_px": [
+    1254,
+    1254
+  ],
+  "mode_rgb": "RGB",
+  "requested_size_in_prompt": "2048x2048; actual built-in output is1254x1254 and was not resized.",
+  "transparent_background": false,
+  "reference_images": [],
+  "source": "AI-generated neutral industrial wall diffuse color. No third-party image, downloaded texture or previous project image was used as input.",
+  "edits": "None. Project texture is an exact byte copy of the generated original.",
+  "intended_world_patch_cm": [
+    500,
+    500
+  ],
+  "mean_rgb_srgb_0_255": [
+    141.04090705595365,
+    136.14986810945007,
+    129.7037505500739
+  ],
+  "stddev_rgb_0_255": [
+    21.2610813233071,
+    22.301190584585395,
+    21.744090178704642
+  ],
+  "edge_diagnostic": {
+    "opposite_edge_mean_absolute_difference_0_255": {
+      "left_right": 12.293195108984582,
+      "top_bottom": 14.130249867091973
+    },
+    "typical_neighbor_mean_absolute_difference_0_255": {
+      "x": 11.042543984204903,
+      "y": 10.846359554816287
+    },
+    "interpretation": "Boundary jumps are near ordinary fine-grain pixel variation. This is a diagnostic, not proof of perfect seamless tiling; inspect repeated projection in Unreal."
+  },
+  "visual_inspection": "Neutral grey/brown mottled mineral wear, interrupted runoff and broad chipped paint; no panel lines, text, perspective, scene objects, dramatic illumination or teal grading. Fine pitting is intrinsic generated color.",
+  "integration": "Root-owned sibling texture T_Chamber_WallPatinaColor for world-aligned wall Concrete/Metal base color only. Preserve original normal/roughness, Rust/Dark recess assignments and original materials/assets. Source image has actual1254px dimensions; import settings are integrator-owned.",
+  "limits": "Albedo-like generated source, not a measured scan. Final wall color balance, repeated projection seams and target fidelity require engine capture review. No Unreal changes performed."
+}

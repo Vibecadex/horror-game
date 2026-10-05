@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "captures": [],
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "method": "Editor PIE; NPC/player movement frozen, HUD hidden; game paused through capture completion. Saved exposure/lighting unchanged. Views explicitly identify gameplay versus architectural camera.",
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/horror-game/tools/capture_room_gallery.py\", line 115, in tick\n    assert len(bosses) == 1, 'Expected one main boss'\n           ^^^^^^^^^^^^^^^^\nAssertionError: Expected one main boss\n",
+  "wall_seconds": 0.625
+}

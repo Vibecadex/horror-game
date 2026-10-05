@@ -1,0 +1,799 @@
+{
+  "passed": true,
+  "created_utc": "2026-10-05T05:04:34.288409+00:00",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "size": 7058,
+      "sha256": "d64d23b4dbd1f5f2b4fdaac973dae63a760fd1f42454a09c60b1f6caa604b29f"
+    },
+    {
+      "path": "Assets/Adapted/Arena/Arena_Art.blend",
+      "size": 105042,
+      "sha256": "fda506236700a98bbcd68c577d8a66941a27f0aa914a85e7d45110177c24d732"
+    },
+    {
+      "path": "Assets/Adapted/Arena/Arena_Art.blend1",
+      "size": 105024,
+      "sha256": "814d563210333af30813dbd4a2c494698331f584b124e032a9e1071289ea837c"
+    },
+    {
+      "path": "Assets/Adapted/Arena/AttackRing.fbx",
+      "size": 14236,
+      "sha256": "7b3995d5cc89d1192442e382b8c39d8d05a21fc1c3fd3cd49ca1b3b34fd4a657"
+    },
+    {
+      "path": "Assets/Adapted/Arena/Encounter_Details.blend",
+      "size": 90098,
+      "sha256": "8a11d17864ecfc81044278dd23eb389edc84b511a921a38f6f3196c61bc91de3"
+    },
+    {
+      "path": "Assets/Adapted/Arena/provenance.json",
+      "size": 138,
+      "sha256": "19343f629ce35511c48e14a78b08ac04e6da0cdf284d472a6732cf1c166d39ff"
+    },
+    {
+      "path": "Assets/Adapted/Arena/ServiceRifle.fbx",
+      "size": 29628,
+      "sha256": "0d4cede232170cbb48ef728410af74f328d5ebd949675665ec8e057ee6b692e2"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_Concrete_Color.png",
+      "size": 1430721,
+      "sha256": "e919538e37fb2e5dce770998915280e8f76ce3f746709f053ecf90a06bd2a405"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_Concrete_Normal.png",
+      "size": 1243429,
+      "sha256": "40c3e8c5481347ee2da578f5916a28a4c04c61c1ea93df30db0ef6816041e16b"
+    },
+    {
+      "path": "Assets/Adapted/Arena/T_Concrete_Roughness.png",
+      "size": 507094,
+      "sha256": "f6a6993275769f15dbe10cc5f1d8f10c8644bf25496b3d578c5c4ff377373646"
+    },
+    {
+      "path": "Assets/Adapted/Audio/ClothHit.wav",
+      "size": 21164,
+      "sha256": "8e67c93461fd2b03988c489d06062262e1a268cbb329fd502ed7f9bbfcd7e7f1"
+    },
+    {
+      "path": "Assets/Adapted/Audio/provenance.json",
+      "size": 797,
+      "sha256": "906a6a5cc74371764ac96987755011e18233950e4e50376376cde45a2a1458f8"
+    },
+    {
+      "path": "Assets/Adapted/Audio/Rifle.wav",
+      "size": 18284,
+      "sha256": "34f05e602599074f1577e01d19d2cc42a470eb6226ae0c20fa5bb95924428259"
+    },
+    {
+      "path": "Assets/Adapted/Audio/RoomTone.wav",
+      "size": 1536044,
+      "sha256": "c8e5dfb418e50469c38fc4e5969813c8f7d01949e53fb527b430ee40e472d148"
+    },
+    {
+      "path": "Assets/Adapted/Audio/Slam.wav",
+      "size": 76844,
+      "sha256": "c3ac09bd026e8c0f7813a2129811037beb99f6bf47cf5e1a07a255036cc7fad4"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/adaptation.json",
+      "size": 1515,
+      "sha256": "99cb6be1b53058a558971de8313143f326df5ea134f7fc0677c34531b426a73c"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/motion-refinement.json",
+      "size": 1137,
+      "sha256": "26f395f6f4ba552f73dfb7c16ec2b1c0400d5d433683ec416c38d44673573eb9"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/README.md",
+      "size": 1662,
+      "sha256": "5d26dbc2b366ba4a7778ef79797b24aa57b6d8eac669744ba5c1b20f2456e936"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Attack.fbx",
+      "size": 952092,
+      "sha256": "19308be8f68ec526c302773740f670248cfde532420fab34178d18b74d559538"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_BaseColor.png",
+      "size": 7122176,
+      "sha256": "dfdcb9b4bb477d4e3e486313f6b1d63c34ea676c0c15461d2d0fe0545692b6c1"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Crawl.fbx",
+      "size": 940908,
+      "sha256": "4010725a9ea0ae12a453a1a191a5e4eb2dfd6d5b23711b91560d464eabd3fba2"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Defeat.fbx",
+      "size": 972044,
+      "sha256": "0ddd99221787ae448b3edbe74e2362f27428cde5e98306a767a51167ecb36ff6"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Encounter.blend",
+      "size": 4366252,
+      "sha256": "d03bc4a0ee204e260be6036cd7636390ea789fe9f13793f39d70093d47b5b565"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Encounter.blend1",
+      "size": 4276123,
+      "sha256": "cd2252257312a306e821b10476691acc800b63fd45f2e4de9277575f4837a516"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Hit.fbx",
+      "size": 922732,
+      "sha256": "6952249ccce2826eb0b9310d8dbe6024342386be1f0a4b8d4398cde2c792814d"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Idle.fbx",
+      "size": 983500,
+      "sha256": "52ac34aec09e33bca39857cebde1495ad6144060f80fa38b152ac20fc76cda81"
+    },
+    {
+      "path": "Assets/Adapted/Teddy/Teddy_Walk.fbx",
+      "size": 940716,
+      "sha256": "62c77b9d414b9c73ba7a9615b4cd83aed7e43ec96533260c0d44786f3ff8e8d1"
+    },
+    {
+      "path": "ASTRA_GUIDE.md",
+      "size": 10165,
+      "sha256": "45016d9205945d2b4af864003835ba4cb173dfe9e27c49e6198b9519681acddc"
+    },
+    {
+      "path": "CHECK_SETUP.cmd",
+      "size": 153,
+      "sha256": "5659a070e02d8ac3b1d4faaf1c5596ea9325fe21aff490082e38fb18d6e7f423"
+    },
+    {
+      "path": "EDIT.cmd",
+      "size": 201,
+      "sha256": "c3add712d12569bfcaba601d8976ea1d7d3f368a77500641f915b217e2e73ebf"
+    },
+    {
+      "path": "ENCOUNTER.md",
+      "size": 4988,
+      "sha256": "dde83afc847e6a9e4de3e8ab96a2eeb54c3706ed74ff5d7da209e31ebe175c81"
+    },
+    {
+      "path": "MASTER_PROMPT.md",
+      "size": 11819,
+      "sha256": "65d6a1c47e986cf35a0ace54735d430d6adb22612563af31430fa320f8582d75"
+    },
+    {
+      "path": "PLAY.cmd",
+      "size": 201,
+      "sha256": "0ff18b202061e43dd87cf420161ada5390bdc2472c562e2a438d82e57ffbe015"
+    },
+    {
+      "path": "PLAY_BASELINE.cmd",
+      "size": 212,
+      "sha256": "c68254b554ed914880695a845e3baf859af186107232a946123aab39410f6fa5"
+    },
+    {
+      "path": "REFERENCE_BRIEF.md",
+      "size": 6946,
+      "sha256": "cd52708c029fd5f2bd067db734c00e8d0d2156837ed55d2084fa1c9761f1b8e1"
+    },
+    {
+      "path": "ROOM_ART_DIRECTION.md",
+      "size": 11545,
+      "sha256": "e4684ea563f5ff108438d06236ad95d99c54c265738d2b2bcb0af11643729d92"
+    },
+    {
+      "path": "RUN_ASTRA.md",
+      "size": 7357,
+      "sha256": "1eec61feb12acbe9132f184eb68b928f265817ccb6908ba39fa8caeb704bd581"
+    },
+    {
+      "path": "SETUP_STATUS.md",
+      "size": 4421,
+      "sha256": "00cf24aa110d1826ceb2be9eeb1b61b45890dacc87b6a370849a955e44ec93a4"
+    },
+    {
+      "path": "START_ASTRA.cmd",
+      "size": 336,
+      "sha256": "23df34311c1557d4d9b5c68413a83ca032963278293fcf436fc63978ad0bcb6f"
+    },
+    {
+      "path": "START_HERE.md",
+      "size": 5736,
+      "sha256": "6528cd17e11412e153294d428148da58010e5782cdc802ed5bc05e93ac21b021"
+    },
+    {
+      "path": "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+      "size": 355425,
+      "sha256": "7b87b75538e32db37c4f49b2bf2a0aa77c17a2050b4f854e61909698b37e494b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/AttackRing.uasset",
+      "size": 19250,
+      "sha256": "0b1c91b545e23c58a80ba4115182a734ea95bb8a996c57c1f785b4c500a60903"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/ServiceRifle.uasset",
+      "size": 41454,
+      "sha256": "acc4e6fd62d4906eedbc38023f9d196840eaa8aeb40ed6b645abd39913a90ded"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_Concrete_Color.uasset",
+      "size": 1354193,
+      "sha256": "fcb72e4efebcacbceb3dd2efd687625c0a21f457365cbd7f909b11aeefafc56e"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_Concrete_Normal.uasset",
+      "size": 1206670,
+      "sha256": "c1a582ad21f72373fc10c1807dfe73a7800932d972f2e25424c47fdc4fa49fbe"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Arena/T_Concrete_Roughness.uasset",
+      "size": 380435,
+      "sha256": "ad91401d454de2c5a029a8af7f4c776a68e243ff661afd72af68d75acd200903"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/ClothHit.uasset",
+      "size": 20635,
+      "sha256": "6f3825f5f868e2f53615f0cf8aac5bc02ac2c9103acb7b69bba0922fc81c87f8"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/Rifle.uasset",
+      "size": 18090,
+      "sha256": "f9016942e354f73d3432ed4886cc84a8452e70ae2886e3528ea4af86eb1970a5"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/RoomTone.uasset",
+      "size": 904303,
+      "sha256": "92b9e51278b1576d6f5ac85a685d74564d9bd87ba611b19519d5ef94949f58f7"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Audio/Slam.uasset",
+      "size": 57284,
+      "sha256": "8df719acf31c667497ccdf9a71f47c71fa0d492d5eac89cf0c6e8f2ec28c553d"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_CombatCamera.uasset",
+      "size": 107761,
+      "sha256": "eb82a93a996ac4692939fa9559f51edf887b60e751956d5226b12758babc7c02"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterController.uasset",
+      "size": 94100,
+      "sha256": "c620130584135b6040316f419943b33be2764c656936259b68ad0bee3725e03b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterGameMode.uasset",
+      "size": 21878,
+      "sha256": "ea34f51e0890496c21251f4fe9379e91698bfb2dc3b23c7dd9bac32a5d50cee1"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterHUD.uasset",
+      "size": 123703,
+      "sha256": "75e35cb6b7ef70e878466784699e1048c07f965a509bd596d73164d22a122002"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterPlayer.uasset",
+      "size": 557460,
+      "sha256": "10742a066c630cdffef9959c0fa61794caad9d93683f7534efae66e084779214"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_EncounterProjectile.uasset",
+      "size": 56728,
+      "sha256": "48f8e2e7d1af2b4ef2d63a62bc32992473dafe778a2012aa1e5a0d07e86cc3d6"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_Stitchling.uasset",
+      "size": 323599,
+      "sha256": "0e0b2df98fb092f2b8e9bcaab88ff4f4c5f9a2964cc01ffeac1b9d8e00b4cdfb"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_TeddyBoss.uasset",
+      "size": 296642,
+      "sha256": "0c43669e8d5b3bff0b9547f163130ed64e3f2db1a64761001390cbb01f0e1c8f"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Input/IA_Pause.uasset",
+      "size": 1621,
+      "sha256": "332431397fa8ff23fb2ab36c1b1ca32e450d1a15bc19295732e381d6b7c94542"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Input/IA_Restart.uasset",
+      "size": 1629,
+      "sha256": "c2417272334b4982ecd4fdf514c85827b3267a23ca56af7a9ff28dcbf30cd6ee"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Input/IMC_Encounter.uasset",
+      "size": 10299,
+      "sha256": "90f846607eb876957851c7ebce44170b9fa2098123a882c0be04870cb2b598b5"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_AimLine.uasset",
+      "size": 5817,
+      "sha256": "77ec65ca5c3bc4d8d12079cf19cc484e9c18d99a5d40337f5ec626d5f9f46b43"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_AttackWarning.uasset",
+      "size": 5889,
+      "sha256": "0de33cab13f19b5d54eb967150aafe8041b78cb646765da443407cdf30bb3cad"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_Charcoal.uasset",
+      "size": 5218,
+      "sha256": "b96095d0f881ddd3048b94a482f3a1e154d0416149f6cde075bda3f986b841f5"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_Muzzle.uasset",
+      "size": 6112,
+      "sha256": "98fcb1ced1bf51e8a627ec8e34cc12a6ac8bd59bd1fe6c82c2d9aba72ceefecd"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_OxidisedIron.uasset",
+      "size": 5238,
+      "sha256": "2aad3a82133437838474049449c4b87b4daa77fb1dfa690418b6b31225a179cd"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_AttackWarning.uasset",
+      "size": 6204,
+      "sha256": "c090cac07b7ff6a8491f18f82ef761f5e1fc92fbe5df68a1096c9a4a2b50d4c5"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_Concrete.uasset",
+      "size": 18146,
+      "sha256": "159d1ab67966e3157f59e132765e7b944bf08545ef9bba63f03d030c18c5a0ae"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_TeddyCloth.uasset",
+      "size": 20669,
+      "sha256": "4f00443857a5c35bf96088ec17771a02227e2679858c4a19437bf7d33fdf4730"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_TeddyCloth.uasset",
+      "size": 7610,
+      "sha256": "5846b17635c49f0fb55d4d7d2b0465e10d9c92edb09216028098ddbb1a9c76f8"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_WarningLamp.uasset",
+      "size": 6137,
+      "sha256": "9f895fc65c75ae6b12c5182ca50a68c03018853d67b27f49c1c65307ead8b0a6"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Materials/M_WornConcrete.uasset",
+      "size": 7619,
+      "sha256": "f69686acca9422aaccf7e51d6d8dc23f3dfc123798e6414dbf9cddc009cd27c6"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Player/ABP_EncounterRifle.uasset",
+      "size": 390559,
+      "sha256": "561d55a0e7e4567641aa355031f60c0d19fa36b844eb0686df58d24e5742763b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Player/BS_RifleLocomotion.uasset",
+      "size": 49453,
+      "sha256": "bc765e91a0ae42b5a065b76bc50070badec0d4217561d59e5524b0328c790b5c"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Attack/A_Teddy_Attack.uasset",
+      "size": 48758,
+      "sha256": "80a55f7317b1ac44cbce91eb0fb5bf5ff64201029118831001fd46af93558992"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.uasset",
+      "size": 58977,
+      "sha256": "e13175226feef3db49fbbd8ca360846e225a4ef855d40421747f71f9807f613c"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.uasset",
+      "size": 56822,
+      "sha256": "db71bdea8be1cb177425c8fb2169c32fc5aba45ccbcfb1ad45ad5bfdd0971236"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Hit/A_Teddy_Hit.uasset",
+      "size": 25566,
+      "sha256": "336002d8436c533e1661c912d1994656da2ea18c0f96331b917786f28c9d294e"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Idle/A_Teddy_Idle.uasset",
+      "size": 30393,
+      "sha256": "978948b70eaa6f12ccd4f12b51174a01726f9b660a312019dd059ad52cb8849d"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Idle/SK_Teddy.uasset",
+      "size": 3821083,
+      "sha256": "84a1becf9529426ba0f434a8e7ec38bd39219de0c0de4e4b45c93d9258c3970b"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.uasset",
+      "size": 5365,
+      "sha256": "61e59728f72c8da74c2c61b680e7a4a762e5a7768ecfbe4f1d72a7b49fcd29c1"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/T_Teddy_BaseColor.uasset",
+      "size": 6441670,
+      "sha256": "349944d07731fa4c53da3d145f23fa72025ddfbd79a738c3ef9e60be2642af70"
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Teddy/Walk/A_Teddy_Walk.uasset",
+      "size": 58886,
+      "sha256": "386d95b3353f9f4a629796b4af988c6760660ddd47065587fd9eba9d24da0826"
+    },
+    {
+      "path": "tools/adapt_teddy.py",
+      "size": 7384,
+      "sha256": "8884936b47d62bb88e5c35de2f6323d542576cb13fa93675f40cc2bbf798c2ad"
+    },
+    {
+      "path": "tools/add_encounter_feedback.py",
+      "size": 3887,
+      "sha256": "9568f486a9cc964dd7ddfa2f55c025ffec6c16328a3cddd579e427733ec15df9"
+    },
+    {
+      "path": "tools/astra_setup.py",
+      "size": 39198,
+      "sha256": "1fe9df79572b44775d556863024c330a59361dba4ba2f1775026f3451dbe3640"
+    },
+    {
+      "path": "tools/audit_encounter_assets.py",
+      "size": 1576,
+      "sha256": "092cfe53e7f90c838a0e0ba7bd9338a7546f722725ba2e5cb673e7f91e521432"
+    },
+    {
+      "path": "tools/audit_encounter_files.py",
+      "size": 1505,
+      "sha256": "18daf83713460eee963aff9803790cd3cd309d7a882f99db3f4af091d6f633cf"
+    },
+    {
+      "path": "tools/author_qa_native_motion.py",
+      "size": 4680,
+      "sha256": "ce377eae1606992875980507f2cea8d41f9afe2fc19e3f308034616eac8386b9"
+    },
+    {
+      "path": "tools/author_standalone_evidence.py",
+      "size": 2354,
+      "sha256": "a20c5f90db25c3b1c4140a728e3fbfa45819d7c568459dd471360fdcfce589ed"
+    },
+    {
+      "path": "tools/BLUEPRINT_WORKFLOW.md",
+      "size": 9302,
+      "sha256": "e384ebeba528b6cc136e66a07fe16f8f0091f32cfea383dc8ebdca505c644d34"
+    },
+    {
+      "path": "tools/build_and_generate.ps1",
+      "size": 677,
+      "sha256": "8f36b32ca6c638c1af483da3ef22f096d848a46dbe210a013480e382eadea41c"
+    },
+    {
+      "path": "tools/build_boss.py",
+      "size": 6897,
+      "sha256": "92ec4916a10f61cac80c79e113bfbc9748d9bb253b317f03dbb59a0e06e972e4"
+    },
+    {
+      "path": "tools/build_combat.py",
+      "size": 8644,
+      "sha256": "1b1abf0b991b7a5dd5f2bad062fdab200e9d759a27113a93510a39cb249e2950"
+    },
+    {
+      "path": "tools/build_editor.ps1",
+      "size": 1525,
+      "sha256": "03217677b0039c14e3b768b62527134496a3cf5aefcb521a7716f082bb0fb26b"
+    },
+    {
+      "path": "tools/build_encounter_hud.py",
+      "size": 4052,
+      "sha256": "f569773cecd98a707e94fe5322878b7cb93564c5312f7c6ca73cfec7a262139e"
+    },
+    {
+      "path": "tools/build_encounter_scene.py",
+      "size": 10554,
+      "sha256": "9a67974727a43b7b0db171b8ac93dd51c7191d958cc73ddaba52e358eac9e4dd"
+    },
+    {
+      "path": "tools/build_stitchlings.py",
+      "size": 3616,
+      "sha256": "30d4563f56e50ddd7382b7ac65077ff66a4b5ace7774ddbc707e769f7ffc99f9"
+    },
+    {
+      "path": "tools/capture_animation.py",
+      "size": 4402,
+      "sha256": "41f7e7b02c6f32e46caf76bcb40816eaab58202ba3090c57a7397ae89865da05"
+    },
+    {
+      "path": "tools/capture_encounter.py",
+      "size": 6052,
+      "sha256": "7b96864ee8e7fbd82e829fc9d336016c2232277d6fddbe21e61ac2b88796eda3"
+    },
+    {
+      "path": "tools/capture_qa_native_motion.py",
+      "size": 7132,
+      "sha256": "15b8fb532024967d06fd29cc8a0016202728b2296e217c902f4904b4dad7db86"
+    },
+    {
+      "path": "tools/encode_encounter_recording.py",
+      "size": 2733,
+      "sha256": "961bb1b96949c8e7d6e1be39e77a3ef92e9ec805ad05482fffbf7ce8c5a18355"
+    },
+    {
+      "path": "tools/encode_review.py",
+      "size": 2418,
+      "sha256": "c94ed3dc4d294e0fafc6749e47f864a04fe966b4463de884a039be799cec19fa"
+    },
+    {
+      "path": "tools/encounter_authoring.py",
+      "size": 5418,
+      "sha256": "b45cdfc45dc6774965e6d6191738120ae9c20c08891d85933ecc0bdcdd644cb6"
+    },
+    {
+      "path": "tools/finalize_encounter_delivery.py",
+      "size": 11234,
+      "sha256": "201db345e0d233e55badce3dfb0078a3dc8b330ed291ba7e8fecfe903421ed63"
+    },
+    {
+      "path": "tools/finalize_qa_repair.py",
+      "size": 13150,
+      "sha256": "562792ea02aee86ab6c774d514a54f282fb901520ebc59a0307cc0348b627153"
+    },
+    {
+      "path": "tools/finish_editor.py",
+      "size": 954,
+      "sha256": "f1905a0878cd59206e65512d6825f8bcfbef6e25340af0f457bb63d9b6d08d48"
+    },
+    {
+      "path": "tools/fix_encounter_camera.py",
+      "size": 3807,
+      "sha256": "6452bae61fe9a1a1705d5fc0ab3db90df72cd10247c387535b3937a3d79ad7c4"
+    },
+    {
+      "path": "tools/fix_weapon_grip.py",
+      "size": 1312,
+      "sha256": "7936489cbb1edf7ce71103d81de3a7f7890ba07d66af968ca0b57d3201759b4a"
+    },
+    {
+      "path": "tools/import_encounter_art.py",
+      "size": 4571,
+      "sha256": "20b522a5f44cb612659062053432449221453b4c79f2873eaa5196fb42a48b85"
+    },
+    {
+      "path": "tools/inspect_blueprint_candidate.py",
+      "size": 3035,
+      "sha256": "2a79b7f7f8cc0858392a55a2ce31f5e939b1da25ff15fa07dd500c6cc9b1b60e"
+    },
+    {
+      "path": "tools/inspect_encounter.py",
+      "size": 3721,
+      "sha256": "65ecc555b8357976bbc10b027cf4bea8c3639f38b33ec8508f9e24cbd1583cdd"
+    },
+    {
+      "path": "tools/inspect_teddy_asset.py",
+      "size": 3440,
+      "sha256": "56fa4b39106d8f7cb2908d93bbecceda9f7228522693c6944b05dd0f73e28845"
+    },
+    {
+      "path": "tools/inspect_weapon_grip.py",
+      "size": 1830,
+      "sha256": "bb94935a9ca644917c5d305c5708b4708c04e6df58f5d6a13d0ddfb17d656600"
+    },
+    {
+      "path": "tools/make_encounter_audio.py",
+      "size": 1627,
+      "sha256": "5f3bd3a5d1aab26aa7018ba486951d83fd8c89a191fa2829740c6474b4092274"
+    },
+    {
+      "path": "tools/make_encounter_comparisons.py",
+      "size": 2129,
+      "sha256": "4dd812eeefcc17ddcc2e184e3e55db431561cdd41d3def5a711d40a6d812dc1c"
+    },
+    {
+      "path": "tools/make_encounter_details.py",
+      "size": 840,
+      "sha256": "8276f880e7e6401ebbea7eb942e6024610b5261e1530e1cfb39c2ea1fb73ca25"
+    },
+    {
+      "path": "tools/make_environment_art.py",
+      "size": 3710,
+      "sha256": "164ecb6fdf489f478831cb3c81b5804ad39da46cda57d1a82cd33ab1e10dc3d0"
+    },
+    {
+      "path": "tools/png_evidence.py",
+      "size": 2153,
+      "sha256": "9263445049841e3f1e51fc4f6958cf0d1f878ffc55cc04be0e436126e3a0f8a8"
+    },
+    {
+      "path": "tools/polish_encounter_materials.py",
+      "size": 2043,
+      "sha256": "3a9eae2ec2330337a72cc73c1d2a725072cb99587ba8d896aece1f3dd6854c88"
+    },
+    {
+      "path": "tools/preflight.ps1",
+      "size": 1699,
+      "sha256": "7a9bdee568a9d200a97a0990ed212f00f1ef25e077fbcbfd72ee749d8b4200cb"
+    },
+    {
+      "path": "tools/prepare_blueprint_candidate.py",
+      "size": 3522,
+      "sha256": "4c8943cf0894443dc182189e0475e7fb342e69e697f3dad19bf107c51d9536d8"
+    },
+    {
+      "path": "tools/prepare_full_room.py",
+      "size": 1683,
+      "sha256": "6098c52e76346fac4d9dbc7f4b8080a6b5b3afec50bd1c93a14f76d86a53bb65"
+    },
+    {
+      "path": "tools/prepare_visual_tooling_review.py",
+      "size": 7623,
+      "sha256": "f30ef8b9c7bb223aad05ed863912d7cb2eb27ff461466388e7e6ef04f926a61d"
+    },
+    {
+      "path": "tools/probe_animation.py",
+      "size": 1228,
+      "sha256": "eb45ac346105eb1711915d6b10e913589816427b7ceb0e26f8029ca92a16bda4"
+    },
+    {
+      "path": "tools/probe_audio_recording.py",
+      "size": 338,
+      "sha256": "9caea11625fb1d6ac9f926d237eac976aef65c9cc43869a899371d4272348fda"
+    },
+    {
+      "path": "tools/probe_encounter_api.py",
+      "size": 1679,
+      "sha256": "b600dd2022d2e69857ab605c0fd96c749345c42b25a96d7c2561762577a6add7"
+    },
+    {
+      "path": "tools/probe_gameplay_nodes.py",
+      "size": 1057,
+      "sha256": "8a2f22520c713b32d9c3bebf8efe4cebb22fa4c3bb501af25159eb50a7981fc3"
+    },
+    {
+      "path": "tools/probe_render_state.py",
+      "size": 1740,
+      "sha256": "870113693a103b69a1986d09a9bb1854c530103957fa8c7f24d3c5557a9d56c5"
+    },
+    {
+      "path": "tools/project-settings.json",
+      "size": 1366,
+      "sha256": "7d330d442f21291e6ed04558af99ee6a7a04278589f359bb6cd7a984b1950ddf"
+    },
+    {
+      "path": "tools/record_encounter.py",
+      "size": 9519,
+      "sha256": "fd5239e7a5f3727fa679b07f2c5838a8697b416d6b5ba2872df84dab75338e41"
+    },
+    {
+      "path": "tools/recover_scene_ownership.py",
+      "size": 1597,
+      "sha256": "0f4b2d1db31bdcfab0519c7909935f4fce2658fb3aa22a121525dc2c69c67bc9"
+    },
+    {
+      "path": "tools/refine_encounter_stage.py",
+      "size": 6396,
+      "sha256": "aa7fac0f0088815f065de96e81a205782b510047a6e00f8eb1346858114ceb7c"
+    },
+    {
+      "path": "tools/refine_human_animation.py",
+      "size": 2328,
+      "sha256": "2b784ab525f770463e739b31e08114f7bde12092e5cbb412c813831f123b2b8d"
+    },
+    {
+      "path": "tools/refine_player_controls.py",
+      "size": 2919,
+      "sha256": "20053bd6f34563b63198a99ec9c933823d26a7d307c47282ce02198fa5cfb56a"
+    },
+    {
+      "path": "tools/refine_qa_visuals.py",
+      "size": 13913,
+      "sha256": "5e56009d39cd0d214e4ce7e33400c5e44fbc833d09bad15978dc5e38a9c7a422"
+    },
+    {
+      "path": "tools/refine_scene_lighting.py",
+      "size": 3451,
+      "sha256": "b8edf2433dd972e1372d749ed05ed47c9c20f2e7b13994923e055704389a8ef5"
+    },
+    {
+      "path": "tools/refine_teddy_motion.py",
+      "size": 5162,
+      "sha256": "5d4786e09ccb5f38fce0a946df4c7f6a3ca52433918e31ba371766a78c06f4bd"
+    },
+    {
+      "path": "tools/refresh_floor.py",
+      "size": 1426,
+      "sha256": "862dff53e2c180b54abffec360a279362cc898f3716b789ab8d6d03d3bdac494"
+    },
+    {
+      "path": "tools/repair_component_defaults.py",
+      "size": 2488,
+      "sha256": "e97c084f4c5e1964eb0995429530d4419eeddeecb5cfad5be42228e70e01b0ed"
+    },
+    {
+      "path": "tools/repair_encounter_keys.py",
+      "size": 2449,
+      "sha256": "5499d7549190f119092f74e240462a6a0c3ddac768a13f56d084a8f4e1a28d26"
+    },
+    {
+      "path": "tools/run_encounter_test.py",
+      "size": 1738,
+      "sha256": "397c561e8477a1353e31be33d381fbff9ee58c04af1aba1093b822a69aa677ef"
+    },
+    {
+      "path": "tools/run_standalone_evidence.py",
+      "size": 2643,
+      "sha256": "e88fef5cc3533f83f47d4934be566c682b222c522902a63d42b8e489398c3e90"
+    },
+    {
+      "path": "tools/summarize_standalone_evidence.py",
+      "size": 2883,
+      "sha256": "fcb03e6fab4dc63ecab685d0cf21dc12d734fc4da88098f74df25e550afc2616"
+    },
+    {
+      "path": "tools/test_astra_setup.py",
+      "size": 7350,
+      "sha256": "474dc534df01e8a79b55f1a11b06b215f4459fdfec489be381bb98c1ce9a7bdb"
+    },
+    {
+      "path": "tools/tune_encounter.py",
+      "size": 1886,
+      "sha256": "a4886c54525e75b1a646ee4ff038ca331c85aa8ee62aa06e05c0e92667f2e392"
+    },
+    {
+      "path": "tools/verify_blueprint_authoring.py",
+      "size": 5619,
+      "sha256": "47b8154e17206da5afd6ccbe30c714d17832c7b539f26cb532ca6bf246388b9e"
+    },
+    {
+      "path": "tools/verify_blueprint_runtime.py",
+      "size": 6607,
+      "sha256": "354b2d974bbbc194b99afc456ac5413c7fc84a17ee8475ae83ff3757b59705af"
+    },
+    {
+      "path": "tools/verify_encounter.py",
+      "size": 9154,
+      "sha256": "fd2e92af5eb52e2b7cc0ac2a804eb6f34ec593166bdbd43b3c6ff4488d3b3518"
+    },
+    {
+      "path": "tools/verify_encounter_audio.py",
+      "size": 2413,
+      "sha256": "00680b07a2b18016026f5fe813e281dbf0df2fef17d9c4d18bc7fb09f220f11b"
+    },
+    {
+      "path": "tools/verify_encounter_camera.py",
+      "size": 4611,
+      "sha256": "8ef77f32f24b02788a904c691769bb5028b185eeecee4d988a74ad5322c4b0bb"
+    },
+    {
+      "path": "tools/verify_encounter_edges.py",
+      "size": 8887,
+      "sha256": "c5e8196e5d6a7848e18f109beff99f5852ac7ee41041a63c90de8c99ab68fd64"
+    },
+    {
+      "path": "tools/verify_encounter_keys.py",
+      "size": 7581,
+      "sha256": "c0dfa4cc0005f2a85c5bb2007182e171d45c719f9e863237314ff1bd076c7847"
+    },
+    {
+      "path": "tools/verify_encounter_repair.py",
+      "size": 9570,
+      "sha256": "379c29e306fd585262a271658d4d488d07dade344db18af51a3c5a431dfce640"
+    },
+    {
+      "path": "tools/verify_runtime.ps1",
+      "size": 980,
+      "sha256": "cfa3c75490ac71a4c04ebed1ecd3ceb95ec9810f3cee35216e4403bc1752d846"
+    },
+    {
+      "path": "tools/verify_setup_import.py",
+      "size": 5019,
+      "sha256": "cbbc1fc6461bdaa3d70cb70181c5a06e6a0da5461e99a0a73d35f9f9b65214aa"
+    },
+    {
+      "path": "tools/verify_starter_evidence.py",
+      "size": 8529,
+      "sha256": "5fee3977ea3da77e5ddb9c8fd51d26c4f3d39fc6f8bab93c1ba7925b2c5f3eea"
+    },
+    {
+      "path": "WORK_STATUS.md",
+      "size": 6708,
+      "sha256": "a462915809bc76c2f9a468cd515b374dbf542cf74018dda6bcf83145c857a65a"
+    }
+  ],
+  "archive": "C:\\Projects\\to-deploy\\horror-game\\evidence\\full-room\\20261005T050433Z\\before-room.zip",
+  "archive_sha256": "cb97355718d6a44acd5b618b7c224ff1632b11f0fbc0650e6a9545a4f2ebad4a",
+  "purpose": "Byte-preserving rollback snapshot; no binary assets interpreted."
+}

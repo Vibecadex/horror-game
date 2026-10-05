@@ -1,0 +1,7145 @@
+{
+  "passed": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "independent_qa": true,
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "checks": {
+    "saved_five_spawn_locations_preserved": true,
+    "saved_one_boss_three_stitchlings": true,
+    "original_four_collision_bounds_preserved": true,
+    "new_room_ownership_is_explicit": true,
+    "new_room_geometry_keeps_combat_interior_open": true,
+    "room_decoration_has_no_collision": false,
+    "floor_details_are_flush_and_non_colliding": false,
+    "room_has_three_tall_sides_and_foreground_cutaway": true,
+    "active_pie_trace_queries_hit_known_floor_and_wall": true,
+    "interior_grid_and_crossing_routes_clear": true,
+    "all_five_spawn_capsules_clear_of_environment": true,
+    "front_wall_blocks_walk": true,
+    "front_wall_blocks_real_dash_without_tunnelling": true,
+    "back_wall_blocks_walk": true,
+    "back_wall_blocks_real_dash_without_tunnelling": true,
+    "left_wall_blocks_walk": true,
+    "left_wall_blocks_real_dash_without_tunnelling": true,
+    "right_wall_blocks_walk": true,
+    "right_wall_blocks_real_dash_without_tunnelling": false,
+    "all_twelve_camera_pairs_keep_bodies_in_frame": true,
+    "all_twelve_camera_pairs_have_clear_body_collision_traces": true,
+    "six_gameplay_view_images_decoded": true
+  },
+  "room_actors": [
+    {
+      "label": "TE_Room_FarWall",
+      "tags": [
+        "FullRoomOwned",
+        "RoomShell",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1660.0,
+              -1739.9999999999998,
+              -5.0
+            ],
+            "max": [
+              1780.0,
+              1739.9999999999998,
+              685.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SideWall_-1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomShell",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1540.0,
+              -1800.0,
+              -5.0
+            ],
+            "max": [
+              1720.0,
+              -1680.0,
+              625.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SideLowerDamp_-1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1540.0,
+              -1678.0,
+              -5.0
+            ],
+            "max": [
+              1720.0,
+              -1670.0,
+              135.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SideCornice_-1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1540.0,
+              -1700.0,
+              597.5
+            ],
+            "max": [
+              1720.0,
+              -1590.0,
+              642.5
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SideFoundation_-1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1500.0,
+              -1680.0,
+              -5.0
+            ],
+            "max": [
+              1680.0,
+              -1470.0,
+              61.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SideGutter_-1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1500.0,
+              -1604.0,
+              61.0
+            ],
+            "max": [
+              1680.0,
+              -1496.0,
+              65.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SideWall_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomShell",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1540.0,
+              1680.0,
+              -5.0
+            ],
+            "max": [
+              1720.0,
+              1800.0,
+              625.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SideLowerDamp_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1540.0,
+              1670.0,
+              -5.0
+            ],
+            "max": [
+              1720.0,
+              1678.0,
+              135.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SideCornice_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1540.0,
+              1590.0,
+              597.5
+            ],
+            "max": [
+              1720.0,
+              1700.0,
+              642.5
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SideFoundation_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1500.0,
+              1470.0,
+              -5.0
+            ],
+            "max": [
+              1680.0,
+              1680.0,
+              61.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SideGutter_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1500.0,
+              1496.0,
+              61.0
+            ],
+            "max": [
+              1680.0,
+              1604.0,
+              65.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FarLowerDamp",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1652.0,
+              -1675.0,
+              -5.0
+            ],
+            "max": [
+              1660.0,
+              1675.0,
+              135.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FarCornice",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1550.0,
+              -1755.0,
+              656.0
+            ],
+            "max": [
+              1710.0,
+              1755.0,
+              700.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FarFoundation",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1480.0,
+              -1675.0,
+              -5.0
+            ],
+            "max": [
+              1660.0,
+              1675.0,
+              61.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomShell",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1615.0,
+              -1595.0,
+              -5.0
+            ],
+            "max": [
+              -1445.0,
+              -945.0,
+              55.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1625.0,
+              -1600.0,
+              53.0
+            ],
+            "max": [
+              -1435.0,
+              -940.0,
+              61.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomShell",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1615.0,
+              -805.0,
+              -5.0
+            ],
+            "max": [
+              -1445.0,
+              -155.0,
+              55.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1625.0,
+              -810.0,
+              53.0
+            ],
+            "max": [
+              -1435.0,
+              -150.0,
+              61.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomShell",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1615.0,
+              75.0,
+              -5.0
+            ],
+            "max": [
+              -1445.0,
+              725.0,
+              55.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1625.0,
+              70.0,
+              53.0
+            ],
+            "max": [
+              -1435.0,
+              730.0,
+              61.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CutawaySill_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomShell",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1615.0,
+              895.0,
+              -5.0
+            ],
+            "max": [
+              -1445.0,
+              1545.0,
+              55.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_CutawayCap_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1625.0,
+              890.0,
+              53.0
+            ],
+            "max": [
+              -1435.0,
+              1550.0,
+              61.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_BulkheadDoor",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomBulkhead.SM_RoomBulkhead",
+          "bounds": {
+            "min": [
+              1568.748332977295,
+              -71.00000000000006,
+              62.0
+            ],
+            "max": [
+              1658.000020980835,
+              431.00000000000006,
+              542.0000305175781
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_-1360",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              1582.6999969482422,
+              -1409.0000038146973,
+              -5.0
+            ],
+            "max": [
+              1670.0000038146973,
+              -1310.9999961853027,
+              655.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_-780",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              1582.6999969482422,
+              -829.0000038146973,
+              -5.0
+            ],
+            "max": [
+              1670.0000038146973,
+              -730.9999961853027,
+              655.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_780",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              1582.6999969482422,
+              730.9999961853027,
+              -5.0
+            ],
+            "max": [
+              1670.0000038146973,
+              829.0000038146973,
+              655.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearPilaster_1380",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              1582.6999969482422,
+              1330.9999961853027,
+              -5.0
+            ],
+            "max": [
+              1670.0000038146973,
+              1429.0000038146973,
+              655.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1641.0,
+              -1340.0,
+              165.0
+            ],
+            "max": [
+              1661.0,
+              -900.0,
+              515.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1589.0,
+              -1348.0,
+              519.0
+            ],
+            "max": [
+              1651.0,
+              -892.0,
+              539.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1641.0,
+              -760.0,
+              165.0
+            ],
+            "max": [
+              1661.0,
+              -320.0,
+              515.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1589.0,
+              -768.0,
+              519.0
+            ],
+            "max": [
+              1651.0,
+              -312.0,
+              539.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1641.0,
+              650.0,
+              165.0
+            ],
+            "max": [
+              1661.0,
+              1090.0,
+              515.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1589.0,
+              642.0,
+              519.0
+            ],
+            "max": [
+              1651.0,
+              1098.0,
+              539.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearInset_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1641.0,
+              1140.0,
+              165.0
+            ],
+            "max": [
+              1661.0,
+              1580.0,
+              515.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearHeader_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1589.0,
+              1132.0,
+              519.0
+            ],
+            "max": [
+              1651.0,
+              1588.0,
+              539.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearFan",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomVentFan.SM_RoomVentFan",
+          "bounds": {
+            "min": [
+              1581.4999961853027,
+              -1225.0,
+              240.0
+            ],
+            "max": [
+              1635.5000114440918,
+              -975.0,
+              490.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearTank",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomUtilityTank.SM_RoomUtilityTank",
+          "bounds": {
+            "min": [
+              1509.085998840332,
+              1015.6280023193359,
+              62.0
+            ],
+            "max": [
+              1624.34,
+              1134.3400000000001,
+              486.8499755859375
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              -1229.0000038146973,
+              -1685.0000038146973,
+              -5.0
+            ],
+            "max": [
+              -1130.9999961853027,
+              -1597.6999969482422,
+              595.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              -509.00000381469727,
+              -1685.0000038146973,
+              -5.0
+            ],
+            "max": [
+              -410.99999618530273,
+              -1597.6999969482422,
+              595.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              370.99999618530273,
+              -1685.0000038146973,
+              -5.0
+            ],
+            "max": [
+              469.00000381469727,
+              -1597.6999969482422,
+              595.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_-1_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              1300.9999961853027,
+              -1685.0000038146973,
+              -5.0
+            ],
+            "max": [
+              1399.0000038146973,
+              -1597.6999969482422,
+              595.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              -1199.0000038146973,
+              1597.6999969482422,
+              -5.0
+            ],
+            "max": [
+              -1100.9999961853027,
+              1685.0000038146973,
+              595.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              -169.00000381469727,
+              1597.6999969482422,
+              -5.0
+            ],
+            "max": [
+              -70.99999618530275,
+              1685.0000038146973,
+              595.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              630.9999961853027,
+              1597.6999969482422,
+              -5.0
+            ],
+            "max": [
+              729.0000038146973,
+              1685.0000038146973,
+              595.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_SidePilaster_1_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPilaster.SM_RoomPilaster",
+          "bounds": {
+            "min": [
+              1310.9999961853027,
+              1597.6999969482422,
+              -5.0
+            ],
+            "max": [
+              1409.0000038146973,
+              1685.0000038146973,
+              595.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPipeRack.SM_RoomPipeRack",
+          "bounds": {
+            "min": [
+              -1250.0,
+              -1584.500015258789,
+              409.4000015258789
+            ],
+            "max": [
+              -750.0,
+              -1507.0000076293945,
+              504.00000381469727
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1012.0,
+              -1675.0,
+              419.0
+            ],
+            "max": [
+              -988.0,
+              -1565.0,
+              503.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPipeRack.SM_RoomPipeRack",
+          "bounds": {
+            "min": [
+              -750.0,
+              -1584.500015258789,
+              409.4000015258789
+            ],
+            "max": [
+              -250.0,
+              -1507.0000076293945,
+              504.00000381469727
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -512.0,
+              -1675.0,
+              419.0
+            ],
+            "max": [
+              -488.0,
+              -1565.0,
+              503.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPipeRack.SM_RoomPipeRack",
+          "bounds": {
+            "min": [
+              -250.0,
+              -1584.500015258789,
+              409.4000015258789
+            ],
+            "max": [
+              250.0,
+              -1507.0000076293945,
+              504.00000381469727
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -12.0,
+              -1675.0,
+              419.0
+            ],
+            "max": [
+              12.0,
+              -1565.0,
+              503.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPipeRack.SM_RoomPipeRack",
+          "bounds": {
+            "min": [
+              250.0,
+              -1584.500015258789,
+              409.4000015258789
+            ],
+            "max": [
+              750.0,
+              -1507.0000076293945,
+              504.00000381469727
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              488.0,
+              -1675.0,
+              419.0
+            ],
+            "max": [
+              512.0,
+              -1565.0,
+              503.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_LeftPipeRun_4",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPipeRack.SM_RoomPipeRack",
+          "bounds": {
+            "min": [
+              750.0,
+              -1584.500015258789,
+              409.4000015258789
+            ],
+            "max": [
+              1250.0,
+              -1507.0000076293945,
+              504.00000381469727
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_PipeStandoff_4",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              988.0,
+              -1675.0,
+              419.0
+            ],
+            "max": [
+              1012.0,
+              -1565.0,
+              503.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_LeftFan",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomVentFan.SM_RoomVentFan",
+          "bounds": {
+            "min": [
+              -145.0,
+              -1653.5000114440918,
+              150.0
+            ],
+            "max": [
+              105.0,
+              -1599.4999961853027,
+              400.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RightCabinetA",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomServiceCabinet.SM_RoomServiceCabinet",
+          "bounds": {
+            "min": [
+              -863.0,
+              1529.3546562194824,
+              62.0
+            ],
+            "max": [
+              -686.0,
+              1616.0000076293945,
+              327.5000305175781
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RightCabinetB",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomServiceCabinet.SM_RoomServiceCabinet",
+          "bounds": {
+            "min": [
+              -628.6999999999999,
+              1531.8869234085084,
+              62.0
+            ],
+            "max": [
+              -469.4,
+              1614.2000072479248,
+              354.05003356933594
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RightTank",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomUtilityTank.SM_RoomUtilityTank",
+          "bounds": {
+            "min": [
+              912.8000000000001,
+              1490.879998779297,
+              61.99999999999997
+            ],
+            "max": [
+              1037.7599975585938,
+              1612.2,
+              465.60747680664053
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RightPipeRun",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomPipeRack.SM_RoomPipeRack",
+          "bounds": {
+            "min": [
+              640.0000000000001,
+              1507.0000076293945,
+              419.4000015258789
+            ],
+            "max": [
+              1140.0,
+              1584.500015258789,
+              514.0000038146973
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RightFan",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomVentFan.SM_RoomVentFan",
+          "bounds": {
+            "min": [
+              100.00000000000006,
+              1599.4999961853027,
+              215.0
+            ],
+            "max": [
+              349.99999999999994,
+              1653.5000114440918,
+              465.0
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_LeftCrate",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomCargoCrate.SM_RoomCargoCrate",
+          "bounds": {
+            "min": [
+              -870.61919192273,
+              -1605.0752347030764,
+              65.0
+            ],
+            "max": [
+              -779.38080807727,
+              -1524.9247652969236,
+              139.865
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RightSpool",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomCableSpool.SM_RoomCableSpool",
+          "bounds": {
+            "min": [
+              -86.85,
+              1543.15,
+              66.50000028610229
+            ],
+            "max": [
+              -13.149999999999999,
+              1616.85,
+              124.28000183105469
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearCrate",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomCargoCrate.SM_RoomCargoCrate",
+          "bounds": {
+            "min": [
+              1498.1443212890624,
+              -631.15,
+              65.0
+            ],
+            "max": [
+              1561.8556787109376,
+              -538.85,
+              147.11
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.SM_RoomFloorGrate",
+          "bounds": {
+            "min": [
+              -1270.4499969482422,
+              -1587.142515563965,
+              59.4
+            ],
+            "max": [
+              -869.5500030517578,
+              -1508.857484436035,
+              68.2899998664856
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.SM_RoomFloorGrate",
+          "bounds": {
+            "min": [
+              -750.4499969482422,
+              -1587.142515563965,
+              59.4
+            ],
+            "max": [
+              -349.5500030517578,
+              -1508.857484436035,
+              68.2899998664856
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.SM_RoomFloorGrate",
+          "bounds": {
+            "min": [
+              -210.4499969482422,
+              -1587.142515563965,
+              59.4
+            ],
+            "max": [
+              190.4499969482422,
+              -1508.857484436035,
+              68.2899998664856
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.SM_RoomFloorGrate",
+          "bounds": {
+            "min": [
+              349.5500030517578,
+              -1587.142515563965,
+              59.4
+            ],
+            "max": [
+              750.4499969482422,
+              -1508.857484436035,
+              68.2899998664856
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_-1_4",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.SM_RoomFloorGrate",
+          "bounds": {
+            "min": [
+              889.5500030517578,
+              -1587.142515563965,
+              59.4
+            ],
+            "max": [
+              1290.4499969482422,
+              -1508.857484436035,
+              68.2899998664856
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.SM_RoomFloorGrate",
+          "bounds": {
+            "min": [
+              -1270.4499969482422,
+              1508.857484436035,
+              59.4
+            ],
+            "max": [
+              -869.5500030517578,
+              1587.142515563965,
+              68.2899998664856
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.SM_RoomFloorGrate",
+          "bounds": {
+            "min": [
+              -750.4499969482422,
+              1508.857484436035,
+              59.4
+            ],
+            "max": [
+              -349.5500030517578,
+              1587.142515563965,
+              68.2899998664856
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.SM_RoomFloorGrate",
+          "bounds": {
+            "min": [
+              -210.4499969482422,
+              1508.857484436035,
+              59.4
+            ],
+            "max": [
+              190.4499969482422,
+              1587.142515563965,
+              68.2899998664856
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.SM_RoomFloorGrate",
+          "bounds": {
+            "min": [
+              349.5500030517578,
+              1508.857484436035,
+              59.4
+            ],
+            "max": [
+              750.4499969482422,
+              1587.142515563965,
+              68.2899998664856
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_DrainGrate_1_4",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomFloorGrate.SM_RoomFloorGrate",
+          "bounds": {
+            "min": [
+              889.5500030517578,
+              1508.857484436035,
+              59.4
+            ],
+            "max": [
+              1290.4499969482422,
+              1587.142515563965,
+              68.2899998664856
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconHousing_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              718.0,
+              -1548.0,
+              188.0
+            ],
+            "max": [
+              762.0,
+              -1512.0,
+              272.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconLens_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              713.5,
+              -1538.5,
+              206.0
+            ],
+            "max": [
+              718.5,
+              -1521.5,
+              258.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconLight_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomLight",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": []
+    },
+    {
+      "label": "TE_Room_BeaconHousing_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -942.0,
+              1512.0,
+              188.0
+            ],
+            "max": [
+              -898.0,
+              1548.0,
+              272.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconLens_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -946.5,
+              1521.5,
+              206.0
+            ],
+            "max": [
+              -941.5,
+              1538.5,
+              258.0
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_BeaconLight_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomLight",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": []
+    },
+    {
+      "label": "TE_Room_RearFixture_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomStripLight.SM_RoomStripLight",
+          "bounds": {
+            "min": [
+              1605.9999904632568,
+              -712.7,
+              527.6000003814697
+            ],
+            "max": [
+              1642.0000085830688,
+              -527.3,
+              562.3999996185303
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearGrazing_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomLight",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": []
+    },
+    {
+      "label": "TE_Room_RearFixture_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Room/Meshes/SM_RoomStripLight.SM_RoomStripLight",
+          "bounds": {
+            "min": [
+              1605.9999904632568,
+              627.3,
+              527.6000003814697
+            ],
+            "max": [
+              1642.0000085830688,
+              812.7,
+              562.3999996185303
+            ]
+          },
+          "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_RearGrazing_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomLight",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": []
+    },
+    {
+      "label": "TE_Room_LeftServiceLight",
+      "tags": [
+        "FullRoomOwned",
+        "RoomLight",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": []
+    },
+    {
+      "label": "TE_Room_RightServiceLight",
+      "tags": [
+        "FullRoomOwned",
+        "RoomLight",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": []
+    },
+    {
+      "label": "TE_Room_CornerBounce_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomLight",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": []
+    },
+    {
+      "label": "TE_Room_CornerBounce_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomLight",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": []
+    },
+    {
+      "label": "TE_Room_CornerBounce_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomLight",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": []
+    },
+    {
+      "label": "TE_Room_CornerBounce_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomLight",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": []
+    },
+    {
+      "label": "TE_Room_FloorDamp_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomFloorDetail",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Plane.Plane",
+          "bounds": {
+            "min": [
+              888.4252772977305,
+              -919.6629470947815,
+              -4.600000000000008
+            ],
+            "max": [
+              1271.5747227022694,
+              -660.3370529052185,
+              -4.599999999999992
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomFloorDetail",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Plane.Plane",
+          "bounds": {
+            "min": [
+              518.0400198115055,
+              1021.113659679334,
+              -4.600000000000008
+            ],
+            "max": [
+              961.9599801884945,
+              1338.886340320666,
+              -4.599999999999992
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomFloorDetail",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Plane.Plane",
+          "bounds": {
+            "min": [
+              -940.801957966031,
+              -1280.579718933325,
+              -4.600000000000008
+            ],
+            "max": [
+              -559.198042033969,
+              -959.420281066675,
+              -4.599999999999992
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomFloorDetail",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Plane.Plane",
+          "bounds": {
+            "min": [
+              -1150.628679092709,
+              882.2433071676041,
+              -4.600000000000008
+            ],
+            "max": [
+              -829.371320907291,
+              1137.7566928323959,
+              -4.599999999999992
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_4",
+      "tags": [
+        "FullRoomOwned",
+        "RoomFloorDetail",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Plane.Plane",
+          "bounds": {
+            "min": [
+              1023.9960672808933,
+              186.9359076230919,
+              -4.600000000000008
+            ],
+            "max": [
+              1196.0039327191066,
+              513.0640923769081,
+              -4.599999999999992
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_5",
+      "tags": [
+        "FullRoomOwned",
+        "RoomFloorDetail",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Plane.Plane",
+          "bounds": {
+            "min": [
+              -648.0314250729019,
+              978.4707558176356,
+              -4.600000000000008
+            ],
+            "max": [
+              -431.968574927098,
+              1121.5292441823644,
+              -4.599999999999992
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_6",
+      "tags": [
+        "FullRoomOwned",
+        "RoomFloorDetail",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Plane.Plane",
+          "bounds": {
+            "min": [
+              198.15930069067375,
+              -1182.1865546504323,
+              -4.600000000000008
+            ],
+            "max": [
+              501.8406993093263,
+              -1017.8134453495677,
+              -4.599999999999992
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FloorDamp_7",
+      "tags": [
+        "FullRoomOwned",
+        "RoomFloorDetail",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Plane.Plane",
+          "bounds": {
+            "min": [
+              -889.9552499916197,
+              44.08233549241383,
+              -4.600000000000008
+            ],
+            "max": [
+              -690.0447500083803,
+              275.91766450758615,
+              -4.599999999999992
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_0",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1207.939994331172,
+              1521.627943562823,
+              60.862639515712544
+            ],
+            "max": [
+              -1190.669671817807,
+              1539.8679942902268,
+              75.13736048428746
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_1",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -174.85177250480658,
+              -1516.9181564723772,
+              61.75480275231046
+            ],
+            "max": [
+              -159.5428100159036,
+              -1506.8271479543428,
+              74.24519724768955
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_2",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              71.7344993080958,
+              1516.616478923453,
+              61.03264636609646
+            ],
+            "max": [
+              93.19629639549588,
+              1540.8581187490236,
+              74.96735363390354
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_3",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -552.8164424998849,
+              -1572.1720373115334,
+              62.17009702802875
+            ],
+            "max": [
+              -540.7221983942713,
+              -1545.1084661563998,
+              73.82990297197125
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_4",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1200.9923176457653,
+              1492.6124558312185,
+              63.25046182021478
+            ],
+            "max": [
+              -1186.4127300969392,
+              1516.9172366685448,
+              72.74953817978522
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_5",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              61.868586987913716,
+              -1555.4315493094912,
+              61.27636438815263
+            ],
+            "max": [
+              72.3592407255714,
+              -1528.668770846992,
+              74.72363561184737
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_6",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              796.2000357205941,
+              1521.1334857036893,
+              63.387420015822464
+            ],
+            "max": [
+              822.8115941303925,
+              1541.5585358959913,
+              72.61257998417753
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_7",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1318.5433752589654,
+              -1525.0677223581715,
+              65.11030499793242
+            ],
+            "max": [
+              1332.1828337757995,
+              -1505.6168538576317,
+              70.88969500206758
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_8",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -1063.3616943855227,
+              1513.0619539231025,
+              64.7042941086991
+            ],
+            "max": [
+              -1033.9366787228473,
+              1536.088400861,
+              71.2957058913009
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_9",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              991.4747284324197,
+              -1576.4801861710682,
+              64.37203362686952
+            ],
+            "max": [
+              1020.1906022848858,
+              -1555.6552924912805,
+              71.62796637313048
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_10",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              478.52597929976645,
+              1494.4870794864814,
+              60.639491966730596
+            ],
+            "max": [
+              508.9302578929717,
+              1518.99987186609,
+              75.36050803326941
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_11",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              862.8364441677844,
+              -1569.1752413130873,
+              64.61440230182019
+            ],
+            "max": [
+              886.1186364610118,
+              -1551.752324616081,
+              71.38559769817981
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_12",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              966.4898544645274,
+              1506.603510142155,
+              61.047821138745945
+            ],
+            "max": [
+              996.6051999154344,
+              1534.0621165715681,
+              74.95217886125405
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_13",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1130.0893037462783,
+              -1529.1818185572872,
+              64.3620921834598
+            ],
+            "max": [
+              1155.1293433246883,
+              -1503.6556825417135,
+              71.6379078165402
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_14",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              860.960673441197,
+              1528.1120330225212,
+              65.09844137151703
+            ],
+            "max": [
+              872.4249787516886,
+              1543.4340670219772,
+              70.90155862848297
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_15",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -387.95797173756114,
+              -1546.582573912124,
+              62.405151601015945
+            ],
+            "max": [
+              -358.45256929327047,
+              -1531.7496224812523,
+              73.59484839898406
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_16",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              284.41916765893905,
+              1553.5726510847057,
+              63.36515928568049
+            ],
+            "max": [
+              295.47375985208953,
+              1565.6694424223433,
+              72.63484071431951
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_17",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -617.2831358555253,
+              -1549.4533086771758,
+              65.15024347942341
+            ],
+            "max": [
+              -605.4302039230321,
+              -1523.3305358144512,
+              70.84975652057659
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_18",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -583.4406231910638,
+              1526.0309178754667,
+              60.90183863765652
+            ],
+            "max": [
+              -553.8832880395959,
+              1541.7173404022121,
+              75.09816136234348
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_19",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -130.0673063616488,
+              -1557.1742720643385,
+              64.1337209890442
+            ],
+            "max": [
+              -103.64753013860522,
+              -1538.3176216468553,
+              71.8662790109558
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_20",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              662.317505112163,
+              1560.6598830139756,
+              61.85499065132423
+            ],
+            "max": [
+              685.261170503728,
+              1577.0680907186993,
+              74.14500934867577
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_21",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              910.3617362823381,
+              -1568.7064269991329,
+              60.85407394687922
+            ],
+            "max": [
+              933.6052507364627,
+              -1547.1488843261168,
+              75.14592605312079
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_22",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1364.970684303395,
+              1542.2366520015748,
+              61.6790336062608
+            ],
+            "max": [
+              1380.9181720577976,
+              1552.9778533560643,
+              74.3209663937392
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_23",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1150.1414023947998,
+              -1547.3072444801467,
+              62.34324900793832
+            ],
+            "max": [
+              1161.03764824847,
+              -1530.6021810047384,
+              73.65675099206169
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_24",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -478.2796111115122,
+              1559.2032416159018,
+              60.871966548668276
+            ],
+            "max": [
+              -454.621293957796,
+              1579.39252079157,
+              75.12803345133173
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_25",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -60.04747323881412,
+              -1561.9732531127725,
+              63.13081106093774
+            ],
+            "max": [
+              -30.651381824809675,
+              -1540.0404249999824,
+              72.86918893906227
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_26",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              1058.28315152221,
+              1560.8112979942127,
+              61.62744763504959
+            ],
+            "max": [
+              1076.8431281461196,
+              1576.504765476014,
+              74.37255236495041
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    },
+    {
+      "label": "TE_Room_FootDebris_27",
+      "tags": [
+        "FullRoomOwned",
+        "RoomDecor",
+        "TeddyEncounterOwned"
+      ],
+      "meshes": [
+        {
+          "mesh": "/Engine/BasicShapes/Cube.Cube",
+          "bounds": {
+            "min": [
+              -627.9012215191451,
+              -1529.2892215350578,
+              60.80029481390471
+            ],
+            "max": [
+              -612.3574406670286,
+              -1510.0382218942839,
+              75.19970518609529
+            ]
+          },
+          "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+        }
+      ]
+    }
+  ],
+  "capsule_probes": [
+    {
+      "label": "grid",
+      "start": [
+        -1200.0,
+        -1250.0,
+        89.14999961853027
+      ],
+      "end": [
+        -1200.0,
+        -1250.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        -1200.0,
+        -650.0,
+        89.14999961853027
+      ],
+      "end": [
+        -1200.0,
+        -650.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        -1200.0,
+        0.0,
+        89.14999961853027
+      ],
+      "end": [
+        -1200.0,
+        0.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        -1200.0,
+        650.0,
+        89.14999961853027
+      ],
+      "end": [
+        -1200.0,
+        650.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        -1200.0,
+        1250.0,
+        89.14999961853027
+      ],
+      "end": [
+        -1200.0,
+        1250.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        -600.0,
+        -1250.0,
+        89.14999961853027
+      ],
+      "end": [
+        -600.0,
+        -1250.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        -600.0,
+        -650.0,
+        89.14999961853027
+      ],
+      "end": [
+        -600.0,
+        -650.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        -600.0,
+        0.0,
+        89.14999961853027
+      ],
+      "end": [
+        -600.0,
+        0.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        -600.0,
+        650.0,
+        89.14999961853027
+      ],
+      "end": [
+        -600.0,
+        650.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        -600.0,
+        1250.0,
+        89.14999961853027
+      ],
+      "end": [
+        -600.0,
+        1250.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        0.0,
+        -1250.0,
+        89.14999961853027
+      ],
+      "end": [
+        0.0,
+        -1250.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        0.0,
+        -650.0,
+        89.14999961853027
+      ],
+      "end": [
+        0.0,
+        -650.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        0.0,
+        0.0,
+        89.14999961853027
+      ],
+      "end": [
+        0.0,
+        0.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        0.0,
+        650.0,
+        89.14999961853027
+      ],
+      "end": [
+        0.0,
+        650.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        0.0,
+        1250.0,
+        89.14999961853027
+      ],
+      "end": [
+        0.0,
+        1250.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        600.0,
+        -1250.0,
+        89.14999961853027
+      ],
+      "end": [
+        600.0,
+        -1250.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        600.0,
+        -650.0,
+        89.14999961853027
+      ],
+      "end": [
+        600.0,
+        -650.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        600.0,
+        0.0,
+        89.14999961853027
+      ],
+      "end": [
+        600.0,
+        0.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        600.0,
+        650.0,
+        89.14999961853027
+      ],
+      "end": [
+        600.0,
+        650.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        600.0,
+        1250.0,
+        89.14999961853027
+      ],
+      "end": [
+        600.0,
+        1250.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        1200.0,
+        -1250.0,
+        89.14999961853027
+      ],
+      "end": [
+        1200.0,
+        -1250.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        1200.0,
+        -650.0,
+        89.14999961853027
+      ],
+      "end": [
+        1200.0,
+        -650.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        1200.0,
+        0.0,
+        89.14999961853027
+      ],
+      "end": [
+        1200.0,
+        0.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        1200.0,
+        650.0,
+        89.14999961853027
+      ],
+      "end": [
+        1200.0,
+        650.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "grid",
+      "start": [
+        1200.0,
+        1250.0,
+        89.14999961853027
+      ],
+      "end": [
+        1200.0,
+        1250.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "across_x",
+      "start": [
+        -1250.0,
+        -1100.0,
+        89.14999961853027
+      ],
+      "end": [
+        1250.0,
+        -1100.0,
+        89.14999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "across_x",
+      "start": [
+        -1250.0,
+        0.0,
+        89.14999961853027
+      ],
+      "end": [
+        1250.0,
+        0.0,
+        89.14999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "across_x",
+      "start": [
+        -1250.0,
+        1100.0,
+        89.14999961853027
+      ],
+      "end": [
+        1250.0,
+        1100.0,
+        89.14999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "across_y",
+      "start": [
+        -1150.0,
+        -1300.0,
+        89.14999961853027
+      ],
+      "end": [
+        -1150.0,
+        1300.0,
+        89.14999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "across_y",
+      "start": [
+        0.0,
+        -1300.0,
+        89.14999961853027
+      ],
+      "end": [
+        0.0,
+        1300.0,
+        89.14999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "across_y",
+      "start": [
+        1150.0,
+        -1300.0,
+        89.14999961853027
+      ],
+      "end": [
+        1150.0,
+        1300.0,
+        89.14999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "spawn:TE_MainTeddy",
+      "start": [
+        250.0,
+        -230.0,
+        231.15000200271606
+      ],
+      "end": [
+        250.0,
+        -230.0,
+        231.25000200271606
+      ],
+      "radius": 134.0,
+      "half_height": 227.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "spawn:TE_Stitchling_3",
+      "start": [
+        20.0,
+        1070.0,
+        57.14999961853027
+      ],
+      "end": [
+        20.0,
+        1070.0,
+        57.249999618530275
+      ],
+      "radius": 37.5,
+      "half_height": 53.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "spawn:TE_Stitchling_1",
+      "start": [
+        650.0,
+        600.0,
+        57.14999961853027
+      ],
+      "end": [
+        650.0,
+        600.0,
+        57.249999618530275
+      ],
+      "radius": 37.5,
+      "half_height": 53.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "spawn:TE_Stitchling_2",
+      "start": [
+        -480.0,
+        -500.0,
+        57.14999961853027
+      ],
+      "end": [
+        -480.0,
+        -500.0,
+        57.249999618530275
+      ],
+      "radius": 37.5,
+      "half_height": 53.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    },
+    {
+      "label": "spawn:BP_EncounterPlayer0",
+      "start": [
+        -230.0,
+        570.0,
+        89.14999961853027
+      ],
+      "end": [
+        -230.0,
+        570.0,
+        89.24999961853027
+      ],
+      "radius": 33.0,
+      "half_height": 85.0,
+      "profile": "Pawn",
+      "hit": {
+        "blocking": false
+      }
+    }
+  ],
+  "walls": [
+    {
+      "side": "front",
+      "key": "S",
+      "expected_limit": -1346,
+      "walk_end": [
+        -1345.9871509933673,
+        0.0,
+        85.14999777036155
+      ],
+      "dash_end": [
+        -1345.9688952627744,
+        0.0,
+        85.14999789881801
+      ],
+      "dash_samples": [
+        {
+          "position": [
+            -972.1111387315749,
+            0.0,
+            85.14999961853027
+          ],
+          "speed": 41.66719687773861
+        },
+        {
+          "position": [
+            -972.5278721576941,
+            0.0,
+            85.14999961853027
+          ],
+          "speed": 50.00159895959366
+        },
+        {
+          "position": [
+            -993.3616233444226,
+            0.0,
+            85.09895590436143
+          ],
+          "speed": 2500.030013523769
+        },
+        {
+          "position": [
+            -1014.1953745311511,
+            0.0,
+            84.94582476185492
+          ],
+          "speed": 2500.120051933232
+        },
+        {
+          "position": [
+            -1035.029116404654,
+            0.0,
+            84.69060632791789
+          ],
+          "speed": 2500.2701086631423
+        },
+        {
+          "position": [
+            -1055.862625447513,
+            0.0,
+            84.33330512047937
+          ],
+          "speed": 2500.48017025216
+        },
+        {
+          "position": [
+            -1076.6963673210157,
+            0.0,
+            83.87391315330237
+          ],
+          "speed": 2500.7502262736616
+        },
+        {
+          "position": [
+            -1097.529867050649,
+            0.0,
+            83.31244096820939
+          ],
+          "speed": 2501.0802510979015
+        },
+        {
+          "position": [
+            -1117.8518551139705,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 2393.77685546875
+        },
+        {
+          "position": [
+            -1136.328032142067,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 2217.12353515625
+        },
+        {
+          "position": [
+            -1153.4304198348782,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 2052.245361328125
+        },
+        {
+          "position": [
+            -1169.2650505360962,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 1898.2041015625
+        },
+        {
+          "position": [
+            -1183.8869075209614,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 1754.587646484375
+        },
+        {
+          "position": [
+            -1197.3917265175764,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 1620.5457763671875
+        },
+        {
+          "position": [
+            -1209.853978013704,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 1495.440185546875
+        },
+        {
+          "position": [
+            -1221.343163068866,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 1378.6751708984375
+        },
+        {
+          "position": [
+            -1231.9241634546602,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 1269.694580078125
+        },
+        {
+          "position": [
+            -1241.6574148184104,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 1167.9808349609375
+        },
+        {
+          "position": [
+            -1250.599651460589,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 1073.046875
+        },
+        {
+          "position": [
+            -1258.8034989646078,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 984.4419555664062
+        },
+        {
+          "position": [
+            -1266.3181841885564,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 901.744140625
+        },
+        {
+          "position": [
+            -1273.1895774693414,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 824.5606079101562
+        },
+        {
+          "position": [
+            -1279.4606495898263,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 752.5226440429688
+        },
+        {
+          "position": [
+            -1285.1714226388715,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 685.2872924804688
+        },
+        {
+          "position": [
+            -1290.359249921815,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 622.5343017578125
+        },
+        {
+          "position": [
+            -1295.0590456199134,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 563.9641723632812
+        },
+        {
+          "position": [
+            -1299.3032873915345,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 509.29879760740823
+        },
+        {
+          "position": [
+            -1303.1223461766258,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 458.27786254884177
+        },
+        {
+          "position": [
+            -1306.6223741312042,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1310.1224020857826,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1313.622430040361,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1317.1225002397314,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1320.6225688744798,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1324.1225983936802,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1327.6226670284286,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1331.122737227799,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1334.6227651823774,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1338.2062469412103,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1341.7062748957887,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1345.2063450951591,
+            0.0,
+            85.14999882290238
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            -1345.6909505747242,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 58.152193084938624
+        },
+        {
+          "position": [
+            -1345.8994480326128,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 25.01919313760149
+        },
+        {
+          "position": [
+            -1345.8994480326128,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            -1345.9688952627744,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 8.33350047467992
+        },
+        {
+          "position": [
+            -1345.9688952627744,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            -1345.9688952627744,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            -1345.9688952627744,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            -1345.9688952627744,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            -1345.9688952627744,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            -1345.9688952627744,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            -1345.9688952627744,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            -1345.9688952627744,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            -1345.9688952627744,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            -1345.9688952627744,
+            0.0,
+            85.14999789881801
+          ],
+          "speed": 0.0
+        }
+      ],
+      "walk_passed": true,
+      "dash_passed": true
+    },
+    {
+      "side": "back",
+      "key": "W",
+      "expected_limit": 1406,
+      "walk_end": [
+        1405.9870992509202,
+        0.0,
+        85.14999777036155
+      ],
+      "dash_end": [
+        1405.968802708035,
+        0.0,
+        85.14999733135288
+      ],
+      "dash_samples": [
+        {
+          "position": [
+            1032.111135564703,
+            0.0,
+            85.14999961853027
+          ],
+          "speed": 41.66709993371278
+        },
+        {
+          "position": [
+            1032.5278097240227,
+            0.0,
+            85.14999961853027
+          ],
+          "speed": 50.000499763246964
+        },
+        {
+          "position": [
+            1053.361309453656,
+            0.0,
+            85.09895713651848
+          ],
+          "speed": 2500.030012799269
+        },
+        {
+          "position": [
+            1074.1950606403846,
+            0.0,
+            84.94582722617645
+          ],
+          "speed": 2500.1200504842805
+        },
+        {
+          "position": [
+            1095.0285603700179,
+            0.0,
+            84.69061358396787
+          ],
+          "speed": 2500.2701043970455
+        },
+        {
+          "position": [
+            1115.8623115567464,
+            0.0,
+            84.33331004911498
+          ],
+          "speed": 2500.4801673546785
+        },
+        {
+          "position": [
+            1136.6960627434748,
+            0.0,
+            83.87391908592441
+          ],
+          "speed": 2500.7502227863265
+        },
+        {
+          "position": [
+            1157.5295624731082,
+            0.0,
+            83.31244808734587
+          ],
+          "speed": 2501.0802469136574
+        },
+        {
+          "position": [
+            1177.851571826093,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 2393.779052734375
+        },
+        {
+          "position": [
+            1196.3277671648827,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 2217.125732421875
+        },
+        {
+          "position": [
+            1213.430171134062,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 2052.247314453125
+        },
+        {
+          "position": [
+            1229.249988444947,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 1898.3629150390625
+        },
+        {
+          "position": [
+            1243.8729181445822,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 1754.737548828125
+        },
+        {
+          "position": [
+            1257.3789029360635,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 1620.6856689453125
+        },
+        {
+          "position": [
+            1269.8421046926817,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 1495.572265625
+        },
+        {
+          "position": [
+            1281.3323171931218,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 1378.7984619140625
+        },
+        {
+          "position": [
+            1291.9142768673617,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 1269.8096923828125
+        },
+        {
+          "position": [
+            1301.6485307374553,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 1168.0870361328125
+        },
+        {
+          "position": [
+            1310.5914946205924,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 1073.1470947265625
+        },
+        {
+          "position": [
+            1318.7960314837103,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 984.5365600585938
+        },
+        {
+          "position": [
+            1326.3113701338973,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 901.8334350585938
+        },
+        {
+          "position": [
+            1333.194220406502,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 824.510498046875
+        },
+        {
+          "position": [
+            1339.4649714813772,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 752.4750366210938
+        },
+        {
+          "position": [
+            1345.1754340061884,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 685.2420654296875
+        },
+        {
+          "position": [
+            1350.3629658253003,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 622.4913330078125
+        },
+        {
+          "position": [
+            1355.0624273492158,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 563.924072265625
+        },
+        {
+          "position": [
+            1359.306311444324,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 509.26202392578125
+        },
+        {
+          "position": [
+            1363.1250841213819,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 458.2435302734375
+        },
+        {
+          "position": [
+            1366.6251543207522,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1370.1251822753306,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1373.625252474701,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1377.1252804292794,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1380.6253506286498,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1384.1254208280202,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1387.6254910273906,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1391.125518981969,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1394.6255876167174,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1398.1256578160878,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1401.6257280154582,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1405.1257559700366,
+            0.0,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            1405.6990889481954,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 68.79857748853033
+        },
+        {
+          "position": [
+            1405.8993571542774,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 24.031702726868456
+        },
+        {
+          "position": [
+            1405.8993571542774,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            1405.968802708035,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 8.333399891852267
+        },
+        {
+          "position": [
+            1405.968802708035,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            1405.968802708035,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            1405.968802708035,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            1405.968802708035,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            1405.968802708035,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            1405.968802708035,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            1405.968802708035,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            1405.968802708035,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            1405.968802708035,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            1405.968802708035,
+            0.0,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        }
+      ],
+      "walk_passed": true,
+      "dash_passed": true
+    },
+    {
+      "side": "left",
+      "key": "A",
+      "expected_limit": -1426,
+      "walk_end": [
+        0.0,
+        -1425.9842149761757,
+        85.14999777036155
+      ],
+      "dash_end": [
+        0.0,
+        -1425.9688035083525,
+        85.14999733135288
+      ],
+      "dash_samples": [
+        {
+          "position": [
+            0.0,
+            -1052.1111405945314,
+            85.14999961853027
+          ],
+          "speed": 41.667200619756464
+        },
+        {
+          "position": [
+            0.0,
+            -1052.5278214616014,
+            85.14999961853027
+          ],
+          "speed": 50.000701186187904
+        },
+        {
+          "position": [
+            0.0,
+            -1073.36157264833,
+            85.09895590436143
+          ],
+          "speed": 2500.030013523769
+        },
+        {
+          "position": [
+            0.0,
+            -1094.1950723779632,
+            84.94582722617645
+          ],
+          "speed": 2500.1200504842805
+        },
+        {
+          "position": [
+            0.0,
+            -1115.0288235646917,
+            84.69060988749675
+          ],
+          "speed": 2500.270106570336
+        },
+        {
+          "position": [
+            0.0,
+            -1135.862323294325,
+            84.33331004911498
+          ],
+          "speed": 2500.4801673546785
+        },
+        {
+          "position": [
+            0.0,
+            -1156.6958230239584,
+            83.87392524670963
+          ],
+          "speed": 2500.7502191648714
+        },
+        {
+          "position": [
+            0.0,
+            -1177.5295742106869,
+            83.31244808734587
+          ],
+          "speed": 2501.0802469136574
+        },
+        {
+          "position": [
+            0.0,
+            -1197.8515835636717,
+            85.14999825543724
+          ],
+          "speed": 2393.779052734375
+        },
+        {
+          "position": [
+            0.0,
+            -1216.3279835963458,
+            85.14999825543724
+          ],
+          "speed": 2217.12353515625
+        },
+        {
+          "position": [
+            0.0,
+            -1233.4301811446658,
+            85.14999825543724
+          ],
+          "speed": 2052.247314453125
+        },
+        {
+          "position": [
+            0.0,
+            -1249.2499984555507,
+            85.14999825543724
+          ],
+          "speed": 1898.3629150390625
+        },
+        {
+          "position": [
+            0.0,
+            -1263.872928155186,
+            85.14999825543724
+          ],
+          "speed": 1754.737548828125
+        },
+        {
+          "position": [
+            0.0,
+            -1277.3789079264152,
+            85.14999825543724
+          ],
+          "speed": 1620.685791015625
+        },
+        {
+          "position": [
+            0.0,
+            -1289.8422489219333,
+            85.14999825543724
+          ],
+          "speed": 1495.5709228515625
+        },
+        {
+          "position": [
+            0.0,
+            -1301.3323288925963,
+            85.14999825543724
+          ],
+          "speed": 1378.798583984375
+        },
+        {
+          "position": [
+            0.0,
+            -1311.9142895841092,
+            85.14999825543724
+          ],
+          "speed": 1269.809814453125
+        },
+        {
+          "position": [
+            0.0,
+            -1321.6484371545616,
+            85.14999825543724
+          ],
+          "speed": 1168.08837890625
+        },
+        {
+          "position": [
+            0.0,
+            -1330.5914122275667,
+            85.14999825543724
+          ],
+          "speed": 1073.1484375
+        },
+        {
+          "position": [
+            0.0,
+            -1338.7959597719223,
+            85.14999825543724
+          ],
+          "speed": 984.537841796875
+        },
+        {
+          "position": [
+            0.0,
+            -1346.3113085947166,
+            85.14999825543724
+          ],
+          "speed": 901.8346557617188
+        },
+        {
+          "position": [
+            0.0,
+            -1353.183405819926,
+            85.14999825543724
+          ],
+          "speed": 824.6450805664062
+        },
+        {
+          "position": [
+            0.0,
+            -1359.4551350908418,
+            85.14999825543724
+          ],
+          "speed": 752.6015014648438
+        },
+        {
+          "position": [
+            0.0,
+            -1365.16658336274,
+            85.14999825543724
+          ],
+          "speed": 685.3600463867188
+        },
+        {
+          "position": [
+            0.0,
+            -1370.3550327621044,
+            85.14999825543724
+          ],
+          "speed": 622.6014404296875
+        },
+        {
+          "position": [
+            0.0,
+            -1375.055350829892,
+            85.14999825543724
+          ],
+          "speed": 564.02685546875
+        },
+        {
+          "position": [
+            0.0,
+            -1379.3000801296018,
+            85.14999825543724
+          ],
+          "speed": 509.3572998046875
+        },
+        {
+          "position": [
+            0.0,
+            -1383.1195528759697,
+            85.14999825543724
+          ],
+          "speed": 458.33306884765625
+        },
+        {
+          "position": [
+            0.0,
+            -1386.6257125838736,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1390.125782783244,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1393.6258529826143,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1397.1258809371927,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1400.6259511365631,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1404.1260213359335,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1407.6260915353039,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1411.1261194898823,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1414.6261881246307,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1418.1262160792091,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1421.6262862785795,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.126314233158,
+            85.14999825543724
+          ],
+          "speed": 420.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.6990340779369,
+            85.14999733135288
+          ],
+          "speed": 68.72500295863242
+        },
+        {
+          "position": [
+            0.0,
+            -1425.899356278191,
+            85.14999733135288
+          ],
+          "speed": 24.03847203467136
+        },
+        {
+          "position": [
+            0.0,
+            -1425.899356278191,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.9688035083525,
+            85.14999733135288
+          ],
+          "speed": 8.33350047467992
+        },
+        {
+          "position": [
+            0.0,
+            -1425.9688035083525,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.9688035083525,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.9688035083525,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.9688035083525,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.9688035083525,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.9688035083525,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.9688035083525,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.9688035083525,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.9688035083525,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        },
+        {
+          "position": [
+            0.0,
+            -1425.9688035083525,
+            85.14999733135288
+          ],
+          "speed": 0.0
+        }
+      ],
+      "walk_passed": true,
+      "dash_passed": true
+    },
+    {
+      "side": "right",
+      "key": "D",
+      "expected_limit": 1426,
+      "walk_end": [
+        0.0,
+        1425.980532631169,
+        85.14999777036155
+      ],
+      "dash_end": [
+        -207.22963619177034,
+        1293.333400557288,
+        85.15000240258009
+      ],
+      "dash_samples": [
+        {
+          "position": [
+            -33.058270189471436,
+            1020.5820767682235,
+            85.14999650449026
+          ],
+          "speed": 26.81470243857597
+        },
+        {
+          "position": [
+            -33.24248313245277,
+            1020.7798596674053,
+            85.14999650449026
+          ],
+          "speed": 32.43321702530502
+        },
+        {
+          "position": [
+            -43.627301505217766,
+            1032.013340729959,
+            85.04790907615259
+          ],
+          "speed": 1835.7905097770135
+        },
+        {
+          "position": [
+            -54.0111292137824,
+            1043.2474860193074,
+            84.89478039796761
+          ],
+          "speed": 1835.9131201639682
+        },
+        {
+          "position": [
+            -64.39335160527752,
+            1054.4833662962103,
+            84.63956305928791
+          ],
+          "speed": 1836.117459141957
+        },
+        {
+          "position": [
+            -74.77371810847666,
+            1065.7207098079227,
+            84.28226322090615
+          ],
+          "speed": 1836.4034919621445
+        },
+        {
+          "position": [
+            -85.15247934453956,
+            1076.9597872873728,
+            83.82287225771557
+          ],
+          "speed": 1836.7711873618168
+        },
+        {
+          "position": [
+            -95.52938481893231,
+            1088.2003268970807,
+            83.26140125913703
+          ],
+          "speed": 1837.2204874370302
+        },
+        {
+          "position": [
+            -105.53218915314062,
+            1099.071404535093,
+            85.15000240258009
+          ],
+          "speed": 1741.9851074218839
+        },
+        {
+          "position": [
+            -114.56787655379203,
+            1108.9756759069428,
+            85.15000240258009
+          ],
+          "speed": 1608.7850341796948
+        },
+        {
+          "position": [
+            -122.87091984229116,
+            1118.1460352922688,
+            85.15000240258009
+          ],
+          "speed": 1484.4636230468723
+        },
+        {
+          "position": [
+            -130.5204495306764,
+            1126.664348308233,
+            85.15000240258009
+          ],
+          "speed": 1367.9290771484395
+        },
+        {
+          "position": [
+            -138.057175114496,
+            1135.1389111043331,
+            85.15000240258009
+          ],
+          "speed": 1250.0655517578127
+        },
+        {
+          "position": [
+            -144.39550124837416,
+            1142.335163675227,
+            85.15000240258009
+          ],
+          "speed": 1149.5567626953075
+        },
+        {
+          "position": [
+            -150.17684706661265,
+            1148.9680813907612,
+            85.15000240258009
+          ],
+          "speed": 1055.8521728515686
+        },
+        {
+          "position": [
+            -155.44505801597816,
+            1155.0812781459204,
+            85.15000240258009
+          ],
+          "speed": 968.3946533203016
+        },
+        {
+          "position": [
+            -160.23507007567449,
+            1160.7085311675048,
+            85.15000240258009
+          ],
+          "speed": 886.7667236328051
+        },
+        {
+          "position": [
+            -164.94606203215517,
+            1166.3255142863045,
+            85.15000240258009
+          ],
+          "speed": 803.3383178711002
+        },
+        {
+          "position": [
+            -168.83588819590037,
+            1171.032255150411,
+            85.15000240258009
+          ],
+          "speed": 732.714355468756
+        },
+        {
+          "position": [
+            -172.34189667549884,
+            1175.3433540116773,
+            85.15000240258009
+          ],
+          "speed": 666.7987670898481
+        },
+        {
+          "position": [
+            -175.49064342198767,
+            1179.283861626443,
+            85.15000240258009
+          ],
+          "speed": 605.2783813476642
+        },
+        {
+          "position": [
+            -178.30712344234152,
+            1182.8771817340096,
+            85.15000240258009
+          ],
+          "speed": 547.858703613279
+        },
+        {
+          "position": [
+            -180.81468713857197,
+            1186.1449145098395,
+            85.15000240258009
+          ],
+          "speed": 494.26705932617784
+        },
+        {
+          "position": [
+            -183.03527760847155,
+            1189.107100903814,
+            85.15000240258009
+          ],
+          "speed": 444.248870849608
+        },
+        {
+          "position": [
+            -185.10300280135195,
+            1191.9338125074528,
+            85.15000240258009
+          ],
+          "speed": 419.99999999999926
+        },
+        {
+          "position": [
+            -187.0231203594658,
+            1194.8601822659664,
+            85.15000240258009
+          ],
+          "speed": 419.9999999999894
+        },
+        {
+          "position": [
+            -188.80313735397684,
+            1197.8737740070758,
+            85.15000240258009
+          ],
+          "speed": 420.0000000000107
+        },
+        {
+          "position": [
+            -190.45091835043874,
+            1200.9639876183976,
+            85.15000240258009
+          ],
+          "speed": 419.9999999999928
+        },
+        {
+          "position": [
+            -191.97199065140336,
+            1204.1162145674082,
+            85.15000240258009
+          ],
+          "speed": 420.00000000000193
+        },
+        {
+          "position": [
+            -193.37491702365693,
+            1207.3228154148096,
+            85.15000240258009
+          ],
+          "speed": 419.9999999999917
+        },
+        {
+          "position": [
+            -194.6672633590783,
+            1210.575512239316,
+            85.15000240258009
+          ],
+          "speed": 420.0000000000029
+        },
+        {
+          "position": [
+            -195.85654083337644,
+            1213.867337035633,
+            85.15000240258009
+          ],
+          "speed": 420.0000000000059
+        },
+        {
+          "position": [
+            -196.94999821265236,
+            1217.1922193433588,
+            85.15000240258009
+          ],
+          "speed": 420.00000000000955
+        },
+        {
+          "position": [
+            -197.9546125358596,
+            1220.5450154096484,
+            85.15000240258009
+          ],
+          "speed": 419.999999999987
+        },
+        {
+          "position": [
+            -198.8770167371407,
+            1223.9213101497871,
+            85.15000240258009
+          ],
+          "speed": 419.9999999999885
+        },
+        {
+          "position": [
+            -199.72351307740345,
+            1227.317474949446,
+            85.15000240258009
+          ],
+          "speed": 419.99999999999477
+        },
+        {
+          "position": [
+            -200.49999558879873,
+            1230.7303280535245,
+            85.15000240258009
+          ],
+          "speed": 420.000000000008
+        },
+        {
+          "position": [
+            -201.2119825855879,
+            1234.1571735707946,
+            85.15000240258009
+          ],
+          "speed": 420.00000000000944
+        },
+        {
+          "position": [
+            -201.86463511370133,
+            1237.595812888952,
+            85.15000240258009
+          ],
+          "speed": 420.000000000005
+        },
+        {
+          "position": [
+            -202.46274752429753,
+            1241.0443999829386,
+            85.15000240258009
+          ],
+          "speed": 419.9999999999901
+        },
+        {
+          "position": [
+            -203.01074420530702,
+            1244.501262045624,
+            85.15000240258009
+          ],
+          "speed": 420.0000000000043
+        },
+        {
+          "position": [
+            -203.51273760300572,
+            1247.9651035996644,
+            85.15000240258009
+          ],
+          "speed": 420.0000000000124
+        },
+        {
+          "position": [
+            -203.9725233479337,
+            1251.4348425623648,
+            85.15000240258009
+          ],
+          "speed": 419.99999999999
+        },
+        {
+          "position": [
+            -204.3935857863707,
+            1254.9094507569341,
+            85.15000240258009
+          ],
+          "speed": 420.0000000000098
+        },
+        {
+          "position": [
+            -204.78144934412362,
+            1258.4110361133762,
+            85.15000240258009
+          ],
+          "speed": 419.9999999999995
+        },
+        {
+          "position": [
+            -205.13426786569684,
+            1261.893278277752,
+            85.15000240258009
+          ],
+          "speed": 420.0000000000132
+        },
+        {
+          "position": [
+            -205.45728221014872,
+            1265.3783690105893,
+            85.15000240258009
+          ],
+          "speed": 419.99999999999824
+        },
+        {
+          "position": [
+            -205.75299466714017,
+            1268.8658824264216,
+            85.15000240258009
+          ],
+          "speed": 420.0000000000088
+        },
+        {
+          "position": [
+            -206.023701268379,
+            1272.355468266685,
+            85.15000240258009
+          ],
+          "speed": 419.9999999999978
+        },
+        {
+          "position": [
+            -206.27149966796458,
+            1275.8467132646754,
+            85.15000240258009
+          ],
+          "speed": 419.9999999999992
+        },
+        {
+          "position": [
+            -206.49832510769298,
+            1279.3394259096567,
+            85.15000240258009
+          ],
+          "speed": 419.9999999999979
+        },
+        {
+          "position": [
+            -206.70594132856556,
+            1282.8332907020695,
+            85.15000240258009
+          ],
+          "speed": 420.0000000000095
+        },
+        {
+          "position": [
+            -206.89597444991273,
+            1286.3281982563992,
+            85.15000240258009
+          ],
+          "speed": 419.9999999999916
+        },
+        {
+          "position": [
+            -207.07049566094707,
+            1289.836950115487,
+            85.15000240258009
+          ],
+          "speed": 420.00000000000375
+        }
+      ],
+      "walk_passed": true,
+      "dash_passed": false
+    }
+  ],
+  "cases": [
+    {
+      "index": 0,
+      "player": [
+        -230.0,
+        570.0,
+        85.15000240258009
+      ],
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -1678.7905600193246,
+        170.0,
+        1874.0
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.6625023113905325,
+          0.5882383034446023,
+          0.7184927374183309,
+          0.7503253728693182
+        ],
+        "boss": [
+          0.21265029154820791,
+          0.06387216047807173,
+          0.4194134894677638,
+          0.5413571444424716
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    },
+    {
+      "index": 1,
+      "player": [
+        0.0,
+        0.0,
+        85.15000240258009
+      ],
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -1534.1709171720256,
+        -115.0,
+        1860.0
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.5324658877280573,
+          0.5245465087890625,
+          0.5759032962355153,
+          0.6853743674538352
+        ],
+        "boss": [
+          0.3436841193505763,
+          0.12280284534801136,
+          0.5384383041712895,
+          0.6201541969992898
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    },
+    {
+      "index": 2,
+      "player": [
+        -1300.0,
+        0.0,
+        85.15000240258009
+      ],
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -4148.607140297749,
+        -115.0,
+        3800.0
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.5166652461245685,
+          0.6865090110085227,
+          0.5373783751117172,
+          0.765381913618608
+        ],
+        "boss": [
+          0.43796989245292467,
+          0.14915036288174716,
+          0.5152533115484775,
+          0.3639152110706676
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    },
+    {
+      "index": 3,
+      "player": [
+        1300.0,
+        0.0,
+        85.15000240258009
+      ],
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -1944.4872429713828,
+        -115.0,
+        2900.0
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.5180850057206916,
+          0.2738772028142756,
+          0.5407116530679857,
+          0.36705447110262784
+        ],
+        "boss": [
+          0.39501682258921966,
+          0.48724626020951706,
+          0.5258155235877404,
+          0.8295836847478694
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    },
+    {
+      "index": 4,
+      "player": [
+        0.0,
+        -1350.0,
+        85.15000240258009
+      ],
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -1794.9068863699356,
+        -790.0,
+        2130.0
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.2507277419110962,
+          0.5211004083806818,
+          0.3003950250689565,
+          0.6600904430042613
+        ],
+        "boss": [
+          0.6298048030695266,
+          0.1742439686168324,
+          0.8264010277020155,
+          0.6041773015802557
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    },
+    {
+      "index": 5,
+      "player": [
+        0.0,
+        1350.0,
+        85.15000240258009
+      ],
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -2239.12372278119,
+        560.0,
+        2590.0
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.7348032693656004,
+          0.5170276988636363,
+          0.7768212192392443,
+          0.6299040083451705
+        ],
+        "boss": [
+          0.16070082624988444,
+          0.23566200949928978,
+          0.3256297816891642,
+          0.5849358021129262
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    },
+    {
+      "index": 6,
+      "player": [
+        -1300.0,
+        -1350.0,
+        85.15000240258009
+      ],
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -4148.607140297749,
+        -790.0,
+        3800.0
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.35667648164948534,
+          0.6865090110085227,
+          0.3817455284223989,
+          0.765381913618608
+        ],
+        "boss": [
+          0.5676464554826184,
+          0.14915036288174716,
+          0.6525330552923139,
+          0.3639152110706676
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    },
+    {
+      "index": 7,
+      "player": [
+        -1300.0,
+        1350.0,
+        85.15000240258009
+      ],
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -4148.607140297749,
+        560.0,
+        3800.0
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.6707612588795919,
+          0.6865090110085227,
+          0.6980816542044194,
+          0.765381913618608
+        ],
+        "boss": [
+          0.3006901186128575,
+          0.14915036288174716,
+          0.390303030521912,
+          0.3639152110706676
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    },
+    {
+      "index": 8,
+      "player": [
+        1300.0,
+        -1350.0,
+        85.15000240258009
+      ],
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -1944.4872429713828,
+        -790.0,
+        2900.0
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.34389557546882704,
+          0.2738772028142756,
+          0.37167063455374755,
+          0.36705447110262784
+        ],
+        "boss": [
+          0.6070021529639731,
+          0.48724626020951706,
+          0.7581553562623274,
+          0.8295836847478694
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    },
+    {
+      "index": 9,
+      "player": [
+        1300.0,
+        1350.0,
+        85.15000240258009
+      ],
+      "boss": [
+        250.0,
+        -230.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -1944.4872429713828,
+        560.0,
+        2900.0
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.6853095963156435,
+          0.2738772028142756,
+          0.7157456136549248,
+          0.36705447110262784
+        ],
+        "boss": [
+          0.16267702001086354,
+          0.48724626020951706,
+          0.3264830399311976,
+          0.8295836847478694
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    },
+    {
+      "index": 10,
+      "player": [
+        -1300.0,
+        -1350.0,
+        85.15000240258009
+      ],
+      "boss": [
+        1250.0,
+        1300.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -5456.8372915422715,
+        -24.99839384507919,
+        5599.992586977288
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.28075958191760664,
+          0.7168387673117897,
+          0.3000080477321407,
+          0.7701368852095171
+        ],
+        "boss": [
+          0.6393324270756287,
+          0.1725096962668679,
+          0.6995170036481447,
+          0.3143443714488636
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    },
+    {
+      "index": 11,
+      "player": [
+        1300.0,
+        1350.0,
+        85.15000240258009
+      ],
+      "boss": [
+        -1250.0,
+        -1300.0,
+        227.15000200271606
+      ],
+      "camera": [
+        -5406.846934950482,
+        25.0,
+        5600.0
+      ],
+      "viewport": [
+        1014,
+        550
+      ],
+      "fov": 48.0,
+      "bounds_normalized": {
+        "player": [
+          0.6593581581491925,
+          0.24534432151100852,
+          0.6736765603812254,
+          0.29200481068004264
+        ],
+        "boss": [
+          0.24570165630393245,
+          0.6314617919921875,
+          0.3256586439745901,
+          0.805550537109375
+        ]
+      },
+      "traces": [
+        {
+          "target": "player",
+          "height_above_base": 45,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 110,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "player",
+          "height_above_base": 170,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 80,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 250,
+          "hit": {
+            "blocking": false
+          }
+        },
+        {
+          "target": "boss",
+          "height_above_base": 430,
+          "hit": {
+            "blocking": false
+          }
+        }
+      ],
+      "decoration_box_review_hints": [],
+      "in_frame": true,
+      "collision_trace_clear": true
+    }
+  ],
+  "images": [
+    {
+      "case": 0,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T052348-verify_full_room\\room-case-00.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 941533,
+        "sha256": "ee41d9a65a2c926bc44e8c90730c907e1264b42aa0ea5e108f529646446451c7",
+        "pixel_sha256": "308ef21b7e7aa5685fdb7f479b2a426bb2cc5d55dde2f84ed04b04c1fa98f04f",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "case": 2,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T052348-verify_full_room\\room-case-02.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 704100,
+        "sha256": "0745b3fc703380bfc5e3724635317dc50a76792d68973f8e30589b4f8dc9f43b",
+        "pixel_sha256": "001cd2284ee2e664b33c1545ac3be79497e562633e4f35c45f74b477bab7c456",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "case": 3,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T052348-verify_full_room\\room-case-03.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 981902,
+        "sha256": "0c923fabad5c00e684837ccc29b4ee21b619ccb636ef6c43df947d3396700ea4",
+        "pixel_sha256": "623d705c01ac783f828c0d10868257ca9f8186fa8c5220e598d85a2e28d10a86",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "case": 6,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T052348-verify_full_room\\room-case-06.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 629774,
+        "sha256": "91102e0f88f3debee77ee4be1bf95c8884dbb1ff9f6d35d95bd7c3913a4c6390",
+        "pixel_sha256": "80e845bad8e4313416d2d264bdabc37bd65815031271cf85766e4008ab5288f2",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "case": 9,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T052348-verify_full_room\\room-case-09.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 917289,
+        "sha256": "2c85b63d389768ae70fb66455a234670d892583743e50db0ae5758e618308509",
+        "pixel_sha256": "823c549eb5703f8cff3acd943eeda4ee49193851085f6d64bfad12e051250e02",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "case": 11,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T052348-verify_full_room\\room-case-11.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 453602,
+        "sha256": "61626eef23b73d1ef0931439d9299b355f169d92ec2771626642134bf247cf5f",
+        "pixel_sha256": "54d92e96a60192055775ca1d9f1ffc0482b5ceb98e7b1f3c0587dc7638120abd",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    }
+  ],
+  "method": "Fresh saved-map readback, transient PIE staging, saved key-route movement/dash, Pawn-profile capsule sweeps, projected character bounds and Visibility traces.",
+  "limitations": [
+    "NPC ticking/movement disabled for deterministic room checks; this is not a combat recording.",
+    "Player and boss are deliberately staged for edge/corner camera coverage.",
+    "NO_COLLISION decoration does not block traces. Its box intersections are hints; inspect the images.",
+    "Held screenshots hide the HUD to exclude the pause tint. They retain saved lighting/materials.",
+    "Passing geometry checks do not establish visual fidelity, physical input or user acceptance."
+  ],
+  "api_preflight": {
+    "block_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+    "pawn_channel": "<CollisionChannel.ECC_PAWN: 2>",
+    "no_collision": "<CollisionEnabled.NO_COLLISION: 0>",
+    "visibility_trace_channel": "<TraceTypeQuery.ECC_VISIBILITY: 0>",
+    "debug_none": "<DrawDebugTrace.NONE: 0>",
+    "capsule_trace_available": true,
+    "line_trace_available": true,
+    "trace_return_contract": "Reflected first-blocking-hit HitResult or None; serialize HitResult without inspecting unexposed fields",
+    "component_bounds_available": true
+  },
+  "saved_spawns": {
+    "TE_PlayerStart": {
+      "position": [
+        -230.0,
+        570.0,
+        95.0
+      ],
+      "class": "/Script/Engine.PlayerStart"
+    },
+    "TE_MainTeddy": {
+      "position": [
+        250.0,
+        -230.0,
+        232.0
+      ],
+      "class": "/Game/TeddyEncounter/Blueprints/BP_TeddyBoss.BP_TeddyBoss_C"
+    },
+    "TE_Stitchling_1": {
+      "position": [
+        650.0,
+        600.0,
+        65.0
+      ],
+      "class": "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling_C"
+    },
+    "TE_Stitchling_2": {
+      "position": [
+        -480.0,
+        -500.0,
+        65.0
+      ],
+      "class": "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling_C"
+    },
+    "TE_Stitchling_3": {
+      "position": [
+        20.0,
+        1070.0,
+        65.0
+      ],
+      "class": "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling_C"
+    }
+  },
+  "saved_boundaries": [
+    {
+      "label": "TE_CombatBoundFront",
+      "present": true,
+      "position": [
+        -1420.0,
+        0.0,
+        45.0
+      ],
+      "scale": [
+        0.8,
+        30.0,
+        1.0
+      ],
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+      "preserved": true
+    },
+    {
+      "label": "TE_CombatBoundBack",
+      "present": true,
+      "position": [
+        1480.0,
+        0.0,
+        95.0
+      ],
+      "scale": [
+        0.8,
+        30.0,
+        2.0
+      ],
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+      "preserved": true
+    },
+    {
+      "label": "TE_CombatBoundLeft",
+      "present": true,
+      "position": [
+        0.0,
+        -1500.0,
+        95.0
+      ],
+      "scale": [
+        30.0,
+        0.8,
+        2.0
+      ],
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+      "preserved": true
+    },
+    {
+      "label": "TE_CombatBoundRight",
+      "present": true,
+      "position": [
+        0.0,
+        1500.0,
+        95.0
+      ],
+      "scale": [
+        30.0,
+        0.8,
+        2.0
+      ],
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "pawn_response": "<CollisionResponseType.ECR_BLOCK: 2>",
+      "preserved": true
+    }
+  ],
+  "intruding_room_geometry": [],
+  "colliding_decoration": [
+    "TE_Room_SideLowerDamp_-1",
+    "TE_Room_SideCornice_-1",
+    "TE_Room_SideFoundation_-1",
+    "TE_Room_SideGutter_-1",
+    "TE_Room_SideLowerDamp_1",
+    "TE_Room_SideCornice_1",
+    "TE_Room_SideFoundation_1",
+    "TE_Room_SideGutter_1",
+    "TE_Room_FarLowerDamp",
+    "TE_Room_FarCornice",
+    "TE_Room_FarFoundation",
+    "TE_Room_CutawayCap_0",
+    "TE_Room_CutawayCap_1",
+    "TE_Room_CutawayCap_2",
+    "TE_Room_CutawayCap_3",
+    "TE_Room_RearInset_0",
+    "TE_Room_RearHeader_0",
+    "TE_Room_RearInset_1",
+    "TE_Room_RearHeader_1",
+    "TE_Room_RearInset_2",
+    "TE_Room_RearHeader_2",
+    "TE_Room_RearInset_3",
+    "TE_Room_RearHeader_3",
+    "TE_Room_PipeStandoff_0",
+    "TE_Room_PipeStandoff_1",
+    "TE_Room_PipeStandoff_2",
+    "TE_Room_PipeStandoff_3",
+    "TE_Room_PipeStandoff_4",
+    "TE_Room_BeaconHousing_0",
+    "TE_Room_BeaconLens_0",
+    "TE_Room_BeaconHousing_1",
+    "TE_Room_BeaconLens_1",
+    "TE_Room_FootDebris_0",
+    "TE_Room_FootDebris_1",
+    "TE_Room_FootDebris_2",
+    "TE_Room_FootDebris_3",
+    "TE_Room_FootDebris_4",
+    "TE_Room_FootDebris_5",
+    "TE_Room_FootDebris_6",
+    "TE_Room_FootDebris_7",
+    "TE_Room_FootDebris_8",
+    "TE_Room_FootDebris_9",
+    "TE_Room_FootDebris_10",
+    "TE_Room_FootDebris_11",
+    "TE_Room_FootDebris_12",
+    "TE_Room_FootDebris_13",
+    "TE_Room_FootDebris_14",
+    "TE_Room_FootDebris_15",
+    "TE_Room_FootDebris_16",
+    "TE_Room_FootDebris_17",
+    "TE_Room_FootDebris_18",
+    "TE_Room_FootDebris_19",
+    "TE_Room_FootDebris_20",
+    "TE_Room_FootDebris_21",
+    "TE_Room_FootDebris_22",
+    "TE_Room_FootDebris_23",
+    "TE_Room_FootDebris_24",
+    "TE_Room_FootDebris_25",
+    "TE_Room_FootDebris_26",
+    "TE_Room_FootDebris_27"
+  ],
+  "invalid_floor_details": [
+    {
+      "actor": "TE_Room_FloorDamp_0",
+      "mesh": "/Engine/BasicShapes/Plane.Plane",
+      "bounds": {
+        "min": [
+          888.4252772977305,
+          -919.6629470947815,
+          -4.600000000000008
+        ],
+        "max": [
+          1271.5747227022694,
+          -660.3370529052185,
+          -4.599999999999992
+        ]
+      },
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    },
+    {
+      "actor": "TE_Room_FloorDamp_1",
+      "mesh": "/Engine/BasicShapes/Plane.Plane",
+      "bounds": {
+        "min": [
+          518.0400198115055,
+          1021.113659679334,
+          -4.600000000000008
+        ],
+        "max": [
+          961.9599801884945,
+          1338.886340320666,
+          -4.599999999999992
+        ]
+      },
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    },
+    {
+      "actor": "TE_Room_FloorDamp_2",
+      "mesh": "/Engine/BasicShapes/Plane.Plane",
+      "bounds": {
+        "min": [
+          -940.801957966031,
+          -1280.579718933325,
+          -4.600000000000008
+        ],
+        "max": [
+          -559.198042033969,
+          -959.420281066675,
+          -4.599999999999992
+        ]
+      },
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    },
+    {
+      "actor": "TE_Room_FloorDamp_3",
+      "mesh": "/Engine/BasicShapes/Plane.Plane",
+      "bounds": {
+        "min": [
+          -1150.628679092709,
+          882.2433071676041,
+          -4.600000000000008
+        ],
+        "max": [
+          -829.371320907291,
+          1137.7566928323959,
+          -4.599999999999992
+        ]
+      },
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    },
+    {
+      "actor": "TE_Room_FloorDamp_4",
+      "mesh": "/Engine/BasicShapes/Plane.Plane",
+      "bounds": {
+        "min": [
+          1023.9960672808933,
+          186.9359076230919,
+          -4.600000000000008
+        ],
+        "max": [
+          1196.0039327191066,
+          513.0640923769081,
+          -4.599999999999992
+        ]
+      },
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    },
+    {
+      "actor": "TE_Room_FloorDamp_5",
+      "mesh": "/Engine/BasicShapes/Plane.Plane",
+      "bounds": {
+        "min": [
+          -648.0314250729019,
+          978.4707558176356,
+          -4.600000000000008
+        ],
+        "max": [
+          -431.968574927098,
+          1121.5292441823644,
+          -4.599999999999992
+        ]
+      },
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    },
+    {
+      "actor": "TE_Room_FloorDamp_6",
+      "mesh": "/Engine/BasicShapes/Plane.Plane",
+      "bounds": {
+        "min": [
+          198.15930069067375,
+          -1182.1865546504323,
+          -4.600000000000008
+        ],
+        "max": [
+          501.8406993093263,
+          -1017.8134453495677,
+          -4.599999999999992
+        ]
+      },
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    },
+    {
+      "actor": "TE_Room_FloorDamp_7",
+      "mesh": "/Engine/BasicShapes/Plane.Plane",
+      "bounds": {
+        "min": [
+          -889.9552499916197,
+          44.08233549241383,
+          -4.600000000000008
+        ],
+        "max": [
+          -690.0447500083803,
+          275.91766450758615,
+          -4.599999999999992
+        ]
+      },
+      "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    }
+  ],
+  "shell_sides": {
+    "back": true,
+    "left": true,
+    "right": true,
+    "front_cutaway": true
+  },
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "trace_api_docs": {
+    "capsule": "X.capsule_trace_single_by_profile(world_context_object, start, end, radius, half_height, profile_name, trace_complex, actors_to_ignore, draw_debug_type, ignore_self=True, trace_color=[1.000000, 0.000000, 0.000000, 1.000000], trace_hit_color=[0.000000, 1.000000, 0.000000, 1.000000], draw_time=5.000000) -> HitResult or None\r\nSweep a capsule against the world and return the first blocking hit using a specific profile\r\n\r\nArgs:\r\n    world_context_object (Object): \r\n    start (Vector): Start of line segment.\r\n    end (Vector): End of line segment.\r\n    radius (float): Radius of the capsule to sweep\r\n    half_height (float): Distance from center of capsule to tip of hemisphere endcap.\r\n    profile_name (Name): The 'profile' used to determine which components to hit\r\n    trace_complex (bool): True to test against complex collision, false to test against simplified collision.\r\n    actors_to_ignore (Array[Actor]): \r\n    draw_debug_type (DrawDebugTrace): \r\n    ignore_self (bool): \r\n    trace_color (LinearColor): \r\n    trace_hit_color (LinearColor): \r\n    draw_time (float): \r\n\r\nReturns:\r\n    HitResult or None: True if there was a hit, false otherwise.\r\n\r\n    out_hit (HitResult): Properties of the trace hit.",
+    "line": "X.line_trace_single(world_context_object, start, end, trace_channel, trace_complex, actors_to_ignore, draw_debug_type, ignore_self=True, trace_color=[1.000000, 0.000000, 0.000000, 1.000000], trace_hit_color=[0.000000, 1.000000, 0.000000, 1.000000], draw_time=5.000000) -> HitResult or None\r\nDoes a collision trace along the given line and returns the first blocking hit encountered.\nThis trace finds the objects that RESPONDS to the given TraceChannel\r\n\r\nArgs:\r\n    world_context_object (Object): \r\n    start (Vector): Start of line segment.\r\n    end (Vector): End of line segment.\r\n    trace_channel (TraceTypeQuery): \r\n    trace_complex (bool): True to test against complex collision, false to test against simplified collision.\r\n    actors_to_ignore (Array[Actor]): \r\n    draw_debug_type (DrawDebugTrace): \r\n    ignore_self (bool): \r\n    trace_color (LinearColor): \r\n    trace_hit_color (LinearColor): \r\n    draw_time (float): \r\n\r\nReturns:\r\n    HitResult or None: True if there was a hit, false otherwise.\r\n\r\n    out_hit (HitResult): Properties of the trace hit.",
+    "hit_result": "Structure containing information about one hit of a trace, such as point of impact and surface normal at that point.\r\n\r\n**C++ Source:**\r\n\r\n- **Module**: Engine\r\n- **File**: HitResult.h\r\n"
+  },
+  "trace_positive_controls": [
+    {
+      "label": "floor",
+      "kind": "Visibility line",
+      "start": [
+        0.0,
+        0.0,
+        300.0
+      ],
+      "end": [
+        0.0,
+        0.0,
+        -200.0
+      ],
+      "known_geometry_crossed": "TE_ArenaFloor",
+      "hit": {
+        "blocking": true,
+        "raw_serialized_hit": "(FaceIndex=14,Time=0.610000,Distance=305.000000,Location=(X=0.000000,Y=0.000000,Z=-5.000007),ImpactPoint=(X=0.000000,Y=0.000000,Z=-5.000000),Normal=(X=0.000000,Y=0.000000,Z=1.000000),ImpactNormal=(X=0.000000,Y=0.000000,Z=1.000000),TraceStart=(X=0.000000,Y=0.000000,Z=300.000000),TraceEnd=(X=0.000000,Y=0.000000,Z=-200.000000),PenetrationDepth=0.000000,MyItem=-1,Item=-1,ElementIndex=1,bBlockingHit=True,bStartPenetrating=False,PhysMaterial=\"/Script/PhysicsCore.PhysicalMaterial'/Engine/EngineMaterials/DefaultPhysicalMaterial.DefaultPhysicalMaterial'\",HitObjectHandle=(ReferenceObject=\"/Script/Engine.StaticMeshComponent'/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0'\"),Component=\"/Script/Engine.StaticMeshComponent'/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.StaticMeshActor_0.StaticMeshComponent0'\",BoneName=\"\",MyBoneName=\"\")"
+      },
+      "actor_identity_from_trace": false,
+      "passed": true
+    },
+    {
+      "label": "original_front_wall",
+      "kind": "Visibility line",
+      "start": [
+        -1200.0,
+        0.0,
+        50.0
+      ],
+      "end": [
+        -1500.0,
+        0.0,
+        50.0
+      ],
+      "known_geometry_crossed": "TE_CombatBoundFront",
+      "hit": {
+        "blocking": true,
+        "raw_serialized_hit": "(FaceIndex=28,Time=0.600000,Distance=180.000000,Location=(X=-1380.000007,Y=0.000000,Z=50.000000),ImpactPoint=(X=-1380.000000,Y=0.000000,Z=50.000000),Normal=(X=1.000000,Y=0.000000,Z=0.000000),ImpactNormal=(X=1.000000,Y=0.000000,Z=0.000000),TraceStart=(X=-1200.000000,Y=0.000000,Z=50.000000),TraceEnd=(X=-1500.000000,Y=0.000000,Z=50.000000),PenetrationDepth=0.000000,MyItem=-1,Item=-1,ElementIndex=1,bBlockingHit=True,bStartPenetrating=False,PhysMaterial=\"/Script/PhysicsCore.PhysicalMaterial'/Engine/EngineMaterials/DefaultPhysicalMaterial.DefaultPhysicalMaterial'\",HitObjectHandle=(ReferenceObject=\"/Script/Engine.StaticMeshComponent'/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.StaticMeshActor_176.StaticMeshComponent0'\"),Component=\"/Script/Engine.StaticMeshComponent'/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.StaticMeshActor_176.StaticMeshComponent0'\",BoneName=\"\",MyBoneName=\"\")"
+      },
+      "actor_identity_from_trace": false,
+      "passed": true
+    },
+    {
+      "label": "original_front_wall_capsule",
+      "kind": "Pawn capsule sweep",
+      "known_geometry_crossed": "TE_CombatBoundFront",
+      "hit": {
+        "blocking": true,
+        "raw_serialized_hit": "(FaceIndex=-1,Time=0.490000,Distance=147.000000,Location=(X=-1347.000003,Y=0.000000,Z=95.000000),ImpactPoint=(X=-1380.000000,Y=0.000000,Z=95.000000),Normal=(X=1.000000,Y=0.000000,Z=0.000000),ImpactNormal=(X=1.000000,Y=0.000000,Z=0.000000),TraceStart=(X=-1200.000000,Y=0.000000,Z=95.000000),TraceEnd=(X=-1500.000000,Y=0.000000,Z=95.000000),PenetrationDepth=0.000000,MyItem=-1,Item=-1,ElementIndex=0,bBlockingHit=True,bStartPenetrating=False,PhysMaterial=\"/Script/PhysicsCore.PhysicalMaterial'/Engine/EngineMaterials/DefaultPhysicalMaterial.DefaultPhysicalMaterial'\",HitObjectHandle=(ReferenceObject=\"/Script/Engine.StaticMeshComponent'/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.StaticMeshActor_176.StaticMeshComponent0'\"),Component=\"/Script/Engine.StaticMeshComponent'/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.StaticMeshActor_176.StaticMeshComponent0'\",BoneName=\"\",MyBoneName=\"\")"
+      },
+      "actor_identity_from_trace": false,
+      "passed": true
+    }
+  ],
+  "wall_seconds": 49.59400000004098
+}

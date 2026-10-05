@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "intentional_changed_files": [
+    "TeddyBlueprint/Content/Maps/TeddyEncounter.umap"
+  ],
+  "reason": "One bounded character-only rear-centre fill, following independent visibility finding. No asset set, geometry, material or gameplay changes. Earlier checkpoint preserved.",
+  "authoring_receipt": "rear-fill-6000-authoring.json",
+  "before_checkpoint": "validation-baseline.json",
+  "final_checkpoint": "final-validation-baseline.json"
+}

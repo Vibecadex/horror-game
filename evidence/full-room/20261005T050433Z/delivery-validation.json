@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "local_html_links_checked": 17,
+  "gallery_images_decoded": 6,
+  "python_syntax_checked": true,
+  "javascript_syntax_checked": true,
+  "documentation_links_checked": 31,
+  "game_changes": [
+    "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+    "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_Stitchling.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_TeddyBoss.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_Concrete.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_QA_TeddyCloth.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Materials/M_TeddyCloth.uasset"
+  ],
+  "checks": 34,
+  "independent_review": {
+    "path": "evidence/full-room/20261005T050433Z/INDEPENDENT_REVIEW.md",
+    "sha256": "cb59471e153f91cd4f0736468f7e0e19b4927bfb1f3e91deb16910f3c89cf8e1",
+    "combined_review_complete": true
+  }
+}

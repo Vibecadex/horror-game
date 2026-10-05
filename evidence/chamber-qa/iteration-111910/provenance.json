@@ -1,0 +1,108 @@
+{
+  "capture_receipt": "evidence/implementation/20261005T111910-capture_chamber_views/receipt.json",
+  "capture_receipt_sha256": "25fded0481d2af67d07874ba55519a80492373c4f084b4761673d1f0d29cd461",
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "capture_method": "Editor PIE architectural comparison only; saved actors frozen, HUD hidden. Native 3:2 HighResShot viewport, no crop/warp. Lighting/exposure unchanged. Environment Blueprint ticks remain enabled so the native camera-dependent cutaway can react; visibility is recorded, never forced.",
+  "sources": [
+    {
+      "view": "front",
+      "reference": {
+        "path": "study/visuals/chamber-target-front.png",
+        "sha256": "f853bc67bfb3973f8c3097c829973634590bfb4b42df17ed54fcf65b156b6960",
+        "size": [
+          571,
+          378
+        ],
+        "kind": "user concept target"
+      },
+      "candidate": {
+        "path": "evidence/implementation/20261005T111910-capture_chamber_views/01-chamber-front.png",
+        "sha256": "71619aae56afb94760fb931322fc3f775024bd895d609abc55dc5a55b1eb40ae",
+        "size": [
+          1920,
+          1280
+        ],
+        "kind": "architecture",
+        "held_state": {
+          "player": [
+            -230.0,
+            570.0,
+            85.14999961853027
+          ],
+          "camera": [
+            -4050.0,
+            180.0,
+            2780.0
+          ],
+          "rotation": [
+            -33.04812486997527,
+            0.0,
+            -0.0
+          ],
+          "fov": 41.5
+        },
+        "caption": "ARCHITECTURAL FRONT: looks +X toward pressure bulkhead; saved actors/art/exposure. Camera outside front wall; native owned tall-wall cutaway may hide, retained sill remains. Reframed camera revision chamber-02.",
+        "hash_matches_capture_receipt": true,
+        "full_pixel_decode": true
+      }
+    },
+    {
+      "view": "reverse",
+      "reference": {
+        "path": "study/visuals/chamber-target-reverse.png",
+        "sha256": "1728fb8239d4edde652c93c92bb441c211fe4b491fbf9c14d79413e1c60eff42",
+        "size": [
+          475,
+          320
+        ],
+        "kind": "user concept target"
+      },
+      "candidate": {
+        "path": "evidence/implementation/20261005T111910-capture_chamber_views/02-chamber-reverse.png",
+        "sha256": "c4e2407ed177b2e6746576a62ef4abd0c379aefe785de3f56013f14aa11ba92c",
+        "size": [
+          1920,
+          1280
+        ],
+        "kind": "architecture",
+        "held_state": {
+          "player": [
+            -230.0,
+            570.0,
+            85.14999961853027
+          ],
+          "camera": [
+            1450.0,
+            100.0,
+            1450.0
+          ],
+          "rotation": [
+            -35.27242144859835,
+            180.0,
+            8.051856345342334e-07
+          ],
+          "fov": 70.0
+        },
+        "caption": "ARCHITECTURAL REVERSE: looks -X toward complete reverse service wall; camera inside far wall. Saved actors/art/exposure; native reverse wall must be visible. Revision03 retains the approximately35-degree pose and widens FOV to70 to include the electrical cabinets and near-end pipe rack.",
+        "hash_matches_capture_receipt": true,
+        "full_pixel_decode": true
+      }
+    }
+  ],
+  "comparison": {
+    "path": "evidence/chamber-qa/iteration-111910/comparison.png",
+    "size": [
+      1600,
+      1230
+    ],
+    "sha256": "12a43af7b7638b98e022f7ca1e5b487a92de7f3b949eda9fe7b22d51b5b9b856",
+    "full_pixel_decode": true
+  },
+  "limitations": [
+    "Reference concepts are small and differ slightly in aspect ratio. All full images remain unwarped, ungraded and uncropped.",
+    "Display resizes each image separately with Lanczos and retains all source bounds. The originals remain primary evidence.",
+    "Architectural cameras and frozen actors are disclosed. This comparison does not establish ordinary gameplay or user acceptance.",
+    "No similarity percentage, automatic parity score or physical-light measurement is computed."
+  ]
+}

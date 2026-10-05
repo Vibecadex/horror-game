@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-05T12:26:24.270396+00:00",
+  "repository": "https://github.com/Vibecadex/horror-game",
+  "visibility": "private",
+  "existing_collaborators_with_write": 4,
+  "lfs_lock_query_passed": true,
+  "content_files": 766,
+  "tracked_files_before_receipt": 2707,
+  "lfs_paths": 1730,
+  "lfs_bytes_before_deduplication": 1249260004,
+  "game_content_hashes_passed": true,
+  "launcher_regression_tests": 11,
+  "current_handoff_links_checked": 98,
+  "current_handoff_links_broken": 0,
+  "credential_pattern_scan_candidates": 0,
+  "engine_started_for_handoff": false,
+  "installs_performed": false,
+  "credential_scan_scope": "Selected text files and original small source archive; no claim of exhaustive secret detection."
+}

@@ -1,0 +1,70 @@
+{
+  "owner": "teddy-room-shell-20261005",
+  "size": 1024,
+  "color_space": "sRGB albedo, linear roughness, DirectX normal",
+  "families": {
+    "Concrete": {
+      "color_mean_srgb_byte": [
+        43.65,
+        41.97,
+        39.45
+      ],
+      "roughness_min": 0.82,
+      "roughness_max": 0.95,
+      "files": [
+        "T_Shell_Concrete_Color.png",
+        "T_Shell_Concrete_Roughness.png",
+        "T_Shell_Concrete_Normal.png"
+      ]
+    },
+    "Steel": {
+      "color_mean_srgb_byte": [
+        27.36,
+        30.4,
+        28.58
+      ],
+      "roughness_min": 0.55,
+      "roughness_max": 0.8,
+      "files": [
+        "T_Shell_Steel_Color.png",
+        "T_Shell_Steel_Roughness.png",
+        "T_Shell_Steel_Normal.png"
+      ]
+    },
+    "Oxide": {
+      "color_mean_srgb_byte": [
+        54.0,
+        31.32,
+        23.76
+      ],
+      "roughness_min": 0.65,
+      "roughness_max": 0.88,
+      "files": [
+        "T_Shell_Oxide_Color.png",
+        "T_Shell_Oxide_Roughness.png",
+        "T_Shell_Oxide_Normal.png"
+      ]
+    },
+    "Recess": {
+      "color_mean_srgb_byte": [
+        11.54,
+        13.23,
+        14.07
+      ],
+      "roughness_min": 0.84,
+      "roughness_max": 0.92,
+      "files": [
+        "T_Shell_Recess_Color.png",
+        "T_Shell_Recess_Roughness.png",
+        "T_Shell_Recess_Normal.png"
+      ]
+    }
+  },
+  "preview": "shell-surface-preview.png",
+  "excludes": [
+    "teal wash",
+    "player pool",
+    "baked shadow",
+    "red practical"
+  ]
+}

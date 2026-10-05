@@ -1,0 +1,6248 @@
+{
+  "passed": false,
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "independent_qa": true,
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "checks": {
+    "saved_45_parity_floor_actors": true,
+    "parity_floor_ownership_explicit": true,
+    "saved_parity_floor_collision_disabled": true,
+    "v2_skin_uses_original_skeleton": true,
+    "stitched_skin_material_slots_present": true,
+    "all_four_saved_creatures_use_v2_skin": true,
+    "six_original_clips_share_original_skeleton": true,
+    "saved_gameplay_camera_fov54": true,
+    "saved_player_spot_owned_and_attached": true,
+    "player_spot_does_not_scatter_into_fog": true,
+    "runtime_camera_fov54": true,
+    "runtime_boss_uses_v2_skin": true,
+    "player_light_moves_with_player": true,
+    "player_light_rotates_with_aim": true,
+    "player_light_preserves_attached_offset": true,
+    "player_light_parent_remains_owned": true,
+    "Idle_original_clip_identity_and_progression": true,
+    "Idle_sixteen_original_bones_and_pose_motion": false,
+    "Idle_finite_bones_and_bounded_skin": true,
+    "Walk_original_clip_identity_and_progression": true,
+    "Walk_sixteen_original_bones_and_pose_motion": false,
+    "Walk_finite_bones_and_bounded_skin": true,
+    "Crawl_original_clip_identity_and_progression": true,
+    "Crawl_sixteen_original_bones_and_pose_motion": false,
+    "Crawl_finite_bones_and_bounded_skin": true,
+    "Attack_original_clip_identity_and_progression": true,
+    "Attack_sixteen_original_bones_and_pose_motion": false,
+    "Attack_finite_bones_and_bounded_skin": true,
+    "Hit_original_clip_identity_and_progression": true,
+    "Hit_sixteen_original_bones_and_pose_motion": false,
+    "Hit_finite_bones_and_bounded_skin": true,
+    "Defeat_original_clip_identity_and_progression": true,
+    "Defeat_sixteen_original_bones_and_pose_motion": false,
+    "Defeat_finite_bones_and_bounded_skin": true,
+    "six_animation_images_fully_decoded": true
+  },
+  "floor_actors": [
+    {
+      "label": "TE_Parity_Floor_000",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityFractureField_A.SM_ParityFractureField_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -679.117954198893,
+              -455.80317205155797,
+              -3.8425906524062157
+            ],
+            "extent": [
+              389.06430391139867,
+              321.73537005926966,
+              1.0774093493819237
+            ],
+            "min": [
+              -1068.1822581102917,
+              -777.5385421108276,
+              -4.920000001788139
+            ],
+            "max": [
+              -290.05365028749435,
+              -134.0678019922883,
+              -2.765181303024292
+            ],
+            "sphere_radius": 342.85516357421875
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_001",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityFractureField_A.SM_ParityFractureField_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              496.04598713711584,
+              1018.0774748476153,
+              -3.8425906524062157
+            ],
+            "extent": [
+              304.17453512859686,
+              331.45232767271597,
+              1.0774093493819237
+            ],
+            "min": [
+              191.871452008519,
+              686.6251471748994,
+              -4.920000001788139
+            ],
+            "max": [
+              800.2205222657127,
+              1349.5298025203313,
+              -2.765181303024292
+            ],
+            "sphere_radius": 328.9471740722656
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_002",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityFractureField_B.SM_ParityFractureField_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -427.1173948664542,
+              -854.2999074231371,
+              -3.8666327819228172
+            ],
+            "extent": [
+              160.16611508015657,
+              217.5132185463722,
+              1.0533672198653221
+            ],
+            "min": [
+              -587.2835099466108,
+              -1071.8131259695094,
+              -4.920000001788139
+            ],
+            "max": [
+              -266.9512797862976,
+              -636.786688876765,
+              -2.813265562057495
+            ],
+            "sphere_radius": 270.12274169921875
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_003",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityFractureField_B.SM_ParityFractureField_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              670.053637379125,
+              862.4100907758335,
+              -3.8666327819228172
+            ],
+            "extent": [
+              236.2053777842354,
+              184.33855955745554,
+              1.0533672198653221
+            ],
+            "min": [
+              433.8482595948896,
+              678.0715312183779,
+              -4.920000001788139
+            ],
+            "max": [
+              906.2590151633603,
+              1046.748650333289,
+              -2.813265562057495
+            ],
+            "sphere_radius": 299.6244201660156
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_004",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityEdgeSpall.SM_ParityEdgeSpall",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -91.06014890824297,
+              -843.8041551486884,
+              0.30407527834177017
+            ],
+            "extent": [
+              316.8128016733132,
+              112.88283117926585,
+              5.2240752801299095
+            ],
+            "min": [
+              -407.87295058155615,
+              -956.6869863279543,
+              -4.920000001788139
+            ],
+            "max": [
+              225.7526527650702,
+              -730.9213239694226,
+              5.52815055847168
+            ],
+            "sphere_radius": 312.87335205078125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_005",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityEdgeSpall.SM_ParityEdgeSpall",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -679.4630154537498,
+              -715.2880824685972,
+              0.30407527834177017
+            ],
+            "extent": [
+              285.2361796285375,
+              250.28030250526115,
+              5.2240752801299095
+            ],
+            "min": [
+              -964.6991950822874,
+              -965.5683849738583,
+              -4.920000001788139
+            ],
+            "max": [
+              -394.2268358252123,
+              -465.007779963336,
+              5.52815055847168
+            ],
+            "sphere_radius": 310.238525390625
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_006",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityEdgeSpall.SM_ParityEdgeSpall",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -939.007045390059,
+              10.868710770674856,
+              0.30407527834177017
+            ],
+            "extent": [
+              111.42130871009101,
+              310.79479835595174,
+              5.2240752801299095
+            ],
+            "min": [
+              -1050.42835410015,
+              -299.9260875852769,
+              -4.920000001788139
+            ],
+            "max": [
+              -827.585736679968,
+              321.6635091266266,
+              5.52815055847168
+            ],
+            "sphere_radius": 306.88238525390625
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_007",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityEdgeSpall.SM_ParityEdgeSpall",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              421.47307677228247,
+              964.29612132195,
+              0.30407527834177017
+            ],
+            "extent": [
+              323.9323868198203,
+              122.17260840531837,
+              5.2240752801299095
+            ],
+            "min": [
+              97.54068995246217,
+              842.1235129166316,
+              -4.920000001788139
+            ],
+            "max": [
+              745.4054635921027,
+              1086.4687297272683,
+              5.52815055847168
+            ],
+            "sphere_radius": 318.8873291015625
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_008",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityEdgeSpall.SM_ParityEdgeSpall",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              888.4418322536876,
+              -1190.2886494279728,
+              0.30407527834177017
+            ],
+            "extent": [
+              266.6175110295566,
+              80.47858447336469,
+              5.2240752801299095
+            ],
+            "min": [
+              621.8243212241309,
+              -1270.7672339013375,
+              -4.920000001788139
+            ],
+            "max": [
+              1155.0593432832443,
+              -1109.8100649546082,
+              5.52815055847168
+            ],
+            "sphere_radius": 278.5480041503906
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_009",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityEdgeSpall.SM_ParityEdgeSpall",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              1210.4374588012695,
+              429.19048461914065,
+              0.30407527834177017
+            ],
+            "extent": [
+              75.85942153930672,
+              283.2216781616211,
+              5.2240752801299095
+            ],
+            "min": [
+              1134.5780372619627,
+              145.96880645751952,
+              -4.920000001788139
+            ],
+            "max": [
+              1286.2968803405763,
+              712.4121627807617,
+              5.52815055847168
+            ],
+            "sphere_radius": 293.25152587890625
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_010",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityEdgeSpall.SM_ParityEdgeSpall",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -220.27618338480528,
+              1358.6929166328057,
+              0.30407527834177017
+            ],
+            "extent": [
+              284.7318385460373,
+              93.54155523566072,
+              5.2240752801299095
+            ],
+            "min": [
+              -505.0080219308426,
+              1265.151361397145,
+              -4.920000001788139
+            ],
+            "max": [
+              64.45565516123202,
+              1452.2344718684665,
+              5.52815055847168
+            ],
+            "sphere_radius": 299.7491149902344
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_011",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_A.SM_ParityRubbleScatter_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -384.2097856523618,
+              -785.9200858734625,
+              -3.0454752072691917
+            ],
+            "extent": [
+              410.8330875900932,
+              357.83491507277705,
+              1.8745247945189476
+            ],
+            "min": [
+              -795.042873242455,
+              -1143.7550009462395,
+              -4.920000001788139
+            ],
+            "max": [
+              26.623301937731412,
+              -428.0851708006855,
+              -1.1709504127502441
+            ],
+            "sphere_radius": 347.0020751953125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_012",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_B.SM_ParityRubbleScatter_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -91.7924805763274,
+              -837.4309133738891,
+              -3.1997331008315086
+            ],
+            "extent": [
+              337.44757294038175,
+              352.52201536610465,
+              1.7202669009566307
+            ],
+            "min": [
+              -429.24005351670917,
+              -1189.9529287399937,
+              -4.920000001788139
+            ],
+            "max": [
+              245.65509236405433,
+              -484.90889800778444,
+              -1.479466199874878
+            ],
+            "sphere_radius": 289.9245300292969
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_013",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_A.SM_ParityRubbleScatter_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -681.827868831598,
+              -518.3497131582568,
+              -3.0454752072691917
+            ],
+            "extent": [
+              295.0033878563448,
+              365.2549661741955,
+              1.8745247945189476
+            ],
+            "min": [
+              -976.8312566879429,
+              -883.6046793324523,
+              -4.920000001788139
+            ],
+            "max": [
+              -386.82448097525327,
+              -153.09474698406132,
+              -1.1709504127502441
+            ],
+            "sphere_radius": 338.6513366699219
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_014",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_B.SM_ParityRubbleScatter_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -849.7546887283631,
+              -857.5769208696065,
+              -3.1997331008315086
+            ],
+            "extent": [
+              344.6953340249554,
+              321.37855689890733,
+              1.7202669009566307
+            ],
+            "min": [
+              -1194.4500227533185,
+              -1178.955477768514,
+              -4.920000001788139
+            ],
+            "max": [
+              -505.05935470340773,
+              -536.1983639706991,
+              -1.479466199874878
+            ],
+            "sphere_radius": 283.96807861328125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_015",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_A.SM_ParityRubbleScatter_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -1022.4851564866384,
+              -65.33580627342629,
+              -3.0454752072691917
+            ],
+            "extent": [
+              330.1430101089832,
+              375.67536736334546,
+              1.8745247945189476
+            ],
+            "min": [
+              -1352.6281665956217,
+              -441.01117363677173,
+              -4.920000001788139
+            ],
+            "max": [
+              -692.3421463776551,
+              310.3395610899192,
+              -1.1709504127502441
+            ],
+            "sphere_radius": 346.696044921875
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_016",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_B.SM_ParityRubbleScatter_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -956.2253843625472,
+              443.4592577242555,
+              -3.1997331008315086
+            ],
+            "extent": [
+              311.0616756688724,
+              226.96294194708423,
+              1.7202669009566307
+            ],
+            "min": [
+              -1267.2870600314195,
+              216.49631577717128,
+              -4.920000001788139
+            ],
+            "max": [
+              -645.1637086936748,
+              670.4221996713397,
+              -1.479466199874878
+            ],
+            "sphere_radius": 294.43243408203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_017",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_A.SM_ParityRubbleScatter_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -382.0867498356418,
+              1082.7241852048367,
+              -3.0454752072691917
+            ],
+            "extent": [
+              258.04033973478687,
+              349.4606833157831,
+              1.8745247945189476
+            ],
+            "min": [
+              -640.1270895704287,
+              733.2635018890535,
+              -4.920000001788139
+            ],
+            "max": [
+              -124.04641010085493,
+              1432.1848685206198,
+              -1.1709504127502441
+            ],
+            "sphere_radius": 349.5027770996094
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_018",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_B.SM_ParityRubbleScatter_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              220.6348302337925,
+              987.3507537735069,
+              -3.1997331008315086
+            ],
+            "extent": [
+              357.05748830617154,
+              326.10583638025,
+              1.7202669009566307
+            ],
+            "min": [
+              -136.42265807237902,
+              661.2449173932569,
+              -4.920000001788139
+            ],
+            "max": [
+              577.692318539964,
+              1313.456590153757,
+              -1.479466199874878
+            ],
+            "sphere_radius": 295.2994384765625
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_019",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_A.SM_ParityRubbleScatter_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              665.8325974098386,
+              853.3276184863613,
+              -3.0454752072691917
+            ],
+            "extent": [
+              405.5631232598599,
+              368.5841843963044,
+              1.8745247945189476
+            ],
+            "min": [
+              260.26947414997875,
+              484.7434340900569,
+              -4.920000001788139
+            ],
+            "max": [
+              1071.3957206696984,
+              1221.9118028826656,
+              -1.1709504127502441
+            ],
+            "sphere_radius": 346.25726318359375
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_020",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_B.SM_ParityRubbleScatter_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              1087.1405739292418,
+              382.21018743806025,
+              -3.1997331008315086
+            ],
+            "extent": [
+              274.2117964353406,
+              328.9907959255555,
+              1.7202669009566307
+            ],
+            "min": [
+              812.9287774939012,
+              53.21939151250473,
+              -4.920000001788139
+            ],
+            "max": [
+              1361.3523703645824,
+              711.2009833636157,
+              -1.479466199874878
+            ],
+            "sphere_radius": 284.6865234375
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_021",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_A.SM_ParityRubbleScatter_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              789.8099297481054,
+              -818.1860216554514,
+              -3.0454752072691917
+            ],
+            "extent": [
+              395.2707354027805,
+              347.0550949322566,
+              1.8745247945189476
+            ],
+            "min": [
+              394.539194345325,
+              -1165.2411165877081,
+              -4.920000001788139
+            ],
+            "max": [
+              1185.080665150886,
+              -471.1309267231948,
+              -1.1709504127502441
+            ],
+            "sphere_radius": 334.3042297363281
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_022",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_B.SM_ParityRubbleScatter_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              395.0708070687877,
+              -974.3034564811514,
+              -3.1997331008315086
+            ],
+            "extent": [
+              252.2853246630722,
+              322.64330318698256,
+              1.7202669009566307
+            ],
+            "min": [
+              142.7854824057155,
+              -1296.946759668134,
+              -4.920000001788139
+            ],
+            "max": [
+              647.3561317318599,
+              -651.6601532941688,
+              -1.479466199874878
+            ],
+            "sphere_radius": 292.342529296875
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_023",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_B.SM_ParityRubbleScatter_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -55.396530508371015,
+              -758.3198595473466,
+              -3.1997331008315086
+            ],
+            "extent": [
+              176.998130662736,
+              221.32581481688052,
+              1.7202669009566307
+            ],
+            "min": [
+              -232.39466117110703,
+              -979.6456743642271,
+              -4.920000001788139
+            ],
+            "max": [
+              121.60160015436499,
+              -536.994044730466,
+              -1.479466199874878
+            ],
+            "sphere_radius": 193.85162353515625
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_024",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_A.SM_ParityRubbleScatter_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -554.4938194044984,
+              -794.4793263017066,
+              -3.0454752072691917
+            ],
+            "extent": [
+              270.3117657359264,
+              284.1172195110166,
+              1.8745247945189476
+            ],
+            "min": [
+              -824.8055851404247,
+              -1078.5965458127232,
+              -4.920000001788139
+            ],
+            "max": [
+              -284.182053668572,
+              -510.36210679069,
+              -1.1709504127502441
+            ],
+            "sphere_radius": 245.97312927246094
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_025",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_B.SM_ParityRubbleScatter_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -846.2199038323039,
+              -202.9960082166088,
+              -3.1997331008315086
+            ],
+            "extent": [
+              211.66091348053345,
+              164.09556270934522,
+              1.7202669009566307
+            ],
+            "min": [
+              -1057.8808173128373,
+              -367.091570925954,
+              -4.920000001788139
+            ],
+            "max": [
+              -634.5589903517705,
+              -38.90044550726358,
+              -1.479466199874878
+            ],
+            "sphere_radius": 189.8257598876953
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_026",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_A.SM_ParityRubbleScatter_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              275.4758953942094,
+              1006.693183183312,
+              -3.0454752072691917
+            ],
+            "extent": [
+              218.6714971627407,
+              264.9142784275273,
+              1.8745247945189476
+            ],
+            "min": [
+              56.80439823146867,
+              741.7789047557848,
+              -4.920000001788139
+            ],
+            "max": [
+              494.1473925569501,
+              1271.6074616108394,
+              -1.1709504127502441
+            ],
+            "sphere_radius": 234.60751342773438
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_027",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_A.SM_ParityRubbleScatter_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              905.5585143776916,
+              -471.6716385303141,
+              -3.0454752072691917
+            ],
+            "extent": [
+              267.7500032022565,
+              277.7215569108307,
+              1.8745247945189476
+            ],
+            "min": [
+              637.8085111754351,
+              -749.3931954411448,
+              -4.920000001788139
+            ],
+            "max": [
+              1173.308517579948,
+              -193.9500816194834,
+              -1.1709504127502441
+            ],
+            "sphere_radius": 225.96058654785156
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_028",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_B.SM_ParityRubbleScatter_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              812.4209250100807,
+              535.4818966009378,
+              -3.1997331008315086
+            ],
+            "extent": [
+              215.53380507369764,
+              160.01963742722143,
+              1.7202669009566307
+            ],
+            "min": [
+              596.8871199363831,
+              375.4622591737164,
+              -4.920000001788139
+            ],
+            "max": [
+              1027.9547300837785,
+              695.5015340281593,
+              -1.479466199874878
+            ],
+            "sphere_radius": 200.56243896484375
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_029",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_A.SM_ParityRubbleScatter_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              65.15283701325792,
+              -503.3428418749893,
+              -3.0454752072691917
+            ],
+            "extent": [
+              309.0177307158685,
+              293.54233226706924,
+              1.8745247945189476
+            ],
+            "min": [
+              -243.86489370261057,
+              -796.8851741420585,
+              -4.920000001788139
+            ],
+            "max": [
+              374.1705677291264,
+              -209.80050960792005,
+              -1.1709504127502441
+            ],
+            "sphere_radius": 250.50018310546875
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_030",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_B.SM_ParityRubbleScatter_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              550.0138870485432,
+              234.31316565847038,
+              -3.1997331008315086
+            ],
+            "extent": [
+              262.16847115890306,
+              247.64534992178747,
+              1.7202669009566307
+            ],
+            "min": [
+              287.84541588964015,
+              -13.332184263317089,
+              -4.920000001788139
+            ],
+            "max": [
+              812.1823582074462,
+              481.9585155802579,
+              -1.479466199874878
+            ],
+            "sphere_radius": 215.70419311523438
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_031",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_B.SM_ParityRubbleScatter_B",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -577.7162740057036,
+              44.84329518871775,
+              -3.1997331008315086
+            ],
+            "extent": [
+              215.6573272533795,
+              247.781444694429,
+              1.7202669009566307
+            ],
+            "min": [
+              -793.373601259083,
+              -202.93814950571127,
+              -4.920000001788139
+            ],
+            "max": [
+              -362.05894675232406,
+              292.62473988314673,
+              -1.479466199874878
+            ],
+            "sphere_radius": 208.1009521484375
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_032",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityRubbleScatter_A.SM_ParityRubbleScatter_A",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -545.3192470368868,
+              696.4635544639098,
+              -3.0454752072691917
+            ],
+            "extent": [
+              293.65210909105986,
+              272.77666542772494,
+              1.8745247945189476
+            ],
+            "min": [
+              -838.9713561279467,
+              423.6868890361848,
+              -4.920000001788139
+            ],
+            "max": [
+              -251.667137945827,
+              969.2402198916348,
+              -1.1709504127502441
+            ],
+            "sphere_radius": 239.64088439941406
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_033",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -499.5136451096749,
+              -830.2002153528017,
+              -4.300929747521877
+            ],
+            "extent": [
+              346.67508855123106,
+              336.6019523278772,
+              0.619070254266262
+            ],
+            "min": [
+              -846.1887336609059,
+              -1166.8021676806788,
+              -4.920000001788139
+            ],
+            "max": [
+              -152.83855655844383,
+              -493.5982630249245,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_034",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -919.5922008473344,
+              -449.68567173378506,
+              -4.300929747521877
+            ],
+            "extent": [
+              238.22634486532579,
+              269.96262604660075,
+              0.619070254266262
+            ],
+            "min": [
+              -1157.8185457126601,
+              -719.6482977803857,
+              -4.920000001788139
+            ],
+            "max": [
+              -681.3658559820086,
+              -179.7230456871843,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_035",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -1040.0784628282076,
+              269.52477092461913,
+              -4.300929747521877
+            ],
+            "extent": [
+              320.1970980216495,
+              319.42274898460005,
+              0.619070254266262
+            ],
+            "min": [
+              -1360.2755608498571,
+              -49.897978059980915,
+              -4.920000001788139
+            ],
+            "max": [
+              -719.8813648065582,
+              588.9475199092192,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_036",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -639.4996081126277,
+              830.121286301405,
+              -4.300929747521877
+            ],
+            "extent": [
+              302.71192211964893,
+              322.00308642854725,
+              0.619070254266262
+            ],
+            "min": [
+              -942.2115302322766,
+              508.11819987285776,
+              -4.920000001788139
+            ],
+            "max": [
+              -336.78768599297877,
+              1152.1243727299523,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_037",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              80.19168219643531,
+              1049.5400730239912,
+              -4.300929747521877
+            ],
+            "extent": [
+              290.00547074677513,
+              265.0069986418483,
+              0.619070254266262
+            ],
+            "min": [
+              -209.81378855033984,
+              784.5330743821429,
+              -4.920000001788139
+            ],
+            "max": [
+              370.1971529432104,
+              1314.5470716658397,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_038",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              650.3020776403233,
+              850.4100988066834,
+              -4.300929747521877
+            ],
+            "extent": [
+              293.7252865582648,
+              314.29328261859627,
+              0.619070254266262
+            ],
+            "min": [
+              356.5767910820585,
+              536.1168161880871,
+              -4.920000001788139
+            ],
+            "max": [
+              944.0273641985882,
+              1164.7033814252798,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_039",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              1100.475419917764,
+              230.10648452898857,
+              -4.300929747521877
+            ],
+            "extent": [
+              289.0478540867013,
+              306.58354473587224,
+              0.619070254266262
+            ],
+            "min": [
+              811.4275658310626,
+              -76.47706020688366,
+              -4.920000001788139
+            ],
+            "max": [
+              1389.5232740044653,
+              536.6900292648609,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_040",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              900.0897878732277,
+              -650.5294671598991,
+              -4.300929747521877
+            ],
+            "extent": [
+              343.5766542712187,
+              326.65722884815744,
+              0.619070254266262
+            ],
+            "min": [
+              556.513133602009,
+              -977.1866960080565,
+              -4.920000001788139
+            ],
+            "max": [
+              1243.6664421444464,
+              -323.8722383117417,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_041",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              400.37246388029973,
+              -979.6690233458945,
+              -4.300929747521877
+            ],
+            "extent": [
+              246.61432640389856,
+              274.87266858567386,
+              0.619070254266262
+            ],
+            "min": [
+              153.75813747640117,
+              -1254.5416919315685,
+              -4.920000001788139
+            ],
+            "max": [
+              646.9867902841983,
+              -704.7963547602207,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_042",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -100.08735658512364,
+              -310.4342080601877,
+              -4.300929747521877
+            ],
+            "extent": [
+              293.72206803181615,
+              294.4341131233558,
+              0.619070254266262
+            ],
+            "min": [
+              -393.8094246169398,
+              -604.8683211835435,
+              -4.920000001788139
+            ],
+            "max": [
+              193.6347114466925,
+              -16.000094936831886,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_043",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              -559.8438662364599,
+              80.42038661600048,
+              -4.300929747521877
+            ],
+            "extent": [
+              289.6885434486311,
+              296.8618177858672,
+              0.619070254266262
+            ],
+            "min": [
+              -849.532409685091,
+              -216.4414311698667,
+              -4.920000001788139
+            ],
+            "max": [
+              -270.1553227878288,
+              377.28220440186766,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    },
+    {
+      "label": "TE_Parity_Floor_044",
+      "tags": [
+        "TeddyEncounterOwned",
+        "ParityOwned",
+        "ParityFloorDecor"
+      ],
+      "actor_collision_enabled": false,
+      "meshes": [
+        {
+          "mesh": "/Game/TeddyEncounter/Parity/Floor/SM_ParityMicroChips.SM_ParityMicroChips",
+          "collision_profile": "NoCollision",
+          "collision_enabled": "<CollisionEnabled.NO_COLLISION: 0>",
+          "no_collision": true,
+          "bounds": {
+            "origin": [
+              380.3394668703412,
+              289.69029287486285,
+              -4.300929747521877
+            ],
+            "extent": [
+              269.999527599975,
+              247.5684575450099,
+              0.619070254266262
+            ],
+            "min": [
+              110.33993927036619,
+              42.121835329852956,
+              -4.920000001788139
+            ],
+            "max": [
+              650.3389944703163,
+              537.2587504198727,
+              -3.6818594932556152
+            ],
+            "sphere_radius": 280.62158203125
+          }
+        }
+      ]
+    }
+  ],
+  "saved_creatures": [
+    {
+      "label": "TE_MainTeddy",
+      "class": "/Game/TeddyEncounter/Blueprints/BP_TeddyBoss.BP_TeddyBoss_C",
+      "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+      "materials": [
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedCloth.M_Parity_CombinedCloth",
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_SeamV2.M_Parity_SeamV2",
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_ThreadV2.M_Parity_ThreadV2"
+      ]
+    },
+    {
+      "label": "TE_Stitchling_3",
+      "class": "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling_C",
+      "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+      "materials": [
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedStitchling.M_Parity_CombinedStitchling",
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_SeamV2.M_Parity_SeamV2",
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_ThreadV2.M_Parity_ThreadV2"
+      ]
+    },
+    {
+      "label": "TE_Stitchling_1",
+      "class": "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling_C",
+      "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+      "materials": [
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedStitchling.M_Parity_CombinedStitchling",
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_SeamV2.M_Parity_SeamV2",
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_ThreadV2.M_Parity_ThreadV2"
+      ]
+    },
+    {
+      "label": "TE_Stitchling_2",
+      "class": "/Game/TeddyEncounter/Blueprints/BP_Stitchling.BP_Stitchling_C",
+      "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+      "materials": [
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedStitchling.M_Parity_CombinedStitchling",
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_SeamV2.M_Parity_SeamV2",
+        "/Game/TeddyEncounter/Parity/Materials/M_Parity_ThreadV2.M_Parity_ThreadV2"
+      ]
+    }
+  ],
+  "clips": [
+    {
+      "name": "Idle",
+      "path": "/Game/TeddyEncounter/Teddy/Idle/A_Teddy_Idle.A_Teddy_Idle",
+      "skeleton": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.SK_Teddy_Skeleton",
+      "length_seconds": 2.9666666984558105
+    },
+    {
+      "name": "Walk",
+      "path": "/Game/TeddyEncounter/Teddy/Walk/A_Teddy_Walk.A_Teddy_Walk",
+      "skeleton": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.SK_Teddy_Skeleton",
+      "length_seconds": 1.2000000476837158
+    },
+    {
+      "name": "Crawl",
+      "path": "/Game/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.A_Teddy_Crawl",
+      "skeleton": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.SK_Teddy_Skeleton",
+      "length_seconds": 1.2000000476837158
+    },
+    {
+      "name": "Attack",
+      "path": "/Game/TeddyEncounter/Teddy/Attack/A_Teddy_Attack.A_Teddy_Attack",
+      "skeleton": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.SK_Teddy_Skeleton",
+      "length_seconds": 1.7666666507720947
+    },
+    {
+      "name": "Hit",
+      "path": "/Game/TeddyEncounter/Teddy/Hit/A_Teddy_Hit.A_Teddy_Hit",
+      "skeleton": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.SK_Teddy_Skeleton",
+      "length_seconds": 0.5
+    },
+    {
+      "name": "Defeat",
+      "path": "/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat",
+      "skeleton": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.SK_Teddy_Skeleton",
+      "length_seconds": 2.366666555404663
+    }
+  ],
+  "light_samples": [
+    {
+      "label": "before_input",
+      "game_seconds": 6.002534501254559,
+      "pawn": [
+        -230.0,
+        570.0,
+        85.14999961853027
+      ],
+      "pawn_rotation": [
+        0.0,
+        -145.0,
+        0.0
+      ],
+      "light": [
+        -316.01096465034414,
+        509.77447418314017,
+        255.14999961853027
+      ],
+      "light_rotation": [
+        -80.0000000000001,
+        -145.00000000000014,
+        -0.0
+      ],
+      "light_forward": [
+        -0.14224425972292498,
+        -0.0996005029250514,
+        -0.9848077530122084
+      ],
+      "offset_in_pawn_space": [
+        104.99999999999999,
+        7.105427357601002e-15,
+        170.0
+      ],
+      "relative_location": [
+        105.0,
+        0.0,
+        170.0
+      ],
+      "relative_rotation": [
+        -80.0,
+        0.0,
+        0.0
+      ],
+      "yaw_relative_to_pawn": -1.4210854715202004e-13,
+      "owner": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterPlayer_C_0",
+      "parent": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterPlayer_C_0.CollisionCylinder",
+      "parent_owner": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterPlayer_C_0",
+      "intensity": 17500.0,
+      "volumetric_scattering_intensity": 0.0
+    },
+    {
+      "label": "light_first",
+      "game_seconds": 6.402620200067759,
+      "pawn": [
+        -151.63240846592828,
+        570.0,
+        85.14999961853027
+      ],
+      "pawn_rotation": [
+        0.0,
+        92.09141540527344,
+        -0.0
+      ],
+      "light": [
+        -155.46427631125158,
+        674.9300566511615,
+        255.14999961853027
+      ],
+      "light_rotation": [
+        -80.0000000000001,
+        92.09141540527357,
+        1.8316084419636394e-14
+      ],
+      "light_forward": [
+        -0.006337113032389929,
+        0.17353250590440022,
+        -0.9848077530122084
+      ],
+      "offset_in_pawn_space": [
+        104.99999999999994,
+        -1.9539925233402755e-14,
+        170.0
+      ],
+      "relative_location": [
+        105.0,
+        0.0,
+        170.0
+      ],
+      "relative_rotation": [
+        -80.0,
+        0.0,
+        0.0
+      ],
+      "yaw_relative_to_pawn": 1.1368683772161603e-13,
+      "owner": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterPlayer_C_0",
+      "parent": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterPlayer_C_0.CollisionCylinder",
+      "parent_owner": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterPlayer_C_0",
+      "intensity": 17500.0,
+      "volumetric_scattering_intensity": 0.0
+    },
+    {
+      "label": "light_second",
+      "game_seconds": 6.80298950150609,
+      "pawn": [
+        -173.01985417111513,
+        570.0,
+        85.14999961853027
+      ],
+      "pawn_rotation": [
+        0.0,
+        178.53079223632812,
+        -0.0
+      ],
+      "light": [
+        -277.98533529314955,
+        572.6921687948288,
+        255.14999961853027
+      ],
+      "light_rotation": [
+        -80.00000000000021,
+        178.53079223632812,
+        5.723776381136385e-16
+      ],
+      "light_forward": [
+        -0.1735910906168947,
+        0.0044522876685123905,
+        -0.9848077530122087
+      ],
+      "offset_in_pawn_space": [
+        105.00000000000007,
+        -1.3766765505351941e-14,
+        170.0
+      ],
+      "relative_location": [
+        105.0,
+        0.0,
+        170.0
+      ],
+      "relative_rotation": [
+        -80.0,
+        0.0,
+        0.0
+      ],
+      "yaw_relative_to_pawn": 0.0,
+      "owner": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterPlayer_C_0",
+      "parent": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterPlayer_C_0.CollisionCylinder",
+      "parent_owner": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter:PersistentLevel.BP_EncounterPlayer_C_0",
+      "intensity": 17500.0,
+      "volumetric_scattering_intensity": 0.0
+    }
+  ],
+  "animation_samples": [
+    {
+      "clip": "Idle",
+      "length_seconds": 2.9666666984558105,
+      "samples": [
+        {
+          "game_seconds": 8.159683890640736,
+          "animation_position": 0.15000231564044952,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Idle/A_Teddy_Idle.A_Teddy_Idle",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "pelvis": [
+              264.2150374444994,
+              -253.65779515972466,
+              135.1499956503242
+            ],
+            "spine": [
+              264.21503225212945,
+              -253.6577865181699,
+              194.94999604705148
+            ],
+            "head": [
+              254.39781336654616,
+              -237.31919055314967,
+              291.4216643445186
+            ],
+            "upperarm_L": [
+              353.7510934881563,
+              -188.31773701787358,
+              296.08457388361865
+            ],
+            "forearm_L": [
+              357.5796281275102,
+              -141.10131698961663,
+              208.4189072979771
+            ],
+            "hand_L": [
+              342.43947688018955,
+              -89.10976730970543,
+              129.85842819516552
+            ],
+            "upperarm_R": [
+              164.4885582343889,
+              -302.0381411091778,
+              296.0845738836186
+            ],
+            "forearm_R": [
+              121.00154568670601,
+              -283.25177005335155,
+              208.41890729797706
+            ],
+            "hand_R": [
+              82.20360251471752,
+              -245.47525587412144,
+              129.85842819516546
+            ],
+            "thigh_L": [
+              317.84281648896683,
+              -226.80148867236045,
+              144.34997711535345
+            ],
+            "shin_L": [
+              331.6347166074714,
+              -205.09821215288454,
+              75.34999175643028
+            ],
+            "foot_L": [
+              337.13451174782256,
+              -169.59453542100687,
+              22.449979243736756
+            ],
+            "thigh_R": [
+              215.325609041657,
+              -288.4000414001279,
+              144.34997711535343
+            ],
+            "shin_R": [
+              189.68784837921285,
+              -290.3884952655395,
+              75.34999175643026
+            ],
+            "foot_R": [
+              155.75796505161702,
+              -278.57655954597016,
+              22.44997924373667
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 27.449979243736756,
+            "foot_R": 27.44997924373667
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 8.752104189246893,
+          "animation_position": 0.7424224615097046,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Idle/A_Teddy_Idle.A_Teddy_Idle",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "pelvis": [
+              264.2150374444994,
+              -253.65779515972466,
+              135.1499956503242
+            ],
+            "spine": [
+              264.21503225212945,
+              -253.6577865181699,
+              194.94999604705148
+            ],
+            "head": [
+              253.645467876439,
+              -236.06707739032535,
+              291.1215175601265
+            ],
+            "upperarm_L": [
+              352.9617862180354,
+              -187.00410912294132,
+              295.9229236799132
+            ],
+            "forearm_L": [
+              357.4772976745225,
+              -140.93101051628952,
+              207.68349464310188
+            ],
+            "hand_L": [
+              342.9538298340007,
+              -89.9657943774198,
+              128.33798487363012
+            ],
+            "upperarm_R": [
+              163.69925096426806,
+              -300.7245132142455,
+              295.9229236799132
+            ],
+            "forearm_R": [
+              120.89921523371828,
+              -283.08146358002443,
+              207.68349464310182
+            ],
+            "hand_R": [
+              82.71795546852871,
+              -246.3312829418358,
+              128.3379848736301
+            ],
+            "thigh_L": [
+              317.84281648896683,
+              -226.80148867236045,
+              144.34997711535345
+            ],
+            "shin_L": [
+              331.6347166074714,
+              -205.09821215288454,
+              75.34999175643028
+            ],
+            "foot_L": [
+              337.13451174782256,
+              -169.59453542100687,
+              22.449979243736756
+            ],
+            "thigh_R": [
+              215.325609041657,
+              -288.4000414001279,
+              144.34997711535343
+            ],
+            "shin_R": [
+              189.68784837921285,
+              -290.3884952655395,
+              75.34999175643026
+            ],
+            "foot_R": [
+              155.75796505161702,
+              -278.57655954597016,
+              22.44997924373667
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 27.449979243736756,
+            "foot_R": 27.44997924373667
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 9.494030389934778,
+          "animation_position": 1.484347939491272,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Idle/A_Teddy_Idle.A_Teddy_Idle",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "pelvis": [
+              264.2150374444994,
+              -253.65779515972466,
+              135.1499956503242
+            ],
+            "spine": [
+              264.21503225212945,
+              -253.6577865181699,
+              194.94999604705148
+            ],
+            "head": [
+              254.7393967273328,
+              -237.8876807320192,
+              291.55033964761526
+            ],
+            "upperarm_L": [
+              354.1090644739663,
+              -188.91350078483407,
+              296.1501521750086
+            ],
+            "forearm_L": [
+              357.6278742125472,
+              -141.18161195904747,
+              208.75105685462893
+            ],
+            "hand_L": [
+              342.2103840085796,
+              -88.72849274393221,
+              130.55217211073256
+            ],
+            "upperarm_R": [
+              164.846529220199,
+              -302.6339048761383,
+              296.15015217500854
+            ],
+            "forearm_R": [
+              121.049791771743,
+              -283.3320650227824,
+              208.75105685462887
+            ],
+            "hand_R": [
+              81.97450964310755,
+              -245.09398130834822,
+              130.55217211073256
+            ],
+            "thigh_L": [
+              317.84281648896683,
+              -226.80148867236045,
+              144.34997711535345
+            ],
+            "shin_L": [
+              331.6347166074714,
+              -205.09821215288454,
+              75.34999175643028
+            ],
+            "foot_L": [
+              337.13451174782256,
+              -169.59453542100687,
+              22.449979243736756
+            ],
+            "thigh_R": [
+              215.325609041657,
+              -288.4000414001279,
+              144.34997711535343
+            ],
+            "shin_R": [
+              189.68784837921285,
+              -290.3884952655395,
+              75.34999175643026
+            ],
+            "foot_R": [
+              155.75796505161702,
+              -278.57655954597016,
+              22.44997924373667
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 27.449979243736756,
+            "foot_R": 27.44997924373667
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        }
+      ],
+      "max_bone_displacement_cm": 0.8240961465232249,
+      "target_capture_fraction": 0.5
+    },
+    {
+      "clip": "Walk",
+      "length_seconds": 1.2000000476837158,
+      "samples": [
+        {
+          "game_seconds": 9.894030395895243,
+          "animation_position": 0.4000000059604645,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Walk/A_Teddy_Walk.A_Teddy_Walk",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              249.99999713503493,
+              -229.9999952318974,
+              30.145515547140334
+            ],
+            "pelvis": [
+              264.21503571451245,
+              -253.6577922805429,
+              155.07408046255796
+            ],
+            "spine": [
+              264.2150305221425,
+              -253.65778363898815,
+              214.87408085928524
+            ],
+            "head": [
+              249.95192632774172,
+              -234.04775099844323,
+              310.17424228322295
+            ],
+            "upperarm_L": [
+              348.8556312785578,
+              -184.49077260515486,
+              317.66573641936503
+            ],
+            "forearm_L": [
+              341.17474334468494,
+              -130.6748114864505,
+              234.15427980955758
+            ],
+            "hand_L": [
+              310.278346341836,
+              -70.93750442204816,
+              166.47148220404063
+            ],
+            "upperarm_R": [
+              160.09814431311048,
+              -298.9511581921514,
+              312.96799194588493
+            ],
+            "forearm_R": [
+              123.67497229185297,
+              -301.9133993686154,
+              220.2647300680161
+            ],
+            "hand_R": [
+              87.65361129534807,
+              -277.2593343429201,
+              135.41938296847275
+            ],
+            "thigh_L": [
+              317.8428147589799,
+              -226.8014857931787,
+              164.2740619275872
+            ],
+            "shin_L": [
+              338.7606479671293,
+              -224.59146407128463,
+              93.70631605203833
+            ],
+            "foot_L": [
+              339.37633398646483,
+              -173.24749058692885,
+              55.59349078974631
+            ],
+            "thigh_R": [
+              215.32560731167007,
+              -288.40003852094617,
+              164.27406192758718
+            ],
+            "shin_R": [
+              201.8849912800614,
+              -304.8170259467921,
+              93.76109103115046
+            ],
+            "foot_R": [
+              150.90773392832983,
+              -270.567281565656,
+              75.9441223037601
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 60.59349078974631,
+            "foot_R": 80.9441223037601
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 9.910758197307587,
+          "animation_position": 0.41672781109809875,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Walk/A_Teddy_Walk.A_Teddy_Walk",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              249.9999969267812,
+              -229.999994885305,
+              32.543952625735486
+            ],
+            "pelvis": [
+              264.21503547513385,
+              -253.65779188214998,
+              157.83097984748377
+            ],
+            "spine": [
+              264.21503028276385,
+              -253.65778324059522,
+              217.63098024421106
+            ],
+            "head": [
+              250.0574115123301,
+              -233.9838013737607,
+              312.93369036888004
+            ],
+            "upperarm_L": [
+              348.9805817157701,
+              -184.4452724199522,
+              320.28895996670576
+            ],
+            "forearm_L": [
+              342.1133553922034,
+              -131.18924854875746,
+              236.34877757635093
+            ],
+            "hand_L": [
+              311.95275693338976,
+              -71.79192350255863,
+              168.03779476438928
+            ],
+            "upperarm_R": [
+              160.19145755814122,
+              -298.8643376098752,
+              315.8638409589732
+            ],
+            "forearm_R": [
+              123.4556226224263,
+              -300.8001525720624,
+              223.25688577912473
+            ],
+            "hand_R": [
+              87.26504299919247,
+              -275.19673138754325,
+              138.765459794258
+            ],
+            "thigh_L": [
+              317.8428145196013,
+              -226.8014853947858,
+              167.03096131251303
+            ],
+            "shin_L": [
+              339.0995463448837,
+              -225.6952158037539,
+              96.53859137227597
+            ],
+            "foot_L": [
+              340.21322582757216,
+              -174.69723727454016,
+              57.975188567876984
+            ],
+            "thigh_R": [
+              215.32560707229143,
+              -288.4000381225532,
+              167.030961312513
+            ],
+            "shin_R": [
+              199.20905937334075,
+              -301.9512332570083,
+              96.46986225087265
+            ],
+            "foot_R": [
+              148.93034719341185,
+              -267.35899106090744,
+              77.37541244772825
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 62.975188567876984,
+            "foot_R": 82.37541244772825
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 10.160816997289658,
+          "animation_position": 0.6667864918708801,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Walk/A_Teddy_Walk.A_Teddy_Walk",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              249.99999797038248,
+              -229.9999966221492,
+              20.524901931293027
+            ],
+            "pelvis": [
+              264.2150362402775,
+              -253.65779315556293,
+              149.01889721586411
+            ],
+            "spine": [
+              264.2150310479076,
+              -253.65778451400817,
+              208.8188976125914
+            ],
+            "head": [
+              252.49140965084305,
+              -232.51765482777577,
+              304.1381606554817
+            ],
+            "upperarm_L": [
+              351.8228093351328,
+              -183.43147154251517,
+              308.35468672660653
+            ],
+            "forearm_L": [
+              363.482371697292,
+              -144.97654482333942,
+              217.1703113532997
+            ],
+            "hand_L": [
+              350.6897521327319,
+              -95.71159696292813,
+              136.4646232528869
+            ],
+            "upperarm_R": [
+              162.38511895812695,
+              -296.84471386894256,
+              310.20819340471553
+            ],
+            "forearm_R": [
+              119.97202000288146,
+              -275.1706454215796,
+              222.68287769762446
+            ],
+            "hand_R": [
+              81.59090959260689,
+              -228.55527437531123,
+              148.80465465005273
+            ],
+            "thigh_L": [
+              317.84281528474503,
+              -226.80148666819872,
+              158.21887868089337
+            ],
+            "shin_L": [
+              343.04990313414567,
+              -242.0557868181316,
+              90.73439343295209
+            ],
+            "foot_L": [
+              353.74487678242764,
+              -197.24377338524755,
+              46.38722754082081
+            ],
+            "thigh_R": [
+              215.32560783743511,
+              -288.4000393959662,
+              158.21887868089334
+            ],
+            "shin_R": [
+              175.66293057890886,
+              -269.46753222758235,
+              99.13691099957514
+            ],
+            "foot_R": [
+              141.02709556849834,
+              -252.70969472936918,
+              48.06143794816092
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 51.38722754082081,
+            "foot_R": 53.06143794816092
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        }
+      ],
+      "max_bone_displacement_cm": 56.10034726572528,
+      "target_capture_fraction": 0.55
+    },
+    {
+      "clip": "Crawl",
+      "length_seconds": 1.2000000476837158,
+      "samples": [
+        {
+          "game_seconds": 10.560817003250122,
+          "animation_position": 0.4000000059604645,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.A_Teddy_Crawl",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              249.99999312808316,
+              -229.9999885632098,
+              76.29317442755179
+            ],
+            "pelvis": [
+              264.215034833402,
+              -253.65779081412884,
+              165.22174065904056
+            ],
+            "spine": [
+              264.215029641032,
+              -253.65778217257406,
+              225.02174105576785
+            ],
+            "head": [
+              235.2672675193787,
+              -209.3197081662857,
+              307.88471560057417
+            ],
+            "upperarm_L": [
+              333.0513411866438,
+              -158.0204604038218,
+              317.9157455029818
+            ],
+            "forearm_L": [
+              368.95210468758444,
+              -148.6599783576382,
+              225.43421409488394
+            ],
+            "hand_L": [
+              397.70717854019165,
+              -145.39611154771902,
+              134.51343981335935
+            ],
+            "upperarm_R": [
+              144.29389094085815,
+              -272.48096682303316,
+              313.2194699211517
+            ],
+            "forearm_R": [
+              130.5052763829429,
+              -331.7024593677454,
+              234.2764143366088
+            ],
+            "hand_R": [
+              124.90600660753618,
+              -386.12777009393477,
+              156.10590822903862
+            ],
+            "thigh_L": [
+              317.8428138778695,
+              -226.80148432676464,
+              174.42172212406982
+            ],
+            "shin_L": [
+              343.04261379559694,
+              -238.69651985989012,
+              106.26216729964747
+            ],
+            "foot_L": [
+              340.39159795629183,
+              -174.97073816655558,
+              101.66140709030614
+            ],
+            "thigh_R": [
+              215.3256064305596,
+              -288.4000370545321,
+              174.4217221240698
+            ],
+            "shin_R": [
+              197.02536169276246,
+              -304.60743661193607,
+              104.96189242218642
+            ],
+            "foot_R": [
+              148.5609225620493,
+              -266.573710877953,
+              122.102603564032
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 106.66140709030614,
+            "foot_R": 127.102603564032
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 10.574866704642773,
+          "animation_position": 0.4140497148036957,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.A_Teddy_Crawl",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              249.99999282732784,
+              -229.99998806266888,
+              79.75694312233256
+            ],
+            "pelvis": [
+              264.21503450650516,
+              -253.65779027008116,
+              168.98657835207658
+            ],
+            "spine": [
+              264.2150293141352,
+              -253.6577816285264,
+              228.78657874880386
+            ],
+            "head": [
+              235.34824173332785,
+              -209.27061615132283,
+              311.65151949286064
+            ],
+            "upperarm_L": [
+              333.1509803998678,
+              -157.98511220702596,
+              321.5702310708221
+            ],
+            "forearm_L": [
+              369.6796788283883,
+              -149.23230985901787,
+              229.275270548325
+            ],
+            "hand_L": [
+              399.0352223814335,
+              -146.54722967643158,
+              138.52761657373418
+            ],
+            "upperarm_R": [
+              144.36731796500035,
+              -272.4113907220144,
+              317.0988621236916
+            ],
+            "forearm_R": [
+              130.28238978538562,
+              -330.9353285013374,
+              237.68928713017203
+            ],
+            "hand_R": [
+              124.40029124551022,
+              -384.6902401216497,
+              159.07691731324485
+            ],
+            "thigh_L": [
+              317.84281355097266,
+              -226.80148378271699,
+              178.18655981710583
+            ],
+            "shin_L": [
+              343.24300826892005,
+              -240.54896912358026,
+              110.45116688856103
+            ],
+            "foot_L": [
+              341.55628500124203,
+              -176.8530320202939,
+              105.0518434991816
+            ],
+            "thigh_R": [
+              215.32560610366278,
+              -288.4000365104844,
+              178.1865598171058
+            ],
+            "shin_R": [
+              194.26244092149506,
+              -301.5276069320641,
+              108.85938861110293
+            ],
+            "foot_R": [
+              146.00580959454837,
+              -262.658166418683,
+              124.65920693482148
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 110.0518434991816,
+            "foot_R": 129.6592069348215
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 10.824870504438877,
+          "animation_position": 0.6640534400939941,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.A_Teddy_Crawl",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              249.99999195972828,
+              -229.99998661874076,
+              89.74899944503619
+            ],
+            "pelvis": [
+              264.2150334082921,
+              -253.65778844234765,
+              181.63458764101603
+            ],
+            "spine": [
+              264.21502821592213,
+              -253.6577798007929,
+              241.4345880377433
+            ],
+            "head": [
+              237.60262767120153,
+              -207.91250149745332,
+              324.31558669877245
+            ],
+            "upperarm_L": [
+              335.8836745349285,
+              -157.03389489167233,
+              331.1098977077611
+            ],
+            "forearm_L": [
+              388.2502146400044,
+              -165.0177326425969,
+              246.71012929655768
+            ],
+            "hand_L": [
+              432.78216682933356,
+              -178.3069353219399,
+              163.37708290361485
+            ],
+            "upperarm_R": [
+              146.4529235874656,
+              -270.45991070979375,
+              332.8895292653043
+            ],
+            "forearm_R": [
+              124.5834399752261,
+              -308.27099780241076,
+              243.3274587494721
+            ],
+            "hand_R": [
+              111.28635369189877,
+              -342.16957403340314,
+              155.13353423843176
+            ],
+            "thigh_L": [
+              317.8428124527595,
+              -226.80148195498344,
+              190.83456910604528
+            ],
+            "shin_L": [
+              341.1373207992888,
+              -267.8598607240742,
+              134.32065830668006
+            ],
+            "foot_L": [
+              361.7302398281419,
+              -210.48549627484638,
+              115.00009615572493
+            ],
+            "thigh_R": [
+              215.3256050054497,
+              -288.4000346827509,
+              190.83456910604525
+            ],
+            "shin_R": [
+              179.8691838184792,
+              -279.2309164852458,
+              126.95173754557374
+            ],
+            "foot_R": [
+              131.82193026874364,
+              -238.77068522756815,
+              114.96836386312094
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 120.00009615572493,
+            "foot_R": 119.96836386312094
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        }
+      ],
+      "max_bone_displacement_cm": 56.09355593491038,
+      "target_capture_fraction": 0.55
+    },
+    {
+      "clip": "Attack",
+      "length_seconds": 1.7666666507720947,
+      "samples": [
+        {
+          "game_seconds": 11.224870510399342,
+          "animation_position": 0.4000000059604645,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Attack/A_Teddy_Attack.A_Teddy_Attack",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "pelvis": [
+              264.2150374444994,
+              -253.65779515972466,
+              135.1499956503242
+            ],
+            "spine": [
+              264.21503225212945,
+              -253.6577865181699,
+              194.94999604705148
+            ],
+            "head": [
+              257.45469108077816,
+              -242.40668941300052,
+              292.4067602557463
+            ],
+            "upperarm_L": [
+              356.9459979279294,
+              -193.63495092505858,
+              296.5002711660255
+            ],
+            "forearm_L": [
+              304.5088357402878,
+              -119.61835980469843,
+              255.25460040771713
+            ],
+            "hand_L": [
+              237.72692948631192,
+              -52.89747312415017,
+              241.37675574723983
+            ],
+            "upperarm_R": [
+              167.68346267416203,
+              -307.35535501636275,
+              296.50027116602547
+            ],
+            "forearm_R": [
+              126.94907997001697,
+              -226.30722211078788,
+              255.25433422786267
+            ],
+            "hand_R": [
+              99.39066011473022,
+              -136.01864159897667,
+              241.37629333530003
+            ],
+            "thigh_L": [
+              317.84281648896683,
+              -226.80148867236045,
+              144.34997711535345
+            ],
+            "shin_L": [
+              331.6347166074714,
+              -205.09821215288454,
+              75.34999175643028
+            ],
+            "foot_L": [
+              337.13451174782256,
+              -169.59453542100687,
+              22.449979243736756
+            ],
+            "thigh_R": [
+              215.325609041657,
+              -288.4000414001279,
+              144.34997711535343
+            ],
+            "shin_R": [
+              189.68784837921285,
+              -290.3884952655395,
+              75.34999175643026
+            ],
+            "foot_R": [
+              155.75796505161702,
+              -278.57655954597016,
+              22.44997924373667
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 27.449979243736756,
+            "foot_R": 27.44997924373667
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 11.273933708667755,
+          "animation_position": 0.4490632116794586,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Attack/A_Teddy_Attack.A_Teddy_Attack",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "pelvis": [
+              264.2150374444994,
+              -253.65779515972466,
+              135.1499956503242
+            ],
+            "spine": [
+              264.21503225212945,
+              -253.6577865181699,
+              194.94999604705148
+            ],
+            "head": [
+              257.789281441244,
+              -242.96354128491603,
+              292.4920543309507
+            ],
+            "upperarm_L": [
+              357.29452802030465,
+              -194.2150024067804,
+              296.5226008633718
+            ],
+            "forearm_L": [
+              299.63118287519774,
+              -119.97512764057075,
+              263.4666374520875
+            ],
+            "hand_L": [
+              229.4768437790973,
+              -55.43109732288542,
+              259.40078562094743
+            ],
+            "upperarm_R": [
+              168.03199276653726,
+              -307.9354064980846,
+              296.52260086337174
+            ],
+            "forearm_R": [
+              129.55401113495333,
+              -222.16800989979455,
+              263.4663502292556
+            ],
+            "hand_R": [
+              105.5001877953195,
+              -129.9238936155617,
+              259.40053069805134
+            ],
+            "thigh_L": [
+              317.84281648896683,
+              -226.80148867236045,
+              144.34997711535345
+            ],
+            "shin_L": [
+              331.6347166074714,
+              -205.09821215288454,
+              75.34999175643028
+            ],
+            "foot_L": [
+              337.13451174782256,
+              -169.59453542100687,
+              22.449979243736756
+            ],
+            "thigh_R": [
+              215.325609041657,
+              -288.4000414001279,
+              144.34997711535343
+            ],
+            "shin_R": [
+              189.68784837921285,
+              -290.3884952655395,
+              75.34999175643026
+            ],
+            "foot_R": [
+              155.75796505161702,
+              -278.57655954597016,
+              22.44997924373667
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 27.449979243736756,
+            "foot_R": 27.44997924373667
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 11.890609309077263,
+          "animation_position": 1.065738320350647,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Attack/A_Teddy_Attack.A_Teddy_Attack",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "pelvis": [
+              264.2150374444994,
+              -253.65779515972466,
+              135.1499956503242
+            ],
+            "spine": [
+              264.21503225212945,
+              -253.6577865181699,
+              194.94999604705148
+            ],
+            "head": [
+              242.05330496547586,
+              -216.77447850154476,
+              283.3727856562631
+            ],
+            "upperarm_L": [
+              340.63815768323065,
+              -166.49414700435642,
+              290.219282863903
+            ],
+            "forearm_L": [
+              331.7000299436598,
+              -123.53825730714476,
+              200.75298469243234
+            ],
+            "hand_L": [
+              299.38476311483737,
+              -73.67450860883784,
+              126.09761388558528
+            ],
+            "upperarm_R": [
+              151.37562242946325,
+              -280.21455109566057,
+              290.219282863903
+            ],
+            "forearm_R": [
+              117.64422457706405,
+              -252.1558883742791,
+              200.7529688631279
+            ],
+            "hand_R": [
+              88.78840854280742,
+              -200.2134262194273,
+              126.09764888482601
+            ],
+            "thigh_L": [
+              317.84281648896683,
+              -226.80148867236045,
+              144.34997711535345
+            ],
+            "shin_L": [
+              331.6347166074714,
+              -205.09821215288454,
+              75.34999175643028
+            ],
+            "foot_L": [
+              337.13451174782256,
+              -169.59453542100687,
+              22.449979243736756
+            ],
+            "thigh_R": [
+              215.325609041657,
+              -288.4000414001279,
+              144.34997711535343
+            ],
+            "shin_R": [
+              189.68784837921285,
+              -290.3884952655395,
+              75.34999175643026
+            ],
+            "foot_R": [
+              155.75796505161702,
+              -278.57655954597016,
+              22.44997924373667
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 27.449979243736756,
+            "foot_R": 27.44997924373667
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        }
+      ],
+      "max_bone_displacement_cm": 132.3731626866049,
+      "target_capture_fraction": 0.6
+    },
+    {
+      "clip": "Hit",
+      "length_seconds": 0.5,
+      "samples": [
+        {
+          "game_seconds": 12.290609315037727,
+          "animation_position": 0.4000000059604645,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Hit/A_Teddy_Hit.A_Teddy_Hit",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "pelvis": [
+              264.2150374444994,
+              -253.65779515972466,
+              135.1499956503242
+            ],
+            "spine": [
+              264.21503225212945,
+              -253.6577865181699,
+              194.94999604705148
+            ],
+            "head": [
+              261.2318011970707,
+              -248.69285628212475,
+              293.11597838857085
+            ],
+            "upperarm_L": [
+              360.86732081727087,
+              -200.16112815346105,
+              296.4914842352479
+            ],
+            "forearm_L": [
+              358.7516749214059,
+              -143.0519304210519,
+              214.86195114532813
+            ],
+            "hand_L": [
+              338.3698329277429,
+              -82.3367423791766,
+              144.13472334189453
+            ],
+            "upperarm_R": [
+              171.60478556350353,
+              -313.88153224476525,
+              296.49148423524787
+            ],
+            "forearm_R": [
+              122.17359248060168,
+              -285.2023834847869,
+              214.86195114532808
+            ],
+            "hand_R": [
+              78.13395856227083,
+              -238.70223094359258,
+              144.13472334189447
+            ],
+            "thigh_L": [
+              317.84281648896683,
+              -226.80148867236045,
+              144.34997711535345
+            ],
+            "shin_L": [
+              331.6347166074714,
+              -205.09821215288454,
+              75.34999175643028
+            ],
+            "foot_L": [
+              337.13451174782256,
+              -169.59453542100687,
+              22.449979243736756
+            ],
+            "thigh_R": [
+              215.325609041657,
+              -288.4000414001279,
+              144.34997711535343
+            ],
+            "shin_R": [
+              189.68784837921285,
+              -290.3884952655395,
+              75.34999175643026
+            ],
+            "foot_R": [
+              155.75796505161702,
+              -278.57655954597016,
+              22.44997924373667
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 27.449979243736756,
+            "foot_R": 27.44997924373667
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 12.30885111540556,
+          "animation_position": 0.41824179887771606,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Hit/A_Teddy_Hit.A_Teddy_Hit",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "pelvis": [
+              264.2150374444994,
+              -253.65779515972466,
+              135.1499956503242
+            ],
+            "spine": [
+              264.21503225212945,
+              -253.6577865181699,
+              194.94999604705148
+            ],
+            "head": [
+              260.13243586228623,
+              -246.86320511183555,
+              292.9667107394063
+            ],
+            "upperarm_L": [
+              359.72894407150585,
+              -198.26655109229935,
+              296.55282500126685
+            ],
+            "forearm_L": [
+              358.53415979683984,
+              -142.68992446213574,
+              213.85380349180292
+            ],
+            "hand_L": [
+              338.9525295124297,
+              -83.30651234950665,
+              141.78255807422988
+            ],
+            "upperarm_R": [
+              170.46640881773848,
+              -311.9869551836035,
+              296.55282500126685
+            ],
+            "forearm_R": [
+              121.95607735603568,
+              -284.8403775258706,
+              213.85380349180292
+            ],
+            "hand_R": [
+              78.71665514695775,
+              -239.67200091392266,
+              141.78255807422988
+            ],
+            "thigh_L": [
+              317.84281648896683,
+              -226.80148867236045,
+              144.34997711535345
+            ],
+            "shin_L": [
+              331.6347166074714,
+              -205.09821215288454,
+              75.34999175643028
+            ],
+            "foot_L": [
+              337.13451174782256,
+              -169.59453542100687,
+              22.449979243736756
+            ],
+            "thigh_R": [
+              215.325609041657,
+              -288.4000414001279,
+              144.34997711535343
+            ],
+            "shin_R": [
+              189.68784837921285,
+              -290.3884952655395,
+              75.34999175643026
+            ],
+            "foot_R": [
+              155.75796505161702,
+              -278.57655954597016,
+              22.44997924373667
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 27.449979243736756,
+            "foot_R": 27.44997924373667
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 12.317184615880251,
+          "animation_position": 0.42657530307769775,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Hit/A_Teddy_Hit.A_Teddy_Hit",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "pelvis": [
+              264.2150374444994,
+              -253.65779515972466,
+              135.1499956503242
+            ],
+            "spine": [
+              264.21503225212945,
+              -253.6577865181699,
+              194.94999604705148
+            ],
+            "head": [
+              259.6308087237802,
+              -246.02835735742983,
+              292.8830701036517
+            ],
+            "upperarm_L": [
+              359.2087113082126,
+              -197.40073837830397,
+              296.5648406246133
+            ],
+            "forearm_L": [
+              358.43855987598226,
+              -142.53081947533806,
+              213.39022934191615
+            ],
+            "hand_L": [
+              339.2274740612547,
+              -83.76409692090024,
+              140.71629455919896
+            ],
+            "upperarm_R": [
+              169.9461760544453,
+              -311.1211424696081,
+              296.5648406246133
+            ],
+            "forearm_R": [
+              121.86047743517801,
+              -284.681272539073,
+              213.39022934191615
+            ],
+            "hand_R": [
+              78.99159969578272,
+              -240.12958548531626,
+              140.71629455919896
+            ],
+            "thigh_L": [
+              317.84281648896683,
+              -226.80148867236045,
+              144.34997711535345
+            ],
+            "shin_L": [
+              331.6347166074714,
+              -205.09821215288454,
+              75.34999175643028
+            ],
+            "foot_L": [
+              337.13451174782256,
+              -169.59453542100687,
+              22.449979243736756
+            ],
+            "thigh_R": [
+              215.325609041657,
+              -288.4000414001279,
+              144.34997711535343
+            ],
+            "shin_R": [
+              189.68784837921285,
+              -290.3884952655395,
+              75.34999175643026
+            ],
+            "foot_R": [
+              155.75796505161702,
+              -278.57655954597016,
+              22.44997924373667
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 27.449979243736756,
+            "foot_R": 27.44997924373667
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        }
+      ],
+      "max_bone_displacement_cm": 3.8024393018208853,
+      "target_capture_fraction": 0.6
+    },
+    {
+      "clip": "Defeat",
+      "length_seconds": 2.366666555404663,
+      "samples": [
+        {
+          "game_seconds": 12.717184621840715,
+          "animation_position": 0.4000000059604645,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              246.2596713619976,
+              -223.77504779052452,
+              7.932598659847223
+            ],
+            "pelvis": [
+              247.1403996368823,
+              -225.2408257879411,
+              148.65513637387514
+            ],
+            "spine": [
+              241.46758063899935,
+              -215.79966952267628,
+              207.43203439036452
+            ],
+            "head": [
+              221.1725700730378,
+              -182.0230998436595,
+              297.52846148765946
+            ],
+            "upperarm_L": [
+              319.89728893860183,
+              -131.97554470654538,
+              304.057745872311
+            ],
+            "forearm_L": [
+              328.6468311861421,
+              -98.06540929968517,
+              210.76859686332224
+            ],
+            "hand_L": [
+              317.77919396363734,
+              -58.6339022531252,
+              124.56450758670591
+            ],
+            "upperarm_R": [
+              130.63475368483444,
+              -245.69594879784955,
+              304.057745872311
+            ],
+            "forearm_R": [
+              96.58763420535627,
+              -237.50111253710196,
+              210.76811402887375
+            ],
+            "hand_R": [
+              66.87536773258387,
+              -209.39326518760814,
+              124.56356407237644
+            ],
+            "thigh_L": [
+              299.85490632631826,
+              -196.86457885830004,
+              158.54497646458404
+            ],
+            "shin_L": [
+              320.29369316853416,
+              -186.22357953460505,
+              88.60734835279548
+            ],
+            "foot_L": [
+              331.0549488934593,
+              -159.4764437008298,
+              31.528838983480497
+            ],
+            "thigh_R": [
+              197.3376988790084,
+              -258.4631315860675,
+              158.54497646458404
+            ],
+            "shin_R": [
+              178.34682494027564,
+              -271.51386264726,
+              88.60734835279548
+            ],
+            "foot_R": [
+              149.67840219725383,
+              -268.4584678257931,
+              31.528838983480497
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 36.5288389834805,
+            "foot_R": 36.5288389834805
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 12.916478421539068,
+          "animation_position": 0.5992937088012695,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              242.44320757224142,
+              -217.42338541009966,
+              20.726515133532008
+            ],
+            "pelvis": [
+              229.3332420254813,
+              -195.60473873630457,
+              159.1383364090096
+            ],
+            "spine": [
+              217.93014234076452,
+              -176.62679389583278,
+              214.6887367195484
+            ],
+            "head": [
+              187.40117197175437,
+              -125.81805489340229,
+              293.1525137000325
+            ],
+            "upperarm_L": [
+              285.23171149278994,
+              -74.28233541964784,
+              301.35096478596137
+            ],
+            "forearm_L": [
+              299.90014725914824,
+              -55.79696437674818,
+              204.53957524294873
+            ],
+            "hand_L": [
+              294.4378370668213,
+              -31.19709724669707,
+              112.51184029679047
+            ],
+            "upperarm_R": [
+              95.96917623902254,
+              -188.002739510952,
+              301.35096478596137
+            ],
+            "forearm_R": [
+              72.76090058620696,
+              -192.27586137147054,
+              204.53963556018084
+            ],
+            "hand_R": [
+              53.60461256108397,
+              -175.90399841125787,
+              112.51196022778821
+            ],
+            "thigh_L": [
+              281.03834047781055,
+              -165.54855438833115,
+              169.38763486392475
+            ],
+            "shin_L": [
+              308.40855892370786,
+              -166.44339446595907,
+              101.03328530553468
+            ],
+            "foot_L": [
+              325.00588008399325,
+              -149.40910259390887,
+              41.673939262718555
+            ],
+            "thigh_R": [
+              178.52113303050066,
+              -227.1471071160986,
+              169.38763486392475
+            ],
+            "shin_R": [
+              166.46169069544933,
+              -251.73367757861408,
+              101.03328530553465
+            ],
+            "foot_R": [
+              143.6293333877877,
+              -258.3911267188722,
+              41.67393926271851
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 46.673939262718555,
+            "foot_R": 46.67393926271851
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        },
+        {
+          "game_seconds": 14.595948319882154,
+          "animation_position": 2.2787625789642334,
+          "playing": true,
+          "animation": "/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat",
+          "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+          "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+          "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+          "actor_location": [
+            250.0,
+            -230.0,
+            227.15000200271606
+          ],
+          "actor_rotation": [
+            0.0,
+            121.00000000000003,
+            -0.0
+          ],
+          "bone_names": [
+            "TeddyRig",
+            "root",
+            "pelvis",
+            "spine",
+            "head",
+            "upperarm_L",
+            "forearm_L",
+            "hand_L",
+            "upperarm_R",
+            "forearm_R",
+            "hand_R",
+            "thigh_L",
+            "shin_L",
+            "foot_L",
+            "thigh_R",
+            "shin_R",
+            "foot_R"
+          ],
+          "bone_world_positions": {
+            "TeddyRig": [
+              250.0,
+              -230.0,
+              -2.8499979972839355
+            ],
+            "root": [
+              221.5698867320158,
+              -182.6843458071927,
+              163.1569146741581
+            ],
+            "pelvis": [
+              153.1646991070452,
+              -68.83899555661665,
+              209.69424743425645
+            ],
+            "spine": [
+              122.66516009810056,
+              -18.07923856288076,
+              218.0168214127461
+            ],
+            "head": [
+              75.06425002465795,
+              61.141979413561785,
+              184.42720588411635
+            ],
+            "upperarm_L": [
+              166.60008808505262,
+              123.15384137578258,
+              192.7745869957252
+            ],
+            "forearm_L": [
+              209.79020852535893,
+              61.21505736199913,
+              127.75522351898763
+            ],
+            "hand_L": [
+              233.5479669229826,
+              4.392662694292596,
+              54.87944788043083
+            ],
+            "upperarm_R": [
+              -22.662447168714664,
+              9.433437284478487,
+              192.7745869957252
+            ],
+            "forearm_R": [
+              11.749719740843005,
+              -57.77967332158576,
+              127.75522351898763
+            ],
+            "hand_R": [
+              50.76732436995238,
+              -105.4330273363764,
+              54.8794478804308
+            ],
+            "thigh_L": [
+              200.06080241820362,
+              -30.77929926446933,
+              215.52987548280532
+            ],
+            "shin_L": [
+              254.14308426495555,
+              -76.13047839138568,
+              194.53882876907306
+            ],
+            "foot_L": [
+              298.85993100840295,
+              -105.89493600082253,
+              159.84515769710788
+            ],
+            "thigh_R": [
+              97.54359497089376,
+              -92.3778519922368,
+              215.52987548280532
+            ],
+            "shin_R": [
+              112.196216036697,
+              -161.42076150404066,
+              194.53882876907312
+            ],
+            "foot_R": [
+              117.48338431219742,
+              -214.8769601257858,
+              159.84515769710796
+            ]
+          },
+          "render_bounds": {
+            "origin": [
+              242.35157161896072,
+              -230.75330234031117,
+              228.20697776973248
+            ],
+            "extent": [
+              240.75398388879148,
+              236.92993699768255,
+              230.60482843220234
+            ],
+            "min": [
+              1.5975877301692378,
+              -467.6832393379937,
+              -2.397850662469864
+            ],
+            "max": [
+              483.10555550775223,
+              6.17663465737138,
+              458.8118062019348
+            ],
+            "sphere_radius": 337.3910827636719
+          },
+          "bounds_min_z_relative_to_floor": 2.602149337530136,
+          "foot_bone_z_relative_to_floor": {
+            "foot_L": 164.84515769710788,
+            "foot_R": 164.84515769710796
+          },
+          "camera": [
+            -1678.7905600193246,
+            170.0,
+            1874.0
+          ],
+          "camera_rotation": [
+            -46.000000000000114,
+            0.0,
+            -0.0
+          ],
+          "fov": 54.0
+        }
+      ],
+      "max_bone_displacement_cm": 317.76560053257873,
+      "target_capture_fraction": 0.96
+    }
+  ],
+  "captures": [
+    {
+      "clip": "Idle",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T074830-verify_parity_runtime\\01-Idle.png",
+      "held_state": {
+        "game_seconds": 9.494030389934778,
+        "animation_position": 1.484347939491272,
+        "playing": true,
+        "animation": "/Game/TeddyEncounter/Teddy/Idle/A_Teddy_Idle.A_Teddy_Idle",
+        "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+        "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+        "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+        "actor_location": [
+          250.0,
+          -230.0,
+          227.15000200271606
+        ],
+        "actor_rotation": [
+          0.0,
+          121.00000000000003,
+          -0.0
+        ],
+        "bone_names": [
+          "TeddyRig",
+          "root",
+          "pelvis",
+          "spine",
+          "head",
+          "upperarm_L",
+          "forearm_L",
+          "hand_L",
+          "upperarm_R",
+          "forearm_R",
+          "hand_R",
+          "thigh_L",
+          "shin_L",
+          "foot_L",
+          "thigh_R",
+          "shin_R",
+          "foot_R"
+        ],
+        "bone_world_positions": {
+          "TeddyRig": [
+            250.0,
+            -230.0,
+            -2.8499979972839355
+          ],
+          "root": [
+            250.0,
+            -230.0,
+            -2.8499979972839355
+          ],
+          "pelvis": [
+            264.2150374444994,
+            -253.65779515972466,
+            135.1499956503242
+          ],
+          "spine": [
+            264.21503225212945,
+            -253.6577865181699,
+            194.94999604705148
+          ],
+          "head": [
+            254.7393967273328,
+            -237.8876807320192,
+            291.55033964761526
+          ],
+          "upperarm_L": [
+            354.1090644739663,
+            -188.91350078483407,
+            296.1501521750086
+          ],
+          "forearm_L": [
+            357.6278742125472,
+            -141.18161195904747,
+            208.75105685462893
+          ],
+          "hand_L": [
+            342.2103840085796,
+            -88.72849274393221,
+            130.55217211073256
+          ],
+          "upperarm_R": [
+            164.846529220199,
+            -302.6339048761383,
+            296.15015217500854
+          ],
+          "forearm_R": [
+            121.049791771743,
+            -283.3320650227824,
+            208.75105685462887
+          ],
+          "hand_R": [
+            81.97450964310755,
+            -245.09398130834822,
+            130.55217211073256
+          ],
+          "thigh_L": [
+            317.84281648896683,
+            -226.80148867236045,
+            144.34997711535345
+          ],
+          "shin_L": [
+            331.6347166074714,
+            -205.09821215288454,
+            75.34999175643028
+          ],
+          "foot_L": [
+            337.13451174782256,
+            -169.59453542100687,
+            22.449979243736756
+          ],
+          "thigh_R": [
+            215.325609041657,
+            -288.4000414001279,
+            144.34997711535343
+          ],
+          "shin_R": [
+            189.68784837921285,
+            -290.3884952655395,
+            75.34999175643026
+          ],
+          "foot_R": [
+            155.75796505161702,
+            -278.57655954597016,
+            22.44997924373667
+          ]
+        },
+        "render_bounds": {
+          "origin": [
+            242.35157161896072,
+            -230.75330234031117,
+            228.20697776973248
+          ],
+          "extent": [
+            240.75398388879148,
+            236.92993699768255,
+            230.60482843220234
+          ],
+          "min": [
+            1.5975877301692378,
+            -467.6832393379937,
+            -2.397850662469864
+          ],
+          "max": [
+            483.10555550775223,
+            6.17663465737138,
+            458.8118062019348
+          ],
+          "sphere_radius": 337.3910827636719
+        },
+        "bounds_min_z_relative_to_floor": 2.602149337530136,
+        "foot_bone_z_relative_to_floor": {
+          "foot_L": 27.449979243736756,
+          "foot_R": 27.44997924373667
+        },
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "camera_rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 75,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1329840,
+        "sha256": "48ca30e11fdcf312316ff4bcc778d4a46a668d3f27a62f4bbdcf3ba5a312e620",
+        "pixel_sha256": "20c6384ffe06f6b6ada855ce9f6f85402d9feb9ae6e4f6d56502c9c3b734c87f",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      },
+      "kind": "staged-animation-on-saved-gameplay-camera"
+    },
+    {
+      "clip": "Walk",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T074830-verify_parity_runtime\\02-Walk.png",
+      "held_state": {
+        "game_seconds": 10.160816997289658,
+        "animation_position": 0.6667864918708801,
+        "playing": true,
+        "animation": "/Game/TeddyEncounter/Teddy/Walk/A_Teddy_Walk.A_Teddy_Walk",
+        "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+        "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+        "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+        "actor_location": [
+          250.0,
+          -230.0,
+          227.15000200271606
+        ],
+        "actor_rotation": [
+          0.0,
+          121.00000000000003,
+          -0.0
+        ],
+        "bone_names": [
+          "TeddyRig",
+          "root",
+          "pelvis",
+          "spine",
+          "head",
+          "upperarm_L",
+          "forearm_L",
+          "hand_L",
+          "upperarm_R",
+          "forearm_R",
+          "hand_R",
+          "thigh_L",
+          "shin_L",
+          "foot_L",
+          "thigh_R",
+          "shin_R",
+          "foot_R"
+        ],
+        "bone_world_positions": {
+          "TeddyRig": [
+            250.0,
+            -230.0,
+            -2.8499979972839355
+          ],
+          "root": [
+            249.99999797038248,
+            -229.9999966221492,
+            20.524901931293027
+          ],
+          "pelvis": [
+            264.2150362402775,
+            -253.65779315556293,
+            149.01889721586411
+          ],
+          "spine": [
+            264.2150310479076,
+            -253.65778451400817,
+            208.8188976125914
+          ],
+          "head": [
+            252.49140965084305,
+            -232.51765482777577,
+            304.1381606554817
+          ],
+          "upperarm_L": [
+            351.8228093351328,
+            -183.43147154251517,
+            308.35468672660653
+          ],
+          "forearm_L": [
+            363.482371697292,
+            -144.97654482333942,
+            217.1703113532997
+          ],
+          "hand_L": [
+            350.6897521327319,
+            -95.71159696292813,
+            136.4646232528869
+          ],
+          "upperarm_R": [
+            162.38511895812695,
+            -296.84471386894256,
+            310.20819340471553
+          ],
+          "forearm_R": [
+            119.97202000288146,
+            -275.1706454215796,
+            222.68287769762446
+          ],
+          "hand_R": [
+            81.59090959260689,
+            -228.55527437531123,
+            148.80465465005273
+          ],
+          "thigh_L": [
+            317.84281528474503,
+            -226.80148666819872,
+            158.21887868089337
+          ],
+          "shin_L": [
+            343.04990313414567,
+            -242.0557868181316,
+            90.73439343295209
+          ],
+          "foot_L": [
+            353.74487678242764,
+            -197.24377338524755,
+            46.38722754082081
+          ],
+          "thigh_R": [
+            215.32560783743511,
+            -288.4000393959662,
+            158.21887868089334
+          ],
+          "shin_R": [
+            175.66293057890886,
+            -269.46753222758235,
+            99.13691099957514
+          ],
+          "foot_R": [
+            141.02709556849834,
+            -252.70969472936918,
+            48.06143794816092
+          ]
+        },
+        "render_bounds": {
+          "origin": [
+            242.35157161896072,
+            -230.75330234031117,
+            228.20697776973248
+          ],
+          "extent": [
+            240.75398388879148,
+            236.92993699768255,
+            230.60482843220234
+          ],
+          "min": [
+            1.5975877301692378,
+            -467.6832393379937,
+            -2.397850662469864
+          ],
+          "max": [
+            483.10555550775223,
+            6.17663465737138,
+            458.8118062019348
+          ],
+          "sphere_radius": 337.3910827636719
+        },
+        "bounds_min_z_relative_to_floor": 2.602149337530136,
+        "foot_bone_z_relative_to_floor": {
+          "foot_L": 51.38722754082081,
+          "foot_R": 53.06143794816092
+        },
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "camera_rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 73,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1332680,
+        "sha256": "496aefdf12926a8f82fe00a064788da13b69a4b89f507f06fc28709d63cee58f",
+        "pixel_sha256": "2ab720725581143a86e2686e3ab9136f80c666014802ba79801a6429d1e4c244",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      },
+      "kind": "staged-animation-on-saved-gameplay-camera"
+    },
+    {
+      "clip": "Crawl",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T074830-verify_parity_runtime\\03-Crawl.png",
+      "held_state": {
+        "game_seconds": 10.824870504438877,
+        "animation_position": 0.6640534400939941,
+        "playing": true,
+        "animation": "/Game/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.A_Teddy_Crawl",
+        "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+        "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+        "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+        "actor_location": [
+          250.0,
+          -230.0,
+          227.15000200271606
+        ],
+        "actor_rotation": [
+          0.0,
+          121.00000000000003,
+          -0.0
+        ],
+        "bone_names": [
+          "TeddyRig",
+          "root",
+          "pelvis",
+          "spine",
+          "head",
+          "upperarm_L",
+          "forearm_L",
+          "hand_L",
+          "upperarm_R",
+          "forearm_R",
+          "hand_R",
+          "thigh_L",
+          "shin_L",
+          "foot_L",
+          "thigh_R",
+          "shin_R",
+          "foot_R"
+        ],
+        "bone_world_positions": {
+          "TeddyRig": [
+            250.0,
+            -230.0,
+            -2.8499979972839355
+          ],
+          "root": [
+            249.99999195972828,
+            -229.99998661874076,
+            89.74899944503619
+          ],
+          "pelvis": [
+            264.2150334082921,
+            -253.65778844234765,
+            181.63458764101603
+          ],
+          "spine": [
+            264.21502821592213,
+            -253.6577798007929,
+            241.4345880377433
+          ],
+          "head": [
+            237.60262767120153,
+            -207.91250149745332,
+            324.31558669877245
+          ],
+          "upperarm_L": [
+            335.8836745349285,
+            -157.03389489167233,
+            331.1098977077611
+          ],
+          "forearm_L": [
+            388.2502146400044,
+            -165.0177326425969,
+            246.71012929655768
+          ],
+          "hand_L": [
+            432.78216682933356,
+            -178.3069353219399,
+            163.37708290361485
+          ],
+          "upperarm_R": [
+            146.4529235874656,
+            -270.45991070979375,
+            332.8895292653043
+          ],
+          "forearm_R": [
+            124.5834399752261,
+            -308.27099780241076,
+            243.3274587494721
+          ],
+          "hand_R": [
+            111.28635369189877,
+            -342.16957403340314,
+            155.13353423843176
+          ],
+          "thigh_L": [
+            317.8428124527595,
+            -226.80148195498344,
+            190.83456910604528
+          ],
+          "shin_L": [
+            341.1373207992888,
+            -267.8598607240742,
+            134.32065830668006
+          ],
+          "foot_L": [
+            361.7302398281419,
+            -210.48549627484638,
+            115.00009615572493
+          ],
+          "thigh_R": [
+            215.3256050054497,
+            -288.4000346827509,
+            190.83456910604525
+          ],
+          "shin_R": [
+            179.8691838184792,
+            -279.2309164852458,
+            126.95173754557374
+          ],
+          "foot_R": [
+            131.82193026874364,
+            -238.77068522756815,
+            114.96836386312094
+          ]
+        },
+        "render_bounds": {
+          "origin": [
+            242.35157161896072,
+            -230.75330234031117,
+            228.20697776973248
+          ],
+          "extent": [
+            240.75398388879148,
+            236.92993699768255,
+            230.60482843220234
+          ],
+          "min": [
+            1.5975877301692378,
+            -467.6832393379937,
+            -2.397850662469864
+          ],
+          "max": [
+            483.10555550775223,
+            6.17663465737138,
+            458.8118062019348
+          ],
+          "sphere_radius": 337.3910827636719
+        },
+        "bounds_min_z_relative_to_floor": 2.602149337530136,
+        "foot_bone_z_relative_to_floor": {
+          "foot_L": 120.00009615572493,
+          "foot_R": 119.96836386312094
+        },
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "camera_rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 73,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1329652,
+        "sha256": "47533866fded84b3a57e155fa42c391a962f23d057f81c452160ddf4f500b2e9",
+        "pixel_sha256": "90a529d06bebe6e57b1fa96f3966cb1063f92292a4bb359147e774707b9c8ae5",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      },
+      "kind": "staged-animation-on-saved-gameplay-camera"
+    },
+    {
+      "clip": "Attack",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T074830-verify_parity_runtime\\04-Attack.png",
+      "held_state": {
+        "game_seconds": 11.890609309077263,
+        "animation_position": 1.065738320350647,
+        "playing": true,
+        "animation": "/Game/TeddyEncounter/Teddy/Attack/A_Teddy_Attack.A_Teddy_Attack",
+        "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+        "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+        "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+        "actor_location": [
+          250.0,
+          -230.0,
+          227.15000200271606
+        ],
+        "actor_rotation": [
+          0.0,
+          121.00000000000003,
+          -0.0
+        ],
+        "bone_names": [
+          "TeddyRig",
+          "root",
+          "pelvis",
+          "spine",
+          "head",
+          "upperarm_L",
+          "forearm_L",
+          "hand_L",
+          "upperarm_R",
+          "forearm_R",
+          "hand_R",
+          "thigh_L",
+          "shin_L",
+          "foot_L",
+          "thigh_R",
+          "shin_R",
+          "foot_R"
+        ],
+        "bone_world_positions": {
+          "TeddyRig": [
+            250.0,
+            -230.0,
+            -2.8499979972839355
+          ],
+          "root": [
+            250.0,
+            -230.0,
+            -2.8499979972839355
+          ],
+          "pelvis": [
+            264.2150374444994,
+            -253.65779515972466,
+            135.1499956503242
+          ],
+          "spine": [
+            264.21503225212945,
+            -253.6577865181699,
+            194.94999604705148
+          ],
+          "head": [
+            242.05330496547586,
+            -216.77447850154476,
+            283.3727856562631
+          ],
+          "upperarm_L": [
+            340.63815768323065,
+            -166.49414700435642,
+            290.219282863903
+          ],
+          "forearm_L": [
+            331.7000299436598,
+            -123.53825730714476,
+            200.75298469243234
+          ],
+          "hand_L": [
+            299.38476311483737,
+            -73.67450860883784,
+            126.09761388558528
+          ],
+          "upperarm_R": [
+            151.37562242946325,
+            -280.21455109566057,
+            290.219282863903
+          ],
+          "forearm_R": [
+            117.64422457706405,
+            -252.1558883742791,
+            200.7529688631279
+          ],
+          "hand_R": [
+            88.78840854280742,
+            -200.2134262194273,
+            126.09764888482601
+          ],
+          "thigh_L": [
+            317.84281648896683,
+            -226.80148867236045,
+            144.34997711535345
+          ],
+          "shin_L": [
+            331.6347166074714,
+            -205.09821215288454,
+            75.34999175643028
+          ],
+          "foot_L": [
+            337.13451174782256,
+            -169.59453542100687,
+            22.449979243736756
+          ],
+          "thigh_R": [
+            215.325609041657,
+            -288.4000414001279,
+            144.34997711535343
+          ],
+          "shin_R": [
+            189.68784837921285,
+            -290.3884952655395,
+            75.34999175643026
+          ],
+          "foot_R": [
+            155.75796505161702,
+            -278.57655954597016,
+            22.44997924373667
+          ]
+        },
+        "render_bounds": {
+          "origin": [
+            242.35157161896072,
+            -230.75330234031117,
+            228.20697776973248
+          ],
+          "extent": [
+            240.75398388879148,
+            236.92993699768255,
+            230.60482843220234
+          ],
+          "min": [
+            1.5975877301692378,
+            -467.6832393379937,
+            -2.397850662469864
+          ],
+          "max": [
+            483.10555550775223,
+            6.17663465737138,
+            458.8118062019348
+          ],
+          "sphere_radius": 337.3910827636719
+        },
+        "bounds_min_z_relative_to_floor": 2.602149337530136,
+        "foot_bone_z_relative_to_floor": {
+          "foot_L": 27.449979243736756,
+          "foot_R": 27.44997924373667
+        },
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "camera_rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 74,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1315260,
+        "sha256": "4a9e3120e27a9f9f23827ecab30590a085dc8956bca061b7d624a7a2d37ce03a",
+        "pixel_sha256": "71fcfd3cc3a14d3475fdaffc3733590a5cf81a0054974400df566fddb0e71cee",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      },
+      "kind": "staged-animation-on-saved-gameplay-camera"
+    },
+    {
+      "clip": "Hit",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T074830-verify_parity_runtime\\05-Hit.png",
+      "held_state": {
+        "game_seconds": 12.317184615880251,
+        "animation_position": 0.42657530307769775,
+        "playing": true,
+        "animation": "/Game/TeddyEncounter/Teddy/Hit/A_Teddy_Hit.A_Teddy_Hit",
+        "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+        "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+        "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+        "actor_location": [
+          250.0,
+          -230.0,
+          227.15000200271606
+        ],
+        "actor_rotation": [
+          0.0,
+          121.00000000000003,
+          -0.0
+        ],
+        "bone_names": [
+          "TeddyRig",
+          "root",
+          "pelvis",
+          "spine",
+          "head",
+          "upperarm_L",
+          "forearm_L",
+          "hand_L",
+          "upperarm_R",
+          "forearm_R",
+          "hand_R",
+          "thigh_L",
+          "shin_L",
+          "foot_L",
+          "thigh_R",
+          "shin_R",
+          "foot_R"
+        ],
+        "bone_world_positions": {
+          "TeddyRig": [
+            250.0,
+            -230.0,
+            -2.8499979972839355
+          ],
+          "root": [
+            250.0,
+            -230.0,
+            -2.8499979972839355
+          ],
+          "pelvis": [
+            264.2150374444994,
+            -253.65779515972466,
+            135.1499956503242
+          ],
+          "spine": [
+            264.21503225212945,
+            -253.6577865181699,
+            194.94999604705148
+          ],
+          "head": [
+            259.6308087237802,
+            -246.02835735742983,
+            292.8830701036517
+          ],
+          "upperarm_L": [
+            359.2087113082126,
+            -197.40073837830397,
+            296.5648406246133
+          ],
+          "forearm_L": [
+            358.43855987598226,
+            -142.53081947533806,
+            213.39022934191615
+          ],
+          "hand_L": [
+            339.2274740612547,
+            -83.76409692090024,
+            140.71629455919896
+          ],
+          "upperarm_R": [
+            169.9461760544453,
+            -311.1211424696081,
+            296.5648406246133
+          ],
+          "forearm_R": [
+            121.86047743517801,
+            -284.681272539073,
+            213.39022934191615
+          ],
+          "hand_R": [
+            78.99159969578272,
+            -240.12958548531626,
+            140.71629455919896
+          ],
+          "thigh_L": [
+            317.84281648896683,
+            -226.80148867236045,
+            144.34997711535345
+          ],
+          "shin_L": [
+            331.6347166074714,
+            -205.09821215288454,
+            75.34999175643028
+          ],
+          "foot_L": [
+            337.13451174782256,
+            -169.59453542100687,
+            22.449979243736756
+          ],
+          "thigh_R": [
+            215.325609041657,
+            -288.4000414001279,
+            144.34997711535343
+          ],
+          "shin_R": [
+            189.68784837921285,
+            -290.3884952655395,
+            75.34999175643026
+          ],
+          "foot_R": [
+            155.75796505161702,
+            -278.57655954597016,
+            22.44997924373667
+          ]
+        },
+        "render_bounds": {
+          "origin": [
+            242.35157161896072,
+            -230.75330234031117,
+            228.20697776973248
+          ],
+          "extent": [
+            240.75398388879148,
+            236.92993699768255,
+            230.60482843220234
+          ],
+          "min": [
+            1.5975877301692378,
+            -467.6832393379937,
+            -2.397850662469864
+          ],
+          "max": [
+            483.10555550775223,
+            6.17663465737138,
+            458.8118062019348
+          ],
+          "sphere_radius": 337.3910827636719
+        },
+        "bounds_min_z_relative_to_floor": 2.602149337530136,
+        "foot_bone_z_relative_to_floor": {
+          "foot_L": 27.449979243736756,
+          "foot_R": 27.44997924373667
+        },
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "camera_rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 74,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1328444,
+        "sha256": "c62d4945050cd7c4ac2adf2d32977c30f696c11153ed6589efef1bd683b464ef",
+        "pixel_sha256": "df5b7e29b527ce548b8782edaaaeb783e33e0e2de597eb32e11656719245af5c",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      },
+      "kind": "staged-animation-on-saved-gameplay-camera"
+    },
+    {
+      "clip": "Defeat",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T074830-verify_parity_runtime\\06-Defeat.png",
+      "held_state": {
+        "game_seconds": 14.595948319882154,
+        "animation_position": 2.2787625789642334,
+        "playing": true,
+        "animation": "/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat",
+        "anim_instance_class": "/Script/Engine.AnimSingleNodeInstance",
+        "animation_mode": "<AnimationMode.ANIMATION_SINGLE_NODE: 1>",
+        "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+        "actor_location": [
+          250.0,
+          -230.0,
+          227.15000200271606
+        ],
+        "actor_rotation": [
+          0.0,
+          121.00000000000003,
+          -0.0
+        ],
+        "bone_names": [
+          "TeddyRig",
+          "root",
+          "pelvis",
+          "spine",
+          "head",
+          "upperarm_L",
+          "forearm_L",
+          "hand_L",
+          "upperarm_R",
+          "forearm_R",
+          "hand_R",
+          "thigh_L",
+          "shin_L",
+          "foot_L",
+          "thigh_R",
+          "shin_R",
+          "foot_R"
+        ],
+        "bone_world_positions": {
+          "TeddyRig": [
+            250.0,
+            -230.0,
+            -2.8499979972839355
+          ],
+          "root": [
+            221.5698867320158,
+            -182.6843458071927,
+            163.1569146741581
+          ],
+          "pelvis": [
+            153.1646991070452,
+            -68.83899555661665,
+            209.69424743425645
+          ],
+          "spine": [
+            122.66516009810056,
+            -18.07923856288076,
+            218.0168214127461
+          ],
+          "head": [
+            75.06425002465795,
+            61.141979413561785,
+            184.42720588411635
+          ],
+          "upperarm_L": [
+            166.60008808505262,
+            123.15384137578258,
+            192.7745869957252
+          ],
+          "forearm_L": [
+            209.79020852535893,
+            61.21505736199913,
+            127.75522351898763
+          ],
+          "hand_L": [
+            233.5479669229826,
+            4.392662694292596,
+            54.87944788043083
+          ],
+          "upperarm_R": [
+            -22.662447168714664,
+            9.433437284478487,
+            192.7745869957252
+          ],
+          "forearm_R": [
+            11.749719740843005,
+            -57.77967332158576,
+            127.75522351898763
+          ],
+          "hand_R": [
+            50.76732436995238,
+            -105.4330273363764,
+            54.8794478804308
+          ],
+          "thigh_L": [
+            200.06080241820362,
+            -30.77929926446933,
+            215.52987548280532
+          ],
+          "shin_L": [
+            254.14308426495555,
+            -76.13047839138568,
+            194.53882876907306
+          ],
+          "foot_L": [
+            298.85993100840295,
+            -105.89493600082253,
+            159.84515769710788
+          ],
+          "thigh_R": [
+            97.54359497089376,
+            -92.3778519922368,
+            215.52987548280532
+          ],
+          "shin_R": [
+            112.196216036697,
+            -161.42076150404066,
+            194.53882876907312
+          ],
+          "foot_R": [
+            117.48338431219742,
+            -214.8769601257858,
+            159.84515769710796
+          ]
+        },
+        "render_bounds": {
+          "origin": [
+            242.35157161896072,
+            -230.75330234031117,
+            228.20697776973248
+          ],
+          "extent": [
+            240.75398388879148,
+            236.92993699768255,
+            230.60482843220234
+          ],
+          "min": [
+            1.5975877301692378,
+            -467.6832393379937,
+            -2.397850662469864
+          ],
+          "max": [
+            483.10555550775223,
+            6.17663465737138,
+            458.8118062019348
+          ],
+          "sphere_radius": 337.3910827636719
+        },
+        "bounds_min_z_relative_to_floor": 2.602149337530136,
+        "foot_bone_z_relative_to_floor": {
+          "foot_L": 164.84515769710788,
+          "foot_R": 164.84515769710796
+        },
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "camera_rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 73,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1346692,
+        "sha256": "465c0d37843622fea15ebdc8103886c61e4f83e2c35327a15b7570f2cf8018eb",
+        "pixel_sha256": "fcda895cb126b64a978efb6eb36fa96fdb7261ff130f089ddd4ba951ec54d2c7",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      },
+      "kind": "staged-animation-on-saved-gameplay-camera"
+    }
+  ],
+  "method": "Fresh saved-map audit, transient PIE input injection for the saved player light, then original clips naturally advance on the saved new stitched skin. NPC actor ticks/movement disabled; mesh component animation continues. Player is restored to its initial transform and held for the six animation captures. HUD hidden; saved camera, lighting and exposure retained; game paused only to capture.",
+  "limitations": [
+    "This tests the added art and spotlight attachment, not all gameplay or physical input.",
+    "Original clips are deliberately selected for inspection; this does not prove every AI transition.",
+    "Bone transforms and component bounds detect gross failures, not detached individual stitched vertices.",
+    "Render bounds are conservative culling bounds, not an exact deformed surface or foot-contact measurement.",
+    "All six actual images require independent visual review for skin, stitches and ground contact.",
+    "Passing these checks does not establish visual parity, performance or user acceptance."
+  ],
+  "api_evidence": [
+    "Context7 official Unreal Engine SkeletalMeshComponent PlayAnimation/GetPosition/SetPosition documentation.",
+    "Installed UE 5.8 SceneComponent.h reflected GetSocketLocation, GetWorldLocation, GetWorldRotation and GetAttachParent.",
+    "Installed SkinnedMeshComponent.h reflected GetNumBones/GetBoneName; unreflected GetBoneLocation is avoided.",
+    "Installed AnimSingleNodeInstance.h reflected GetAnimationAsset; unreflected GetSingleNodeInstance is avoided."
+  ],
+  "original_skeleton": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.SK_Teddy_Skeleton",
+  "expected_mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+  "mesh_slots": [
+    {
+      "name": "Material_0",
+      "material": "/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedCloth.M_Parity_CombinedCloth"
+    },
+    {
+      "name": "SeamDark",
+      "material": "/Game/TeddyEncounter/Parity/Materials/M_Parity_SeamV2.M_Parity_SeamV2"
+    },
+    {
+      "name": "StitchThread",
+      "material": "/Game/TeddyEncounter/Parity/Materials/M_Parity_ThreadV2.M_Parity_ThreadV2"
+    }
+  ],
+  "saved_camera_fov": [
+    54.0
+  ],
+  "arena_floor_bounds": {
+    "origin": [
+      0.0,
+      0.0,
+      -55.0
+    ],
+    "extent": [
+      3000.0,
+      3000.0,
+      50.0
+    ],
+    "min": [
+      -3000.0,
+      -3000.0,
+      -105.0
+    ],
+    "max": [
+      3000.0,
+      3000.0,
+      -5.0
+    ],
+    "sphere_radius": 4242.935546875
+  },
+  "world": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter",
+  "postprocess": [
+    {
+      "auto_exposure_method": "<AutoExposureMethod.AEM_MANUAL: 2>",
+      "auto_exposure_bias": "3.799999952316284",
+      "vignette_intensity": "0.3799999952316284",
+      "bloom_intensity": "0.25"
+    }
+  ],
+  "wall_seconds": 20.29700000002049
+}

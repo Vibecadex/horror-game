@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "settings": {
+    "revision": "look-01",
+    "key_location": [
+      900,
+      240,
+      1400
+    ],
+    "key_target": [
+      -300,
+      0,
+      -5
+    ],
+    "key_intensity": 350000,
+    "key_color": [
+      0.55,
+      1.0,
+      0.86
+    ],
+    "key_radius": 4400,
+    "key_source": 18,
+    "key_inner": 28,
+    "key_outer": 49,
+    "ambient": 0.12,
+    "room_light_scale": 0.17,
+    "corner_light": 2200,
+    "floor_scale": 0.7,
+    "floor_tile_cm": 480,
+    "floor_normal": 0.8,
+    "cloth_base_scale": 0.36,
+    "cloth_desaturation": 0.18,
+    "cloth_normal": 0.8,
+    "cloth_amount": 0.24,
+    "player_light_intensity": 16000,
+    "player_light_location": [
+      105,
+      0,
+      170
+    ],
+    "player_light_pitch": -80,
+    "fog_density": 0.017,
+    "far_fog_density": 0.45,
+    "far_fog_emission": [
+      0.01,
+      0.045,
+      0.037
+    ]
+  },
+  "changes": [],
+  "new_materials": [
+    "/Game/TeddyEncounter/Parity/Materials/M_Parity_Floor.M_Parity_Floor",
+    "/Game/TeddyEncounter/Parity/Materials/M_Parity_TeddyCloth.M_Parity_TeddyCloth"
+  ],
+  "graph_changes": false,
+  "cloth_attribute_inputs": [
+    "BaseColor",
+    "Metallic",
+    "Specular",
+    "Roughness",
+    "Anisotropy",
+    "EmissiveColor",
+    "Opacity",
+    "OpacityMask",
+    "Normal",
+    "Tangent",
+    "WorldPositionOffset",
+    "SubsurfaceColor",
+    "ClearCoat",
+    "ClearCoatRoughness",
+    "AmbientOcclusion",
+    "Refraction",
+    "CustomizedUVs_0",
+    "CustomizedUVs_1",
+    "CustomizedUVs_2",
+    "CustomizedUVs_3",
+    "CustomizedUVs_4",
+    "CustomizedUVs_5",
+    "CustomizedUVs_6",
+    "CustomizedUVs_7",
+    "PixelDepthOffset",
+    "ShadingModel",
+    "Displacement"
+  ],
+  "cloth_shading_model": "<MaterialShadingModel.MSM_CLOTH: 8>",
+  "player_component": "ParityPlayerLight_GEN_VARIABLE",
+  "camera_and_input_unchanged": true,
+  "source_materials_preserved": true
+}

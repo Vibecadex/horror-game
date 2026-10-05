@@ -1,0 +1,153 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "captures": [
+    {
+      "name": "fog-luminance-05",
+      "kind": "gameplay",
+      "caption": "DIAGNOSTIC ONLY: far local fog emissive (.225,1,1)*5 in transient PIE; saved camera and all other lighting retained.",
+      "value": 5,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T075109-diagnose_parity_fog\\fog-luminance-05.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 183,
+      "game_time": 10.011308588087559,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1342813,
+        "sha256": "8fb2379cbb4d94508e9012de129425be1815e9082612a16b0f12b1945b7eb173",
+        "pixel_sha256": "575619f02ed693e5e70acd974382a29f078243242618aa4a3e955deab0626589",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "fog-luminance-20",
+      "kind": "gameplay",
+      "caption": "DIAGNOSTIC ONLY: far local fog emissive (.225,1,1)*20 in transient PIE; saved camera and all other lighting retained.",
+      "value": 20,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T075109-diagnose_parity_fog\\fog-luminance-20.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 182,
+      "game_time": 13.019323494285345,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1363153,
+        "sha256": "ac9ad5980422a6760545bae7ab9166aa146256e79cd820a0797d3bb49f49e4d1",
+        "pixel_sha256": "8cfd8fd9b7ff2c07febb8951376b4eb332db541492c97e1ca1791a5575e579fa",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "name": "fog-luminance-60",
+      "kind": "gameplay",
+      "caption": "DIAGNOSTIC ONLY: far local fog emissive (.225,1,1)*60 in transient PIE; saved camera and all other lighting retained.",
+      "value": 60,
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T075109-diagnose_parity_fog\\fog-luminance-60.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193246,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.000000000000114,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 183,
+      "game_time": 16.027025800198317,
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1363235,
+        "sha256": "cfd1aa516a36147b786ef24a6b00d5c8596f5ae4cb34cc8bb0308f726cf4498a",
+        "pixel_sha256": "374c348a13b48cc07db8a5109c57f6534dc970e198648e16c100b9314a7b3dd5",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    }
+  ],
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "method": "Transient fog-emission sweep; no saved asset changes. Held matched gameplay composition.",
+  "world": "/Game/Maps/UEDPIE_0_TeddyEncounter.TeddyEncounter",
+  "postprocess": [
+    {
+      "auto_exposure_method": "<AutoExposureMethod.AEM_MANUAL: 2>",
+      "auto_exposure_bias": "3.799999952316284",
+      "auto_exposure_apply_physical_camera_exposure": "True",
+      "vignette_intensity": "0.3799999952316284",
+      "bloom_intensity": "0.25"
+    }
+  ],
+  "fog_volume": {
+    "location": "<Struct 'Vector' (0x00000208D4AD6FE0) {x: 1400.000000, y: 0.000000, z: 650.000000}>",
+    "scale": "<Struct 'Vector' (0x00000208D4AD6FE0) {x: 2.400000, y: 3.000000, z: 2.000000}>",
+    "radial": 0.44999998807907104,
+    "height": 0.11999999731779099
+  },
+  "console_values": {
+    "r.LocalFogVolume": 1,
+    "r.SupportLocalFogVolumes": 1,
+    "r.LocalFogVolume.RenderIntoVolumetricFog": 1,
+    "r.VolumetricFog": 1
+  },
+  "wall_seconds": 22.219000000040978
+}

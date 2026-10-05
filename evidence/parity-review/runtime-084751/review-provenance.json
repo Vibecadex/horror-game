@@ -1,0 +1,8 @@
+{
+  "source_receipt": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T084751-verify_parity_runtime\\receipt.json",
+  "source_receipt_sha256": "5b2be259bc9cd30e89b8705574c984de7f351064f9f76db4a672253bb8235900",
+  "reported_checks_passed": 48,
+  "reported_check_count": 48,
+  "all_eight_opened_independently": true,
+  "contact_sheet_sha256": "2fed420e12ee083c9d670dbd48cd8e7c095b01b743c4767eab3f85f29eb39206"
+}

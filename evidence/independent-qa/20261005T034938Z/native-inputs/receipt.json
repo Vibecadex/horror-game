@@ -1,0 +1,48 @@
+{
+  "map": "/Game/Maps/TeddyEncounter",
+  "method": "Windows SendInput into the owned ordinary -game window; no pawn teleports, AI freezes, health edits or asset changes",
+  "physical_human_test": false,
+  "events": [
+    {
+      "wall_seconds": 7.6,
+      "name": "ready_for_independent_inspection"
+    }
+  ],
+  "captures": [
+    {
+      "label": "00-first-live-view",
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\independent-qa\\20261005T034938Z\\native-inputs\\00-first-live-view.png",
+      "pixels": [
+        1280,
+        720
+      ],
+      "wall_seconds": 7.598
+    }
+  ],
+  "arguments": [
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "C:\\Projects\\to-deploy\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject",
+    "/Game/Maps/TeddyEncounter",
+    "-game",
+    "-windowed",
+    "-ResX=1280",
+    "-ResY=720",
+    "-ForceRes",
+    "-WinX=60",
+    "-WinY=60",
+    "-nosplash",
+    "-nop4",
+    "-ExecCmds=t.MaxFPS 60",
+    "-abslog=C:\\Projects\\to-deploy\\horror-game\\evidence\\independent-qa\\20261005T034938Z\\native-inputs\\engine.log",
+    "-DDC=InstalledNoZenLocalFallback",
+    "-LocalDataCachePath=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\derived-data",
+    "-UserDir=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\unreal-user"
+  ],
+  "frame_cap_for_capture": 60,
+  "process_id": 28092,
+  "window_title": "TeddyBlueprint (64-bit Development PCD3D_SM6) ",
+  "window_handle": 590306,
+  "error": "Traceback (most recent call last):\n  File \"C:\\Projects\\to-deploy\\horror-game\\evidence\\independent-qa\\20261005T034938Z\\qa_native.py\", line 116, in <module>\n    u.SetForegroundWindow(hwnd);time.sleep(.3);owned_foreground()\n                                               ~~~~~~~~~~~~~~~~^^\n  File \"C:\\Projects\\to-deploy\\horror-game\\evidence\\independent-qa\\20261005T034938Z\\qa_native.py\", line 47, in owned_foreground\n    assert hwnd and u.GetForegroundWindow() == hwnd, 'Game lost foreground; refusing to send input elsewhere'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Game lost foreground; refusing to send input elsewhere\n",
+  "game_exit_code": 0,
+  "wall_seconds": 9.632
+}

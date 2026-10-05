@@ -1,0 +1,247 @@
+{
+  "owner": "parity-room-extension-v1-20261005",
+  "created_utc": "2026-10-05T09:05:27.404657+00:00",
+  "inputs": [
+    {
+      "source": "study/preprod/layout.json",
+      "reviewed_copy": "evidence/parity/20261005T070301Z/room-extension-inputs/layout-reviewed.json",
+      "sha256": "3f4870a8bf1e837b87a45ecefb8f071b6e6434298aee5993c2d0bb530df1d57a",
+      "bytes": 129896,
+      "byte_identical": true
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/manifest.json",
+      "reviewed_copy": "evidence/parity/20261005T070301Z/room-extension-inputs/room-shell-manifest-reviewed.json",
+      "sha256": "abe8843a265ace7ad7956ad542c4eb0ee395d51aeb2fc9f55d605479c5bd5e76",
+      "bytes": 27208,
+      "byte_identical": true
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/manifest.json",
+      "reviewed_copy": "evidence/parity/20261005T070301Z/room-extension-inputs/room-dressing-manifest-reviewed.json",
+      "sha256": "02870ec9170954dbe5d4195dd3d89e5bc110feaf08654416f3df1c6fca8fe16c",
+      "bytes": 51542,
+      "byte_identical": true
+    }
+  ],
+  "fbx_hashes": [
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellWallBay.fbx",
+      "sha256": "817b331a2e4004df327e531fe8504bb66b5b80b7caf837e205d138d687fd30f4"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellWallBayNarrow.fbx",
+      "sha256": "289fbe19d5193506a7ae39453ddfda6a091ab43945a138f91ffa82b92b408ce0"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellCornice.fbx",
+      "sha256": "e1aa0acd3a35472fef97402e98789de4784f21c482076cc848fed233a68c8b6f"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellFoundation.fbx",
+      "sha256": "07882612007085d2e37eb8df8c1132b581c277279286a36df690cbad959d9c6c"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellGutter.fbx",
+      "sha256": "2bf0cf430e3080130d041d871fd9c4752ce68a6cf6226b562df61a745056a31c"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellCutawaySill.fbx",
+      "sha256": "630ba9f15413f26e7e65586d1436f964a9e9ae5e767cbf6b2bba66ffd696d49d"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellCutawayReturn.fbx",
+      "sha256": "38496f1fffade3f0f03d0414596506c1c2a6d9656869e74d06b564563984cc09"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellRearInset.fbx",
+      "sha256": "124f04238c76850bf34ab6c30373d46f1f21c8a8e3488a35cff19c82e17e4a9f"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellShutterNiche.fbx",
+      "sha256": "2a1cf6c55ebc2f21b1f8c0019ee5fb0a36db5d000e16d1a023da47d83b3a9d01"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellPipeStandoff.fbx",
+      "sha256": "b4996349d1d420f2e3315ab10abaaf1417a35ecbfba48e99dda89b07444d32b4"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellBeaconHousing.fbx",
+      "sha256": "58cf8f4ae4f7ffbeda310fcb2c13245a3de9c241d82e0e9c48e3acbda03b107e"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellCornerRiser.fbx",
+      "sha256": "94c8ac7264bfee680920072f2da6f4af805f75b5437a1874dc319256b29c789a"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellUtilityCurb.fbx",
+      "sha256": "cb957132021df7895f89b6c69bfac5368137b2bdab5e1c22c96ed7008ac46614"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellUpperBracket.fbx",
+      "sha256": "661a9b449692695998ce86cdcb80194985d00ae123c36c24cccf9e41a208c075"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellCableTray.fbx",
+      "sha256": "7259fc0c4232b8d1f7b61b801083a46266d239fc22d097cae4f5502d4d820c6c"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellDarkBacking.fbx",
+      "sha256": "4c14160752cb183497a6ebe38cee623dcff6635c5db63a30b9fe70584ca7018b"
+    },
+    {
+      "source": "Assets/Adapted/RoomShell/SM_ShellOuterApron.fbx",
+      "sha256": "ca74809799b5b4bc3a54e48b96c049b5b11569dce1c058eeff06b097448f1b2e"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressPanel.fbx",
+      "sha256": "0f7ce3236d8d4790a737d42068c309c0092387a6c8c589741e1763b75ea2cb21"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressPanelAlt.fbx",
+      "sha256": "4abc6b4f8e337ab176e1a5517208b7ac609201ed04fe05a286a41fb365d5ab16"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressPanelNarrow.fbx",
+      "sha256": "fcb08d0676b0d600d5499290c15aae1a2c59e4ae1f7fe2d775f339424c3853c3"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressPanelTall.fbx",
+      "sha256": "b428b9887237fb8a886a98ba997c1e39ae43f2b095dc168da065e2ad730d3d35"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressRib.fbx",
+      "sha256": "4d39c29431b3eb5caacba9e79ac86977b1bd7318c1fa990c95dbf655bc032fb2"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressRepairPlate.fbx",
+      "sha256": "fe2040409fac28e8f63f9f7ca744c4be91156f77d788ff2292b758af2ca99fba"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressWallSpall.fbx",
+      "sha256": "bffe76610ec26cebf7b5d4326955846c67d729179973ed1abe0af1097a9f68ee"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressConduitStraight.fbx",
+      "sha256": "736f129d6e5ba9979b51fe7a2cefc8b4eba1e40681622ca8bb63085570d7c45a"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressConduitElbow.fbx",
+      "sha256": "37192a3b218b03460d09dfe8667306588f007597c66ed723a797c4cf2764f005"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressConduitTee.fbx",
+      "sha256": "8e543546bc8cd73af140f87727df3a778ef4775ab24319599b57d71810ff8971"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressJunctionBox.fbx",
+      "sha256": "1bcb1f716de9ec5de19da60f6bdaf60d34db91d640ee68d5bef958501039af90"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressCableLoop.fbx",
+      "sha256": "b6f13a882ba128fb874b80159ef78246d88a2f892bb4af457f57cf0cf80e45d9"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressCableDrop.fbx",
+      "sha256": "ef04ea10609aba89dc49c738c23320f458220693f82f9ae5fd42357e62f0e18a"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressPipeElbow.fbx",
+      "sha256": "a97a89e5048adc28c23a76ea7e05f2c7013a1111a9056b12c6e18e402895f620"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressFlangeJoint.fbx",
+      "sha256": "943b2f5a1dfc23b15c2e00c0eb1e8cc51e9b8a2dabbbe2bad444eb6582327e95"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressPipeHanger.fbx",
+      "sha256": "cbd973151fe97cece80b0a2340c341daa7084d9a605a307c366cf440abf659df"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressBreaker.fbx",
+      "sha256": "61a947474528be5b4fb5741c6b28b2b2957f5bd89feced7aa7263b489398a204"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressGangBox.fbx",
+      "sha256": "16d88f4f293e902c8de8b7eed7d28db6f16da66d3f51d569e61443ac3ffd3f82"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressBundle.fbx",
+      "sha256": "e2395c8ab797880147d0bf4859401ed979b60e616da3030d04114bbacc334ae6"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressThreshold.fbx",
+      "sha256": "b4f810a3f5aa60ee06754ab8b9b47e6580275fcd0047114bf30d330377eba098"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressAnchor.fbx",
+      "sha256": "456cbd1ba005222676ee6bc11effa2d225fac41ac79bd0a4f624b579e967cb6a"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressDrainBox.fbx",
+      "sha256": "03b7c3a853046e907991a761c6ad7b583d16d65e669125ef06f4aca0cf349fdb"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressKicker.fbx",
+      "sha256": "4136172fc490e85ca2902256b8b50767a16d896ec82c716724620628530c4af2"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressLouver.fbx",
+      "sha256": "8fc58a1a26adc449bd99705cc77f335f6afed451caab00868fa999eb1e193845"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressHatch.fbx",
+      "sha256": "cd6da7567fc1f9883ca8d7051cb35597b6be055bcd5dc5457ff3637510c707b9"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressHoseCoil.fbx",
+      "sha256": "80e83e83497165b7e6171c7cee1cd4379a67e7e90e81d765a44910a6f5668266"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressColumn.fbx",
+      "sha256": "1ff4a90b7ad72c55bfe68413e26449286d1f47777d9a18ab425521bb26d8f266"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressHeader.fbx",
+      "sha256": "74c1c043ba5ec099b3a3f62b68e8a64748295dac3b15f50945807533099da132"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressCornerGuard.fbx",
+      "sha256": "94c5a033208c9273126586fc08a244406c476430d7fd958887ee6b7e70feb109"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressUnistrut.fbx",
+      "sha256": "5aa4eb7e64750ac2de144b91c6568d59c794931a4d22f038b0b200ba52eaab54"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressDripTray.fbx",
+      "sha256": "e96f352075bd460c635aefae6942078ab92fa2068cc194ad8c283a5ba5f748ed"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressDownspout.fbx",
+      "sha256": "1814ee2947c93589bd7ffd24c812c34fba5be44f213c229fda6a2ca178218318"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressMeter.fbx",
+      "sha256": "cd37179f6753d2059c6d398e79fa54ae558159cbc01225df7ecd83c5c1b3942d"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressClamp.fbx",
+      "sha256": "9440fea4e3744721d61cbad4e73904bea134cbcb129becf2389ddfd2bb37cd09"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressEscutcheon.fbx",
+      "sha256": "d5800caa1a8ed2da1a6ba4d02658c2e5772d1f2a0b54b57ecfa565368cb32784"
+    },
+    {
+      "source": "Assets/Adapted/RoomDressing/SM_DressDuctBoot.fbx",
+      "sha256": "6aa7c3e69eaae0b9e66204109d1945ba2dcdc279d202b29a7437d80572f93a2c"
+    }
+  ],
+  "source_bytes_equal_before_and_after": true,
+  "unreal_invoked": false,
+  "external_actor_metadata": {
+    "Content/__ExternalActors__/Maps/TeddyEncounter_exists": false,
+    "Content/__ExternalObjects__/Maps/TeddyEncounter_exists": false
+  }
+}

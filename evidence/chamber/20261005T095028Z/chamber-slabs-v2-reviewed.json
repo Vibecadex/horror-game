@@ -1,0 +1,803 @@
+{
+  "owner": "teddy-chamber-slabs-normals-v2-20261005",
+  "status": "source-ready-for-engine-review",
+  "generator": "tools/make_chamber_surface_normals_v2.py",
+  "generator_sha256": "6a3c9cd98346584c310a13acdc205ab86ba0b440dc240029fdf8cb14d8b4da80",
+  "editable_blend": "Assets/Adapted/ChamberParity/SlabsNormalsV2/ChamberSparseSlabsNormalsV2.blend",
+  "blend_sha256": "cd877d3017caf674682e81c5ba7e6180c707af3418c7bf98b6fef5aca47b179c",
+  "source": "Bounded winding repair of the frozen Slabs kit; no new shape or placement design.",
+  "preserved": "Previous ChamberParity, Floor, FloorV3, room, creature and Unreal assets were read only.",
+  "coordinate_system": "Metres,+Z up, floorZ0. Project static import mirrors sourceY.",
+  "fbx_settings": {
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "global_scale": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_NONE"
+  },
+  "material_slots": [
+    "Concrete",
+    "Aggregate",
+    "Dark"
+  ],
+  "material_guidance": {
+    "Concrete": "Existing world-aligned floor top, neutral worn concrete.",
+    "Aggregate": "Matte broken sides, subdued darker value. Roughness>=.95,specular0; avoid pale filament highlights.",
+    "Dark": "Undersides only, matte near-black; no emission."
+  },
+  "assets": [
+    {
+      "name": "SM_ChamberSparseSlabs_V2",
+      "file": "SM_ChamberSparseSlabs_V2.fbx",
+      "sha256": "4ebac394ab907b5d77532660240417b5967d54d1286b5df8b66609e28ec1ab89",
+      "triangles": 590,
+      "vertices": 327,
+      "bounds_m": {
+        "min": [
+          -1.6598336696624756,
+          -1.201167345046997,
+          0.0006000000284984708
+        ],
+        "max": [
+          1.686064600944519,
+          1.3051059246063232,
+          0.04268152639269829
+        ]
+      },
+      "dimensions_m": [
+        3.3458982706069946,
+        2.5062732696533203,
+        0.04208152636419982
+      ],
+      "expected_dimensions_cm": [
+        334.58982706069946,
+        250.62732696533203,
+        4.208152636419982
+      ],
+      "highest_point_cm": 4.268152639269829,
+      "origin": "Underlying floor atZ0, centred cluster inXY. Floor level UEZ=-5; noZscale.",
+      "material_slots": [
+        "Concrete",
+        "Aggregate",
+        "Dark"
+      ],
+      "slab_count": 16,
+      "slabs": [
+        {
+          "index": 0,
+          "centre_m": [
+            -1.39,
+            -0.85
+          ],
+          "footprint_chord_cm": 62.999999999999986,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 1.767153340392747,
+          "top_max_cm": 3.712022559988468,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": 23
+        },
+        {
+          "index": 1,
+          "centre_m": [
+            -0.62,
+            -0.82
+          ],
+          "footprint_chord_cm": 33.00000000000001,
+          "base_shape": "broken triangle",
+          "top_min_cm": 1.7009397175700818,
+          "top_max_cm": 2.624297089648349,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": -20
+        },
+        {
+          "index": 2,
+          "centre_m": [
+            0.13,
+            -0.96
+          ],
+          "footprint_chord_cm": 48.000000000000014,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 1.972983081696653,
+          "top_max_cm": 3.2527182697649564,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": 71
+        },
+        {
+          "index": 3,
+          "centre_m": [
+            1.12,
+            -0.82
+          ],
+          "footprint_chord_cm": 65.00000000000001,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 1.5759844297283374,
+          "top_max_cm": 3.346444917187795,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": -31
+        },
+        {
+          "index": 4,
+          "centre_m": [
+            1.52,
+            -0.23
+          ],
+          "footprint_chord_cm": 31.999999999999996,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 1.5995500203037443,
+          "top_max_cm": 4.158795714576962,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": -62
+        },
+        {
+          "index": 5,
+          "centre_m": [
+            0.72,
+            -0.1
+          ],
+          "footprint_chord_cm": 46.0,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 2.1246000861048095,
+          "top_max_cm": 3.7528282724795803,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": 14
+        },
+        {
+          "index": 6,
+          "centre_m": [
+            -0.23,
+            -0.38
+          ],
+          "footprint_chord_cm": 61.0,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 1.7986203149439797,
+          "top_max_cm": 3.9037519967666565,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": -15
+        },
+        {
+          "index": 7,
+          "centre_m": [
+            -1.24,
+            -0.03
+          ],
+          "footprint_chord_cm": 41.999999999999986,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 1.5146754305988095,
+          "top_max_cm": 3.206848488023617,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": 43
+        },
+        {
+          "index": 8,
+          "centre_m": [
+            -1.4,
+            0.76
+          ],
+          "footprint_chord_cm": 54.000000000000014,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 2.09858718425027,
+          "top_max_cm": 4.0215627821932625,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": -8
+        },
+        {
+          "index": 9,
+          "centre_m": [
+            -0.53,
+            0.62
+          ],
+          "footprint_chord_cm": 30.999999999999993,
+          "base_shape": "broken triangle",
+          "top_min_cm": 1.5712149608478578,
+          "top_max_cm": 2.5154734709951976,
+          "lowest_underside_cm": 0.06000000000000016,
+          "angle_degrees": 120
+        },
+        {
+          "index": 10,
+          "centre_m": [
+            0.32,
+            0.37
+          ],
+          "footprint_chord_cm": 56.00000000000001,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 1.605315834020004,
+          "top_max_cm": 4.188089540728825,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": 57
+        },
+        {
+          "index": 11,
+          "centre_m": [
+            1.08,
+            0.72
+          ],
+          "footprint_chord_cm": 48.00000000000001,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 1.8691210339516495,
+          "top_max_cm": 2.628158080405322,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": 45
+        },
+        {
+          "index": 12,
+          "centre_m": [
+            0.25,
+            1.08
+          ],
+          "footprint_chord_cm": 29.000000000000004,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 1.9088024905778636,
+          "top_max_cm": 3.759901954822272,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": -60
+        },
+        {
+          "index": 13,
+          "centre_m": [
+            -0.94,
+            1.1
+          ],
+          "footprint_chord_cm": 26.000000000000007,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 1.803375822017682,
+          "top_max_cm": 3.58196527374884,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": 90
+        },
+        {
+          "index": 14,
+          "centre_m": [
+            0.85,
+            1.15
+          ],
+          "footprint_chord_cm": 28.999999999999993,
+          "base_shape": "broken triangle",
+          "top_min_cm": 2.1551060236259287,
+          "top_max_cm": 4.268152784429483,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": 0
+        },
+        {
+          "index": 15,
+          "centre_m": [
+            -1.54,
+            0.36
+          ],
+          "footprint_chord_cm": 27.0,
+          "base_shape": "broken irregular quadrilateral",
+          "top_min_cm": 2.148760590182879,
+          "top_max_cm": 4.147875456789802,
+          "lowest_underside_cm": 0.059999999999999984,
+          "angle_degrees": 12
+        }
+      ],
+      "original_mesh": "SM_ChamberSparseSlabs",
+      "original_vertex_count": 1090,
+      "closed_solid_components": 16
+    }
+  ],
+  "total_unique_triangles": 590,
+  "recommended_placements": [
+    {
+      "label": "SparseForegroundLeft",
+      "mesh": "SM_ChamberSparseSlabs_V2",
+      "location_cm": [
+        -1070,
+        -720,
+        -5
+      ],
+      "yaw": 15,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -1261.4161194124538,
+          -889.0232084031176,
+          -4.939999997150153
+        ],
+        "max": [
+          -873.3600387991667,
+          -560.3375809726409,
+          -0.7318473607301712
+        ]
+      }
+    },
+    {
+      "label": "SparseForegroundRight",
+      "mesh": "SM_ChamberSparseSlabs_V2",
+      "location_cm": [
+        -1030,
+        760,
+        -5
+      ],
+      "yaw": -28,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -1237.8256261200736,
+          565.6100482279529,
+          -4.939999997150153
+        ],
+        "max": [
+          -824.7379408544797,
+          943.9812522791077,
+          -0.7318473607301712
+        ]
+      }
+    },
+    {
+      "label": "SparseMidLeft",
+      "mesh": "SM_ChamberSparseSlabs_V2",
+      "location_cm": [
+        120,
+        -1190,
+        -5
+      ],
+      "yaw": 63,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -62.379665825348795,
+          -1397.1428319661854,
+          -4.939999997150153
+        ],
+        "max": [
+          312.8315204357088,
+          -985.2386877106665,
+          -0.7318473607301712
+        ]
+      }
+    },
+    {
+      "label": "SparseRearRight",
+      "mesh": "SM_ChamberSparseSlabs_V2",
+      "location_cm": [
+        980,
+        870,
+        -5
+      ],
+      "yaw": -14,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          787.3736784758377,
+          702.5765354653006,
+          -4.939999997150153
+        ],
+        "max": [
+          1172.6569957567901,
+          1026.7037649186286,
+          -0.7318473607301712
+        ]
+      }
+    }
+  ],
+  "fbx_roundtrip_checks": [
+    {
+      "name": "SM_ChamberSparseSlabs_V2",
+      "actual_dimensions_cm": [
+        334.58982706069946,
+        250.627338886261,
+        4.208152636419982
+      ],
+      "max_dimension_error_m": 1.1920928955078125e-07,
+      "max_vertex_position_error_m": 1.6858739115832577e-07,
+      "triangles": 590,
+      "material_slots": [
+        "Concrete",
+        "Aggregate",
+        "Dark"
+      ],
+      "normal_signs_passed": true,
+      "closed_solid_components": 16,
+      "passed": true,
+      "fbx_sha256": "4ebac394ab907b5d77532660240417b5967d54d1286b5df8b66609e28ec1ab89"
+    }
+  ],
+  "renders": [
+    "slabs-normals-v2-overview.png"
+  ],
+  "integration": "Add at most these four margin groups asNoCollision. Preserve existingassets. These16broad slabs supplement fine rubble; do not scaleZ or scatter repeated rows.",
+  "limits": "Source FBX/Blender construction verified; root owns integration, floor contact and actual two-direction chamber review.",
+  "correction": "Weld coincident surface vertices at 1e-6m and orient closed volumes outward. Identify actual top and underside polygons from each original surface island inside the closed piece; material names alone are not used for Floor caps. Uncross only proven self-intersecting perimeter-piece boundaries by reconnecting their existing vertices, then rebuild matching sides. No vertex motion, bounds or triangle-count change. Retriangulate only invalid cap boundaries. Explicit upward open Crack ribbons. FBX face winding is audited without recalculation.",
+  "normal_audits": [
+    {
+      "name": "SM_ChamberSparseSlabs_V2",
+      "role_identification": [
+        {
+          "top_polygon": 0,
+          "underside_polygon": 15,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 16,
+          "underside_polygon": 29,
+          "cap_triangles": 4,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 30,
+          "underside_polygon": 45,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 46,
+          "underside_polygon": 61,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 62,
+          "underside_polygon": 77,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 78,
+          "underside_polygon": 93,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 94,
+          "underside_polygon": 109,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 110,
+          "underside_polygon": 125,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 126,
+          "underside_polygon": 141,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 142,
+          "underside_polygon": 155,
+          "cap_triangles": 4,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 156,
+          "underside_polygon": 171,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 172,
+          "underside_polygon": 187,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 188,
+          "underside_polygon": 203,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 204,
+          "underside_polygon": 219,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 220,
+          "underside_polygon": 233,
+          "cap_triangles": 4,
+          "minimum_z_m": 0.0006000000284984708
+        },
+        {
+          "top_polygon": 234,
+          "underside_polygon": 249,
+          "cap_triangles": 5,
+          "minimum_z_m": 0.0006000000284984708
+        }
+      ],
+      "before": {
+        "surface_roles": {
+          "edge": {
+            "triangles": 436,
+            "positive_z": 104,
+            "negative_z": 114,
+            "zero_z": 218,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          },
+          "top_cap": {
+            "triangles": 77,
+            "positive_z": 58,
+            "negative_z": 19,
+            "zero_z": 0,
+            "incorrect_triangles": 19,
+            "incorrect_area_m2": 0.1271097796561662
+          },
+          "underside": {
+            "triangles": 77,
+            "positive_z": 54,
+            "negative_z": 23,
+            "zero_z": 0,
+            "incorrect_triangles": 54,
+            "incorrect_area_m2": 1.2748831342614722
+          },
+          "open_crack": {
+            "triangles": 0,
+            "positive_z": 0,
+            "negative_z": 0,
+            "zero_z": 0,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          }
+        },
+        "by_material": {
+          "Concrete": {
+            "positive_z": 120,
+            "negative_z": 85,
+            "zero_z": 0
+          },
+          "Aggregate": {
+            "positive_z": 42,
+            "negative_z": 48,
+            "zero_z": 218
+          },
+          "Dark": {
+            "positive_z": 54,
+            "negative_z": 23,
+            "zero_z": 0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 73,
+        "closed_solid_components": 0,
+        "expected_closed_solid_components": 16,
+        "negative_volume_components": 0,
+        "minimum_signed_volume_m3": null,
+        "open_components": 250,
+        "open_component_materials": {
+          "Concrete": 80,
+          "Aggregate": 154,
+          "Dark": 16
+        },
+        "inconsistent_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "passed": false
+      },
+      "after_weld_before_retessellation": {
+        "surface_roles": {
+          "edge": {
+            "triangles": 436,
+            "positive_z": 218,
+            "negative_z": 0,
+            "zero_z": 218,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          },
+          "top_cap": {
+            "triangles": 77,
+            "positive_z": 77,
+            "negative_z": 0,
+            "zero_z": 0,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          },
+          "underside": {
+            "triangles": 77,
+            "positive_z": 0,
+            "negative_z": 77,
+            "zero_z": 0,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          },
+          "open_crack": {
+            "triangles": 0,
+            "positive_z": 0,
+            "negative_z": 0,
+            "zero_z": 0,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          }
+        },
+        "by_material": {
+          "Concrete": {
+            "positive_z": 205,
+            "negative_z": 0,
+            "zero_z": 0
+          },
+          "Aggregate": {
+            "positive_z": 90,
+            "negative_z": 0,
+            "zero_z": 218
+          },
+          "Dark": {
+            "positive_z": 0,
+            "negative_z": 77,
+            "zero_z": 0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 0,
+        "closed_solid_components": 16,
+        "expected_closed_solid_components": 16,
+        "negative_volume_components": 0,
+        "minimum_signed_volume_m3": 0.00047803516898703435,
+        "open_components": 0,
+        "open_component_materials": {},
+        "inconsistent_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "passed": true
+      },
+      "source_after": {
+        "surface_roles": {
+          "edge": {
+            "triangles": 436,
+            "positive_z": 218,
+            "negative_z": 0,
+            "zero_z": 218,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          },
+          "top_cap": {
+            "triangles": 77,
+            "positive_z": 77,
+            "negative_z": 0,
+            "zero_z": 0,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          },
+          "underside": {
+            "triangles": 77,
+            "positive_z": 0,
+            "negative_z": 77,
+            "zero_z": 0,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          },
+          "open_crack": {
+            "triangles": 0,
+            "positive_z": 0,
+            "negative_z": 0,
+            "zero_z": 0,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          }
+        },
+        "by_material": {
+          "Concrete": {
+            "positive_z": 205,
+            "negative_z": 0,
+            "zero_z": 0
+          },
+          "Aggregate": {
+            "positive_z": 90,
+            "negative_z": 0,
+            "zero_z": 218
+          },
+          "Dark": {
+            "positive_z": 0,
+            "negative_z": 77,
+            "zero_z": 0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 0,
+        "closed_solid_components": 16,
+        "expected_closed_solid_components": 16,
+        "negative_volume_components": 0,
+        "minimum_signed_volume_m3": 0.00047803516898703435,
+        "open_components": 0,
+        "open_component_materials": {},
+        "inconsistent_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "passed": true
+      },
+      "fbx_roundtrip": {
+        "surface_roles": {
+          "edge": {
+            "triangles": 436,
+            "positive_z": 218,
+            "negative_z": 0,
+            "zero_z": 218,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          },
+          "top_cap": {
+            "triangles": 77,
+            "positive_z": 77,
+            "negative_z": 0,
+            "zero_z": 0,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          },
+          "underside": {
+            "triangles": 77,
+            "positive_z": 0,
+            "negative_z": 77,
+            "zero_z": 0,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          },
+          "open_crack": {
+            "triangles": 0,
+            "positive_z": 0,
+            "negative_z": 0,
+            "zero_z": 0,
+            "incorrect_triangles": 0,
+            "incorrect_area_m2": 0.0
+          }
+        },
+        "by_material": {
+          "Concrete": {
+            "positive_z": 205,
+            "negative_z": 0,
+            "zero_z": 0
+          },
+          "Aggregate": {
+            "positive_z": 90,
+            "negative_z": 0,
+            "zero_z": 218
+          },
+          "Dark": {
+            "positive_z": 0,
+            "negative_z": 77,
+            "zero_z": 0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 0,
+        "closed_solid_components": 16,
+        "expected_closed_solid_components": 16,
+        "negative_volume_components": 0,
+        "minimum_signed_volume_m3": 0.00047803518601578315,
+        "open_components": 0,
+        "open_component_materials": {},
+        "inconsistent_manifold_edges": 0,
+        "degenerate_triangles": 0,
+        "passed": true
+      },
+      "retessellated_original_polygons": [],
+      "local_boundary_topology_repairs": [],
+      "negative_volume_components_corrected_initially": 0,
+      "negative_volume_components_corrected_finally": 0,
+      "all_vertex_positions_preserved": true,
+      "all_uv_coordinates_preserved": true,
+      "triangle_count_preserved": true,
+      "material_assignments_preserved": true
+    }
+  ],
+  "normal_audits_passed": true,
+  "source_preservation": {
+    "original_manifest_sha256": "054151f1c5c1ae61c2b342a1c1b2758862ec7274134f1152f5bad6f424bf4287",
+    "files_unchanged": {
+      "Assets/Adapted/ChamberParity/Slabs/ChamberSparseSlabs.blend": "d92c35d685bd94585f074ac1ec60e9de46d88d244aafbe13265611cd90789b2a",
+      "Assets/Adapted/ChamberParity/Slabs/manifest.json": "054151f1c5c1ae61c2b342a1c1b2758862ec7274134f1152f5bad6f424bf4287",
+      "Assets/Adapted/ChamberParity/Slabs/slabs-depth.png": "6abdd4bca9115b4e8a26490554e44873176334c232e5ca73014d7e020d47f591",
+      "Assets/Adapted/ChamberParity/Slabs/slabs-overview.png": "d0614632ee4a01a29c1b65626b9b1bc5932f4b842f959d10d82cdac2a4775725",
+      "Assets/Adapted/ChamberParity/Slabs/SM_ChamberSparseSlabs.fbx": "5cc04457ed73e9bf8ce03d22135267b00cbb3c6cd2445a5b1390553af6f9c11b"
+    },
+    "passed": true
+  },
+  "render_note": "Neutral source construction proof with backface culling enabled. Native Unreal review is separate."
+}

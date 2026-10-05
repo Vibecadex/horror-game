@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "pitch": -51,
+  "fov": 50,
+  "tracking": "Player/boss midpoint with foreground perspective bias 0.07*abs(deltaX), target z160; height=max(2100, abs(deltaX)*1.42+1200, abs(deltaY)*0.8+1200), capped5600; constant elevation angle; interpolation5"
+}

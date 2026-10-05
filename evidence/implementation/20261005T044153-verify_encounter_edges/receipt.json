@@ -1,0 +1,127 @@
+{
+  "passed": true,
+  "checks": {
+    "three_stitchlings_with_own_health": true,
+    "walk_speed_matches_animation": true,
+    "walk_blocked_by_arena_wall": true,
+    "dash_does_not_tunnel_wall": true,
+    "rifle_forward_agrees_with_aim": true,
+    "mouse_cursor_aims_at_projected_world_target": true,
+    "dodge_invulnerability_blocks_damage": true,
+    "evades_actual_boss_strike": true,
+    "boss_attacks_can_defeat_player": true,
+    "defeated_player_cannot_move": true,
+    "defeated_player_cannot_fire": true,
+    "restart_from_player_defeat": true,
+    "pause_action_after_restart": true
+  },
+  "physical_device_verified": false,
+  "method": "Enhanced Input action injection; cursor positioning through PlayerController; staged positions; one explicitly labelled damage call inside dodge window",
+  "images": [
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T044153-verify_encounter_edges\\player-defeat.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 901924,
+        "sha256": "719382fdf213136bfd6ae6742f00671fbfa0068e933364353e09f2cf62f5a953",
+        "pixel_sha256": "a1d15ef993b6c1816ad1be471c7d2bca1d5dcc1bdd2a338fb49bd3c9a7f4e8d6",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T044153-verify_encounter_edges\\paused.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 293540,
+        "sha256": "f799177b0f342341fdbbd3ff51b08950091b10aabc11fb051c7ed40e55f292ba",
+        "pixel_sha256": "9b941725f6affb6a7a3ba03875053378eb2921faef36b99087a09018c333e73a",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          13,
+          255
+        ]
+      }
+    }
+  ],
+  "saved_defaults": {
+    "boss_speed": 105.0,
+    "boss_health": 300.0,
+    "minions": [
+      {
+        "health": 24.0,
+        "speed": 55.0,
+        "position": [
+          20.0,
+          1070.0,
+          53.14999961853027
+        ]
+      },
+      {
+        "health": 24.0,
+        "speed": 55.0,
+        "position": [
+          650.0,
+          600.0,
+          53.14999961853027
+        ]
+      },
+      {
+        "health": 24.0,
+        "speed": 55.0,
+        "position": [
+          -480.0,
+          -500.0,
+          53.14999961853027
+        ]
+      }
+    ]
+  },
+  "warning_components": [
+    {
+      "mesh": "<Object '/Game/TeddyEncounter/Arena/AttackRing.AttackRing' (0x0000016F11CCD800) Class 'StaticMesh'>",
+      "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+    }
+  ],
+  "walk_wall_position": [
+    -1345.9899076744218,
+    0.0,
+    85.14999869444591
+  ],
+  "dash_wall_position": [
+    -1345.9993662022682,
+    0.0,
+    85.14999750795663
+  ],
+  "rifle_forward_dot_aim": 0.969248167986562,
+  "mouse_screen": [
+    308.00103759765625,
+    102.83924102783203
+  ],
+  "mouse_aim": {
+    "expected": -43.2781402095066,
+    "actual": -42.6546630859375,
+    "wrapped_error": 0.6234771235691028
+  },
+  "evade_end": {
+    "player": [
+      -377.4793421481122,
+      -230.0,
+      85.14999888170668
+    ],
+    "boss": [
+      250.0,
+      -230.0,
+      227.15000200271606
+    ],
+    "health": 100.0
+  },
+  "attacks_to_defeat": 6
+}

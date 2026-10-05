@@ -1,0 +1,37 @@
+{
+  "source": "C:\\Projects\\to-deploy\\horror-game\\Assets\\ThirdParty\\HorrorTeddyBear\\horror-teddy-bear-monster.glb",
+  "bounds_min": [
+    -0.6200990080833435,
+    -0.6587169766426086,
+    -0.9500929713249207
+  ],
+  "bounds_max": [
+    0.6184750199317932,
+    0.6564310193061829,
+    0.9468960165977478
+  ],
+  "dimensions": [
+    1.2385740280151367,
+    1.3151479959487915,
+    1.8969889879226685
+  ],
+  "mesh_objects": [
+    "Mesh_0"
+  ],
+  "armatures": [],
+  "actions": [],
+  "images": [
+    {
+      "name": "Image_0",
+      "size": [
+        2048,
+        2048
+      ]
+    }
+  ],
+  "uv_layers": {
+    "Mesh_0": 1
+  },
+  "review_only": true,
+  "unreal_import_verified": false
+}

@@ -1,0 +1,26 @@
+C:\Projects\to-deploy\horror-game\evidence\chamber\20261005T095028Z\native-motion-20261005T115126
+Running Unreal script: C:\Projects\to-deploy\horror-game\tools\author_qa_native_motion.py
+Log: C:\Projects\to-deploy\horror-game\evidence\editor-runs\20261005T115126-1970ab\editor.log
+{
+  "passed": true,
+  "method": "30 fps desktop capture restricted to owned game client rectangle held topmost; no SendInput, no physical-device claim. Input driver is in a separate QA map.",
+  "process_id": 67848,
+  "capture_rectangle": [
+    60,
+    60,
+    1280,
+    720
+  ],
+  "capture_started_utc": "2026-10-05T11:51:41.334955+00:00",
+  "capture_exit_code": 0,
+  "finished_marker_seen": true,
+  "game_exit_code": 0,
+  "video_sha256": "ac50f46812804509f4815f4d97310ad7e3beab8926eb6bba9ccc918cbfeac67d",
+  "all_frames_decoded": true,
+  "still_mean_rgb": [
+    43.26571723090278,
+    68.1106640625,
+    69.76333550347222
+  ],
+  "wall_seconds": 32.5747785998974
+}

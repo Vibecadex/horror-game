@@ -1,0 +1,170 @@
+{
+  "asset": "/Game/TeddyEncounter/Input/IMC_Encounter",
+  "read_only": true,
+  "saved_mappings": [
+    {
+      "action": "IA_Action_Move",
+      "exported_key": "Gamepad_Left2D",
+      "display_name": "Gamepad Left Thumbstick 2D-Axis",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "exported_key": "W",
+      "display_name": "W",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "exported_key": "S",
+      "display_name": "S",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "exported_key": "A",
+      "display_name": "A",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Move",
+      "exported_key": "D",
+      "display_name": "D",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_StickAim",
+      "exported_key": "Gamepad_Right2D",
+      "display_name": "Gamepad Right Thumbstick 2D-Axis",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Fire",
+      "exported_key": "F",
+      "display_name": "F",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Fire",
+      "exported_key": "LeftMouseButton",
+      "display_name": "Left Mouse Button",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Fire",
+      "exported_key": "Gamepad_RightTrigger",
+      "display_name": "Gamepad Right Trigger (Digital)",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "exported_key": "G",
+      "display_name": "G",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "exported_key": "Gamepad_LeftTrigger",
+      "display_name": "Gamepad Left Trigger (Digital)",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Dash",
+      "exported_key": "LeftShift",
+      "display_name": "Left Shift",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Dash",
+      "exported_key": "Gamepad_LeftShoulder",
+      "display_name": "Gamepad Left Shoulder",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "exported_key": "RightMouseButton",
+      "display_name": "Right Mouse Button",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_MouseAim",
+      "exported_key": "Mouse2D",
+      "display_name": "Mouse XY 2D-Axis",
+      "valid": true
+    },
+    {
+      "action": "IA_Action_Dash",
+      "exported_key": "(",
+      "display_name": "(",
+      "valid": false
+    },
+    {
+      "action": "IA_Pause",
+      "exported_key": "(",
+      "display_name": "(",
+      "valid": false
+    },
+    {
+      "action": "IA_Restart",
+      "exported_key": "(",
+      "display_name": "(",
+      "valid": false
+    }
+  ],
+  "parser_cases": [
+    {
+      "input": "SpaceBar",
+      "exported_key": "SpaceBar",
+      "display_name": "Space Bar",
+      "valid": true
+    },
+    {
+      "input": "Escape",
+      "exported_key": "Escape",
+      "display_name": "Escape",
+      "valid": true
+    },
+    {
+      "input": "F5",
+      "exported_key": "F5",
+      "display_name": "F5",
+      "valid": true
+    },
+    {
+      "input": "(KeyName=\"SpaceBar\")",
+      "exported_key": "(",
+      "display_name": "(",
+      "valid": false
+    },
+    {
+      "input": "(KeyName=\"Escape\")",
+      "exported_key": "(",
+      "display_name": "(",
+      "valid": false
+    },
+    {
+      "input": "(KeyName=\"F5\")",
+      "exported_key": "(",
+      "display_name": "(",
+      "valid": false
+    }
+  ],
+  "required_bindings": [
+    {
+      "action": "IA_Action_Dash",
+      "required_key": "SpaceBar",
+      "present_and_valid": false
+    },
+    {
+      "action": "IA_Pause",
+      "required_key": "Escape",
+      "present_and_valid": false
+    },
+    {
+      "action": "IA_Restart",
+      "required_key": "F5",
+      "present_and_valid": false
+    }
+  ],
+  "passed": false
+}

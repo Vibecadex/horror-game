@@ -1,0 +1,194 @@
+{
+  "passed": true,
+  "actors": [
+    {
+      "label": "TE_Chamber_Crust_LeftFront",
+      "placement": {
+        "label": "LeftFront",
+        "mesh": "SM_ChamberCrustBank_A",
+        "location_cm": [
+          -500,
+          -950,
+          -5
+        ],
+        "yaw": 30,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            -765.5659212757082,
+            -1153.9849911195004,
+            -4.879999994300306
+          ],
+          "max": [
+            -231.20505163538297,
+            -658.2323557615586,
+            -0.4861566424369812
+          ]
+        }
+      }
+    },
+    {
+      "label": "TE_Chamber_Crust_ForegroundCentre",
+      "placement": {
+        "label": "ForegroundCentre",
+        "mesh": "SM_ChamberCrustBank_B",
+        "location_cm": [
+          -1040,
+          20,
+          -5
+        ],
+        "yaw": -8,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            -1293.1256752712354,
+            -132.00170143883523,
+            -4.879999994300306
+          ],
+          "max": [
+            -796.0428030139349,
+            248.39957710585742,
+            -0.5087266862392426
+          ]
+        }
+      }
+    },
+    {
+      "label": "TE_Chamber_Crust_RightSide",
+      "placement": {
+        "label": "RightSide",
+        "mesh": "SM_ChamberCrustBank_A",
+        "location_cm": [
+          -300,
+          1170,
+          -5
+        ],
+        "yaw": 90,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            -499.35768842697144,
+            978.4501028060913,
+            -4.879999994300306
+          ],
+          "max": [
+            -175.04980564117432,
+            1408.2376432418823,
+            -0.4861566424369812
+          ]
+        }
+      }
+    },
+    {
+      "label": "TE_Chamber_Crust_RearRight",
+      "placement": {
+        "label": "RearRight",
+        "mesh": "SM_ChamberCrustBank_B",
+        "location_cm": [
+          1080,
+          160,
+          -5
+        ],
+        "yaw": 100,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            847.8823467912542,
+            -108.97221217203125,
+            -4.879999994300306
+          ],
+          "max": [
+            1242.2921713271928,
+            396.64422923915515,
+            -0.5087266862392426
+          ]
+        }
+      }
+    },
+    {
+      "label": "TE_Chamber_Crust_RearLeft",
+      "placement": {
+        "label": "RearLeft",
+        "mesh": "SM_ChamberCrustBank_A",
+        "location_cm": [
+          780,
+          -900,
+          -5
+        ],
+        "yaw": -35,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            551.4230229285577,
+            -1139.0007055586898,
+            -4.879999994300306
+          ],
+          "max": [
+            1089.499724975304,
+            -626.827234564427,
+            -0.4861566424369812
+          ]
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "path": "/Game/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_A.SM_ChamberCrustBank_A",
+      "bounds_cm": [
+        429.7875518798828,
+        324.30786895751953,
+        4.3938435316085815
+      ],
+      "triangles_source": 2666
+    },
+    {
+      "path": "/Game/TeddyEncounter/Chamber/Crust/SM_ChamberCrustBank_B.SM_ChamberCrustBank_B",
+      "bounds_cm": [
+        457.0073699951172,
+        319.91149139404297,
+        4.371273398399353
+      ],
+      "triangles_source": 2756
+    }
+  ],
+  "concealed": [
+    "TE_Parity_Floor_004",
+    "TE_Parity_Floor_005",
+    "TE_Parity_Floor_006",
+    "TE_Parity_Floor_007",
+    "TE_Parity_Floor_008",
+    "TE_Parity_Floor_009",
+    "TE_Parity_Floor_010",
+    "TE_Parity_Floor_015",
+    "TE_Parity_Floor_017"
+  ],
+  "source_assets_preserved": true,
+  "collision": "NoCollision",
+  "manifest_sha256": "89e2c3b844876594cbff18be22428d6c75df60ff49490404b2df5daa08d643f3"
+}

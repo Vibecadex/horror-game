@@ -1,0 +1,298 @@
+{
+  "passed": true,
+  "asset": "/Game/TeddyEncounter/Input/IMC_Encounter",
+  "changed": [
+    {
+      "action": "IA_Action_Dash",
+      "key": "SpaceBar"
+    },
+    {
+      "action": "IA_Pause",
+      "key": "Escape"
+    },
+    {
+      "action": "IA_Restart",
+      "key": "F5"
+    }
+  ],
+  "before": [
+    {
+      "action": "IA_Action_Move",
+      "key": "Gamepad_Left2D",
+      "valid": true,
+      "modifiers": [
+        "InputModifierSwizzleAxis"
+      ],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "W",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "S",
+      "valid": true,
+      "modifiers": [
+        "InputModifierNegate"
+      ],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "A",
+      "valid": true,
+      "modifiers": [
+        "InputModifierSwizzleAxis",
+        "InputModifierNegate"
+      ],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "D",
+      "valid": true,
+      "modifiers": [
+        "InputModifierSwizzleAxis"
+      ],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_StickAim",
+      "key": "Gamepad_Right2D",
+      "valid": true,
+      "modifiers": [
+        "InputModifierSwizzleAxis",
+        "InputModifierDeadZone"
+      ],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "F",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "LeftMouseButton",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "Gamepad_RightTrigger",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "G",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "Gamepad_LeftTrigger",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "LeftShift",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "Gamepad_LeftShoulder",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "RightMouseButton",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_MouseAim",
+      "key": "Mouse2D",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "(",
+      "valid": false,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Pause",
+      "key": "(",
+      "valid": false,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Restart",
+      "key": "(",
+      "valid": false,
+      "modifiers": [],
+      "triggers": []
+    }
+  ],
+  "after": [
+    {
+      "action": "IA_Action_Move",
+      "key": "Gamepad_Left2D",
+      "valid": true,
+      "modifiers": [
+        "InputModifierSwizzleAxis"
+      ],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "W",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "S",
+      "valid": true,
+      "modifiers": [
+        "InputModifierNegate"
+      ],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "A",
+      "valid": true,
+      "modifiers": [
+        "InputModifierSwizzleAxis",
+        "InputModifierNegate"
+      ],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Move",
+      "key": "D",
+      "valid": true,
+      "modifiers": [
+        "InputModifierSwizzleAxis"
+      ],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_StickAim",
+      "key": "Gamepad_Right2D",
+      "valid": true,
+      "modifiers": [
+        "InputModifierSwizzleAxis",
+        "InputModifierDeadZone"
+      ],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "F",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "LeftMouseButton",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Fire",
+      "key": "Gamepad_RightTrigger",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "G",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "Gamepad_LeftTrigger",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "LeftShift",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "Gamepad_LeftShoulder",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_UseItem",
+      "key": "RightMouseButton",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_MouseAim",
+      "key": "Mouse2D",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Action_Dash",
+      "key": "SpaceBar",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Pause",
+      "key": "Escape",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    },
+    {
+      "action": "IA_Restart",
+      "key": "F5",
+      "valid": true,
+      "modifiers": [],
+      "triggers": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "capture_directory": "C:\\Projects\\to-deploy\\horror-game\\BossShot\\Saved\\Verification\\20261004-173327",
+  "output": "C:\\Projects\\to-deploy\\horror-game\\evidence\\BossShot-greybox-review.mp4",
+  "frames": 154,
+  "recorded_game_duration_seconds": 15.690793,
+  "minimum_interval": 0.10003500000000187,
+  "maximum_interval": 0.17034200000000155,
+  "audio": false,
+  "timing": "Actual capture request game timestamps; variable frame duration; no interpolation"
+}

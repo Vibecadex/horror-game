@@ -1,0 +1,11 @@
+Built-in image-generation prompt. Reference: direction-close-best.jpg.
+
+Create an expert production art-direction board expanding this exact horror-game look into the whole playable room. Four coherent views of ONE location in a polished 2 by 2 sheet, very small labels only: MATCHED COMBAT, FULL CHAMBER, CLOTH AND FLOOR, REVERSE VIEW.
+
+The reference image is the visual authority. Preserve the same stitched monstrous teddy, human scale, three small teddy creatures, elevated oblique combat camera, olive/taupe plush, concentrated turquoise overhead pool, long sharply grounded creature shadow, neutral-white small light pool beside the armed human, teal far haze, nearly black perimeter and sparse tiny red warning lamps. The first panel closely preserves the reference composition and its relative exposure. No HUD.
+
+Extend the unseen room as a worn industrial containment chamber, with low-contrast concrete wall supports, a sealed rear steel bulkhead, shallow perimeter drainage, intermittent pipework, a recessed fan, service cabinets and tanks. These remain subordinate and mostly disappear into darkness/fog. Preserve a broad clear combat area. Camera-facing wall and overhead slab are cut away in the full chamber view only. No stage-like glowing trim, rows of spotlights, fantasy machinery, extra large enemies, or new gameplay elements.
+
+Material detail panel: tactile dirty olive woven plush with dark recessed head seam and 8–14 irregular separate thread bridges; damaged concrete with subtle irregular hairline fractures, worn exposed aggregate, varied matte/damp patches and small angular broken pieces with actual thickness and contact shadows. No checker grid, huge zigzag crack, rounded painted stain blobs, large flat debris stamps or smooth white rubber teddy.
+
+The reverse view extends the same geometry and light logic into a playable view from the opposite side, retaining the grounded subject and player readability. Photoreal game environment concept, restrained material response, plausible local lighting. The sheet is a concept reference and must not pretend to be an Unreal screenshot or validation evidence.

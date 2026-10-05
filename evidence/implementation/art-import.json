@@ -1,0 +1,38 @@
+{
+  "assets": [
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Idle/A_Teddy_Idle.A_Teddy_Idle",
+      "type": "AnimSequence"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy.SK_Teddy",
+      "type": "SkeletalMesh"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.SK_Teddy_Skeleton",
+      "type": "Skeleton"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Walk/A_Teddy_Walk.A_Teddy_Walk",
+      "type": "AnimSequence"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Crawl/A_Teddy_Crawl.A_Teddy_Crawl",
+      "type": "AnimSequence"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Attack/A_Teddy_Attack.A_Teddy_Attack",
+      "type": "AnimSequence"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Hit/A_Teddy_Hit.A_Teddy_Hit",
+      "type": "AnimSequence"
+    },
+    {
+      "path": "/Game/TeddyEncounter/Teddy/Defeat/A_Teddy_Defeat.A_Teddy_Defeat",
+      "type": "AnimSequence"
+    }
+  ],
+  "bounds": "<Struct 'BoxSphereBounds' (0x0000023B24D61A80) {origin: {x: 3.293526, y: 6.943962, z: 229.848037}, box_extent: {x: 168.468407, y: 179.645607, z: 229.395890}, sphere_radius: 336.565926}>",
+  "passed": true
+}

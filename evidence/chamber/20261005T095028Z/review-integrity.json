@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "links": [
+    {
+      "url": "native-motion-20261005T115126/motion-still.png",
+      "exists": true
+    },
+    {
+      "url": "native-motion-20261005T115126/native-motion.mp4",
+      "exists": true
+    },
+    {
+      "url": "../../chamber-qa/final/INDEPENDENT_REVIEW.md",
+      "exists": true
+    },
+    {
+      "url": "../../../PLAY.cmd",
+      "exists": true
+    },
+    {
+      "url": "../../../EDIT.cmd",
+      "exists": true
+    },
+    {
+      "url": "../../../ENCOUNTER.md",
+      "exists": true
+    },
+    {
+      "url": "../../implementation/20261005T114712-capture_chamber_views/receipt.json",
+      "exists": true
+    },
+    {
+      "url": "../../implementation/20261005T114820-verify_chamber_runtime/receipt.json",
+      "exists": true
+    },
+    {
+      "url": "../../implementation/20261005T114928-verify_full_room/receipt.json",
+      "exists": true
+    },
+    {
+      "url": "native-motion-20261005T115126/receipt.json",
+      "exists": true
+    },
+    {
+      "url": "final-preservation.json",
+      "exists": true
+    },
+    {
+      "url": "delivery.json",
+      "exists": true
+    },
+    {
+      "url": "../../../study/CHAMBER_PARITY_BRIEF.md",
+      "exists": true
+    },
+    {
+      "url": "../../../Assets/Adapted/ChamberParity/manifest.json",
+      "exists": true
+    },
+    {
+      "url": "../../../Assets/Adapted/ChamberParity/FloorNormalsV2/manifest.json",
+      "exists": true
+    },
+    {
+      "url": "../../../Assets/Adapted/ChamberParity/SlabsNormalsV2/manifest.json",
+      "exists": true
+    },
+    {
+      "url": "../../../Assets/Adapted/ChamberParity/CrustNormalsV2/manifest.json",
+      "exists": true
+    },
+    {
+      "url": "../../../Assets/Adapted/ChamberParity/WallSurface/T_ChamberWall_Albedo.png",
+      "exists": true
+    },
+    {
+      "url": "../../../Assets/Adapted/ChamberParity/WallSurface/prompt.txt",
+      "exists": true
+    },
+    {
+      "url": "../../../Assets/Adapted/ChamberParity/WallSurface/manifest.json",
+      "exists": true
+    }
+  ],
+  "images": [
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\Assets\\Adapted\\ChamberParity\\WallSurface\\T_ChamberWall_Albedo.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "6ec78f1ac8b4f69bea1cae1839ab58b52ab9b4dc2987902a98ce1098da2cdbe3"
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\chamber\\20261005T095028Z\\native-motion-20261005T115126\\motion-still.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "c15a2b5ee5c945e6a46cb62189016fee3954eb62f77fcc1a7805fd1f1fdcff18"
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T095951-capture_chamber_views\\01-chamber-front.png",
+      "size": [
+        1920,
+        1280
+      ],
+      "sha256": "cc83631e9accb93766cf6e7a2187c2bd9b112e0058e893a8b33e86f5b0ce796d"
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T095951-capture_chamber_views\\02-chamber-reverse.png",
+      "size": [
+        1920,
+        1280
+      ],
+      "sha256": "55c5b1fbc7538a081b5573743aeb444f30c8adfe4c5b29e371c910ee5f904593"
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T114712-capture_chamber_views\\01-chamber-front.png",
+      "size": [
+        1920,
+        1280
+      ],
+      "sha256": "90b5753fcdbc10e502380d54b14e5a9d688ac5de950979d135ea93e2e35ab49d"
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T114712-capture_chamber_views\\02-chamber-reverse.png",
+      "size": [
+        1920,
+        1280
+      ],
+      "sha256": "61beec9e1ae2521afa3782f25971b657d467433087d1bdecdd90caa31f7d20d8"
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\study\\visuals\\chamber-target-front.png",
+      "size": [
+        571,
+        378
+      ],
+      "sha256": "f853bc67bfb3973f8c3097c829973634590bfb4b42df17ed54fcf65b156b6960"
+    },
+    {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\study\\visuals\\chamber-target-reverse.png",
+      "size": [
+        475,
+        320
+      ],
+      "sha256": "1728fb8239d4edde652c93c92bb441c211fe4b491fbf9c14d79413e1c60eff42"
+    }
+  ],
+  "javascript_syntax_passed": true,
+  "counts": {
+    "static_links": 20,
+    "decoded_images": 8
+  },
+  "method": "Local file/link existence, Pillow decode and installed Node syntax check; no claim of a browser interaction test."
+}

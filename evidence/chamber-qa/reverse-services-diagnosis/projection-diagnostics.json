@@ -1,0 +1,313 @@
+{
+  "sources": [
+    {
+      "path": "evidence/implementation/20261005T105657-verify_full_room/receipt.json",
+      "sha256": "db2e2f6c737f4ab1b2d4095f5a074235865cb3d91396d4efdc23aa57d8fcbdb0"
+    },
+    {
+      "path": "evidence/implementation/20261005T110142-capture_chamber_views/receipt.json",
+      "sha256": "02fa2d12ba2c5e2d71a258f75617077770d175a6ad0e12182a952c5307636b2e"
+    }
+  ],
+  "camera_location": [
+    1450,
+    100,
+    1450
+  ],
+  "camera_target": [
+    -600,
+    100,
+    0
+  ],
+  "aspect": 1.5,
+  "cases": [
+    {
+      "horizontal_fov": 64.0,
+      "actual_capture_fov": true,
+      "actors": [
+        {
+          "actor": "TE_Room_LeftPipeRun_0",
+          "source_bounds_cm": {
+            "min": [
+              -1250.0,
+              -1584.500015258789,
+              409.4000015258789
+            ],
+            "max": [
+              -750.0,
+              -1507.0000076293945,
+              504.00000381469727
+            ]
+          },
+          "normalized_screen_bounds": [
+            0.9583823347726962,
+            0.156661544868746,
+            1.0754286430590179,
+            0.289264572185188
+          ],
+          "projected_box_fraction_inside_frame": 0.35556580841061314
+        },
+        {
+          "actor": "TE_Room_LeftPipeRun_1",
+          "source_bounds_cm": {
+            "min": [
+              -750.0,
+              -1584.500015258789,
+              409.4000015258789
+            ],
+            "max": [
+              -250.0,
+              -1507.0000076293945,
+              504.00000381469727
+            ]
+          },
+          "normalized_screen_bounds": [
+            1.0364438136407772,
+            0.24477552282476578,
+            1.1968720840389495,
+            0.4202607909385238
+          ],
+          "projected_box_fraction_inside_frame": 0.0
+        },
+        {
+          "actor": "TE_Room_RightCabinetA",
+          "source_bounds_cm": {
+            "min": [
+              -863.0,
+              1529.3546562194824,
+              -5.0
+            ],
+            "max": [
+              -686.0,
+              1616.0000076293945,
+              260.5000305175781
+            ]
+          },
+          "normalized_screen_bounds": [
+            0.0009566800094628625,
+            0.3300947204602166,
+            0.08083597408904492,
+            0.4788290580890089
+          ],
+          "projected_box_fraction_inside_frame": 1.0
+        },
+        {
+          "actor": "TE_Room_RightCabinetB",
+          "source_bounds_cm": {
+            "min": [
+              -628.6999999999999,
+              1531.8869234085084,
+              -5.0
+            ],
+            "max": [
+              -469.4,
+              1614.2000072479248,
+              287.05003356933594
+            ]
+          },
+          "normalized_screen_bounds": [
+            -0.041239292855571374,
+            0.37284995942584387,
+            0.04843668854040539,
+            0.5396382316570018
+          ],
+          "projected_box_fraction_inside_frame": 0.5401300079062024
+        }
+      ]
+    },
+    {
+      "horizontal_fov": 70.0,
+      "actual_capture_fov": false,
+      "actors": [
+        {
+          "actor": "TE_Room_LeftPipeRun_0",
+          "source_bounds_cm": {
+            "min": [
+              -1250.0,
+              -1584.500015258789,
+              409.4000015258789
+            ],
+            "max": [
+              -750.0,
+              -1507.0000076293945,
+              504.00000381469727
+            ]
+          },
+          "normalized_screen_bounds": [
+            0.9090631089011706,
+            0.1936027302820012,
+            1.013515927260216,
+            0.31193845679002363
+          ],
+          "projected_box_fraction_inside_frame": 0.8706025603468494
+        },
+        {
+          "actor": "TE_Room_LeftPipeRun_1",
+          "source_bounds_cm": {
+            "min": [
+              -750.0,
+              -1584.500015258789,
+              409.4000015258789
+            ],
+            "max": [
+              -250.0,
+              -1507.0000076293945,
+              504.00000381469727
+            ]
+          },
+          "normalized_screen_bounds": [
+            0.9787256347204407,
+            0.27223616579214654,
+            1.121892772863442,
+            0.42884025782498203
+          ],
+          "projected_box_fraction_inside_frame": 0.14859810397487697
+        },
+        {
+          "actor": "TE_Room_RightCabinetA",
+          "source_bounds_cm": {
+            "min": [
+              -863.0,
+              1529.3546562194824,
+              -5.0
+            ],
+            "max": [
+              -686.0,
+              1616.0000076293945,
+              260.5000305175781
+            ]
+          },
+          "normalized_screen_bounds": [
+            0.05465078720164818,
+            0.34837552280078365,
+            0.12593554207604363,
+            0.48110692611928296
+          ],
+          "projected_box_fraction_inside_frame": 1.0
+        },
+        {
+          "actor": "TE_Room_RightCabinetB",
+          "source_bounds_cm": {
+            "min": [
+              -628.6999999999999,
+              1531.8869234085084,
+              -5.0
+            ],
+            "max": [
+              -469.4,
+              1614.2000072479248,
+              287.05003356933594
+            ]
+          },
+          "normalized_screen_bounds": [
+            0.016994851241900366,
+            0.3865305511392224,
+            0.09702222786799203,
+            0.5353733925653973
+          ],
+          "projected_box_fraction_inside_frame": 1.0
+        }
+      ]
+    },
+    {
+      "horizontal_fov": 72.0,
+      "actual_capture_fov": false,
+      "actors": [
+        {
+          "actor": "TE_Room_LeftPipeRun_0",
+          "source_bounds_cm": {
+            "min": [
+              -1250.0,
+              -1584.500015258789,
+              409.4000015258789
+            ],
+            "max": [
+              -750.0,
+              -1507.0000076293945,
+              504.00000381469727
+            ]
+          },
+          "normalized_screen_bounds": [
+            0.8942357968259026,
+            0.2047087132911325,
+            0.9949025134777784,
+            0.3187551242671305
+          ],
+          "projected_box_fraction_inside_frame": 1.0
+        },
+        {
+          "actor": "TE_Room_LeftPipeRun_1",
+          "source_bounds_cm": {
+            "min": [
+              -750.0,
+              -1584.500015258789,
+              409.4000015258789
+            ],
+            "max": [
+              -250.0,
+              -1507.0000076293945,
+              504.00000381469727
+            ]
+          },
+          "normalized_screen_bounds": [
+            0.9613732648049573,
+            0.2804919223631341,
+            1.0993510231432837,
+            0.4314195852721792
+          ],
+          "projected_box_fraction_inside_frame": 0.27994899801407513
+        },
+        {
+          "actor": "TE_Room_RightCabinetA",
+          "source_bounds_cm": {
+            "min": [
+              -863.0,
+              1529.3546562194824,
+              -5.0
+            ],
+            "max": [
+              -686.0,
+              1616.0000076293945,
+              260.5000305175781
+            ]
+          },
+          "normalized_screen_bounds": [
+            0.07079336182387219,
+            0.35387145580662527,
+            0.13949425791527725,
+            0.4817917434406077
+          ],
+          "projected_box_fraction_inside_frame": 1.0
+        },
+        {
+          "actor": "TE_Room_RightCabinetB",
+          "source_bounds_cm": {
+            "min": [
+              -628.6999999999999,
+              1531.8869234085084,
+              -5.0
+            ],
+            "max": [
+              -469.4,
+              1614.2000072479248,
+              287.05003356933594
+            ]
+          },
+          "normalized_screen_bounds": [
+            0.03450234071909947,
+            0.3906434786867268,
+            0.11162896471807815,
+            0.5340912130695806
+          ],
+          "projected_box_fraction_inside_frame": 1.0
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Conservative saved component boxes projected analytically, not an engine screenshot or rendered silhouette.",
+    "Fractions describe screen-box clipping only. They do not measure visible mesh area, lighting, depth occlusion or acceptance.",
+    "FOV70 and FOV72 are predicted architectural framing trials; neither changes or validates the saved gameplay camera.",
+    "Geometry receipt predates wall material/light adjustments, which do not change these saved bounds."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "baseline_files_checked": 555,
+  "unchanged_count": 555,
+  "changed": [],
+  "missing": [],
+  "protected_content_changes": [],
+  "originals": {
+    "reference_video": {
+      "path": "C:\\Projects\\to-deploy\\horror-scene\\WhatsApp Video 2026-10-04 at 16.53.31.mp4",
+      "sha256": "289b314d3578e76e7a8e916c31ef653c0bbea2fb97e21eea2100cb063069fdeb",
+      "unchanged": true
+    },
+    "source_archive": {
+      "path": "C:\\Projects\\to-deploy\\horror-scene\\BossShot.zip",
+      "sha256": "da5046e96735df83d9b507e2c3ed22c4f611b1b48c319fde065341d8a09d030e",
+      "unchanged": true
+    },
+    "teddy_model": {
+      "path": "C:\\Projects\\to-deploy\\horror-game\\Assets\\ThirdParty\\HorrorTeddyBear\\horror-teddy-bear-monster.glb",
+      "sha256": "9fe8c87ab5eab6d05f19c936d8ae993d07727aa9871100118aa21452f7a9a8bb",
+      "unchanged": true
+    }
+  },
+  "baseline_archive_sha256": "5c5ea3b4f76b1d87131b5cfbcbd9e24c39a11612d1fe1003ee96d423959dea9e"
+}

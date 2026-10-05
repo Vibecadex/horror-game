@@ -1,0 +1,6962 @@
+{
+  "owner": "teddy-preprod-layout-20261005",
+  "units": "cm",
+  "up": "+Z",
+  "far": "+X",
+  "combat_footprint_cm": {
+    "x": [
+      -1400,
+      1480
+    ],
+    "y": [
+      -1500,
+      1500
+    ]
+  },
+  "not_imported": true,
+  "counts": {
+    "total": 303,
+    "shell": 107,
+    "kit": 41,
+    "dressing": 110,
+    "floor": 45,
+    "lights": 5
+  },
+  "lights": [
+    {
+      "name": "TE_Parity_Key",
+      "location_cm": [
+        900,
+        60,
+        1600
+      ],
+      "aim_cm": [
+        100,
+        0,
+        -5
+      ],
+      "intensity_cd": 165000,
+      "source_radius_cm": 70,
+      "color": [
+        0.5,
+        0.94,
+        1.0
+      ],
+      "note": "Hold from look-03. Do not restore 130000 cd or source radius 30. Do not bake the shadow."
+    },
+    {
+      "name": "ParityPlayerLight",
+      "relative_cm": [
+        105,
+        0,
+        170
+      ],
+      "intensity_cd": 16000,
+      "pitch": -80,
+      "inner_deg": 15,
+      "outer_deg": 26,
+      "color": [
+        0.94,
+        0.96,
+        1.0
+      ],
+      "note": "Held baseline. Do not widen the cone to 48. Not a floor texture."
+    },
+    {
+      "name": "RedPractical_1",
+      "location_cm": [
+        740,
+        -1530,
+        235
+      ],
+      "color": [
+        1.0,
+        0.034,
+        0.014
+      ],
+      "intensity_cd": 180,
+      "note": "Pin. No red floor pool."
+    },
+    {
+      "name": "RedPractical_2",
+      "location_cm": [
+        -920,
+        1530,
+        235
+      ],
+      "color": [
+        1.0,
+        0.034,
+        0.014
+      ],
+      "intensity_cd": 180,
+      "note": "Pin."
+    },
+    {
+      "name": "RedPractical_3",
+      "location_cm": [
+        1630,
+        400,
+        240
+      ],
+      "color": [
+        1.0,
+        0.034,
+        0.014
+      ],
+      "intensity_cd": 160,
+      "note": "Third pin, on the far wall. Stop at three."
+    }
+  ],
+  "lanes": [
+    {
+      "name": "near approach",
+      "x": [
+        -1400,
+        -500
+      ],
+      "y": [
+        -40,
+        240
+      ],
+      "width_cm": 280
+    },
+    {
+      "name": "pipe orbit",
+      "x": [
+        -1100,
+        1200
+      ],
+      "y": [
+        -1180,
+        -960
+      ],
+      "width_cm": 220
+    },
+    {
+      "name": "far approach",
+      "x": [
+        860,
+        1080
+      ],
+      "y": [
+        -900,
+        1000
+      ],
+      "width_cm": 220
+    },
+    {
+      "name": "power orbit",
+      "x": [
+        -900,
+        1100
+      ],
+      "y": [
+        700,
+        920
+      ],
+      "width_cm": 220
+    }
+  ],
+  "actors": [
+    {
+      "name": "TE_PlayerStart",
+      "location_cm": [
+        -230,
+        570,
+        95
+      ],
+      "note": "Spawn in build_encounter_scene.py. The matched plate stood near Z 85."
+    },
+    {
+      "name": "TE_MainTeddy",
+      "location_cm": [
+        250,
+        -230,
+        232
+      ],
+      "note": "Spawn in build_encounter_scene.py. Health 300."
+    },
+    {
+      "name": "TE_Stitchling_1",
+      "location_cm": [
+        650,
+        600,
+        65
+      ],
+      "scale": 0.35,
+      "note": "Spawn in build_stitchlings.py. Health 24."
+    },
+    {
+      "name": "TE_Stitchling_2",
+      "location_cm": [
+        -480,
+        -500,
+        65
+      ],
+      "scale": 0.35,
+      "note": "Same family. North of the pipe orbit."
+    },
+    {
+      "name": "TE_Stitchling_3",
+      "location_cm": [
+        20,
+        1070,
+        65
+      ],
+      "scale": 0.35,
+      "note": "Same family. North of the power orbit."
+    }
+  ],
+  "beats": [
+    {
+      "t": "Enter",
+      "where": "Cutaway, X about -1400",
+      "clips": [
+        "IdleHeavy",
+        "WeightShift"
+      ],
+      "note": "Player comes in over the low sill. Boss holds."
+    },
+    {
+      "t": "Notice",
+      "where": "Boss stays in the centre",
+      "clips": [
+        "Search",
+        "Threat"
+      ],
+      "note": "Head scan, then both arms open. In place."
+    },
+    {
+      "t": "Strike",
+      "where": "Boss, then the other arm",
+      "clips": [
+        "Telegraph",
+        "Attack",
+        "AttackLeft",
+        "Recover"
+      ],
+      "note": "Telegraph holds the raised arm. Recover returns to idle."
+    },
+    {
+      "t": "Hit",
+      "where": "Boss",
+      "clips": [
+        "Hit",
+        "HitLeft",
+        "Stagger",
+        "Brace",
+        "Slump"
+      ],
+      "note": "Directional hits. Brace is both arms in. Slump settles."
+    },
+    {
+      "t": "Minions",
+      "where": "Right grate, +Y, outside the lanes",
+      "clips": [
+        "Crawl",
+        "StitchlingIdle",
+        "SwipeLow",
+        "StitchlingFlinch"
+      ],
+      "note": "Three only, scale 0.35. They enter from the cabinet side."
+    },
+    {
+      "t": "Move",
+      "where": "Inside X -1400..1480, Y -1500..1500",
+      "clips": [
+        "Walk",
+        "WalkStop",
+        "TurnLeft",
+        "TurnRight",
+        "StepLeft",
+        "StepRight"
+      ],
+      "note": "The blueprint moves the actor. These clips stay in place. Walk is 105 cm/s."
+    },
+    {
+      "t": "Down",
+      "where": "On the floor",
+      "clips": [
+        "Defeat",
+        "DefeatBreath"
+      ],
+      "note": "Breath holds the last defeat frame. No get-up."
+    }
+  ],
+  "placements": [
+    {
+      "mesh": "SM_ShellWallBayNarrow",
+      "location_cm": [
+        1720,
+        -1600,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Far wall, Y -1700..-1500.",
+      "id": "p001",
+      "x": 1720,
+      "y": -1600,
+      "z": -5,
+      "zone": "corner far left"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        -1300,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Replaces FarWall. Hide the box.",
+      "id": "p002",
+      "x": 1720,
+      "y": -1300,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        -900,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Replaces FarWall. Hide the box.",
+      "id": "p003",
+      "x": 1720,
+      "y": -900,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        -500,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Replaces FarWall. Hide the box.",
+      "id": "p004",
+      "x": 1720,
+      "y": -500,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        -100,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Replaces FarWall. Hide the box.",
+      "id": "p005",
+      "x": 1720,
+      "y": -100,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        300,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Replaces FarWall. Hide the box.",
+      "id": "p006",
+      "x": 1720,
+      "y": 300,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        700,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Replaces FarWall. Hide the box.",
+      "id": "p007",
+      "x": 1720,
+      "y": 700,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        1100,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Replaces FarWall. Hide the box.",
+      "id": "p008",
+      "x": 1720,
+      "y": 1100,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1720,
+        1500,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Replaces FarWall. Hide the box.",
+      "id": "p009",
+      "x": 1720,
+      "y": 1500,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -1340,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Left wall, X -1540..1660. Hide SideWall_-1.",
+      "id": "p010",
+      "x": -1340,
+      "y": -1740,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -1340,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall. Hide SideWall_1.",
+      "id": "p011",
+      "x": -1340,
+      "y": 1740,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -940,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Left wall, X -1540..1660. Hide SideWall_-1.",
+      "id": "p012",
+      "x": -940,
+      "y": -1740,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -940,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall. Hide SideWall_1.",
+      "id": "p013",
+      "x": -940,
+      "y": 1740,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -540,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Left wall, X -1540..1660. Hide SideWall_-1.",
+      "id": "p014",
+      "x": -540,
+      "y": -1740,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -540,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall. Hide SideWall_1.",
+      "id": "p015",
+      "x": -540,
+      "y": 1740,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -140,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Left wall, X -1540..1660. Hide SideWall_-1.",
+      "id": "p016",
+      "x": -140,
+      "y": -1740,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        -140,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall. Hide SideWall_1.",
+      "id": "p017",
+      "x": -140,
+      "y": 1740,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        260,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Left wall, X -1540..1660. Hide SideWall_-1.",
+      "id": "p018",
+      "x": 260,
+      "y": -1740,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        260,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall. Hide SideWall_1.",
+      "id": "p019",
+      "x": 260,
+      "y": 1740,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        660,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Left wall, X -1540..1660. Hide SideWall_-1.",
+      "id": "p020",
+      "x": 660,
+      "y": -1740,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        660,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall. Hide SideWall_1.",
+      "id": "p021",
+      "x": 660,
+      "y": 1740,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1060,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Left wall, X -1540..1660. Hide SideWall_-1.",
+      "id": "p022",
+      "x": 1060,
+      "y": -1740,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1060,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall. Hide SideWall_1.",
+      "id": "p023",
+      "x": 1060,
+      "y": 1740,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1460,
+        -1740,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Left wall, X -1540..1660. Hide SideWall_-1.",
+      "id": "p024",
+      "x": 1460,
+      "y": -1740,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellWallBay",
+      "location_cm": [
+        1460,
+        1740,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall. Hide SideWall_1.",
+      "id": "p025",
+      "x": 1460,
+      "y": 1740,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1630,
+        -1300,
+        760
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Seat at Z=760. Brackets hang below.",
+      "id": "p026",
+      "x": 1630,
+      "y": -1300,
+      "z": 760,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1630,
+        -900,
+        760
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Seat at Z=760. Brackets hang below.",
+      "id": "p027",
+      "x": 1630,
+      "y": -900,
+      "z": 760,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1630,
+        -500,
+        760
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Seat at Z=760. Brackets hang below.",
+      "id": "p028",
+      "x": 1630,
+      "y": -500,
+      "z": 760,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1630,
+        -100,
+        760
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Seat at Z=760. Brackets hang below.",
+      "id": "p029",
+      "x": 1630,
+      "y": -100,
+      "z": 760,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1630,
+        300,
+        760
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Seat at Z=760. Brackets hang below.",
+      "id": "p030",
+      "x": 1630,
+      "y": 300,
+      "z": 760,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1630,
+        700,
+        760
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Seat at Z=760. Brackets hang below.",
+      "id": "p031",
+      "x": 1630,
+      "y": 700,
+      "z": 760,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1630,
+        1100,
+        760
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Seat at Z=760. Brackets hang below.",
+      "id": "p032",
+      "x": 1630,
+      "y": 1100,
+      "z": 760,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1630,
+        1500,
+        760
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Seat at Z=760. Brackets hang below.",
+      "id": "p033",
+      "x": 1630,
+      "y": 1500,
+      "z": 760,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        -1340,
+        1645,
+        760
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p034",
+      "x": -1340,
+      "y": 1645,
+      "z": 760,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        -1340,
+        -1645,
+        760
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p035",
+      "x": -1340,
+      "y": -1645,
+      "z": 760,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        -940,
+        1645,
+        760
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p036",
+      "x": -940,
+      "y": 1645,
+      "z": 760,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        -940,
+        -1645,
+        760
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p037",
+      "x": -940,
+      "y": -1645,
+      "z": 760,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        -540,
+        1645,
+        760
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p038",
+      "x": -540,
+      "y": 1645,
+      "z": 760,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        -540,
+        -1645,
+        760
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p039",
+      "x": -540,
+      "y": -1645,
+      "z": 760,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        -140,
+        1645,
+        760
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p040",
+      "x": -140,
+      "y": 1645,
+      "z": 760,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        -140,
+        -1645,
+        760
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p041",
+      "x": -140,
+      "y": -1645,
+      "z": 760,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        260,
+        1645,
+        760
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p042",
+      "x": 260,
+      "y": 1645,
+      "z": 760,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        260,
+        -1645,
+        760
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p043",
+      "x": 260,
+      "y": -1645,
+      "z": 760,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        660,
+        1645,
+        760
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p044",
+      "x": 660,
+      "y": 1645,
+      "z": 760,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        660,
+        -1645,
+        760
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p045",
+      "x": 660,
+      "y": -1645,
+      "z": 760,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1060,
+        1645,
+        760
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p046",
+      "x": 1060,
+      "y": 1645,
+      "z": 760,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1060,
+        -1645,
+        760
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p047",
+      "x": 1060,
+      "y": -1645,
+      "z": 760,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1460,
+        1645,
+        760
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p048",
+      "x": 1460,
+      "y": 1645,
+      "z": 760,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCornice",
+      "location_cm": [
+        1460,
+        -1645,
+        760
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p049",
+      "x": 1460,
+      "y": -1645,
+      "z": 760,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        1570,
+        -1200,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p050",
+      "x": 1570,
+      "y": -1200,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        1560,
+        -1200,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p051",
+      "x": 1560,
+      "y": -1200,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        1570,
+        -400,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p052",
+      "x": 1570,
+      "y": -400,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        1560,
+        -400,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p053",
+      "x": 1560,
+      "y": -400,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        1570,
+        400,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p054",
+      "x": 1570,
+      "y": 400,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        1560,
+        400,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p055",
+      "x": 1560,
+      "y": 400,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        1570,
+        1200,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p056",
+      "x": 1570,
+      "y": 1200,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        1560,
+        1200,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p057",
+      "x": 1560,
+      "y": 1200,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        -1200,
+        1575,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p058",
+      "x": -1200,
+      "y": 1575,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        -1200,
+        -1575,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p059",
+      "x": -1200,
+      "y": -1575,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        -1200,
+        1550,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p060",
+      "x": -1200,
+      "y": 1550,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        -1200,
+        -1550,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p061",
+      "x": -1200,
+      "y": -1550,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        -400,
+        1575,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p062",
+      "x": -400,
+      "y": 1575,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        -400,
+        -1575,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p063",
+      "x": -400,
+      "y": -1575,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        -400,
+        1550,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p064",
+      "x": -400,
+      "y": 1550,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        -400,
+        -1550,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p065",
+      "x": -400,
+      "y": -1550,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        400,
+        1575,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p066",
+      "x": 400,
+      "y": 1575,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        400,
+        -1575,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p067",
+      "x": 400,
+      "y": -1575,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        400,
+        1550,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p068",
+      "x": 400,
+      "y": 1550,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        400,
+        -1550,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p069",
+      "x": 400,
+      "y": -1550,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        1200,
+        1575,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p070",
+      "x": 1200,
+      "y": 1575,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellFoundation",
+      "location_cm": [
+        1200,
+        -1575,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p071",
+      "x": 1200,
+      "y": -1575,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        1200,
+        1550,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p072",
+      "x": 1200,
+      "y": 1550,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellGutter",
+      "location_cm": [
+        1200,
+        -1550,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p073",
+      "x": 1200,
+      "y": -1550,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellCutawaySill",
+      "location_cm": [
+        -1530,
+        -1270,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Foreground curb, 42\u201368 cm, with gaps.",
+      "id": "p074",
+      "x": -1530,
+      "y": -1270,
+      "z": -5,
+      "zone": "near cutaway"
+    },
+    {
+      "mesh": "SM_ShellCutawaySill",
+      "location_cm": [
+        -1530,
+        -640,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Foreground curb, 42\u201368 cm, with gaps.",
+      "id": "p075",
+      "x": -1530,
+      "y": -640,
+      "z": -5,
+      "zone": "near cutaway"
+    },
+    {
+      "mesh": "SM_ShellCutawaySill",
+      "location_cm": [
+        -1530,
+        0,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Foreground curb, 42\u201368 cm, with gaps.",
+      "id": "p076",
+      "x": -1530,
+      "y": 0,
+      "z": -5,
+      "zone": "near cutaway"
+    },
+    {
+      "mesh": "SM_ShellCutawaySill",
+      "location_cm": [
+        -1530,
+        640,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Foreground curb, 42\u201368 cm, with gaps.",
+      "id": "p077",
+      "x": -1530,
+      "y": 640,
+      "z": -5,
+      "zone": "near cutaway"
+    },
+    {
+      "mesh": "SM_ShellCutawaySill",
+      "location_cm": [
+        -1530,
+        1220,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Foreground curb, 42\u201368 cm, with gaps.",
+      "id": "p078",
+      "x": -1530,
+      "y": 1220,
+      "z": -5,
+      "zone": "near cutaway"
+    },
+    {
+      "mesh": "SM_ShellCutawayReturn",
+      "location_cm": [
+        -1540,
+        -1680,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Near corner pier.",
+      "id": "p079",
+      "x": -1540,
+      "y": -1680,
+      "z": -5,
+      "zone": "corner near left"
+    },
+    {
+      "mesh": "SM_ShellCutawayReturn",
+      "location_cm": [
+        -1540,
+        1680,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Near corner pier.",
+      "id": "p080",
+      "x": -1540,
+      "y": 1680,
+      "z": -5,
+      "zone": "corner near right"
+    },
+    {
+      "mesh": "SM_ShellRearInset",
+      "location_cm": [
+        1651,
+        -900,
+        340
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p081",
+      "x": 1651,
+      "y": -900,
+      "z": 340,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellRearInset",
+      "location_cm": [
+        1651,
+        900,
+        340
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p082",
+      "x": 1651,
+      "y": 900,
+      "z": 340,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellShutterNiche",
+      "location_cm": [
+        200,
+        1688,
+        180
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall only.",
+      "id": "p083",
+      "x": 200,
+      "y": 1688,
+      "z": 180,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellPipeStandoff",
+      "location_cm": [
+        -1000,
+        -1620,
+        461
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Under the left pipe run.",
+      "id": "p084",
+      "x": -1000,
+      "y": -1620,
+      "z": 461,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellPipeStandoff",
+      "location_cm": [
+        -500,
+        -1620,
+        461
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Under the left pipe run.",
+      "id": "p085",
+      "x": -500,
+      "y": -1620,
+      "z": 461,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellPipeStandoff",
+      "location_cm": [
+        0,
+        -1620,
+        461
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Under the left pipe run.",
+      "id": "p086",
+      "x": 0,
+      "y": -1620,
+      "z": 461,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellPipeStandoff",
+      "location_cm": [
+        500,
+        -1620,
+        461
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Under the left pipe run.",
+      "id": "p087",
+      "x": 500,
+      "y": -1620,
+      "z": 461,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellPipeStandoff",
+      "location_cm": [
+        1000,
+        -1620,
+        461
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Under the left pipe run.",
+      "id": "p088",
+      "x": 1000,
+      "y": -1620,
+      "z": 461,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellBeaconHousing",
+      "location_cm": [
+        740,
+        -1530,
+        188
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Red practical 1. The light is separate.",
+      "id": "p089",
+      "x": 740,
+      "y": -1530,
+      "z": 188,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellBeaconHousing",
+      "location_cm": [
+        -920,
+        1530,
+        188
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Red practical 2.",
+      "id": "p090",
+      "x": -920,
+      "y": 1530,
+      "z": 188,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellBeaconHousing",
+      "location_cm": [
+        1630,
+        400,
+        200
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Red practical 3. Pin, not a bar.",
+      "id": "p091",
+      "x": 1630,
+      "y": 400,
+      "z": 200,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellCornerRiser",
+      "location_cm": [
+        1600,
+        -1620,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Far-left corner. Elbow points outside. No valve.",
+      "id": "p092",
+      "x": 1600,
+      "y": -1620,
+      "z": -5,
+      "zone": "corner far left"
+    },
+    {
+      "mesh": "SM_ShellCornerRiser",
+      "location_cm": [
+        1600,
+        1620,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Far-right corner. No valve.",
+      "id": "p093",
+      "x": 1600,
+      "y": 1620,
+      "z": -5,
+      "zone": "corner far right"
+    },
+    {
+      "mesh": "SM_ShellUtilityCurb",
+      "location_cm": [
+        1500,
+        200,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "",
+      "id": "p094",
+      "x": 1500,
+      "y": 200,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellUpperBracket",
+      "location_cm": [
+        -800,
+        1600,
+        640
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Arm only. No lamp and no span.",
+      "id": "p095",
+      "x": -800,
+      "y": 1600,
+      "z": 640,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellUpperBracket",
+      "location_cm": [
+        200,
+        1600,
+        640
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Arm only. No lamp and no span.",
+      "id": "p096",
+      "x": 200,
+      "y": 1600,
+      "z": 640,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellUpperBracket",
+      "location_cm": [
+        1100,
+        1600,
+        640
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Arm only. No lamp and no span.",
+      "id": "p097",
+      "x": 1100,
+      "y": 1600,
+      "z": 640,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCableTray",
+      "location_cm": [
+        -600,
+        1660,
+        520
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall.",
+      "id": "p098",
+      "x": -600,
+      "y": 1660,
+      "z": 520,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCableTray",
+      "location_cm": [
+        100,
+        1660,
+        520
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall.",
+      "id": "p099",
+      "x": 100,
+      "y": 1660,
+      "z": 520,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellCableTray",
+      "location_cm": [
+        800,
+        1660,
+        520
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Right wall.",
+      "id": "p100",
+      "x": 800,
+      "y": 1660,
+      "z": 520,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellDarkBacking",
+      "location_cm": [
+        1900,
+        0,
+        300
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Outside the far wall.",
+      "id": "p101",
+      "x": 1900,
+      "y": 0,
+      "z": 300,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ShellDarkBacking",
+      "location_cm": [
+        90,
+        -1900,
+        300
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Outside the left wall.",
+      "id": "p102",
+      "x": 90,
+      "y": -1900,
+      "z": 300,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_ShellDarkBacking",
+      "location_cm": [
+        90,
+        1900,
+        300
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Outside the right wall.",
+      "id": "p103",
+      "x": 90,
+      "y": 1900,
+      "z": 300,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_ShellOuterApron",
+      "location_cm": [
+        -1800,
+        -1800,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Dark ground outside the shell.",
+      "id": "p104",
+      "x": -1800,
+      "y": -1800,
+      "z": -5,
+      "zone": "corner near left"
+    },
+    {
+      "mesh": "SM_ShellOuterApron",
+      "location_cm": [
+        1800,
+        -1800,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Dark ground outside the shell.",
+      "id": "p105",
+      "x": 1800,
+      "y": -1800,
+      "z": -5,
+      "zone": "corner far left"
+    },
+    {
+      "mesh": "SM_ShellOuterApron",
+      "location_cm": [
+        -1800,
+        1800,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Dark ground outside the shell.",
+      "id": "p106",
+      "x": -1800,
+      "y": 1800,
+      "z": -5,
+      "zone": "corner near right"
+    },
+    {
+      "mesh": "SM_ShellOuterApron",
+      "location_cm": [
+        1800,
+        1800,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "shell",
+      "collision": false,
+      "note": "Dark ground outside the shell.",
+      "id": "p107",
+      "x": 1800,
+      "y": 1800,
+      "z": -5,
+      "zone": "corner far right"
+    },
+    {
+      "mesh": "SM_RoomBulkhead",
+      "location_cm": [
+        1630,
+        180,
+        62
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Already has the locking wheel.",
+      "id": "p108",
+      "x": 1630,
+      "y": 180,
+      "z": 62,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        1635,
+        -1360,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Far wall.",
+      "id": "p109",
+      "x": 1635,
+      "y": -1360,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        1635,
+        -780,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Far wall.",
+      "id": "p110",
+      "x": 1635,
+      "y": -780,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        1635,
+        780,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Far wall.",
+      "id": "p111",
+      "x": 1635,
+      "y": 780,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        1635,
+        1380,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Far wall.",
+      "id": "p112",
+      "x": 1635,
+      "y": 1380,
+      "z": -5,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_RoomVentFan",
+      "location_cm": [
+        1612,
+        -1100,
+        365
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Far wall, static.",
+      "id": "p113",
+      "x": 1612,
+      "y": -1100,
+      "z": 365,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_RoomUtilityTank",
+      "location_cm": [
+        1570,
+        1080,
+        62
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Same tank family. One on the far wall.",
+      "id": "p114",
+      "x": 1570,
+      "y": 1080,
+      "z": 62,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_RoomVentFan",
+      "location_cm": [
+        -20,
+        -1630,
+        275
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Left wall.",
+      "id": "p115",
+      "x": -20,
+      "y": -1630,
+      "z": 275,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomServiceCabinet",
+      "location_cm": [
+        -770,
+        1580,
+        62
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Right wall.",
+      "id": "p116",
+      "x": -770,
+      "y": 1580,
+      "z": 62,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomServiceCabinet",
+      "location_cm": [
+        -545,
+        1580,
+        62
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Right wall.",
+      "id": "p117",
+      "x": -545,
+      "y": 1580,
+      "z": 62,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomUtilityTank",
+      "location_cm": [
+        970,
+        1555,
+        62
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Same tank family. Right wall.",
+      "id": "p118",
+      "x": 970,
+      "y": 1555,
+      "z": 62,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomPipeRack",
+      "location_cm": [
+        890,
+        1550,
+        470
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "One run on the right. The valve stays on the left racks.",
+      "id": "p119",
+      "x": 890,
+      "y": 1550,
+      "z": 470,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomVentFan",
+      "location_cm": [
+        225,
+        1630,
+        340
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Right wall.",
+      "id": "p120",
+      "x": 225,
+      "y": 1630,
+      "z": 340,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomCargoCrate",
+      "location_cm": [
+        -825,
+        -1565,
+        65
+      ],
+      "yaw": 5,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Peripheral. Same crate family.",
+      "id": "p121",
+      "x": -825,
+      "y": -1565,
+      "z": 65,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomCableSpool",
+      "location_cm": [
+        -50,
+        1580,
+        65
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Right wall, low.",
+      "id": "p122",
+      "x": -50,
+      "y": 1580,
+      "z": 65,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomCargoCrate",
+      "location_cm": [
+        1530,
+        -585,
+        65
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Same crate family. Far edge.",
+      "id": "p123",
+      "x": 1530,
+      "y": -585,
+      "z": 65,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_RoomStripLight",
+      "location_cm": [
+        1630,
+        -620,
+        545
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Housing. Emissive stays a slit.",
+      "id": "p124",
+      "x": 1630,
+      "y": -620,
+      "z": 545,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_RoomStripLight",
+      "location_cm": [
+        1630,
+        720,
+        545
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Housing. Emissive stays a slit.",
+      "id": "p125",
+      "x": 1630,
+      "y": 720,
+      "z": 545,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        -1180,
+        -1650,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Left wall.",
+      "id": "p126",
+      "x": -1180,
+      "y": -1650,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        -460,
+        -1650,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Left wall.",
+      "id": "p127",
+      "x": -460,
+      "y": -1650,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        420,
+        -1650,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Left wall.",
+      "id": "p128",
+      "x": 420,
+      "y": -1650,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        1350,
+        -1650,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Left wall.",
+      "id": "p129",
+      "x": 1350,
+      "y": -1650,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        -1150,
+        1650,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Right wall.",
+      "id": "p130",
+      "x": -1150,
+      "y": 1650,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        -120,
+        1650,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Right wall.",
+      "id": "p131",
+      "x": -120,
+      "y": 1650,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        680,
+        1650,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Right wall.",
+      "id": "p132",
+      "x": 680,
+      "y": 1650,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomPilaster",
+      "location_cm": [
+        1360,
+        1650,
+        -5
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Right wall.",
+      "id": "p133",
+      "x": 1360,
+      "y": 1650,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomPipeRack",
+      "location_cm": [
+        -1000,
+        -1550,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Left wall. Valve is on this mesh.",
+      "id": "p134",
+      "x": -1000,
+      "y": -1550,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomPipeRack",
+      "location_cm": [
+        -500,
+        -1550,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Left wall. Valve is on this mesh.",
+      "id": "p135",
+      "x": -500,
+      "y": -1550,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomPipeRack",
+      "location_cm": [
+        0,
+        -1550,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Left wall. Valve is on this mesh.",
+      "id": "p136",
+      "x": 0,
+      "y": -1550,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomPipeRack",
+      "location_cm": [
+        500,
+        -1550,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Left wall. Valve is on this mesh.",
+      "id": "p137",
+      "x": 500,
+      "y": -1550,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomPipeRack",
+      "location_cm": [
+        1000,
+        -1550,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Left wall. Valve is on this mesh.",
+      "id": "p138",
+      "x": 1000,
+      "y": -1550,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomFloorGrate",
+      "location_cm": [
+        -1070,
+        -1548,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        0.85,
+        0.7
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Discontinuous. Not a stripe across the fight.",
+      "id": "p139",
+      "x": -1070,
+      "y": -1548,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomFloorGrate",
+      "location_cm": [
+        -550,
+        -1548,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        0.85,
+        0.7
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Discontinuous. Not a stripe across the fight.",
+      "id": "p140",
+      "x": -550,
+      "y": -1548,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomFloorGrate",
+      "location_cm": [
+        -10,
+        -1548,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        0.85,
+        0.7
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Discontinuous. Not a stripe across the fight.",
+      "id": "p141",
+      "x": -10,
+      "y": -1548,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomFloorGrate",
+      "location_cm": [
+        550,
+        -1548,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        0.85,
+        0.7
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Discontinuous. Not a stripe across the fight.",
+      "id": "p142",
+      "x": 550,
+      "y": -1548,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomFloorGrate",
+      "location_cm": [
+        1090,
+        -1548,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        0.85,
+        0.7
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Discontinuous. Not a stripe across the fight.",
+      "id": "p143",
+      "x": 1090,
+      "y": -1548,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_RoomFloorGrate",
+      "location_cm": [
+        -1070,
+        1548,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        0.85,
+        0.7
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Discontinuous. Not a stripe across the fight.",
+      "id": "p144",
+      "x": -1070,
+      "y": 1548,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomFloorGrate",
+      "location_cm": [
+        -550,
+        1548,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        0.85,
+        0.7
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Discontinuous. Not a stripe across the fight.",
+      "id": "p145",
+      "x": -550,
+      "y": 1548,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomFloorGrate",
+      "location_cm": [
+        -10,
+        1548,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        0.85,
+        0.7
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Discontinuous. Not a stripe across the fight.",
+      "id": "p146",
+      "x": -10,
+      "y": 1548,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomFloorGrate",
+      "location_cm": [
+        550,
+        1548,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        0.85,
+        0.7
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Discontinuous. Not a stripe across the fight.",
+      "id": "p147",
+      "x": 550,
+      "y": 1548,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_RoomFloorGrate",
+      "location_cm": [
+        1090,
+        1548,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        0.85,
+        0.7
+      ],
+      "kind": "kit",
+      "collision": false,
+      "note": "Discontinuous. Not a stripe across the fight.",
+      "id": "p148",
+      "x": 1090,
+      "y": 1548,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        -1300,
+        -1665,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall tile.",
+      "id": "p149",
+      "x": -1300,
+      "y": -1665,
+      "z": 160,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressRib",
+      "location_cm": [
+        -1170,
+        -1672,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p150",
+      "x": -1170,
+      "y": -1672,
+      "z": 160,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        -700,
+        -1665,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall tile.",
+      "id": "p151",
+      "x": -700,
+      "y": -1665,
+      "z": 160,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressRib",
+      "location_cm": [
+        -570,
+        -1672,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p152",
+      "x": -570,
+      "y": -1672,
+      "z": 160,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        100,
+        -1665,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall tile.",
+      "id": "p153",
+      "x": 100,
+      "y": -1665,
+      "z": 160,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressRib",
+      "location_cm": [
+        230,
+        -1672,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p154",
+      "x": 230,
+      "y": -1672,
+      "z": 160,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        900,
+        -1665,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall tile.",
+      "id": "p155",
+      "x": 900,
+      "y": -1665,
+      "z": 160,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressRib",
+      "location_cm": [
+        1030,
+        -1672,
+        160
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p156",
+      "x": 1030,
+      "y": -1672,
+      "z": 160,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        -1250,
+        1665,
+        160
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall tile.",
+      "id": "p157",
+      "x": -1250,
+      "y": 1665,
+      "z": 160,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressPanelNarrow",
+      "location_cm": [
+        -1070,
+        1668,
+        200
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p158",
+      "x": -1070,
+      "y": 1668,
+      "z": 200,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        -350,
+        1665,
+        160
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall tile.",
+      "id": "p159",
+      "x": -350,
+      "y": 1665,
+      "z": 160,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressPanelNarrow",
+      "location_cm": [
+        -170,
+        1668,
+        200
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p160",
+      "x": -170,
+      "y": 1668,
+      "z": 200,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        550,
+        1665,
+        160
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall tile.",
+      "id": "p161",
+      "x": 550,
+      "y": 1665,
+      "z": 160,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressPanelNarrow",
+      "location_cm": [
+        730,
+        1668,
+        200
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p162",
+      "x": 730,
+      "y": 1668,
+      "z": 200,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressPanel",
+      "location_cm": [
+        1250,
+        1665,
+        160
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall tile.",
+      "id": "p163",
+      "x": 1250,
+      "y": 1665,
+      "z": 160,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressPanelNarrow",
+      "location_cm": [
+        1430,
+        1668,
+        200
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p164",
+      "x": 1430,
+      "y": 1668,
+      "z": 200,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressPanelTall",
+      "location_cm": [
+        1500,
+        1660,
+        240
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall, clear of the shutter.",
+      "id": "p165",
+      "x": 1500,
+      "y": 1660,
+      "z": 240,
+      "zone": "corner far right"
+    },
+    {
+      "mesh": "SM_DressRepairPlate",
+      "location_cm": [
+        -1100,
+        1672,
+        280
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p166",
+      "x": -1100,
+      "y": 1672,
+      "z": 280,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressWallSpall",
+      "location_cm": [
+        -1100,
+        -1670,
+        90
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p167",
+      "x": -1100,
+      "y": -1670,
+      "z": 90,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressRepairPlate",
+      "location_cm": [
+        -200,
+        1672,
+        280
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p168",
+      "x": -200,
+      "y": 1672,
+      "z": 280,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressWallSpall",
+      "location_cm": [
+        -200,
+        -1670,
+        90
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p169",
+      "x": -200,
+      "y": -1670,
+      "z": 90,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressRepairPlate",
+      "location_cm": [
+        700,
+        1672,
+        280
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p170",
+      "x": 700,
+      "y": 1672,
+      "z": 280,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressWallSpall",
+      "location_cm": [
+        700,
+        -1670,
+        90
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p171",
+      "x": 700,
+      "y": -1670,
+      "z": 90,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressConduitStraight",
+      "location_cm": [
+        -800,
+        1635,
+        430
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall power.",
+      "id": "p172",
+      "x": -800,
+      "y": 1635,
+      "z": 430,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressUnistrut",
+      "location_cm": [
+        -800,
+        1648,
+        455
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p173",
+      "x": -800,
+      "y": 1648,
+      "z": 455,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressConduitStraight",
+      "location_cm": [
+        -200,
+        1635,
+        430
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall power.",
+      "id": "p174",
+      "x": -200,
+      "y": 1635,
+      "z": 430,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressUnistrut",
+      "location_cm": [
+        -200,
+        1648,
+        455
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p175",
+      "x": -200,
+      "y": 1648,
+      "z": 455,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressConduitStraight",
+      "location_cm": [
+        400,
+        1635,
+        430
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall power.",
+      "id": "p176",
+      "x": 400,
+      "y": 1635,
+      "z": 430,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressUnistrut",
+      "location_cm": [
+        400,
+        1648,
+        455
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p177",
+      "x": 400,
+      "y": 1648,
+      "z": 455,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressConduitStraight",
+      "location_cm": [
+        1000,
+        1635,
+        430
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall power.",
+      "id": "p178",
+      "x": 1000,
+      "y": 1635,
+      "z": 430,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressUnistrut",
+      "location_cm": [
+        1000,
+        1648,
+        455
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p179",
+      "x": 1000,
+      "y": 1648,
+      "z": 455,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressConduitStraight",
+      "location_cm": [
+        1500,
+        1635,
+        430
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall power.",
+      "id": "p180",
+      "x": 1500,
+      "y": 1635,
+      "z": 430,
+      "zone": "corner far right"
+    },
+    {
+      "mesh": "SM_DressUnistrut",
+      "location_cm": [
+        1500,
+        1648,
+        455
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p181",
+      "x": 1500,
+      "y": 1648,
+      "z": 455,
+      "zone": "corner far right"
+    },
+    {
+      "mesh": "SM_DressConduitElbow",
+      "location_cm": [
+        -1450,
+        1635,
+        430
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p182",
+      "x": -1450,
+      "y": 1635,
+      "z": 430,
+      "zone": "corner near right"
+    },
+    {
+      "mesh": "SM_DressConduitElbow",
+      "location_cm": [
+        1550,
+        1635,
+        430
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p183",
+      "x": 1550,
+      "y": 1635,
+      "z": 430,
+      "zone": "corner far right"
+    },
+    {
+      "mesh": "SM_DressConduitTee",
+      "location_cm": [
+        200,
+        1638,
+        430
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p184",
+      "x": 200,
+      "y": 1638,
+      "z": 430,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressConduitTee",
+      "location_cm": [
+        900,
+        1638,
+        430
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p185",
+      "x": 900,
+      "y": 1638,
+      "z": 430,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressJunctionBox",
+      "location_cm": [
+        -1000,
+        1642,
+        360
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p186",
+      "x": -1000,
+      "y": 1642,
+      "z": 360,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressJunctionBox",
+      "location_cm": [
+        100,
+        1642,
+        390
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p187",
+      "x": 100,
+      "y": 1642,
+      "z": 390,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressJunctionBox",
+      "location_cm": [
+        1200,
+        1642,
+        350
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p188",
+      "x": 1200,
+      "y": 1642,
+      "z": 350,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressCableLoop",
+      "location_cm": [
+        -900,
+        1628,
+        300
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p189",
+      "x": -900,
+      "y": 1628,
+      "z": 300,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressCableLoop",
+      "location_cm": [
+        -100,
+        1628,
+        300
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p190",
+      "x": -100,
+      "y": 1628,
+      "z": 300,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressCableLoop",
+      "location_cm": [
+        600,
+        1628,
+        300
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p191",
+      "x": 600,
+      "y": 1628,
+      "z": 300,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressCableLoop",
+      "location_cm": [
+        1300,
+        1628,
+        300
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p192",
+      "x": 1300,
+      "y": 1628,
+      "z": 300,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressCableDrop",
+      "location_cm": [
+        -700,
+        1610,
+        220
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p193",
+      "x": -700,
+      "y": 1610,
+      "z": 220,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressCableDrop",
+      "location_cm": [
+        300,
+        1610,
+        220
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p194",
+      "x": 300,
+      "y": 1610,
+      "z": 220,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressCableDrop",
+      "location_cm": [
+        1100,
+        1610,
+        220
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p195",
+      "x": 1100,
+      "y": 1610,
+      "z": 220,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressBreaker",
+      "location_cm": [
+        480,
+        1605,
+        150
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Right wall only.",
+      "id": "p196",
+      "x": 480,
+      "y": 1605,
+      "z": 150,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressGangBox",
+      "location_cm": [
+        -1100,
+        1612,
+        145
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p197",
+      "x": -1100,
+      "y": 1612,
+      "z": 145,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressGangBox",
+      "location_cm": [
+        -200,
+        1612,
+        145
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p198",
+      "x": -200,
+      "y": 1612,
+      "z": 145,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressGangBox",
+      "location_cm": [
+        700,
+        1612,
+        145
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p199",
+      "x": 700,
+      "y": 1612,
+      "z": 145,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressGangBox",
+      "location_cm": [
+        1400,
+        1612,
+        145
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p200",
+      "x": 1400,
+      "y": 1612,
+      "z": 145,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressBundle",
+      "location_cm": [
+        -400,
+        1655,
+        480
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p201",
+      "x": -400,
+      "y": 1655,
+      "z": 480,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressBundle",
+      "location_cm": [
+        800,
+        1655,
+        480
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p202",
+      "x": 800,
+      "y": 1655,
+      "z": 480,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressLouver",
+      "location_cm": [
+        1450,
+        1615,
+        260
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p203",
+      "x": 1450,
+      "y": 1615,
+      "z": 260,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressLouver",
+      "location_cm": [
+        -200,
+        1615,
+        240
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p204",
+      "x": -200,
+      "y": 1615,
+      "z": 240,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressHatch",
+      "location_cm": [
+        1100,
+        1648,
+        180
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Dogs are handles. Not a wheel.",
+      "id": "p205",
+      "x": 1100,
+      "y": 1648,
+      "z": 180,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressHoseCoil",
+      "location_cm": [
+        -1350,
+        1595,
+        40
+      ],
+      "yaw": 200,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p206",
+      "x": -1350,
+      "y": 1595,
+      "z": 40,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressDuctBoot",
+      "location_cm": [
+        200,
+        1608,
+        40
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p207",
+      "x": 200,
+      "y": 1608,
+      "z": 40,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressPipeHanger",
+      "location_cm": [
+        -1000,
+        -1588,
+        390
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall pipes.",
+      "id": "p208",
+      "x": -1000,
+      "y": -1588,
+      "z": 390,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressClamp",
+      "location_cm": [
+        -1040,
+        -1572,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p209",
+      "x": -1040,
+      "y": -1572,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressPipeHanger",
+      "location_cm": [
+        -500,
+        -1588,
+        390
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall pipes.",
+      "id": "p210",
+      "x": -500,
+      "y": -1588,
+      "z": 390,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressClamp",
+      "location_cm": [
+        -540,
+        -1572,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p211",
+      "x": -540,
+      "y": -1572,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressPipeHanger",
+      "location_cm": [
+        0,
+        -1588,
+        390
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall pipes.",
+      "id": "p212",
+      "x": 0,
+      "y": -1588,
+      "z": 390,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressClamp",
+      "location_cm": [
+        -40,
+        -1572,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p213",
+      "x": -40,
+      "y": -1572,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressPipeHanger",
+      "location_cm": [
+        500,
+        -1588,
+        390
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall pipes.",
+      "id": "p214",
+      "x": 500,
+      "y": -1588,
+      "z": 390,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressClamp",
+      "location_cm": [
+        460,
+        -1572,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p215",
+      "x": 460,
+      "y": -1572,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressPipeHanger",
+      "location_cm": [
+        1000,
+        -1588,
+        390
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Left wall pipes.",
+      "id": "p216",
+      "x": 1000,
+      "y": -1588,
+      "z": 390,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressClamp",
+      "location_cm": [
+        960,
+        -1572,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p217",
+      "x": 960,
+      "y": -1572,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressFlangeJoint",
+      "location_cm": [
+        -750,
+        -1555,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p218",
+      "x": -750,
+      "y": -1555,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressFlangeJoint",
+      "location_cm": [
+        -250,
+        -1555,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p219",
+      "x": -250,
+      "y": -1555,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressFlangeJoint",
+      "location_cm": [
+        250,
+        -1555,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p220",
+      "x": 250,
+      "y": -1555,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressFlangeJoint",
+      "location_cm": [
+        750,
+        -1555,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p221",
+      "x": 750,
+      "y": -1555,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressPipeElbow",
+      "location_cm": [
+        -1450,
+        -1560,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p222",
+      "x": -1450,
+      "y": -1560,
+      "z": 460,
+      "zone": "corner near left"
+    },
+    {
+      "mesh": "SM_DressPipeElbow",
+      "location_cm": [
+        1450,
+        -1560,
+        460
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p223",
+      "x": 1450,
+      "y": -1560,
+      "z": 460,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressDripTray",
+      "location_cm": [
+        -1000,
+        -1520,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Under the left pipes. Outside the footprint.",
+      "id": "p224",
+      "x": -1000,
+      "y": -1520,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressDripTray",
+      "location_cm": [
+        0,
+        -1520,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Under the left pipes. Outside the footprint.",
+      "id": "p225",
+      "x": 0,
+      "y": -1520,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressDripTray",
+      "location_cm": [
+        1000,
+        -1520,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Under the left pipes. Outside the footprint.",
+      "id": "p226",
+      "x": 1000,
+      "y": -1520,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressMeter",
+      "location_cm": [
+        -1350,
+        -1605,
+        150
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p227",
+      "x": -1350,
+      "y": -1605,
+      "z": 150,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressDownspout",
+      "location_cm": [
+        1400,
+        -1610,
+        80
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p228",
+      "x": 1400,
+      "y": -1610,
+      "z": 80,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressHeader",
+      "location_cm": [
+        1635,
+        180,
+        520
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Over the bulkhead. Not a sign.",
+      "id": "p229",
+      "x": 1635,
+      "y": 180,
+      "z": 520,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_DressRepairPlate",
+      "location_cm": [
+        1668,
+        -600,
+        260
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p230",
+      "x": 1668,
+      "y": -600,
+      "z": 260,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_DressRepairPlate",
+      "location_cm": [
+        1668,
+        -200,
+        260
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p231",
+      "x": 1668,
+      "y": -200,
+      "z": 260,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_DressRepairPlate",
+      "location_cm": [
+        1668,
+        500,
+        260
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p232",
+      "x": 1668,
+      "y": 500,
+      "z": 260,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_DressRepairPlate",
+      "location_cm": [
+        1668,
+        1100,
+        260
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p233",
+      "x": 1668,
+      "y": 1100,
+      "z": 260,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_DressColumn",
+      "location_cm": [
+        1580,
+        -1620,
+        -5
+      ],
+      "yaw": 15,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "Far corner only.",
+      "id": "p234",
+      "x": 1580,
+      "y": -1620,
+      "z": -5,
+      "zone": "corner far left"
+    },
+    {
+      "mesh": "SM_DressCornerGuard",
+      "location_cm": [
+        -1600,
+        -1600,
+        40
+      ],
+      "yaw": 45,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p235",
+      "x": -1600,
+      "y": -1600,
+      "z": 40,
+      "zone": "corner near left"
+    },
+    {
+      "mesh": "SM_DressCornerGuard",
+      "location_cm": [
+        -1600,
+        -1600,
+        180
+      ],
+      "yaw": 45,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p236",
+      "x": -1600,
+      "y": -1600,
+      "z": 180,
+      "zone": "corner near left"
+    },
+    {
+      "mesh": "SM_DressCornerGuard",
+      "location_cm": [
+        1600,
+        -1600,
+        40
+      ],
+      "yaw": -45,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p237",
+      "x": 1600,
+      "y": -1600,
+      "z": 40,
+      "zone": "corner far left"
+    },
+    {
+      "mesh": "SM_DressCornerGuard",
+      "location_cm": [
+        1600,
+        -1600,
+        180
+      ],
+      "yaw": -45,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p238",
+      "x": 1600,
+      "y": -1600,
+      "z": 180,
+      "zone": "corner far left"
+    },
+    {
+      "mesh": "SM_DressCornerGuard",
+      "location_cm": [
+        -1600,
+        1600,
+        40
+      ],
+      "yaw": 135,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p239",
+      "x": -1600,
+      "y": 1600,
+      "z": 40,
+      "zone": "corner near right"
+    },
+    {
+      "mesh": "SM_DressCornerGuard",
+      "location_cm": [
+        -1600,
+        1600,
+        180
+      ],
+      "yaw": 135,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p240",
+      "x": -1600,
+      "y": 1600,
+      "z": 180,
+      "zone": "corner near right"
+    },
+    {
+      "mesh": "SM_DressCornerGuard",
+      "location_cm": [
+        1600,
+        1600,
+        40
+      ],
+      "yaw": -135,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p241",
+      "x": 1600,
+      "y": 1600,
+      "z": 40,
+      "zone": "corner far right"
+    },
+    {
+      "mesh": "SM_DressCornerGuard",
+      "location_cm": [
+        1600,
+        1600,
+        180
+      ],
+      "yaw": -135,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p242",
+      "x": 1600,
+      "y": 1600,
+      "z": 180,
+      "zone": "corner far right"
+    },
+    {
+      "mesh": "SM_DressDrainBox",
+      "location_cm": [
+        -1200,
+        -1525,
+        -5
+      ],
+      "yaw": 10,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p243",
+      "x": -1200,
+      "y": -1525,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressAnchor",
+      "location_cm": [
+        -1130,
+        -1525,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p244",
+      "x": -1130,
+      "y": -1525,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressDrainBox",
+      "location_cm": [
+        1200,
+        -1525,
+        -5
+      ],
+      "yaw": 10,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p245",
+      "x": 1200,
+      "y": -1525,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressAnchor",
+      "location_cm": [
+        1270,
+        -1525,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p246",
+      "x": 1270,
+      "y": -1525,
+      "z": -5,
+      "zone": "left pipe run"
+    },
+    {
+      "mesh": "SM_DressDrainBox",
+      "location_cm": [
+        -1200,
+        1525,
+        -5
+      ],
+      "yaw": 10,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p247",
+      "x": -1200,
+      "y": 1525,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressAnchor",
+      "location_cm": [
+        -1130,
+        1525,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p248",
+      "x": -1130,
+      "y": 1525,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressDrainBox",
+      "location_cm": [
+        800,
+        1525,
+        -5
+      ],
+      "yaw": 10,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p249",
+      "x": 800,
+      "y": 1525,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressAnchor",
+      "location_cm": [
+        870,
+        1525,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p250",
+      "x": 870,
+      "y": 1525,
+      "z": -5,
+      "zone": "right electrical bay"
+    },
+    {
+      "mesh": "SM_DressThreshold",
+      "location_cm": [
+        -1535,
+        -800,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p251",
+      "x": -1535,
+      "y": -800,
+      "z": -5,
+      "zone": "near cutaway"
+    },
+    {
+      "mesh": "SM_DressThreshold",
+      "location_cm": [
+        -1535,
+        700,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p252",
+      "x": -1535,
+      "y": 700,
+      "z": -5,
+      "zone": "near cutaway"
+    },
+    {
+      "mesh": "SM_DressKicker",
+      "location_cm": [
+        -1488,
+        -1100,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "At the cutaway, outside the lanes.",
+      "id": "p253",
+      "x": -1488,
+      "y": -1100,
+      "z": -5,
+      "zone": "near cutaway"
+    },
+    {
+      "mesh": "SM_DressKicker",
+      "location_cm": [
+        -1488,
+        -200,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "At the cutaway, outside the lanes.",
+      "id": "p254",
+      "x": -1488,
+      "y": -200,
+      "z": -5,
+      "zone": "near cutaway"
+    },
+    {
+      "mesh": "SM_DressKicker",
+      "location_cm": [
+        -1488,
+        500,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "At the cutaway, outside the lanes.",
+      "id": "p255",
+      "x": -1488,
+      "y": 500,
+      "z": -5,
+      "zone": "near cutaway"
+    },
+    {
+      "mesh": "SM_DressKicker",
+      "location_cm": [
+        -1488,
+        1300,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "At the cutaway, outside the lanes.",
+      "id": "p256",
+      "x": -1488,
+      "y": 1300,
+      "z": -5,
+      "zone": "near cutaway"
+    },
+    {
+      "mesh": "SM_DressEscutcheon",
+      "location_cm": [
+        1670,
+        -400,
+        120
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p257",
+      "x": 1670,
+      "y": -400,
+      "z": 120,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_DressEscutcheon",
+      "location_cm": [
+        1670,
+        800,
+        120
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "dressing",
+      "collision": false,
+      "note": "",
+      "id": "p258",
+      "x": 1670,
+      "y": 800,
+      "z": 120,
+      "zone": "far bulkhead apron"
+    },
+    {
+      "mesh": "SM_ParityFractureField_A",
+      "location_cm": [
+        -750,
+        -650,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.85,
+        0.85,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p259",
+      "x": -750,
+      "y": -650,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityFractureField_A",
+      "location_cm": [
+        120,
+        920,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.78,
+        0.78,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p260",
+      "x": 120,
+      "y": 920,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityFractureField_A",
+      "location_cm": [
+        900,
+        -380,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.72,
+        0.72,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p261",
+      "x": 900,
+      "y": -380,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityFractureField_B",
+      "location_cm": [
+        -440,
+        80,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p262",
+      "x": -440,
+      "y": 80,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityFractureField_B",
+      "location_cm": [
+        -530,
+        920,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.72,
+        0.72,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p263",
+      "x": -530,
+      "y": 920,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityFractureField_B",
+      "location_cm": [
+        620,
+        200,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.85,
+        0.85,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p264",
+      "x": 620,
+      "y": 200,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityFractureField_B",
+      "location_cm": [
+        180,
+        -970,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.85,
+        0.85,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p265",
+      "x": 180,
+      "y": -970,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityFractureField_B",
+      "location_cm": [
+        1060,
+        840,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.75,
+        0.75,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p266",
+      "x": 1060,
+      "y": 840,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityFractureField_B",
+      "location_cm": [
+        -1080,
+        -140,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.68,
+        0.68,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p267",
+      "x": -1080,
+      "y": -140,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        -920,
+        -1260,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.86,
+        0.86,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p268",
+      "x": -920,
+      "y": -1260,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        -120,
+        -1330,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9,
+        0.9,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p269",
+      "x": -120,
+      "y": -1330,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        770,
+        -1300,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.91,
+        0.91,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p270",
+      "x": 770,
+      "y": -1300,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        -1050,
+        1250,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.72,
+        0.72,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p271",
+      "x": -1050,
+      "y": 1250,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        -280,
+        1320,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.88,
+        0.88,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p272",
+      "x": -280,
+      "y": 1320,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        690,
+        1300,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.93,
+        0.93,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p273",
+      "x": 690,
+      "y": 1300,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        1240,
+        580,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.92,
+        0.92,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p274",
+      "x": 1240,
+      "y": 580,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        1280,
+        -500,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.85,
+        0.85,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p275",
+      "x": 1280,
+      "y": -500,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityEdgeSpall",
+      "location_cm": [
+        -1270,
+        220,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        0.8,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p276",
+      "x": -1270,
+      "y": 220,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        -980,
+        -850,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.6982376172727287,
+        0.6982376172727287,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p277",
+      "x": -980,
+      "y": -850,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        -500,
+        -1090,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.893706797216834,
+        0.893706797216834,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p278",
+      "x": -500,
+      "y": -1090,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        90,
+        -1090,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.6813069990466137,
+        0.6813069990466137,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p279",
+      "x": 90,
+      "y": -1090,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        660,
+        -930,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8517647680889294,
+        0.8517647680889294,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p280",
+      "x": 660,
+      "y": -930,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        1010,
+        -660,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.6864208525929751,
+        0.6864208525929751,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p281",
+      "x": 1010,
+      "y": -660,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        1010,
+        -50,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9655343118054427,
+        0.9655343118054427,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p282",
+      "x": 1010,
+      "y": -50,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        980,
+        640,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8384349426974835,
+        0.8384349426974835,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p283",
+      "x": 980,
+      "y": 640,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        590,
+        980,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9268232137763746,
+        0.9268232137763746,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p284",
+      "x": 590,
+      "y": 980,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        10,
+        1050,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8647339015665289,
+        0.8647339015665289,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p285",
+      "x": 10,
+      "y": 1050,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        -630,
+        930,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7266971365248923,
+        0.7266971365248923,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p286",
+      "x": -630,
+      "y": 930,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        -1020,
+        550,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8471879557614903,
+        0.8471879557614903,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p287",
+      "x": -1020,
+      "y": 550,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        -1110,
+        0,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9385131217323373,
+        0.9385131217323373,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p288",
+      "x": -1110,
+      "y": 0,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        -750,
+        -400,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7296108225556738,
+        0.7296108225556738,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p289",
+      "x": -750,
+      "y": -400,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        300,
+        530,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8825114640565985,
+        0.8825114640565985,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p290",
+      "x": 300,
+      "y": 530,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_A",
+      "location_cm": [
+        450,
+        -500,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7167509301393679,
+        0.7167509301393679,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p291",
+      "x": 450,
+      "y": -500,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityRubbleScatter_B",
+      "location_cm": [
+        -240,
+        210,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8143526969255639,
+        0.8143526969255639,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p292",
+      "x": -240,
+      "y": 210,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -900,
+        -700,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9960009417411912,
+        0.9960009417411912,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p293",
+      "x": -900,
+      "y": -700,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -300,
+        -950,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7552968210754909,
+        0.7552968210754909,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p294",
+      "x": -300,
+      "y": -950,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        350,
+        -880,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7524382291628013,
+        0.7524382291628013,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p295",
+      "x": 350,
+      "y": -880,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        900,
+        -510,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7681887414167724,
+        0.7681887414167724,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p296",
+      "x": 900,
+      "y": -510,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        920,
+        350,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9262489921820645,
+        0.9262489921820645,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p297",
+      "x": 920,
+      "y": 350,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        540,
+        920,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9971257100230247,
+        0.9971257100230247,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p298",
+      "x": 540,
+      "y": 920,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -170,
+        970,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7625116412531184,
+        0.7625116412531184,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p299",
+      "x": -170,
+      "y": 970,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -850,
+        600,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9275076265958068,
+        0.9275076265958068,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p300",
+      "x": -850,
+      "y": 600,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -950,
+        30,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7643768049450747,
+        0.7643768049450747,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p301",
+      "x": -950,
+      "y": 30,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        -280,
+        190,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9000374184978196,
+        0.9000374184978196,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p302",
+      "x": -280,
+      "y": 190,
+      "z": -5,
+      "zone": "arena"
+    },
+    {
+      "mesh": "SM_ParityMicroChips",
+      "location_cm": [
+        370,
+        -170,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9395641618706987,
+        0.9395641618706987,
+        1
+      ],
+      "kind": "floor",
+      "collision": false,
+      "note": "From the floor manifest. Do not regenerate the FBX.",
+      "id": "p303",
+      "x": 370,
+      "y": -170,
+      "z": -5,
+      "zone": "arena"
+    }
+  ],
+  "rules": [
+    "Hide the wall box when its shell bay is in. Do not stack them.",
+    "No second collision shell.",
+    "No ceiling, truss, second wheel, second tank family, or fourth creature.",
+    "Left wall is pipes. Right wall is cabinets.",
+    "Floor meshes come from the existing manifest."
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "manifest_groups": [
+    {
+      "scope": "delivery",
+      "verified_files": 11
+    },
+    {
+      "scope": "owned_unreal_assets",
+      "verified_files": 40
+    },
+    {
+      "scope": "editable_assets",
+      "verified_files": 24
+    }
+  ],
+  "delivery_images": [
+    {
+      "file": "comparison-05.png",
+      "width": 1400,
+      "height": 440,
+      "bytes": 309117,
+      "sha256": "b61536c902ef4ec21a8b2d92295a8bb888294404596cde874acbf8bd5bb36c46",
+      "pixel_sha256": "581bb1b74c3567e39333f88f13354f6888d56d33ef35c277b72cb494fec9d0a9",
+      "all_chunk_crcs_valid": true,
+      "full_pixel_decode": true,
+      "range": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "comparison-10.png",
+      "width": 1400,
+      "height": 440,
+      "bytes": 302417,
+      "sha256": "0433a8152159a0f6a5b8f1382dcd84138373f19036c638af92e3cb81e0c0c4ab",
+      "pixel_sha256": "bd530eb3da10b5daa1291bef8f453aaa8fdc6e7d319225be22903b506fb8cbdc",
+      "all_chunk_crcs_valid": true,
+      "full_pixel_decode": true,
+      "range": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "comparison-16.png",
+      "width": 1400,
+      "height": 440,
+      "bytes": 298218,
+      "sha256": "5df119cfc407a9e4d07b7f62e80c1a5a5762e5497c7bf87f8c3d3ff8c2863941",
+      "pixel_sha256": "ff27d9aed03c31c0b668c4ae9a459c47a6702168f8f9dade4f020617347e673a",
+      "all_chunk_crcs_valid": true,
+      "full_pixel_decode": true,
+      "range": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "gameplay-contact-sheet.png",
+      "width": 1220,
+      "height": 668,
+      "bytes": 675429,
+      "sha256": "ae96378de2a6a2b886489f17f0da5b7bac27da9e5fc22be43a6cdfb015ba2b4a",
+      "pixel_sha256": "6c7f48b0a7ba09c7d998c1baf85bb983dfe99964414c50b34b49436bb257920a",
+      "all_chunk_crcs_valid": true,
+      "full_pixel_decode": true,
+      "range": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "gameplay-still.png",
+      "width": 1280,
+      "height": 720,
+      "bytes": 950083,
+      "sha256": "95f6638dfa70300ed80e683b678a940fd485f53905f2455cbb18d73079f153c0",
+      "pixel_sha256": "7a95538682167b07fd39890aef10fda1eba6ed9a2d9a53c691aa52bd4c1a66d7",
+      "all_chunk_crcs_valid": true,
+      "full_pixel_decode": true,
+      "range": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "standalone-hud.png",
+      "width": 1280,
+      "height": 720,
+      "bytes": 993259,
+      "sha256": "1ab991f4f2c010c283afa005f593631fdceacae81c136b81d02352d0b978b58a",
+      "pixel_sha256": "3b79e10584ed18e00de7f11f4aecbe39ee1c277c4bccb31219e6a8de1a9e41dd",
+      "all_chunk_crcs_valid": true,
+      "full_pixel_decode": true,
+      "range": [
+        0,
+        255
+      ]
+    }
+  ],
+  "documentation_links_exist": true,
+  "movie_copy_matches_encoded_source": true,
+  "active_engine_processes_at_handoff": 0
+}

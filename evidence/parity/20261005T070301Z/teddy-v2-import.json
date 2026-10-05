@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "source_mesh_preserved": true,
+  "runtime_animations_preserved": true,
+  "slots": [
+    {
+      "slot": "Material_0",
+      "material": "/Game/TeddyEncounter/Parity/Materials/M_Parity_CombinedCloth.M_Parity_CombinedCloth"
+    },
+    {
+      "slot": "SeamDark",
+      "material": "/Game/TeddyEncounter/Parity/Materials/M_Parity_SeamV2.M_Parity_SeamV2"
+    },
+    {
+      "slot": "StitchThread",
+      "material": "/Game/TeddyEncounter/Parity/Materials/M_Parity_ThreadV2.M_Parity_ThreadV2"
+    }
+  ],
+  "mesh": "/Game/TeddyEncounter/Parity/Teddy/SK_TeddyParityV2.SK_TeddyParityV2",
+  "skeleton": "/Game/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.SK_Teddy_Skeleton",
+  "bounds": "<Struct 'BoxSphereBounds' (0x0000025F8B78CF80) {origin: {x: 3.293526, y: 6.943962, z: 231.056976}, box_extent: {x: 168.468407, y: 179.645607, z: 230.604828}, sphere_radius: 337.391071}>",
+  "reopened": true
+}
