@@ -43,6 +43,10 @@ try:
         raise RuntimeError(f"Bear scanner importer not found at {script}. Clone "
                            "github.com/Vibecadex/bear-scanner and set bear_scanner_repo in "
                            "tools/project-settings.local.json.")
+    # This runs that file's code inside the editor: only point it at your own clone.
+    if "IMPORTER_API = 2" not in script.read_text(encoding="utf-8"):
+        raise RuntimeError(f"{script} is an older or different importer than this wrapper "
+                           "expects. Pull the latest bear-scanner main.")
     for key, env in (("bear_source", "BEAR_SOURCE"), ("bear_scanner_url", "BEAR_SCANNER"),
                      ("bear_cert", "BEAR_CERT")):
         if settings.get(key) and not os.environ.get(env):
