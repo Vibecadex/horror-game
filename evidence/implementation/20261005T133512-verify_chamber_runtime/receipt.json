@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyEncounter",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "independent_qa": true,
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "checks": {
+    "new_chamber_geometry_present_and_labels_unique": true,
+    "new_geometry_ownership_explicit": true,
+    "exactly_one_saved_native_cutaway_actor": true,
+    "new_geometry_actual_actor_and_component_collision_disabled": true,
+    "source_kit_static_landmarks_present_once": true,
+    "exactly_one_new_bulkhead_body_and_one_wheel": true,
+    "saved_cutaway_has_exact_19_mesh_components": true,
+    "cutaway_contains_both_actual_service_door_meshes": true,
+    "cutaway_includes_wall_panels_piers_header_and_footing": true,
+    "five_exact_cutaway_piers_use_retained_room_pilaster": true,
+    "saved_reverse_overhead_spot_is_owned_by_cutaway": true,
+    "four_owned_rear_beacon_shapes_are_exact_allowlisted_cubes": true,
+    "new_static_mesh_sources_owned_or_explicitly_allowlisted": true,
+    "saved_owned_floor_placements_and_unique_meshes_match_frozen_manifest": true,
+    "saved_floor_transforms_match_frozen_placements_without_vertical_scale": true,
+    "saved_four_sparse_slab_groups_match_separate_frozen_manifest": true,
+    "saved_sparse_slab_transforms_match_frozen_placements_without_vertical_scale": true,
+    "saved_sparse_slab_bounds_remain_grounded_low_relief": true,
+    "saved_five_crust_banks_match_separate_frozen_manifest": true,
+    "saved_crust_transforms_match_frozen_placements_without_vertical_scale": true,
+    "saved_crust_bounds_remain_grounded_low_relief": true,
+    "fine_floor_slab_and_crust_overlays_preserved_and_hidden": true,
+    "saved_floor_morphology_matches_reviewed_manifest": true,
+    "saved_floor_morphology_transform_is_grounded_without_vertical_scale": true,
+    "new_geometry_world_bounds_keep_combat_space_open": true,
+    "ordinary_initial_native_cutaway_matches_camera": true,
+    "native_cutaway_architectural_front_outside": true,
+    "native_cutaway_architectural_reverse_inside": true,
+    "native_cutaway_threshold_outside": true,
+    "native_cutaway_threshold_inside": true,
+    "native_cutaway_ordinary_gameplay_return": true
+  },
+  "method": "Independent saved-world component readback followed by frame-driven PIE camera changes. Native chamber Blueprint ticks are never disabled and visibility is never forced.",
+  "limitations": [
+    "Conservative component boxes establish placement, not exact mesh contact or visual parity.",
+    "Architectural camera staging and held subjects are test-only and discarded with PIE.",
+    "The old full-room/input suites remain separate. This narrow audit does not duplicate or replace them.",
+    "Passing native cutaway state transitions does not establish that the pop/cutaway is artistically acceptable; inspect architectural and ordinary gameplay captures."
+  ],
+  "declared_cutaway_threshold_cm": -1490.0,
+  "settings_sha256": "ecfdc4f55e40afbeb408a39c93778260b05f938a93201bffc95db5a260c6082c",
+  "source_manifest_sha256": "741b4690f675d25206b205a5999a67a8f18d61e5b1d4d84477ab3fc05c3d75e6",
+  "frozen_source_manifest": "C:\\Projects\\to-deploy\\horror-game\\evidence\\chamber\\20261005T132910Z\\chamber-kit-reviewed.json",
+  "frozen_floor_manifest": "C:\\Projects\\to-deploy\\horror-game\\evidence\\chamber\\20261005T132910Z\\chamber-floor-v2-reviewed.json",
+  "floor_manifest_sha256": "ff6c47b4a75d48b30bbf7a9d08ef2d0610ed9b5398494da3f73b2aa5bdf73594",
+  "expected_floor_placement_count": 5,
+  "expected_floor_unique_mesh_count": 3,
+  "frozen_slab_manifest": "C:\\Projects\\to-deploy\\horror-game\\evidence\\chamber\\20261005T132910Z\\chamber-slabs-v2-reviewed.json",
+  "slab_manifest_sha256": "c69f189b33d48cc269cc281799c7cbdf77b83e153d6b851a1229341a12c7ad2c",
+  "expected_slab_placement_count": 4,
+  "expected_slab_unique_mesh_count": 1,
+  "frozen_crust_manifest": "C:\\Projects\\to-deploy\\horror-game\\evidence\\chamber\\20261005T132910Z\\chamber-crust-v2-reviewed.json",
+  "crust_manifest_sha256": "c3e16e52b8611bc6fd5024f2530824bd06f7e6512319b2eea6e7ea052d21acef",
+  "expected_crust_placement_count": 5,
+  "expected_crust_unique_mesh_count": 2,
+  "frozen_morphology_manifest": "C:\\Projects\\to-deploy\\horror-game\\evidence\\chamber\\20261005T132910Z\\chamber-floor-morphology-reviewed.json",
+  "morphology_manifest_sha256": "d43558d99914839f04bf1145fbf7e9c56d24595b126006ed8642113f2680c287",
+  "bounds_method": {
+    "combat_open_xy_cm": [
+      [
+        -1400,
+        -1500
+      ],
+      [
+        1480,
+        1500
+      ]
+    ],
+    "floor_maximum_world_z_cm": 6,
+    "wall_and_prop_maximum_world_z_cm": 700,
+    "tolerance_cm": 0.05,
+    "source": "Actual loaded component world bounds, not importer pass flags or manifest bounds."
+  },
+  "wall_seconds": 12.827999999979511,
+  "details": {
+    "path": "C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T133512-verify_chamber_runtime\\details.json",
+    "sha256": "55b05516b7bedb1b0599cf62228ac1cd0ded6e64a8490aff049063b0814855e4",
+    "saved_actor_count": 36,
+    "placement_component_count": 45,
+    "runtime_case_count": 5
+  }
+}

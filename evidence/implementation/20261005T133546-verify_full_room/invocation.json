@@ -1,0 +1,19 @@
+{
+  "arguments": [
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "C:\\Projects\\to-deploy\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject",
+    "-ExecutePythonScript=C:\\Projects\\to-deploy\\horror-game\\tools\\verify_full_room.py",
+    "-RenderOffscreen",
+    "-ResX=1280",
+    "-ResY=720",
+    "-unattended",
+    "-nosplash",
+    "-nop4",
+    "-NoSound",
+    "-abslog=C:\\Projects\\to-deploy\\horror-game\\evidence\\implementation\\20261005T133546-verify_full_room\\engine.log",
+    "-DDC=InstalledNoZenLocalFallback",
+    "-LocalDataCachePath=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\derived-data",
+    "-UserDir=C:\\Projects\\to-deploy\\horror-game\\.tool-cache\\unreal-user"
+  ],
+  "script_sha256": "00f1e558096c6e56f36e89d5f82a9741e1ab3c7f0292e1beb2b61598f7e5bad1"
+}

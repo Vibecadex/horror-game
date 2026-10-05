@@ -31,15 +31,15 @@ The [close direction](visuals/direction-close-best.jpg) and original video estab
 - The earlier84-instance /21-mesh room extension remains. Source catalogs also contain unused variants; file presence does not establish assignment.
 - Character meshes, skeleton, animation, gameplay and controls were preserved. Ordinary tracking remains pitch−46° and FOV54; architectural evidence cameras are separate.
 
-[chamber-settings.json](chamber-settings.json), revision `chamber-09-floor-morphology`, holds current room values. The older `floor` object is unchanged and describes the hidden V2 graphs. `floor_morphology` is the visible sheet: 3200 cm stain tile, texture weight 0.22, flat normal. Lighting values are still the chamber-08 set. They supersede older trials, including primary key 165000 cd / outer cone 48°, rear scattering 4 and separate environment-channel service accents. These are saved implementation values, not acceptance thresholds.
+[chamber-settings.json](chamber-settings.json), revision `chamber-10-local-haze`, holds current room values. The older `floor` object is unchanged and describes the hidden V2 graphs. `floor_morphology` is the visible sheet: 3200 cm stain tile, texture weight 0.22, flat normal. Lighting is no longer the chamber-08 set. The saved fog rect is 120,000 cd at scattering 7 with diffuse 0, height-fog density is 0.010, and the combat-floor return is 14,000 cd. Exposure bias remains 3.8. These are saved implementation values, not acceptance thresholds.
 
 ## Next work in priority order
 
 | Priority | Current difference | Task and review condition |
 | --- | --- | --- |
 | 1: floor depth | The hairline web and repeated banks are gone. Both views show one quieter floor, but the breaks are still too few and too shallow, and the perimeter outside the sheet still shows the older floor. | Deepen connected plate loss and grounded fragments in `FloorMorphologyV3` only. Do not restore black cards, hairline normals, or the hidden V2 overlays. |
-| 2: light and haze | Wall washes are more direct and overhead glow weaker. Near floor is brighter/more even while some services/red points are too dark. | Adjust local distribution with native captures after each trial. Recover depth/overhead glow without global exposure compensation or glowing fog shapes. Keep bodies, aim pool and telegraphs readable. |
-| 3: construction/framing | Panel divisions are more regular, wall/door/floor proportions approximate, and reverse has excess black upper margin. | Compare geometry and disclosed cameras before changing either. Strengthen architectural mass/local aging. Never hide missing construction with framing or force cutaway for a still. |
+| 2: light and haze | The even floor wash is reduced and the reverse ceiling is no longer a hard black void. Overhead mist is still a local shaft, the two bays stay dark, and red points are uneven: tall side bars beside small door pins. | Balance those practicals and bay interiors with another local trial. Do not raise global exposure or add a glowing fog shape. |
+| 3: construction/framing | Panel divisions are more regular, wall/door/floor proportions approximate, and the upper volume is still thinner than the concepts. | Compare geometry and disclosed cameras before changing either. Strengthen architectural mass/local aging. Never hide missing construction with framing or force cutaway for a still. |
 
 More small debris or uniform contrast will not solve continuous erosion. Do not change characters or the gameplay camera to improve the architectural comparison. Render, judge the room, then revise the narrow cause.
 

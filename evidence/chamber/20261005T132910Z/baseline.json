@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "method": "Hashes of the saved map and the floor-pass native pair before the local haze change. Floor run 20261005T131340Z and delivered run 20261005T095028Z stay in place.",
+  "before_native_pair": "evidence/implementation/20261005T131840-capture_chamber_views",
+  "files": [
+    {
+      "path": "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+      "sha256": "03b905ec0e2dde54f689fdf27ecfde51c519796c6951ffb296252beec1f5fa76",
+      "bytes": 1091255
+    },
+    {
+      "path": "study/chamber-settings.json",
+      "sha256": "ebdb108d33dc4570c95284c31714d7a9b550f55f5c155499bd59be5a023a493e",
+      "bytes": 2647
+    },
+    {
+      "path": "evidence/implementation/20261005T131840-capture_chamber_views/01-chamber-front.png",
+      "sha256": "564189f6bbd1edf7bc39611f84950b791335e6016740bac3196ea08d0ea87d85",
+      "bytes": 2568576
+    },
+    {
+      "path": "evidence/implementation/20261005T131840-capture_chamber_views/02-chamber-reverse.png",
+      "sha256": "83194bddabfa0058b383a7c62ed9d8845330ad532c9a0f57472504654de7f894",
+      "bytes": 2496184
+    },
+    {
+      "path": "evidence/implementation/20261005T131840-capture_chamber_views/03-ordinary-gameplay.png",
+      "sha256": "08b59cba03567d4e60a681ec5c3cf602d84e0e13790a07fb293963044bf4448b",
+      "bytes": 2615401
+    }
+  ]
+}

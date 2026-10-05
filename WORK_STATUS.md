@@ -1,5 +1,23 @@
 # Teddy Encounter working status
 
+## Local haze pass — 5 October 2026
+
+The same Grok session remains the sole Unreal writer on `grok/chamber-parity-continuation`. The room was not rebuilt. Exposure bias stays 3.8.
+
+The saved look uses the existing downward fog rect, now at (80, 40, 1750), 120,000 cd, a 2800 cm source and scattering 7. It still does not light surfaces. Height fog is thinner (density 0.010, falloff 0.42) and reaches higher. The combat-floor return is 14,000 cd with a 36° outer cone. Side washes are 11,000 and 10,500 cd on the environment channel. The reverse-wall spot sits higher, at 9,000 cd. An intermediate pair, `20261005T133030-capture_chamber_views`, left the reverse ceiling black and was rejected.
+
+| Evidence | Result |
+| --- | --- |
+| Before this pass | `20261005T131840-capture_chamber_views`, the floor-morphology pair. |
+| After | `20261005T133413-capture_chamber_views`: front, reverse, and the held ordinary view at pitch −46° / FOV 54. |
+| Chamber audit | `20261005T133512-verify_chamber_runtime`, **31/31**. |
+| Room audit | `20261005T133546-verify_full_room`, **28/28**. Floor trace still hits `TE_ArenaFloor` near Z −5. |
+| Run | `evidence/chamber/20261005T132910Z` |
+
+Both directions are less evenly washed, and the reverse upper frame now carries a dark teal gradient. The door shaft remains. Service bays are still dark, the side red fixtures still read as bars beside small door pins, and the overhead column is weaker than either concept. Floor breaks remain too sparse and too shallow. This is not visual acceptance.
+
+Open the saved encounter with **PLAY.cmd** or **EDIT.cmd**. Next: reassess architectural mass and bay interiors against the two concepts, and deepen `FloorMorphologyV3` only if the floor still looks too intact. Do not raise global exposure or add a glowing fog shape. Do not add a creature, weapon, phase or camera mode.
+
 ## Floor morphology pass — 5 October 2026
 
 Grok session `01a10a54-69ee-7253-978b-c01aa506ee63` is the sole Unreal writer. Branch `grok/chamber-parity-continuation`. The saved room was not rebuilt. V1 and V2 floor sources were not reimported.
