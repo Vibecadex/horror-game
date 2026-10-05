@@ -1,0 +1,441 @@
+{
+  "owner": "teddy-chamber-floor-recovery-v4-20261005",
+  "status": "source-ready-for-engine-review",
+  "generator": "tools/make_chamber_floor_recovery.py",
+  "generator_sha256": "f41e5e5b96850eb9d15bb1b4324095fd39b2df69b9f8410f340cbbb748057c15",
+  "editable_blend": "Assets/Adapted/ChamberParity/FloorRecoveryV4/ChamberFloorRecovery_V4.blend",
+  "blend_sha256": "fbbdec4795fbbda5220d4990b8fe92c0ee2cf84ff6424a891f12f85f2b329911",
+  "source": "Connected erosion with a plate-size hierarchy, shallow concrete recesses, and grounded chips. The sheet meets the drainage lip. V3 remains a separate preserved export.",
+  "preserved": "Floor, FloorNormalsV2, Slabs, SlabsNormalsV2, Crust, CrustNormalsV2, FloorMorphologyV3, characters, and lighting are not modified by this generator.",
+  "v3_manifest_sha256": "d43558d99914839f04bf1145fbf7e9c56d24595b126006ed8642113f2680c287",
+  "references": [
+    "study/visuals/chamber-target-front.png",
+    "study/visuals/chamber-target-reverse.png"
+  ],
+  "coordinate_system": "Metres, +Z up. Static FBX mirrors Y in the project importer.",
+  "fbx_settings": {
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "global_scale": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_NONE"
+  },
+  "material_slots": [
+    "Concrete",
+    "ConcreteLight",
+    "ConcreteDark",
+    "Aggregate",
+    "Dark",
+    "Crack"
+  ],
+  "material_scale": {
+    "tile_cm": 720,
+    "detail_weight": 0.28,
+    "normal_mix": 0.28,
+    "value_scale": 0.74,
+    "foreground_damp": 0.42,
+    "foreground_dry": 0.94,
+    "note": "Importer builds M_Chamber_FloorRecover* only. Concrete normal and wet/dry roughness. No black cards. No flat normal."
+  },
+  "assets": [
+    {
+      "name": "SM_ChamberFractureRecover_Main",
+      "file": "SM_ChamberFractureRecover_Main.fbx",
+      "triangles": 47296,
+      "vertices": 83035,
+      "bounds_m": {
+        "min": [
+          -17.393234252929688,
+          -15.220256805419922,
+          0.00139999995008111
+        ],
+        "max": [
+          16.478832244873047,
+          15.219467163085938,
+          0.035999998450279236
+        ]
+      },
+      "dimensions_m": [
+        33.872066497802734,
+        30.43972396850586,
+        0.034599998500198126
+      ],
+      "expected_dimensions_cm": [
+        3387.2066497802734,
+        3043.972396850586,
+        3.4599998500198126
+      ],
+      "highest_point_cm": 3.5999998450279236,
+      "material_slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "plate_count": 598,
+      "recess_bites": 22,
+      "detached_fragments": [
+        {
+          "centre_m": [
+            -4.471,
+            0.791
+          ],
+          "nominal_span_cm": 56.1,
+          "top_cm": 2.55
+        },
+        {
+          "centre_m": [
+            -1.05,
+            -9.186
+          ],
+          "nominal_span_cm": 27.6,
+          "top_cm": 2.75
+        },
+        {
+          "centre_m": [
+            -12.258,
+            11.474
+          ],
+          "nominal_span_cm": 26.3,
+          "top_cm": 2.37
+        },
+        {
+          "centre_m": [
+            8.949,
+            2.233
+          ],
+          "nominal_span_cm": 34.4,
+          "top_cm": 2.82
+        },
+        {
+          "centre_m": [
+            -14.932,
+            8.043
+          ],
+          "nominal_span_cm": 20.7,
+          "top_cm": 2.88
+        },
+        {
+          "centre_m": [
+            7.738,
+            -7.22
+          ],
+          "nominal_span_cm": 78.7,
+          "top_cm": 2.77
+        },
+        {
+          "centre_m": [
+            -2.888,
+            -10.103
+          ],
+          "nominal_span_cm": 26.0,
+          "top_cm": 3.11
+        },
+        {
+          "centre_m": [
+            6.667,
+            7.85
+          ],
+          "nominal_span_cm": 32.3,
+          "top_cm": 2.12
+        },
+        {
+          "centre_m": [
+            -12.85,
+            2.989
+          ],
+          "nominal_span_cm": 40.7,
+          "top_cm": 2.37
+        },
+        {
+          "centre_m": [
+            -15.71,
+            -3.421
+          ],
+          "nominal_span_cm": 32.5,
+          "top_cm": 2.61
+        },
+        {
+          "centre_m": [
+            5.68,
+            0.562
+          ],
+          "nominal_span_cm": 89.0,
+          "top_cm": 2.1
+        },
+        {
+          "centre_m": [
+            -10.111,
+            12.934
+          ],
+          "nominal_span_cm": 28.8,
+          "top_cm": 2.4
+        },
+        {
+          "centre_m": [
+            2.595,
+            -5.632
+          ],
+          "nominal_span_cm": 31.9,
+          "top_cm": 1.71
+        },
+        {
+          "centre_m": [
+            -8.655,
+            0.337
+          ],
+          "nominal_span_cm": 27.5,
+          "top_cm": 2.41
+        },
+        {
+          "centre_m": [
+            13.501,
+            3.352
+          ],
+          "nominal_span_cm": 21.2,
+          "top_cm": 2.08
+        },
+        {
+          "centre_m": [
+            -10.517,
+            -8.898
+          ],
+          "nominal_span_cm": 61.7,
+          "top_cm": 3.1
+        },
+        {
+          "centre_m": [
+            2.175,
+            11.043
+          ],
+          "nominal_span_cm": 27.4,
+          "top_cm": 2.8
+        },
+        {
+          "centre_m": [
+            11.977,
+            3.982
+          ],
+          "nominal_span_cm": 32.6,
+          "top_cm": 2.03
+        },
+        {
+          "centre_m": [
+            -13.782,
+            -0.563
+          ],
+          "nominal_span_cm": 31.8,
+          "top_cm": 2.26
+        },
+        {
+          "centre_m": [
+            -15.433,
+            -3.53
+          ],
+          "nominal_span_cm": 38.1,
+          "top_cm": 3.18
+        },
+        {
+          "centre_m": [
+            -14.351,
+            -10.596
+          ],
+          "nominal_span_cm": 90.8,
+          "top_cm": 2.91
+        },
+        {
+          "centre_m": [
+            10.965,
+            3.16
+          ],
+          "nominal_span_cm": 40.2,
+          "top_cm": 2.04
+        },
+        {
+          "centre_m": [
+            -5.908,
+            -8.33
+          ],
+          "nominal_span_cm": 27.1,
+          "top_cm": 2.3
+        },
+        {
+          "centre_m": [
+            -14.588,
+            -1.893
+          ],
+          "nominal_span_cm": 40.8,
+          "top_cm": 1.7
+        },
+        {
+          "centre_m": [
+            -0.151,
+            11.396
+          ],
+          "nominal_span_cm": 71.8,
+          "top_cm": 2.39
+        },
+        {
+          "centre_m": [
+            4.848,
+            -5.804
+          ],
+          "nominal_span_cm": 30.3,
+          "top_cm": 2.55
+        },
+        {
+          "centre_m": [
+            -10.702,
+            -8.784
+          ],
+          "nominal_span_cm": 20.6,
+          "top_cm": 2.77
+        },
+        {
+          "centre_m": [
+            10.455,
+            -7.575
+          ],
+          "nominal_span_cm": 29.7,
+          "top_cm": 2.16
+        },
+        {
+          "centre_m": [
+            12.77,
+            -5.239
+          ],
+          "nominal_span_cm": 41.9,
+          "top_cm": 2.5
+        },
+        {
+          "centre_m": [
+            -8.82,
+            -8.465
+          ],
+          "nominal_span_cm": 82.0,
+          "top_cm": 2.79
+        },
+        {
+          "centre_m": [
+            2.501,
+            9.394
+          ],
+          "nominal_span_cm": 38.2,
+          "top_cm": 2.93
+        },
+        {
+          "centre_m": [
+            10.71,
+            3.681
+          ],
+          "nominal_span_cm": 35.9,
+          "top_cm": 2.68
+        },
+        {
+          "centre_m": [
+            14.259,
+            1.493
+          ],
+          "nominal_span_cm": 39.9,
+          "top_cm": 1.67
+        },
+        {
+          "centre_m": [
+            14.43,
+            -4.445
+          ],
+          "nominal_span_cm": 30.7,
+          "top_cm": 1.64
+        },
+        {
+          "centre_m": [
+            -6.276,
+            -0.393
+          ],
+          "nominal_span_cm": 77.9,
+          "top_cm": 2.11
+        },
+        {
+          "centre_m": [
+            -9.778,
+            0.067
+          ],
+          "nominal_span_cm": 38.4,
+          "top_cm": 1.91
+        }
+      ],
+      "surface_material_counts": {
+        "Concrete": 394,
+        "ConcreteDark": 215,
+        "ConcreteLight": 12
+      },
+      "medium_plate_count": 496,
+      "quiet_plate_count": 83,
+      "median_plate_area_m2": 0.9016708327052108,
+      "plate_area_range_m2": [
+        0.21312067716036864,
+        8.119192766283028
+      ],
+      "plate_top_range_cm": [
+        0.35385925073106367,
+        2.5977209572543005
+      ],
+      "origin": "Local Z=0 is the arena top. Actor Z=-5 cm, Z scale exactly 1. NoCollision. Sheet reaches the drainage lip.",
+      "sha256": "4ccd873afa8082f77518dc77522002889c046ca273d9a49287249cce54e94142"
+    }
+  ],
+  "total_unique_triangles": 47296,
+  "fbx_roundtrip_checks": [
+    {
+      "name": "SM_ChamberFractureRecover_Main",
+      "max_dimension_error_m": 9.5367431640625e-07,
+      "triangles": 47296,
+      "slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "passed": true
+    }
+  ],
+  "recommended_placements": [
+    {
+      "label": "Main",
+      "mesh": "SM_ChamberFractureRecover_Main",
+      "location_cm": [
+        40,
+        0,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -1699.3234252929688,
+          -1521.9467163085938,
+          -4.860000004991889
+        ],
+        "max": [
+          1687.8832244873047,
+          1522.0256805419922,
+          -1.4000001549720764
+        ]
+      }
+    }
+  ],
+  "construction_limits": "Relief stays within 0-3.7 cm local and world Z -5.05 to 1.05 cm. No collision. Perimeter reaches the drainage lip without covering the grate centre.",
+  "renders": [
+    "recovery-overview.png"
+  ],
+  "render_engine_error": "bpy_struct: item.attr = val: enum \"BLENDER_EEVEE_NEXT\" not found in ('BLENDER_EEVEE', 'BLENDER_WORKBENCH', 'CYCLES')"
+}

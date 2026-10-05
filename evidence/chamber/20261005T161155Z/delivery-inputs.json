@@ -1,0 +1,90 @@
+{
+  "candidate": "floor-recovery-v4-20261005T163731",
+  "recorded_utc": "2026-10-05T16:45:00Z",
+  "branch": "grok/chamber-parity-continuation",
+  "parent": "efce679",
+  "map": "/Game/Maps/TeddyEncounter",
+  "map_file": "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+  "map_sha256": "5b54ac8d1d1569cbaae851fbbd0913e8948b3a13b0a5d5e6b118fa79ba7e823f",
+  "map_lfs_lock": {"id": 53925768, "path": "TeddyBlueprint/Content/Maps/TeddyEncounter.umap", "owner": "lutherfourie"},
+  "settings": {
+    "file": "study/chamber-settings.json",
+    "revision": "chamber-11-floor-recovery",
+    "sha256": "e8699f194d37c923f640f827a0a6ff6b18e446ef62fdb15a64479bdc0f6b4e78",
+    "floor_recovery": {"tile_cm": 720, "detail_weight": 0.28, "normal_mix": 0.28, "value_scale": 0.74, "foreground_damp": 0.42, "foreground_dry": 0.94},
+    "exposure_bias": 3.8,
+    "lights_edited_this_pass": false
+  },
+  "visible_floor": {
+    "actor": "TE_Chamber_Recover_Main",
+    "mesh": "/Game/TeddyEncounter/Chamber/FloorRecovery/SM_ChamberFractureRecover_Main",
+    "source_dir": "Assets/Adapted/ChamberParity/FloorRecoveryV4",
+    "manifest_sha256": "f0aad0e78122f75763b118de3ef287f9afd04a62932e015e898487ee5a92668c",
+    "fbx_sha256": "4e0591724d4b793b0cb2d3c5b1032954e29113cc7e67bb796362b901070be214",
+    "uasset_sha256": "f5aa7e95d446ba63113802e68cdaa589fbcbe9511ea56bff88387d89a196942c",
+    "plates": 595,
+    "recess_bites": 22,
+    "fragments": 39,
+    "triangles": 65622,
+    "median_plate_m2": 0.744,
+    "highest_point_cm": 3.6,
+    "location_cm": [40, 0, -5],
+    "scale": [1, 1, 1],
+    "collision": "NoCollision",
+    "authored_normal_faults": 0,
+    "normal_repairs": 0
+  },
+  "materials_sha256": {
+    "M_Chamber_FloorRecoverConcrete.uasset": "f740f8164534d8bdcb748d4b08bce8f71ad92792fa2f432f5ea2ad027add2bec",
+    "M_Chamber_FloorRecoverConcreteLight.uasset": "a453ad58f9413abc05310ff2dae94958f5c3e3d539d2aa90a67b7df5302fa5f2",
+    "M_Chamber_FloorRecoverConcreteDark.uasset": "9a87c2438d1ef495baa4d86c3d24d709b7993cdb3cc41d591d010330e39d0383",
+    "M_Chamber_FloorRecoverAggregate.uasset": "8d39d746c985962f976cc189291a91b55efa6da6f9bc3b1390810363bbbec4c0",
+    "M_Chamber_FloorRecoverDark.uasset": "fe00ca1a25fd04a4fbb8b5421239179cb8fd05188d7f53e0c195360eb60d613f",
+    "M_Chamber_FloorRecoverCrack.uasset": "c8bbdeb0b7cb7dba2e9784517ff349e5b52dec31cdbdfa8b48b11efd2ceb9664"
+  },
+  "preserved": {
+    "v3_manifest_sha256": "d43558d99914839f04bf1145fbf7e9c56d24595b126006ed8642113f2680c287",
+    "v3_actor": "TE_Chamber_Morph_Main hidden, unmoved",
+    "v2_actors_hidden": 14,
+    "cutaway_unchanged_from_efce679": true,
+    "cutaway_sha256": "e43fe006575f89e7811084c9044a2bc7941bbc711ff8a142350f155e1add8136",
+    "arena_floor_collision": "TE_ArenaFloor walk trace at Z -5"
+  },
+  "captures": {
+    "current": "evidence/implementation/20261005T163731-capture_chamber_views",
+    "front_sha256": "f6b91f9009127e1f99c7b30f8706d1e51249610b962722adec5ad35516eb41ee",
+    "reverse_sha256": "ac6681ba9d202efcd9d4aa0ee53f85a7d3d7563bcec59897a68643178567c283",
+    "ordinary_sha256": "1795f343c4f65076c4a3b0f38c117beab14e961a76f548726b8771b8aaadfb68",
+    "receipt_sha256": "8833b36d976daa53d54f9fb401f904941d645283aff88912946ea7c1c9568609"
+  },
+  "audits": {
+    "chamber": "evidence/implementation/20261005T163834-verify_chamber_runtime",
+    "chamber_result": "34/34",
+    "chamber_receipt_sha256": "e5073c35a2f4f380533bf6cf4f60b3886ebf0dd6efb7699499d9924fcab69657",
+    "room": "evidence/implementation/20261005T163913-verify_full_room",
+    "room_result": "28/28",
+    "room_receipt_sha256": "3fb3af199bc2884bddb06d541f6f170267348476faf51b32807ae2f2ef70a88b"
+  },
+  "motion": {
+    "file": "evidence/chamber/20261005T161155Z/native-motion-20261005T164043/native-motion.mp4",
+    "sha256": "16039576e019188af6c8e1b15fd7f0a2c877a63b7ea3a2da3f48cb0b219572d8",
+    "duration_s": 19.133333,
+    "frames": 573,
+    "size": [1280, 720],
+    "input": "simulated, isolated QA map, no physical device",
+    "audio": "movie is silent; native-game-audio.wav was recorded and not auditioned",
+    "ending": "boss defeat: on-screen THE STITCHES GIVE WAY / F5 TO RESTART and THE UNRAVELLED; player still standing"
+  },
+  "expectation_changes": [
+    "V3 morphology actor must be present and hidden. Visibility belongs to FloorRecoveryV4.",
+    "One visible ChamberRecoveryOwned actor, mesh SM_ChamberFractureRecover_Main, scale Z 1, world Z within -5.05..6.05.",
+    "Recovery sheet reaches the drainage lip: world X -1650..1640 and |Y| within 1490..1540."
+  ],
+  "not_this_candidate": [
+    "evidence/implementation/20261005T114712-capture_chamber_views is the pre-Grok handoff",
+    "evidence/implementation/20261005T133413-capture_chamber_views is the rejected V3 sheet",
+    "evidence/implementation/20261005T161429-capture_chamber_views is the dark-mosaic intermediate",
+    "The 766-file clone manifest is not acceptance of this art"
+  ],
+  "not_claimed": ["exact visual parity", "user acceptance", "physical-device input", "audio match", "watertight floor"]
+}

@@ -13,7 +13,7 @@ def main():
     surfaces=[]
     for a in ACTORS.get_all_level_actors():
         if a.get_actor_label().startswith(('TE_Room_','TE_Parity_RoomExt_','TE_Chamber_')):
-            if {'RoomFloorDetail','ChamberFloorOwned','ChamberSlabsOwned','ChamberCrustOwned','ChamberMorphologyOwned'} & {str(t) for t in a.tags}:continue
+            if {'RoomFloorDetail','ChamberFloorOwned','ChamberSlabsOwned','ChamberCrustOwned','ChamberMorphologyOwned','ChamberRecoveryOwned'} & {str(t) for t in a.tags}:continue
             for c in a.get_components_by_class(u.StaticMeshComponent):
                 c.set_lighting_channels(True,False,True);surfaces.append(a.get_actor_label()+':'+c.get_name())
     # Persist component defaults as well as placed-instance channels.

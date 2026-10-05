@@ -1,6 +1,26 @@
 # Teddy Encounter working status
 
+## Floor recovery — 5 October 2026
+
+Grok session `01a10a54-69ee-7253-978b-c01aa506ee63` remains the sole Unreal writer on `grok/chamber-parity-continuation`. The V3 sheet was a fidelity regression: a smooth polygon floor. The visible floor is now `TE_Chamber_Recover_Main` / `SM_ChamberFractureRecover_Main` (65,622 triangles, 595 plates, median about 0.74 m², 39 fragments, relief at most 3.6 cm). It sits at (40, 0, −5), scale Z 1, with no collision, and it meets the drainage lip. V2 and V3 stay in place and hidden. Exposure bias stays 3.8. The gameplay camera stays pitch −46° / FOV 54.
+
+The 16:14 capture, `20261005T161429-capture_chamber_views`, still read as dark triangular plates and is not the candidate.
+
+| Evidence | Result |
+| --- | --- |
+| Current views | `20261005T163731-capture_chamber_views`: front, reverse, and ordinary gameplay. Damp cracked concrete. The dark mosaic is gone. |
+| Chamber audit | `20261005T163834-verify_chamber_runtime`, **34/34**. V3 must be hidden. Three recovery checks were added. |
+| Room audit | `20261005T163913-verify_full_room`, **28/28**. Floor trace still hits `TE_ArenaFloor` at Z −5. |
+| Motion | `evidence/chamber/20261005T161155Z/native-motion-20261005T164043`. Silent, simulated input, 19.133 s, 573 frames. Ends in boss defeat (`THE STITCHES GIVE WAY`), not player loss. |
+| Identities | `evidence/chamber/20261005T161155Z/delivery-inputs.json` |
+
+Straight splits and grounded chunks are still quieter than the concepts. Service bays, red side fixtures, and overhead haze were not changed. This is not visual acceptance. The 11:47 pair, the 11:51 player-loss movie, and the 766-file clone receipt are historical.
+
+Open the saved encounter with **PLAY.cmd** or **EDIT.cmd**. Next: bay depth, red practicals, and overhead atmosphere against the same cameras. Do not raise global exposure or restore the V3 sheet.
+
 ## Local haze pass — 5 October 2026
+
+Historical lighting pass. The current candidate is the floor recovery above.
 
 The same Grok session remains the sole Unreal writer on `grok/chamber-parity-continuation`. The room was not rebuilt. Exposure bias stays 3.8.
 

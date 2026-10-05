@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chamber floor review — V3 rejected</title>
+<style>
+:root {color-scheme:dark;font:16px/1.5 system-ui;background:#101718;color:#e2e9e7}
+body{max-width:1800px;margin:0 auto;padding:24px}h1{font-size:1.55rem}a{color:#9bd6d1}
+.verdict{border-left:4px solid #e4ad67;padding:12px 18px;background:#252722}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}figure{margin:0}img{width:100%;height:auto;display:block;background:#000}figcaption{padding:8px 0;font-size:.9rem}h2{margin-top:30px;font-size:1.15rem}.note{color:#b9c8c5}
+@media(max-width:850px){.grid{grid-template-columns:1fr}}
+</style>
+<h1>Independent chamber review · 5 October 2026</h1>
+<p class="verdict"><strong>V3 floor rejected for visual fidelity.</strong> Recorded runtime audits pass 31/31 and 28/28. The large smooth floor polygons lose the reference's fractured, damp concrete. A separate V4 correction is in progress; no V4 result is shown here.</p>
+<p><a href="INDEPENDENT_REVIEW.md">Full independent review</a> · <a href="../../../study/GROK_QA_FOLLOWUP_20261005.md">Grok's correction brief</a></p>
+<p class="note">Images are original files, scaled uniformly by the browser, without cropping or grading. Click for the native file. Different concept framing and subject poses prevent a pixel-perfect overlay. Engine views are staged holds with hidden HUD; the ordinary camera hold is not live-play evidence.</p>
+<h2>Front chamber</h2>
+<div class="grid">
+<figure><a href="../../../study/visuals/chamber-target-front.png"><img src="../../../study/visuals/chamber-target-front.png" alt="Selected front target: eroded and damp concrete floor inside a teal industrial chamber"></a><figcaption>Selected target · 571 × 378</figcaption></figure>
+<figure><a href="../../implementation/20261005T114712-capture_chamber_views/01-chamber-front.png"><img src="../../implementation/20261005T114712-capture_chamber_views/01-chamber-front.png" alt="Prior native floor with worn concrete and isolated repeated fracture patches"></a><figcaption>11:47 prior candidate · 1920 × 1280. Too patchy/fine, but stronger concrete character.</figcaption></figure>
+<figure><a href="../../implementation/20261005T133413-capture_chamber_views/01-chamber-front.png"><img src="../../implementation/20261005T133413-capture_chamber_views/01-chamber-front.png" alt="Rejected V3 native front with smooth broad floor polygons and abrupt perimeter border"></a><figcaption>13:34 rejected V3 · 1920 × 1280. Flat plate treatment and abrupt perimeter border.</figcaption></figure>
+</div>
+<h2>Reverse chamber</h2>
+<div class="grid">
+<figure><a href="../../../study/visuals/chamber-target-reverse.png"><img src="../../../study/visuals/chamber-target-reverse.png" alt="Selected reverse target with varied broken concrete, damp sheen and overhead haze"></a><figcaption>Selected target · 475 × 320</figcaption></figure>
+<figure><a href="../../implementation/20261005T114712-capture_chamber_views/02-chamber-reverse.png"><img src="../../implementation/20261005T114712-capture_chamber_views/02-chamber-reverse.png" alt="Earlier native reverse floor with weathered texture and fine fracture"></a><figcaption>11:47 prior candidate · 1920 × 1280. Historical comparison, not acceptance.</figcaption></figure>
+<figure><a href="../../implementation/20261005T133413-capture_chamber_views/02-chamber-reverse.png"><img src="../../implementation/20261005T133413-capture_chamber_views/02-chamber-reverse.png" alt="Rejected V3 reverse floor with giant flat dark insets and little damp variation"></a><figcaption>13:34 rejected V3 · 1920 × 1280. Missing intermediate fracture and wet/dry response.</figcaption></figure>
+</div>
+<h2>Ordinary gameplay camera hold</h2>
+<p>V3's floor regression is also visible at pitch −46° / FOV 54. Preserve that camera while repairing the surface, plate hierarchy and perimeter continuity.</p>
+<a href="../../implementation/20261005T133413-capture_chamber_views/03-ordinary-gameplay.png"><img style="max-width:1000px" src="../../implementation/20261005T133413-capture_chamber_views/03-ordinary-gameplay.png" alt="Rejected V3 floor seen from the ordinary held gameplay camera"></a>
+</html>

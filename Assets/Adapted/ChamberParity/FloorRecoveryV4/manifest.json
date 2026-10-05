@@ -1,0 +1,476 @@
+{
+  "owner": "teddy-chamber-floor-recovery-v4-20261005",
+  "status": "source-ready-for-engine-review",
+  "generator": "tools/make_chamber_floor_recovery.py",
+  "generator_sha256": "ce07946830fb0070c691c9f937847cbad693987685c02a1f293990f4de22b0be",
+  "editable_blend": "Assets/Adapted/ChamberParity/FloorRecoveryV4/ChamberFloorRecovery_V4.blend",
+  "blend_sha256": "cad8a5e2dee23e7f655bbafd591ecda148bb73d27677578b8bb0a3f97ca37f6a",
+  "source": "Corrected V4: chamber-boundary fade only, chipped lips around internal bites, outward-falling bevels, concrete caps, grounded chips in the missing concrete. The sheet meets the drainage lip. V3 remains a separate preserved export.",
+  "correction": "Perimeter fade stays on the chamber boundary. Bevel and side triangles are tested with normalized normals against the local CCW outward (dy, -dx), including both triangles of a non-planar quad. No area cutoff above numerical collapse.",
+  "normal_orientation": {
+    "authored": "Non-degenerate cap, bevel, and side triangles. Bevel normals must have positive normalized Z and a positive dot with local edge outward (dy, -dx). Side normals must have a positive outward dot. Both triangles of each quad are tested. Degenerate means cross-product length below 1e-8.",
+    "repair": "None. Faces are not welded, recalculated, or flipped after the authored test. A later flip would not be proof of orientation.",
+    "fbx_roundtrip": "Downward normals are counted only for polygons whose lowest vertex is above 1 cm. That count does not cover quiet caps below 1 cm or side orientation.",
+    "watertightness_required": false
+  },
+  "preserved": "Floor, FloorNormalsV2, Slabs, SlabsNormalsV2, Crust, CrustNormalsV2, FloorMorphologyV3, characters, and lighting are not modified by this generator.",
+  "v3_manifest_sha256": "d43558d99914839f04bf1145fbf7e9c56d24595b126006ed8642113f2680c287",
+  "references": [
+    "study/visuals/chamber-target-front.png",
+    "study/visuals/chamber-target-reverse.png"
+  ],
+  "coordinate_system": "Metres, +Z up. Static FBX mirrors Y in the project importer.",
+  "fbx_settings": {
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "global_scale": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_NONE"
+  },
+  "material_slots": [
+    "Concrete",
+    "ConcreteLight",
+    "ConcreteDark",
+    "Aggregate",
+    "Dark",
+    "Crack"
+  ],
+  "material_scale": {
+    "tile_cm": 720,
+    "detail_weight": 0.28,
+    "normal_mix": 0.28,
+    "value_scale": 0.74,
+    "foreground_damp": 0.42,
+    "foreground_dry": 0.94,
+    "note": "Importer builds M_Chamber_FloorRecover* only. Concrete normal and wet/dry roughness. No black cards. No flat normal."
+  },
+  "assets": [
+    {
+      "name": "SM_ChamberFractureRecover_Main",
+      "file": "SM_ChamberFractureRecover_Main.fbx",
+      "triangles": 65622,
+      "vertices": 113576,
+      "bounds_m": {
+        "min": [
+          -17.362262725830078,
+          -15.225817680358887,
+          0.00139999995008111
+        ],
+        "max": [
+          16.450000762939453,
+          15.225354194641113,
+          0.035999998450279236
+        ]
+      },
+      "dimensions_m": [
+        33.81226348876953,
+        30.451171875,
+        0.034599998500198126
+      ],
+      "expected_dimensions_cm": [
+        3381.226348876953,
+        3045.1171875,
+        3.4599998500198126
+      ],
+      "highest_point_cm": 3.5999998450279236,
+      "material_slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "plate_count": 595,
+      "recess_bites": 22,
+      "detached_fragments": [
+        {
+          "centre_m": [
+            10.028,
+            -8.912
+          ],
+          "nominal_span_cm": 81.2,
+          "top_cm": 2.65
+        },
+        {
+          "centre_m": [
+            10.124,
+            -8.717
+          ],
+          "nominal_span_cm": 30.5,
+          "top_cm": 2.17
+        },
+        {
+          "centre_m": [
+            8.951,
+            1.53
+          ],
+          "nominal_span_cm": 82.6,
+          "top_cm": 2.72
+        },
+        {
+          "centre_m": [
+            8.718,
+            1.751
+          ],
+          "nominal_span_cm": 29.1,
+          "top_cm": 2.73
+        },
+        {
+          "centre_m": [
+            10.222,
+            10.561
+          ],
+          "nominal_span_cm": 83.7,
+          "top_cm": 2.66
+        },
+        {
+          "centre_m": [
+            10.247,
+            10.507
+          ],
+          "nominal_span_cm": 38.6,
+          "top_cm": 2.0
+        },
+        {
+          "centre_m": [
+            12.474,
+            -4.794
+          ],
+          "nominal_span_cm": 52.4,
+          "top_cm": 2.49
+        },
+        {
+          "centre_m": [
+            7.224,
+            7.119
+          ],
+          "nominal_span_cm": 78.9,
+          "top_cm": 2.43
+        },
+        {
+          "centre_m": [
+            6.959,
+            7.243
+          ],
+          "nominal_span_cm": 38.6,
+          "top_cm": 2.26
+        },
+        {
+          "centre_m": [
+            -13.105,
+            5.045
+          ],
+          "nominal_span_cm": 72.0,
+          "top_cm": 2.66
+        },
+        {
+          "centre_m": [
+            -13.208,
+            4.815
+          ],
+          "nominal_span_cm": 40.4,
+          "top_cm": 2.02
+        },
+        {
+          "centre_m": [
+            12.531,
+            3.838
+          ],
+          "nominal_span_cm": 69.6,
+          "top_cm": 2.47
+        },
+        {
+          "centre_m": [
+            12.605,
+            3.867
+          ],
+          "nominal_span_cm": 33.1,
+          "top_cm": 1.9
+        },
+        {
+          "centre_m": [
+            -0.757,
+            10.441
+          ],
+          "nominal_span_cm": 88.2,
+          "top_cm": 2.34
+        },
+        {
+          "centre_m": [
+            -1.024,
+            10.634
+          ],
+          "nominal_span_cm": 38.3,
+          "top_cm": 1.81
+        },
+        {
+          "centre_m": [
+            -1.134,
+            -9.397
+          ],
+          "nominal_span_cm": 91.4,
+          "top_cm": 2.75
+        },
+        {
+          "centre_m": [
+            -1.369,
+            -9.367
+          ],
+          "nominal_span_cm": 50.5,
+          "top_cm": 2.64
+        },
+        {
+          "centre_m": [
+            11.4,
+            10.243
+          ],
+          "nominal_span_cm": 59.4,
+          "top_cm": 2.05
+        },
+        {
+          "centre_m": [
+            12.503,
+            -6.714
+          ],
+          "nominal_span_cm": 87.7,
+          "top_cm": 2.57
+        },
+        {
+          "centre_m": [
+            12.455,
+            -6.508
+          ],
+          "nominal_span_cm": 31.9,
+          "top_cm": 2.32
+        },
+        {
+          "centre_m": [
+            -13.751,
+            -11.168
+          ],
+          "nominal_span_cm": 69.6,
+          "top_cm": 3.17
+        },
+        {
+          "centre_m": [
+            -13.855,
+            -11.02
+          ],
+          "nominal_span_cm": 37.5,
+          "top_cm": 2.76
+        },
+        {
+          "centre_m": [
+            -12.245,
+            12.218
+          ],
+          "nominal_span_cm": 55.9,
+          "top_cm": 2.11
+        },
+        {
+          "centre_m": [
+            12.012,
+            -4.851
+          ],
+          "nominal_span_cm": 48.7,
+          "top_cm": 2.31
+        },
+        {
+          "centre_m": [
+            3.454,
+            10.559
+          ],
+          "nominal_span_cm": 89.7,
+          "top_cm": 2.52
+        },
+        {
+          "centre_m": [
+            3.2,
+            10.66
+          ],
+          "nominal_span_cm": 39.7,
+          "top_cm": 1.75
+        },
+        {
+          "centre_m": [
+            -7.455,
+            -8.967
+          ],
+          "nominal_span_cm": 75.7,
+          "top_cm": 2.34
+        },
+        {
+          "centre_m": [
+            -7.54,
+            -9.175
+          ],
+          "nominal_span_cm": 31.8,
+          "top_cm": 1.9
+        },
+        {
+          "centre_m": [
+            -4.323,
+            9.936
+          ],
+          "nominal_span_cm": 87.0,
+          "top_cm": 2.5
+        },
+        {
+          "centre_m": [
+            -4.176,
+            10.198
+          ],
+          "nominal_span_cm": 45.7,
+          "top_cm": 2.59
+        },
+        {
+          "centre_m": [
+            13.061,
+            11.894
+          ],
+          "nominal_span_cm": 49.1,
+          "top_cm": 2.33
+        },
+        {
+          "centre_m": [
+            5.743,
+            0.231
+          ],
+          "nominal_span_cm": 82.9,
+          "top_cm": 2.01
+        },
+        {
+          "centre_m": [
+            5.743,
+            0.33
+          ],
+          "nominal_span_cm": 33.5,
+          "top_cm": 2.64
+        },
+        {
+          "centre_m": [
+            1.194,
+            3.049
+          ],
+          "nominal_span_cm": 72.5,
+          "top_cm": 2.36
+        },
+        {
+          "centre_m": [
+            1.131,
+            3.156
+          ],
+          "nominal_span_cm": 27.2,
+          "top_cm": 2.42
+        },
+        {
+          "centre_m": [
+            10.442,
+            -7.664
+          ],
+          "nominal_span_cm": 65.8,
+          "top_cm": 2.88
+        },
+        {
+          "centre_m": [
+            10.435,
+            -7.512
+          ],
+          "nominal_span_cm": 23.4,
+          "top_cm": 2.57
+        },
+        {
+          "centre_m": [
+            -12.087,
+            10.142
+          ],
+          "nominal_span_cm": 85.2,
+          "top_cm": 3.13
+        },
+        {
+          "centre_m": [
+            -12.12,
+            9.94
+          ],
+          "nominal_span_cm": 44.6,
+          "top_cm": 2.57
+        }
+      ],
+      "surface_material_counts": {
+        "Concrete": 590,
+        "ConcreteLight": 6
+      },
+      "medium_plate_count": 479,
+      "quiet_plate_count": 89,
+      "median_plate_area_m2": 0.7436885964547397,
+      "plate_area_range_m2": [
+        0.1277825970229145,
+        8.57160919971778
+      ],
+      "plate_top_range_cm": [
+        0.3561608179855179,
+        3.399455632064232
+      ],
+      "origin": "Local Z=0 is the arena top. Actor Z=-5 cm, Z scale exactly 1. NoCollision. Sheet reaches the drainage lip.",
+      "normal_repairs": 0,
+      "sha256": "4e0591724d4b793b0cb2d3c5b1032954e29113cc7e67bb796362b901070be214"
+    }
+  ],
+  "total_unique_triangles": 65622,
+  "fbx_roundtrip_checks": [
+    {
+      "name": "SM_ChamberFractureRecover_Main",
+      "max_dimension_error_m": 9.5367431640625e-07,
+      "triangles": 65622,
+      "slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "passed": true,
+      "fbx_downward_above_1cm": 0,
+      "fbx_check_coverage": "lowest vertex above 1 cm and normal Z < 0 only; quiet caps below 1 cm and side orientation are not in this count",
+      "authored_normal_faults": 0,
+      "normal_repairs": 0
+    }
+  ],
+  "recommended_placements": [
+    {
+      "label": "Main",
+      "mesh": "SM_ChamberFractureRecover_Main",
+      "location_cm": [
+        40,
+        0,
+        -5
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -1696.2262725830078,
+          -1522.5354194641113,
+          -4.860000004991889
+        ],
+        "max": [
+          1685.0000762939453,
+          1522.5817680358887,
+          -1.4000001549720764
+        ]
+      }
+    }
+  ],
+  "construction_limits": "Relief stays within 0-3.7 cm local and world Z -5.05 to 1.05 cm. No collision. Perimeter reaches the drainage lip without covering the grate centre.",
+  "renders": [
+    "recovery-overview.png"
+  ],
+  "render_engine_error": "bpy_struct: item.attr = val: enum \"BLENDER_EEVEE_NEXT\" not found in ('BLENDER_EEVEE', 'BLENDER_WORKBENCH', 'CYCLES')"
+}

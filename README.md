@@ -4,10 +4,10 @@ Private Vibecadex team workspace. **The chamber is playable; exact visual parity
 
 - [Current chamber brief](study/CHAMBER_PARITY_BRIEF.md): saved state, remaining work and acceptance criteria.
 - [Visual study](study/brief/index.html): open locally after cloning for paired references and engine output.
-- [Independent final QA](evidence/chamber-qa/final/INDEPENDENT_REVIEW.md) and [comparison image](evidence/chamber-qa/final/comparison.png).
+- [Current floor candidate](evidence/chamber/20261005T161155Z/FLOOR_RECOVERY_QA.md) and [its image review](evidence/chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md).
 - [Team workflow and continuation prompt](study/TEAM_CONTINUATION.md).
 
-The [fresh-clone verification](evidence/team-handoff/remote-clone-verification.json) confirms all766 Content hashes, hydrated LFS assets, working review links and portable launch paths. This is checkout verification; the independent chamber review still records the open visual gaps.
+The [pre-Grok QA](evidence/chamber-qa/final/INDEPENDENT_REVIEW.md) and the [766-file clone receipt](evidence/team-handoff/remote-clone-verification.json) are the historical handoff. They do not accept the recovery floor. The current candidate's map and source hashes are in [delivery-inputs.json](evidence/chamber/20261005T161155Z/delivery-inputs.json).
 
 ## Prerequisites and first run
 

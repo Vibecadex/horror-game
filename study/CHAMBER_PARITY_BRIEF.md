@@ -27,17 +27,17 @@ The [close direction](visuals/direction-close-best.jpg) and original video estab
 - Broad B-3 bulkhead, wheel, indicators and fan replace the earlier small X-braced appearance. Original assets remain preserved.
 - Both side walls and the real two-bay reverse wall exist. Modeled piers, attached equipment and lowered perimeter drainage complete the enclosure. Native camera-dependent wall/light cutaway remains active.
 - Weathered world-aligned wall materials use a new generated albedo with retained normal/roughness inputs. This is authored art, not a measured scan.
-- **One morphology sheet** (`SM_ChamberFractureMorph_Main`, actor `TE_Chamber_Morph_Main`) is the visible floor. It has no collision. The five V2 fields, four slab groups and five crust banks remain at their frozen transforms and are hidden. **43 of 45 earlier floor actors stay hidden.** The 13:18 UTC black-card attempt was rejected and is not the saved mesh.
+- **One recovery sheet** (`SM_ChamberFractureRecover_Main`, actor `TE_Chamber_Recover_Main`) is the visible floor. It has no collision. The V3 morphology sheet, the five V2 fields, four slab groups and five crust banks remain at their frozen transforms and are hidden. The 13:18 UTC black-card attempt and the 16:14 dark-mosaic sheet were rejected and are not the saved mesh.
 - The earlier84-instance /21-mesh room extension remains. Source catalogs also contain unused variants; file presence does not establish assignment.
 - Character meshes, skeleton, animation, gameplay and controls were preserved. Ordinary tracking remains pitch−46° and FOV54; architectural evidence cameras are separate.
 
-[chamber-settings.json](chamber-settings.json), revision `chamber-10-local-haze`, holds current room values. The older `floor` object is unchanged and describes the hidden V2 graphs. `floor_morphology` is the visible sheet: 3200 cm stain tile, texture weight 0.22, flat normal. Lighting is no longer the chamber-08 set. The saved fog rect is 120,000 cd at scattering 7 with diffuse 0, height-fog density is 0.010, and the combat-floor return is 14,000 cd. Exposure bias remains 3.8. These are saved implementation values, not acceptance thresholds.
+[chamber-settings.json](chamber-settings.json), revision `chamber-11-floor-recovery`, holds current room values. The older `floor` object is unchanged and describes the hidden V2 graphs. `floor_morphology` describes the hidden V3 sheet. `floor_recovery` is the visible sheet: 720 cm tile, detail weight 0.28, normal mix 0.28. Lighting numbers were not edited for this floor pass. The saved fog rect is 120,000 cd at scattering 7 with diffuse 0, height-fog density is 0.010, and the combat-floor return is 14,000 cd. Exposure bias remains 3.8. These are saved implementation values, not acceptance thresholds.
 
 ## Next work in priority order
 
 | Priority | Current difference | Task and review condition |
 | --- | --- | --- |
-| 1: floor depth | The hairline web and repeated banks are gone. Both views show one quieter floor, but the breaks are still too few and too shallow, and the perimeter outside the sheet still shows the older floor. | Deepen connected plate loss and grounded fragments in `FloorMorphologyV3` only. Do not restore black cards, hairline normals, or the hidden V2 overlays. |
+| 1: floor depth | The V3 smooth sheet and the 16:14 dark mosaic are gone. The current sheet reads as damp cracked concrete out to the drainage. Straight splits and grounded chunks are still quieter than the concepts. | Refine erosion shape in `FloorRecoveryV4` only if a later pass still needs it. Do not restore black cards, the V3 sheet, or the hidden V2 overlays. |
 | 2: light and haze | The even floor wash is reduced and the reverse ceiling is no longer a hard black void. Overhead mist is still a local shaft, the two bays stay dark, and red points are uneven: tall side bars beside small door pins. | Balance those practicals and bay interiors with another local trial. Do not raise global exposure or add a glowing fog shape. |
 | 3: construction/framing | Panel divisions are more regular, wall/door/floor proportions approximate, and the upper volume is still thinner than the concepts. | Compare geometry and disclosed cameras before changing either. Strengthen architectural mass/local aging. Never hide missing construction with framing or force cutaway for a still. |
 
@@ -51,7 +51,8 @@ More small debris or uniform contrast will not solve continuous erosion. Do not 
 | [FloorNormalsV2](../Assets/Adapted/ChamberParity/FloorNormalsV2/manifest.json) | Three corrected field mesh types, five placements. |
 | [SlabsNormalsV2](../Assets/Adapted/ChamberParity/SlabsNormalsV2/manifest.json) | Sixteen closed slabs in a sparse group, four placements. |
 | [CrustNormalsV2](../Assets/Adapted/ChamberParity/CrustNormalsV2/manifest.json) | Two corrected bank types, five placements. Hidden, not deleted. |
-| [FloorMorphologyV3](../Assets/Adapted/ChamberParity/FloorMorphologyV3/manifest.json) | Visible floor sheet. One placement. Quiet material scale is applied in Unreal, not in the FBX preview. |
+| [FloorMorphologyV3](../Assets/Adapted/ChamberParity/FloorMorphologyV3/manifest.json) | Hidden previous sheet. Kept in place. Not the visible floor. |
+| [FloorRecoveryV4](../Assets/Adapted/ChamberParity/FloorRecoveryV4/manifest.json) | Visible floor sheet. One placement. Concrete normals and wet/dry roughness are applied in Unreal. |
 | [WallSurface](../Assets/Adapted/ChamberParity/WallSurface/) | Albedo, prompt/provenance; retained inputs supply normal/roughness. |
 
 Unreal assets use `/Game/TeddyEncounter/Chamber`; actor prefix `TE_Chamber_`, tags `TeddyEncounterOwned` / `ChamberOwned`. One integrator writes shared maps/packages. Source artists use separate agreed files; QA judges without changing the candidate.
@@ -73,12 +74,16 @@ Architecture capture holds characters/hides HUD, retains saved lights/materials 
 
 | Evidence | Result |
 | --- | --- |
-| [Front/reverse receipt](../evidence/implementation/20261005T114712-capture_chamber_views/receipt.json) | Two native1920×1280 images of the final saved candidate. |
-| [Chamber runtime](../evidence/implementation/20261005T114820-verify_chamber_runtime/receipt.json) | **28/28**: corrected identities, ownership, transforms, collision/height, cutaway and gameplay FOV restoration. |
-| [Room runtime](../evidence/implementation/20261005T114928-verify_full_room/receipt.json) | **28/28**: room/spawns/bounds,36 clearance probes, four walks/dashes, twelve camera pairs and six views. |
-| [Native movie](../evidence/chamber/20261005T095028Z/native-motion-20261005T115126/native-motion.mp4) | 19.1667s,1280×720,572 decoded frames, about29.84fps; QA copy, normal AI/health, simulated input, clean exits. Silent; ends in **player loss**, not boss defeat. |
-| [Independent QA](../evidence/chamber-qa/final/INDEPENDENT_REVIEW.md) | No new blocking defect observed in bounded evidence; material visual gaps remain. |
-| [Chamber preservation receipt](../evidence/chamber/20261005T095028Z/final-preservation.json) | 175 owned assets stable through final validation;555 original baseline files intact. Only preexisting game asset changed in that chamber pass: `TeddyEncounter.umap`. |
+| [Current native views](../evidence/implementation/20261005T163731-capture_chamber_views/receipt.json) | Front, reverse, and ordinary gameplay. Native 1920×1280. Current saved candidate. |
+| [Current chamber runtime](../evidence/implementation/20261005T163834-verify_chamber_runtime/receipt.json) | **34/34**. V3 hidden. Recovery identity, scale Z 1, and drainage lip are explicit checks. |
+| [Current room runtime](../evidence/implementation/20261005T163913-verify_full_room/receipt.json) | **28/28**. Spawns, bounds, routes, and the arena-floor trace. |
+| [Current native movie](../evidence/chamber/20261005T161155Z/native-motion-20261005T164043/native-motion.mp4) | 19.133s, 1280×720, 573 frames. Isolated QA copy, simulated input, silent. Ends in **boss defeat** (`THE STITCHES GIVE WAY`), player still standing. |
+| [Current identities](../evidence/chamber/20261005T161155Z/delivery-inputs.json) | Map, recovery mesh, materials, and capture hashes for this candidate. |
+| [Current image review](../evidence/chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md) | Incremental floor recovery. Exact parity remains open. Written before the motion receipt. |
+| [11:47 handoff views](../evidence/implementation/20261005T114712-capture_chamber_views/receipt.json) | Historical. Not the current candidate. |
+| [11:51 movie](../evidence/chamber/20261005T095028Z/native-motion-20261005T115126/native-motion.mp4) | Historical. Silent, simulated input, ends in **player loss**. |
+| [Pre-Grok QA](../evidence/chamber-qa/final/INDEPENDENT_REVIEW.md) | Historical handoff review. |
+| [11:47 preservation](../evidence/chamber/20261005T095028Z/final-preservation.json) | Historical. 175 owned assets through that validation. Not acceptance of the recovery sheet. |
 
 Earlier48/48 character and12/12 saved-key checks are historical coverage. Physical-device input, matched audio, packaging and sustained performance remain unverified. The short recording is not a performance certification.
 

@@ -1,8 +1,9 @@
 {
-  "revision": "chamber-10-local-haze",
+  "revision": "chamber-11-floor-recovery",
   "wall_patina":{"file":"Assets/Adapted/ChamberParity/WallSurface/T_ChamberWall_Albedo.png","sha256":"6ec78f1ac8b4f69bea1cae1839ab58b52ab9b4dc2987902a98ce1098da2cdbe3"},
   "floor":{"tile_cm":850,"detail_weight":0.65,"value_scale":0.68,"foreground_damp":0.25,"foreground_dry":0.90},
   "floor_morphology":{"tile_cm":3200,"texture_weight":0.22,"flat_color":[0.10,0.108,0.102],"normal":"flat","detail_weight":0.0,"value_scale":1.0},
+  "floor_recovery":{"tile_cm":720,"detail_weight":0.28,"normal_mix":0.28,"value_scale":0.74,"foreground_damp":0.42,"foreground_dry":0.94},
   "key_outer_cone":48,
   "rear_fog_scattering": 7,
   "overhead_mist": {"location":[80,40,1750],"target":[80,40,0],"intensity":120000,"radius":3400,"width":2800,"height":2800,"scattering":7},
