@@ -1,6 +1,6 @@
 # Chamber parity — current team brief
 
-Updated 5 October 2026 from the final saved chamber and independent review. [Earlier iteration notes](CHAMBER_PARITY_HISTORY_20261005.md) preserve rejected trials and superseded values.
+Updated 5 October 2026 from the saved floor recovery and its independent review. [Earlier iteration notes](CHAMBER_PARITY_HISTORY_20261005.md) preserve rejected trials and superseded values.
 
 **Objective:** reach visual parity with the two user-selected chamber concepts while preserving the playable encounter. Both defining walls are built. Floor damage, light distribution, upper haze and architectural proportions still differ materially. **Exact parity and user acceptance remain open.**
 
@@ -8,7 +8,7 @@ Updated 5 October 2026 from the final saved chamber and independent review. [Ear
 
 Follow the [team checkout instructions](../README.md#prerequisites-and-first-run): Windows, Unreal5.8.3, Git LFS and Python3.11+. Open `TeddyBlueprint/TeddyBlueprint.uproject`, `/Game/Maps/TeddyEncounter`. No scene regeneration or native compilation is required.
 
-Inspect the [front target](visuals/chamber-target-front.png), [reverse target](visuals/chamber-target-reverse.png), [actual comparison](../evidence/chamber-qa/final/comparison.png) and [independent final review](../evidence/chamber-qa/final/INDEPENDENT_REVIEW.md). Assign one Unreal writer and capture the saved baseline before editing. See [TEAM_CONTINUATION.md](TEAM_CONTINUATION.md) for commands and a ready-to-run agent prompt.
+Inspect the [front target](visuals/chamber-target-front.png), [reverse target](visuals/chamber-target-reverse.png), the [current native views](../evidence/implementation/20261005T163731-capture_chamber_views/receipt.json) and the [current independent review](../evidence/chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md). The [pre-Grok comparison](../evidence/chamber-qa/final/comparison.png) and [pre-Grok review](../evidence/chamber-qa/final/INDEPENDENT_REVIEW.md) are the historical handoff. Assign one Unreal writer and capture the saved baseline before editing. See [TEAM_CONTINUATION.md](TEAM_CONTINUATION.md) for commands and a ready-to-run agent prompt.
 
 The [close direction](visuals/direction-close-best.jpg) and original video establish the elevated combat atmosphere. The latest user instruction focuses on **the chamber itself**. Preserve characters, mechanics, controls and the gameplay camera. Concept labels and social-video overlays are not game UI; concepts do not supply measured dimensions or light values.
 
@@ -79,7 +79,7 @@ Architecture capture holds characters/hides HUD, retains saved lights/materials 
 | [Current room runtime](../evidence/implementation/20261005T163913-verify_full_room/receipt.json) | **28/28**. Spawns, bounds, routes, and the arena-floor trace. |
 | [Current native movie](../evidence/chamber/20261005T161155Z/native-motion-20261005T164043/native-motion.mp4) | 19.133s, 1280×720, 573 frames. Isolated QA copy, simulated input, silent. Ends in **boss defeat** (`THE STITCHES GIVE WAY`), player still standing. |
 | [Current identities](../evidence/chamber/20261005T161155Z/delivery-inputs.json) | Map, recovery mesh, materials, and capture hashes for this candidate. |
-| [Current image review](../evidence/chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md) | Incremental floor recovery. Exact parity remains open. Written before the motion receipt. |
+| [Current image review](../evidence/chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md) | Incremental floor recovery. 20 identity hashes and 62 runtime checks verified. Exact parity remains open. |
 | [11:47 handoff views](../evidence/implementation/20261005T114712-capture_chamber_views/receipt.json) | Historical. Not the current candidate. |
 | [11:51 movie](../evidence/chamber/20261005T095028Z/native-motion-20261005T115126/native-motion.mp4) | Historical. Silent, simulated input, ends in **player loss**. |
 | [Pre-Grok QA](../evidence/chamber-qa/final/INDEPENDENT_REVIEW.md) | Historical handoff review. |

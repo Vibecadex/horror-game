@@ -18,9 +18,11 @@ git clone https://github.com/Vibecadex/horror-game.git
 cd horror-game
 git lfs install --local
 git lfs pull
-python tools/team_check.py --verify-handoff
+python tools/team_check.py
 .\PLAY.cmd
 ```
+
+`python tools/team_check.py --verify-handoff` hashes the original Content files from the first handoff. It is expected to fail after this recovery and any later art. The command above is the first-run check.
 
 For an engine installed elsewhere, set its root before the check:
 

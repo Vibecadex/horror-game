@@ -22,7 +22,7 @@ The 16:14 capture was an intermediate: flat dark triangular caps. Those caps are
 
 `native-game-audio.wav` sits beside the movie and was not auditioned. Do not treat it as an audio match.
 
-Independent image review: [16:37 recovery](../../chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md). That review was written before the motion receipt. The 16:14 mosaic review remains [historical](../../chamber-qa/grok-20261005T161429/INDEPENDENT_REVIEW.md). The V3 sheet review remains [historical](../../chamber-qa/grok-20261005T133413/INDEPENDENT_REVIEW.md).
+Independent image review: [16:37 recovery](../../chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md). It checks the native views, both runtime receipts, the boss-defeat movie, and all 20 delivery hashes. The 16:14 mosaic review remains [historical](../../chamber-qa/grok-20261005T161429/INDEPENDENT_REVIEW.md). The V3 sheet review remains [historical](../../chamber-qa/grok-20261005T133413/INDEPENDENT_REVIEW.md).
 
 ## Still open
 
