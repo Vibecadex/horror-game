@@ -1,0 +1,181 @@
+{
+  "passed": true,
+  "utc": "2026-10-05T12:39:18.930343+00:00",
+  "remote": "git@github.com:Vibecadex/horror-game.git",
+  "commit": "cc2891b233111655b656d8d617a71be44849a418",
+  "fresh_remote_clone": true,
+  "clone_path": "C:\\Projects\\to-deploy\\horror-game\\.team-local\\verified-remote-clone",
+  "lfs_fsck": "Git LFS fsck OK",
+  "lfs_paths_hydrated": 1747,
+  "lfs_unique_objects": 1708,
+  "lfs_unique_bytes": 1234301784,
+  "all_766_content_hashes_match": true,
+  "team_check": {
+    "passed": true,
+    "root": "C:\\Projects\\to-deploy\\horror-game\\.team-local\\verified-remote-clone",
+    "checks": [
+      {
+        "name": "python",
+        "passed": true,
+        "detail": "3.14.6"
+      },
+      {
+        "name": "git",
+        "passed": true,
+        "detail": "git version 2.55.0.windows.1"
+      },
+      {
+        "name": "git_lfs",
+        "passed": true,
+        "detail": "git-lfs/3.7.1 (GitHub; windows amd64; go 1.25.1; git b84b3384)"
+      },
+      {
+        "name": "editor",
+        "passed": true,
+        "detail": "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe"
+      },
+      {
+        "name": "engine_version",
+        "passed": true,
+        "detail": "5.8.3"
+      },
+      {
+        "name": "blueprint_project",
+        "passed": true,
+        "detail": "C:\\Projects\\to-deploy\\horror-game\\.team-local\\verified-remote-clone\\TeddyBlueprint\\TeddyBlueprint.uproject"
+      },
+      {
+        "name": "editor_plugins",
+        "passed": true,
+        "detail": "Built-in editor Python and scripting plugins."
+      },
+      {
+        "name": "complete_content",
+        "passed": true,
+        "detail": {
+          "expected": 766,
+          "missing": []
+        }
+      },
+      {
+        "name": "handoff_hashes",
+        "passed": true,
+        "detail": {
+          "changed_missing_or_LFS_pointer": [],
+          "method": "Byte hashes only; no asset parsing"
+        }
+      },
+      {
+        "name": "reference_video",
+        "passed": true,
+        "detail": "C:\\Projects\\to-deploy\\horror-game\\.team-local\\verified-remote-clone\\Assets\\Reference\\WhatsApp Video 2026-10-04 at 16.53.31.mp4"
+      },
+      {
+        "name": "source_archive",
+        "passed": true,
+        "detail": "C:\\Projects\\to-deploy\\horror-game\\.team-local\\verified-remote-clone\\Assets\\Reference\\BossShot.zip"
+      },
+      {
+        "name": "teddy_model",
+        "passed": true,
+        "detail": "C:\\Projects\\to-deploy\\horror-game\\.team-local\\verified-remote-clone\\Assets\\ThirdParty\\HorrorTeddyBear\\horror-teddy-bear-monster.glb"
+      },
+      {
+        "name": "handoff_document",
+        "passed": true,
+        "detail": "study/brief/index.html"
+      },
+      {
+        "name": "handoff_document",
+        "passed": true,
+        "detail": "study/visuals/chamber-target-front.png"
+      },
+      {
+        "name": "handoff_document",
+        "passed": true,
+        "detail": "study/visuals/chamber-target-reverse.png"
+      },
+      {
+        "name": "handoff_document",
+        "passed": true,
+        "detail": "evidence/chamber-qa/final/INDEPENDENT_REVIEW.md"
+      },
+      {
+        "name": "handoff_document",
+        "passed": true,
+        "detail": "evidence/chamber/20261005T095028Z/review.html"
+      }
+    ],
+    "engine_started": false,
+    "installs_performed": false,
+    "note": "File/prerequisite check, not a fresh gameplay or visual parity test."
+  },
+  "play_dry_run": {
+    "level": "/Game/Maps/TeddyEncounter",
+    "mode": "play",
+    "arguments": [
+      "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+      "C:\\Projects\\to-deploy\\horror-game\\.team-local\\verified-remote-clone\\TeddyBlueprint\\TeddyBlueprint.uproject",
+      "/Game/Maps/TeddyEncounter",
+      "-nosplash",
+      "-DDC=InstalledNoZenLocalFallback",
+      "-LocalDataCachePath=C:\\Projects\\to-deploy\\horror-game\\.team-local\\verified-remote-clone\\.tool-cache\\derived-data",
+      "-UserDir=C:\\Projects\\to-deploy\\horror-game\\.team-local\\verified-remote-clone\\.tool-cache\\unreal-user",
+      "-game",
+      "-windowed",
+      "-ResX=1600",
+      "-ResY=900"
+    ]
+  },
+  "handoff_links_checked": 98,
+  "broken_links": [],
+  "review_images_decoded": [
+    {
+      "path": "study/visuals/chamber-target-front.png",
+      "size": [
+        571,
+        378
+      ]
+    },
+    {
+      "path": "evidence/implementation/20261005T114712-capture_chamber_views/01-chamber-front.png",
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "path": "evidence/implementation/20261005T095951-capture_chamber_views/01-chamber-front.png",
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "path": "study/visuals/chamber-target-reverse.png",
+      "size": [
+        475,
+        320
+      ]
+    },
+    {
+      "path": "evidence/implementation/20261005T114712-capture_chamber_views/02-chamber-reverse.png",
+      "size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "path": "evidence/implementation/20261005T095951-capture_chamber_views/02-chamber-reverse.png",
+      "size": [
+        1920,
+        1280
+      ]
+    }
+  ],
+  "chamber_QA_manifests_resolve": true,
+  "clone_worktree_clean": true,
+  "original_brief_browser_preview_inspected": true,
+  "engine_started": false,
+  "limitations": "Transport, file integrity, paths and prerequisites verified on a separate checkout on this workstation; no new gameplay or physical-device test and no parity acceptance."
+}

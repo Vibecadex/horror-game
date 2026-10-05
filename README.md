@@ -7,6 +7,8 @@ Private Vibecadex team workspace. **The chamber is playable; exact visual parity
 - [Independent final QA](evidence/chamber-qa/final/INDEPENDENT_REVIEW.md) and [comparison image](evidence/chamber-qa/final/comparison.png).
 - [Team workflow and continuation prompt](study/TEAM_CONTINUATION.md).
 
+The [fresh-clone verification](evidence/team-handoff/remote-clone-verification.json) confirms all766 Content hashes, hydrated LFS assets, working review links and portable launch paths. This is checkout verification; the independent chamber review still records the open visual gaps.
+
 ## Prerequisites and first run
 
 Windows, **Unreal Engine 5.8.3**, Git with Git LFS, and Python 3.11 or newer on PATH. Use your existing authorized Epic installation. Runtime gameplay is Blueprint-only: no project DLL, signing certificate or custom compiled plugin is needed. Blender/FFmpeg support optional authoring/capture; an AI CLI is not required to play or edit.
