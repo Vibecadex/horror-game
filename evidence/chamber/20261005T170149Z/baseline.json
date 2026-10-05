@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "method": "Hashes before the bay, red-practical and overhead pass. The 16:37 native trio is the visual before. Floor recovery stays the visible floor.",
+  "before_native_views": "evidence/implementation/20261005T163731-capture_chamber_views",
+  "files": [
+    {
+      "path": "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+      "sha256": "5b54ac8d1d1569cbaae851fbbd0913e8948b3a13b0a5d5e6b118fa79ba7e823f",
+      "bytes": 1094603
+    },
+    {
+      "path": "study/chamber-settings.json",
+      "sha256": "8821466ce8acdec9960ceec919b2f6a73ae000bc9fdfd5f441c59efe947645a8",
+      "bytes": 3610
+    },
+    {
+      "path": "Assets/Adapted/ChamberParity/SM_ChamberServiceDoorBay.fbx",
+      "sha256": "02394c41440c7016c073fa760f2c8a9936fd01ebdeb8272894b8e057b4592a56",
+      "bytes": 174188
+    },
+    {
+      "path": "evidence/implementation/20261005T163731-capture_chamber_views/01-chamber-front.png",
+      "sha256": "f6b91f9009127e1f99c7b30f8706d1e51249610b962722adec5ad35516eb41ee",
+      "bytes": 2980301
+    },
+    {
+      "path": "evidence/implementation/20261005T163731-capture_chamber_views/02-chamber-reverse.png",
+      "sha256": "ac6681ba9d202efcd9d4aa0ee53f85a7d3d7563bcec59897a68643178567c283",
+      "bytes": 3156740
+    },
+    {
+      "path": "evidence/implementation/20261005T163731-capture_chamber_views/03-ordinary-gameplay.png",
+      "sha256": "1795f343c4f65076c4a3b0f38c117beab14e961a76f548726b8771b8aaadfb68",
+      "bytes": 3389875
+    }
+  ]
+}

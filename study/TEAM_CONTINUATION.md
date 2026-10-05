@@ -48,7 +48,7 @@ This creates a separate QA map and uses simulated input. Inspect the movie, clas
 
 Preserve the delivered run. For new work, make a new run directory and fresh asset/config/reference snapshot, then update `evidence/chamber/current-run.json` to a **checkout-relative** path. Historical `prepare_chamber_pass.py` and `chamber_preservation.py verify` assume original clipboard/workstation history; their fixed baselines are not new-checkout acceptance. `python tools/team_check.py --verify-handoff` checks initial repository Content hashes, not later intentional edits.
 
-Review builder/checker paths now resolve from the checkout root. New deliveries need their own `delivery-inputs.json`, fresh receipts and preservation records. The current candidate is [floor recovery V4](../evidence/chamber/20261005T161155Z/FLOOR_RECOVERY_QA.md), with identities in [delivery-inputs.json](../evidence/chamber/20261005T161155Z/delivery-inputs.json). The shipped [11:47 review](../evidence/chamber/20261005T095028Z/review.html) and its movie are the historical handoff.
+Review builder/checker paths now resolve from the checkout root. New deliveries need their own `delivery-inputs.json`, fresh receipts and preservation records. The current pass is the [bay and overhead trial](../evidence/chamber/20261005T170149Z/BAY_ATMOSPHERE_QA.md). The [floor recovery](../evidence/chamber/20261005T161155Z/FLOOR_RECOVERY_QA.md) remains the visible floor and its reviewed before pair. The shipped [11:47 review](../evidence/chamber/20261005T095028Z/review.html) and its movie are the historical handoff.
 
 ## Continuation prompt
 
@@ -57,19 +57,19 @@ Paste into the team's existing coding-agent session at the repository root:
 ```text
 Continue the chamber environment in this checkout. Read AGENTS.md, README.md,
 study/CHAMBER_PARITY_BRIEF.md, study/TEAM_CONTINUATION.md, WORK_STATUS.md,
-evidence/chamber/20261005T161155Z/FLOOR_RECOVERY_QA.md and
-evidence/chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md. The pre-Grok
+evidence/chamber/20261005T170149Z/BAY_ATMOSPHERE_QA.md and
+evidence/chamber/20261005T161155Z/FLOOR_RECOVERY_QA.md. The pre-Grok
 evidence/chamber-qa/final/INDEPENDENT_REVIEW.md is historical. Inspect both
-chamber targets and the 16:37 native views. Destination:
+chamber targets and the 17:03 native views. Destination:
 TeddyBlueprint/TeddyBlueprint.uproject, /Game/Maps/TeddyEncounter, Unreal 5.8.3.
 
-Check prerequisites without installing anything, inspect Git status/LFS locks,
-and establish one Unreal writer. Preserve existing changes, original art,
-characters, controls and gameplay camera. Continue the saved room; never rerun
-historical builders to recreate it. The visible floor is FloorRecoveryV4.
-Keep it. Next visual work is bay depth, red practicals and overhead haze.
-Straight floor splits and quiet chunks can be refined later without restoring
-V3. Use corrected V2 sources, new versioned exports and
+Check prerequisites with python tools/team_check.py, without --verify-handoff.
+Inspect Git status/LFS locks, and establish one Unreal writer. Preserve the
+recovered floor, characters, controls and gameplay camera. The bays are lit
+recesses and the side bars are small points. Next visual work is a deeper bay
+interior in front of the shell and a thicker overhead column, without a global
+exposure raise or a glowing bar. Straight floor splits can be refined later
+without restoring V3. Use corrected V2 sources, new versioned exports and
 owned namespaces. Preserve routes and native cutaway. Show native front/reverse
 and gameplay evidence after meaningful changes, with independent QA and named
 gaps. Functional checks do not prove visual parity. Update the study brief and

@@ -1,5 +1,21 @@
 # Teddy Encounter working status
 
+## Bay depth, red practicals, and overhead — 5 October 2026
+
+Grok session `01a10a54-69ee-7253-978b-c01aa506ee63` remains the sole Unreal writer. The recovered floor stays visible. Exposure bias stays 3.8. The gameplay camera stays pitch −46° / FOV 54.
+
+The reverse bays no longer have a solid leaf. A drum sits in the existing 77 cm reveal, and two warm spots light the openings. Side red lenses shrank from tall bars to small points. The overhead shaft moved from Z 1750 down to Z 1100, with diffuse and specular still 0. The shell face limits how deep the bays can go. The teal column is stronger in the room and still thinner than the concepts.
+
+| Evidence | Result |
+| --- | --- |
+| Before | `20261005T163731-capture_chamber_views`, the reviewed floor recovery. |
+| After | `20261005T170326-capture_chamber_views`. Front, reverse, and ordinary gameplay. |
+| Chamber audit | `20261005T170523-verify_chamber_runtime`, **34/34**. |
+| Room audit | `20261005T170600-verify_full_room`, **28/28**. Floor trace still hits `TE_ArenaFloor` at Z −5. |
+| Note | `evidence/chamber/20261005T170149Z/BAY_ATMOSPHERE_QA.md` |
+
+This is not visual acceptance. Next remaining gaps are deeper bay interiors past the shell face, a thicker overhead column, and quieter floor splits. Do not raise global exposure or restore the V3 sheet.
+
 ## Floor recovery — 5 October 2026
 
 Grok session `01a10a54-69ee-7253-978b-c01aa506ee63` remains the sole Unreal writer on `grok/chamber-parity-continuation`. The V3 sheet was a fidelity regression: a smooth polygon floor. The visible floor is now `TE_Chamber_Recover_Main` / `SM_ChamberFractureRecover_Main` (65,622 triangles, 595 plates, median about 0.74 m², 39 fragments, relief at most 3.6 cm). It sits at (40, 0, −5), scale Z 1, with no collision, and it meets the drainage lip. V2 and V3 stay in place and hidden. Exposure bias stays 3.8. The gameplay camera stays pitch −46° / FOV 54.

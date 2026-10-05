@@ -31,14 +31,14 @@ The [close direction](visuals/direction-close-best.jpg) and original video estab
 - The earlier84-instance /21-mesh room extension remains. Source catalogs also contain unused variants; file presence does not establish assignment.
 - Character meshes, skeleton, animation, gameplay and controls were preserved. Ordinary tracking remains pitch−46° and FOV54; architectural evidence cameras are separate.
 
-[chamber-settings.json](chamber-settings.json), revision `chamber-11-floor-recovery`, holds current room values. The older `floor` object is unchanged and describes the hidden V2 graphs. `floor_morphology` describes the hidden V3 sheet. `floor_recovery` is the visible sheet: 720 cm tile, detail weight 0.28, normal mix 0.28. Lighting numbers were not edited for this floor pass. The saved fog rect is 120,000 cd at scattering 7 with diffuse 0, height-fog density is 0.010, and the combat-floor return is 14,000 cd. Exposure bias remains 3.8. These are saved implementation values, not acceptance thresholds.
+[chamber-settings.json](chamber-settings.json), revision `chamber-12-bay-atmosphere`, holds current room values. The older `floor` object is unchanged and describes the hidden V2 graphs. `floor_morphology` describes the hidden V3 sheet. `floor_recovery` is the visible sheet: 720 cm tile, detail weight 0.28, normal mix 0.28. Lighting numbers were not edited for this floor pass. The saved fog rect is 120,000 cd at scattering 7 with diffuse 0, height-fog density is 0.010, and the combat-floor return is 14,000 cd. Exposure bias remains 3.8. These are saved implementation values, not acceptance thresholds.
 
 ## Next work in priority order
 
 | Priority | Current difference | Task and review condition |
 | --- | --- | --- |
 | 1: floor depth | The V3 smooth sheet and the 16:14 dark mosaic are gone. The current sheet reads as damp cracked concrete out to the drainage. Straight splits and grounded chunks are still quieter than the concepts. | Refine erosion shape in `FloorRecoveryV4` only if a later pass still needs it. Do not restore black cards, the V3 sheet, or the hidden V2 overlays. |
-| 2: light and haze | The even floor wash is reduced and the reverse ceiling is no longer a hard black void. Overhead mist is still a local shaft, the two bays stay dark, and red points are uneven: tall side bars beside small door pins. | Balance those practicals and bay interiors with another local trial. Do not raise global exposure or add a glowing fog shape. |
+| 2: light and haze | The 17:03 trial lit the bay openings, shrank the tall side bars to small points, and lowered the teal shaft to Z 1100. The bays are still shallow, and the column is still thinner than the concepts. Floor brightness rose only slightly. Exposure stayed 3.8. | Deepen the recesses only in front of the shell face. Thicken the shaft without a glowing bar or a global exposure raise. |
 | 3: construction/framing | Panel divisions are more regular, wall/door/floor proportions approximate, and the upper volume is still thinner than the concepts. | Compare geometry and disclosed cameras before changing either. Strengthen architectural mass/local aging. Never hide missing construction with framing or force cutaway for a still. |
 
 More small debris or uniform contrast will not solve continuous erosion. Do not change characters or the gameplay camera to improve the architectural comparison. Render, judge the room, then revise the narrow cause.
@@ -74,12 +74,16 @@ Architecture capture holds characters/hides HUD, retains saved lights/materials 
 
 | Evidence | Result |
 | --- | --- |
-| [Current native views](../evidence/implementation/20261005T163731-capture_chamber_views/receipt.json) | Front, reverse, and ordinary gameplay. Native 1920×1280. Current saved candidate. |
-| [Current chamber runtime](../evidence/implementation/20261005T163834-verify_chamber_runtime/receipt.json) | **34/34**. V3 hidden. Recovery identity, scale Z 1, and drainage lip are explicit checks. |
-| [Current room runtime](../evidence/implementation/20261005T163913-verify_full_room/receipt.json) | **28/28**. Spawns, bounds, routes, and the arena-floor trace. |
-| [Current native movie](../evidence/chamber/20261005T161155Z/native-motion-20261005T164043/native-motion.mp4) | 19.133s, 1280×720, 573 frames. Isolated QA copy, simulated input, silent. Ends in **boss defeat** (`THE STITCHES GIVE WAY`), player still standing. |
-| [Current identities](../evidence/chamber/20261005T161155Z/delivery-inputs.json) | Map, recovery mesh, materials, and capture hashes for this candidate. |
-| [Current image review](../evidence/chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md) | Incremental floor recovery. 20 identity hashes and 62 runtime checks verified. Exact parity remains open. |
+| [Current native views](../evidence/implementation/20261005T170326-capture_chamber_views/receipt.json) | Front, reverse, and ordinary gameplay after the bay and overhead trial. Native 1920×1280. |
+| [Current chamber runtime](../evidence/implementation/20261005T170523-verify_chamber_runtime/receipt.json) | **34/34**. |
+| [Current room runtime](../evidence/implementation/20261005T170600-verify_full_room/receipt.json) | **28/28**. Arena-floor trace still at Z −5. |
+| [Current pass note](../evidence/chamber/20261005T170149Z/BAY_ATMOSPHERE_QA.md) | Open bays, restrained side lamps, lower teal shaft. Not exact parity. |
+| [Floor-recovery views](../evidence/implementation/20261005T163731-capture_chamber_views/receipt.json) | The reviewed before pair for this pass. |
+| [Floor-recovery chamber runtime](../evidence/implementation/20261005T163834-verify_chamber_runtime/receipt.json) | **34/34** on the floor candidate, before this lighting pass. |
+| [Floor-recovery room runtime](../evidence/implementation/20261005T163913-verify_full_room/receipt.json) | **28/28** on the floor candidate. |
+| [Floor-recovery movie](../evidence/chamber/20261005T161155Z/native-motion-20261005T164043/native-motion.mp4) | 19.133s, silent, simulated input. Ends in **boss defeat**. Predates the bay and overhead trial. |
+| [Floor-recovery identities](../evidence/chamber/20261005T161155Z/delivery-inputs.json) | Hashes for the reviewed floor candidate. |
+| [Floor-recovery image review](../evidence/chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md) | Incremental floor recovery. 20 identity hashes and 62 runtime checks verified. |
 | [11:47 handoff views](../evidence/implementation/20261005T114712-capture_chamber_views/receipt.json) | Historical. Not the current candidate. |
 | [11:51 movie](../evidence/chamber/20261005T095028Z/native-motion-20261005T115126/native-motion.mp4) | Historical. Silent, simulated input, ends in **player loss**. |
 | [Pre-Grok QA](../evidence/chamber-qa/final/INDEPENDENT_REVIEW.md) | Historical handoff review. |
