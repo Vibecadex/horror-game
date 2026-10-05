@@ -121,13 +121,15 @@ def saved_audit():
     result['declared_cutaway_threshold_cm'] = state['threshold']
     result['settings_sha256'] = hashlib.sha256(settings_bytes).hexdigest()
     run_meta = json.loads((ROOT / 'evidence/chamber/current-run.json').read_text(encoding='utf-8-sig'))
-    manifest_path = Path(run_meta['out']) / 'chamber-kit-reviewed.json'
+    run_dir = (ROOT / Path(run_meta['out'])).resolve()
+    assert run_dir.is_relative_to(ROOT)
+    manifest_path = run_dir / 'chamber-kit-reviewed.json'
     manifest_bytes = manifest_path.read_bytes()
     manifest = json.loads(manifest_bytes)
     assert manifest['owner'] == 'teddy-chamber-parity-20261005'
     result['source_manifest_sha256'] = hashlib.sha256(manifest_bytes).hexdigest()
     result['frozen_source_manifest'] = str(manifest_path)
-    floor_manifest_path = Path(run_meta['out']) / 'chamber-floor-v2-reviewed.json'
+    floor_manifest_path = run_dir / 'chamber-floor-v2-reviewed.json'
     floor_manifest_bytes = floor_manifest_path.read_bytes()
     floor_manifest = json.loads(floor_manifest_bytes)
     assert floor_manifest['owner'] == 'teddy-chamber-floor-normals-v2-20261005'
@@ -140,7 +142,7 @@ def saved_audit():
     assert len(expected_floor) == len(floor_manifest['recommended_placements']) == 5
     result['expected_floor_placement_count'] = len(expected_floor)
     result['expected_floor_unique_mesh_count'] = len(expected_floor_meshes)
-    slab_manifest_path = Path(run_meta['out']) / 'chamber-slabs-v2-reviewed.json'
+    slab_manifest_path = run_dir / 'chamber-slabs-v2-reviewed.json'
     slab_manifest_bytes = slab_manifest_path.read_bytes()
     slab_manifest = json.loads(slab_manifest_bytes)
     assert slab_manifest['owner'] == 'teddy-chamber-slabs-normals-v2-20261005'
@@ -152,7 +154,7 @@ def saved_audit():
     assert expected_slab_meshes == {NAMESPACE + 'Floor/SM_ChamberSparseSlabs_V2.SM_ChamberSparseSlabs_V2'}
     result['expected_slab_placement_count'] = len(expected_slabs)
     result['expected_slab_unique_mesh_count'] = len(expected_slab_meshes)
-    crust_manifest_path = Path(run_meta['out']) / 'chamber-crust-v2-reviewed.json'
+    crust_manifest_path = run_dir / 'chamber-crust-v2-reviewed.json'
     crust_manifest_bytes = crust_manifest_path.read_bytes()
     crust_manifest = json.loads(crust_manifest_bytes)
     assert crust_manifest['owner'] == 'teddy-chamber-crust-normals-v2-20261005'
