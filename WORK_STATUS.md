@@ -1,8 +1,18 @@
 # Teddy Encounter working status
 
+## Bear Studio authoring expansion — 6 October 2026
+
+The current fork task expands the bear interface. Run [BEAR_STUDIO.cmd](BEAR_STUDIO.cmd) to open the local catalogue and character workshop at `http://127.0.0.1:8472/`. [Studio guide](study/BEAR_STUDIO.md) starts with prerequisites and describes the complete workflow. The existing chamber and scanner originals are preserved.
+
+Three specialists implemented catalogue/storage, rigging/motion transfer and the browser interface. Finished scans and local GLBs can be copied into an immutable source catalogue, tagged and inspected. Editable seated/upright landmarks bind a real 16-bone draft skin. Pose controls, weight views, clip playback, structural/deformation checks, saved rig revisions, pinned test findings and GLB/recipe/manifest handoffs are available. The downloaded Quaternius Standard library retains 43 source clips, its CC0 license and source hashes. Animation transfer remains a draft aid.
+
+Verification includes **21 passing backend tests**, **24 passing browser rig/motion checks**, launcher checks and browser catalogue/save/reopen workflows. The local sample has two saved rig revisions; r2 contains six clips, including the transferred sitting idle, with a test record pinned to r2. [QA evidence](evidence/bear-studio/20261006T134902Z/QA_REVIEW.md) and [independent review](tools/bear_studio/REVIEW.md) separate functional evidence from character acceptance.
+
+The sample still includes fused support geometry and an incomplete scanned surface. Cropping and heuristic weights require cleanup; foot planting, collision, weight painting, production retargeting and Unreal skeletal import remain future work. Human review is still unreviewed. The user-requested native Side chat could not be opened through the available tools; its [review prompt](study/BEAR_STUDIO_SIDE_CHAT.md) is prepared, with no consultation claimed. Next: review the draft in the motion lab, improve the source mesh and landmarks, then perform a separate skeletal import/preview in Unreal before any encounter integration.
+
 ## Bear Scanner integration fork — 6 October 2026
 
-Branch `codex/integrate-bear-scanner` retains Grok's `0a20f9f` chamber and merges the team's `tools/scanned-bears` work. [Integration instructions](study/BEAR_SCANNER_INTEGRATION.md) describe prerequisites, the local settings and the one-command `IMPORT_BEARS.cmd` launcher. This fork's current assignment is the scan-to-Unreal import path.
+Branch `codex/integrate-bear-scanner` retains Grok's `0a20f9f` chamber and merges the team's `tools/scanned-bears` work. [Integration instructions](study/BEAR_SCANNER_INTEGRATION.md) describe prerequisites, the local settings and the one-command `IMPORT_BEARS.cmd` launcher. This was the verified static scan-to-Unreal integration preceding the Studio expansion above.
 
 The local workshop at `http://127.0.0.1:8471` supplied its completed **Bundled real bear (prebuilt sample)**. It is saved under `/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f`, with one mesh, material and texture. The original GLB and provenance are retained under `Assets/ThirdParty/BearScannerSample`. It includes the source's supporting box and scan-quality warnings; it is a static prop, not a new animated monster or chamber placement.
 

@@ -4,6 +4,8 @@ Private Vibecadex team workspace. **The chamber is playable; exact visual parity
 
 This fork integrates Bear Scanner with the saved chamber. See [scanner setup and verification](study/BEAR_SCANNER_INTEGRATION.md).
 
+**Bear Studio:** run [BEAR_STUDIO.cmd](BEAR_STUDIO.cmd) for the local teddy catalogue, inspection, draft rigging, animation testing and versioned exports. [Studio guide](study/BEAR_STUDIO.md) covers prerequisites, source preservation and the review workflow. The saved chamber remains a separate playable destination.
+
 - [Current chamber brief](study/CHAMBER_PARITY_BRIEF.md): saved state, remaining work and acceptance criteria.
 - [Visual study](study/brief/index.html): open locally after cloning for paired references and engine output.
 - [Current bay and atmosphere note](evidence/chamber/20261005T170149Z/BAY_ATMOSPHERE_QA.md). The [floor recovery](evidence/chamber/20261005T161155Z/FLOOR_RECOVERY_QA.md) and [its image review](evidence/chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md) are the prior floor candidate.

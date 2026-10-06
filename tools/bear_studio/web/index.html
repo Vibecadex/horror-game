@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#181b1c">
+  <title>Bear Studio · Character workshop</title>
+  <link rel="stylesheet" href="/studio.css">
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="/" aria-label="Bear Studio home"><span class="brand-mark" aria-hidden="true">B<span>•</span></span><span>BEAR STUDIO<small>CHARACTER WORKSHOP</small></span></a>
+    <div class="project-label"><span class="status-dot"></span>Teddy Encounter <span class="divider">/</span> Asset development</div>
+    <div class="header-actions"><span id="connection" class="connection">Connecting…</span><button id="openImport" class="button primary small">+ Import bear</button></div>
+  </header>
+
+  <div class="workspace">
+    <aside class="catalogue" aria-label="Bear catalogue">
+      <div class="catalogue-heading"><div><span class="eyebrow">YOUR COLLECTION</span><h1>Bears <span id="bearCount">0</span></h1></div><button id="refreshCatalogue" class="icon-button" title="Refresh catalogue" aria-label="Refresh catalogue">↻</button></div>
+      <label class="search-label"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a bear or tag…" aria-label="Search bears"></label>
+      <select id="catalogueFilter" aria-label="Filter catalogue"><option value="all">All bears</option><option value="unrigged">Awaiting rig</option><option value="rigged">Has a rig draft</option><option value="needs-work">Needs work</option><option value="approved">Reviewed</option></select>
+      <div id="catalogueList" class="catalogue-list" role="listbox" aria-label="Bears"><p class="empty-state">Loading your collection…</p></div>
+      <div class="catalogue-footer"><span class="tiny-label">LOCAL WORKING COLLECTION</span><p>Original scans stay intact.<br>Rig drafts and reviews live here.</p><button id="scannerLink" class="text-button">Open scanner workshop ↗</button></div>
+    </aside>
+
+    <main class="stage-column">
+      <div class="asset-heading"><div><div class="asset-breadcrumb">COLLECTION <span>/</span> <span id="assetKind">SELECT A BEAR</span></div><h2 id="assetTitle">A home for every bear.</h2><p id="assetSubtitle">Inspect, rig and test your scanned characters.</p></div><span id="assetBadge" class="badge">No selection</span></div>
+      <section id="viewport" class="viewport" aria-label="Interactive 3D bear viewer">
+        <div class="viewport-top"><span id="viewLabel" class="view-label">SOURCE MESH</span><div class="view-modes" aria-label="Surface appearance"><button data-shading="texture" aria-pressed="true">Texture</button><button data-shading="clay" aria-pressed="false">Clay</button><button data-shading="wire" aria-pressed="false">Wire</button></div></div>
+        <div id="canvasHost"></div>
+        <div id="viewportMessage" class="viewport-message"><span class="loading-ring"></span><strong>Preparing the studio</strong><small>Loading the 3D workspace…</small></div>
+        <div class="viewport-bottom"><div class="camera-buttons"><button data-camera="front">Front</button><button data-camera="side">Side</button><button data-camera="top">Top</button><button data-camera="reset" title="Fit model">Fit ↗</button></div><span class="orbit-hint">Drag to orbit · scroll to zoom</span></div>
+        <div id="landmarkHint" class="landmark-hint" hidden></div>
+      </section>
+      <div class="stage-statbar"><div><span class="tiny-label">HEIGHT</span><strong id="statHeight">—</strong></div><div><span class="tiny-label">TRIANGLES</span><strong id="statTriangles">—</strong></div><div><span class="tiny-label">RIG</span><strong id="statRig">Source only</strong></div><div><span class="tiny-label">REVIEW</span><strong id="statReview">Not reviewed</strong></div><button id="showSource" class="text-button" disabled>View source</button></div>
+      <div id="activity" class="activity" role="status" aria-live="polite">Choose a bear from the collection to begin.</div>
+    </main>
+
+    <aside class="inspector" aria-label="Asset workflow">
+      <nav class="workflow-tabs" aria-label="Character workflow"><button data-tab="inspect" aria-selected="true">Inspect</button><button data-tab="rig" aria-selected="false">Rig</button><button data-tab="test" aria-selected="false">Test</button><button data-tab="handoff" aria-selected="false">Handoff</button></nav>
+      <div class="inspector-scroll">
+        <section class="tab-panel" data-panel="inspect">
+          <div class="section-heading"><span class="eyebrow">01 / GET TO KNOW THE MESH</span><h3>Asset details</h3><p>Give this bear an identity, then check what the scan captured.</p></div>
+          <form id="metadataForm">
+            <label>Name<input id="metaName" maxlength="200" placeholder="A name for your bear" required></label>
+            <div class="field-pair"><label>Intended role<select id="metaRole"><option value="prop">Environment prop</option><option value="character">Character</option><option value="enemy">Enemy</option><option value="boss">Boss</option><option value="companion">Companion</option><option value="reference">Reference</option></select></label><label>Human review<select id="metaReview"><option value="unreviewed">Not reviewed</option><option value="needs-work">Needs work</option><option value="approved">Reviewed / approved</option></select></label></div>
+            <label>Tags<input id="metaTags" placeholder="plush, stitched, workshop…"></label>
+            <label>Notes / cleanup needed<textarea id="metaNotes" rows="3" placeholder="Capture problems, cleanup tasks, character ideas…"></textarea></label>
+            <div class="form-actions"><span id="metadataState" class="muted">Saved to this studio</span><button id="saveMetadata" class="button compact" type="submit">Save details</button></div>
+          </form>
+          <div class="section-divider"></div>
+          <div class="section-heading compact"><h3>Source inspection</h3><span id="sourceQuality" class="badge">—</span></div>
+          <div id="sourceWarning" class="notice" hidden></div>
+          <div class="field-pair"><label>Level of detail<select id="lodSelect"><option value="0">LOD 0 · full detail</option></select></label><label>Dimensions<span id="sourceDimensions" class="read-only">—</span></label></div>
+          <div id="sourceChecks" class="check-list"><p class="muted">Source checks appear after import.</p></div>
+          <details class="provenance"><summary>Source & provenance</summary><dl id="sourceProvenance"></dl></details>
+        </section>
+
+        <section class="tab-panel" data-panel="rig" hidden>
+          <div class="section-heading"><span class="eyebrow">02 / GIVE IT A SKELETON</span><h3>Draft a teddy rig</h3><p>Fit the joints to the bear, then preview the skin. Source scans stay untouched.</p></div>
+          <div class="notice subtle">Draft weights need visual review. Fused limbs, tables and boxes may need mesh cleanup before character work.</div>
+          <label>Starting pose<select id="rigPreset"><option value="seated">Seated scan / support</option><option value="upright">Upright bear</option></select></label>
+          <div class="field-pair"><label>Target height (cm)<input id="rigHeight" type="number" min="1" max="1000" step="0.1"></label><label>Facing correction<select id="rigYaw"><option value="0">0° · keep front</option><option value="90">90°</option><option value="180">180°</option><option value="-90">−90°</option></select></label></div>
+          <label class="range-label">Remove below <output id="cropValue">0%</output><input id="cropRange" type="range" min="0" max="0.65" step="0.005" value="0"></label><p class="field-help">Crops the derived preview. Use this to separate a support before placing joints; inspect the cut edge.</p>
+          <div class="landmark-header"><h4>Joint landmarks</h4><button id="resetLandmarks" class="text-button">Reset template</button></div>
+          <label>Selected joint<select id="jointSelect"></select></label>
+          <div class="landmark-coordinates"><label>X<input id="jointX" type="number" min="-1.5" max="1.5" step="0.01"></label><label>Y<input id="jointY" type="number" min="-0.25" max="1.5" step="0.01"></label><label>Z<input id="jointZ" type="number" min="-1.5" max="1.5" step="0.01"></label></div>
+          <div class="form-actions"><label class="checkbox-label"><input type="checkbox" id="showLandmarks" checked> Show landmarks</label><button id="mirrorLandmarks" class="text-button">Mirror to opposite side</button></div><p class="field-help">Coordinates use the original source height; Y starts at the source base. Cropping keeps landmarks in place.</p>
+          <div class="rig-actions"><button id="saveRecipe" class="button">Save landmarks</button><button id="buildRig" class="button primary">Build draft rig</button></div>
+          <div id="rigSummary" class="rig-summary" hidden></div>
+          <button id="saveRig" class="button primary full-width" disabled>Save rig revision</button>
+          <p id="rigState" class="field-help">Build a draft to test its skin before saving a revision.</p>
+          <div class="section-divider"></div><h4>Saved revisions</h4><div id="rigHistory" class="history-list"><p class="muted">No rig revisions yet.</p></div>
+        </section>
+
+        <section class="tab-panel" data-panel="test" hidden>
+          <div class="section-heading"><span class="eyebrow">03 / MAKE IT MOVE</span><h3>Pose & motion lab</h3><p>Look for pinching, moving support geometry and limbs that pull the body apart.</p></div>
+          <div id="testEmpty" class="notice">Build or open a rig draft from the Rig tab to begin.</div>
+          <fieldset id="testControls" disabled>
+            <label>Motion<select id="clipSelect"><option value="">Rest pose</option></select></label>
+            <div class="playback-controls"><button id="playPause" class="button compact" type="button">▶ Play</button><button id="resetPose" class="button compact" type="button">Reset pose</button><select id="playSpeed" aria-label="Playback speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1× speed</option><option value="1.5">1.5×</option></select></div>
+            <label class="range-label">Timeline <output id="timelineTime">0.00 s</output><input id="timeline" type="range" min="0" max="2" step="0.01" value="0"></label>
+            <details class="animation-library"><summary>Explore the motion library <span>CC0</span></summary><p class="field-help"><a href="https://quaternius.itch.io/universal-animation-library" target="_blank" rel="noopener noreferrer">Quaternius Universal Animation Library ↗</a><br>Humanoid motion adapted to this draft. Its initial pose is removed to preserve the bear's rest pose. Check limb bends and floor contact; feet are not planted automatically.</p><button id="loadMotionLibrary" class="button full-width" type="button">Load library motions</button><div id="libraryControls" hidden><label>Source animation<select id="libraryClip"></select></label><label class="range-label">Motion strength <output id="libraryStrengthValue">65%</output><input id="libraryStrength" type="range" min="0.1" max="1" step="0.05" value="0.65"></label><button id="addLibraryMotion" class="button full-width" type="button">Add as draft motion</button></div><p id="libraryStatus" class="field-help">Original character motion stays separate from the teddy's test clips.</p></details>
+            <div class="section-divider"></div><label>Pose a bone<select id="poseBone"></select></label>
+            <label class="range-label">Bend · X <output id="poseXValue">0°</output><input id="poseX" type="range" min="-65" max="65" step="1" value="0"></label>
+            <label class="range-label">Twist · Y <output id="poseYValue">0°</output><input id="poseY" type="range" min="-65" max="65" step="1" value="0"></label>
+            <label class="range-label">Swing · Z <output id="poseZValue">0°</output><input id="poseZ" type="range" min="-65" max="65" step="1" value="0"></label>
+            <div class="form-actions"><label class="checkbox-label"><input id="showSkeleton" type="checkbox" checked> Skeleton</label><label class="checkbox-label"><input id="showWeights" type="checkbox"> Bone weights</label></div>
+            <div class="section-divider"></div><div class="section-heading compact"><h3>Rig checks</h3><button id="runChecks" class="text-button" type="button">Run checks ↻</button></div>
+            <div id="rigChecks" class="check-list"><p class="muted">Checks cover structure and deformation. They do not approve the character's appearance.</p></div>
+            <label>Visual findings<textarea id="testNotes" rows="3" placeholder="What happens at the shoulders, hips and seams?"></textarea></label>
+            <button id="recordTest" class="button full-width" disabled type="button">Save test record</button><p id="testRecordHint" class="field-help">Save a rig revision before recording tests.</p>
+          </fieldset>
+          <div class="section-divider"></div><h4>Recorded tests</h4><div id="testHistory" class="history-list"><p class="muted">No tests recorded yet.</p></div>
+        </section>
+
+        <section class="tab-panel" data-panel="handoff" hidden>
+          <div class="section-heading"><span class="eyebrow">04 / PASS IT ON</span><h3>A clear handoff</h3><p>Take the model, its source and the review evidence into the next tool.</p></div>
+          <div class="handoff-summary" id="handoffSummary">Select a bear to prepare its handoff.</div>
+          <a id="downloadOriginal" class="download-card" download><span class="download-icon">↓</span><span><b>Original scan</b><small>Unchanged source GLB</small></span><span>↗</span></a>
+          <a id="downloadRig" class="download-card disabled" download aria-disabled="true"><span class="download-icon">↓</span><span><b>Draft rigged bear</b><small>Skin, skeleton & test motions</small></span><span>↗</span></a>
+          <a id="downloadRecipe" class="download-card disabled" download aria-disabled="true"><span class="download-icon">{ }</span><span><b>Rig recipe</b><small>Landmarks, scale & source identity</small></span><span>↗</span></a>
+          <a id="downloadManifest" class="download-card" download><span class="download-icon">{ }</span><span><b>Catalogue & review manifest</b><small>Provenance, revisions & findings</small></span><span>↗</span></a>
+          <button id="copyHandoff" class="button full-width">Copy team handoff</button>
+          <div class="section-divider"></div><h4>Into Unreal</h4><p class="muted">The existing <code>IMPORT_BEARS.cmd</code> flow imports static props into <code>/Game/ScannedBears</code>. These skeletal drafts are separate exports for character review; they do not replace the encounter bear.</p>
+          <div class="notice subtle">A passing structural check does not establish animation quality or gameplay readiness. Keep the human review decision separate.</div>
+          <details class="provenance"><summary>Revision activity</summary><div id="historyEvents" class="history-list"></div></details>
+        </section>
+      </div>
+    </aside>
+  </div>
+
+  <dialog id="importDialog" aria-labelledby="importTitle">
+    <div class="dialog-heading"><div><span class="eyebrow">BRING IN A NEW CHARACTER</span><h2 id="importTitle">Import a bear</h2></div><button id="closeImport" class="icon-button" aria-label="Close import">×</button></div>
+    <p class="muted">Copy a finished scan into the studio. The scanner and its originals stay untouched.</p>
+    <div class="import-local"><div><b>Have a GLB already?</b><small>A self-contained model, up to 64 MB.</small></div><label class="button">Choose file<input id="localFile" type="file" accept=".glb,model/gltf-binary" hidden></label></div>
+    <div class="section-heading compact"><h3>Scanner workshop</h3><button id="refreshScans" class="text-button">Refresh ↻</button></div>
+    <div id="scannerStatus" class="muted">Checking connection…</div><div id="scanList" class="scan-list"></div>
+  </dialog>
+  <dialog id="discardDialog" class="discard-dialog" aria-labelledby="discardTitle" aria-describedby="discardMessage">
+    <div class="dialog-heading"><div><span class="eyebrow">UNSAVED WORK</span><h2 id="discardTitle">Keep your changes?</h2></div></div>
+    <p id="discardMessage" class="muted"></p>
+    <div class="discard-actions"><button id="cancelDiscard" class="button" type="button" autofocus>Cancel</button><button id="confirmDiscard" class="button primary" type="button">Discard and continue</button></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="/studio.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-06T14:19:55.776751+00:00",
+  "files": [
+    {
+      "path": "tools/bear_studio/server.py",
+      "sha256": "7cf418ee6beba84703d2dcf69342b57521293eaab1062c737568bcf0945f41b0"
+    },
+    {
+      "path": "tools/bear_studio/test_server.py",
+      "sha256": "0bd98857df81edf47bbb8e60771bcdf3212053acf41c060df7e342a73881ecbe"
+    },
+    {
+      "path": "tools/bear_studio/web/animation_library.js",
+      "sha256": "4ac83af795ba42ebb5f391acde1793961d33194c73c9793e051ab776c30f7462"
+    },
+    {
+      "path": "tools/bear_studio/web/index.html",
+      "sha256": "05e05411cd4e88c6a6cd32d7c3e5328b4f24be44c6437e587fe8f6c9749a9bae"
+    },
+    {
+      "path": "tools/bear_studio/web/qa.html",
+      "sha256": "30d279253c55cc3f31b7814328f8f47a8bfcfaf87fee5846f8a10cd772bd4692"
+    },
+    {
+      "path": "tools/bear_studio/web/qa.js",
+      "sha256": "f01ba7712e168c1fe42dfc01726500694040f698ae5dac720425a17e7017206f"
+    },
+    {
+      "path": "tools/bear_studio/web/rigging.js",
+      "sha256": "8e476c9d039debecac97ae7dc5116bb6b5802b3b21a3036d7ccb498f65174f18"
+    },
+    {
+      "path": "tools/bear_studio/web/studio.css",
+      "sha256": "62fa3c63dc7f8e1e03ca52cea7d794ffce5a3137ce8f64826bb9bdca232f8d4f"
+    },
+    {
+      "path": "tools/bear_studio/web/studio.js",
+      "sha256": "0ad135a62fc24285f11cd9dea4fbb09b7facad381e8e5695d2b15cb41893ccd0"
+    },
+    {
+      "path": "tools/launch_bear_studio.py",
+      "sha256": "0660e27838c068401dc21be010642468b30781962ac9212c77dbae60cb395cf0"
+    },
+    {
+      "path": "BEAR_STUDIO.cmd",
+      "sha256": "0c3d9124f9168b31df0004ffad96b9bd59830375f32c4261c3ae0fcded995157"
+    }
+  ]
+}

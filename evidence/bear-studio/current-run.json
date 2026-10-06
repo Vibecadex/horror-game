@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-06",
+  "branch": "codex/integrate-bear-scanner",
+  "baselineCommit": "085e836",
+  "evidenceDirectory": "evidence/bear-studio/20261006T134902Z",
+  "report": "evidence/bear-studio/20261006T134902Z/QA_REVIEW.md",
+  "launcher": "BEAR_STUDIO.cmd",
+  "localUrl": "http://127.0.0.1:8472/",
+  "backendTestsPassed": 21,
+  "browserRigChecksPassed": 24,
+  "launcherChecksPassed": 4,
+  "serviceRestartVerified": true,
+  "humanReview": "unreviewed",
+  "unrealSkeletalIntegrationVerified": false,
+  "sideChatConsulted": false,
+  "pending": ["Final in-page Cancel/Discard interaction after clearing a stale native browser confirmation"]
+}
