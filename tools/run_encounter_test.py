@@ -20,7 +20,7 @@ if os.environ.get('TEDDY_TEST_AUDIO')=='1':
 print(str(out),flush=True)
 s.write_json(out/'invocation.json',{'arguments':args,'script_sha256':s.sha256(script)})
 try:
-    host=s.run_logged(args,out/'process.log',timeout=420,env=env)
+    host=s.run_logged(args,out/'process.log',timeout=int(os.environ.get('TEDDY_TEST_TIMEOUT','420')),env=env)
     s.write_json(out/'host-result.json',host)
 except Exception as error:
     s.write_json(out/'host-result.json',{'passed':False,'error':str(error)})

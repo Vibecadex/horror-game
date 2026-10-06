@@ -36,6 +36,16 @@ Alternatively copy `tools/project-settings.local.example.json` to `tools/project
 
 The check names missing prerequisites and never installs them. Run any installation yourself. `START_ASTRA.cmd` is an optional original-workstation setup workflow with its own CLI/authentication/full-check requirements, not the team's first-run dependency.
 
+## Scanned bears
+
+Phone-scanned bears from the [bear scanner](https://github.com/Vibecadex/bear-scanner) import as ready-to-place props. Clone `bear-scanner` next to this repo (or set `bear_scanner_repo` in `tools/project-settings.local.json`), start the scanner or set `bear_source` to a `model.glb`/folder, close the editor, then:
+
+```powershell
+python tools/run_encounter_test.py tools/import_scanned_bears.py
+```
+
+For many bears on a first run, set `$env:TEDDY_TEST_TIMEOUT = '1800'` first (default 420 s). Each bear becomes `/Game/ScannedBears/<Name>_<id>/SM_Bear_<Name>`: one Static Mesh with LOD0-2, convex collision and its texture, real size in cm, pivot under the feet. Re-runs skip unchanged bears; rebuilt or renamed bears update their existing mesh. The run fails, with the reason in its receipt, if any bear fails or none is found. The import never touches `/Game/TeddyEncounter`, the map or its Blueprints; placing bears is the map owner's call. On the first run, confirm the facing (expected −X) and the LODs in the Static Mesh editor. Details: `tools/import_scanned_bears.py`.
+
 ## Repository contents
 
 The complete saved Blueprint project's Content/Config, starter dependencies, adapted Blender/FBX/textures/audio, original CC0 teddy with provenance, selected references, user-supplied reference video/archive copies, tools, study and retained review evidence are included. Binary files use Git LFS; `.umap`, `.uasset` and `.blend` are lockable.
