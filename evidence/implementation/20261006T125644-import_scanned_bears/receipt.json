@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "importer": "C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\tools\\vendor\\bear_scanner_importer.py",
+  "importer_sha256": "7a74c32616f5ce3cf2b8012b5729c37d2e5477be59dc8c2f84615be0910ee7f1",
+  "destination": "/Game/ScannedBears",
+  "source": "http://127.0.0.1:8471",
+  "bears": [
+    {
+      "bear": "Bundled_real_bear_prebuilt_sample",
+      "result": "up to date",
+      "mesh": "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/SM_Bear_Bundled_real_bear_prebuilt_sample",
+      "nanite_enabled": false,
+      "lod_triangles": [
+        8000,
+        2500,
+        800
+      ]
+    }
+  ]
+}

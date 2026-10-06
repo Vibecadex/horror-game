@@ -1,0 +1,19 @@
+{
+  "arguments": [
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject",
+    "-ExecutePythonScript=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\tools\\verify_scanned_bears.py",
+    "-RenderOffscreen",
+    "-ResX=1280",
+    "-ResY=720",
+    "-unattended",
+    "-nosplash",
+    "-nop4",
+    "-NoSound",
+    "-abslog=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\evidence\\implementation\\20261006T125809-verify_scanned_bears\\engine.log",
+    "-DDC=InstalledNoZenLocalFallback",
+    "-LocalDataCachePath=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\.tool-cache\\derived-data",
+    "-UserDir=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\.tool-cache\\unreal-user"
+  ],
+  "script_sha256": "df21346816a1aee29f360afe8b72bd90d0b98d190c5497aaf1e6419696f315f2"
+}

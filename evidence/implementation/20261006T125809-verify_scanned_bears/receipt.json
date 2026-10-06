@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "asset_writes": false,
+  "saved_map_writes": false,
+  "physical_device_verified": false,
+  "method": "Fresh editor saved-asset readback; forced LOD renders in an unsaved blank world.",
+  "review_actor_scale": 10,
+  "review_camera_cm": [
+    250,
+    200,
+    160
+  ],
+  "review_target_cm": [
+    0,
+    0,
+    43
+  ],
+  "bears": [
+    {
+      "mesh": "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/SM_Bear_Bundled_real_bear_prebuilt_sample",
+      "scan_id": "def16f899a9a",
+      "lod_triangles": [
+        8000,
+        2500,
+        800
+      ],
+      "collision_hulls": 1,
+      "size_cm": [
+        7.800811767578125,
+        5.59252405166626,
+        9.69779109954834
+      ],
+      "base_z_cm": 0.0,
+      "materials": [
+        "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/Bundled_real_bear_prebuilt_sample_def16f_1791288767/Materials/MI_Bear_def16f899a9a.MI_Bear_def16f899a9a"
+      ],
+      "textures": [
+        "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/Bundled_real_bear_prebuilt_sample_def16f_1791288767/Textures/T_Bear_def16f899a9a.T_Bear_def16f899a9a"
+      ],
+      "checks": {
+        "owned": true,
+        "scan_identity_saved": true,
+        "scan_version_saved": true,
+        "three_lods": true,
+        "nonempty_decreasing_geometry": true,
+        "all_material_slots_resolve": true,
+        "shared_material": true,
+        "saved_scan_texture": true,
+        "collision_present": true,
+        "feet_pivot": true,
+        "finite_physical_size": true,
+        "nanite_disabled_for_lods": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "lod": 0,
+      "path": "C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\evidence\\implementation\\20261006T125809-verify_scanned_bears\\bear-lod0.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1104304,
+        "sha256": "4bdb3670d1fa8faeec1f133758d322ead7ea1acb5a0971648a938aa4abd7aaca",
+        "pixel_sha256": "3df2134b888926e5b17a28d5ce3f60aed23cf36b1a530e8027138060fcfacd1c",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "lod": 1,
+      "path": "C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\evidence\\implementation\\20261006T125809-verify_scanned_bears\\bear-lod1.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1103212,
+        "sha256": "0287ec6a33722a13aa38250173f54268070985876be7ebd876d4141082fed05b",
+        "pixel_sha256": "8e6c5ed1b3ecc43fba225023253284dadc58a1c561e2d46caa9935a0a976594f",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    },
+    {
+      "lod": 2,
+      "path": "C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\evidence\\implementation\\20261006T125809-verify_scanned_bears\\bear-lod2.png",
+      "validation": {
+        "width": 1280,
+        "height": 720,
+        "bytes": 1099705,
+        "sha256": "9770baccebc5368e8df920882bb71b05e4e4c55d6231628cc7607fa9e51d03dd",
+        "pixel_sha256": "ec3c742c63a7550604251a7564eeb707b888a8b196b2e5129650600ba4d1dca0",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      }
+    }
+  ]
+}

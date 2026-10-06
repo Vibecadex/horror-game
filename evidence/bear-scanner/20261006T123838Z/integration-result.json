@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "verified_utc": "2026-10-06T13:02:14.870949+00:00",
+  "branch": "codex/integrate-bear-scanner",
+  "receipts": {
+    "reimport": {
+      "path": "evidence/implementation/20261006T125441-import_scanned_bears/receipt.json",
+      "sha256": "6fb98cf4a40c7a575fa2cf1595c3a4822729f2051182a66890e690f667d00e82",
+      "host_exit": 0
+    },
+    "unchanged_repeat": {
+      "path": "evidence/implementation/20261006T125644-import_scanned_bears/receipt.json",
+      "sha256": "73bbaf2c2463541e17fb1f9e623f5351d4680abf8082932a69020ce8ca3689fd",
+      "host_exit": 0
+    },
+    "saved_asset_review": {
+      "path": "evidence/implementation/20261006T125809-verify_scanned_bears/receipt.json",
+      "sha256": "76139c7e1faf9f6d50f08f8d15f923137b8326e415e331ad0c517bfb47ec88c4",
+      "host_exit": 0
+    }
+  },
+  "checks_passed": 12,
+  "native_lod_captures": 3,
+  "preservation": {
+    "original_files_checked": 786,
+    "changed": [],
+    "repeat_asset_files_checked": 3,
+    "repeat_changed": [],
+    "external_importer_unchanged": true
+  },
+  "sample": {
+    "mesh": "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/SM_Bear_Bundled_real_bear_prebuilt_sample",
+    "scan_id": "def16f899a9a",
+    "lod_triangles": [
+      8000,
+      2500,
+      800
+    ],
+    "collision_hulls": 1,
+    "size_cm": [
+      7.800811767578125,
+      5.59252405166626,
+      9.69779109954834
+    ],
+    "base_z_cm": 0.0,
+    "materials": [
+      "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/Bundled_real_bear_prebuilt_sample_def16f_1791288767/Materials/MI_Bear_def16f899a9a.MI_Bear_def16f899a9a"
+    ],
+    "textures": [
+      "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/Bundled_real_bear_prebuilt_sample_def16f_1791288767/Textures/T_Bear_def16f899a9a.T_Bear_def16f899a9a"
+    ],
+    "checks": {
+      "owned": true,
+      "scan_identity_saved": true,
+      "scan_version_saved": true,
+      "three_lods": true,
+      "nonempty_decreasing_geometry": true,
+      "all_material_slots_resolve": true,
+      "shared_material": true,
+      "saved_scan_texture": true,
+      "collision_present": true,
+      "feet_pivot": true,
+      "finite_physical_size": true,
+      "nanite_disabled_for_lods": true
+    }
+  },
+  "delivery_files": {
+    "TeddyBlueprint/Content/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/Bundled_real_bear_prebuilt_sample_def16f_1791288767/Materials/MI_Bear_def16f899a9a.uasset": "f3529eb81d0478b039ae9b6efbe9e5208a7c282c942975a5edd565f1f5110d9c",
+    "TeddyBlueprint/Content/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/Bundled_real_bear_prebuilt_sample_def16f_1791288767/Textures/T_Bear_def16f899a9a.uasset": "157dc101fc978869a08c19c9c45b4c0b3c399ac68563d11c44726c5fb8edd1ab",
+    "TeddyBlueprint/Content/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/SM_Bear_Bundled_real_bear_prebuilt_sample.uasset": "7671e9a58b9f4a934c93b58d1ed5de5858aaad72784e11c04306f25d0ce42013",
+    "tools/import_scanned_bears.py": "53aca5037987a39ace8a963e5e94990c0ff160f32439d3e785946b33fb0335e1",
+    "tools/vendor/bear_scanner_importer.py": "7a74c32616f5ce3cf2b8012b5729c37d2e5477be59dc8c2f84615be0910ee7f1",
+    "tools/verify_scanned_bears.py": "df21346816a1aee29f360afe8b72bd90d0b98d190c5497aaf1e6419696f315f2",
+    "IMPORT_BEARS.cmd": "c455f5e23f791ebf3150230cefa591bdb2236961df22484d6a5db9ea61c66097"
+  },
+  "limits": [
+    "Imported prebuilt team sample, not a new reconstruction",
+    "Static prop; no chamber placement or monster animation",
+    "Independent editor check and native renders, not packaged runtime or physical input",
+    "Local scanner reconstruction remains blocked by OpenMVS Application Control issue"
+  ]
+}

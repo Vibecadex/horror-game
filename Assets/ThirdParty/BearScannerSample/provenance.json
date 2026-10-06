@@ -1,0 +1,21 @@
+{
+  "source_repository": "https://github.com/Vibecadex/bear-scanner",
+  "source_commit": "19c2ffb4494ec62928665c397697212658b2a06e",
+  "source_directory": "web/examples/real-bear",
+  "source_kind": "Team bundled phone-scan sample, served by the local workshop; not a new reconstruction on this workstation",
+  "workshop_scan_id": "def16f899a9a",
+  "workshop_scan_name": "Bundled real bear (prebuilt sample)",
+  "workshop_version": "1791288767",
+  "known_limitations": [
+    "Supporting box is part of mesh",
+    "Original scan quality warnings retained in report.json"
+  ],
+  "importer_path": "unreal/import_bears.py",
+  "importer_sha256": "025642e73ece37695c6b7ae74d8d9b4f285a69540049d4167b1f5762ec19f395",
+  "files": {
+    "model.glb": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+    "README.md": "6759341eec8a4815ed28b75b57e726bd6520551a3ae319a9bd8a0de3ec3f8375",
+    "report.json": "7eec49c9212c715cf43072f893e2722e7524daa2c05e122cce55dbd8db44a36b",
+    "thumb.webp": "5339aafeb1716beb8cdcbb397ee04154bf74efd5aa6aade6a6d5a7b0d34b433f"
+  }
+}

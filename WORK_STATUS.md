@@ -1,5 +1,17 @@
 # Teddy Encounter working status
 
+## Bear Scanner integration fork — 6 October 2026
+
+Branch `codex/integrate-bear-scanner` retains Grok's `0a20f9f` chamber and merges the team's `tools/scanned-bears` work. [Integration instructions](study/BEAR_SCANNER_INTEGRATION.md) describe prerequisites, the local settings and the one-command `IMPORT_BEARS.cmd` launcher. This fork's current assignment is the scan-to-Unreal import path.
+
+The local workshop at `http://127.0.0.1:8471` supplied its completed **Bundled real bear (prebuilt sample)**. It is saved under `/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f`, with one mesh, material and texture. The original GLB and provenance are retained under `Assets/ThirdParty/BearScannerSample`. It includes the source's supporting box and scan-quality warnings; it is a static prop, not a new animated monster or chamber placement.
+
+Real editor verification exposed two integration issues, both corrected in this fork: UE 5.8 enabled Nanite on the imported prop, bypassing its authored LODs; and reimport tried to move unsaved material folders. The wrapper disables Nanite on scanner-owned meshes. A pinned importer saves the staged packages before moving them. The external scanner checkout remains unchanged.
+
+Fresh receipts: [initial live import](evidence/implementation/20261006T123856-import_scanned_bears/receipt.json), [corrected reimport](evidence/implementation/20261006T125441-import_scanned_bears/receipt.json), [unchanged repeat through the launcher](evidence/implementation/20261006T125644-import_scanned_bears/receipt.json), and [saved-asset/LOD review](evidence/implementation/20261006T125809-verify_scanned_bears/receipt.json). Integration identities and preservation are recorded under [current run](evidence/bear-scanner/current-run.json). Failed intermediate receipts are retained as diagnosis, not acceptance.
+
+The saved scan has 8,000 / 2,500 / 800 triangles, a convex hull, the source texture, and approximately 9.7 cm height. The unchanged repeat leaves all three imported asset files byte-identical. All 786 prior tracked game Content/Config/project files remain unchanged. New photo reconstruction is still blocked in the separate scanner setup by Windows Application Control on an OpenMVS dependency. This integration establishes importing finished exports, not phone capture, reconstruction, animation or packaged runtime loading.
+
 ## Bay depth, red practicals, and overhead — 5 October 2026
 
 Grok session `01a10a54-69ee-7253-978b-c01aa506ee63` remains the sole Unreal writer. The recovered floor stays visible. Exposure bias stays 3.8. The gameplay camera stays pitch −46° / FOV 54.

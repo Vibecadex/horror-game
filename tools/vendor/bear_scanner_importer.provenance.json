@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/Vibecadex/bear-scanner",
+  "commit": "19c2ffb4494ec62928665c397697212658b2a06e",
+  "path": "unreal/import_bears.py",
+  "upstream_sha256_crlf": "025642e73ece37695c6b7ae74d8d9b4f285a69540049d4167b1f5762ec19f395",
+  "upstream_sha256_lf": "d91482f1c745bff14601178ba175162081712d1a778ea205cc469d4e5db2f135",
+  "changes": [
+    "Normalize line endings to LF",
+    "Save staged material and texture packages before UE 5.8 RenameDirectory; save before touching the previous material folder"
+  ],
+  "purpose": "Pinned editor importer for this game fork; upstream application checkout remains unchanged"
+}

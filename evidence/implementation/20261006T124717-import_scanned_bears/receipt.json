@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "importer": "C:\\Projects\\to-deploy\\bear-scanner\\unreal\\import_bears.py",
+  "importer_sha256": "025642e73ece37695c6b7ae74d8d9b4f285a69540049d4167b1f5762ec19f395",
+  "destination": "/Game/ScannedBears",
+  "source": "http://127.0.0.1:8471",
+  "bears": [
+    {
+      "bear": "Bundled_real_bear_prebuilt_sample",
+      "result": "updated",
+      "mesh": "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/SM_Bear_Bundled_real_bear_prebuilt_sample",
+      "settings_change": "Disabled Nanite to retain authored LODs",
+      "nanite_enabled": false,
+      "lod_triangles": [
+        8000,
+        2500,
+        800
+      ]
+    }
+  ]
+}

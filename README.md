@@ -2,6 +2,8 @@
 
 Private Vibecadex team workspace. **The chamber is playable; exact visual parity remains open.** Continue the saved Unreal project against the two selected full-room references.
 
+This fork integrates Bear Scanner with the saved chamber. See [scanner setup and verification](study/BEAR_SCANNER_INTEGRATION.md).
+
 - [Current chamber brief](study/CHAMBER_PARITY_BRIEF.md): saved state, remaining work and acceptance criteria.
 - [Visual study](study/brief/index.html): open locally after cloning for paired references and engine output.
 - [Current bay and atmosphere note](evidence/chamber/20261005T170149Z/BAY_ATMOSPHERE_QA.md). The [floor recovery](evidence/chamber/20261005T161155Z/FLOOR_RECOVERY_QA.md) and [its image review](evidence/chamber-qa/grok-20261005T163731/INDEPENDENT_REVIEW.md) are the prior floor candidate.
@@ -38,13 +40,15 @@ The check names missing prerequisites and never installs them. Run any installat
 
 ## Scanned bears
 
-Phone-scanned bears from the [bear scanner](https://github.com/Vibecadex/bear-scanner) import as ready-to-place props. Clone `bear-scanner` next to this repo (or set `bear_scanner_repo` in `tools/project-settings.local.json`), start the scanner or set `bear_source` to a `model.glb`/folder, close the editor, then:
+Phone-scanned bears from the [bear scanner](https://github.com/Vibecadex/bear-scanner) import as ready-to-place props. This fork includes a pinned UE importer with verified reimport fixes. Start the scanner and configure its address, or supply a local scanner export. Close the editor, then:
 
 ```powershell
-python tools/run_encounter_test.py tools/import_scanned_bears.py
+.\IMPORT_BEARS.cmd
 ```
 
-For many bears on a first run, set `$env:TEDDY_TEST_TIMEOUT = '1800'` first (default 420 s). Each bear becomes `/Game/ScannedBears/<Name>_<id>/SM_Bear_<Name>`: one Static Mesh with LOD0-2, convex collision and its texture, real size in cm, pivot under the feet. Re-runs skip unchanged bears; rebuilt or renamed bears update their existing mesh. The run fails, with the reason in its receipt, if any bear fails or none is found. The import never touches `/Game/TeddyEncounter`, the map or its Blueprints; placing bears is the map owner's call. On the first run, confirm the facing (expected −X) and the LODs in the Static Mesh editor. Details: `tools/import_scanned_bears.py`.
+The launcher allows 30 minutes for a first import (or respects `TEDDY_TEST_TIMEOUT`). Each bear becomes `/Game/ScannedBears/<Name>_<id>/SM_Bear_<Name>`: one Static Mesh with LOD0-2, convex collision and its texture, real size in cm, pivot under the feet. This fork disables Nanite for these props so the authored LODs remain active. Re-runs skip unchanged bears; rebuilt or renamed bears update their existing mesh. The run fails, with the reason in its receipt, if any bear fails or none is found. Placement remains a separate map-authoring step.
+
+Pass a local GLB or scan folder with `.\IMPORT_BEARS.cmd "D:\Scans\Rupert.glb"`. For a worktree or a scanner on a different port, set `bear_scanner_repo` and `bear_scanner_url` in the ignored `tools/project-settings.local.json`. The verified local workshop uses `http://127.0.0.1:8471`; other machines must use their own scanner address. The command starts no installer or scanner service.
 
 ## Repository contents
 

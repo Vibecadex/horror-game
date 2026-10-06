@@ -2,6 +2,8 @@
 
 Work on the current user-authorized task in this repository checkout (original workstation: C:/Projects/to-deploy/horror-game). Neighbouring projects and studio records are not assignments.
 
+This fork's current assignment is Bear Scanner integration. Read study/BEAR_SCANNER_INTEGRATION.md and the latest WORK_STATUS.md entry. Import through IMPORT_BEARS.cmd into /Game/ScannedBears; retain the saved chamber. The fork carries a pinned importer under tools/vendor with provenance and a UE 5.8 reimport correction. The configured external scanner may have uncommitted work: do not change that checkout as a side effect of game integration.
+
 For the team continuation, read README.md, study/CHAMBER_PARITY_BRIEF.md and study/TEAM_CONTINUATION.md first. The current task is the chamber environment. Historical setup prompts and pre-production documents do not override that scope. Check Git status and LFS ownership before editing; keep one Unreal writer. Use the saved project, not a broad historical rebuild. Machine-local overrides go in ignored tools/project-settings.local.json; TEDDY_ENGINE_ROOT can override the installed engine path. Do not assume the original workstation's cached CLI or successful setup receipts exist on a teammate's machine.
 
 The implementation destination is **TeddyBlueprint/TeddyBlueprint.uproject**, Unreal 5.8.3, with runtime Blueprint gameplay. The target is the video’s elevated combat camera, dark blue/teal arena, grounded creatures, independent movement/aiming and firing, with a monstrous teddy as the main enemy.
