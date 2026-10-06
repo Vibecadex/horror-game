@@ -35,5 +35,3 @@ The active Blueprint launcher uses the existing Codex sandbox/approval policy wi
 The finished horror environment, teddy rig/animations, custom boss encounter, proposed final bindings and visual acceptance are future implementation work described in MASTER_PROMPT.md. Original source audio has not been auditioned. Teddy model provenance is preserved; it is an unrigged starting candidate.
 
 Epic documents the [Twin Stick starter](https://dev.epicgames.com/documentation/en-us/unreal-engine/top-down-template-in-unreal-engine) and the enhanced Blueprint scripting API in its [5.8 release notes](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-5-8-release-notes). Installed headers and actual execution receipts are the version-specific authority used here.
-
-> **Written for the original workstation's Astra run** (START_ASTRA.cmd, 4-5 October 2026), with its paths and tools. On a team checkout it is background: start at [README.md](README.md) and [study/TEAM_CONTINUATION.md](study/TEAM_CONTINUATION.md), and continue the saved project rather than rebuilding it.

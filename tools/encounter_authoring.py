@@ -10,7 +10,8 @@ def historical_builder(script):
     if A.does_asset_exist('/Game/Maps/TeddyEncounter') and os.environ.get('TEDDY_ALLOW_HISTORICAL_REBUILD')!='1':
         raise RuntimeError(Path(script).name+' is a historical builder: on the saved project it would erase later '
                            'chamber/camera/boss work. Continue the saved project instead (study/TEAM_CONTINUATION.md). '
-                           'For a deliberate rebuild on a scratch copy only, set TEDDY_ALLOW_HISTORICAL_REBUILD=1.')
+                           'Only a person may decide to rebuild a scratch copy of the project, by setting '
+                           'TEDDY_ALLOW_HISTORICAL_REBUILD=1 for that run; agents must not set it.')
 def own(obj): A.set_metadata_tag(obj,TAG,OWNER);return obj
 def existing(path):
     if A.does_asset_exist(path):

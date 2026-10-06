@@ -2,6 +2,7 @@ import unreal as u
 from pathlib import Path
 import json
 ROOT=Path(__file__).resolve().parents[1];lev=u.get_editor_subsystem(u.LevelEditorSubsystem)
+import sys;sys.path.insert(0,str(ROOT/'tools'));from encounter_authoring import historical_builder;historical_builder(__file__)
 assert lev.load_level('/Game/Maps/TeddyEncounter')
 changes=[]
 for a in u.get_editor_subsystem(u.EditorActorSubsystem).get_all_level_actors():

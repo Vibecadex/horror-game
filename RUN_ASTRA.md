@@ -1,7 +1,5 @@
 # Run the corrected horror encounter implementation
 
-> **Written for the original workstation's Astra run** (START_ASTRA.cmd, 4-5 October 2026), with its paths and tools. On a team checkout it is background: start at [README.md](README.md) and [study/TEAM_CONTINUATION.md](study/TEAM_CONTINUATION.md), and continue the saved project rather than rebuilding it.
-
 This is the implementation request submitted by START_ASTRA.cmd. The task is to carry the reference-based encounter through a reviewable playable result, not to write another plan.
 
 ## First, use the prepared prerequisites

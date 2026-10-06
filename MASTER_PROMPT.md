@@ -1,7 +1,5 @@
 # Horror Encounter — Master Prompt: Reference-Based Gameplay
 
-> **Written for the original workstation's Astra run** (START_ASTRA.cmd, 4-5 October 2026), with its paths and tools. On a team checkout it is background: start at [README.md](README.md) and [study/TEAM_CONTINUATION.md](study/TEAM_CONTINUATION.md), and continue the saved project rather than rebuilding it.
-
 Revised with GPT-6 Astra on 4 October 2026 after inspecting the supplied video. This document holds the stable implementation target. Read WORK_STATUS.md for current progress and RUN_ASTRA.md for execution order. The active Blueprint starter and the preserved BossShot greybox are separate baselines; neither establishes completion of this encounter.
 
 ## Begin with these prerequisites

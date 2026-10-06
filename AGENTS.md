@@ -2,13 +2,15 @@
 
 Work on the current user-authorized task in this repository checkout (original workstation: C:/Projects/to-deploy/horror-game). Neighbouring projects and studio records are not assignments.
 
-For the team continuation, read README.md, study/CHAMBER_PARITY_BRIEF.md and study/TEAM_CONTINUATION.md first. The current task is the chamber environment. Historical setup prompts and pre-production documents do not override that scope. Check Git status and LFS ownership before editing; keep one Unreal writer. Use the saved project, not a broad historical rebuild. Machine-local overrides go in ignored tools/project-settings.local.json; TEDDY_ENGINE_ROOT can override the installed engine path. Do not assume the original workstation's cached CLI or successful setup receipts exist on a teammate's machine.
+For the team continuation, read README.md, study/CHAMBER_PARITY_BRIEF.md and study/TEAM_CONTINUATION.md first. The current task is the chamber environment. Historical setup prompts and pre-production documents do not override that scope. Check Git status and LFS ownership before editing; keep one Unreal writer per asset (the LFS lock holder, below). Use the saved project, not a broad historical rebuild. Machine-local overrides go in ignored tools/project-settings.local.json; TEDDY_ENGINE_ROOT can override the installed engine path. Do not assume the original workstation's cached CLI or successful setup receipts exist on a teammate's machine.
 
-Who writes Unreal assets is decided by Git LFS locks (`git lfs locks`): acquire the lock for each `.umap`/`.uasset` you will change, and never force, steal or work around a teammate's lock. Notes naming one agent session as "sole Unreal writer" (WORK_STATUS.md, study/GROK_CHAMBER_HANDOFF.md) applied to that session only. Historical builders (`tools/build_encounter_scene.py`, `build_boss.py`, `build_combat.py`, `build_encounter_hud.py`, `fix_encounter_camera.py`, `refine_encounter_stage.py`) refuse to run on the saved project because they would erase later work; do not bypass that guard.
+Who writes Unreal assets is decided by Git LFS locks (`git lfs locks`): before editing, lock the map and each existing `.uasset` you will change. Saving a map also writes `__ExternalActors__`/`__ExternalObjects__` packages, so after saving inspect every changed path and lock those before committing (study/TEAM_CONTINUATION.md). Never force, steal or work around a teammate's lock. Notes in WORK_STATUS.md or study/ that name one agent session as "sole Unreal writer" applied to that session only.
+
+The encounter-era builders that recreate early state (`tools/build_encounter_scene.py`, `build_boss.py`, `build_combat.py`, `build_encounter_hud.py`, `fix_encounter_camera.py`, `refine_encounter_stage.py`, `refine_scene_lighting.py`, `import_encounter_art.py`, `refine_player_controls.py`, `tune_encounter.py`) refuse to run on the saved project because they would erase later work. Do not bypass that guard. Treat the other encounter-, QA- and parity-era scripts the same way even where no guard exists: they record how the saved project was made, not steps to repeat. New work goes in new, versioned scripts.
 
 The implementation destination is **TeddyBlueprint/TeddyBlueprint.uproject**, Unreal 5.8.3, with runtime Blueprint gameplay. The target is the video’s elevated combat camera, dark blue/teal arena, grounded creatures, independent movement/aiming and firing, with a monstrous teddy as the main enemy.
 
-tools/BLUEPRINT_WORKFLOW.md is the current authoring recipe and WORK_STATUS.md the current status. MASTER_PROMPT.md, REFERENCE_BRIEF.md, RUN_ASTRA.md, START_HERE.md, START_PROMPT.txt and SETUP_STATUS.md describe the original workstation's implementation run: background, not current instructions, and never a reason to rebuild the saved project. Inspect actual reference images. For a bounded setup smoke check, perform only that check; do not implement the game.
+tools/BLUEPRINT_WORKFLOW.md is the current authoring recipe and WORK_STATUS.md the current status. MASTER_PROMPT.md, REFERENCE_BRIEF.md, RUN_ASTRA.md, ASTRA_GUIDE.md, START_HERE.md, START_PROMPT.txt, SETUP_STATUS.md and study/GROK_CHAMBER_HANDOFF.md describe the original workstation's implementation run (and its Grok continuation): background, not current instructions, and never a reason to rebuild the saved project. Their paths, permission notes and tool locations apply to that machine only. Those files are left byte-for-byte as recorded because preservation manifests hash them. Inspect actual reference images. For a bounded setup smoke check, perform only that check; do not implement the game.
 
 ## Scope and preservation
 
@@ -22,7 +24,7 @@ Nothing in this repository grants an agent permissions. Each teammate's agent ru
 
 Never run scripts from another person's user profile or package cache.
 
-Keep one writer for shared levels and .uasset files. Delegate only when explicitly requested or applicable instructions authorize it, with non-conflicting ownership. Do not reset or clean existing work. Never overwrite an unowned asset to make an authoring script succeed.
+Keep one writer for shared levels and .uasset files: whoever holds the LFS lock. Delegate only when explicitly requested or applicable instructions authorize it, with non-conflicting ownership. Do not reset or clean existing work. Never overwrite an unowned asset to make an authoring script succeed.
 
 ## Authoring and evidence
 
@@ -35,7 +37,7 @@ For current library, SDK, API and CLI documentation, use a Context7 CLI only if 
 ## Prepared commands
 
 - START_ASTRA.cmd: human entry point, explicitly Astra/Max with three reference images; requires a matching successful full setup receipt. Never run it recursively from an agent.
-- CHECK_SETUP.cmd: quick dependency, sign-in and original-hash check; no inference or game rebuild.
+- CHECK_SETUP.cmd: the original workstation's Astra quick dependency, sign-in and original-hash check (it also expects pwsh, npx and the project-local Codex CLI); no inference or game rebuild. Teammates check prerequisites with TEAM_CHECK.cmd / `python tools/team_check.py`.
 - `python tools/astra_setup.py verify`: bounded full setup check, including an authenticated Astra request, fresh graph authoring, teddy import, runtime input actions and captures. Use for setup, not after every game edit.
 - `python tools/astra_setup.py editor-script tools/your_script.py`: run a saved authoring script with scoped caches and a fresh log. Add --render when needed. This uses a commandlet; it does not tick a game.
 - tools/verify_blueprint_runtime.py demonstrates full-editor, frame-driven play testing. Use game time for input windows and allow screenshot/shader warmup. Runtime action injection is not physical-device testing.
