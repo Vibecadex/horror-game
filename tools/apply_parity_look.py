@@ -5,7 +5,7 @@ import unreal as u
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from encounter_authoring import A,L,M,NS,asset,existing,own,save,components,component,compile
 P=json.loads((ROOT/'study/parity-settings.json').read_text())
-OUT=Path(json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 LEV=u.get_editor_subsystem(u.LevelEditorSubsystem);ACT=u.get_editor_subsystem(u.EditorActorSubsystem)
 R={'passed':False,'settings':P,'changes':[],'new_materials':[],'graph_changes':False}
 def node(mat,cls,**props):

@@ -3,6 +3,7 @@ from pathlib import Path
 import unreal as u
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from encounter_authoring import *
+historical_builder(__file__)
 r={'passed':False}
 try:
     hud=blueprint('BP_EncounterHUD',u.HUD);g=Graph(hud);g.g.remove_nodes(g.g.list_all_nodes())

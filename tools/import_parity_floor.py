@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from encounter_authoring import A,M,NS,asset,own,save,existing
 from apply_parity_look import node,scalar,rgb,bind,mul,noise,blend
 SRC=ROOT/'Assets/Adapted/Parity/Floor';KIT=json.loads((SRC/'manifest.json').read_text())
-OUT=Path(json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 R={'passed':False,'meshes':[],'actors':[],'new_mesh_collision':'NoCollision','source_unchanged':True,'revision':'placements-v2'}
 def simple(name,a,b):
     m=asset('Parity/Materials/'+name,u.Material,u.MaterialFactoryNew());M.delete_all_material_expressions(m)

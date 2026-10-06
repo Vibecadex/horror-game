@@ -3,6 +3,7 @@ from pathlib import Path
 import unreal as u
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from encounter_authoring import *
+historical_builder(__file__)
 r={'passed':False}
 try:
     pc=existing(NS+'/Blueprints/BP_EncounterController');g=Graph(pc)

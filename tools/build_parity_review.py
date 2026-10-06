@@ -3,7 +3,7 @@ import argparse,html,json,os
 from pathlib import Path
 from urllib.parse import quote
 ROOT=Path(__file__).resolve().parents[1]
-OUT=Path(json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 def url(p):return quote(os.path.relpath(p,OUT).replace('\\','/'),safe='/.-_')
 def link(p,label):return '<a href="'+url(p)+'">'+html.escape(label)+'</a>'
 def img(p,caption):return '<figure><a href="'+url(p)+'"><img loading="lazy" src="'+url(p)+'" alt="'+html.escape(caption,quote=True)+'"></a><figcaption>'+html.escape(caption)+'</figcaption></figure>'

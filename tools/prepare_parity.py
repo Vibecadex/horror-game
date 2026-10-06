@@ -19,5 +19,5 @@ with zipfile.ZipFile(archive) as z:
     for item in items:assert hashlib.sha256(z.read(item['path'])).hexdigest()==item['sha256']
 report={'passed':True,'created_utc':datetime.now(timezone.utc).isoformat(),'files':items,'archive_sha256':sha(archive),'purpose':'Preserve all combined Grok/full-room assets before new owned Parity assets and deliberate map/Blueprint updates. No binary content interpreted.'}
 (OUT/'baseline.json').write_text(json.dumps(report,indent=2))
-(ROOT/'evidence/parity/current-run.json').write_text(json.dumps({'out':str(OUT)},indent=2))
+(ROOT/'evidence/parity/current-run.json').write_text(json.dumps({'out':OUT.relative_to(ROOT).as_posix()},indent=2))
 print(json.dumps({'out':str(OUT),'files':len(items),'archive_bytes':archive.stat().st_size,'passed':True}))

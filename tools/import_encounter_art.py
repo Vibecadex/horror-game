@@ -3,6 +3,7 @@ from pathlib import Path
 import unreal as u
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from encounter_authoring import *
+historical_builder(__file__)
 r={'assets':[]}
 try:
     u.SystemLibrary.execute_console_command(None,'Interchange.FeatureFlags.Import.FBX 0')
