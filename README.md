@@ -42,7 +42,7 @@ Phone-scanned bears from the [bear scanner](https://github.com/Vibecadex/bear-sc
 python tools/run_encounter_test.py tools/import_scanned_bears.py
 ```
 
-Each bear becomes `/Game/ScannedBears/<Name>_<id>/SM_Bear_<Name>`: one Static Mesh with LOD0-2, convex collision and its texture, real size in cm, pivot under the feet. Re-runs skip unchanged bears. The import never touches `/Game/TeddyEncounter`, the map or its Blueprints; placing bears is the map owner's call. On the first run, confirm the facing (expected −X) and the LODs in the Static Mesh editor. Details: `tools/import_scanned_bears.py`.
+For many bears on a first run, set `$env:TEDDY_TEST_TIMEOUT = '1800'` first (default 420 s). Each bear becomes `/Game/ScannedBears/<Name>_<id>/SM_Bear_<Name>`: one Static Mesh with LOD0-2, convex collision and its texture, real size in cm, pivot under the feet. Re-runs skip unchanged bears; rebuilt or renamed bears update their existing mesh. The run fails, with the reason in its receipt, if any bear fails or none is found. The import never touches `/Game/TeddyEncounter`, the map or its Blueprints; placing bears is the map owner's call. On the first run, confirm the facing (expected −X) and the LODs in the Static Mesh editor. Details: `tools/import_scanned_bears.py`.
 
 ## Repository contents
 
