@@ -3,7 +3,7 @@ import argparse,hashlib,json
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-OUT=Path(json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 def digest(p):
     with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def active():

@@ -3,7 +3,7 @@ import unreal as u
 import json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-OUT=Path(json.loads((ROOT/'evidence/full-room/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/full-room/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 u.get_editor_subsystem(u.LevelEditorSubsystem).load_level('/Game/Maps/TeddyEncounter')
 world=u.get_editor_subsystem(u.UnrealEditorSubsystem).get_editor_world()
 r={'hit_dir':dir(u.HitResult),'docs':str(u.HitResult.__doc__), 'hit':{}}

@@ -4,6 +4,7 @@ from pathlib import Path
 import unreal as u
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from encounter_authoring import *
+historical_builder(__file__)
 r={'passed':False};lev=u.get_editor_subsystem(u.LevelEditorSubsystem);actors=u.get_editor_subsystem(u.EditorActorSubsystem)
 MAP='/Game/Maps/TeddyEncounter'
 def spawn(cls,label,loc=(0,0,0),rot=(0,0,0),scale=None):

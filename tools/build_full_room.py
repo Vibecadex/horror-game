@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'tools'))
 from encounter_authoring import A, L, M, NS, TAG, OWNER, existing, asset, own, save
 
-OUT = Path(json.loads((ROOT/'evidence/full-room/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/full-room/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 MAP = '/Game/Maps/TeddyEncounter'
 ROOM = NS+'/Room'
 lev = u.get_editor_subsystem(u.LevelEditorSubsystem)

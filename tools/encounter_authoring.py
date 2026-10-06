@@ -3,6 +3,14 @@ import unreal as u
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; NS='/Game/TeddyEncounter'; TAG='TeddyEncounter.Owner'; OWNER='encounter-20261004'
 A=u.EditorAssetLibrary; L=u.BlueprintEditorLibrary; M=u.MaterialEditingLibrary
+def historical_builder(script):
+    # These builders recreate early encounter state wholesale. On the saved project
+    # they erase later chamber, camera, boss and feedback work, then save over it.
+    import os
+    if A.does_asset_exist('/Game/Maps/TeddyEncounter') and os.environ.get('TEDDY_ALLOW_HISTORICAL_REBUILD')!='1':
+        raise RuntimeError(Path(script).name+' is a historical builder: on the saved project it would erase later '
+                           'chamber/camera/boss work. Continue the saved project instead (study/TEAM_CONTINUATION.md). '
+                           'For a deliberate rebuild on a scratch copy only, set TEDDY_ALLOW_HISTORICAL_REBUILD=1.')
 def own(obj): A.set_metadata_tag(obj,TAG,OWNER);return obj
 def existing(path):
     if A.does_asset_exist(path):

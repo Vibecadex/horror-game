@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from encounter_authoring import NS,existing,components,compile
 from apply_parity_look import spawn,light_settings
 P=json.loads((ROOT/'study/parity-atmosphere-settings.json').read_text())
-OUT=Path(json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 R={'passed':False,'settings':P,'material_camera_key_and_player_light_changes':False}
 
 def main():

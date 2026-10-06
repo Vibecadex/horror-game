@@ -5,7 +5,7 @@ import hashlib,json,zipfile
 import astra_setup as setup
 ROOT=setup.ROOT
 setup.require_editor_closed()
-OUT=Path(json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'])/'external-handoff'
+OUT=ROOT/json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out']/'external-handoff'
 OUT.mkdir(exist_ok=False)
 files=set()
 for directory in ['TeddyBlueprint/Content/TeddyEncounter','TeddyBlueprint/Content/Maps','Assets/Adapted/Parity/Surfaces']:

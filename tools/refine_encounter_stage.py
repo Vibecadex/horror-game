@@ -3,6 +3,7 @@ from pathlib import Path
 import unreal as u
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from encounter_authoring import *
+historical_builder(__file__)
 lev=u.get_editor_subsystem(u.LevelEditorSubsystem);actors=u.get_editor_subsystem(u.EditorActorSubsystem);r={'passed':False}
 def spawn(cls,label,loc,rot=None):
     a=actors.spawn_actor_from_class(cls,u.Vector(*loc),rot or u.Rotator(),transient=False);a.set_actor_label(label);a.set_editor_property('tags',['TeddyEncounterOwned']);return a

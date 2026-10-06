@@ -411,10 +411,13 @@ def snapshot(directory):
 
 def require_editor_closed():
     # Process enumeration works in the restricted CLI token; WMI/CIM does not.
+    # tasklist ships with Windows, so PowerShell 7 isn't a prerequisite for PLAY/EDIT/tests.
     # Conservatively refuse any editor process because its project is not visible here.
-    script = ("$editors = @(Get-Process -Name UnrealEditor,UnrealEditor-Cmd -ErrorAction SilentlyContinue); "
-              "if ($editors.Count) { $editors | Select-Object Id,ProcessName | ConvertTo-Json -Compress }; exit 0")
-    active = capture([tool("pwsh.exe"), "-NoProfile", "-Command", script])
+    active = []
+    for image in ("UnrealEditor.exe", "UnrealEditor-Cmd.exe"):
+        listing = capture(["tasklist", "/FI", f"IMAGENAME eq {image}", "/FO", "CSV", "/NH"])
+        active += [line for line in listing.splitlines() if line.lower().startswith(f'"{image.lower()}"')]
+    active = "; ".join(active)
     if active:
         raise RuntimeError("Close existing Unreal editor/game instances before opening or authoring this project; "
                            "existing processes will not be stopped: " + active)

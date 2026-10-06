@@ -28,5 +28,5 @@ report = {'passed': True, 'created_utc': datetime.now(timezone.utc).isoformat(),
           'archive': str(archive), 'archive_sha256': sha(archive),
           'purpose': 'Byte-preserving rollback snapshot; no binary assets interpreted.'}
 (OUT/'baseline.json').write_text(json.dumps(report, indent=2))
-(ROOT/'evidence/full-room/current-run.json').write_text(json.dumps({'out': str(OUT)}, indent=2))
+(ROOT/'evidence/full-room/current-run.json').write_text(json.dumps({'out': OUT.relative_to(ROOT).as_posix()}, indent=2))
 print(json.dumps({'out': str(OUT), 'files': len(items), 'archive_bytes': archive.stat().st_size, 'passed': True}))

@@ -1,5 +1,7 @@
 # Grok implementation handoff — continue the chamber
 
+> **Written for one Grok session on the original workstation** (5 October 2026), with its paths; its "sole writer" rule applied to that session only. On a team checkout it is background: start at [README.md](../README.md) and [study/TEAM_CONTINUATION.md](../study/TEAM_CONTINUATION.md), and continue the saved project rather than rebuilding it.
+
 User instruction, 5 October 2026: **"continue keeping in mind the scene we were trying to recreate, delegate to grok from here"**.
 
 This is an implementation continuation, not another brief/site redesign or a request for a plan alone. Continue the existing saved Unreal scene toward the supplied chamber references. Codex is transferring the next implementation pass to the existing Grok session and will not write Unreal assets concurrently.

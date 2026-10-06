@@ -4,7 +4,7 @@ from pathlib import Path
 import unreal as u
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from apply_parity_look import spawn,light_settings
-OUT=Path(json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 SPEC=json.loads((ROOT/'study/parity-atmosphere-settings.json').read_text())['rear_center_character_fill']
 LABEL='TE_Parity_RearCenterCharacterFill'
 R={'passed':False,'purpose':'Repair independently observed rear-centre character contrast gap','settings':SPEC,'material_camera_fog_key_and_gameplay_changes':False}

@@ -14,7 +14,7 @@ import subprocess
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=Path(json.loads((ROOT/'evidence/full-room/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/full-room/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 p=argparse.ArgumentParser()
 for name in ['gallery','qa','keys','native']:p.add_argument('--'+name,required=True)
 args=p.parse_args()

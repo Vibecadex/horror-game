@@ -185,7 +185,7 @@ def main():
     sys.path.insert(0,str(ROOT/'tools'))
     from encounter_authoring import A, TAG, OWNER, existing, own, save
     run=json.loads((ROOT/'evidence/parity/current-run.json').read_text())
-    out=Path(run['out']).resolve();assert out.is_relative_to((ROOT/'evidence').resolve()) and out.is_dir()
+    out=(ROOT/run['out']).resolve();assert out.is_relative_to((ROOT/'evidence').resolve()) and out.is_dir()
     report={'passed':False,'source_pins':PINNED,'plan':plan,'concealed':[],'new_meshes':[],
             'scope':'shell and wall dressing only; no new collision, materials, lights, kit, floor or animation'}
     receipt=out/('room-extension-import-'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')+'.json')
