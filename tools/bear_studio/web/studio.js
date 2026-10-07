@@ -14,6 +14,7 @@ const state = {
   checks: null, roundtrip: null, playing: false, playTime: 0, sourceToken: 0,
   scannerUrl: null, busy: false, loading: false, deciding: false, showingSource: true, error: null, conflict: false,
   library: null, libraryModule: null,
+  rigfit: null, fitJob: null,
 };
 
 const host = $('canvasHost');
@@ -249,6 +250,7 @@ async function selectBear(id, force = false) {
     loadHistory();
   } catch (error) { if (token === state.sourceToken) { showMessage('Unable to open this bear', error.message); toast(error.message, true); } }
   finally { if (token === state.sourceToken) { state.loading = false; updateControls(); } }
+  if (token === state.sourceToken && state.source) checkScannerJob();
 }
 
 function renderHeader() {
@@ -373,6 +375,7 @@ function disposeHandle(handle) {
 function visibleModel() { return state.showingSource ? state.preview?.group || state.preview || state.sourceView : state.handle?.group; }
 function showSourceModel(cropped = false) {
   if (!state.source) return;
+  cropped = cropped && $('rigMethod').value === 'manual' && state.recipe?.method !== 'scanner-rigfit-v1';
   content.clear(); disposePreview();
   releaseSourceView();
   if (state.handle?.helper) state.handle.helper.visible = false;
@@ -469,6 +472,9 @@ function updateStats() {
 
 function renderRecipe() {
   const recipe = state.recipe; if (!recipe) return;
+  $('rigMethod').value = recipe.method === 'scanner-rigfit-v1' ? 'scanner' : 'manual';
+  renderRigMethod();
+  if (recipe.method === 'scanner-rigfit-v1') { clearLandmarks(); return; }
   $('rigPreset').value = recipe.preset || 'seated'; $('rigYaw').value = String(recipe.yawDegrees || 0);
   const sourceHeight = state.sourceInfo?.height || new THREE.Box3().setFromObject(state.source.scene).getSize(new THREE.Vector3()).y;
   $('rigHeight').value = Number(((recipe.heightM || sourceHeight * (1 - (recipe.cropFraction || 0))) * 100).toFixed(2));
@@ -498,6 +504,7 @@ function landmarkPosition(point) {
 }
 function renderLandmarks() {
   clearLandmarks();
+  if ($('rigMethod').value === 'scanner' || state.recipe?.method === 'scanner-rigfit-v1') return;
   if (!state.source || !state.recipe || state.tab !== 'rig' || !state.showingSource || !$('showLandmarks').checked) return;
   if (!state.preview && Number(state.recipe.yawDegrees)) {
     $('landmarkHint').textContent = 'Original source view · select a joint to return to the prepared preview.';
@@ -589,6 +596,12 @@ async function openSavedRig(revision) {
   if (rig.stale) { toast('This rig belongs to an older source. Download it from the revision history for archival review.', true); return; }
   if (hasUnsavedWork() && !await requestDiscard('Opening this saved rig will discard unsaved details, rig work and test notes for the current bear.')) return;
   await action(`Opening saved rig revision ${revision}…`, async () => {
+    await loadSavedRig(rig);
+  });
+}
+
+async function loadSavedRig(rig) {
+    const revision = rig.revision;
     const gltf = await loader.loadAsync(rig.modelUrl);
     stopPlayback();
     if (state.handle) disposeHandle(state.handle);
@@ -600,7 +613,82 @@ async function openSavedRig(revision) {
     $('rigSummary').textContent = `Viewing the actual saved GLB from rig revision ${revision}, with ${state.handle.skeleton.bones.length} bones.`;
     $('rigSummary').hidden = false; $('rigState').textContent = `Saved rig revision ${revision} · draft requiring visual review.`;
     toast(`Opened saved rig r${revision}. Pose and motion controls use the exported skin.`);
+}
+
+function renderRigMethod() {
+  const scanner = $('rigMethod').value === 'scanner';
+  $('scannerRigControls').hidden = !scanner;
+  $('manualRigControls').hidden = scanner;
+  const warnings = state.recipe?.method === 'scanner-rigfit-v1' ? state.recipe.fitReport?.warnings || [] : [];
+  $('rigfitWarnings').textContent = warnings.join(' ');
+  $('rigfitWarnings').hidden = !warnings.length;
+  if (!state.fitJob) $('rigfitStatus').textContent = state.rigfit?.available
+    ? 'Scanner fitter ready. Save pending edits before starting. Shape, texture and foot contact need visual review.'
+    : state.rigfit?.error || 'Checking scanner tools…';
+  updateControls();
+}
+
+async function chooseRigMethod() {
+  if (hasUnsavedWork()) {
+    $('rigMethod').value = state.recipe?.method === 'scanner-rigfit-v1' ? 'scanner' : 'manual';
+    toast('Save your pending edits before changing rigging method.', true); return;
+  }
+  if ($('rigMethod').value === 'manual' && state.recipe?.method === 'scanner-rigfit-v1') {
+    stopPlayback(); if (state.handle) disposeHandle(state.handle); state.handle = null;
+    state.activeRigRevision = null; state.rigSaved = false;
+    state.checks = null; state.roundtrip = null;
+    $('rigSummary').hidden = true;
+    $('rigState').textContent = 'Manual landmarks ready. Build a draft before saving a revision.';
+    state.recipe = Rigging.defaultRecipe(state.source.scene, { preset: 'seated', sourceSha256: state.bear.sourceSha256, sourceRevision: state.bear.sourceRevision });
+    renderRecipe(); renderMotionControls(); renderHandoff();
+  }
+  renderRigMethod(); showSourceModel($('rigMethod').value === 'manual'); frameModel();
+}
+
+async function watchScannerJob(job) {
+  state.fitJob = job; $('rigMethod').value = 'scanner'; renderRigMethod();
+  try {
+    while (['running', 'cancelling'].includes(job.status)) {
+      state.fitJob = job; updateControls();
+      $('rigfitStatus').textContent = job.status === 'cancelling' ? 'Cancelling fit…' : 'Fitting the scan and baking test motions… You can reopen this page to reconnect.';
+      await new Promise((resolve) => setTimeout(resolve, 900));
+      job = await api(`/api/rigfit/${job.id}`);
+    }
+    if (job.status !== 'succeeded') {
+      $('rigfitStatus').textContent = job.error || `Fit ${job.status}. Previous rigs were kept.`;
+      throw new Error($('rigfitStatus').textContent);
+    }
+    const bear = await api(`/api/bears/${job.bearId}`);
+    upsertBear(bear); renderMetadata();
+    const rig = bear.rigs.find((item) => item.revision === job.rigRevision);
+    if (rig.stale) throw new Error('Fit saved against an older source. Review it from revision history.');
+    await loadSavedRig(rig);
+    $('rigfitStatus').textContent = `Scanner rig r${rig.revision} saved · ${state.handle.skeleton.bones.length} bones · ${state.handle.clips.length} test motions. Review its fit warnings and motion.`;
+  } finally { state.fitJob = null; updateControls(); }
+}
+
+async function fitScannerRig() {
+  if (!state.bear || hasUnsavedWork()) { toast('Save your pending edits before fitting a new rig.', true); return; }
+  await action('Starting scanner fit…', async () => {
+    const job = await api(`/api/bears/${state.bear.id}/rigfit`, { method: 'POST', body: { expectedRevision: state.bear.revision } });
+    await watchScannerJob(job);
   });
+}
+
+async function checkScannerJob() {
+  const bearId = state.bear?.id;
+  if (!bearId) return;
+  try {
+    const { job } = await api(`/api/bears/${bearId}/rigfit`);
+    if (state.bear?.id !== bearId || state.busy || hasUnsavedWork()) return;
+    if (job && ['running', 'cancelling'].includes(job.status)) {
+      setTab('rig');
+      await action('Reconnecting to the scanner fit…', () => watchScannerJob(job));
+    }
+    else if (job?.status === 'succeeded') {
+      $('rigfitStatus').textContent = `Scanner fit saved as rig r${job.rigRevision}. Open it from Saved revisions to test its motion.`;
+    } else if (job?.error) $('rigfitStatus').textContent = job.error;
+  } catch (error) { toast(error.message, true); }
 }
 
 function renderMotionControls() {
@@ -770,8 +858,13 @@ function handoffText() {
 function updateControls() {
   const hasBear = Boolean(state.bear); const hasSource = Boolean(state.source); const hasRig = Boolean(state.handle);
   const blocked = state.busy || state.loading || state.deciding;
+  $('rigMethod').disabled = !hasSource || blocked;
+  $('fitScannerRig').disabled = !hasSource || blocked || !state.rigfit?.available || hasUnsavedWork();
+  $('cancelScannerRig').hidden = !state.fitJob;
+  $('cancelScannerRig').disabled = !state.fitJob || state.fitJob.status === 'cancelling';
+  $('importRigfitExample').disabled = blocked;
   $('metadataForm').querySelectorAll('input,select,textarea,button').forEach((element) => { element.disabled = !hasBear || blocked; });
-  for (const id of ['rigPreset','rigHeight','rigYaw','cropRange','jointSelect','jointX','jointY','jointZ','resetLandmarks','mirrorLandmarks','showLandmarks','saveRecipe','buildRig']) $(id).disabled = !hasSource || blocked;
+  for (const id of ['rigPreset','rigHeight','rigYaw','cropRange','jointSelect','jointX','jointY','jointZ','resetLandmarks','mirrorLandmarks','showLandmarks','saveRecipe','buildRig']) $(id).disabled = !hasSource || blocked || state.recipe?.method === 'scanner-rigfit-v1';
   $('saveRig').disabled = !hasRig || state.rigSaved || blocked;
   $('showSource').disabled = !hasSource || blocked || state.showingSource;
   $('testControls').disabled = !hasRig || blocked;
@@ -879,6 +972,27 @@ $('mirrorLandmarks').addEventListener('click', () => {
   invalidateRig(`Mirrored ${pretty(name)} to ${pretty(opposite)}.`); toast(`Mirrored to ${pretty(opposite)}.`);
 });
 $('saveRecipe').addEventListener('click', saveRecipe); $('buildRig').addEventListener('click', buildDraft); $('saveRig').addEventListener('click', saveRig);
+$('rigMethod').addEventListener('change', chooseRigMethod);
+$('fitScannerRig').addEventListener('click', fitScannerRig);
+$('cancelScannerRig').addEventListener('click', async () => {
+  try {
+    const jobId = state.fitJob?.id;
+    if (!jobId) return;
+    const job = await api(`/api/rigfit/${jobId}/cancel`, { method: 'POST', body: {} });
+    if (state.fitJob?.id === jobId && ['running', 'cancelling'].includes(job.status)) state.fitJob = job;
+    updateControls();
+  } catch (error) { toast(error.message, true); }
+});
+$('importRigfitExample').addEventListener('click', () => action('Importing the synthetic rig-fitting example…', async () => {
+  const result = await api('/api/import/rigfit-example', { method: 'POST', body: {} });
+  $('importDialog').close(); state.metadataDirty = false; state.recipeDirty = false; state.busy = false;
+  await refreshCatalogue(result.bear.id);
+  $('rigMethod').value = 'scanner'; renderRigMethod(); setTab('rig');
+  toast('Synthetic example ready. Fit it to create a new 21-bone draft.');
+}));
+api('/api/rigfit').then((value) => { state.rigfit = value; renderRigMethod(); }).catch((error) => {
+  state.rigfit = { available: false, error: error.message }; renderRigMethod();
+});
 $('clipSelect').addEventListener('change', selectClip); $('resetPose').addEventListener('click', resetPose);
 $('loadMotionLibrary').addEventListener('click', loadMotionLibrary); $('addLibraryMotion').addEventListener('click', addLibraryMotion);
 $('libraryStrength').addEventListener('input', () => { $('libraryStrengthValue').textContent = `${Math.round(Number($('libraryStrength').value) * 100)}%`; });

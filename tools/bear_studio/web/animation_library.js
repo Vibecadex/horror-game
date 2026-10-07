@@ -33,6 +33,25 @@ const MAPPING = [
   }),
 ];
 
+// The scanner exposes the spine, neck and shoulders separately; retain their motion.
+const SCANNER_MAPPING = [
+  { target: 'Hips', source: 'pelvis', parent: 'root' },
+  { target: 'Spine', source: 'spine_01', parent: 'pelvis' },
+  { target: 'Spine1', source: 'spine_02', parent: 'spine_01' },
+  { target: 'Spine2', source: 'spine_03', parent: 'spine_02' },
+  { target: 'Neck', source: 'neck_01', parent: 'spine_03' },
+  { target: 'Head', source: 'Head', parent: 'neck_01' },
+  ...[['Left', 'l'], ['Right', 'r']].flatMap(([side, s]) => [
+    { target: `${side}Shoulder`, source: `clavicle_${s}`, parent: 'spine_03' },
+    { target: `${side}Arm`, source: `upperarm_${s}`, parent: `clavicle_${s}` },
+    { target: `${side}ForeArm`, source: `lowerarm_${s}`, parent: `upperarm_${s}` },
+    { target: `${side}Hand`, source: `hand_${s}`, parent: `lowerarm_${s}` },
+    { target: `${side}UpLeg`, source: `thigh_${s}`, parent: 'pelvis' },
+    { target: `${side}Leg`, source: `calf_${s}`, parent: `thigh_${s}` },
+    { target: `${side}Foot`, source: `foot_${s}`, parent: `calf_${s}` },
+  ]),
+];
+
 const loads = new Map();
 const worldQ = (object) => object.getWorldQuaternion(new THREE.Quaternion());
 const sha256 = async (buffer) => [...new Uint8Array(await crypto.subtle.digest('SHA-256', buffer))].map((byte) => byte.toString(16).padStart(2, '0')).join('');
@@ -96,7 +115,8 @@ export function addLibraryClip(handle, library, clipName, { strength = 0.65, max
   const sourceFrameInverse = worldQ(source).invert();
   const targetFrameInverse = worldQ(handle.group).invert();
   try {
-  const mapping = MAPPING.map((entry) => {
+  const entries = handle.recipe.method === 'scanner-rigfit-v1' ? SCANNER_MAPPING : MAPPING;
+  const mapping = entries.map((entry) => {
     const sourceBone = findBone(source, entry.source), sourceParent = findBone(source, entry.parent);
     const targetBone = handle.skeleton.bones.find((bone) => bone.name === entry.target);
     if (!sourceBone || !sourceParent || !targetBone) throw new Error(`The selected rigs do not provide mapped joint ${entry.source} → ${entry.target}.`);

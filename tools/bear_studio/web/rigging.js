@@ -366,6 +366,7 @@ function makeHandle(group, meshes, recipe, metrics, clips, segments = []) {
   };
   handle.rest = skeleton.bones.map((bone) => ({ bone, position: bone.position.clone(), quaternion: bone.quaternion.clone(), scale: bone.scale.clone() }));
   if (recipe.cropFraction > 0) handle.warnings.push(CROP_WARNING, 'The source collision hull is stale after cropping; no replacement collision has been generated.');
+  if (recipe.method === 'scanner-rigfit-v1') handle.warnings.push('Scanner template fit: inspect shape and colour transfer. Collision and foot planting are not generated.', ...(recipe.fitReport?.warnings || []));
   if (recipe.preset === 'seated') handle.warnings.push('Seated / support preset: landmarks are suggestions. Leg deformation is not a walking or planted-foot test.');
   meshes.forEach((item) => { item.frustumCulled = false; item.castShadow = true; item.receiveShadow = true; });
   return handle;

@@ -1,0 +1,26 @@
+Scanner rig fitting in Bear Studio, 7 October 2026
+
+The integration calls the installed scanner's `rigfit.fit` and the team's four animation generators in a separate, bounded local worker. It does not install dependencies, write to the scanner checkout, or change the encounter. The team brief is deferred at the user's request.
+
+Open `http://127.0.0.1:8472/`. For a known working input, choose **Import bear → Use example**, then **Fit & save scanner rig**. For an imported scan, choose **Rig → Scanner template fit**. Existing manual rigs remain in their revision history. The example is synthetic, with diagnostic colours; it is not a reconstructed or approved character.
+
+The fitter reads the configured `bear_scanner_repo` in `tools/project-settings.local.json` (or `BEAR_SCANNER_REPO`) and its existing `.venv`. Its capability check passes locally with 21 joints. Jobs use private copies of source bytes and landmarks, a five-minute worker timeout, cancellation, persisted status and revision-checked publication. Unknown capture pose remains unknown. Missing required landmarks, ambiguous meshes, instancing and unapplied transforms are refused rather than silently fitted in another coordinate system. Source and landmark hashes are checked before authoring. Fit reports and exact algorithm/adapter hashes are retained in every saved scanner recipe.
+
+Verified evidence:
+
+- [41 backend and installed-worker tests](local-service/backend-tests.txt): source identity, concurrent edits, cancellation, restart recovery, manual-rig retention, bad geometry and landmark handling.
+- [Browser workflow](20261007T130238Z/receipt.json): actual example import, installed worker, reload reconnect, 21 joints, four clips, source preservation, deformation and export/reload checks, library motion saved as a separate revision, cancellation, saved-rig reopening and no uncaught browser exceptions.
+- [24 existing manual rig/motion checks](20261007T130238Z/manual-rig-regression.json) remain passing.
+- [Focused review reset](20261007T130421Z/receipt.json): an approved input returns to unreviewed after fitting, including its displayed metadata form, and a subsequent metadata save does not revive the old approval. This focused run did not reload during fitting; its inherited second check label refers to cancellation reachability. The full workflow above did exercise reload.
+- [Real sample rejection](20261007-real-pack-rejection/receipt.json): source SHA `f296aab3…` has no neck, head, hand_R or foot_R landmarks. The worker reports those missing points, creates no rig and preserves the record.
+- [Live service receipt](local-service/receipt.json): port 8472 serves this integration checkout, scanner capability is available, both catalogue records and all 19 original source/rig files are unchanged. A SQLite backup was made under the ignored local catalogue before restart.
+
+Independent Astra review was read-only. Its reported cancellation-reconnect visibility, late cancel-response race, unsupported geometry and stale approval-form issues were repaired. The original 16-bone motion mapping is unchanged; scanner drafts use a separate 20-joint transfer mapping (the static head tip has no source counterpart).
+
+The [source view](20261007T130238Z/01-source.png), [fitted rest pose](20261007T130238Z/02-fitted-rig.png), [wave sample](20261007T130238Z/03-wave.png), [library motion](20261007T130238Z/04-library-motion.png) and [reopened draft](20261007T130238Z/05-reopened.png) show the actual browser result. Independent visual inspection finds a recognizable teddy silhouette and transferred diagnostic colour regions, but narrowed wrists, bulky paws, angular shoulders, a pinched neck and torso/armpit/hip creasing. The fitted render looks lighter; these images alone cannot separate texture transfer from material/lighting differences. The source is seated while the draft is upright, so their displayed height difference alone does not prove a scaling error. Native comparison evidence from the previous turn is separate from these browser checks.
+
+This is a functional synthetic fitting and motion-review example. It does not establish real-scan fidelity, clean skinning across all poses, walking quality, foot planting, collision, gameplay readiness or chamber parity. The original Rupert2/neutral-template team exports are still absent locally. No room or gameplay asset was changed.
+
+Two earlier browser harness runs are retained as diagnostic evidence: `20261007T125654Z` timed out because it expected an uppercase "Saved" after a successful save; `20261007T130014Z` clicked the motion-library button before a previous test-record save completed. Both harness waits were corrected. They are not passing receipts; the full passing run is linked above.
+
+To repeat in an isolated catalogue, run `python tools/launch_bear_studio.py --port 8473 --data-dir .team-local/scanner-fit-qa --no-browser`, then `node tools/verify_studio_scanner.cjs`. The test refuses the live catalogue/port, uses installed Edge, and writes its own screenshots and receipts. Run backend checks with `python -m unittest discover -s tools/bear_studio -p test_*.py -v`; installed-worker tests explicitly skip when the scanner environment is unavailable. No installer is invoked.

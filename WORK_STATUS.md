@@ -1,5 +1,13 @@
 # Teddy Encounter working status
 
+## Scanner fitting in Bear Studio — 7 October 2026
+
+The user deferred the team brief to focus on scanner technology. The existing Studio at `http://127.0.0.1:8472/` now runs the installed scanner's 21-bone template fitter from **Rig → Scanner template fit → Fit & save scanner rig**. **Import bear → Use example** adds an explicitly synthetic input with complete landmarks. Fitting saves an immutable draft with source/landmark/code hashes, fit warnings and four team test clips. The motion library supports this skeleton while retaining the manual 16-bone workflow. No package installation was needed.
+
+Background fitting supports cancellation and reconnect after page reload. Revision checks prevent another window's edits from being replaced; changed or missing source landmarks are refused. The live restart preserved both catalogue entries and all 19 existing source/rig files. A SQLite backup was saved before restart. The scanner checkout, Unreal Content/Config and team briefs were not edited.
+
+Verification: **41 backend/installed-worker tests**, **11 browser acceptance checks**, the existing **24 manual-rig browser checks**, and a focused review-status reset check pass. The real sample pack is correctly refused because neck, head, right hand and right foot landmarks are missing. Independent Astra review identified cancellation, input-geometry and stale-review issues; these were repaired and tested. Its source-to-draft inspection still finds shoulder/neck/torso distortion and uncertain colour fidelity; real-scan character quality, planted feet and chamber parity are not established. [Evidence and limits](evidence/scanner-integration/REVIEW.md).
+
 ## Team rig native compatibility — 7 October 2026
 
 The user's dependency sync is verified: `xatlas 0.0.11` imports, and all 35 team rig-fitting tests pass. The team's generator/exporter produced a labelled synthetic 21-bone bear with four test clips. These saved assets and three mannequin retargets pass **89** fresh-editor/PIE checks with **15 native captures**. Source clip bone positions agree within 0.455 mm. The initial normal rebuild caused faceted shading; retaining the source normals corrects it. [Review, limits and one-command verification](study/TEAM_RIG_NATIVE_REVIEW.md).

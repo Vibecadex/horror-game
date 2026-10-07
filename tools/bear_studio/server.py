@@ -14,6 +14,7 @@ import shutil
 import sqlite3
 import ssl
 import struct
+import sys
 import threading
 import urllib.error
 import urllib.parse
@@ -679,6 +680,7 @@ class Store:
             return self.detail(bear_id, db)
 
     def add_rig(self, bear_id: str, body: dict) -> dict:
+        expected = integer(body["expectedRevision"], "expectedRevision", 1) if "expectedRevision" in body else None
         source_revision = integer(body.get("sourceRevision"), "sourceRevision", 1)
         source_sha = text_value(body.get("sourceSha256"), "sourceSha256", 64, True)
         recipe, validation = body.get("recipe"), body.get("validation", {})
@@ -697,6 +699,8 @@ class Store:
         sha = digest(data)
         with self.lock, self.connect() as db:
             row = self._bear_row(db, bear_id)
+            if expected is not None and row["revision"] != expected:
+                raise APIError(409, "Catalogue changed during fitting; the new output was retained without replacing your draft")
             source = db.execute("SELECT * FROM sources WHERE bear_id=? ORDER BY revision DESC LIMIT 1", (bear_id,)).fetchone()
             if source["revision"] != source_revision or source["sha256"] != source_sha:
                 raise APIError(409, "Rig source no longer matches the current source revision and hash")
@@ -772,6 +776,16 @@ class StudioServer(ThreadingHTTPServer):
         self.store = store
         self.web_dir = web_dir.resolve()
         super().__init__(address, Handler)
+        try:
+            from .rigfit_bridge import Jobs
+        except ImportError:
+            from rigfit_bridge import Jobs
+        self.rigfit = Jobs(store)
+
+    def server_close(self):
+        if hasattr(self, "rigfit"):
+            self.rigfit.close()
+        super().server_close()
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -849,6 +863,14 @@ class Handler(BaseHTTPRequestHandler):
         store = self.server.store
         method = "GET" if self.command == "HEAD" else self.command
         if method == "GET":
+            if path == "/api/rigfit":
+                return self._json(self.server.rigfit.fitter.capability())
+            match = re.fullmatch(r"/api/rigfit/(fit_[0-9a-f]{16})", path)
+            if match:
+                return self._json(self.server.rigfit.get(match[1]))
+            match = re.fullmatch(r"/api/bears/(bear_[0-9a-f]{16})/rigfit", path)
+            if match:
+                return self._json({"job": self.server.rigfit.latest(match[1])})
             if path == "/api/health":
                 return self._json({"ok": True, "app": "bear-studio", "version": 1, "scannerUrl": store.scanner.url if store.scanner else None,
                                    "workspace": str(ROOT), "dataDir": str(store.root)})
@@ -894,6 +916,22 @@ class Handler(BaseHTTPRequestHandler):
             return self._json(store.import_pack(filename, self._body(bear_pack.MAX_PACK)), 201)
         if method == "POST" and path == "/api/import/scanner":
             return self._json(store.import_scanner(self._json_body().get("scanId")), 201)
+        if method == "POST" and path == "/api/import/rigfit-example":
+            self._json_body()
+            directory = ROOT / "Assets/Adapted/BearRigfitReview/SyntheticV1"
+            files = {"model.glb": (directory / "synthetic-source.glb").read_bytes(),
+                     "landmarks.json": (directory / "landmarks.json").read_bytes()}
+            source = {"kind": "synthetic-example", "capturePose": "animation", "originalFilename": "synthetic-source.glb",
+                      "provenance": {"purpose": "Synthetic rig-fitting example; diagnostic colours, not a real scan or production character",
+                                     "fixture": "synthetic-team-rig-v1"}}
+            return self._json(store.import_source("rigfit-synthetic-example-v1", "Synthetic rigfit example", source, files), 201)
+        match = re.fullmatch(r"/api/bears/(bear_[0-9a-f]{16})/rigfit", path)
+        if method == "POST" and match:
+            return self._json(self.server.rigfit.start(match[1], self._json_body()), 202)
+        match = re.fullmatch(r"/api/rigfit/(fit_[0-9a-f]{16})/cancel", path)
+        if method == "POST" and match:
+            self._json_body()
+            return self._json(self.server.rigfit.cancel(match[1]))
         match = re.fullmatch(r"/api/bears/(bear_[0-9a-f]{16})(?:/(rigs|tests))?", path)
         if match:
             bear_id, action = match.groups()
@@ -939,4 +977,6 @@ def main():
 
 
 if __name__ == "__main__":
+    # The worker manager shares this module's exception type when launched as a script.
+    sys.modules["server"] = sys.modules[__name__]
     main()

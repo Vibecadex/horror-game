@@ -60,6 +60,14 @@
         <section class="tab-panel" data-panel="rig" hidden>
           <div class="section-heading"><span class="eyebrow">02 / GIVE IT A SKELETON</span><h3>Draft a teddy rig</h3><p>Fit the joints to the bear, then preview the skin. Source scans stay untouched.</p></div>
           <div class="notice subtle">Draft weights need visual review. Fused limbs, tables and boxes may need mesh cleanup before character work.</div>
+          <label>Rigging method<select id="rigMethod"><option value="manual">Manual landmarks · 16 bones</option><option value="scanner">Scanner template fit · 21 bones</option></select></label>
+          <div id="scannerRigControls" hidden>
+            <p class="field-help">Fits a new teddy surface to the original scan, transfers its colours and saves a separate draft with four test motions. Uses the scan's landmarks, pose and scale. Manual crop and joint edits are separate.</p>
+            <p id="rigfitStatus" class="notice subtle" role="status" aria-live="polite">Checking scanner tools…</p>
+            <div class="rig-actions"><button id="fitScannerRig" class="button primary">Fit & save scanner rig</button><button id="cancelScannerRig" class="button" hidden>Cancel fit</button></div>
+            <div id="rigfitWarnings" class="notice" hidden></div>
+          </div>
+          <div id="manualRigControls">
           <label>Starting pose<select id="rigPreset"><option value="seated">Seated scan / support</option><option value="upright">Upright bear</option></select></label>
           <div class="field-pair"><label>Target height (cm)<input id="rigHeight" type="number" min="1" max="1000" step="0.1"></label><label>Facing correction<select id="rigYaw"><option value="0">0° · keep front</option><option value="90">90°</option><option value="180">180°</option><option value="-90">−90°</option></select></label></div>
           <label class="range-label">Remove below <output id="cropValue">0%</output><input id="cropRange" type="range" min="0" max="0.65" step="0.005" value="0"></label><p class="field-help">Crops the derived preview. Use this to separate a support before placing joints; inspect the cut edge.</p>
@@ -68,6 +76,7 @@
           <div class="landmark-coordinates"><label>X<input id="jointX" type="number" min="-1.5" max="1.5" step="0.01"></label><label>Y<input id="jointY" type="number" min="-0.25" max="1.5" step="0.01"></label><label>Z<input id="jointZ" type="number" min="-1.5" max="1.5" step="0.01"></label></div>
           <div class="form-actions"><label class="checkbox-label"><input type="checkbox" id="showLandmarks" checked> Show landmarks</label><button id="mirrorLandmarks" class="text-button">Mirror to opposite side</button></div><p class="field-help">Coordinates use the original source height; Y starts at the source base. Cropping keeps landmarks in place.</p>
           <div class="rig-actions"><button id="saveRecipe" class="button">Save landmarks</button><button id="buildRig" class="button primary">Build draft rig</button></div>
+          </div>
           <div id="rigSummary" class="rig-summary" hidden></div>
           <button id="saveRig" class="button primary full-width" disabled>Save rig revision</button>
           <p id="rigState" class="field-help">Build a draft to test its skin before saving a revision.</p>
@@ -115,6 +124,7 @@
     <div class="dialog-heading"><div><span class="eyebrow">BRING IN A NEW CHARACTER</span><h2 id="importTitle">Import a bear</h2></div><button id="closeImport" class="icon-button" aria-label="Close import">×</button></div>
     <p class="muted">Copy a finished scan into the studio. The scanner and its originals stay untouched.</p>
     <div class="import-local"><div><b>Have a model or bear pack?</b><small>GLB up to 64 MB, or one bear's pack ZIP up to 128 MB. Pack imports retain source checks and landmarks.</small></div><label class="button">Choose file<input id="localFile" type="file" accept=".glb,.zip,model/gltf-binary,application/zip" hidden></label></div>
+    <div class="import-local"><div><b>Try scanner rig fitting</b><small>Synthetic teddy with complete landmarks and diagnostic colours. A workflow example, not a real scan.</small></div><button id="importRigfitExample" class="button">Use example</button></div>
     <div class="section-heading compact"><h3>Scanner workshop</h3><button id="refreshScans" class="text-button">Refresh ↻</button></div>
     <div id="scannerStatus" class="muted">Checking connection…</div><div id="scanList" class="scan-list"></div>
   </dialog>
