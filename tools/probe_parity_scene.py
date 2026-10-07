@@ -4,7 +4,7 @@ import json,sys,unreal as u
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'tools'))
 from encounter_authoring import existing,components
-OUT=Path(json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 L=u.get_editor_subsystem(u.LevelEditorSubsystem);A=u.get_editor_subsystem(u.EditorActorSubsystem)
 assert L.load_level('/Game/Maps/TeddyEncounter')
 r={'actors':[],'blueprints':{},'material_property':{},'asset_writes':False}

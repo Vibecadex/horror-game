@@ -28,6 +28,6 @@ def main():
     previous=json.loads((ROOT/'evidence/parity/20261005T070301Z/final-active-assets.json').read_text())
     drift=[r['path'] for r in rows if r['path'] in previous and r['sha256']!=previous[r['path']]]
     result={'out':str(out),'passed':True,'archive':str(archive),'files':rows,'references':refs,'changes_since_last_handoff':drift,'method':'Exact byte copies and hashes; no semantic asset parsing.'}
-    (out/'baseline.json').write_text(json.dumps(result,indent=2));(BASE/'current-run.json').write_text(json.dumps({'out':str(out)},indent=2))
+    (out/'baseline.json').write_text(json.dumps(result,indent=2));(BASE/'current-run.json').write_text(json.dumps({'out':out.relative_to(ROOT).as_posix()},indent=2))
     print(json.dumps({'out':str(out),'files':len(rows),'references':refs,'changes_since_last_handoff':drift},indent=2))
 if __name__=='__main__':main()

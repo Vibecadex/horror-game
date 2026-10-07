@@ -4,7 +4,7 @@ from pathlib import Path
 import unreal as u
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from encounter_authoring import NS,A,L,own,existing,save,compile
-OUT=Path(json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 SOURCE=ROOT/'Assets/Adapted/Parity/DefeatGrounded/Teddy_DefeatGrounded.fbx'
 DEST=NS+'/Parity/Animation/A_Teddy_DefeatGrounded';OLD=NS+'/Teddy/Defeat/A_Teddy_Defeat'
 R={'passed':False,'source':str(SOURCE),'destination':DEST,'bindings':[]}

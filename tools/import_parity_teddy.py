@@ -5,7 +5,7 @@ import unreal as u
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'tools'))
 from encounter_authoring import A,L,M,NS,asset,existing,own,save,components,compile
 from apply_parity_look import node,rgb,scalar,bind
-OUT=Path(json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'])
+OUT=ROOT/json.loads((ROOT/'evidence/parity/current-run.json').read_text())['out'];assert OUT.is_dir(),f'Run directory missing: {OUT}'
 R={'passed':False,'source_mesh_preserved':True,'runtime_animations_preserved':True}
 def material(name,color,rough):
     m=asset('Parity/Materials/'+name,u.Material,u.MaterialFactoryNew());M.delete_all_material_expressions(m)
