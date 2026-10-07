@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "catalogue_records": 2,
+  "record_hashes": {
+    "bear_6a63027e60ad4c87": "93870d0f554d537d856853e3bcbf38b1b02bf371270b8582cc9e833ff231c442",
+    "bear_7ee1160b65c449be": "30b7fd86cae4fba3bd8791a42f335e9c44315f794421ea62bb969ee66ba8dbf8"
+  },
+  "unchanged_after_restart": true
+}

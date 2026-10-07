@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "importer": "C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\tools\\vendor\\bear_scanner_importer.py",
+  "importer_sha256": "1ff06eac1b60fbd5c144ca2c6416d80dd87baae4645033b5fd312ecea8d447d3",
+  "destination": "/Game/ScannedBears/TeamPackSample",
+  "source": "C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\Assets\\ThirdParty\\BearScannerPackSample",
+  "bears": [
+    {
+      "bear": "Real_bear_example_scan",
+      "result": "up to date",
+      "mesh": "/Game/ScannedBears/TeamPackSample/Real_bear_example_scan_exampl/SM_Bear_Real_bear_example_scan",
+      "nanite_enabled": false,
+      "lod_triangles": [
+        8000,
+        2500,
+        800
+      ]
+    }
+  ]
+}

@@ -1,5 +1,13 @@
 # Teddy Encounter working status
 
+## Remote team pack integration — 7 October 2026
+
+All remote branch tips in horror-game and bear-scanner are included in the current working histories. Bear Studio now consumes the team's bear-pack v1 API and single-bear ZIPs with file/hash checks, complete source revision history, version ordering and visible landmark/capture warnings. The API-5 Unreal importer is pinned from scanner `8b396ab`, retaining the local UE reimport fix. Native readback exposed an opaque-ID normalization bug; the game copy now preserves those IDs and refuses foreign ownership/package collisions.
+
+Verification: 28 Studio backend checks, 3 importer identity/ownership checks, 11 handoff checks, 24 scanner pack checks and 24 browser rig checks pass. A fresh Unreal reopen verifies 16 saved static-prop checks and three LOD captures for the team sample. The first identity audit failed and is retained; the corrected audit passes. Live scanner import and offline ZIP import preserve the existing catalogue. [Current evidence](evidence/team-integration/20261007T111927Z/QA_REVIEW.md).
+
+The team sample remains a static review prop with a support box and incomplete landmarks. No chamber or gameplay asset was changed. Rigfit's `xatlas` dependency and the team's uncommitted runtime scan/test inputs remain prerequisites for the separate 21-bone skeletal review. [Continuation and commands](study/REMOTE_TEAM_CONTINUATION.md). Exact chamber parity and character acceptance remain open.
+
 ## Bear Studio authoring expansion — 6 October 2026
 
 The current fork task expands the bear interface. Run [BEAR_STUDIO.cmd](BEAR_STUDIO.cmd) to open the local catalogue and character workshop at `http://127.0.0.1:8472/`. [Studio guide](study/BEAR_STUDIO.md) starts with prerequisites and describes the complete workflow. The existing chamber and scanner originals are preserved.

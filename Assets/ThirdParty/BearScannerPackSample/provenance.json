@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/Vibecadex/bear-scanner",
+  "commit": "8b396abe2789964a6c930a67e16257bf58539b22",
+  "source_directory": "web/examples/real-bear",
+  "description": "Team bundled prebuilt scan; not reconstructed or approved here. Incomplete landmarks and support geometry retained.",
+  "files": {
+    "collider.json": "3cf079fa7d3659a9b9993e510626f7438f8fb2f7b313c68410e29c61f510ba1d",
+    "landmarks.json": "52d63d10cf7875ae2400184aebffa030e5cd3b46c952bc0123c5e9fdf1b2a8e4",
+    "manifest.json": "ce4c01711dacd66ada72589c9e766db94be7ee80b4019d29827a33b18e8de51e",
+    "model.glb": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+    "report.json": "a4b8c711b81f525cfbeecce1840a95fdd7fea00dea75bcb678c7bce5ab4dffe1",
+    "thumb.webp": "5339aafeb1716beb8cdcbb397ee04154bf74efd5aa6aade6a6d5a7b0d34b433f"
+  }
+}

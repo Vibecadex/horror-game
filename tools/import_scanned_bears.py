@@ -32,7 +32,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = Path(os.environ["TEDDY_TEST_DIR"]) if os.environ.get("TEDDY_TEST_DIR") else None
-IMPORTER_API = 3  # oldest bear-scanner importer this wrapper accepts
+IMPORTER_API = 5  # bear-pack API, integrity checks and version-aware updates
 SETTINGS = {"bear_source": "BEAR_SOURCE", "bear_scanner_url": "BEAR_SCANNER", "bear_cert": "BEAR_CERT"}
 receipt = {"passed": False}
 

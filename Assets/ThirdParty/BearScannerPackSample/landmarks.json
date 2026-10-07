@@ -1,0 +1,63 @@
+{
+  "method": "depth-reach-v2",
+  "units": "meters",
+  "points": {
+    "pelvis": [
+      -0.0136,
+      0.0179,
+      -0.0019
+    ],
+    "shoulder_L": [
+      -0.001,
+      0.0436,
+      0.0
+    ],
+    "elbow_L": [
+      -0.0029,
+      0.0732,
+      0.0024
+    ],
+    "hand_L": [
+      0.0068,
+      0.097,
+      0.0097
+    ],
+    "hip_L": [
+      0.033,
+      0.0145,
+      -0.001
+    ],
+    "knee_L": [
+      0.0378,
+      0.0099,
+      -0.0075
+    ],
+    "foot_L": [
+      0.0388,
+      0.0029,
+      -0.0145
+    ]
+  },
+  "flatSurface": 0.572,
+  "limbs": {
+    "arms": 1,
+    "legs": 1
+  },
+  "missing": [
+    "head",
+    "headTop",
+    "neck",
+    "chest",
+    "shoulder_R",
+    "elbow_R",
+    "hand_R",
+    "hip_R",
+    "knee_R",
+    "foot_R"
+  ],
+  "complete": false,
+  "problems": [
+    "no head found",
+    "something flat (a box or stand?) is part of the bear"
+  ]
+}

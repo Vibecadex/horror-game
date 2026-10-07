@@ -24,12 +24,17 @@ from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
+try:
+    from . import bear_pack
+except ImportError:
+    import bear_pack
+
 ROOT = Path(__file__).resolve().parents[2]
 WEB = Path(__file__).resolve().parent / "web"
 MAX_GLB = 64 * 1024 * 1024
 MAX_JSON = 512 * 1024
 MAX_RIG_JSON = 90 * 1024 * 1024
-SOURCE_FILES = {"model.glb", "report.json", "thumb.webp", "collider.json", "cameras.json", "manifest.json"}
+SOURCE_FILES = {"model.glb", "report.json", "thumb.webp", "collider.json", "cameras.json", "manifest.json", "landmarks.json", "pack-manifest.json"}
 RIG_FILES = {"model.glb", "recipe.json", "validation.json", "manifest.json"}
 SCANNER_FILES = SOURCE_FILES - {"manifest.json"}
 LIBRARY_FILES = {
@@ -365,6 +370,10 @@ class Scanner:
                 return data
         except APIError:
             raise
+        except urllib.error.HTTPError as error:
+            code = error.code
+            error.close()
+            raise APIError(404 if code == 404 else 502, f"Scanner answered HTTP {code}") from error
         except (urllib.error.URLError, TimeoutError, OSError, ValueError) as error:
             raise APIError(502, f"Scanner unavailable: {error}") from error
 
@@ -380,6 +389,28 @@ class Scanner:
     def source(self, scan_id: str) -> tuple[dict, dict[str, bytes]]:
         if not isinstance(scan_id, str) or not SCAN_RE.fullmatch(scan_id):
             raise APIError(400, "Invalid scan ID")
+        try:
+            raw = self.get(f"/api/v1/bears/{scan_id}")
+        except APIError as error:
+            if error.status != 404:
+                raise
+            return self.legacy_source(scan_id)
+        try:
+            doc = bear_pack.document(raw)
+            if doc['id'] != scan_id:
+                raise ValueError("Scanner returned a different bear identity")
+            def read(name, length):
+                path = f"/api/v1/bears/{scan_id}/files/{urllib.parse.quote(name)}?r={doc['revision']}"
+                return self.get(path, min(bear_pack.MAX_PACK, length + 1))
+            files = bear_pack.verified(doc, read)
+            after = bear_pack.document(self.get(f"/api/v1/bears/{scan_id}"))
+            if any(after.get(key) != doc.get(key) for key in ('id', 'revision', 'version', 'files')):
+                raise APIError(409, "Bear pack changed during import; retry after it finishes")
+        except ValueError as error:
+            raise APIError(502, str(error)) from error
+        return {"id": scan_id, "name": doc.get('name'), "status": "done", "pack": object_json(files['pack-manifest.json'])}, files
+
+    def legacy_source(self, scan_id: str) -> tuple[dict, dict[str, bytes]]:
         meta = object_json(self.get(f"/api/scans/{scan_id}"))
         if meta.get("id") != scan_id or meta.get("status") != "done":
             raise APIError(409, "Only a finished scan can be imported")
@@ -523,7 +554,7 @@ class Store:
             raise APIError(400, "Invalid source file bundle")
         stats, _ = parse_glb(files["model.glb"])
         report = object_json(files["report.json"]) if "report.json" in files else {"status": "unreviewed", "checks": []}
-        for sidecar in ("collider.json", "cameras.json"):
+        for sidecar in ("collider.json", "cameras.json", "landmarks.json", "pack-manifest.json"):
             if sidecar in files:
                 try:
                     bounded_json(json.loads(files[sidecar]), sidecar, 8 * 1024 * 1024)
@@ -538,7 +569,12 @@ class Store:
             if row:
                 bear_id = row["id"]
                 previous = db.execute("SELECT * FROM sources WHERE bear_id=? ORDER BY revision DESC LIMIT 1", (bear_id,)).fetchone()
-                if previous["sha256"] == sha:
+                old_source = json.loads(previous['source'])
+                old_pack, new_pack = old_source.get('pack'), source.get('pack')
+                if old_pack and new_pack and new_pack['version'] < old_pack['version']:
+                    raise APIError(409, "An older bear pack cannot replace the newer source in this catalogue")
+                previous_manifest = object_json((self.root / 'assets' / bear_id / 'sources' / str(previous['revision']) / 'manifest.json').read_bytes())
+                if previous["sha256"] == sha and previous_manifest.get('files') == hashes:
                     return {"bear": self.detail(bear_id, db), "imported": False}
                 source_revision, revision = previous["revision"] + 1, row["revision"] + 1
                 metadata = json.loads(row["metadata"])
@@ -583,7 +619,20 @@ class Store:
         meta, files = self.scanner.source(scan_id)
         return self.import_source(f"scanner:{self.scanner.url}#{scan_id}", meta.get("name") or "Scanned bear",
                                   {"kind": "scanner", "scanId": scan_id, "scannerUrl": self.scanner.url,
-                                   "originalFilename": "model.glb", "scannerMetadata": meta}, files)
+                                   "originalFilename": "model.glb", "scannerMetadata": meta,
+                                   **({'pack': meta['pack']} if 'pack' in meta else {})}, files)
+
+    def import_pack(self, filename: str, data: bytes) -> dict:
+        filename = text_value(filename, "filename", 240, True)
+        if any(c in filename for c in '/\\:') or not filename.lower().endswith('.zip'):
+            raise APIError(400, "Supply one bear's pack ZIP filename, without folders")
+        try:
+            doc, files = bear_pack.archive(data)
+        except ValueError as error:
+            raise APIError(400, str(error)) from error
+        return self.import_source(f"pack:{doc['id']}", doc.get('name') or 'Packed bear',
+                                  {'kind': 'bear-pack', 'scanId': doc['id'], 'originalFilename': filename,
+                                   'pack': object_json(files['pack-manifest.json'])}, files)
 
     def import_local(self, filename: str, data: bytes) -> dict:
         filename = text_value(filename, "filename", 240, True)
@@ -837,6 +886,12 @@ class Handler(BaseHTTPRequestHandler):
                 raise APIError(415, "Send raw GLB bytes")
             filename = urllib.parse.unquote(self.headers.get("X-Filename", "Imported bear.glb"))
             return self._json(store.import_local(filename, self._body(MAX_GLB)), 201)
+        if method == "POST" and path == "/api/import/pack":
+            content_type = self.headers.get('Content-Type', '').split(';', 1)[0].strip()
+            if content_type not in ('application/zip', 'application/octet-stream'):
+                raise APIError(415, 'Send a bear-pack ZIP')
+            filename = urllib.parse.unquote(self.headers.get('X-Filename', 'Bear.zip'))
+            return self._json(store.import_pack(filename, self._body(bear_pack.MAX_PACK)), 201)
         if method == "POST" and path == "/api/import/scanner":
             return self._json(store.import_scanner(self._json_body().get("scanId")), 201)
         match = re.fullmatch(r"/api/bears/(bear_[0-9a-f]{16})(?:/(rigs|tests))?", path)

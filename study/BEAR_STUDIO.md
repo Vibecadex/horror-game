@@ -23,7 +23,7 @@ The catalogue, immutable working copies, logs and local process receipt live in 
 
 ## Authoring workflow
 
-1. **Catalogue.** Import a finished scan from the configured scanner or a self-contained `.glb`. Name it, tag it, assign a role and retain review notes. The bundled example is explicitly a prebuilt sample.
+1. **Catalogue.** Import a finished scan from the configured scanner, a self-contained `.glb`, or one bear's pack `.zip`. Versioned scanner imports verify the declared file sizes and SHA-256 hashes and retain quality reports, landmarks, capture pose and the original pack manifest. Name the bear, tag it, assign a role and retain review notes. The bundled example is explicitly a prebuilt sample.
 2. **Inspect.** Review texture, clay and wireframe views, source LODs, dimensions, quality warnings and provenance. Source reconstruction quality does not become acceptable merely because the file loads.
 3. **Rig.** Pick a seated or upright template, adjust normalized landmarks and symmetry, and preview an optional crop on a copy. Bind a draft skin, inspect weights, then save a real rig revision. Saving landmark settings alone does not create a rig.
 4. **Test.** Inspect poses and clips with playback controls, run numerical and export/reload checks, and record findings against the saved rig revision. Changing the source or recipe requires fresh checks. Automated deformation checks cannot establish artistic quality or grounded locomotion.
@@ -47,7 +47,11 @@ This interface expands the fork's bear workflow; it does not replace the saved c
 
 The scanner is accessed read-only. Its unfinished/failed jobs remain visible and cannot be imported. The scanner's current OpenMVS Application Control blocker is independent of using finished exports. No Windows protection, certificate trust or firewall rule is changed.
 
-Each source and rig is copied and hashed. A changed scan creates a source revision and retains older rig/test history as stale. Metadata saves use revision conflict detection. The local API refuses arbitrary filesystem paths and external GLB dependencies.
+Each source and rig is copied and hashed. A changed scan, report or landmark file creates a source revision and retains older rig/test history as stale, even if the model bytes are unchanged. An older pack version cannot replace a newer one. Metadata saves use revision conflict detection. The local API refuses arbitrary filesystem paths and external GLB dependencies.
+
+Use the scanner's per-bear **Pack** download for offline Studio imports. A ZIP can contain one pack at its root or inside one folder; combined multi-bear ZIPs remain supported by the Unreal importer, but not by Studio's single-bear picker. Live scanner identities remain scoped to the scanner address; offline packs use a separate local pack collection keyed by pack ID. Legacy scanners remain readable when the versioned endpoint is absent. An integrity error from a versioned endpoint never falls back to unchecked legacy files.
+
+The team example now appears as **Real bear (example scan)**. Its incomplete landmarks and fused support box are retained and shown as warnings. [Remote team continuation](REMOTE_TEAM_CONTINUATION.md) records the integrated work and the remaining rig-test prerequisites.
 
 ## Team continuation
 

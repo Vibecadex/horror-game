@@ -1,12 +1,15 @@
 {
   "repository": "https://github.com/Vibecadex/bear-scanner",
-  "commit": "19c2ffb4494ec62928665c397697212658b2a06e",
+  "commit": "8b396abe2789964a6c930a67e16257bf58539b22",
   "path": "unreal/import_bears.py",
-  "upstream_sha256_crlf": "025642e73ece37695c6b7ae74d8d9b4f285a69540049d4167b1f5762ec19f395",
-  "upstream_sha256_lf": "d91482f1c745bff14601178ba175162081712d1a778ea205cc469d4e5db2f135",
+  "importer_api": 5,
+  "upstream_sha256_lf": "435bdd1de62b4e6dc435470da63c0c8b15a426c371bf31b292cb3669e571263b",
+  "adapted_sha256_lf": "1ff06eac1b60fbd5c144ca2c6416d80dd87baae4645033b5fd312ecea8d447d3",
   "changes": [
     "Normalize line endings to LF",
-    "Save staged material and texture packages before UE 5.8 RenameDirectory; save before touching the previous material folder"
+    "Retain the verified UE 5.8 staged material save before RenameDirectory",
+    "Keep opaque bear-pack IDs unchanged; sanitize only package and temporary filenames",
+    "Refuse meshes with a different owner or colliding package identity"
   ],
-  "purpose": "Pinned editor importer for this game fork; upstream application checkout remains unchanged"
+  "purpose": "Pinned team bear-pack importer; external scanner checkout unchanged"
 }

@@ -301,12 +301,18 @@ function renderSourceReport() {
   const warnings = [];
   if (bear.source?.kind === 'bundled-sample') warnings.push('Prebuilt sample, not reconstructed here. This scan includes its supporting box; crop or clean that geometry before fitting the bear.');
   if (report.checks?.some((check) => check.status === 'warn' || check.status === 'fail')) warnings.push('Source scan issues remain visible below. A rig does not repair missing surface detail.');
+  const pack = bear.source?.pack;
+  if (pack?.landmarks && !pack.landmarks.complete) {
+    const problems = Array.isArray(pack.landmarks.problems) ? pack.landmarks.problems.join('; ') : '';
+    warnings.push(`Scanner landmarks are incomplete (${Array.isArray(pack.landmarks.missing) ? pack.landmarks.missing.length : 0} missing). ${problems || 'Inspect the source before rigging.'}`);
+  }
   $('sourceWarning').textContent = warnings.join(' '); $('sourceWarning').hidden = !warnings.length;
   renderChecks($('sourceChecks'), report);
-  const size = report.size_m || null;
+  const size = pack?.size || report.size_m || null;
   $('sourceDimensions').textContent = size ? `${(size.x * 100).toFixed(1)} × ${(size.y * 100).toFixed(1)} × ${(size.z * 100).toFixed(1)} cm` : 'See mesh measurements';
   const source = bear.source || {};
   const entries = [['Origin', pretty(source.kind)], ['Scan ID', source.scanId || 'Local GLB'], ['Revision', bear.sourceRevision], ['SHA-256', bear.sourceSha256], ['Imported', date(bear.created)], ['Filename', source.originalFilename || 'model.glb']];
+  if (pack) entries.push(['Pack version', pack.version], ['Pack revision', pack.revision], ['Capture pose', pretty(pack.capture?.pose || 'unspecified')], ['Landmarks', pack.landmarks ? (pack.landmarks.complete ? 'Complete — review required' : 'Incomplete — inspect before rigging') : 'Not supplied']);
   if (source.provenance && Object.keys(source.provenance).length) entries.push(['Provenance', JSON.stringify(source.provenance)]);
   const dl = $('sourceProvenance'); dl.replaceChildren();
   for (const [label, value] of entries) { const dt = document.createElement('dt'); dt.textContent = label; const dd = document.createElement('dd'); dd.textContent = String(value ?? '—'); dl.append(dt, dd); }
@@ -798,7 +804,7 @@ async function refreshScans() {
   $('scannerStatus').textContent = 'Checking the scanner workshop…'; $('scanList').replaceChildren();
   try {
     const result = await api('/api/scanner/scans');
-    $('scannerStatus').textContent = result.available ? 'Finished scans can be copied into your catalogue.' : `Scanner unavailable. Local GLB import still works. ${result.error || ''}`;
+    $('scannerStatus').textContent = result.available ? 'Finished scans can be copied into your catalogue with their pack checks and landmarks.' : `Scanner unavailable. Local GLB and bear-pack ZIP import still work. ${result.error || ''}`;
     for (const scan of result.scans || []) {
       const row = document.createElement('div'); row.className = 'scan-card';
       const text = document.createElement('div'); const title = document.createElement('b'); title.textContent = scan.name;
@@ -820,11 +826,13 @@ async function importScan(scanId, button) {
 }
 async function importLocal(file) {
   if (!file) return;
-  if (file.size > 64 * 1024 * 1024) { toast('Choose a GLB smaller than 64 MB.', true); return; }
+  const isPack = file.name.toLowerCase().endsWith('.zip');
+  const limit = isPack ? 128 : 64;
+  if (file.size > limit * 1024 * 1024) { toast(`Choose a ${isPack ? 'bear-pack ZIP' : 'GLB'} smaller than ${limit} MB.`, true); return; }
   await action(`Importing ${file.name}…`, async () => {
-    const result = await api('/api/import/local', { method: 'POST', headers: { 'Content-Type': 'model/gltf-binary', 'X-Filename': encodeURIComponent(file.name) }, body: await file.arrayBuffer() });
+    const result = await api(isPack ? '/api/import/pack' : '/api/import/local', { method: 'POST', headers: { 'Content-Type': isPack ? 'application/zip' : 'model/gltf-binary', 'X-Filename': encodeURIComponent(file.name) }, body: await file.arrayBuffer() });
     $('importDialog').close(); state.metadataDirty = false; state.recipeDirty = false; state.busy = false;
-    await refreshCatalogue(result.bear.id); toast(result.imported ? 'Local GLB imported. The original file is unchanged.' : 'This exact GLB is already in the catalogue.');
+    await refreshCatalogue(result.bear.id); toast(result.imported ? (isPack ? 'Bear pack verified and imported with its source warnings and landmarks.' : 'Local GLB imported. The original file is unchanged.') : 'This exact source is already in the catalogue.');
   });
   $('localFile').value = '';
 }

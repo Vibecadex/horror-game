@@ -114,7 +114,7 @@
   <dialog id="importDialog" aria-labelledby="importTitle">
     <div class="dialog-heading"><div><span class="eyebrow">BRING IN A NEW CHARACTER</span><h2 id="importTitle">Import a bear</h2></div><button id="closeImport" class="icon-button" aria-label="Close import">×</button></div>
     <p class="muted">Copy a finished scan into the studio. The scanner and its originals stay untouched.</p>
-    <div class="import-local"><div><b>Have a GLB already?</b><small>A self-contained model, up to 64 MB.</small></div><label class="button">Choose file<input id="localFile" type="file" accept=".glb,model/gltf-binary" hidden></label></div>
+    <div class="import-local"><div><b>Have a model or bear pack?</b><small>GLB up to 64 MB, or one bear's pack ZIP up to 128 MB. Pack imports retain source checks and landmarks.</small></div><label class="button">Choose file<input id="localFile" type="file" accept=".glb,.zip,model/gltf-binary,application/zip" hidden></label></div>
     <div class="section-heading compact"><h3>Scanner workshop</h3><button id="refreshScans" class="text-button">Refresh ↻</button></div>
     <div id="scannerStatus" class="muted">Checking connection…</div><div id="scanList" class="scan-list"></div>
   </dialog>

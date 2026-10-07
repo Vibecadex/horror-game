@@ -1,0 +1,35 @@
+test_archive_traversal_duplicate_paths_and_oversize_are_refused (test_bear_pack.PackTests.test_archive_traversal_duplicate_paths_and_oversize_are_refused) ... C:\Python314\Lib\zipfile\__init__.py:1730: UserWarning: Duplicate name: 'Bear_team-bear/model.glb'
+  return self._open_to_write(zinfo, force_zip64=force_zip64)
+ok
+test_live_manifest_verifies_files_and_keeps_scanner_identity (test_bear_pack.PackTests.test_live_manifest_verifies_files_and_keeps_scanner_identity) ... ok
+test_live_pack_change_is_refused_without_legacy_fallback (test_bear_pack.PackTests.test_live_pack_change_is_refused_without_legacy_fallback) ... ok
+test_offline_pack_keeps_landmarks_hashes_and_survives_restart (test_bear_pack.PackTests.test_offline_pack_keeps_landmarks_hashes_and_survives_restart) ... ok
+test_reports_only_update_preserves_old_source_and_invalidates_old_rig (test_bear_pack.PackTests.test_reports_only_update_preserves_old_source_and_invalidates_old_rig) ... ok
+test_tampered_sidecar_and_model_are_refused_before_catalogue_write (test_bear_pack.PackTests.test_tampered_sidecar_and_model_are_refused_before_catalogue_write) ... ok
+test_unknown_format_wrong_axes_and_unsafe_model_name_are_refused (test_bear_pack.PackTests.test_unknown_format_wrong_axes_and_unsafe_model_name_are_refused) ... ok
+test_animation_library_routes_are_fixed (test_server.HTTPTests.test_animation_library_routes_are_fixed) ... ok
+test_encoded_browser_filename_roundtrips_and_encoded_paths_are_rejected (test_server.HTTPTests.test_encoded_browser_filename_roundtrips_and_encoded_paths_are_rejected) ... ok
+test_health_local_upload_metadata_history_download_and_offline (test_server.HTTPTests.test_health_local_upload_metadata_history_download_and_offline) ... ok
+test_unknown_host_and_cross_site_mutation_are_rejected (test_server.HTTPTests.test_unknown_host_and_cross_site_mutation_are_rejected) ... ok
+test_upload_limit_wrong_type_and_path_traversal_fail (test_server.HTTPTests.test_upload_limit_wrong_type_and_path_traversal_fail) ... ok
+test_failed_or_rebuilding_scans_cannot_import (test_server.ScannerTests.test_failed_or_rebuilding_scans_cannot_import) ... ok
+test_rebuild_race_does_not_commit_mixed_provenance (test_server.ScannerTests.test_rebuild_race_does_not_commit_mixed_provenance) ... ok
+test_scanner_copies_artifacts_and_preserves_report (test_server.ScannerTests.test_scanner_copies_artifacts_and_preserves_report) ... ok
+test_scanner_urls_cannot_escape_selected_origin_or_scan (test_server.ScannerTests.test_scanner_urls_cannot_escape_selected_origin_or_scan) ... ok
+test_animated_rig_artifact_retains_real_channels_and_duration (test_server.StoreTests.test_animated_rig_artifact_retains_real_channels_and_duration) ... ok
+test_bundled_sample_seed_is_labelled_and_repeat_safe (test_server.StoreTests.test_bundled_sample_seed_is_labelled_and_repeat_safe) ... ok
+test_changed_source_keeps_old_rigs_and_tests_historical (test_server.StoreTests.test_changed_source_keeps_old_rigs_and_tests_historical) ... ok
+test_concurrent_saves_have_one_winner (test_server.StoreTests.test_concurrent_saves_have_one_winner) ... ok
+test_draft_does_not_claim_a_rig (test_server.StoreTests.test_draft_does_not_claim_a_rig) ... ok
+test_embedded_recipe_identity_cannot_contradict_selected_source (test_server.StoreTests.test_embedded_recipe_identity_cannot_contradict_selected_source) ... ok
+test_import_is_immutable_idempotent_and_survives_restart (test_server.StoreTests.test_import_is_immutable_idempotent_and_survives_restart) ... ok
+test_invalid_glb_external_resources_and_filenames_rejected (test_server.StoreTests.test_invalid_glb_external_resources_and_filenames_rejected) ... ok
+test_optimistic_revision_conflict_preserves_edits (test_server.StoreTests.test_optimistic_revision_conflict_preserves_edits) ... ok
+test_paths_and_unknown_artifacts_are_not_served (test_server.StoreTests.test_paths_and_unknown_artifacts_are_not_served) ... ok
+test_rig_without_weights_or_wrong_source_is_rejected (test_server.StoreTests.test_rig_without_weights_or_wrong_source_is_rejected) ... ok
+test_saved_skin_is_structurally_verified_with_separate_source (test_server.StoreTests.test_saved_skin_is_structurally_verified_with_separate_source) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 5.554s
+
+OK

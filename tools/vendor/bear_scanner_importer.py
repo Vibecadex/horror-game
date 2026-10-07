@@ -6,14 +6,21 @@ or headless, as a commandlet:
     UnrealEditor-Cmd.exe <project>.uproject -run=pythonscript -script="<this file>" -nullrhi -unattended
 (the Teddy project wraps this as tools/import_scanned_bears.py).
 
+This is the reference Unreal client of the bear pack contract (docs/BEAR_PACK.md);
+game teams can use it as is or adapt it in their own project.
+
 Where the bears come from (first that applies):
-  * SOURCE: a .glb file, or a folder searched for them (a scanner's data/scans folder
-    works too: only each finished scan's out/model.glb is used)
-  * otherwise every finished scan on the bear scanner (SCANNER, pinned to its certificate)
+  * SOURCE: a bear pack (.zip, bears.zip from the workshop's "Download all bears",
+    or an unpacked pack folder with manifest.json), a .glb, or a folder of any of
+    these (a scanner's data/scans folder works too: only finished scans' out/model.glb)
+  * otherwise every finished bear on the bear scanner's /api/v1/bears (SCANNER, pinned
+    to its certificate); each model.glb is checked against its manifest's hash
 
 Each bear becomes <DEST>/<Name>_<id>/SM_Bear_<Name>: one Static Mesh with the scan's
 three detail levels as LOD0-2, a convex collision hull, and the scan's material and
-texture. Re-runs import only new or rebuilt bears. A rebuilt bear is copied into its
+texture. Re-runs import only new or rebuilt bears: a pack with the same revision is up to
+date, and one older than what's imported (lower version) is skipped, as are older
+duplicates of a bear found twice in the sources. A rebuilt bear is copied into its
 existing mesh asset, so the asset path never changes and placed copies update without
 redirectors. A bear is only marked imported after its LODs, material and collision
 have been checked, so a failed import is retried next time.
@@ -27,6 +34,7 @@ under the feet. The bear's front (glTF +Z) should face -X; confirm on first impo
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import re
@@ -34,7 +42,9 @@ import shutil
 import ssl
 import struct
 import tempfile
+import urllib.error
 import urllib.request
+import zipfile
 from pathlib import Path
 
 import unreal
@@ -53,11 +63,12 @@ CERT = os.environ.get("BEAR_CERT", CERT)
 DEST = os.environ.get("BEAR_DEST", DEST).rstrip("/")
 FORCE = FORCE or os.environ.get("BEAR_FORCE") == "1"
 
-IMPORTER_API = 3  # wrappers (the Teddy project's tools/import_scanned_bears.py) check this
+IMPORTER_API = 5  # wrappers (the Teddy project's tools/import_scanned_bears.py) check this
 OWNER_TAG, OWNER = "BearScanner.Owner", "bear-scanner"
-VERSION_TAG, SCAN_TAG = "BearScanVersion", "BearScanId"
+VERSION_TAG, SCAN_TAG, REVISION_TAG, MODEL_TAG = "BearScanVersion", "BearScanId", "BearPackRevision", "BearModelSha256"
 REPO = Path(globals().get("__file__") or ".").resolve().parent.parent
 TMP = Path(tempfile.gettempdir()) / "bear-scanner-ue"
+PACK_FORMAT = 1  # newest bear pack format (docs/BEAR_PACK.md) this importer reads
 MAX_DOWNLOAD = 200 * 1024 * 1024
 LOD_COUNT = 3
 
@@ -68,6 +79,13 @@ meshes = unreal.get_editor_subsystem(unreal.StaticMeshEditorSubsystem)
 def safe(name: str, limit: int = 40) -> str:
     """Unreal asset names: letters, digits and underscores, kept short for Windows paths."""
     return (re.sub(r"_+", "_", re.sub(r"[^A-Za-z0-9]", "_", name)).strip("_") or "Bear")[:limit]
+
+
+def source_identity(value) -> str:
+    """Pack IDs are opaque metadata, not Unreal package names."""
+    if not isinstance(value, str) or not 1 <= len(value) <= 128 or any(ord(c) < 32 for c in value):
+        raise ValueError("invalid bear-pack identity")
+    return value
 
 
 def package(asset) -> str:
@@ -96,15 +114,107 @@ def scan_dir_of(glb: Path, stop: Path):
     return None
 
 
+PLAIN_NAME = re.compile(r"[A-Za-z0-9_-][A-Za-z0-9._-]*")
+
+
+def is_pack(folder: Path) -> bool:
+    """Only a bear-pack manifest makes a folder a pack; any other manifest.json
+    (a web app's, say) is ignored and the folder's .glb files import as usual."""
+    try:
+        text = (folder / "manifest.json").read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return False
+    try:
+        doc = json.loads(text)
+        return isinstance(doc, dict) and doc.get("format") == "bear-pack"
+    except ValueError:
+        return '"bear-pack"' in text  # a damaged pack manifest: report it, don't import around it
+
+
+def pack_bear(folder: Path) -> dict:
+    """A bear pack folder (manifest.json + files, docs/BEAR_PACK.md), checked: a
+    known format version, a model file that is a plain name inside the folder,
+    and a model.glb that matches the manifest's hash. Never raises: a bad pack
+    becomes a bear with an error, so the others still import."""
+    try:
+        m = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
+        if not isinstance(m, dict) or m.get("format") != "bear-pack":
+            raise ValueError("manifest.json isn't a bear pack manifest")
+        fv = m.get("formatVersion")
+        if not isinstance(fv, int) or fv > PACK_FORMAT:
+            raise ValueError(f"pack format {fv!r} is newer than this importer; update bear-scanner")
+        name_in_pack = m["model"]["file"]
+        if not isinstance(name_in_pack, str) or not PLAIN_NAME.fullmatch(name_in_pack):
+            raise ValueError(f"model.file {name_in_pack!r} isn't a plain file name inside the pack")
+        model = folder / name_in_pack
+        if model.resolve().parent != folder.resolve():
+            raise ValueError(f"model.file {name_in_pack!r} points outside the pack")
+        want = m["files"][name_in_pack]["sha256"]
+        if hashlib.sha256(model.read_bytes()).hexdigest() != want:
+            raise ValueError(f"{name_in_pack} doesn't match its manifest (incomplete copy?)")
+        version = int(m["version"])
+        sid = source_identity(m["id"])
+        name = str(m.get("name") or "Bear")
+        revision = str(m.get("revision") or want[:32])
+    except Exception as e:  # noqa: BLE001 - any malformed pack: report it, carry on
+        return {"id": safe(folder.name, 24), "name": folder.name, "key": safe(folder.name), "version": "",
+                "error": f"{folder}: {type(e).__name__}: {e}"}
+    return {"id": sid, "name": name, "key": f"{safe(name)}_{safe(sid[:6])}", "version": str(version),
+            "revision": revision, "modelSha": want, "glb": model}
+
+
+def unzip(archive: Path) -> Path:
+    """Unpack a pack zip (one bear, or bears.zip) into TMP, refusing paths that
+    would land outside it and archives that unpack to something huge."""
+    dest = TMP / "unzipped" / f"{safe(archive.stem)}_{int(archive.stat().st_mtime)}"
+    shutil.rmtree(dest, ignore_errors=True)
+    with zipfile.ZipFile(archive) as zf:
+        members = zf.infolist()
+        if sum(m.file_size for m in members) > 20 * MAX_DOWNLOAD:
+            raise RuntimeError(f"{archive.name} unpacks to more than {20 * MAX_DOWNLOAD // 2**30} GB")
+        for m in members:
+            parts = Path(m.filename.replace("\\", "/")).parts
+            if Path(m.filename).is_absolute() or ".." in parts or ":" in m.filename:
+                raise RuntimeError(f"{archive.name}: unsafe path {m.filename!r}")
+        zf.extractall(dest)
+    return dest
+
+
+def _hidden(path: Path, stop: Path) -> bool:
+    return any(part.startswith(".") for part in path.relative_to(stop).parts)
+
+
 def local_bears(source: Path) -> list[dict]:
     if not source.exists():
         raise RuntimeError(f"SOURCE {source} doesn't exist")
+    bears = []
+    roots = []  # (folder to search, folder it's relative to)
+    if source.is_file() and source.suffix.lower() == ".zip":
+        roots.append(unzip(source))
+        source = None
+    elif source.is_dir():
+        roots.append(source)
+        for archive in sorted(source.rglob("*.zip")):
+            if _hidden(archive, source):
+                continue
+            try:
+                roots.append(unzip(archive))
+            except Exception as e:  # noqa: BLE001 - a bad zip fails alone
+                bears.append({"id": safe(archive.stem, 24), "name": archive.stem, "key": safe(archive.stem),
+                              "version": "", "error": f"{archive}: {type(e).__name__}: {e}"})
+    packs = sorted({p.parent for root in roots for p in root.rglob("manifest.json")
+                    if not _hidden(p, root) and is_pack(p.parent)})
+    bears += [pack_bear(d) for d in packs]
+
+    if source is None:
+        return bears
     stop = source.parent if source.is_file() else source
     files = [source] if source.is_file() else sorted(source.rglob("*.glb"))
-    bears = []
     for glb in files:
-        if any(part.startswith(".") for part in glb.relative_to(stop).parts):
+        if _hidden(glb, stop):
             continue
+        if any(d == glb.parent or d in glb.parents for d in packs):
+            continue  # already taken as a pack
         scan = scan_dir_of(glb, stop)
         if scan:
             # Inside a scanner scan only the published model counts: not work files,
@@ -118,7 +228,7 @@ def local_bears(source: Path) -> list[dict]:
             name = meta.get("name") or scan.name
         else:
             # A downloaded bear is named by its file (Rupert.glb); a folder holding a
-            # model.glb (like the repo's example) by the folder.
+            # model.glb by the folder.
             name = glb.parent.name if glb.stem == "model" else glb.stem
             sid = safe(name, 24)
         bears.append({"id": sid, "name": name, "key": f"{safe(name)}_{sid[:6]}" if scan else safe(name),
@@ -148,26 +258,73 @@ def server_bears() -> list[dict]:
         return data
 
     try:
-        scans = json.loads(get("/api/scans"))
-    except OSError as e:
+        index = json.loads(get("/api/v1/bears"))
+        if not isinstance(index, dict) or index.get("format") != "bear-pack-index":
+            raise ValueError("not a bear pack index")
+        fv = index.get("formatVersion")
+        if not isinstance(fv, int) or fv > PACK_FORMAT:
+            raise RuntimeError(f"{SCANNER} serves bear pack format {fv!r}; update bear-scanner")
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            raise RuntimeError(f"{SCANNER} is reachable but has no /api/v1/bears: it's running an older "
+                               "bear-scanner. Update it and restart it.") from None
+        raise RuntimeError(f"{SCANNER}/api/v1/bears answered {e.code} {e.reason}") from None
+    except (OSError, ValueError) as e:
         if "CERTIFICATE_VERIFY_FAILED" in str(e):
             raise RuntimeError(f"{SCANNER} sent a different certificate than {cert}. Point CERT "
                                "at that scanner's data/certs/cert.pem.") from None
-        raise RuntimeError(f"Can't reach the scanner at {SCANNER} ({e}). Is it running? "
-                           "Or set SOURCE to a .glb or folder.") from None
+        raise RuntimeError(f"Can't read the scanner's bear pack API at {SCANNER}/api/v1/bears ({e}). "
+                           "Is it running? Or set SOURCE to a pack, .glb or folder.") from None
+
+    def fetch(bear: dict, b: dict, dest: Path) -> Path:
+        # The manifest names the model file and its hash; a download that doesn't
+        # match is refused. Version and revision are taken from that manifest, so
+        # a rebuild between the listing and the download is recorded correctly.
+        manifest = json.loads(get(b["urls"]["manifest"]))
+        model = manifest["model"]["file"]
+        data = get(manifest["urls"]["files"][model])
+        if hashlib.sha256(data).hexdigest() != manifest["files"][model]["sha256"]:
+            raise RuntimeError(f"downloaded {model} doesn't match its manifest (rebuilt meanwhile? run again)")
+        bear.update(version=str(int(manifest["version"])), revision=str(manifest["revision"]),
+                    modelSha=manifest["files"][model]["sha256"])
+        dest.write_bytes(data)
+        return dest
 
     bears = []
-    for s in scans:
-        if s.get("status") != "done":
-            continue
-        url = s["files"]["model.glb"]
-        name = s.get("name") or "Bear"
-        sid = safe(str(s["id"]), 24)  # also keeps the download inside TMP
-        dest = TMP / f"{sid}.glb"
-        bears.append({"id": sid, "name": name, "key": f"{safe(name)}_{sid[:6]}",
-                      "version": url.rsplit("v=", 1)[-1], "download": dest,
-                      "fetch": (lambda u=url, d=dest: (d.write_bytes(get(u)), d)[1])})
+    for b in index.get("bears", []):
+        name = str(b.get("name") or "Bear")
+        sid = source_identity(b["id"])
+        bear = {"id": sid, "name": name, "key": f"{safe(name)}_{safe(sid[:6])}", "version": str(b["version"]),
+                "revision": str(b.get("revision") or ""), "modelSha": str(b.get("modelSha256") or ""),
+                "download": TMP / f"{hashlib.sha256(sid.encode()).hexdigest()}.glb"}
+        bear["fetch"] = (lambda bear=bear, b=b: fetch(bear, b, bear["download"]))
+        bears.append(bear)
     return bears
+
+
+def newest_per_id(bears: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Two sources for the same bear (an old export next to bears.zip, say): keep
+    the newest version and report the rest as skipped."""
+    keep: dict[str, dict] = {}
+    skipped = []
+    for b in bears:
+        if "error" in b:
+            continue
+        other = keep.get(b["id"])
+        if other is None or _int(b["version"]) > _int(other["version"]):
+            if other:
+                skipped.append(other)
+            keep[b["id"]] = b
+        else:
+            skipped.append(b)
+    return [b for b in bears if "error" in b] + list(keep.values()), skipped
+
+
+def _int(v) -> int:
+    try:
+        return int(v)
+    except (TypeError, ValueError):
+        return -1
 
 
 # ---- one GLB per detail level -------------------------------------------------------
@@ -396,9 +553,8 @@ def update_in_place(old, glb: Path, folder: str, bear: dict, name: str) -> str:
     # nothing references them.
     stem = f"{bear['key']}_{bear['version']}"
     src, dst = f"{scratch}/{stem}", f"{folder}/{stem}"
-    # UE 5.8 RenameDirectory requires a physical source folder. GLB materials
-    # and textures are still unsaved here. Persist them before touching the old
-    # folder so a failed save leaves the previous references available.
+    # UE 5.8 requires saved staged packages before RenameDirectory.
+    # Keep the locally verified fix while updating the upstream importer.
     if not assets.save_directory(src, only_if_is_dirty=False, recursive=True):
         raise RuntimeError(f"couldn't save staged material folder {src}")
     remove_folder(dst)
@@ -440,17 +596,36 @@ def find_existing(scan_id: str):
             continue
         a = assets.load_asset(p)
         if a is not None and assets.get_metadata_tag(a, SCAN_TAG) == scan_id:
+            if assets.get_metadata_tag(a, OWNER_TAG) != OWNER:
+                raise RuntimeError(f"Refusing to update an unowned mesh: {p}")
             return a
     return None
 
 
 def sync(bear: dict) -> dict:
+    if "error" in bear:
+        raise RuntimeError(bear["error"])
     name = safe(bear["name"])
     old = find_existing(bear["id"])
     folder = package(old).rsplit("/", 1)[0] if old else f"{DEST}/{bear['key']}"
-    if old and not FORCE and assets.get_metadata_tag(old, VERSION_TAG) == bear["version"]:
-        return {"bear": name, "result": "up to date", "mesh": package(old)}
-
+    if old is None and assets.does_directory_exist(folder):
+        for path in assets.list_assets(folder, recursive=True, include_folder=False):
+            if asset_class(path) == 'StaticMesh':
+                previous = assets.load_asset(path)
+                previous_id = assets.get_metadata_tag(previous, SCAN_TAG) if previous else ''
+                if previous_id and previous_id != bear['id']:
+                    raise RuntimeError(f"{folder} belongs to a different bear identity; refusing to overwrite it")
+    if old and not FORCE:
+        have_version = assets.get_metadata_tag(old, VERSION_TAG)
+        have_revision = assets.get_metadata_tag(old, REVISION_TAG)
+        # Same content (revision), the same model with only sidecars changed (say,
+        # landmarks added later), or, for loose .glb files, the same version.
+        if (bear.get("revision") and have_revision == bear["revision"]) or                 (bear.get("modelSha") and assets.get_metadata_tag(old, MODEL_TAG) == bear["modelSha"]) or                 (not bear.get("revision") and have_version == bear["version"]):
+            return {"bear": name, "result": "up to date", "mesh": package(old)}
+        if _int(bear["version"]) < _int(have_version):
+            return {"bear": name, "result": "skipped", "mesh": package(old),
+                    "error": f"older than the imported build (v{bear['version']} < v{have_version}); "
+                             "set FORCE to re-import it anyway"}
     glb = bear["glb"] if "glb" in bear else bear["fetch"]()
     try:
         if old:
@@ -463,7 +638,9 @@ def sync(bear: dict) -> dict:
         if "download" in bear:
             bear["download"].unlink(missing_ok=True)
     # Only now is the bear known good: mark it, so a failure above is retried next run.
-    for tag, value in ((VERSION_TAG, bear["version"]), (SCAN_TAG, bear["id"]), (OWNER_TAG, OWNER)):
+    for tag, value in ((VERSION_TAG, bear["version"]), (REVISION_TAG, bear.get("revision", "")),
+                       (MODEL_TAG, bear.get("modelSha", "")),
+                       (SCAN_TAG, bear["id"]), (OWNER_TAG, OWNER)):
         assets.set_metadata_tag(mesh, tag, value)
     if not assets.save_directory(folder, only_if_is_dirty=False, recursive=True):
         raise RuntimeError(f"couldn't save {folder}")
@@ -479,10 +656,18 @@ def main() -> list:
     if not DEST.startswith("/") or DEST.count("/") < 2:
         raise RuntimeError(f"DEST {DEST!r} must be a content folder such as /Game/ScannedBears")
     TMP.mkdir(parents=True, exist_ok=True)
-    bears = local_bears(Path(SOURCE)) if SOURCE else server_bears()
+    try:
+        return _run()
+    finally:
+        shutil.rmtree(TMP / "unzipped", ignore_errors=True)
+
+
+def _run() -> list:
+    bears, older = newest_per_id(local_bears(Path(SOURCE)) if SOURCE else server_bears())
     if not bears:
         unreal.log_warning("Bear import: no finished bears found.")
-    results = []
+    results = [{"bear": safe(b["name"]), "result": "skipped",
+                "error": f"another copy of this bear is newer (v{b['version']} isn't the newest)"} for b in older]
     with unreal.ScopedSlowTask(max(len(bears), 1), "Importing scanned bears") as task:
         try:
             task.make_dialog(True)
@@ -500,7 +685,8 @@ def main() -> list:
         line = f"Bear import: {r['bear']}: {r['result']} {r.get('mesh') or r.get('error', '')}"
         if r.get("lods"):
             line += f" ({r['lods']} LODs, {r['collision']} collision, {' x '.join(map(str, r['size_cm']))} cm)"
-        (unreal.log_error if r["result"] == "failed" else unreal.log)(line)
+        log = {"failed": unreal.log_error, "skipped": unreal.log_warning}.get(r["result"], unreal.log)
+        log(line)
     unreal.log("BEAR_IMPORT_RESULT " + json.dumps(results))
     return results
 

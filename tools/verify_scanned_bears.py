@@ -18,6 +18,9 @@ from finish_editor import finish_editor
 from png_evidence import decode_png
 
 OUT = Path(os.environ['TEDDY_TEST_DIR'])
+DEST = os.environ.get('BEAR_VERIFY_DEST', '/Game/ScannedBears').rstrip('/')
+assert DEST == '/Game/ScannedBears' or DEST.startswith('/Game/ScannedBears/'), 'Review must stay in ScannedBears'
+EXPECTED_PACK = json.loads(Path(os.environ['BEAR_EXPECT_PACK']).read_text(encoding='utf-8')) if os.environ.get('BEAR_EXPECT_PACK') else None
 ASSETS = u.EditorAssetLibrary
 MESHES = u.get_editor_subsystem(u.StaticMeshEditorSubsystem)
 ACTORS = u.get_editor_subsystem(u.EditorActorSubsystem)
@@ -72,6 +75,11 @@ def inspect_mesh(mesh):
         'finite_physical_size': 0 < size.x < 1000 and 0 < size.y < 1000 and 0 < size.z < 1000,
         'nanite_disabled_for_lods': not nanite,
     }
+    if EXPECTED_PACK:
+        checks.update(pack_identity_matches=ASSETS.get_metadata_tag(mesh, 'BearScanId') == EXPECTED_PACK['id'],
+                      pack_version_matches=ASSETS.get_metadata_tag(mesh, 'BearScanVersion') == str(EXPECTED_PACK['version']),
+                      pack_revision_matches=ASSETS.get_metadata_tag(mesh, 'BearPackRevision') == EXPECTED_PACK['revision'],
+                      pack_model_hash_matches=ASSETS.get_metadata_tag(mesh, 'BearModelSha256') == EXPECTED_PACK['files'][EXPECTED_PACK['model']['file']]['sha256'])
     result = {'mesh': path, 'scan_id': ASSETS.get_metadata_tag(mesh, 'BearScanId'),
               'lod_triangles': triangles, 'collision_hulls': hulls,
               'size_cm': [size.x, size.y, size.z], 'base_z_cm': box.min.z,
@@ -157,7 +165,8 @@ def tick(delta):
 
 try:
     u.EditorPythonScripting.set_keep_python_script_alive(True)
-    meshes = [ASSETS.load_asset(path) for path in ASSETS.list_assets('/Game/ScannedBears', recursive=True, include_folder=False)]
+    REPORT['destination'] = DEST
+    meshes = [ASSETS.load_asset(path) for path in ASSETS.list_assets(DEST, recursive=True, include_folder=False)]
     meshes = [mesh for mesh in meshes if isinstance(mesh, u.StaticMesh)]
     assert meshes, 'No saved scanned-bear meshes found'
     for mesh in meshes:

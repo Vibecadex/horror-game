@@ -31,6 +31,16 @@ All responses are JSON except static pages and files. Errors are `{error: "messa
 
 `thumbnailUrl` is null when no thumbnail exists. Source stats include `meshCount`, `triangles`, `vertices`, `lods`, `skins`, `animations`, `animationNames` and optional `bounds`. Geometry counts describe all GLB meshes; each `lods` entry gives individual mesh counts. The bundled source is seeded once, labelled **prebuilt sample**, and retains its existing source warnings and provenance. It is not a reconstruction performed by this studio. A changed scanner model creates another immutable source revision on the same bear and resets review/draft state; prior rigs and tests remain historical.
 
+## Bear-pack imports
+
+`POST /api/import/pack`: raw ZIP bytes, `Content-Type: application/zip`, percent-encoded `X-Filename` header; response `{bear, imported}`. Maximum compressed/expanded size is 128 MiB, with the existing 64 MiB model limit. Supply one bear pack, either at the archive root or in one directory. No archive files are extracted to the filesystem. Traversal, duplicate entries, unsupported formats, missing files and hash/size mismatches fail before a catalogue write.
+
+The supported contract is `bear-pack`, `formatVersion: 1`, metres, right-handed, +Y up, +Z front. The manifest names the artifacts; supported roles are retained under the catalogue's canonical filenames. `source.pack` contains the upstream manifest without transport URLs or rebuild state. `/assets/{id}/sources/{revision}/pack-manifest.json` and `landmarks.json` retain provenance and rig-readiness evidence. The Studio's own `manifest.json` remains separate.
+
+`POST /api/import/scanner` uses `/api/v1/bears/{scanId}` and verifies every declared artifact against its manifest, then rechecks revision/version after download. Only an absent endpoint (404) permits the existing legacy scan API path.
+
+Idempotence covers all retained source files. A report/landmark-only change creates a new immutable source revision and marks prior rigs/tests stale. Lower pack versions receive 409. Offline packs have their own `pack:{id}` collection identity; live imports remain `scanner:{origin}#{id}`.
+
 ## Rig revisions
 
 `POST /api/bears/{id}/rigs` JSON:
@@ -59,7 +69,7 @@ If a recipe or draft recipe embeds `sourceRevision` or `sourceSha256`, these mus
 
 ## Files and limits
 
-- `/assets/{bearId}/sources/{revision}/{name}` serves only owned source `model.glb`, `report.json`, `thumb.webp`, `collider.json`, `cameras.json`, `manifest.json`.
+- `/assets/{bearId}/sources/{revision}/{name}` serves only owned source `model.glb`, `report.json`, `thumb.webp`, `collider.json`, `cameras.json`, `landmarks.json`, `pack-manifest.json`, `manifest.json`.
 - `/assets/{bearId}/rigs/{revision}/{name}` serves only owned rig `model.glb`, `recipe.json`, `validation.json`, `manifest.json`.
 - `GET /api/bears/{id}/manifest` downloads the current catalogue record including source identities and revision references.
 - Fixed read-only animation source routes: `/library/quaternius/model.glb`, `/library/quaternius/provenance.json`, `/library/quaternius/license.txt`. These serve the retained creator release under `Assets/ThirdParty/QuaterniusUAL`; they do not fetch a URL or mutate the library. Retargeted clips remain derived drafts requiring inspection.

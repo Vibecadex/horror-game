@@ -37,6 +37,8 @@ Open this fork's `EDIT.cmd`, then find the result under `/Game/ScannedBears` in 
 
 ## Import behavior
 
+The pinned importer now includes the team's bear-pack API 5 from scanner `8b396ab`: manifest-aware folders/ZIPs, versioned HTTP imports and model integrity metadata. It retains the local UE 5.8 reimport and authored-LOD corrections. Opaque IDs stay unchanged in metadata; Unreal names alone are sanitized. The latest sample and verification are described in [remote team continuation](REMOTE_TEAM_CONTINUATION.md).
+
 - Each finished scan has one stable Static Mesh asset with its texture, convex collision, real centimetre dimensions and a base pivot. The scanner supplies three authored LODs.
 - Unchanged scans are skipped. The upstream importer updates rebuilt or renamed scans at their existing mesh path.
 - This fork saves staged materials/textures before moving them during reimport. A real forced update exposed UE 5.8's requirement that the source folder already exist on disk. The narrow correction is carried in the pinned importer; the live scanner checkout is unchanged.

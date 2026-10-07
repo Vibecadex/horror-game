@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "name": "studio-backend",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/bear_studio",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "importer-contract",
+      "command": [
+        "python",
+        "tools/test_bear_importer_contract.py"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "remote_branch_coverage": {
+    "game": [
+      {
+        "ref": "refs/remotes/origin/codex/integrate-bear-scanner",
+        "commit": "1e8a04b8d4590ab2173ea75153b2e29f6a8a12c5",
+        "commits_missing": 0
+      },
+      {
+        "ref": "refs/remotes/origin/grok/chamber-parity-continuation",
+        "commit": "0a20f9f6e4f5b405172f19151add9e3328d1b0a5",
+        "commits_missing": 0
+      },
+      {
+        "ref": "refs/remotes/origin/main",
+        "commit": "3a1d2545ae4c60d644fa8eb977a8519c483c36df",
+        "commits_missing": 0
+      },
+      {
+        "ref": "refs/remotes/origin/tools/scanned-bears",
+        "commit": "25a72da6fa5a567e1687ec0193ad63947734469f",
+        "commits_missing": 0
+      },
+      {
+        "ref": "refs/remotes/origin/tools/team-handoff-fixes",
+        "commit": "b53da16b1322c538f381c8fb3a2a69093060d69e",
+        "commits_missing": 0
+      }
+    ],
+    "scanner": [
+      {
+        "ref": "refs/remotes/origin/capture-anim-pose",
+        "commit": "41bfb5e1bcfa658a2618b7d39eacca6885a264b7",
+        "commits_missing": 0
+      },
+      {
+        "ref": "refs/remotes/origin/main",
+        "commit": "8b396abe2789964a6c930a67e16257bf58539b22",
+        "commits_missing": 0
+      },
+      {
+        "ref": "refs/remotes/origin/rig-readiness",
+        "commit": "c7d5d5ca3459d8c631e9cbf6c0a24377b1a21865",
+        "commits_missing": 0
+      },
+      {
+        "ref": "refs/remotes/origin/rigfit-prototype",
+        "commit": "e202d1fa933e87f93ff80540c1baacf691779a1e",
+        "commits_missing": 0
+      },
+      {
+        "ref": "refs/remotes/origin/rigfit-quality",
+        "commit": "fedc4f5a24515052400f920420f639e769ed251a",
+        "commits_missing": 0
+      },
+      {
+        "ref": "refs/remotes/origin/unreal-export",
+        "commit": "d8cde185b56371674ac7aee72845be60bd3ad29c",
+        "commits_missing": 0
+      }
+    ]
+  },
+  "chamber_map_sha256": "616822f1d349a710ddbb8ced99babe8b0dbc95f69c41299f3f82d843faba117d",
+  "chamber_matches_pre_integration_commit": true,
+  "original_tracked_game_changes": []
+}

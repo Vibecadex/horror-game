@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "mesh": "/Game/ScannedBears/TeamPackSample/Real_bear_example_scan_exampl/SM_Bear_Real_bear_example_scan",
+  "previous_identity": "example_real_bear",
+  "identity": "example-real-bear",
+  "changed": true,
+  "chamber_writes": false,
+  "reason": "Preserve the original opaque bear-pack identity"
+}

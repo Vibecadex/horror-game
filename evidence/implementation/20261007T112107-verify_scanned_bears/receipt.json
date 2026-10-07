@@ -1,0 +1,64 @@
+{
+  "passed": false,
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "asset_writes": false,
+  "saved_map_writes": false,
+  "physical_device_verified": false,
+  "method": "Fresh editor saved-asset readback; forced LOD renders in an unsaved blank world.",
+  "review_actor_scale": 10,
+  "review_camera_cm": [
+    250,
+    200,
+    160
+  ],
+  "review_target_cm": [
+    0,
+    0,
+    43
+  ],
+  "bears": [
+    {
+      "mesh": "/Game/ScannedBears/TeamPackSample/Real_bear_example_scan_exampl/SM_Bear_Real_bear_example_scan",
+      "scan_id": "example_real_bear",
+      "lod_triangles": [
+        8000,
+        2500,
+        800
+      ],
+      "collision_hulls": 1,
+      "size_cm": [
+        7.800811767578125,
+        5.59252405166626,
+        9.69779109954834
+      ],
+      "base_z_cm": 0.0,
+      "materials": [
+        "/Game/ScannedBears/TeamPackSample/Real_bear_example_scan_exampl/Real_bear_example_scan_exampl_1791257981/Materials/MI_Bear_example_real.MI_Bear_example_real"
+      ],
+      "textures": [
+        "/Game/ScannedBears/TeamPackSample/Real_bear_example_scan_exampl/Real_bear_example_scan_exampl_1791257981/Textures/T_Bear_example_real.T_Bear_example_real"
+      ],
+      "checks": {
+        "owned": true,
+        "scan_identity_saved": true,
+        "scan_version_saved": true,
+        "three_lods": true,
+        "nonempty_decreasing_geometry": true,
+        "all_material_slots_resolve": true,
+        "shared_material": true,
+        "saved_scan_texture": true,
+        "collision_present": true,
+        "feet_pivot": true,
+        "finite_physical_size": true,
+        "nanite_disabled_for_lods": true,
+        "pack_identity_matches": false,
+        "pack_version_matches": true,
+        "pack_revision_matches": true,
+        "pack_model_hash_matches": true
+      }
+    }
+  ],
+  "captures": [],
+  "destination": "/Game/ScannedBears/TeamPackSample",
+  "error": "Traceback (most recent call last):\n  File \"C:/Users/4elut/.codex/worktrees/11a8/horror-game/tools/verify_scanned_bears.py\", line 173, in <module>\n    inspect_mesh(mesh)\n  File \"C:/Users/4elut/.codex/worktrees/11a8/horror-game/tools/verify_scanned_bears.py\", line 89, in inspect_mesh\n    assert all(checks.values()), result\nAssertionError: {'mesh': '/Game/ScannedBears/TeamPackSample/Real_bear_example_scan_exampl/SM_Bear_Real_bear_example_scan', 'scan_id': 'example_real_bear', 'lod_triangles': [8000, 2500, 800], 'collision_hulls': 1, 'size_cm': [7.800811767578125, 5.59252405166626, 9.69779109954834], 'base_z_cm': 0.0, 'materials': ['/Game/ScannedBears/TeamPackSample/Real_bear_example_scan_exampl/Real_bear_example_scan_exampl_1791257981/Materials/MI_Bear_example_real.MI_Bear_example_real'], 'textures': ['/Game/ScannedBears/TeamPackSample/Real_bear_example_scan_exampl/Real_bear_example_scan_exampl_1791257981/Textures/T_Bear_example_real.T_Bear_example_real'], 'checks': {'owned': True, 'scan_identity_saved': True, 'scan_version_saved': True, 'three_lods': True, 'nonempty_decreasing_geometry': True, 'all_material_slots_resolve': True, 'shared_material': True, 'saved_scan_texture': True, 'collision_present': True, 'feet_pivot': True, 'finite_physical_size': True, 'nanite_disabled_for_lods': True, 'pack_identity_matches': False, 'pack_version_matches': True, 'pack_revision_matches': True, 'pack_model_hash_matches': True}}\n"
+}
