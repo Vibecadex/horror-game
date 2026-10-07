@@ -19,6 +19,8 @@ assert CAPTURE_SIZE[0] * 2 == CAPTURE_SIZE[1] * 3, 'Use a native 3:2 resolution;
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 CAMERA_REVISION = 'chamber-03-reverse-services'
+MAP_PATH = os.environ.get('TEDDY_CHAMBER_MAP', '/Game/Maps/TeddyEncounter')
+assert MAP_PATH in ('/Game/Maps/TeddyEncounter', '/Game/Maps/TeddyChamberParity')
 # Baseline chamber-01 is preserved in the 095951 and 101028 receipts.
 # Reframe the architectural views only: front fills more of the native frame;
 # reverse is lower and less steep, with both service bays retained in view.
@@ -29,6 +31,9 @@ VIEWS = [
     {'name': '02-chamber-reverse', 'caption': 'ARCHITECTURAL REVERSE: looks -X toward complete reverse service wall; camera inside far wall. Saved actors/art/exposure; native reverse wall must be visible. Revision03 retains the approximately35-degree pose and widens FOV to70 to include the electrical cabinets and near-end pipe rack.', 'kind': 'architecture', 'location': (1450, 100, 1450), 'target': (-600, 100, 0), 'fov': 70.0},
     {'name': '03-ordinary-gameplay', 'caption': 'ORDINARY GAMEPLAY HOLD: saved director pose restored after the architectural plates. Expected near pitch -46 and FOV 54. Characters held. Not an architectural parity plate and not physical-device input.', 'kind': 'gameplay-camera'},
 ]
+if os.environ.get('TEDDY_CHAMBER_FULL') == '1':
+    VIEWS.insert(0, {'name': '00-full-chamber', 'caption': 'Full-room architectural comparison; saved scene and native cutaway. Gameplay camera unchanged.',
+        'kind': 'architecture', 'location': (-4250, 180, 3380), 'target': (100, 180, 80), 'fov': 47.0})
 
 if '--describe' in sys.argv:
     print(json.dumps({'resolution': CAPTURE_SIZE, 'camera_revision': CAMERA_REVISION, 'views': VIEWS, 'asset_writes': False,
@@ -44,7 +49,7 @@ OUT = Path(os.environ['TEDDY_TEST_DIR'])
 LEVEL = u.get_editor_subsystem(u.LevelEditorSubsystem)
 EDITOR = u.get_editor_subsystem(u.UnrealEditorSubsystem)
 
-report = {'passed': False, 'map': '/Game/Maps/TeddyEncounter', 'engine': u.SystemLibrary.get_engine_version(),
+report = {'passed': False, 'map': MAP_PATH, 'engine': u.SystemLibrary.get_engine_version(),
           'captures': [], 'asset_writes': False, 'physical_device_verified': False,
           'method': 'Editor PIE architectural comparison only; saved actors frozen, HUD hidden. Native 3:2 HighResShot viewport, no crop/warp. Lighting/exposure unchanged. Environment Blueprint ticks remain enabled so the native camera-dependent cutaway can react; visibility is recorded, never forced.',
           'resolution': list(CAPTURE_SIZE), 'camera_revision': CAMERA_REVISION, 'reference_front': 'study/visuals/chamber-target-front.png',
@@ -249,6 +254,9 @@ def tick(delta):
 try:
     u.EditorPythonScripting.set_keep_python_script_alive(True)
     assert LEVEL.load_level(report['map'])
+    if os.environ.get('TEDDY_CHAMBER_FULL') == '1':
+        from chamber_parity_snapshot import snapshot_level
+        (OUT / 'saved-scene.json').write_text(json.dumps(snapshot_level(), indent=2), encoding='utf-8')
     LEVEL.editor_request_begin_play()
     handle = u.register_slate_post_tick_callback(tick)
 except Exception:

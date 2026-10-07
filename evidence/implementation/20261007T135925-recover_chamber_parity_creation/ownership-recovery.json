@@ -1,0 +1,6 @@
+{
+  "map": "/Game/Maps/TeddyChamberParity",
+  "creation_run": "20261007T135658-author_chamber_parity_20261007",
+  "pre_recovery_sha256": "be17d1fc0449d134b911b3a40cca432a805d30e0fa55d27e35dac8c61934720e",
+  "purpose": "Persist the ownership tag on this run's newly created map before continuing its failed import."
+}

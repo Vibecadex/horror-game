@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyChamberParity",
+  "settings": {
+    "owner": "chamber-parity-20261007",
+    "map": "/Game/Maps/TeddyChamberParity",
+    "namespace": "/Game/TeddyEncounter/ChamberParity20261007",
+    "revision": 1,
+    "wall_height_multiplier": 1.35,
+    "door_height_multiplier": 1.32,
+    "floor": {
+      "tile_cm": 850,
+      "detail_weight": 0.74,
+      "value_scale": 0.78,
+      "wet_min": 0.28,
+      "rough_wet": 0.22,
+      "rough_dry": 0.9
+    },
+    "key": {
+      "intensity": 120000,
+      "outer_cone_angle": 47,
+      "source_radius": 32,
+      "volumetric_scattering_intensity": 1.2
+    },
+    "wall_light_scale": 0.48,
+    "corner_light_scale": 0.48,
+    "front_floor_intensity": 16500,
+    "mist": {
+      "intensity": 65000,
+      "volumetric_scattering_intensity": 8
+    },
+    "shaft": {
+      "location": [
+        1330,
+        180,
+        1230
+      ],
+      "target": [
+        650,
+        180,
+        160
+      ],
+      "intensity": 17000,
+      "inner_cone_angle": 12,
+      "outer_cone_angle": 29,
+      "attenuation_radius": 1900,
+      "volumetric_scattering_intensity": 7,
+      "diffuse_scale": 0.28,
+      "specular_scale": 0.15
+    },
+    "limits": "Candidate only. No gameplay camera, character, collision-floor, Blueprint, or original material changes."
+  },
+  "changed_assets": [
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Concrete.M_Parity_Floor_Concrete",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_ConcreteLight.M_Parity_Floor_ConcreteLight",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_ConcreteDark.M_Parity_Floor_ConcreteDark",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Aggregate.M_Parity_Floor_Aggregate",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Dark.M_Parity_Floor_Dark",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Crack.M_Parity_Floor_Crack",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Debris.M_Parity_Debris",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_ChippedEdge.M_Parity_ChippedEdge",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_WetShard.M_Parity_WetShard",
+    "/Game/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_0.SM_Parity20261007_Debris_0",
+    "/Game/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_1.SM_Parity20261007_Debris_1",
+    "/Game/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_2.SM_Parity20261007_Debris_2",
+    "/Game/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_3.SM_Parity20261007_Debris_3"
+  ],
+  "asset_writes": true,
+  "shared_encounter_saved": false,
+  "gameplay_changes": false,
+  "debris": {
+    "pieces": 710,
+    "triangles": 15988,
+    "collision": "NoCollision"
+  },
+  "reloaded": true
+}

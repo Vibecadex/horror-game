@@ -1,5 +1,13 @@
 # Teddy Encounter working status
 
+## Isolated chamber parity attempt — 7 October 2026
+
+The user requested a separate worktree and branch for the selected full-chamber reference. This checkout is `codex/chamber-parity-20261007`, based on `9defbdd`. The candidate is `/Game/Maps/TeddyChamberParity`; `PLAY_CHAMBER_PARITY.cmd` opens it and `--edit` opens it in the editor. The original encounter and scanner integration remain preserved.
+
+The candidate has taller wall/door proportions, 710 grounded concrete fragments, clearer floor damage and restrained damp variation, front drains and revised local lighting/fog. [Interactive reference/before/after review](evidence/chamber-parity/20261007/review.html) and [implementation/evidence/limits](study/CHAMBER_PARITY_EXPERIMENT_20261007.md). 28 native room checks and 26 host preservation/evidence checks pass; all 826 baseline Content/Config/source files are unchanged. Final lighting was captured after the runtime run, with geometry identity checked separately.
+
+This is progress toward the reference, not visual parity or user acceptance. Upper haze, dark peripheral detail, connected floor damage and construction remain behind the concept. Same-author visual review only; physical input, new combat footage, audio and packaging were not established. Parent scanner statuses below describe their recorded deliveries, not new side-branch work.
+
 ## Scanner fitting in Bear Studio — 7 October 2026
 
 The user deferred the team brief to focus on scanner technology. The existing Studio at `http://127.0.0.1:8472/` now runs the installed scanner's 21-bone template fitter from **Rig → Scanner template fit → Fit & save scanner rig**. **Import bear → Use example** adds an explicitly synthetic input with complete landmarks. Fitting saves an immutable draft with source/landmark/code hashes, fit warnings and four team test clips. The motion library supports this skeleton while retaining the manual 16-bone workflow. No package installation was needed.
