@@ -35,6 +35,8 @@ The argument can also be a scan folder. The launcher waits up to 30 minutes unle
 
 Open this fork's `EDIT.cmd`, then find the result under `/Game/ScannedBears` in the Content Browser. Bears are static props; animation, rigging, boss replacement and level placement are separate work. The existing encounter is retained.
 
+For the team's separate skeletal prototype, see the [native rigfit review](TEAM_RIG_NATIVE_REVIEW.md). Its synthetic fixture is saved under `/Game/ScannedBears/RigfitReview`, with a dedicated `REVIEW_TEAM_RIG.cmd`. This does not change the static import contract or automatically rig a scanned pack.
+
 ## Import behavior
 
 The pinned importer now includes the team's bear-pack API 5 from scanner `8b396ab`: manifest-aware folders/ZIPs, versioned HTTP imports and model integrity metadata. It retains the local UE 5.8 reimport and authored-LOD corrections. Opaque IDs stay unchanged in metadata; Unreal names alone are sanitized. The latest sample and verification are described in [remote team continuation](REMOTE_TEAM_CONTINUATION.md).

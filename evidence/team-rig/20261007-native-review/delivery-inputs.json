@@ -1,0 +1,186 @@
+{
+  "Assets/Adapted/BearRigfitReview/SyntheticV1/fit/fitted_posed.glb": {
+    "sha256": "f3996f8394a5ff4e2dbba745978c93b822f05dbafbd4195dd81f772695e47069",
+    "bytes": 575952
+  },
+  "Assets/Adapted/BearRigfitReview/SyntheticV1/fit/rigfit.json": {
+    "sha256": "da1d9ca0705d6b525bc94622d3ff5c5e62bd9411465853d3014a3dcfb0d0e86d",
+    "bytes": 2504
+  },
+  "Assets/Adapted/BearRigfitReview/SyntheticV1/fit/rigged.glb": {
+    "sha256": "1fb2e5ec7773f772c79e2b992811bca99b183ba7c73e64e745f993686b6a6eba",
+    "bytes": 708412
+  },
+  "Assets/Adapted/BearRigfitReview/SyntheticV1/landmarks.json": {
+    "sha256": "b46a32f1816213b253146aacfc6e5406ebf23600f563171266dcbb5d92a17213",
+    "bytes": 1519
+  },
+  "Assets/Adapted/BearRigfitReview/SyntheticV1/manifest.json": {
+    "sha256": "c3fd27402a3752068dfa560dd8b6fa7b04c27c13e9922b5957c887fddda277ae",
+    "bytes": 3391
+  },
+  "Assets/Adapted/BearRigfitReview/SyntheticV1/synthetic-source.glb": {
+    "sha256": "44ed462ee266f50183fcac8ac00ae82d8a0649cbfc4103826a2e3c2750f85935",
+    "bytes": 1026640
+  },
+  "Assets/Adapted/BearRigfitReview/SyntheticV1/synthetic-team-rig.glb": {
+    "sha256": "b00c50f4a77d17611d21ac11601770bd2e0cb916c8d433dbe1cf419247bf6dc9",
+    "bytes": 722864
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/00-Rest-0.00.png": {
+    "sha256": "133c8f7d1d04237cbd83129255fa31c8cd7a0f8163b18117d447a7daf9ec0808",
+    "bytes": 1180336
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/01-Test_Wave-0.25.png": {
+    "sha256": "9d8503b72a989da58b90d39f287481de6ac842fb615c0377c000668f7b3337c3",
+    "bytes": 1188160
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/02-Test_Wave-0.75.png": {
+    "sha256": "2ced37d8702635d4a9fcf551395654fa9a8021d970d30ef35f7e07d35b2ae1d2",
+    "bytes": 1198213
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/03-Test_Walk-0.50.png": {
+    "sha256": "c830b0b61d6e1808001614e6d0040fc09aa90491af11ea79834e9aa58fa6adbe",
+    "bytes": 1180438
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/04-Test_Walk-1.50.png": {
+    "sha256": "d1e3d3af294d67e2c3b018bfb00aace9ee0ad1cce9b5e652f3d74decd945011a",
+    "bytes": 1187083
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/05-Test_LookAround-0.50.png": {
+    "sha256": "38ec3aa6978236e50228b858c2551df7070152545ebe210f10e58856b39667ef",
+    "bytes": 1188934
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/06-Test_LookAround-1.50.png": {
+    "sha256": "5062c5e6c252c3bb32480913a737c3b8d7acd2ba57e2ac93b48f6016610ec80d",
+    "bytes": 1176829
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/07-Test_Bend-0.00.png": {
+    "sha256": "0de8322baca073865acd16ad54adecd05ceff474caa0a4927d67f4824480024a",
+    "bytes": 1189745
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/08-Test_Bend-1.00.png": {
+    "sha256": "212f409d5cbf8b2873abeed6b1284f43a9af35726b1093d67f6edacb6e88fe99",
+    "bytes": 1164819
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/09-RET_MF_Unarmed_Walk_Fwd-0.38.png": {
+    "sha256": "8c99681c1a5d43537cb1f5860a594181d4519f71a91951ed7e08971a49a6a2cc",
+    "bytes": 1184918
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/10-RET_MF_Unarmed_Walk_Fwd-1.05.png": {
+    "sha256": "d58cb43214a7d7fbda503a6024a8c4328d6b5847a46da397960a850af6c57455",
+    "bytes": 1173580
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/11-RET_MM_Attack_01-0.25.png": {
+    "sha256": "8f08846c7911137570413cb6540df7852de50eef643042b3563e5ac9d382dea9",
+    "bytes": 1192018
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/12-RET_MM_Attack_01-0.70.png": {
+    "sha256": "b1d7be6c92cdfe6fb5001a72bdf071b88017997af1a769ee146d2dac91e3c2a2",
+    "bytes": 1185701
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/13-RET_MM_Idle-1.89.png": {
+    "sha256": "4d6e617eee17827e667df442c04d85b985db1013f92973f0dfbb9a17902f9e9a",
+    "bytes": 1188031
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/14-RET_MM_Idle-5.30.png": {
+    "sha256": "b8d8a6e10ff711ff46ef72f6426ca6755ad6b97d375087e8929284347b77918a",
+    "bytes": 1186753
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/host-result.json": {
+    "sha256": "5e11a374f9c561269491f589da7ccc86c12ea4e9a939e9382cc6b92fa72e2747",
+    "bytes": 189
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/invocation.json": {
+    "sha256": "33bada261ef51d950b9373364e447aabc8b3a1c808c0a54c919e729fee03a601",
+    "bytes": 956
+  },
+  "evidence/implementation/20261007T121822-verify_team_rig_fixture/receipt.json": {
+    "sha256": "4215776deaee2a6a29e6217bad86afbe4fcba26d57efa64c10c0a1e41fef5193",
+    "bytes": 213943
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/RetargetV1/Animations/RET_MF_Unarmed_Walk_Fwd.uasset": {
+    "sha256": "8dad3b0e885b17e7daaa8c401e341495546fcc70685994c2f9731c11a144fa2d",
+    "bytes": 123323
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/RetargetV1/Animations/RET_MM_Attack_01.uasset": {
+    "sha256": "912a6da4b3ff03f3f2929f483b0f36cd19069deba180ad508caccb420efb9b79",
+    "bytes": 94677
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/RetargetV1/Animations/RET_MM_Idle.uasset": {
+    "sha256": "5baad09f0af80c81578825b4868b71c1eb4ba554104c4aa74f3cdc057ef1b08b",
+    "bytes": 454195
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/RetargetV1/IK_ReviewBear.uasset": {
+    "sha256": "53b723769c7a39a6b51dad60592062ffe79a5b53b3d376fd3ce91af34ae6f59c",
+    "bytes": 24344
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/RetargetV1/IK_ReviewManny.uasset": {
+    "sha256": "3b9b1454a25293711721056cc3b3ab08f128ea40ab664a2092e1c40ced331647",
+    "bytes": 74930
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/RetargetV1/RTG_ReviewMannyToBear.uasset": {
+    "sha256": "4ebc433b0126cac43e371e4f9e34177196e6c287f5d4d6411849e87fd9d77681",
+    "bytes": 15238
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/SyntheticV1/Materials/bear.uasset": {
+    "sha256": "442b6f029a6e332edfeec016c96e1178bff6db80e2dcbab72a8a6e5acc8ffaeb",
+    "bytes": 52502
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Bear.uasset": {
+    "sha256": "71a0fa2a525f3adce36fd5f299f39ba6980468a176caee8cf1b602877b0b685c",
+    "bytes": 1341313
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Bear_PhysicsAsset.uasset": {
+    "sha256": "ad589117256a0c4524da030000776bbddd7af4269e3afd217eb9c36a961a4485",
+    "bytes": 8601
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Bear_Skeleton.uasset": {
+    "sha256": "9486c0ba1a5de0d7d5f39671a08a4b89d0686051aa075e74dfae75f64c569a5e",
+    "bytes": 6484
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Test_Bend.uasset": {
+    "sha256": "8e78d0d1e0d77bd28d3bfa784bcddadf608c3f9cf15c48071ed2dbd23a8ae478",
+    "bytes": 54800
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Test_LookAround.uasset": {
+    "sha256": "3aa8f9c4034d425d12ac99338d82e8210d59c5ed77aec6b0d692dbeab4c763f9",
+    "bytes": 55693
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Test_Walk.uasset": {
+    "sha256": "a390082627e45e126ffbe5a6cc3134371a0c0155e5fd2a1d66ad790754f92b64",
+    "bytes": 78888
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Test_Wave.uasset": {
+    "sha256": "597889b2c0583931883ea0b2dea58e3ae4e3722732d5d29a8a36d4f42da74eb0",
+    "bytes": 56947
+  },
+  "TeddyBlueprint/Content/ScannedBears/RigfitReview/SyntheticV1/Textures/bear_color.uasset": {
+    "sha256": "e71ee9638581cbb5988934ec26fc884aba693ee64f85ea0f34691f6dd4361b34",
+    "bytes": 406357
+  },
+  "tools/build_team_rig_fixture.py": {
+    "sha256": "880a04e7e2c80bace9fd291b836b20b39c2f2f7a2cdaa0301939c81ebaf0fd47",
+    "bytes": 4670
+  },
+  "tools/import_team_rig_fixture.py": {
+    "sha256": "489c5f69ac949ab6aa72d8d56e76b1e477d682ccb038a3283585d2f1c40e0ecc",
+    "bytes": 4374
+  },
+  "tools/repair_team_rig_normals.py": {
+    "sha256": "0aa2557c71645c6f63778323e8eefa1717128b25ee8ce2390ef6a8a0cbda5ae7",
+    "bytes": 2653
+  },
+  "tools/retarget_team_rig_fixture.py": {
+    "sha256": "bfabbbe37596d6a87eb4d21ee66c9764d57793dd561ebeb1adf2ae3731b38a32",
+    "bytes": 5819
+  },
+  "tools/team_rig_source_pose.py": {
+    "sha256": "fc239a7b1ddf9f5fd9576946144377d106b7723add5011a3c4aab210167ed85a",
+    "bytes": 3586
+  },
+  "tools/verify_team_rig_fixture.py": {
+    "sha256": "45c9abad1072706ffa59b6a5e2e5722c989b3db4942df605bf29f1745a849f8b",
+    "bytes": 18438
+  }
+}

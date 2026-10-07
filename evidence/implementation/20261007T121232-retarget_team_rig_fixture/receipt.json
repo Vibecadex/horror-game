@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "synthetic": true,
+  "saved_map_writes": false,
+  "destination": "/Game/ScannedBears/RigfitReview/RetargetV1",
+  "assets": [
+    {
+      "path": "/Game/ScannedBears/RigfitReview/RetargetV1/IK_ReviewManny.IK_ReviewManny",
+      "class": "IKRigDefinition"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/RetargetV1/IK_ReviewBear.IK_ReviewBear",
+      "class": "IKRigDefinition"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/RetargetV1/RTG_ReviewMannyToBear.RTG_ReviewMannyToBear",
+      "class": "IKRetargeter"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/RetargetV1/Animations/RET_MM_Idle.RET_MM_Idle",
+      "class": "AnimSequence"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/RetargetV1/Animations/RET_MF_Unarmed_Walk_Fwd.RET_MF_Unarmed_Walk_Fwd",
+      "class": "AnimSequence"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/RetargetV1/Animations/RET_MM_Attack_01.RET_MM_Attack_01",
+      "class": "AnimSequence"
+    }
+  ],
+  "foot_ik": false,
+  "root_motion": false,
+  "method": "New source/target IK rigs, six mapped chains, automatic target pose alignment, pelvis and FK operations.",
+  "operations": [
+    {
+      "name": "Pelvis Motion",
+      "enabled": true
+    },
+    {
+      "name": "FK Chains",
+      "enabled": true
+    },
+    {
+      "name": "Run IK Rig",
+      "enabled": false
+    },
+    {
+      "name": "Root Motion",
+      "enabled": false
+    },
+    {
+      "name": "Remap Curves",
+      "enabled": true
+    }
+  ],
+  "source_mesh": "/Game/Characters/Mannequins/Meshes/SKM_Manny_Simple.SKM_Manny_Simple",
+  "target_mesh": "/Game/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Bear.Bear",
+  "source_animations": [
+    "/Game/Characters/Mannequins/Anims/Unarmed/MM_Idle",
+    "/Game/Characters/Mannequins/Anims/Unarmed/Walk/MF_Unarmed_Walk_Fwd",
+    "/Game/Characters/Mannequins/Anims/Unarmed/Attack/MM_Attack_01"
+  ],
+  "source_chains": {
+    "Spine": [
+      "spine_01",
+      "spine_05"
+    ],
+    "Head": [
+      "neck_01",
+      "head"
+    ],
+    "LeftArm": [
+      "upperarm_l",
+      "hand_l"
+    ],
+    "RightArm": [
+      "upperarm_r",
+      "hand_r"
+    ],
+    "LeftLeg": [
+      "thigh_l",
+      "foot_l"
+    ],
+    "RightLeg": [
+      "thigh_r",
+      "foot_r"
+    ]
+  },
+  "target_chains": {
+    "Spine": [
+      "Spine",
+      "Spine2"
+    ],
+    "Head": [
+      "Neck",
+      "Head"
+    ],
+    "LeftArm": [
+      "LeftArm",
+      "LeftHand"
+    ],
+    "RightArm": [
+      "RightArm",
+      "RightHand"
+    ],
+    "LeftLeg": [
+      "LeftUpLeg",
+      "LeftFoot"
+    ],
+    "RightLeg": [
+      "RightUpLeg",
+      "RightFoot"
+    ]
+  },
+  "pose_alignment": "Automatic chain-to-chain target alignment; no hand-edited rotations."
+}

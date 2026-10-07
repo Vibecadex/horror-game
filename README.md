@@ -6,6 +6,8 @@ This fork integrates Bear Scanner with the saved chamber. See [scanner setup and
 
 The [remote team continuation](study/REMOTE_TEAM_CONTINUATION.md) records the latest pack integration, verification and remaining rig-test prerequisites. Bear Studio now imports the team's versioned packs and retains their source checks and landmarks.
 
+The team's 21-bone rigfit prototype now has a [native Unreal compatibility review](study/TEAM_RIG_NATIVE_REVIEW.md), including four source clips and three mannequin retargets on a synthetic fixture. Run `REVIEW_TEAM_RIG.cmd` to repeat the saved-asset and playback checks. Real-scan and production character acceptance remain open.
+
 **Bear Studio:** run [BEAR_STUDIO.cmd](BEAR_STUDIO.cmd) for the local teddy catalogue, inspection, draft rigging, animation testing and versioned exports. [Studio guide](study/BEAR_STUDIO.md) covers prerequisites, source preservation and the review workflow. The saved chamber remains a separate playable destination.
 
 - [Current chamber brief](study/CHAMBER_PARITY_BRIEF.md): saved state, remaining work and acceptance criteria.

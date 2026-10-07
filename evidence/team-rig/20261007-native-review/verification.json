@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checked_utc": "2026-10-07T12:24:34.793908+00:00",
+  "native_receipt": "evidence/implementation/20261007T121822-verify_team_rig_fixture/receipt.json",
+  "native_checks_passed": 89,
+  "captures_checked": 15,
+  "clips_playing": 7,
+  "source_pose_samples": 36,
+  "source_bone_positions": 756,
+  "max_source_error_mm": 0.4542973872117866,
+  "scanner_rigfit_tests": {
+    "command": [
+      ".venv/Scripts/python.exe",
+      "-m",
+      "unittest",
+      "tests.test_rigfit",
+      "-v"
+    ],
+    "cwd": "C:/Projects/to-deploy/bear-scanner",
+    "exit_code": 0,
+    "count": 35,
+    "duration_seconds": 89.345,
+    "observed_terminal_tail": "Ran 35 tests in 89.345s\n\nOK",
+    "evidence_scope": "Observed terminal output; full test log was not saved."
+  },
+  "xatlas_version": "0.0.11",
+  "scanner_revision": "8b396abe2789964a6c930a67e16257bf58539b22",
+  "chamber_map_sha256": "616822f1d349a710ddbb8ced99babe8b0dbc95f69c41299f3f82d843faba117d",
+  "chamber_matches_pre_rig_integration": true,
+  "pre_existing_game_file_changes": [],
+  "source_and_capture_hashes_valid": true,
+  "scanner_source_edited": false,
+  "real_bear_quality_verified": false,
+  "chamber_parity_accepted": false,
+  "retarget_scope": "Basic FK/pelvis compatibility; no foot IK or production root-motion setup."
+}

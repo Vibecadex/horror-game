@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "synthetic-team-rig-v1",
+  "synthetic": true,
+  "purpose": "Native Unreal compatibility proof of the team 21-bone exporter; not a scanned or approved character.",
+  "created_utc": "2026-10-07T11:56:01.296524+00:00",
+  "scanner_revision": "8b396abe2789964a6c930a67e16257bf58539b22",
+  "scanner_source_sha256": {
+    "scanner/rigfit.py": "da1bad34556104ec50e38a11c10d87a3cf4ee4a01f978fbee054ebee5e3fba2c",
+    "scanner/landmarks.py": "4d11b61a6fc3f9ad39c1ae90a737c902753ea570d85a36d576581fbc2cf7acc8",
+    "tests/test_landmarks.py": "e6fd6d33571a429affd8744d00b8180d05b7a97784bdb044c7068d6a00064c2b",
+    "scripts/rig_test_package.py": "ab0496c7ed99fd856911d246a93b9bcc0603776adc06a6e0505946639bd6e7a1"
+  },
+  "generator_sha256": "880a04e7e2c80bace9fd291b836b20b39c2f2f7a2cdaa0301939c81ebaf0fd47",
+  "xatlas_version": "0.0.11",
+  "texture": "Diagnostic position colours: red=X, green=Y, blue=128; not production art.",
+  "axes": {
+    "unit": "metres",
+    "up": "+Y",
+    "front": "+Z",
+    "left": "+X"
+  },
+  "model": "synthetic-team-rig.glb",
+  "bones": [
+    "Hips",
+    "Spine",
+    "Spine1",
+    "Spine2",
+    "Neck",
+    "Head",
+    "HeadTop_End",
+    "LeftShoulder",
+    "LeftArm",
+    "LeftForeArm",
+    "LeftHand",
+    "RightShoulder",
+    "RightArm",
+    "RightForeArm",
+    "RightHand",
+    "LeftUpLeg",
+    "LeftLeg",
+    "LeftFoot",
+    "RightUpLeg",
+    "RightLeg",
+    "RightFoot"
+  ],
+  "parents": {
+    "Hips": null,
+    "Spine": "Hips",
+    "Spine1": "Spine",
+    "Spine2": "Spine1",
+    "Neck": "Spine2",
+    "Head": "Neck",
+    "HeadTop_End": "Head",
+    "LeftShoulder": "Spine2",
+    "LeftArm": "LeftShoulder",
+    "LeftForeArm": "LeftArm",
+    "LeftHand": "LeftForeArm",
+    "RightShoulder": "Spine2",
+    "RightArm": "RightShoulder",
+    "RightForeArm": "RightArm",
+    "RightHand": "RightForeArm",
+    "LeftUpLeg": "Hips",
+    "LeftLeg": "LeftUpLeg",
+    "LeftFoot": "LeftLeg",
+    "RightUpLeg": "Hips",
+    "RightLeg": "RightUpLeg",
+    "RightFoot": "RightLeg"
+  },
+  "clips": [
+    "Test_Wave",
+    "Test_Walk",
+    "Test_LookAround",
+    "Test_Bend"
+  ],
+  "clip_duration_seconds": 2.0,
+  "bounds_cm": {
+    "min": [
+      -21.37271612882614,
+      0.0,
+      -9.245104342699051
+    ],
+    "max": [
+      22.405339777469635,
+      47.52419888973236,
+      8.986178785562515
+    ]
+  },
+  "rest_height_cm": 47.52419888973236,
+  "rigfit_status": "pass",
+  "warnings": [],
+  "files": {
+    "fit/fitted_posed.glb": {
+      "sha256": "f3996f8394a5ff4e2dbba745978c93b822f05dbafbd4195dd81f772695e47069",
+      "size": 575952
+    },
+    "fit/rigfit.json": {
+      "sha256": "da1d9ca0705d6b525bc94622d3ff5c5e62bd9411465853d3014a3dcfb0d0e86d",
+      "size": 2504
+    },
+    "fit/rigged.glb": {
+      "sha256": "1fb2e5ec7773f772c79e2b992811bca99b183ba7c73e64e745f993686b6a6eba",
+      "size": 708412
+    },
+    "landmarks.json": {
+      "sha256": "b46a32f1816213b253146aacfc6e5406ebf23600f563171266dcbb5d92a17213",
+      "size": 1519
+    },
+    "synthetic-source.glb": {
+      "sha256": "44ed462ee266f50183fcac8ac00ae82d8a0649cbfc4103826a2e3c2750f85935",
+      "size": 1026640
+    },
+    "synthetic-team-rig.glb": {
+      "sha256": "b00c50f4a77d17611d21ac11601770bd2e0cb916c8d433dbe1cf419247bf6dc9",
+      "size": 722864
+    }
+  }
+}

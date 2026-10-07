@@ -45,6 +45,8 @@ The initial rig builder accepts static source meshes. Existing skinned GLBs can 
 
 This interface expands the fork's bear workflow; it does not replace the saved chamber, gameplay, enemy or scan source. `IMPORT_BEARS.cmd` remains the verified **static-prop** Unreal path. A studio skinned GLB is an animation handoff, not proof of a skeletal Unreal import or encounter integration.
 
+Separately, the team's newer **21-bone rigfit exporter** now passes a [native Unreal compatibility review](TEAM_RIG_NATIVE_REVIEW.md) on a synthetic fixture, including its four test clips and basic mannequin retargets. Those results do not transfer to this Studio's 16-bone drafts or to unfinished real scans. `REVIEW_TEAM_RIG.cmd` repeats the isolated native review.
+
 The scanner is accessed read-only. Its unfinished/failed jobs remain visible and cannot be imported. The scanner's current OpenMVS Application Control blocker is independent of using finished exports. No Windows protection, certificate trust or firewall rule is changed.
 
 Each source and rig is copied and hashed. A changed scan, report or landmark file creates a source revision and retains older rig/test history as stale, even if the model bytes are unchanged. An older pack version cannot replace a newer one. Metadata saves use revision conflict detection. The local API refuses arbitrary filesystem paths and external GLB dependencies.
