@@ -20,7 +20,19 @@ Horror Unreal Tech's review of 2026-10-08, A1-A4):
   -unattended editor is never foreground (UnfocusedVolumeMultiplier is the
   game path, which is why it fixes -game but not PIE).
   This script sets bAllowBackgroundAudio=True in memory on the CDO before PIE
-  and restores it afterwards, the same way as EnableGameSound. Nothing is saved.
+  and restores it afterwards. Both the set and the restore pass
+  PropertyAccessChangeNotifyMode.NEVER: with the default mode,
+  LevelEditorMiscSettings::PostEditChangeProperty calls SaveConfig() and writes
+  the flag to Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini, where
+  it would stick if the run died before finish(). UEditorEngine::Tick reads the
+  CDO field directly every tick, so no change notification is needed.
+  (EnableGameSound is set with the default mode as before; its settings class
+  does not save on change.)
+
+probe.wav is written asynchronously by StopRecordingOutput (a background task
+that opens the file first and fills it in chunks), so the script waits until
+its size is over 44 bytes and unchanged for 0.3 s before parsing, capped at
+WAV_SETTLE_CAP_S after the stop call.
 
 If the capture is still silent with background audio on, the fallback is the
 proven -game capture (StartRecordingOutput -> StopRecordingOutput(WavFile), the
@@ -38,7 +50,9 @@ Checks (4):
                                   folded in to keep 4 checks; both are logged separately)
 
 Expected: 4/4 if the unfocused-mute diagnosis is right; 2/4 (only the two
-signal checks false) if PIE is still silent, which points to the -game fallback.
+signal checks false) if PIE is still silent. A 2/4 points to the -game fallback
+only when the data field diagnosis_tested is true (bg_audio_set and
+bg_audio_during_pie both True); otherwise the run did not test the diagnosis.
 """
 import os, sys, time, json, struct, math, traceback
 from pathlib import Path
@@ -57,6 +71,9 @@ r = {'passed': False, 'checks': {}, 'asset_writes': False, 'suite': 'verify_enco
                'allowed for the run, and restored EnableGameSound and bAllowBackgroundAudio.'}
 handle = None
 SILENCE_DBFS = -60.
+WAV_HEADER_BYTES = 44
+WAV_STABLE_S = .3      # probe.wav size must hold this long before parsing
+WAV_SETTLE_CAP_S = 15. # give up waiting for a settled probe.wav this long after the stop call
 MISC_SETTINGS = '/Script/UnrealEd.LevelEditorMiscSettings'
 # Python may reject the C++ name; fall back to the snake_case name.
 BG_AUDIO_NAMES = ('bAllowBackgroundAudio', 'allow_background_audio')
@@ -98,6 +115,7 @@ def analyse_wav(path, window=None):
     if not (tag == 1 and bits == 16):
         # A4: e.g. a float capture. Raised to the caller, which records it and fails the signal checks.
         raise ValueError('expected 16-bit PCM, got tag %s bits %s' % (tag, bits))
+    samples = samples[:len(samples) // 2 * 2]  # guard against an odd-length body
     count = len(samples) // 2
     values = struct.unpack('<%dh' % count, samples)
     frames = count // channels
@@ -130,7 +148,9 @@ def restore():
         if 'original_bg_audio' in s:
             try:
                 misc = u.get_default_object(u.load_class(None, MISC_SETTINGS))
-                misc.set_editor_property(s['bg_audio_name'], s['original_bg_audio'])
+                # NEVER: no PostEditChange, so no SaveConfig to EditorPerProjectUserSettings.ini.
+                misc.set_editor_property(s['bg_audio_name'], s['original_bg_audio'],
+                                         u.PropertyAccessChangeNotifyMode.NEVER)
                 r['bg_audio_after'] = misc.get_editor_property(s['bg_audio_name'])
                 bg_ok = r['bg_audio_after'] == s['original_bg_audio']
             except Exception:
@@ -154,11 +174,26 @@ def finish(error=None):
         r['restore_error'] = traceback.format_exc()
     if error:
         r['error'] = error
+    # Tech (e): a 2/4 means 'use the -game fallback' only if the diagnosis was actually tested.
+    r['diagnosis_tested'] = r.get('bg_audio_set') is True and r.get('bg_audio_during_pie') is True
     r['expected_check_count'] = 4
     r['passed'] = not error and len(r['checks']) == 4 and all(r['checks'].values())
     r['wall_seconds'] = time.monotonic() - s['wall']
     (OUT / 'receipt.json').write_text(json.dumps(r, indent=2, default=str))
     finish_editor(handle)
+
+def wav_settled():
+    """True once probe.wav is over the header size and its size has held for WAV_STABLE_S."""
+    path = OUT / 'probe.wav'
+    try:
+        size = path.stat().st_size
+    except OSError:
+        return False
+    now = time.monotonic()
+    if size != s.get('wav_size'):
+        s['wav_size'], s['wav_size_at'] = size, now
+        return False
+    return size > WAV_HEADER_BYTES and now - s['wav_size_at'] >= WAV_STABLE_S
 
 def tick(dt):
     try:
@@ -190,8 +225,21 @@ def tick(dt):
         elif s['stage'] == 2 and game - s['t'] > 3:
             u.AudioMixerLibrary.stop_recording_output(w, u.AudioRecordingExportType.WAV_FILE, 'probe', str(OUT))
             s['stage'] = 3
-        elif s['stage'] == 3 and (OUT / 'probe.wav').exists():
+            s['stop_wall'] = time.monotonic()
+        elif s['stage'] == 3 and not wav_settled():
+            if time.monotonic() - s['stop_wall'] > WAV_SETTLE_CAP_S:
+                r['checks']['probe_wav_exists'] = (OUT / 'probe.wav').exists()
+                r['probe_error'] = ('probe.wav did not settle (size > %d bytes, unchanged for %.1f s) within '
+                                    '%.0f s of StopRecordingOutput; last size %r'
+                                    % (WAV_HEADER_BYTES, WAV_STABLE_S, WAV_SETTLE_CAP_S, s.get('wav_size')))
+                r['checks']['probe_not_digitally_silent'] = False
+                r['checks']['probe_has_signal_after_trigger'] = False
+                finish()
+                return
+        elif s['stage'] == 3:
             r['checks']['probe_wav_exists'] = True
+            r['wav_settle'] = {'bytes': s['wav_size'],
+                               'seconds_after_stop': round(time.monotonic() - s['stop_wall'], 3)}
             # Unverified (Tech A4): recording t=0 = start_recording_output. The 0.6 s window
             # around a 0.19 s Rifle at 0.25 s is generous; peak offsets are logged to check it.
             start = s.get('trigger_at_s', .25)
@@ -211,9 +259,11 @@ def tick(dt):
             if not r['checks']['probe_not_digitally_silent']:
                 r['silence_cause'] = ('probe.wav decoded but is silent without -NoSound. The audio device exists '
                                       '(M1 log: WASAPI device 2 for the PIE world). Likely cause: editor PIE is muted '
-                                      'while unfocused. bAllowBackgroundAudio during PIE was %r; if it was True and '
-                                      'this is still silent, use the -game StartRecordingOutput capture instead.'
-                                      % (r.get('bg_audio_during_pie'),))
+                                      'while unfocused. bAllowBackgroundAudio set=%r, during PIE=%r (diagnosis_tested=%r). '
+                                      'If both were True and this is still silent, use the -game StartRecordingOutput '
+                                      'capture instead; if not, the run did not test the diagnosis.'
+                                      % (r.get('bg_audio_set'), r.get('bg_audio_during_pie'),
+                                         r.get('bg_audio_set') is True and r.get('bg_audio_during_pie') is True))
             finish()
         if time.monotonic() - s['wall'] > 50:
             finish('timeout')
@@ -234,14 +284,15 @@ try:
     s['original_game_sound'] = settings.get_editor_property('EnableGameSound')
     r['game_sound_before'] = s['original_game_sound']
     settings.set_editor_property('EnableGameSound', True)
-    # A2: let the unfocused offscreen editor keep its volume. In memory on the CDO, not saved;
-    # restored in finish(). If it cannot be set the run continues and records why.
+    # A2: let the unfocused offscreen editor keep its volume. In memory on the CDO; NEVER skips
+    # PostEditChange, whose SaveConfig would write the ini. Restored in finish(), also with NEVER.
+    # If it cannot be set the run continues and records why.
     try:
         misc = u.get_default_object(u.load_class(None, MISC_SETTINGS))
         s['bg_audio_name'], s['original_bg_audio'] = bg_audio_get(misc)
         r['bg_audio_before'] = s['original_bg_audio']
         r['bg_audio_property_name'] = s['bg_audio_name']
-        misc.set_editor_property(s['bg_audio_name'], True)
+        misc.set_editor_property(s['bg_audio_name'], True, u.PropertyAccessChangeNotifyMode.NEVER)
         r['bg_audio_set'] = misc.get_editor_property(s['bg_audio_name'])
     except Exception:
         r['bg_audio_error'] = traceback.format_exc()
