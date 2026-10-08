@@ -30,6 +30,12 @@ Recovery checks (11, expected true):
    8 paused_f5                    F5 while paused
    9 victory_escape               boss dead; Esc pauses, Esc resumes, then F5 recovers
   10 defeat_escape                player dead; Esc pauses, Esc resumes, then F5 recovers
+                                 The resume press is a separate key press: release Pause
+                                 (inject 0), wait one frame plus RESUME_RELEASE_S real time
+                                 (the world is paused, so no game-time waits), then press.
+                                 Rerun aced6f9 pressed again on the frame the pause was
+                                 seen and never resumed (esc_resumes_ok false). The press
+                                 gap is receipt data (esc_press_gap_s).
   11 f5_burst_five_in_two_seconds up to five F5 presses inside 2 s wall time, injected on
                                  alternate frames whenever a world exists (view() None =
                                  loading, skipped, not a failure); then wait out the
@@ -65,6 +71,8 @@ editor = u.get_editor_subsystem(u.UnrealEditorSubsystem)
 VIEW_TARGET_S = 1.      # BP_CombatCamera becomes the view target after Delay .2
 CAMERA_SETTLE_S = .4    # keep holding Move after the 100 cm walk; VInterpTo speed 5 lags
 WALL_CAP_S = 4.         # wall-clock cap on game-time waits, so a paused world cannot hang a case
+RESUME_RELEASE_S = .12  # real-time gap after releasing Pause before the resume press
+                         # (verify_encounter_repair.py: inject 0, then press after > .12 s wall)
 STARTUP_WALL_CAP_S = 60. # first PIE game second costs ~4-5 s wall on a cold worktree (DDC/asset compile);
                          # ai_paths 20261008: 4.81 s from PIE start to its first F5 after wait(1)
 # Loaded inside the try at the bottom (S6), so a load failure still writes a receipt.
@@ -171,6 +179,34 @@ def until_paused(want, limit=1.):
         yield
     v = view()
     return bool(v) and u.GameplayStatics.is_game_paused(v[0]) == want
+
+def esc_pause_resume():
+    """Esc pauses, then a distinct Esc resumes. Returns the extra fields for the case.
+
+    The resume press must not land while the pause press still reads as held: release
+    Pause (inject 0), yield one frame, then wait RESUME_RELEASE_S of wall time (the world
+    is paused, so game time does not advance), then press. The unpause poll keeps its
+    real-time cap (until_paused, 1 s wall)."""
+    inject('Pause')
+    first_press = time.monotonic()
+    esc_pauses = yield from until_paused(True)
+    released = inject('Pause', 0.)
+    release_wall = time.monotonic()
+    frames = 0
+    yield
+    frames += 1
+    gap_start = time.monotonic()
+    while time.monotonic() - gap_start < RESUME_RELEASE_S:
+        yield
+        frames += 1
+    second_injected = inject('Pause')
+    second_press = time.monotonic()
+    esc_resumes = yield from until_paused(False)
+    return {'esc_pauses_ok': esc_pauses, 'esc_resumes_ok': esc_resumes,
+            'esc_press_gap_s': round(second_press - first_press, 3),
+            'esc_release_to_press_s': round(second_press - release_wall, 3),
+            'esc_release_frames': frames,
+            'esc_release_injected': released, 'esc_resume_press_injected': second_injected}
 
 def reload():
     """Inject F5; return True once a new PIE world has a possessed pawn, False after 10 s."""
@@ -362,21 +398,15 @@ def run():
     world, pawn, pc, boss = view()
     kill(boss, pawn)
     yield from wait(.6)
-    inject('Pause')
-    esc_pauses = yield from until_paused(True)
-    inject('Pause')
-    esc_resumes = yield from until_paused(False)
-    yield from f5_case('victory_escape', {'esc_pauses_ok': esc_pauses, 'esc_resumes_ok': esc_resumes})
+    esc = yield from esc_pause_resume()
+    yield from f5_case('victory_escape', esc)
 
     # 10 defeat screen Esc
     world, pawn, pc, boss = view()
     kill(pawn, boss)
     yield from wait(.6)
-    inject('Pause')
-    esc_pauses = yield from until_paused(True)
-    inject('Pause')
-    esc_resumes = yield from until_paused(False)
-    yield from f5_case('defeat_escape', {'esc_pauses_ok': esc_pauses, 'esc_resumes_ok': esc_resumes})
+    esc = yield from esc_pause_resume()
+    yield from f5_case('defeat_escape', esc)
 
     # 11 F5 burst. S2 (Tech): OpenLevel on PIE is a blocking travel, view() is None across it,
     # and IA_Restart uses InputTriggerPressed, so consecutive-frame injection is one press.
