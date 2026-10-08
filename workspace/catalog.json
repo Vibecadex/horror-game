@@ -111,7 +111,7 @@
       "member": "game",
       "icon": "network",
       "ownerRole": "Workspace maintainer",
-      "authority": "workspace/ \u00b7 tools/federated_workspace/",
+      "authority": "workspace/ manifest \u00b7 hub: lutherfourie/federated-workspace",
       "writePolicy": "Owns its catalog, snapshots and local work journal. No write authority over connected members.",
       "dependencies": [
         "evidence"
@@ -421,9 +421,9 @@
       "id": "workspace-check",
       "module": "workspace",
       "title": "Inspect the federation",
-      "command": "python tools/workspace.py check",
+      "command": "python workspace.py check --project horror-game",
       "prerequisites": [
-        "Run from the integration checkout with Python 3.11+.",
+        "Run from the federated-workspace repo (lutherfourie/federated-workspace) with this checkout registered as horror-game in local/projects.json; Python 3.11+.",
         "Member bindings point to the intended checkouts."
       ],
       "produces": "Timestamped member/artifact inspection and a saved snapshot. No member writes."
@@ -478,9 +478,9 @@
       "id": "contact-baseline",
       "module": "character",
       "title": "Verify the contact experiment baseline",
-      "command": "python tools/workspace.py experiment-check",
+      "command": "python workspace.py experiment-check --project horror-game",
       "prerequisites": [
-        "Run from the integration checkout.",
+        "Run from the federated-workspace repo (lutherfourie/federated-workspace) with this checkout registered as horror-game in local/projects.json.",
         "Read the preregistered protocol before candidate authoring."
       ],
       "produces": "Hash-pinned input receipt and criteria; no mesh, map or animation changes."
@@ -500,9 +500,9 @@
       "id": "workspace-tests",
       "module": "workspace",
       "title": "Verify workspace behavior",
-      "command": "python -m unittest discover -s tools/federated_workspace/tests",
+      "command": "python -m unittest discover -s federated_workspace/tests",
       "prerequisites": [
-        "Installed Python 3.11+.",
+        "Run from the federated-workspace repo (lutherfourie/federated-workspace) with installed Python 3.11+; the suite uses its own fixture project.",
         "Tests use isolated temporary state and bounded loopback ports."
       ],
       "produces": "Persistence, stale-write protection, dependency, source-boundary and API checks."
@@ -511,9 +511,9 @@
       "id": "agent-next",
       "module": "workspace",
       "title": "Choose the next agent assignment",
-      "command": "python tools/workspace.py agent next --track game",
+      "command": "python workspace.py agent next --project horror-game --track game",
       "prerequisites": [
-        "Run from the integration checkout.",
+        "Run from the federated-workspace repo (lutherfourie/federated-workspace) with this checkout registered as horror-game in local/projects.json.",
         "Read the task contract and preserve independent member ownership."
       ],
       "produces": "Compact machine-readable queue with readiness and blocking reasons. No model is launched."

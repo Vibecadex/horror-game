@@ -5,7 +5,7 @@
     "workspace": {
       "member": "game",
       "writePaths": ["workspace/", "evidence/federated-workspace-v1/", "evidence/workspace-agent-v1/"],
-      "readPaths": ["workspace/README.md", "workspace/decisions/ADR-001-local-federation.md", "tools/workspace.py"],
+      "readPaths": ["workspace/README.md"],
       "artifacts": [],
       "runbooks": ["workspace-tests", "workspace-check"],
       "resources": ["workspace-platform"],
