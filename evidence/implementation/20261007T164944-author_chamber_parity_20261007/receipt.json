@@ -1,0 +1,254 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyChamberParity",
+  "settings": {
+    "owner": "chamber-parity-20261007",
+    "map": "/Game/Maps/TeddyChamberParity",
+    "namespace": "/Game/TeddyEncounter/ChamberParity20261007",
+    "revision": 8,
+    "debris_source": "Assets/Adapted/ChamberParity/Parity20261007/DebrisV3",
+    "floor_source": "Assets/Adapted/ChamberParity/Parity20261007/FloorV1",
+    "wall_height_multiplier": 1.35,
+    "door_height_multiplier": 1.32,
+    "floor": {
+      "tile_cm": 850,
+      "detail_weight": 0.68,
+      "value_scale": 0.9,
+      "texture_weight": 0.48,
+      "wet_min": 0.72,
+      "rough_wet": 0.46,
+      "rough_dry": 0.84
+    },
+    "wall_materials": {
+      "Concrete": {
+        "source": "Concrete",
+        "base_color": [
+          0.12,
+          0.129,
+          0.124
+        ],
+        "texture_scale": 0.52,
+        "roughness": 0.92,
+        "metallic": 0.0
+      },
+      "Metal": {
+        "source": "Steel",
+        "base_color": [
+          0.085,
+          0.093,
+          0.088
+        ],
+        "texture_scale": 0.38,
+        "roughness": 0.73,
+        "metallic": 0.48
+      }
+    },
+    "key": {
+      "intensity": 120000,
+      "outer_cone_angle": 47,
+      "source_radius": 32,
+      "volumetric_scattering_intensity": 0.04
+    },
+    "wall_light_scale": 0.95,
+    "corner_light_scale": 0.48,
+    "front_floor_intensity": 24000,
+    "mist": {
+      "intensity": 65000,
+      "volumetric_scattering_intensity": 0.02
+    },
+    "volumetric_fog_distance": 18000,
+    "upper_haze": {
+      "location": [
+        1250,
+        180,
+        1040
+      ],
+      "scale": 1.65,
+      "radial_fog_extinction": 0.28,
+      "height_fog_extinction": 0.24,
+      "height_fog_falloff": 1.0,
+      "fog_phase_g": 0.0,
+      "fog_emissive": [
+        0.001,
+        0.004,
+        0.0036
+      ]
+    },
+    "shaft": {
+      "location": [
+        1050,
+        180,
+        1580
+      ],
+      "target": [
+        950,
+        180,
+        250
+      ],
+      "intensity": 50000,
+      "inner_cone_angle": 20,
+      "outer_cone_angle": 48,
+      "attenuation_radius": 2400,
+      "volumetric_scattering_intensity": 0.35,
+      "diffuse_scale": 0.0,
+      "specular_scale": 0.0
+    },
+    "service_returns": [
+      {
+        "name": "LeftServiceReturn",
+        "location": [
+          950,
+          -1100,
+          600
+        ],
+        "target": [
+          950,
+          -1430,
+          40
+        ],
+        "intensity": 11000,
+        "radius": 1350
+      },
+      {
+        "name": "RightServiceReturn",
+        "location": [
+          950,
+          1120,
+          680
+        ],
+        "target": [
+          1050,
+          1430,
+          60
+        ],
+        "intensity": 12500,
+        "radius": 1450
+      },
+      {
+        "name": "RearThresholdReturn",
+        "location": [
+          1250,
+          180,
+          770
+        ],
+        "target": [
+          1440,
+          180,
+          30
+        ],
+        "intensity": 5000,
+        "radius": 1300
+      },
+      {
+        "name": "RearRiserReturn",
+        "location": [
+          1250,
+          -1040,
+          660
+        ],
+        "target": [
+          1600,
+          -1120,
+          370
+        ],
+        "intensity": 3300,
+        "radius": 1100
+      }
+    ],
+    "service_dressing": [
+      {
+        "name": "RearLeftRisers",
+        "source_actor": "TE_Room_LeftPipeRun_0",
+        "location": [
+          1560,
+          -1070,
+          420
+        ],
+        "rotation": [
+          90,
+          90,
+          0
+        ],
+        "scale": [
+          1.65,
+          0.75,
+          1.15
+        ]
+      },
+      {
+        "name": "RearRightRisers",
+        "source_actor": "TE_Room_LeftPipeRun_0",
+        "location": [
+          1570,
+          1480,
+          370
+        ],
+        "rotation": [
+          90,
+          90,
+          0
+        ],
+        "scale": [
+          1.45,
+          0.65,
+          0.7
+        ]
+      },
+      {
+        "name": "RearServiceCabinet",
+        "source_actor": "TE_Room_RightCabinetA",
+        "location": [
+          1570,
+          -1470,
+          -5
+        ],
+        "rotation": [
+          0,
+          90,
+          0
+        ],
+        "scale": [
+          0.7,
+          0.8,
+          0.9
+        ]
+      }
+    ],
+    "limits": "Candidate only. No gameplay camera, character, collision-floor, Blueprint, or original material changes."
+  },
+  "changed_assets": [
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Wall_Concrete.M_Parity_Wall_Concrete",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Wall_Metal.M_Parity_Wall_Metal",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Concrete.M_Parity_Floor_Concrete",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_ConcreteLight.M_Parity_Floor_ConcreteLight",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_ConcreteDark.M_Parity_Floor_ConcreteDark",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Aggregate.M_Parity_Floor_Aggregate",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Dark.M_Parity_Floor_Dark",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Crack.M_Parity_Floor_Crack",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Debris.M_Parity_Debris",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_ChippedEdge.M_Parity_ChippedEdge",
+    "/Game/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_WetShard.M_Parity_WetShard"
+  ],
+  "asset_writes": true,
+  "shared_encounter_saved": false,
+  "gameplay_changes": false,
+  "floor": {
+    "source": "Assets/Adapted/ChamberParity/Parity20261007/FloorV1",
+    "plates": 516,
+    "spalls": 24,
+    "triangles": 82688,
+    "collision": "NoCollision"
+  },
+  "debris": {
+    "pieces": 710,
+    "triangles": 15562,
+    "collision": "NoCollision"
+  },
+  "fog_console_values": {
+    "r.VolumetricFog": 1,
+    "r.LocalFogVolume": 1,
+    "r.SupportLocalFogVolumes": 1,
+    "r.LocalFogVolume.RenderIntoVolumetricFog": 1
+  },
+  "reloaded": true
+}

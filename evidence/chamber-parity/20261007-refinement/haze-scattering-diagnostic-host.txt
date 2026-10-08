@@ -1,0 +1,141 @@
+C:\Users\4elut\.codex\worktrees\chamber-parity-20261007\horror-game\evidence\implementation\20261007T163509-diagnose_chamber_parity_haze
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyChamberParity",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "method": "Diagnostic PIE-only shaft scattering sweep with key scattering .04 and fog rect .02. No map or asset writes.",
+  "resolution": [
+    1440,
+    960
+  ],
+  "camera_revision": "chamber-03-reverse-services",
+  "reference_front": "study/visuals/chamber-target-front.png",
+  "reference_reverse": "study/visuals/chamber-target-reverse.png",
+  "world": "/Game/Maps/UEDPIE_0_TeddyChamberParity.TeddyChamberParity",
+  "postprocess": [
+    {
+      "auto_exposure_method": "<AutoExposureMethod.AEM_MANUAL: 2>",
+      "auto_exposure_bias": "3.799999952316284",
+      "auto_exposure_apply_physical_camera_exposure": "True",
+      "vignette_intensity": "0.3799999952316284",
+      "bloom_intensity": "0.25"
+    }
+  ],
+  "architectural_camera_original": {
+    "location": [
+      -1678.7905600193246,
+      170.0,
+      1874.0
+    ],
+    "rotation": [
+      -46.000000000000114,
+      0.0,
+      -0.0
+    ],
+    "fov": 54.0,
+    "method": "PIE director tick disabled and transform/FOV staged; PIE teardown discards changes"
+  },
+  "sweep": [
+    {
+      "power": 0.02,
+      "hidden": false,
+      "active": false,
+      "visible": true,
+      "emissive": "<Struct 'LinearColor' (0x000001CBDD563EB4) {r: 0.001000, g: 0.004000, b: 0.003600, a: 1.000000}>",
+      "cvars": {
+        "r.VolumetricFog": 1,
+        "r.LocalFogVolume": 1,
+        "r.LocalFogVolume.RenderIntoVolumetricFog": 1,
+        "r.Fog": 1,
+        "sg.ShadowQuality": 3
+      }
+    },
+    {
+      "power": 0.02,
+      "hidden": false,
+      "active": false,
+      "visible": true,
+      "emissive": "<Struct 'LinearColor' (0x000001CBDD563EB4) {r: 0.001000, g: 0.004000, b: 0.003600, a: 1.000000}>",
+      "cvars": {
+        "r.VolumetricFog": 1,
+        "r.LocalFogVolume": 1,
+        "r.LocalFogVolume.RenderIntoVolumetricFog": 1,
+        "r.Fog": 1,
+        "sg.ShadowQuality": 3
+      }
+    },
+    {
+      "power": 0.02,
+      "hidden": false,
+      "active": false,
+      "visible": true,
+      "emissive": "<Struct 'LinearColor' (0x000001CBDD563EB4) {r: 0.001000, g: 0.004000, b: 0.003600, a: 1.000000}>",
+      "cvars": {
+        "r.VolumetricFog": 1,
+        "r.LocalFogVolume": 1,
+        "r.LocalFogVolume.RenderIntoVolumetricFog": 1,
+        "r.Fog": 1,
+        "sg.ShadowQuality": 3
+      }
+    },
+    {
+      "power": 0.02,
+      "hidden": false,
+      "active": false,
+      "visible": true,
+      "emissive": "<Struct 'LinearColor' (0x000001CBDD563EB4) {r: 0.001000, g: 0.004000, b: 0.003600, a: 1.000000}>",
+      "cvars": {
+        "r.VolumetricFog": 1,
+        "r.LocalFogVolume": 1,
+        "r.LocalFogVolume.RenderIntoVolumetricFog": 1,
+        "r.Fog": 1,
+        "sg.ShadowQuality": 3
+      }
+    },
+    {
+      "power": 0.07,
+      "hidden": false,
+      "active": false,
+      "visible": true,
+      "emissive": "<Struct 'LinearColor' (0x000001CBDD563EB4) {r: 0.001000, g: 0.004000, b: 0.003600, a: 1.000000}>",
+      "cvars": {
+        "r.VolumetricFog": 1,
+        "r.LocalFogVolume": 1,
+        "r.LocalFogVolume.RenderIntoVolumetricFog": 1,
+        "r.Fog": 1,
+        "sg.ShadowQuality": 3
+      }
+    },
+    {
+      "power": 0.2,
+      "hidden": false,
+      "active": false,
+      "visible": true,
+      "emissive": "<Struct 'LinearColor' (0x000001CBDD563EB4) {r: 0.001000, g: 0.004000, b: 0.003600, a: 1.000000}>",
+      "cvars": {
+        "r.VolumetricFog": 1,
+        "r.LocalFogVolume": 1,
+        "r.LocalFogVolume.RenderIntoVolumetricFog": 1,
+        "r.Fog": 1,
+        "sg.ShadowQuality": 3
+      }
+    },
+    {
+      "power": 0.6,
+      "hidden": false,
+      "active": false,
+      "visible": true,
+      "emissive": "<Struct 'LinearColor' (0x000001CBDD563EB4) {r: 0.001000, g: 0.004000, b: 0.003600, a: 1.000000}>",
+      "cvars": {
+        "r.VolumetricFog": 1,
+        "r.LocalFogVolume": 1,
+        "r.LocalFogVolume.RenderIntoVolumetricFog": 1,
+        "r.Fog": 1,
+        "sg.ShadowQuality": 3
+      }
+    }
+  ],
+  "wall_seconds": 28.79700000002049
+}

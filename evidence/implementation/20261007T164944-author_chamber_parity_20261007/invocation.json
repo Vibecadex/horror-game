@@ -1,0 +1,19 @@
+{
+  "arguments": [
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "C:\\Users\\4elut\\.codex\\worktrees\\chamber-parity-20261007\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject",
+    "-ExecutePythonScript=C:\\Users\\4elut\\.codex\\worktrees\\chamber-parity-20261007\\horror-game\\tools\\author_chamber_parity_20261007.py",
+    "-RenderOffscreen",
+    "-ResX=1280",
+    "-ResY=720",
+    "-unattended",
+    "-nosplash",
+    "-nop4",
+    "-NoSound",
+    "-abslog=C:\\Users\\4elut\\.codex\\worktrees\\chamber-parity-20261007\\horror-game\\evidence\\implementation\\20261007T164944-author_chamber_parity_20261007\\engine.log",
+    "-DDC=InstalledNoZenLocalFallback",
+    "-LocalDataCachePath=C:\\Users\\4elut\\.codex\\worktrees\\chamber-parity-20261007\\horror-game\\.tool-cache\\derived-data",
+    "-UserDir=C:\\Users\\4elut\\.codex\\worktrees\\chamber-parity-20261007\\horror-game\\.tool-cache\\unreal-user"
+  ],
+  "script_sha256": "e168bc329946f0b519f4d3985e52a179f4b70a7942e3951c5fffa9db206aa699"
+}

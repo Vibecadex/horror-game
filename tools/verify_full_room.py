@@ -6,6 +6,7 @@ require an independent visual review. Conservative dressing-box intersections ar
 reported as review hints, never misrepresented as exact rendered occlusion.
 """
 import json
+import hashlib
 import math
 import os
 import sys
@@ -567,6 +568,14 @@ def tick(dt):
 try:
     u.EditorPythonScripting.set_keep_python_script_alive(True)
     assert levels.load_level(MAP)
+    if MAP == '/Game/Maps/TeddyChamberParity':
+        from chamber_parity_snapshot import snapshot_level, candidate_content_hashes
+        (OUT / 'saved-scene.json').write_text(json.dumps(snapshot_level(),indent=2),encoding='utf-8')
+        package = ROOT / 'TeddyBlueprint/Content/Maps/TeddyChamberParity.umap'
+        result['saved_map_sha256'] = hashlib.sha256(package.read_bytes()).hexdigest()
+        result['saved_scene_snapshot'] = 'saved-scene.json'
+        result['candidate_content_sha256'] = candidate_content_hashes()
+        result['reviewer_scope'] = 'Separate engine QA process; no independent-agent visual approval.'
     # ECollisionResponse has ScriptName=CollisionResponseType in this engine;
     # CollisionResponse names the distinct FCollisionResponse struct.
     result['api_preflight'] = {

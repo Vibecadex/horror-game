@@ -1,0 +1,58 @@
+{
+  "owner": "chamber-parity-20261007",
+  "generator": "tools/make_chamber_parity_floor.py",
+  "generator_sha256": "8d1ce7579dcd6dd14ffb76f8c18cd7dd129a7b11530e9100af84a0651fa94dea",
+  "assets": [
+    {
+      "name": "SM_Parity20261007_IrregularFloor_V1",
+      "file": "SM_Parity20261007_IrregularFloor_V1.fbx",
+      "sha256": "b29d6f48c6a88c505ce820574c489392de70bd1b90bdaace89ae6b1616f35b49",
+      "triangles": 82688,
+      "dimensions_cm": [
+        3412.7506256103516,
+        3072.190570831299,
+        3.9601871743798256
+      ],
+      "bounds_blender_m": [
+        [
+          -16.66251564025879,
+          -15.365144729614258,
+          -0.008999999612569809
+        ],
+        [
+          17.464990615844727,
+          15.35676097869873,
+          0.030601872131228447
+        ]
+      ],
+      "material_slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "manifold": true,
+      "downward_tops": 0,
+      "fbx_roundtrip_passed": true
+    }
+  ],
+  "plates": 516,
+  "spalls": 24,
+  "plate_area_m2": [
+    0.44976514809999557,
+    4.772715076500003
+  ],
+  "triangles": 82688,
+  "placement_cm": [
+    0,
+    0,
+    -5
+  ],
+  "collision": "NoCollision",
+  "top_world_cm": -1.9398127868771553,
+  "provenance": "Original deterministic geometry; no reference image pixels used.",
+  "units": "metres; FBX -Y/+Z; Unreal mirrors Y",
+  "shared_jagged_edges": 1621
+}

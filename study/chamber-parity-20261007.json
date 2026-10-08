@@ -2,17 +2,34 @@
   "owner": "chamber-parity-20261007",
   "map": "/Game/Maps/TeddyChamberParity",
   "namespace": "/Game/TeddyEncounter/ChamberParity20261007",
-  "revision": 4,
-  "debris_source": "Assets/Adapted/ChamberParity/Parity20261007/DebrisV2",
+  "revision": 9,
+  "debris_source": "Assets/Adapted/ChamberParity/Parity20261007/DebrisV4",
+  "floor_source": "Assets/Adapted/ChamberParity/Parity20261007/FloorV2",
   "wall_height_multiplier": 1.35,
   "door_height_multiplier": 1.32,
-  "floor": {"tile_cm": 850, "detail_weight": 0.68, "value_scale": 0.74, "wet_min": 0.62, "rough_wet": 0.60, "rough_dry": 0.94},
-  "key": {"intensity": 120000, "outer_cone_angle": 47, "source_radius": 32, "volumetric_scattering_intensity": 1.2},
-  "wall_light_scale": 0.65,
+  "floor": {"tile_cm": 850, "detail_weight": 0.68, "value_scale": 0.90, "texture_weight": 0.48, "wet_min": 0.72, "rough_wet": 0.46, "rough_dry": 0.84},
+  "wall_materials": {
+    "Concrete": {"source": "Concrete", "base_color": [0.12, 0.129, 0.124], "texture_scale": 0.52, "roughness": 0.92, "metallic": 0.0},
+    "Metal": {"source": "Steel", "base_color": [0.085, 0.093, 0.088], "texture_scale": 0.38, "roughness": 0.73, "metallic": 0.48}
+  },
+  "key": {"intensity": 120000, "outer_cone_angle": 47, "source_radius": 32, "volumetric_scattering_intensity": 0.04},
+  "wall_light_scale": 0.95,
   "corner_light_scale": 0.48,
   "front_floor_intensity": 24000,
-  "mist": {"intensity": 65000, "volumetric_scattering_intensity": 8},
-  "upper_haze": {"location": [1120, 180, 940], "scale": 1.3, "radial_fog_extinction": 0.60, "height_fog_extinction": 0.0, "fog_phase_g": 0.35, "fog_emissive": [0.001, 0.004, 0.0036]},
-  "shaft": {"location": [1330, 180, 1330], "target": [650, 180, 160], "intensity": 28000, "inner_cone_angle": 12, "outer_cone_angle": 29, "attenuation_radius": 2100, "volumetric_scattering_intensity": 14, "diffuse_scale": 0.18, "specular_scale": 0.0},
+  "mist": {"intensity": 65000, "volumetric_scattering_intensity": 0.02},
+  "volumetric_fog_distance": 18000,
+  "upper_haze": {"location": [1250, 180, 1040], "scale": 1.65, "radial_fog_extinction": 0.28, "height_fog_extinction": 0.24, "height_fog_falloff": 1.0, "fog_phase_g": 0.0, "fog_emissive": [0.001, 0.004, 0.0036]},
+  "shaft": {"location": [1050, 180, 1580], "target": [950, 180, 250], "intensity": 50000, "inner_cone_angle": 20, "outer_cone_angle": 48, "attenuation_radius": 2400, "volumetric_scattering_intensity": 0.35, "diffuse_scale": 0.0, "specular_scale": 0.0},
+  "service_returns": [
+    {"name": "LeftServiceReturn", "location": [950, -1100, 600], "target": [950, -1430, 40], "intensity": 11000, "radius": 1350},
+    {"name": "RightServiceReturn", "location": [950, 1120, 680], "target": [1050, 1430, 60], "intensity": 12500, "radius": 1450},
+    {"name": "RearThresholdReturn", "location": [1250, 180, 770], "target": [1440, 180, 30], "intensity": 5000, "radius": 1300},
+    {"name": "RearRiserReturn", "location": [1250, -1040, 660], "target": [1600, -1120, 370], "intensity": 3300, "radius": 1100}
+  ],
+  "service_dressing": [
+    {"name": "RearLeftRisers", "source_actor": "TE_Room_LeftPipeRun_0", "location": [1560, -1070, 420], "rotation": [90, 90, 0], "scale": [1.65, 0.75, 1.15]},
+    {"name": "RearRightRisers", "source_actor": "TE_Room_LeftPipeRun_0", "location": [1570, 1480, 370], "rotation": [90, 90, 0], "scale": [1.45, 0.65, 0.7]},
+    {"name": "RearServiceCabinet", "source_actor": "TE_Room_RightCabinetA", "location": [1570, -1470, -5], "rotation": [0, 90, 0], "scale": [0.7, 0.8, 0.9]}
+  ],
   "limits": "Candidate only. No gameplay camera, character, collision-floor, Blueprint, or original material changes."
 }

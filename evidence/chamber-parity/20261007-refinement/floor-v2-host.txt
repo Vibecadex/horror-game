@@ -1,0 +1,9 @@
+
+FBX export starting... 'C:\\Users\\4elut\\.codex\\worktrees\\chamber-parity-20261007\\horror-game\\Assets\\Adapted\\ChamberParity\\Parity20261007\\FloorV2\\SM_Parity20261007_IrregularFloor_V2.fbx'
+export finished in 0.1246 sec.
+FBX version: 7400
+Info: Saved as "ChamberParityFloor_V2.blend"
+PARITY_FLOOR_COMPLETE {"owner": "chamber-parity-20261007", "generator": "tools/make_chamber_parity_floor.py", "generator_sha256": "46e86c890fa672d16a8d9f0d4e3e0136535f30173262ad08e134d853add6ae3c", "assets": [{"name": "SM_Parity20261007_IrregularFloor_V2", "file": "SM_Parity20261007_IrregularFloor_V2.fbx", "sha256": "f37e35df159f3bcd055ef2e4aef41fbfa7657c41a5387c0d8288969ed6381381", "triangles": 131150, "dimensions_cm": [3411.168670654297, 3071.811008453369, 3.9769988507032394], "bounds_blender_m": [[-16.655601501464844, -15.359657287597656, -0.008999999612569809], [17.456085205078125, 15.358452796936035, 0.030769988894462585]], "material_slots": ["Concrete", "ConcreteLight", "ConcreteDark", "Aggregate", "Dark", "Crack"], "manifold": true, "downward_tops": 0, "fbx_roundtrip_passed": true}], "plates": 1113, "spalls": 27, "plate_area_m2": [0.22840302014999914, 5.365268209850004], "triangles": 131150, "placement_cm": [0, 0, -5], "collision": "NoCollision", "top_world_cm": -1.9230011105537415, "provenance": "Original deterministic geometry; no reference image pixels used.", "units": "metres; FBX -Y/+Z; Unreal mirrors Y", "shared_jagged_edges": 3421}
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:35:40)
+
+Blender quit

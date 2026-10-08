@@ -81,18 +81,62 @@ def floor_material(name, factor=1., debris=False, rough=None):
     col = lerp(m, soft, detailed, scalar(m, .55 if debris else p['detail_weight']))
     gray = node(m, u.MaterialExpressionDesaturation)
     link(col, gray, ''); link(scalar(m, .8), gray, 'Fraction')
+    # Keep aggregate detail, but remove broad cloudy albedo contrast.
+    if not debris:
+        gray = lerp(m, rgb(m, (.18, .188, .18)), gray, scalar(m, p.get('texture_weight', 1.)))
     noise = node(m, u.MaterialExpressionNoise, scale=.00165, quality=1, levels=3,
                  output_min=0., output_max=1., turbulence=False)
     link(world, noise, list(M.get_material_expression_input_names(noise))[0])
     contrast = mul(m, add(m, noise, scalar(m, -.31)), 2.8)
     dry = node(m, u.MaterialExpressionClamp, min_default=0., max_default=1.)
     link(contrast, dry, '')
-    variation = lerp(m, scalar(m, .74 if debris else p['wet_min']), scalar(m, 1.06), dry)
+    wet = add(m, scalar(m, 1.), mul(m, dry, -1.))
+    wet = mul(m, mul(m, wet, wet), wet)
+    variation = lerp(m, scalar(m, 1.), scalar(m, .74 if debris else p['wet_min']), wet)
     bind(mul(m, mul(m, gray, p['value_scale'] * factor), variation), u.MaterialProperty.MP_BASE_COLOR)
     normal = tex(m, '/Game/TeddyEncounter/Arena/T_AI_Floor_Normal', uv, u.MaterialSamplerType.SAMPLERTYPE_NORMAL)
     bind(lerp(m, rgb(m, (0, 0, 1)), normal, scalar(m, .35 if debris else .38)), u.MaterialProperty.MP_NORMAL)
-    bind(scalar(m, rough) if rough is not None else lerp(m, scalar(m, p['rough_wet']), scalar(m, p['rough_dry']), dry), u.MaterialProperty.MP_ROUGHNESS)
-    bind(scalar(m, .12), u.MaterialProperty.MP_SPECULAR)
+    bind(scalar(m, rough) if rough is not None else lerp(m, scalar(m, p['rough_dry']), scalar(m, p['rough_wet']), wet), u.MaterialProperty.MP_ROUGHNESS)
+    bind(scalar(m, .12 if debris else .16), u.MaterialProperty.MP_SPECULAR)
+    M.recompile_material(m); save(m)
+    return m
+
+def wall_material(name, spec):
+    m = owned(NS + '/Materials/M_Parity_Wall_' + name, u.Material, u.MaterialFactoryNew())
+    M.delete_all_material_expressions(m)
+    m.set_editor_property('tangent_space_normal', False)
+    def aligned(texture_path, normal=False):
+        texture = A.load_asset(texture_path); assert texture
+        function = A.load_asset('/Engine/Functions/Engine_MaterialFunctions01/Texturing/' + ('WorldAlignedNormal' if normal else 'WorldAlignedTexture'))
+        call = node(m, u.MaterialExpressionMaterialFunctionCall)
+        assert call.set_material_function(function)
+        obj = node(m, u.MaterialExpressionTextureObject, texture=texture)
+        if normal: obj.set_editor_property('sampler_type', u.MaterialSamplerType.SAMPLERTYPE_NORMAL)
+        link(obj, call, 'TextureObject'); link(rgb(m, (680,680,680)), call, 'TextureSize')
+        result = node(m, u.MaterialExpressionMultiply, const_b=1.)
+        link(call, result, 'A', 'XYZ Texture')
+        return result
+    col = aligned('/Game/TeddyEncounter/Chamber/Textures/T_Chamber_WallPatinaColor')
+    col = lerp(m, rgb(m, spec['base_color']), mul(m, col, spec['texture_scale']), scalar(m, .42))
+    world = node(m, u.MaterialExpressionWorldPosition)
+    stretched = mul(m, world, rgb(m, (.021,.019,.0012)))
+    stain = node(m, u.MaterialExpressionNoise, scale=1., quality=1, levels=3, output_min=0., output_max=1., turbulence=False)
+    link(stretched, stain, list(M.get_material_expression_input_names(stain))[0])
+    runoff = lerp(m, scalar(m, .53), scalar(m, 1.05), stain)
+    z = node(m, u.MaterialExpressionComponentMask, r=False, g=False, b=True, a=False)
+    link(world, z, 'Input')
+    clean = node(m, u.MaterialExpressionClamp, min_default=0., max_default=1.)
+    link(mul(m, z, 1/190.), clean, '')
+    footing = lerp(m, scalar(m, .62), scalar(m, 1.), clean)
+    bind(mul(m, mul(m,col,runoff),footing), u.MaterialProperty.MP_BASE_COLOR)
+    normal = aligned('/Game/TeddyEncounter/Chamber/Textures/T_Chamber_' + spec['source'] + '_Normal', True)
+    geometric = node(m, u.MaterialExpressionVertexNormalWS)
+    normal = lerp(m, geometric, normal, scalar(m, .15))
+    norm = node(m, u.MaterialExpressionNormalize); link(normal,norm,'VectorInput')
+    bind(norm,u.MaterialProperty.MP_NORMAL)
+    bind(lerp(m,scalar(m,spec['roughness']-.12),scalar(m,spec['roughness']),stain),u.MaterialProperty.MP_ROUGHNESS)
+    bind(scalar(m,spec['metallic']),u.MaterialProperty.MP_METALLIC)
+    bind(scalar(m,.28),u.MaterialProperty.MP_SPECULAR)
     M.recompile_material(m); save(m)
     return m
 
@@ -103,6 +147,38 @@ def spawn(cls, label, location, rotation=None):
     a.set_editor_property('tags', ['TeddyEncounterOwned', 'ChamberParity20261007'])
     a.set_folder_path('TeddyEncounter/ChamberParity20261007')
     return a
+
+def import_owned_mesh(item, source, materials):
+    path = NS + '/Meshes/' + item['name']
+    assert hashlib.sha256((source / item['file']).read_bytes()).hexdigest() == item['sha256']
+    if A.does_asset_exist(path):
+        mesh = A.load_asset(path)
+        assert A.get_metadata_tag(mesh, 'ChamberParity.Owner') == OWNER
+        assert A.get_metadata_tag(mesh, 'ChamberParity.SourceSHA256') == item['sha256']
+        return mesh
+    options = u.FbxImportUI()
+    for k, v in {'automated_import_should_detect_type': False, 'mesh_type_to_import': u.FBXImportType.FBXIT_STATIC_MESH,
+                 'import_as_skeletal': False, 'import_materials': False, 'import_textures': False}.items(): options.set_editor_property(k, v)
+    for k, v in {'combine_meshes': True, 'auto_generate_collision': False, 'convert_scene': True,
+                 'convert_scene_unit': True, 'force_front_x_axis': False}.items(): options.static_mesh_import_data.set_editor_property(k, v)
+    options.static_mesh_import_data.set_editor_property('normal_import_method', u.FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS)
+    task = u.AssetImportTask()
+    task.filename = str(source / item['file']); task.destination_path = NS + '/Meshes'; task.destination_name = item['name']
+    task.automated = True; task.save = False; task.replace_existing = False; task.options = options
+    u.AssetToolsHelpers.get_asset_tools().import_asset_tasks([task])
+    assert task.imported_object_paths
+    mesh = A.load_asset(path)
+    A.set_metadata_tag(mesh, 'ChamberParity.Owner', OWNER)
+    A.set_metadata_tag(mesh, 'ChamberParity.SourceSHA256', item['sha256'])
+    for i, slot in enumerate(mesh.get_editor_property('static_materials')):
+        actual = str(slot.material_slot_name)
+        canonical = actual.removesuffix('_001')
+        assert canonical in materials, actual
+        mesh.set_material(i, materials[canonical])
+    ext = mesh.get_bounds().box_extent
+    assert max(abs(a-b) for a,b in zip([ext.x*2,ext.y*2,ext.z*2],item['dimensions_cm'])) < .2
+    save(mesh)
+    return mesh
 
 def main():
     if not A.does_asset_exist(MAP):
@@ -141,8 +217,17 @@ def main():
             b = BASE[label]; loc = list(b['location']); loc[2] = (loc[2] + 5) * P['wall_height_multiplier'] - 5
             a.set_actor_location(u.Vector(*loc), False, False)
 
+    wall_mats = {name: wall_material(name,spec) for name,spec in P.get('wall_materials',{}).items()}
+    for label,a in actors.items():
+        if not label.startswith(('TE_Room_', 'TE_Parity_RoomExt_', 'TE_Chamber_')): continue
+        for c in a.get_components_by_class(u.StaticMeshComponent):
+            for i in range(c.get_num_materials()):
+                current = c.get_material(i)
+                if not current: continue
+                for name,mat in wall_mats.items():
+                    if current.get_name() in ('M_Chamber_'+name, 'M_Parity_Wall_'+name): c.set_material(i,mat)
     mats = {n: floor_material('Floor_' + n, f) for n, f in
-            [('Concrete', .85), ('ConcreteLight', .94), ('ConcreteDark', .67), ('Aggregate', .77), ('Dark', .38), ('Crack', .49)]}
+            [('Concrete', .85), ('ConcreteLight', .89), ('ConcreteDark', .81), ('Aggregate', .77), ('Dark', .38), ('Crack', .49)]}
     floor = actors['TE_Chamber_Recover_Main'].static_mesh_component
     for i, slot in enumerate(floor.static_mesh.get_editor_property('static_materials')):
         floor.set_material(i, mats[str(slot.material_slot_name)])
@@ -160,36 +245,24 @@ def main():
             a.set_actor_hidden_in_game(label not in wanted)
             a.static_mesh_component.set_editor_property('visible', label in wanted)
     u.SystemLibrary.execute_console_command(None, 'Interchange.FeatureFlags.Import.FBX 0')
+    if P.get('floor_source'):
+        floor_source = ROOT / P['floor_source']
+        floor_manifest = json.loads((floor_source / 'manifest.json').read_text())
+        assert floor_manifest['owner'] == OWNER and len(floor_manifest['assets']) == 1
+        item = floor_manifest['assets'][0]
+        assert item['fbx_roundtrip_passed'] and item['manifold'] and item['downward_tops'] == 0
+        mesh = import_owned_mesh(item, floor_source, mats)
+        label = 'TE_Parity20261007_IrregularFloor'
+        a = actors.get(label) or spawn(u.StaticMeshActor, 'IrregularFloor', floor_manifest['placement_cm'])
+        a.static_mesh_component.set_static_mesh(mesh)
+        a.static_mesh_component.set_collision_enabled(u.CollisionEnabled.NO_COLLISION)
+        a.set_actor_enable_collision(False)
+        actors['TE_Chamber_Recover_Main'].set_actor_hidden_in_game(True)
+        actors['TE_Chamber_Recover_Main'].static_mesh_component.set_editor_property('visible', False)
+        R['floor'] = {'source': P['floor_source'], 'plates': floor_manifest['plates'], 'spalls': floor_manifest['spalls'],
+                      'triangles': floor_manifest['triangles'], 'collision': 'NoCollision'}
     for item in manifest['assets']:
-        path = NS + '/Meshes/' + item['name']
-        if A.does_asset_exist(path):
-            mesh = A.load_asset(path)
-            assert A.get_metadata_tag(mesh, 'ChamberParity.Owner') == OWNER
-            assert A.get_metadata_tag(mesh, 'ChamberParity.SourceSHA256') == item['sha256']
-        else:
-            assert hashlib.sha256((source / item['file']).read_bytes()).hexdigest() == item['sha256']
-            options = u.FbxImportUI()
-            for k, v in {'automated_import_should_detect_type': False, 'mesh_type_to_import': u.FBXImportType.FBXIT_STATIC_MESH,
-                         'import_as_skeletal': False, 'import_materials': False, 'import_textures': False}.items(): options.set_editor_property(k, v)
-            for k, v in {'combine_meshes': True, 'auto_generate_collision': False, 'convert_scene': True,
-                         'convert_scene_unit': True, 'force_front_x_axis': False}.items(): options.static_mesh_import_data.set_editor_property(k, v)
-            options.static_mesh_import_data.set_editor_property('normal_import_method', u.FBXNormalImportMethod.FBXNIM_IMPORT_NORMALS)
-            task = u.AssetImportTask()
-            task.filename = str(source / item['file']); task.destination_path = NS + '/Meshes'; task.destination_name = item['name']
-            task.automated = True; task.save = False; task.replace_existing = False; task.options = options
-            u.AssetToolsHelpers.get_asset_tools().import_asset_tasks([task])
-            assert task.imported_object_paths
-            mesh = A.load_asset(path)
-            A.set_metadata_tag(mesh, 'ChamberParity.Owner', OWNER)
-            A.set_metadata_tag(mesh, 'ChamberParity.SourceSHA256', item['sha256'])
-            for i, slot in enumerate(mesh.get_editor_property('static_materials')):
-                actual = str(slot.material_slot_name)
-                canonical = actual.removesuffix('_001')
-                assert canonical in debris_mats, actual
-                mesh.set_material(i, debris_mats[canonical])
-            ext = mesh.get_bounds().box_extent
-            assert max(abs(a-b) for a,b in zip([ext.x*2,ext.y*2,ext.z*2],item['dimensions_cm'])) < .2
-            save(mesh)
+        mesh = import_owned_mesh(item, source, debris_mats)
         label = 'TE_Parity20261007_' + item['name']
         a = actors.get(label) or spawn(u.StaticMeshActor, item['name'], [0, 0, 0])
         a.static_mesh_component.set_static_mesh(mesh)
@@ -197,14 +270,42 @@ def main():
         a.static_mesh_component.set_lighting_channels(True, False, False)
         a.set_actor_enable_collision(False)
     R['debris'] = {'pieces': manifest['pieces'], 'triangles': manifest['triangles'], 'collision': 'NoCollision'}
-    grate = actors['TE_Room_DrainGrate_-1_0'].static_mesh_component.static_mesh
+    grate_source = actors['TE_Room_DrainGrate_-1_0'].static_mesh_component
+    grate = grate_source.static_mesh
     for index, y in enumerate([-1250, -850, -450, -50, 350, 750, 1150]):
         label = 'TE_Parity20261007_FrontDrain_' + str(index)
         a = actors.get(label) or spawn(u.StaticMeshActor, 'FrontDrain_' + str(index), [-1595, y, -1.5], u.Rotator(yaw=90))
         a.set_actor_scale3d(u.Vector(1, .85, .7))
         c = a.static_mesh_component; c.set_static_mesh(grate)
+        for slot in range(grate_source.get_num_materials()):
+            c.set_material(slot, grate_source.get_material(slot))
         c.set_collision_enabled(u.CollisionEnabled.NO_COLLISION)
         a.set_actor_enable_collision(False)
+
+    # These source props carried an unassigned indicator slot. Override the
+    # candidate instances only; the source mesh and source map stay untouched.
+    for label in ('TE_Room_RightCabinetA', 'TE_Room_RightCabinetB'):
+        c = actors[label].static_mesh_component
+        for i in range(c.get_num_materials()):
+            if c.get_material(i) and c.get_material(i).get_name() == 'WorldGridMaterial':
+                c.set_material(i, A.load_asset('/Game/TeddyEncounter/Chamber/Materials/M_Chamber_Dark'))
+    for spec in P.get('service_dressing', []):
+        source_component = actors[spec['source_actor']].static_mesh_component
+        label = 'TE_Parity20261007_' + spec['name']
+        a = actors.get(label) or spawn(u.StaticMeshActor, spec['name'], spec['location'])
+        a.set_actor_location(u.Vector(*spec['location']), False, False)
+        a.set_actor_rotation(u.Rotator(pitch=spec['rotation'][0], yaw=spec['rotation'][1], roll=spec['rotation'][2]), False)
+        a.set_actor_scale3d(u.Vector(*spec['scale']))
+        c = a.static_mesh_component
+        c.set_static_mesh(source_component.static_mesh)
+        for i in range(source_component.get_num_materials()): c.set_material(i, source_component.get_material(i))
+        c.set_collision_enabled(u.CollisionEnabled.NO_COLLISION)
+        a.set_actor_enable_collision(False)
+    for label in ('TE_Parity_RoomExt_RearInset_0', 'TE_Parity_RoomExt_RearInset_3'):
+        c = actors[label].static_mesh_component
+        for i in range(c.get_num_materials()):
+            if c.get_material(i) and c.get_material(i).get_name() == 'M_Chamber_Dark':
+                c.set_material(i, wall_mats['Metal'])
 
     for label, a in actors.items():
         b = BASE.get(label)
@@ -223,6 +324,8 @@ def main():
     front.set_editor_property('specular_scale', .08)
     mist = actors['TE_Parity_FarFog_Light'].get_component_by_class(u.RectLightComponent)
     for k, v in P['mist'].items(): mist.set_editor_property(k, float(v))
+    actors['TE_LowMist'].get_component_by_class(u.ExponentialHeightFogComponent).set_editor_property(
+        'volumetric_fog_distance', float(P.get('volumetric_fog_distance', 12000)))
     shaft = actors.get('TE_Parity20261007_OverheadShaft') or spawn(u.SpotLight, 'OverheadShaft', P['shaft']['location'])
     shaft.set_actor_location(u.Vector(*P['shaft']['location']), False, False)
     shaft.set_actor_rotation(u.MathLibrary.find_look_at_rotation(u.Vector(*P['shaft']['location']), u.Vector(*P['shaft']['target'])), False)
@@ -235,14 +338,32 @@ def main():
     c.set_editor_property('source_radius', 28.)
     c.set_light_color(u.LinearColor(.32, .70, .66, 1))
     c.set_cast_shadows(True)
+    c.set_editor_property('cast_volumetric_shadow', True)
     c.set_lighting_channels(True, False, True)
+    for spec in P.get('service_returns', []):
+        label = 'TE_Parity20261007_' + spec['name']
+        a = actors.get(label) or spawn(u.SpotLight, spec['name'], spec['location'])
+        a.set_actor_location(u.Vector(*spec['location']), False, False)
+        a.set_actor_rotation(u.MathLibrary.find_look_at_rotation(u.Vector(*spec['location']), u.Vector(*spec['target'])), False)
+        c = a.get_component_by_class(u.SpotLightComponent)
+        c.set_editor_property('mobility', u.ComponentMobility.MOVABLE)
+        c.set_editor_property('intensity_units', u.LightUnits.CANDELAS)
+        for key, value in {'intensity': spec['intensity'], 'attenuation_radius': spec['radius'],
+                           'inner_cone_angle': 26., 'outer_cone_angle': 61., 'source_radius': 120.,
+                           'volumetric_scattering_intensity': .2, 'specular_scale': .18,
+                           'indirect_lighting_intensity': 0.}.items():
+            c.set_editor_property(key, float(value))
+        c.set_light_color(u.LinearColor(.42, .67, .64, 1))
+        c.set_cast_shadows(True)
+        c.set_lighting_channels(True, False, False)
     h = P['upper_haze']
     haze = actors.get('TE_Parity20261007_UpperHaze') or spawn(u.LocalFogVolume, 'UpperHaze', h['location'])
     haze.set_actor_location(u.Vector(*h['location']), False, False)
     haze.set_actor_scale3d(u.Vector(h['scale'], h['scale'], h['scale']))
     fog = haze.get_component_by_class(u.LocalFogVolumeComponent)
     assert fog
-    for k in ('radial_fog_extinction', 'height_fog_extinction', 'fog_phase_g'): fog.set_editor_property(k, float(h[k]))
+    for k in ('radial_fog_extinction', 'height_fog_extinction', 'height_fog_falloff', 'fog_phase_g'):
+        if k in h: fog.set_editor_property(k, float(h[k]))
     fog.set_editor_property('fog_albedo', u.LinearColor(.66, .83, .78, 1))
     fog.set_editor_property('fog_emissive', u.LinearColor(*h['fog_emissive'], 1))
     R['fog_console_values'] = {k: u.SystemLibrary.get_console_variable_int_value(k) for k in

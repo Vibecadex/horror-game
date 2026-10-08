@@ -6,6 +6,7 @@ Optional TEDDY_CHAMBER_WIDTH/HEIGHT retain a 3:2 ratio. Architectural cameras ar
 explicitly separate from normal gameplay. Exposure and lighting remain saved values.
 """
 import json
+import hashlib
 import os
 from pathlib import Path
 import sys
@@ -34,6 +35,9 @@ VIEWS = [
 if os.environ.get('TEDDY_CHAMBER_FULL') == '1':
     VIEWS.insert(0, {'name': '00-full-chamber', 'caption': 'Full-room architectural comparison; saved scene and native cutaway. Gameplay camera unchanged.',
         'kind': 'architecture', 'location': (-4250, 180, 3380), 'target': (100, 180, 80), 'fov': 47.0})
+if os.environ.get('TEDDY_CHAMBER_REFERENCE') == '1':
+    VIEWS.append({'name': '04-reference-framing', 'caption': 'Longer architectural lens approximates the selected concept perspective. Saved actors and native cutaway; no gameplay camera change.',
+        'kind': 'architecture', 'location': (-9400, 180, 7350), 'target': (100, 180, 300), 'fov': 19.8})
 
 if '--describe' in sys.argv:
     print(json.dumps({'resolution': CAPTURE_SIZE, 'camera_revision': CAMERA_REVISION, 'views': VIEWS, 'asset_writes': False,
@@ -254,6 +258,11 @@ def tick(delta):
 try:
     u.EditorPythonScripting.set_keep_python_script_alive(True)
     assert LEVEL.load_level(report['map'])
+    if MAP_PATH == '/Game/Maps/TeddyChamberParity':
+        package = ROOT / 'TeddyBlueprint/Content/Maps/TeddyChamberParity.umap'
+        report['saved_map_sha256'] = hashlib.sha256(package.read_bytes()).hexdigest()
+        from chamber_parity_snapshot import candidate_content_hashes
+        report['candidate_content_sha256'] = candidate_content_hashes()
     if os.environ.get('TEDDY_CHAMBER_FULL') == '1':
         from chamber_parity_snapshot import snapshot_level
         (OUT / 'saved-scene.json').write_text(json.dumps(snapshot_level(), indent=2), encoding='utf-8')

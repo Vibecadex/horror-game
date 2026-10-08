@@ -17,13 +17,17 @@ from mathutils.bvhtree import BVHTree
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'Assets/Adapted/ChamberParity/Parity20261007'
 REVISION = int(os.environ.get('CHAMBER_DEBRIS_REVISION', '1'))
-assert REVISION in (1, 2)
-if REVISION == 2:
-    OUT = OUT / 'DebrisV2'
+assert REVISION in (1, 2, 3, 4)
+if REVISION >= 2:
+    OUT = OUT / ('DebrisV' + str(REVISION))
 OWNER = 'chamber-parity-20261007'
 OUT.mkdir(parents=True, exist_ok=True)
 assert not (OUT / 'manifest.json').exists(), 'Use a new revision rather than overwrite exported art.'
 SOURCE = ROOT / 'Assets/Adapted/ChamberParity/FloorRecoveryV4/SM_ChamberFractureRecover_Main.fbx'
+if REVISION == 3:
+    SOURCE = ROOT / 'Assets/Adapted/ChamberParity/Parity20261007/FloorV1/SM_Parity20261007_IrregularFloor_V1.fbx'
+elif REVISION == 4:
+    SOURCE = ROOT / 'Assets/Adapted/ChamberParity/Parity20261007/FloorV2/SM_Parity20261007_IrregularFloor_V2.fbx'
 source_hash = hashlib.sha256(SOURCE.read_bytes()).hexdigest()
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.context.scene.unit_settings.system = 'METRIC'
@@ -34,7 +38,7 @@ tree = BVHTree.FromPolygons([floor.matrix_world @ v.co for v in floor.data.verti
                           [list(p.vertices) for p in floor.data.polygons])
 
 def height(x, y):
-    point, normal, _, _ = tree.ray_cast(Vector((x - .4, y, 2)), Vector((0, 0, -1)))
+    point, normal, _, _ = tree.ray_cast(Vector((x - (0 if REVISION >= 3 else .4), y, 2)), Vector((0, 0, -1)))
     assert point is not None, (x, y)
     return point.z - .05
 
@@ -56,6 +60,8 @@ for cx, cy, sx, sy, count in clusters:
         x = max(-15.2, min(15.2, rng.gauss(cx, sx * .55)))
         y = max(-14.5, min(14.5, rng.gauss(cy, sy * .55)))
         span = (rng.uniform(.28, .86) if rng.random() < .46 else rng.uniform(.08, .29)) if REVISION == 2 else (rng.uniform(.18, .58) if rng.random() < .30 else rng.uniform(.045, .24))
+        if REVISION >= 3:
+            span = rng.uniform(.40, 1.18) if rng.random() < .36 else rng.uniform(.12, .40)
         n = rng.choice([3, 4, 4, 5, 6])
         phi = rng.uniform(0, math.tau)
         radii = [rng.uniform(.65, 1.) * span / 2 for _ in range(n)]
@@ -87,7 +93,7 @@ for cx, cy, sx, sy, count in clusters:
 bpy.data.objects.remove(floor, do_unlink=True)
 assets = []
 for index, g in groups.items():
-    name = 'SM_Parity20261007_Debris_' + str(index) + ('_V2' if REVISION == 2 else '')
+    name = 'SM_Parity20261007_Debris_' + str(index) + ('_V' + str(REVISION) if REVISION >= 2 else '')
     mesh = bpy.data.meshes.new(name)
     mesh.from_pydata(g['verts'], [], g['faces'])
     assert not mesh.validate(), 'Invalid authored geometry'

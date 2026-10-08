@@ -1,5 +1,14 @@
 """Read-only saved actor/material/light inventory for the isolated room pass."""
 import unreal as u
+import hashlib
+from pathlib import Path
+
+def candidate_content_hashes():
+    """Read bytes only for identity; do not parse generated Unreal packages."""
+    root = Path(__file__).resolve().parents[1]
+    namespace = root / 'TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007'
+    packages = list(namespace.rglob('*.uasset')) + [root / 'TeddyBlueprint/Content/Maps/TeddyChamberParity.umap']
+    return {p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(packages)}
 
 def vec(v):
     return [v.x, v.y, v.z]
@@ -32,7 +41,9 @@ def snapshot_level():
                     pass
             row['lights'].append(item)
         for c in a.get_components_by_class(u.LocalFogVolumeComponent):
-            row['local_fog'] = {k: c.get_editor_property(k) for k in ['radial_fog_extinction', 'height_fog_extinction', 'fog_phase_g']}
+            row['local_fog'] = {k: c.get_editor_property(k) for k in ['radial_fog_extinction', 'height_fog_extinction', 'height_fog_falloff', 'fog_phase_g']}
+            color = c.get_editor_property('fog_emissive')
+            row['local_fog']['fog_emissive'] = [color.r, color.g, color.b]
         for c in a.get_components_by_class(u.ExponentialHeightFogComponent):
             row['height_fog'] = {k: c.get_editor_property(k) for k in ['fog_density', 'fog_height_falloff', 'enable_volumetric_fog', 'volumetric_fog_extinction_scale', 'volumetric_fog_distance']}
         rows.append(row)
