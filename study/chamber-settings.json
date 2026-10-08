@@ -1,9 +1,16 @@
 {
-  "revision": "chamber-08-crust",
+  "revision": "chamber-12-bay-atmosphere",
   "wall_patina":{"file":"Assets/Adapted/ChamberParity/WallSurface/T_ChamberWall_Albedo.png","sha256":"6ec78f1ac8b4f69bea1cae1839ab58b52ab9b4dc2987902a98ce1098da2cdbe3"},
   "floor":{"tile_cm":850,"detail_weight":0.65,"value_scale":0.68,"foreground_damp":0.25,"foreground_dry":0.90},
+  "floor_morphology":{"tile_cm":3200,"texture_weight":0.22,"flat_color":[0.10,0.108,0.102],"normal":"flat","detail_weight":0.0,"value_scale":1.0},
+  "floor_recovery":{"tile_cm":720,"detail_weight":0.28,"normal_mix":0.28,"value_scale":0.74,"foreground_damp":0.42,"foreground_dry":0.94},
   "key_outer_cone":48,
-  "rear_fog_scattering": 4,
+  "rear_fog_scattering": 7,
+  "overhead_mist": {"location":[80,40,1100],"target":[80,40,40],"intensity":100000,"radius":3200,"width":1400,"height":900,"scattering":14},
+  "reverse_overhead": {"location":[-1370,0,1180],"target":[-1600,0,240],"intensity":9000,"radius":1700,"inner":16,"outer":64,"source":90,"scattering":3.5,"color":[0.34,0.70,0.69]},
+  "height_fog": {"fog_density": 0.012, "fog_height_falloff": 0.35, "volumetric_fog_extinction_scale": 0.70},
+  "bay_fill": {"intensity":700,"radius":260,"inner":10,"outer":26,"source":18,"scattering":0.35,"color":[0.55,0.28,0.12],"placements":[{"name":"BayDepthL","location":[-1536,-700,150],"target":[-1608,-700,120]},{"name":"BayDepthR","location":[-1536,700,150],"target":[-1608,700,120]}]},
+  "side_practical": {"lens_scale":[0.09,0.09,0.11],"intensity":35,"radius":90,"source":4},
   "material_families": {
     "Concrete": {"source": "Concrete", "tile_cm": 500, "color_scale": 0.50, "base_color":[0.11,0.12,0.115], "texture_weight":0.80, "metallic": 0.0, "normal_strength": 0.22},
     "Metal": {"source": "Steel", "tile_cm": 500, "color_scale": 0.30, "base_color":[0.070,0.083,0.078], "texture_weight":0.70, "metallic": 0.32, "normal_strength": 0.20},
@@ -11,14 +18,14 @@
     "Dark": {"source": "Recess", "tile_cm": 400, "color_scale": 2.0, "base_color":[0.015,0.021,0.020], "texture_weight":0.15, "metallic": 0.10, "normal_strength": 0.2}
   },
   "room_lights": [
-    {"name":"RearWallWash","location":[1250,-500,620],"target":[1630,180,300],"intensity":4500,"radius":1750,"width":400,"height":200,"color":[0.45,0.73,0.72]},
-    {"name":"LeftWallWash","location":[0,-1100,560],"target":[150,-1650,250],"intensity":16000,"radius":2350,"width":1850,"height":120,"color":[0.40,0.63,0.66]},
-    {"name":"RightWallWash","location":[120,1100,520],"target":[250,1650,240],"intensity":15000,"radius":2350,"width":1700,"height":120,"color":[0.43,0.68,0.69]},
-    {"name":"FrontWallWash","location":[-1170,460,600],"target":[-1660,0,260],"intensity":4500,"radius":2050,"width":480,"height":130,"color":[0.38,0.65,0.67]},
-    {"name":"RearServiceAccent","location":[1380,800,590],"target":[1612,1130,420],"intensity":2200,"radius":650,"width":180,"height":120,"color":[0.40,0.63,0.65]},
-    {"name":"ReverseCabinetAccent","location":[-650,1300,550],"target":[-680,1570,210],"intensity":1500,"radius":700,"width":300,"height":100,"color":[0.40,0.63,0.65],"specular":0.2},
-    {"name":"ReversePipeAccent","location":[-1000,-1200,620],"target":[-1000,-1545,440],"intensity":1200,"radius":700,"width":320,"height":80,"color":[0.40,0.63,0.65],"specular":0.2}
+    {"name":"RearWallWash","location":[1250,-500,760],"target":[1630,180,420],"intensity":3000,"radius":1600,"width":400,"height":160,"color":[0.45,0.73,0.72]},
+    {"name":"LeftWallWash","location":[0,-1100,640],"target":[150,-1650,280],"intensity":11000,"radius":2200,"width":1700,"height":140,"color":[0.40,0.63,0.66]},
+    {"name":"RightWallWash","location":[120,1100,620],"target":[250,1650,260],"intensity":10500,"radius":2200,"width":1600,"height":140,"color":[0.43,0.68,0.69]},
+    {"name":"FrontWallWash","location":[-1170,460,760],"target":[-1660,0,380],"intensity":2600,"radius":1800,"width":420,"height":100,"color":[0.38,0.65,0.67]},
+    {"name":"RearServiceAccent","location":[1380,800,640],"target":[1612,1130,380],"intensity":5600,"radius":980,"width":220,"height":160,"color":[0.40,0.63,0.65]},
+    {"name":"ReverseCabinetAccent","location":[-650,1300,620],"target":[-680,1570,240],"intensity":4800,"radius":900,"width":340,"height":140,"color":[0.40,0.63,0.65],"specular":0.2},
+    {"name":"ReversePipeAccent","location":[-1000,-1200,680],"target":[-1000,-1545,420],"intensity":4200,"radius":900,"width":360,"height":110,"color":[0.40,0.63,0.65],"specular":0.2}
   ],
-  "front_floor_return":{"location":[-850,40,1100],"target":[-950,40,-5],"intensity":55000,"radius":2550,"inner":30,"outer":56,"source":180,"color":[0.34,0.62,0.62]},
+  "front_floor_return":{"location":[-850,40,1100],"target":[-950,40,-5],"intensity":14000,"radius":1200,"inner":18,"outer":36,"source":70,"scattering":0.12,"color":[0.34,0.62,0.62]},
   "cutaway_hide_below_camera_x": -1490
 }

@@ -1,0 +1,3844 @@
+{
+  "owner": "teddy-chamber-crust-normals-v2-20261005",
+  "status": "source-ready-for-engine-review",
+  "generator": "tools/make_chamber_crust_normals_v2.py",
+  "generator_sha256": "04fc13c0df03a34dce07b56ec316c9f22209214552e4511a1a274a60da02cd5f",
+  "editable_blend": "Assets/Adapted/ChamberParity/CrustNormalsV2/ChamberCrustNormalsV2_Kit.blend",
+  "blend_sha256": "b6282e7d25a368b2582d86049f56a192428a9237f3d6a7a2609c1cf7f8efe50b",
+  "source": "Separate winding repair of the frozen original Crust kit. No new shapes or placements.",
+  "preserved": "All previous ChamberParity, floor, slab, wall, creature and Unreal assets remain untouched.",
+  "coordinate_system": "Metres,+Z up,floorZ0. Existing project staticFBX mirrorsY.",
+  "fbx_settings": {
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "global_scale": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_NONE"
+  },
+  "material_slots": [
+    "Concrete",
+    "ConcreteLight",
+    "ConcreteDark",
+    "Aggregate",
+    "Dark",
+    "Crack"
+  ],
+  "assets": [
+    {
+      "name": "SM_ChamberCrustBank_A_V2",
+      "file": "SM_ChamberCrustBank_A_V2.fbx",
+      "sha256": "081a340b8a05d49b82e734ce5697d92699ba70a53ac3dbb858f8b02c3b0b8d2a",
+      "triangles": 2666,
+      "vertices": 1765,
+      "bounds_m": {
+        "min": [
+          -1.915498971939087,
+          -1.9935768842697144,
+          0.0012000000569969416
+        ],
+        "max": [
+          2.3823764324188232,
+          1.2495019435882568,
+          0.04513843357563019
+        ]
+      },
+      "dimensions_m": [
+        4.29787540435791,
+        3.243078827857971,
+        0.043938433518633246
+      ],
+      "expected_dimensions_cm": [
+        429.787540435791,
+        324.3078827857971,
+        4.393843351863325
+      ],
+      "highest_point_cm": 4.513843357563019,
+      "material_slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "plate_count": 12,
+      "fragment_count": 27,
+      "plates": [
+        {
+          "index": 0,
+          "centre_m": [
+            -1.2209168945282551,
+            0.7624043624188259
+          ],
+          "footprint_chord_cm": 114.60075644375623,
+          "top_height_cm": [
+            0.4969094502029942,
+            2.5770979112533032
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 1,
+          "centre_m": [
+            -0.27323475340560893,
+            0.8613897101751539
+          ],
+          "footprint_chord_cm": 103.7925857503343,
+          "top_height_cm": [
+            0.5319283316906169,
+            2.7900227457562154
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 2,
+          "centre_m": [
+            0.5474646213665639,
+            0.7152136457427689
+          ],
+          "footprint_chord_cm": 112.62071483540159,
+          "top_height_cm": [
+            0.5480912399300054,
+            3.089786286941124
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 3,
+          "centre_m": [
+            1.4131949142023361,
+            0.5744988322149457
+          ],
+          "footprint_chord_cm": 133.96981070257678,
+          "top_height_cm": [
+            0.494235862674822,
+            2.5865907990174146
+          ],
+          "material": "ConcreteDark",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 4,
+          "centre_m": [
+            -1.4184486872612918,
+            0.05922239270899302
+          ],
+          "footprint_chord_cm": 115.38590939514195,
+          "top_height_cm": [
+            2.689931317852014,
+            3.022718349591148
+          ],
+          "material": "ConcreteLight",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 5,
+          "centre_m": [
+            -0.653377308135091,
+            0.15000912358903234
+          ],
+          "footprint_chord_cm": 105.5951938008222,
+          "top_height_cm": [
+            2.622710720948348,
+            3.030272528034693
+          ],
+          "material": "ConcreteLight",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 6,
+          "centre_m": [
+            0.19768671686960837,
+            0.05873681347993195
+          ],
+          "footprint_chord_cm": 91.52306946125682,
+          "top_height_cm": [
+            2.0109830467961896,
+            2.360246215540271
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 7,
+          "centre_m": [
+            1.0718370700789892,
+            0.05865662673999448
+          ],
+          "footprint_chord_cm": 93.50041067569532,
+          "top_height_cm": [
+            2.2049160879156293,
+            2.5108784962201534
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 8,
+          "centre_m": [
+            -1.2873059192390577,
+            -0.6501097299163321
+          ],
+          "footprint_chord_cm": 130.21950469297386,
+          "top_height_cm": [
+            2.862155959571199,
+            3.1980704083220868
+          ],
+          "material": "ConcreteLight",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 9,
+          "centre_m": [
+            -0.3292706653020879,
+            -0.6761614786259103
+          ],
+          "footprint_chord_cm": 114.49334912926723,
+          "top_height_cm": [
+            2.573020263244065,
+            2.9137383420432177
+          ],
+          "material": "ConcreteLight",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 10,
+          "centre_m": [
+            0.5950618998761528,
+            -0.6370924487505539
+          ],
+          "footprint_chord_cm": 101.42956622401891,
+          "top_height_cm": [
+            2.1468523758916183,
+            2.465268678238441
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 11,
+          "centre_m": [
+            1.4998934885391515,
+            -0.3653139157633238
+          ],
+          "footprint_chord_cm": 121.70208040446941,
+          "top_height_cm": [
+            2.812126960220512,
+            3.136563818749082
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        }
+      ],
+      "fragments": [
+        {
+          "centre_m": [
+            -0.5423102135198452,
+            -1.0100158572453624
+          ],
+          "footprint_chord_cm": 38.34813153165155,
+          "top_cm": 3.257527018344555
+        },
+        {
+          "centre_m": [
+            -1.2037395314459303,
+            -1.407989110482858
+          ],
+          "footprint_chord_cm": 15.792602507864473,
+          "top_cm": 4.01550784634417
+        },
+        {
+          "centre_m": [
+            -1.4311466065495801,
+            -1.187664502395243
+          ],
+          "footprint_chord_cm": 19.73126502833785,
+          "top_cm": 3.824328723023008
+        },
+        {
+          "centre_m": [
+            -1.1958084112588125,
+            -0.8460762852110473
+          ],
+          "footprint_chord_cm": 20.57986524259794,
+          "top_cm": 3.4313021650588853
+        },
+        {
+          "centre_m": [
+            -0.902084861456959,
+            -1.5008995135463725
+          ],
+          "footprint_chord_cm": 19.15836281467812,
+          "top_cm": 3.438502051701622
+        },
+        {
+          "centre_m": [
+            -0.7429563716601667,
+            -1.71163837940653
+          ],
+          "footprint_chord_cm": 36.622055083904115,
+          "top_cm": 4.371276961044693
+        },
+        {
+          "centre_m": [
+            -1.196331364706427,
+            -1.2141102442539071
+          ],
+          "footprint_chord_cm": 23.070381376269555,
+          "top_cm": 4.168227563750252
+        },
+        {
+          "centre_m": [
+            -1.3559577816322639,
+            -0.8010975173966739
+          ],
+          "footprint_chord_cm": 15.316507945841751,
+          "top_cm": 3.87741473128718
+        },
+        {
+          "centre_m": [
+            -0.03987862833307962,
+            -1.5686590329887644
+          ],
+          "footprint_chord_cm": 25.040022743891573,
+          "top_cm": 3.903470303666005
+        },
+        {
+          "centre_m": [
+            0.18162482301379546,
+            -1.8645609574661235
+          ],
+          "footprint_chord_cm": 23.743650393373645,
+          "top_cm": 3.643959637357832
+        },
+        {
+          "centre_m": [
+            0.8069303406579393,
+            -1.6600945929675546
+          ],
+          "footprint_chord_cm": 42.84931232082496,
+          "top_cm": 3.418386254987249
+        },
+        {
+          "centre_m": [
+            0.44301748068671487,
+            -1.5837767757658592
+          ],
+          "footprint_chord_cm": 18.77297517418373,
+          "top_cm": 3.7317937464352178
+        },
+        {
+          "centre_m": [
+            -0.27869156992254474,
+            -1.227491938136576
+          ],
+          "footprint_chord_cm": 14.536857505361015,
+          "top_cm": 3.686373317779322
+        },
+        {
+          "centre_m": [
+            0.029559945302970708,
+            -1.043406655171562
+          ],
+          "footprint_chord_cm": 16.279467121923663,
+          "top_cm": 3.228980985726964
+        },
+        {
+          "centre_m": [
+            -0.44007943825131135,
+            -1.4420440331461761
+          ],
+          "footprint_chord_cm": 22.4342652530036,
+          "top_cm": 4.38031983168695
+        },
+        {
+          "centre_m": [
+            0.3683570147325719,
+            -1.04905996823645
+          ],
+          "footprint_chord_cm": 30.334748981385985,
+          "top_cm": 4.241747314745271
+        },
+        {
+          "centre_m": [
+            -0.06531024346668543,
+            -1.2959577146873018
+          ],
+          "footprint_chord_cm": 22.05864404010633,
+          "top_cm": 4.513843181756402
+        },
+        {
+          "centre_m": [
+            0.14691905313558928,
+            -1.2534901843257815
+          ],
+          "footprint_chord_cm": 21.634116122948864,
+          "top_cm": 3.4337306887039536
+        },
+        {
+          "centre_m": [
+            0.664049940112215,
+            -1.3655181314779807
+          ],
+          "footprint_chord_cm": 23.260355313701027,
+          "top_cm": 4.507196683126794
+        },
+        {
+          "centre_m": [
+            1.7437711316327733,
+            -0.4063096896959531
+          ],
+          "footprint_chord_cm": 14.120271916037552,
+          "top_cm": 3.1609743770795813
+        },
+        {
+          "centre_m": [
+            2.23,
+            -0.915585957657761
+          ],
+          "footprint_chord_cm": 37.14476022757051,
+          "top_cm": 4.47352520967406
+        },
+        {
+          "centre_m": [
+            2.23,
+            -0.5188690271092675
+          ],
+          "footprint_chord_cm": 19.644567096339554,
+          "top_cm": 4.362574863349639
+        },
+        {
+          "centre_m": [
+            2.23,
+            -0.28062331957925585
+          ],
+          "footprint_chord_cm": 16.33056510005968,
+          "top_cm": 3.481408232601567
+        },
+        {
+          "centre_m": [
+            2.0226557625055053,
+            -0.7273208666308233
+          ],
+          "footprint_chord_cm": 17.850853744834826,
+          "top_cm": 3.6573457677310928
+        },
+        {
+          "centre_m": [
+            1.835932704244736,
+            -0.579293694367961
+          ],
+          "footprint_chord_cm": 22.885187960559456,
+          "top_cm": 3.62402292973331
+        },
+        {
+          "centre_m": [
+            1.527173057483902,
+            -0.614677631813246
+          ],
+          "footprint_chord_cm": 33.466101341986246,
+          "top_cm": 4.383308007278603
+        },
+        {
+          "centre_m": [
+            1.7248440132924634,
+            -0.2203022740984496
+          ],
+          "footprint_chord_cm": 24.688257288264577,
+          "top_cm": 3.814901543940196
+        }
+      ],
+      "coordinate_note": "Component coordinates match exported layout.",
+      "origin": "Underlying floorZ0; XYnearcentre. NoCollision, actorZ-5cm,Zscale1.",
+      "original_mesh": "SM_ChamberCrustBank_A",
+      "original_vertex_count": 4782
+    },
+    {
+      "name": "SM_ChamberCrustBank_B_V2",
+      "file": "SM_ChamberCrustBank_B_V2.fbx",
+      "sha256": "e4cca5ea16d09a8a648b97cb7a5b06358be5d1bed3204770095982491ef905c3",
+      "triangles": 2756,
+      "vertices": 1828,
+      "bounds_m": {
+        "min": [
+          -2.3835957050323486,
+          -1.971449375152588,
+          0.0012000000569969416
+        ],
+        "max": [
+          2.1864778995513916,
+          1.227665662765503,
+          0.044912733137607574
+        ]
+      },
+      "dimensions_m": [
+        4.57007360458374,
+        3.199115037918091,
+        0.04371273308061063
+      ],
+      "expected_dimensions_cm": [
+        457.007360458374,
+        319.9115037918091,
+        4.371273308061063
+      ],
+      "highest_point_cm": 4.4912733137607574,
+      "material_slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "plate_count": 12,
+      "fragment_count": 27,
+      "plates": [
+        {
+          "index": 0,
+          "centre_m": [
+            -1.2237076055999208,
+            0.7075974824640413
+          ],
+          "footprint_chord_cm": 107.23480855338332,
+          "top_height_cm": [
+            0.5098974903325801,
+            2.691729947553353
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 1,
+          "centre_m": [
+            -0.28811185788119253,
+            0.8428168957427075
+          ],
+          "footprint_chord_cm": 104.20015198147439,
+          "top_height_cm": [
+            0.5505904754487966,
+            3.0629094803605996
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 2,
+          "centre_m": [
+            0.5445797583022636,
+            0.7530974957263988
+          ],
+          "footprint_chord_cm": 120.51296390113986,
+          "top_height_cm": [
+            0.5111999351922215,
+            2.7542965153864434
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 3,
+          "centre_m": [
+            1.4667646615667498,
+            0.5626126467669471
+          ],
+          "footprint_chord_cm": 128.8833797895373,
+          "top_height_cm": [
+            0.4896717698540739,
+            2.4046171748770604
+          ],
+          "material": "ConcreteDark",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 4,
+          "centre_m": [
+            -1.5239392616658167,
+            -0.02856781141833587
+          ],
+          "footprint_chord_cm": 113.15466189078703,
+          "top_height_cm": [
+            2.6749033092690144,
+            3.0291921068327956
+          ],
+          "material": "ConcreteLight",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 5,
+          "centre_m": [
+            -0.5869999767111713,
+            0.14777112692288566
+          ],
+          "footprint_chord_cm": 99.68089481816631,
+          "top_height_cm": [
+            2.2398754358232065,
+            2.554737742035517
+          ],
+          "material": "ConcreteLight",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 6,
+          "centre_m": [
+            0.1683098815681515,
+            0.020560122926720627
+          ],
+          "footprint_chord_cm": 102.1933396517337,
+          "top_height_cm": [
+            2.517651661224968,
+            2.873788069602697
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 7,
+          "centre_m": [
+            1.1716922740356093,
+            0.09958556990095051
+          ],
+          "footprint_chord_cm": 118.72394436140927,
+          "top_height_cm": [
+            2.770029264651636,
+            3.079753685119989
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 8,
+          "centre_m": [
+            -1.270366718274289,
+            -0.6693081629596033
+          ],
+          "footprint_chord_cm": 124.4054535907041,
+          "top_height_cm": [
+            2.4659104978055453,
+            2.8219225955655474
+          ],
+          "material": "ConcreteLight",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 9,
+          "centre_m": [
+            -0.29074909257682935,
+            -0.709891036203765
+          ],
+          "footprint_chord_cm": 107.70957774005245,
+          "top_height_cm": [
+            2.0194229881464167,
+            2.3325271582290816
+          ],
+          "material": "ConcreteLight",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 10,
+          "centre_m": [
+            0.6083311055661973,
+            -0.599264218155921
+          ],
+          "footprint_chord_cm": 111.1353752768697,
+          "top_height_cm": [
+            2.265459300579127,
+            2.5903717373321693
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        },
+        {
+          "index": 11,
+          "centre_m": [
+            1.515588028943324,
+            -0.36077730244292416
+          ],
+          "footprint_chord_cm": 124.23565435645611,
+          "top_height_cm": [
+            2.54484713034885,
+            2.8913041002200606
+          ],
+          "material": "Concrete",
+          "rear_outer_taper": true
+        }
+      ],
+      "fragments": [
+        {
+          "centre_m": [
+            -1.4664254252665052,
+            -1.0477430997558421
+          ],
+          "footprint_chord_cm": 34.51494826758239,
+          "top_cm": 3.253236273075913
+        },
+        {
+          "centre_m": [
+            -1.262719153730984,
+            -1.2327280220842707
+          ],
+          "footprint_chord_cm": 21.680840591095794,
+          "top_cm": 3.1693878861880243
+        },
+        {
+          "centre_m": [
+            -1.4015792301299732,
+            -1.3449981977518308
+          ],
+          "footprint_chord_cm": 16.86721457938521,
+          "top_cm": 3.3626737270495615
+        },
+        {
+          "centre_m": [
+            -1.2682047091062134,
+            -1.3986019714198528
+          ],
+          "footprint_chord_cm": 13.328444228313257,
+          "top_cm": 3.139000887263372
+        },
+        {
+          "centre_m": [
+            -1.0977360189878655,
+            -0.9925648900538779
+          ],
+          "footprint_chord_cm": 24.473408282843685,
+          "top_cm": 3.5429183708923992
+        },
+        {
+          "centre_m": [
+            -1.5696999369754536,
+            -1.6254282495359007
+          ],
+          "footprint_chord_cm": 36.852020177791466,
+          "top_cm": 4.013154915463734
+        },
+        {
+          "centre_m": [
+            -1.8982762046683934,
+            -0.8979476150765624
+          ],
+          "footprint_chord_cm": 22.881495768411625,
+          "top_cm": 3.750658776077668
+        },
+        {
+          "centre_m": [
+            -2.0291814135046167,
+            -1.2371024057694295
+          ],
+          "footprint_chord_cm": 18.94891482691095,
+          "top_cm": 3.3302199017204748
+        },
+        {
+          "centre_m": [
+            0.16706963244822298,
+            -1.6052356708227336
+          ],
+          "footprint_chord_cm": 21.13989982054053,
+          "top_cm": 4.361980822775237
+        },
+        {
+          "centre_m": [
+            0.15998007002404974,
+            -1.1314014914076482
+          ],
+          "footprint_chord_cm": 21.500220934087718,
+          "top_cm": 4.4054483748612805
+        },
+        {
+          "centre_m": [
+            0.7479828497800762,
+            -1.4282006933387807
+          ],
+          "footprint_chord_cm": 39.882756650869325,
+          "top_cm": 3.3995134755899805
+        },
+        {
+          "centre_m": [
+            0.022822738838499085,
+            -1.3622735475683927
+          ],
+          "footprint_chord_cm": 15.49190755208417,
+          "top_cm": 4.1945945347892
+        },
+        {
+          "centre_m": [
+            0.6116768825646748,
+            -1.7609981936522927
+          ],
+          "footprint_chord_cm": 14.558702981402563,
+          "top_cm": 3.84172869961964
+        },
+        {
+          "centre_m": [
+            0.36417246476869103,
+            -1.5498554061094358
+          ],
+          "footprint_chord_cm": 16.355260553981662,
+          "top_cm": 4.262370937362366
+        },
+        {
+          "centre_m": [
+            -0.27219671423788583,
+            -1.86768369305888
+          ],
+          "footprint_chord_cm": 25.48391656953602,
+          "top_cm": 3.346892571770324
+        },
+        {
+          "centre_m": [
+            0.4891610020557784,
+            -1.0188363341471907
+          ],
+          "footprint_chord_cm": 31.287318393246522,
+          "top_cm": 4.491273368366419
+        },
+        {
+          "centre_m": [
+            -0.6350496877572949,
+            -1.1639340594643015
+          ],
+          "footprint_chord_cm": 13.881997914794189,
+          "top_cm": 3.1620781720331204
+        },
+        {
+          "centre_m": [
+            0.49881956688058604,
+            -1.2670922155630973
+          ],
+          "footprint_chord_cm": 18.152799376939477,
+          "top_cm": 3.845134986920154
+        },
+        {
+          "centre_m": [
+            0.3300230720334262,
+            -1.3775964131621987
+          ],
+          "footprint_chord_cm": 21.6269393956628,
+          "top_cm": 3.559374902686472
+        },
+        {
+          "centre_m": [
+            2.23,
+            -0.7687446265309937
+          ],
+          "footprint_chord_cm": 21.721700348159263,
+          "top_cm": 4.242798729099162
+        },
+        {
+          "centre_m": [
+            1.9058477731880803,
+            -0.3366581281000426
+          ],
+          "footprint_chord_cm": 39.59868305448047,
+          "top_cm": 4.230182984593133
+        },
+        {
+          "centre_m": [
+            2.0103610207800013,
+            -0.6503657860388445
+          ],
+          "footprint_chord_cm": 23.901488179045067,
+          "top_cm": 3.5295480898463696
+        },
+        {
+          "centre_m": [
+            2.070540719853275,
+            -0.9047935931172661
+          ],
+          "footprint_chord_cm": 13.919022224367907,
+          "top_cm": 3.345467067620779
+        },
+        {
+          "centre_m": [
+            2.23,
+            -0.4316552705715971
+          ],
+          "footprint_chord_cm": 13.727335755529865,
+          "top_cm": 3.3500538552186523
+        },
+        {
+          "centre_m": [
+            1.6428818100784528,
+            -0.7762837306193703
+          ],
+          "footprint_chord_cm": 17.57365075547385,
+          "top_cm": 4.490806521792474
+        },
+        {
+          "centre_m": [
+            2.0252197932745153,
+            0.03648012280419466
+          ],
+          "footprint_chord_cm": 38.61895334890455,
+          "top_cm": 3.235886964161939
+        },
+        {
+          "centre_m": [
+            2.1505456007788775,
+            -0.20858880085670117
+          ],
+          "footprint_chord_cm": 14.754153951409856,
+          "top_cm": 3.3900114477296683
+        }
+      ],
+      "coordinate_note": "VariantB component coordinates above are pre-warp composition data; exported bounds/placement use actual vertices.",
+      "origin": "Underlying floorZ0; XYnearcentre. NoCollision, actorZ-5cm,Zscale1.",
+      "original_mesh": "SM_ChamberCrustBank_B",
+      "original_vertex_count": 4936
+    }
+  ],
+  "total_unique_triangles": 5422,
+  "fbx_roundtrip_checks": [
+    {
+      "name": "SM_ChamberCrustBank_A_V2",
+      "max_dimension_error_m": 1.1920928955078125e-07,
+      "actual_dimensions_cm": [
+        429.78752851486206,
+        324.3078827857971,
+        4.393843351863325
+      ],
+      "triangles": 2666,
+      "material_slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "normal_signs_passed": true,
+      "closed_solid_components": 39,
+      "passed": true
+    },
+    {
+      "name": "SM_ChamberCrustBank_B_V2",
+      "max_dimension_error_m": 1.1920928955078125e-07,
+      "actual_dimensions_cm": [
+        457.007360458374,
+        319.9114918708801,
+        4.371273308061063
+      ],
+      "triangles": 2756,
+      "material_slots": [
+        "Concrete",
+        "ConcreteLight",
+        "ConcreteDark",
+        "Aggregate",
+        "Dark",
+        "Crack"
+      ],
+      "normal_signs_passed": true,
+      "closed_solid_components": 39,
+      "passed": true
+    }
+  ],
+  "recommended_placements": [
+    {
+      "label": "LeftFront",
+      "mesh": "SM_ChamberCrustBank_A_V2",
+      "location_cm": [
+        -500,
+        -950,
+        -5
+      ],
+      "yaw": 30,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -765.5659212757082,
+          -1153.9849911195004,
+          -4.879999994300306
+        ],
+        "max": [
+          -231.20505163538297,
+          -658.2323557615586,
+          -0.4861566424369812
+        ]
+      }
+    },
+    {
+      "label": "ForegroundCentre",
+      "mesh": "SM_ChamberCrustBank_B_V2",
+      "location_cm": [
+        -1040,
+        20,
+        -5
+      ],
+      "yaw": -8,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -1293.1256752712354,
+          -132.00170143883523,
+          -4.879999994300306
+        ],
+        "max": [
+          -796.0428030139349,
+          248.39957710585742,
+          -0.5087266862392426
+        ]
+      }
+    },
+    {
+      "label": "RightSide",
+      "mesh": "SM_ChamberCrustBank_A_V2",
+      "location_cm": [
+        -300,
+        1170,
+        -5
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          -499.35768842697144,
+          978.4501028060913,
+          -4.879999994300306
+        ],
+        "max": [
+          -175.04980564117432,
+          1408.2376432418823,
+          -0.4861566424369812
+        ]
+      }
+    },
+    {
+      "label": "RearRight",
+      "mesh": "SM_ChamberCrustBank_B_V2",
+      "location_cm": [
+        1080,
+        160,
+        -5
+      ],
+      "yaw": 100,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          847.8823467912542,
+          -108.97221217203125,
+          -4.879999994300306
+        ],
+        "max": [
+          1242.2921713271928,
+          396.64422923915515,
+          -0.5087266862392426
+        ]
+      }
+    },
+    {
+      "label": "RearLeft",
+      "mesh": "SM_ChamberCrustBank_A_V2",
+      "location_cm": [
+        780,
+        -900,
+        -5
+      ],
+      "yaw": -35,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "world_bounds_cm": {
+        "min": [
+          551.4230229285577,
+          -1139.0007055586898,
+          -4.879999994300306
+        ],
+        "max": [
+          1089.499724975304,
+          -626.827234564427,
+          -0.4861566424369812
+        ]
+      }
+    }
+  ],
+  "material_guidance": {
+    "Concrete": "Quiet mineral floor base, keep broad values visible. Suggested granular detailweight.25\u2013.35,normal.15\u2013.25.",
+    "ConcreteLight": "Coherent dry crust tops about1.15\u20131.20basevalue, matte; no per-edge glow.",
+    "ConcreteDark": "Coherent darker crust region about.80\u2013.85basevalue, matte.",
+    "Aggregate": "Eroded broad bevel/side faces; mutedmatte roughness>=.95,specular0.",
+    "Dark": "Dark undersides only,noemission.",
+    "Crack": "Broken joint troughs only,veryrough zero specular,noemission."
+  },
+  "integration": [
+    "Five new NoCollision margin actors atZ-5cm,Zscale1. All rotated AABBs remain inside reviewed combatguard.",
+    "Visually conceal original TE_Parity_Floor_004 through010 EdgeSpall arcs, preserving their transforms/assets/collision.",
+    "Consider hiding original scatter015/017 where new foreground/right crust banks occupythe same region. Retain scatter021/022 only if useful context afterrender.",
+    "New crust is a bounded morphology correction; retain five quieter connectedfields and four sparse-slab groups.",
+    "Proposed bank placements avoid the four sparse-slab centres; root can adjust only after checking exact rotatedbounds and bothcameraviews.",
+    "Root owns actual Unrealsaves, materialcontrast and finalframe/motion inspection. Sourcepreviews donotprove renderedparity."
+  ],
+  "renders": [
+    "crust-normals-v2-overview.png"
+  ],
+  "correction": "Weld coincident polygon islands at 1e-6 metres, retessellate warped cap boundaries where required, orient the 39 closed solid pieces outward, explicitly orient open Crack ribbons upward. Four minute, truly downward-facing B bevel return triangles are classified as Aggregate. Original coordinates, UVs, six material slots and triangle counts are preserved.",
+  "source_preservation": {
+    "original_manifest_sha256": "89e2c3b844876594cbff18be22428d6c75df60ff49490404b2df5daa08d643f3",
+    "files_unchanged": {
+      "Assets/Adapted/ChamberParity/Crust/ChamberCrust_Kit.blend": "fd38e290b65a6038c7449c909559fa7d4a9a431e1cbec0fde9dddc2661c294e5",
+      "Assets/Adapted/ChamberParity/Crust/crust-a-depth.png": "09cd57bb1b9c182029a67c9c7686dc6259450b460ca3a5bd77d83c6369092958",
+      "Assets/Adapted/ChamberParity/Crust/crust-b-depth.png": "0cb1a929e7e4058b1f306ff988557b923709beb8466ab1518e91b12f870cf4fc",
+      "Assets/Adapted/ChamberParity/Crust/crust-overview.png": "b2ee3331f89597555633bd77b716d229fd104edc6cfc39d6601502adf1c7f336",
+      "Assets/Adapted/ChamberParity/Crust/manifest.json": "89e2c3b844876594cbff18be22428d6c75df60ff49490404b2df5daa08d643f3",
+      "Assets/Adapted/ChamberParity/Crust/SM_ChamberCrustBank_A.fbx": "292e188d0396ac4ae08418f916aad3cf4e32d22ef3fe2bf149ddd87f5152a7b5",
+      "Assets/Adapted/ChamberParity/Crust/SM_ChamberCrustBank_B.fbx": "990579267c6039a666b778a21f6dc28ffc8d896a41768990ca7fdba02d95edcd"
+    },
+    "passed": true
+  },
+  "normal_audits": [
+    {
+      "name": "SM_ChamberCrustBank_A_V2",
+      "before": {
+        "by_material": {
+          "Concrete": {
+            "positive_z": 309,
+            "negative_z": 167,
+            "zero_z": 0,
+            "positive_area_m2": 2.2888494993094355,
+            "negative_area_m2": 1.6091404230101034
+          },
+          "ConcreteLight": {
+            "positive_z": 183,
+            "negative_z": 109,
+            "zero_z": 0,
+            "positive_area_m2": 1.5357139263505815,
+            "negative_area_m2": 1.0280392614076845
+          },
+          "ConcreteDark": {
+            "positive_z": 51,
+            "negative_z": 18,
+            "zero_z": 0,
+            "positive_area_m2": 0.4699823404662311,
+            "negative_area_m2": 0.032670004991814494
+          },
+          "Aggregate": {
+            "positive_z": 462,
+            "negative_z": 572,
+            "zero_z": 206,
+            "positive_area_m2": 0.5540500673960196,
+            "negative_area_m2": 0.5995943394082133
+          },
+          "Dark": {
+            "positive_z": 330,
+            "negative_z": 23,
+            "zero_z": 0,
+            "positive_area_m2": 6.591626196634024,
+            "negative_area_m2": 0.2921804354991764
+          },
+          "Crack": {
+            "positive_z": 236,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.5600714319152758,
+            "negative_area_m2": 0.0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 624,
+        "closed_solid_components": 0,
+        "expected_closed_solid_components": 39,
+        "closed_components": [],
+        "open_components": 1058,
+        "open_component_materials": {
+          "Concrete": 162,
+          "Aggregate": 620,
+          "Dark": 39,
+          "ConcreteDark": 22,
+          "ConcreteLight": 97,
+          "Crack": 118
+        },
+        "degenerate_triangles": 0,
+        "passed": false
+      },
+      "after_weld_before_retessellation": {
+        "by_material": {
+          "Concrete": {
+            "positive_z": 476,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 3.897989968303591,
+            "negative_area_m2": 0.0
+          },
+          "ConcreteLight": {
+            "positive_z": 292,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 2.563753188980627,
+            "negative_area_m2": 0.0
+          },
+          "ConcreteDark": {
+            "positive_z": 69,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.5026523412088864,
+            "negative_area_m2": 0.0
+          },
+          "Aggregate": {
+            "positive_z": 378,
+            "negative_z": 656,
+            "zero_z": 206,
+            "positive_area_m2": 0.4496810381533578,
+            "negative_area_m2": 0.7039633693202632
+          },
+          "Dark": {
+            "positive_z": 0,
+            "negative_z": 353,
+            "zero_z": 0,
+            "positive_area_m2": 0.0,
+            "negative_area_m2": 6.883806774858385
+          },
+          "Crack": {
+            "positive_z": 236,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.5600714319152758,
+            "negative_area_m2": 0.0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 0,
+        "closed_solid_components": 39,
+        "expected_closed_solid_components": 39,
+        "closed_components": [
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.00020140178094152356,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.00037539810909947857,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.00046225855233691015,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0006603649380849674,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0011225179841858335,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001936312061540472,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00024402989303477316,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0002695417953712346,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00029183122933318357,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00030671698914375156,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003754507706617004,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003876391904971872,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00042806766108090716,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0004452181631980541,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0004787168942736267,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0005066296046910186,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0005798438505735246,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006460268433177893,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006965210583681861,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006971572383918102,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0007588700829425458,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0007647388165423762,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001225424986538807,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001616651836229721,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001971766328400311,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00197688975094934,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0020534101155741764,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 146,
+            "signed_volume_m3": 0.008364204903896185,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 146,
+            "signed_volume_m3": 0.008903649594555882,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 152,
+            "signed_volume_m3": 0.006481661324973705,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 152,
+            "signed_volume_m3": 0.011802383102984019,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.011649020526191359,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.01403550566142068,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.014676249717344566,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.008226364294742439,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.014119710358765284,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.01739822362324143,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.009838015190657265,
+            "materials": [
+              "Aggregate",
+              "ConcreteDark",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 188,
+            "signed_volume_m3": 0.019789091536930908,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          }
+        ],
+        "open_components": 118,
+        "open_component_materials": {
+          "Crack": 118
+        },
+        "degenerate_triangles": 0,
+        "passed": true
+      },
+      "retessellation": {
+        "retessellated_original_polygons": 0,
+        "retessellated_triangles": 0
+      },
+      "source_after": {
+        "by_material": {
+          "Concrete": {
+            "positive_z": 476,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 3.897989968303591,
+            "negative_area_m2": 0.0
+          },
+          "ConcreteLight": {
+            "positive_z": 292,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 2.563753188980627,
+            "negative_area_m2": 0.0
+          },
+          "ConcreteDark": {
+            "positive_z": 69,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.5026523412088864,
+            "negative_area_m2": 0.0
+          },
+          "Aggregate": {
+            "positive_z": 378,
+            "negative_z": 656,
+            "zero_z": 206,
+            "positive_area_m2": 0.4496810381533578,
+            "negative_area_m2": 0.7039633693202632
+          },
+          "Dark": {
+            "positive_z": 0,
+            "negative_z": 353,
+            "zero_z": 0,
+            "positive_area_m2": 0.0,
+            "negative_area_m2": 6.883806774858385
+          },
+          "Crack": {
+            "positive_z": 236,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.5600714319152758,
+            "negative_area_m2": 0.0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 0,
+        "closed_solid_components": 39,
+        "expected_closed_solid_components": 39,
+        "closed_components": [
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.00020140178094152356,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.00037539810909947857,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.00046225855233691015,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0006603649380849674,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0011225179841858335,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001936312061540472,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00024402989303477316,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0002695417953712346,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00029183122933318357,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00030671698914375156,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003754507706617004,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003876391904971872,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00042806766108090716,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0004452181631980541,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0004787168942736267,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0005066296046910186,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0005798438505735246,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006460268433177893,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006965210583681861,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006971572383918102,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0007588700829425458,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0007647388165423762,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001225424986538807,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001616651836229721,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001971766328400311,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00197688975094934,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0020534101155741764,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 146,
+            "signed_volume_m3": 0.008364204903896185,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 146,
+            "signed_volume_m3": 0.008903649594555882,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 152,
+            "signed_volume_m3": 0.006481661324973705,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 152,
+            "signed_volume_m3": 0.011802383102984019,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.011649020526191359,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.01403550566142068,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.014676249717344566,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.008226364294742439,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.014119710358765284,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.01739822362324143,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.009838015190657265,
+            "materials": [
+              "Aggregate",
+              "ConcreteDark",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 188,
+            "signed_volume_m3": 0.019789091536930908,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          }
+        ],
+        "open_components": 118,
+        "open_component_materials": {
+          "Crack": 118
+        },
+        "degenerate_triangles": 0,
+        "passed": true
+      },
+      "exposed_bevel_returns_classified_aggregate": [],
+      "all_vertex_positions_preserved": true,
+      "all_uv_coordinates_preserved": true,
+      "triangle_count_preserved": true,
+      "fbx_roundtrip": {
+        "by_material": {
+          "Concrete": {
+            "positive_z": 476,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 3.897989968303591,
+            "negative_area_m2": 0.0
+          },
+          "ConcreteLight": {
+            "positive_z": 292,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 2.563753188980627,
+            "negative_area_m2": 0.0
+          },
+          "ConcreteDark": {
+            "positive_z": 69,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.5026523412088864,
+            "negative_area_m2": 0.0
+          },
+          "Aggregate": {
+            "positive_z": 378,
+            "negative_z": 656,
+            "zero_z": 206,
+            "positive_area_m2": 0.4496810381533578,
+            "negative_area_m2": 0.7039633693202632
+          },
+          "Dark": {
+            "positive_z": 0,
+            "negative_z": 353,
+            "zero_z": 0,
+            "positive_area_m2": 0.0,
+            "negative_area_m2": 6.883806774858385
+          },
+          "Crack": {
+            "positive_z": 236,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.5600714319152758,
+            "negative_area_m2": 0.0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 0,
+        "closed_solid_components": 39,
+        "expected_closed_solid_components": 39,
+        "closed_components": [
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.00020140178094152356,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.00037539810909947857,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.00046225855233691015,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0006603649380849674,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0011225179841858335,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001936312061540472,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00024402989303477316,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0002695417953712346,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00029183122933318357,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00030671698914375156,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003754507706617004,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003876391904971872,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00042806766108090716,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0004452181631980541,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0004787168942736267,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0005066296046910186,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0005798438505735246,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006460268433177893,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006965210583681861,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006971572383918102,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0007588700829425458,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0007647388165423762,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001225424986538807,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001616651836229721,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001971766328400311,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00197688975094934,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0020534101155741764,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 146,
+            "signed_volume_m3": 0.008364204903896185,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 146,
+            "signed_volume_m3": 0.008903649594555882,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 152,
+            "signed_volume_m3": 0.006481661324973705,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 152,
+            "signed_volume_m3": 0.011802383102984019,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.011649020526191359,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.01403550566142068,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.014676249717344566,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.008226364294742439,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.014119710358765284,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.01739822362324143,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.009838015190657265,
+            "materials": [
+              "Aggregate",
+              "ConcreteDark",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 188,
+            "signed_volume_m3": 0.019789091536930908,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          }
+        ],
+        "open_components": 118,
+        "open_component_materials": {
+          "Crack": 118
+        },
+        "degenerate_triangles": 0,
+        "passed": true
+      }
+    },
+    {
+      "name": "SM_ChamberCrustBank_B_V2",
+      "before": {
+        "by_material": {
+          "Concrete": {
+            "positive_z": 402,
+            "negative_z": 97,
+            "zero_z": 0,
+            "positive_area_m2": 3.5748973116715206,
+            "negative_area_m2": 0.31452737911604345
+          },
+          "ConcreteLight": {
+            "positive_z": 211,
+            "negative_z": 86,
+            "zero_z": 0,
+            "positive_area_m2": 1.8223975349392276,
+            "negative_area_m2": 0.5631894636899233
+          },
+          "ConcreteDark": {
+            "positive_z": 56,
+            "negative_z": 16,
+            "zero_z": 0,
+            "positive_area_m2": 0.3882629611716766,
+            "negative_area_m2": 0.02465133904479444
+          },
+          "Aggregate": {
+            "positive_z": 476,
+            "negative_z": 592,
+            "zero_z": 206,
+            "positive_area_m2": 0.5359366983975633,
+            "negative_area_m2": 0.5788103192826384
+          },
+          "Dark": {
+            "positive_z": 337,
+            "negative_z": 29,
+            "zero_z": 0,
+            "positive_area_m2": 6.352345618215622,
+            "negative_area_m2": 0.27648868691176176
+          },
+          "Crack": {
+            "positive_z": 248,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.4891942057583947,
+            "negative_area_m2": 0.0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 536,
+        "closed_solid_components": 0,
+        "expected_closed_solid_components": 39,
+        "closed_components": [],
+        "open_components": 1090,
+        "open_component_materials": {
+          "Concrete": 167,
+          "Aggregate": 637,
+          "Dark": 39,
+          "ConcreteDark": 23,
+          "ConcreteLight": 100,
+          "Crack": 124
+        },
+        "degenerate_triangles": 0,
+        "passed": false
+      },
+      "after_weld_before_retessellation": {
+        "by_material": {
+          "Concrete": {
+            "positive_z": 494,
+            "negative_z": 5,
+            "zero_z": 0,
+            "positive_area_m2": 3.8867704220028827,
+            "negative_area_m2": 0.0026542938430793583
+          },
+          "ConcreteLight": {
+            "positive_z": 297,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 2.385586989490548,
+            "negative_area_m2": 0.0
+          },
+          "ConcreteDark": {
+            "positive_z": 70,
+            "negative_z": 2,
+            "zero_z": 0,
+            "positive_area_m2": 0.4125779690612035,
+            "negative_area_m2": 0.00033633098064456135
+          },
+          "Aggregate": {
+            "positive_z": 390,
+            "negative_z": 678,
+            "zero_z": 206,
+            "positive_area_m2": 0.4303544309659628,
+            "negative_area_m2": 0.6843925830689841
+          },
+          "Dark": {
+            "positive_z": 9,
+            "negative_z": 357,
+            "zero_z": 0,
+            "positive_area_m2": 0.02113194763660431,
+            "negative_area_m2": 6.607702152745333
+          },
+          "Crack": {
+            "positive_z": 248,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.4891942057583947,
+            "negative_area_m2": 0.0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 16,
+        "closed_solid_components": 39,
+        "expected_closed_solid_components": 39,
+        "closed_components": [
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0002268462740175892,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0004054670874514462,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0004086187805872517,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0004953136813128367,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.000829412644028101,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00014970985284890048,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001770460415476313,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001770634262356907,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001815214782254771,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00021573605772573495,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0002979387318191583,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00033225824245164404,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003574993800915158,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003939420703318319,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00039783423077703134,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0004223454100914143,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006309810147892373,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.000631405844615074,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006416159825069673,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006651416028944368,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006687666176124669,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006935803418552192,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0012973170945163777,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0014264888341131152,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001436878763342975,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0016497759303698936,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0020589505729731172,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 146,
+            "signed_volume_m3": 0.009225849304793124,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.007377792803697029,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.01095460500515344,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.011120337468398134,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.01032847916493059,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.011275086221289143,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.010295927007414699,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.012029355569230423,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.013568806790437482,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 176,
+            "signed_volume_m3": 0.007332033888639936,
+            "materials": [
+              "Aggregate",
+              "ConcreteDark",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 176,
+            "signed_volume_m3": 0.013134455127749097,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 188,
+            "signed_volume_m3": 0.016922509096616523,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          }
+        ],
+        "open_components": 124,
+        "open_component_materials": {
+          "Crack": 124
+        },
+        "degenerate_triangles": 0,
+        "passed": false
+      },
+      "retessellation": {
+        "retessellated_original_polygons": 9,
+        "retessellated_triangles": 188,
+        "polygons": [
+          {
+            "material": "Dark",
+            "triangles": 25,
+            "boundary_vertices": 27
+          },
+          {
+            "material": "Concrete",
+            "triangles": 27,
+            "boundary_vertices": 29
+          },
+          {
+            "material": "Dark",
+            "triangles": 27,
+            "boundary_vertices": 29
+          },
+          {
+            "material": "ConcreteDark",
+            "triangles": 2,
+            "boundary_vertices": 4
+          },
+          {
+            "material": "Dark",
+            "triangles": 27,
+            "boundary_vertices": 29
+          },
+          {
+            "material": "Dark",
+            "triangles": 25,
+            "boundary_vertices": 27
+          },
+          {
+            "material": "Dark",
+            "triangles": 27,
+            "boundary_vertices": 29
+          },
+          {
+            "material": "Concrete",
+            "triangles": 26,
+            "boundary_vertices": 28
+          },
+          {
+            "material": "Concrete",
+            "triangles": 2,
+            "boundary_vertices": 4
+          }
+        ]
+      },
+      "source_after": {
+        "by_material": {
+          "Concrete": {
+            "positive_z": 497,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 3.8849580774840433,
+            "negative_area_m2": 0.0
+          },
+          "ConcreteLight": {
+            "positive_z": 297,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 2.385586989490548,
+            "negative_area_m2": 0.0
+          },
+          "ConcreteDark": {
+            "positive_z": 70,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.4125779690612035,
+            "negative_area_m2": 0.0
+          },
+          "Aggregate": {
+            "positive_z": 390,
+            "negative_z": 682,
+            "zero_z": 206,
+            "positive_area_m2": 0.4303544309659628,
+            "negative_area_m2": 0.6853832062261063
+          },
+          "Dark": {
+            "positive_z": 0,
+            "negative_z": 366,
+            "zero_z": 0,
+            "positive_area_m2": 0.0,
+            "negative_area_m2": 6.586570199986454
+          },
+          "Crack": {
+            "positive_z": 248,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.4891942057583947,
+            "negative_area_m2": 0.0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 0,
+        "closed_solid_components": 39,
+        "expected_closed_solid_components": 39,
+        "closed_components": [
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0002268462740175892,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0004054670874514462,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0004086187805872517,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0004953136813128367,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.000829412644028101,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00014970985284890048,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001770460415476313,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001770634262356907,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001815214782254771,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00021573605772573495,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0002979387318191583,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00033225824245164404,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003574993800915158,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003939420703318319,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00039783423077703134,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0004223454100914143,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006309810147892373,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.000631405844615074,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006416159825069673,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006651416028944368,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006687666176124669,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006935803418552192,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0012973170945163777,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0014264888341131152,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001436878763342975,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0016497759303698936,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0020589505729731172,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 146,
+            "signed_volume_m3": 0.009225849304793124,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.007377792827232573,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.010954605002273373,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.011120337468398134,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.01032847916493059,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.011250473564724453,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.010247898682339477,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.012029355541984662,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.013568806790531037,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 176,
+            "signed_volume_m3": 0.0073322528076526314,
+            "materials": [
+              "Aggregate",
+              "ConcreteDark",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 176,
+            "signed_volume_m3": 0.013134455127749097,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 188,
+            "signed_volume_m3": 0.016922509096616523,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          }
+        ],
+        "open_components": 124,
+        "open_component_materials": {
+          "Crack": 124
+        },
+        "degenerate_triangles": 0,
+        "passed": true
+      },
+      "exposed_bevel_returns_classified_aggregate": [
+        {
+          "previous_material": "ConcreteDark",
+          "area_m2": 9.929689986165613e-05,
+          "normal_z": -0.9601312875747681,
+          "coordinates_m": [
+            [
+              -1.8469918966293335,
+              0.02978387288749218,
+              0.014913463033735752
+            ],
+            [
+              -1.8206369876861572,
+              0.0513434112071991,
+              0.02316027134656906
+            ],
+            [
+              -1.8171520233154297,
+              0.04695933312177658,
+              0.024046171456575394
+            ]
+          ]
+        },
+        {
+          "previous_material": "ConcreteDark",
+          "area_m2": 0.0002236439031548798,
+          "normal_z": -0.7575222849845886,
+          "coordinates_m": [
+            [
+              -1.8469918966293335,
+              0.02978387288749218,
+              0.014913463033735752
+            ],
+            [
+              -1.8171520233154297,
+              0.04695933312177658,
+              0.024046171456575394
+            ],
+            [
+              -1.862216591835022,
+              0.00966574065387249,
+              0.016820404678583145
+            ]
+          ]
+        },
+        {
+          "previous_material": "Concrete",
+          "area_m2": 0.00032150192419067025,
+          "normal_z": -0.9474936723709106,
+          "coordinates_m": [
+            [
+              -1.8651231527328491,
+              -0.034719958901405334,
+              0.019064191728830338
+            ],
+            [
+              -1.8617405891418457,
+              -0.0048574889078736305,
+              0.017390914261341095
+            ],
+            [
+              -1.8447562456130981,
+              -0.035026200115680695,
+              0.025701450183987617
+            ]
+          ]
+        },
+        {
+          "previous_material": "Concrete",
+          "area_m2": 0.0003461804299149662,
+          "normal_z": -0.946871817111969,
+          "coordinates_m": [
+            [
+              -1.8452345132827759,
+              -0.06720734387636185,
+              0.028788644820451736
+            ],
+            [
+              -1.8651231527328491,
+              -0.034719958901405334,
+              0.019064191728830338
+            ],
+            [
+              -1.8447562456130981,
+              -0.035026200115680695,
+              0.025701450183987617
+            ]
+          ]
+        }
+      ],
+      "all_vertex_positions_preserved": true,
+      "all_uv_coordinates_preserved": true,
+      "triangle_count_preserved": true,
+      "fbx_roundtrip": {
+        "by_material": {
+          "Concrete": {
+            "positive_z": 497,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 3.8849580774840433,
+            "negative_area_m2": 0.0
+          },
+          "ConcreteLight": {
+            "positive_z": 297,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 2.385586989490548,
+            "negative_area_m2": 0.0
+          },
+          "ConcreteDark": {
+            "positive_z": 70,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.4125779690612035,
+            "negative_area_m2": 0.0
+          },
+          "Aggregate": {
+            "positive_z": 390,
+            "negative_z": 682,
+            "zero_z": 206,
+            "positive_area_m2": 0.4303544309659628,
+            "negative_area_m2": 0.6853832062261063
+          },
+          "Dark": {
+            "positive_z": 0,
+            "negative_z": 366,
+            "zero_z": 0,
+            "positive_area_m2": 0.0,
+            "negative_area_m2": 6.586570199986454
+          },
+          "Crack": {
+            "positive_z": 248,
+            "negative_z": 0,
+            "zero_z": 0,
+            "positive_area_m2": 0.4891942057583947,
+            "negative_area_m2": 0.0
+          }
+        },
+        "wrong_cap_or_underside_triangles": 0,
+        "closed_solid_components": 39,
+        "expected_closed_solid_components": 39,
+        "closed_components": [
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0002268462740175892,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0004054670874514462,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0004086187805872517,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.0004953136813128367,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 14,
+            "signed_volume_m3": 0.000829412644028101,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00014970985284890048,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001770460415476313,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001770634262356907,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0001815214782254771,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00021573605772573495,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0002979387318191583,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00033225824245164404,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003574993800915158,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0003939420703318319,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.00039783423077703134,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0004223454100914143,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006309810147892373,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.000631405844615074,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006416159825069673,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006651416028944368,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006687666176124669,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0006935803418552192,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0012973170945163777,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0014264888341131152,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.001436878763342975,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0016497759303698936,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 20,
+            "signed_volume_m3": 0.0020589505729731172,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 146,
+            "signed_volume_m3": 0.009225849304793124,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.007377792827232573,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.010954605002273373,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 158,
+            "signed_volume_m3": 0.011120337468398134,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.01032847916493059,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 164,
+            "signed_volume_m3": 0.011250473564724453,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.010247898682339477,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.012029355541984662,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 170,
+            "signed_volume_m3": 0.013568806790531037,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 176,
+            "signed_volume_m3": 0.0073322528076526314,
+            "materials": [
+              "Aggregate",
+              "ConcreteDark",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 176,
+            "signed_volume_m3": 0.013134455127749097,
+            "materials": [
+              "Aggregate",
+              "Concrete",
+              "Dark"
+            ]
+          },
+          {
+            "triangles": 188,
+            "signed_volume_m3": 0.016922509096616523,
+            "materials": [
+              "Aggregate",
+              "ConcreteLight",
+              "Dark"
+            ]
+          }
+        ],
+        "open_components": 124,
+        "open_component_materials": {
+          "Crack": 124
+        },
+        "degenerate_triangles": 0,
+        "passed": true
+      }
+    }
+  ],
+  "normal_audits_passed": true,
+  "render_note": "Neutral construction evidence with material backface culling enabled; final Unreal camera proof is separate."
+}

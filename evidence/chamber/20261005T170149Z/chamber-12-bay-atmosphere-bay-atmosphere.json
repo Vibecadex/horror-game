@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "floor_untouched": true,
+  "exposure_written": false,
+  "original_kit_fbx_untouched": true,
+  "door_dimensions_cm": [
+    232.0,
+    77.00000762939453,
+    360.0
+  ],
+  "side_practicals": [
+    {
+      "lens": "TE_Room_BeaconLens_0",
+      "before_scale": [
+        0.05,
+        0.17,
+        0.52
+      ],
+      "scale": [
+        0.09,
+        0.09,
+        0.11
+      ],
+      "intensity": 35
+    },
+    {
+      "lens": "TE_Room_BeaconLens_1",
+      "before_scale": [
+        0.05,
+        0.17,
+        0.52
+      ],
+      "scale": [
+        0.09,
+        0.09,
+        0.11
+      ],
+      "intensity": 35
+    }
+  ],
+  "barn_door": {
+    "barn_door_angle": true,
+    "barn_door_length": true
+  },
+  "overhead_mist": {
+    "location": [
+      80,
+      40,
+      1100
+    ],
+    "target": [
+      80,
+      40,
+      40
+    ],
+    "intensity": 100000,
+    "radius": 3200,
+    "width": 1400,
+    "height": 900,
+    "scattering": 14
+  },
+  "volumetric_fog_distance": true,
+  "height_fog": {
+    "fog_density": 0.012,
+    "fog_height_falloff": 0.35,
+    "volumetric_fog_extinction_scale": 0.7
+  },
+  "bay_fill": {
+    "intensity": 700,
+    "radius": 260,
+    "inner": 10,
+    "outer": 26,
+    "source": 18,
+    "scattering": 0.35,
+    "color": [
+      0.55,
+      0.28,
+      0.12
+    ],
+    "placements": [
+      {
+        "name": "BayDepthL",
+        "location": [
+          -1536,
+          -700,
+          150
+        ],
+        "target": [
+          -1608,
+          -700,
+          120
+        ]
+      },
+      {
+        "name": "BayDepthR",
+        "location": [
+          -1536,
+          700,
+          150
+        ],
+        "target": [
+          -1608,
+          700,
+          120
+        ]
+      }
+    ]
+  },
+  "reloaded": true
+}

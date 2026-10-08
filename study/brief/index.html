@@ -20,43 +20,43 @@
       <p class="kicker">Teddy Encounter · study brief</p>
       <h1>Finish the chamber</h1>
     </div>
-    <p class="stamp">5 October 2026 · final saved chamber handoff<br><strong>Playable. Exact visual parity remains open.</strong></p>
+    <p class="stamp">5 October 2026 · bay and overhead trial<br><strong>Playable. Exact visual parity remains open.</strong></p>
   </header>
   <main>
-    <p class="lede">The room now has its B-3 pressure door, real opposite wall, service bays, aged surfaces and corrected floor meshes. Continue from that saved Unreal scene. The next work is broader connected floor erosion, overhead haze, local service lighting and closer architectural proportions.</p>
-    <p class="links"><a href="../CHAMBER_PARITY_BRIEF.md">Current written brief</a><a href="../TEAM_CONTINUATION.md">Team workflow + prompt</a><a href="../../README.md">Clone and play</a><a href="../../evidence/chamber-qa/final/INDEPENDENT_REVIEW.md">Independent QA</a></p>
+    <p class="lede">The visible floor is still the V4 recovery sheet. The 17:03 trial opens the service recesses, shrinks the tall red side bars, and lowers the teal shaft. The bays stay shallow and the column is still thinner than the concepts. The 16:37 pair is the before view for this trial.</p>
+    <p class="links"><a href="../CHAMBER_PARITY_BRIEF.md">Current written brief</a><a href="../TEAM_CONTINUATION.md">Team workflow + prompt</a><a href="../../README.md">Clone and play</a><a href="../../evidence/chamber/20261005T170149Z/BAY_ATMOSPHERE_QA.md">Current pass</a><a href="../../evidence/chamber/20261005T161155Z/FLOOR_RECOVERY_QA.md">Floor recovery</a></p>
     <section>
       <h2>Front chamber</h2>
       <div class="pair">
         <figure><a href="../visuals/chamber-target-front.png"><img src="../visuals/chamber-target-front.png" alt="Selected front chamber concept: worn industrial enclosure, pressure bulkhead and fractured concrete."></a><figcaption>User-selected concept target · 571×378.</figcaption></figure>
-        <figure><a href="../../evidence/implementation/20261005T114712-capture_chamber_views/01-chamber-front.png"><img src="../../evidence/implementation/20261005T114712-capture_chamber_views/01-chamber-front.png" alt="Final saved Unreal chamber front view."></a><figcaption>Actual saved Unreal · native1920×1280 · architectural FOV41.5°.</figcaption></figure>
+        <figure><a href="../../evidence/implementation/20261005T170326-capture_chamber_views/01-chamber-front.png"><img src="../../evidence/implementation/20261005T170326-capture_chamber_views/01-chamber-front.png" alt="Current saved Unreal front view after the bay and overhead trial."></a><figcaption>Current saved Unreal · native 1920×1280 · architectural FOV 41.5°. The 16:37 front view is the before pair.</figcaption></figure>
       </div>
       <h2>Reverse chamber</h2>
       <div class="pair">
         <figure><a href="../visuals/chamber-target-reverse.png"><img src="../visuals/chamber-target-reverse.png" alt="Selected reverse chamber concept with two service bays, pipes and overhead haze."></a><figcaption>User-selected concept target · 475×320.</figcaption></figure>
-        <figure><a href="../../evidence/implementation/20261005T114712-capture_chamber_views/02-chamber-reverse.png"><img src="../../evidence/implementation/20261005T114712-capture_chamber_views/02-chamber-reverse.png" alt="Final saved Unreal reverse view showing the completed two-bay opposite wall."></a><figcaption>Actual saved Unreal · native1920×1280 · architectural FOV70°.</figcaption></figure>
+        <figure><a href="../../evidence/implementation/20261005T170326-capture_chamber_views/02-chamber-reverse.png"><img src="../../evidence/implementation/20261005T170326-capture_chamber_views/02-chamber-reverse.png" alt="Current saved Unreal reverse view with lit service recesses."></a><figcaption>Current saved Unreal · native 1920×1280 · architectural FOV 70°. The 16:37 reverse view is the before pair.</figcaption></figure>
       </div>
-      <p class="readout">Entire frames shown without grading or warping. Architectural captures hold characters and hide HUD; saved lights/materials and native cutaway remain. Ordinary gameplay still uses FOV54. These are distinct views, not a pixel-registered match.</p>
+      <p class="readout">Entire frames shown without grading or warping. Architectural captures hold characters and hide HUD; saved lights/materials and native cutaway remain. Ordinary gameplay still uses pitch −46° and FOV 54. <a href="../../evidence/implementation/20261005T170326-capture_chamber_views/03-ordinary-gameplay.png">Open the ordinary gameplay hold</a>. These are distinct views, not a pixel-registered match.</p>
     </section>
     <section>
       <h2>Three next priorities</h2>
       <ol class="steps">
-        <li><strong>Continuous broken concrete.</strong> Replace the isolated fracture-patch read with broader connected erosion, varied plates and sparse angular fragments. Keep quiet floor and clear routes. Use the corrected V2 sources.</li>
-        <li><strong>Overhead atmosphere and local light.</strong> Recover upper haze and service contours. Calm the direct wall-wash/bright near-floor balance without lifting exposure globally.</li>
+        <li><strong>Floor chunks and split lines.</strong> The recovery sheet is the current floor. Straight splits and grounded chunks are still quieter than the concepts. Refine <code>FloorRecoveryV4</code> only. Do not restore the hidden V3 sheet.</li>
+        <li><strong>Bay depth and overhead column.</strong> The openings are lit and the side bars are small points. The recesses are still shallow, and the teal shaft is still thinner than the concepts. Do not raise global exposure.</li>
         <li><strong>Architectural mass.</strong> Refine wall/door/floor proportions, modular repetition and reverse upper margin using the agreed cameras. Preserve the real enclosure.</li>
       </ol>
       <p>One integrator owns the Unreal level. Artists use separate versioned source files; QA compares actual output independently. Preserve characters, controls and the gameplay camera.</p>
     </section>
     <section>
       <h2>What the checks establish</h2>
-      <p><a href="../../evidence/implementation/20261005T114820-verify_chamber_runtime/receipt.json">Chamber28/28</a> and <a href="../../evidence/implementation/20261005T114928-verify_full_room/receipt.json">room28/28</a> pass for the final saved candidate. Mesh identity, collision, cutaway and routes are checked. These results do not close the visual gaps.</p>
-      <video controls preload="none" poster="../../evidence/chamber/20261005T095028Z/native-motion-20261005T115126/motion-still.png"><source src="../../evidence/chamber/20261005T095028Z/native-motion-20261005T115126/native-motion.mp4" type="video/mp4">Open the linked native movie in a video player.</video>
-      <p class="readout">Native gameplay · 19.1667s · 572 decoded frames · silent · simulated input in an isolated QA copy. Ends in player loss/F5 restart prompt. Physical input, matched audio, packaging and sustained performance remain unverified.</p>
-      <p><a href="../../evidence/chamber/20261005T095028Z/review.html">Open detailed comparison and receipts</a></p>
+      <p><a href="../../evidence/implementation/20261005T170523-verify_chamber_runtime/receipt.json">Chamber 34/34</a> and <a href="../../evidence/implementation/20261005T170600-verify_full_room/receipt.json">room 28/28</a> pass for this trial. The <a href="../../evidence/implementation/20261005T163834-verify_chamber_runtime/receipt.json">earlier 34/34</a> and <a href="../../evidence/implementation/20261005T163913-verify_full_room/receipt.json">28/28</a> receipts belong to the floor recovery. These results do not close the visual gaps.</p>
+      <video controls preload="none" poster="../../evidence/chamber/20261005T161155Z/native-motion-20261005T164043/ending-still.png"><source src="../../evidence/chamber/20261005T161155Z/native-motion-20261005T164043/native-motion.mp4" type="video/mp4">Open the linked native movie in a video player.</video>
+      <p class="readout">Floor-recovery gameplay, before this lighting trial · 19.133s · 573 decoded frames · silent · simulated input. Ends in boss defeat, on-screen “THE STITCHES GIVE WAY”, with the player still standing. It does not show the 17:03 bays or shaft. The <a href="../../evidence/chamber/20261005T095028Z/native-motion-20261005T115126/native-motion.mp4">11:51 movie</a> is historical and ends in player loss.</p>
+      <p><a href="../../evidence/chamber/20261005T170149Z/BAY_ATMOSPHERE_QA.md">Open the current pass note</a>. The <a href="../../evidence/chamber/20261005T095028Z/review.html">11:47 comparison</a> is historical.</p>
     </section>
     <section>
       <h2>Start the team checkout</h2>
-      <p>Windows, Unreal5.8.3, Git LFS and Python3.11+. Clone <a href="https://github.com/Vibecadex/horror-game">Vibecadex/horror-game</a>, run <code>git lfs pull</code>, then <code>python tools/team_check.py --verify-handoff</code>. Use <code>PLAY.cmd</code> or close the game and use <code>EDIT.cmd</code>. No regeneration is required.</p>
+      <p>Windows, Unreal5.8.3, Git LFS and Python3.11+. Clone <a href="https://github.com/Vibecadex/horror-game">Vibecadex/horror-game</a>, run <code>git lfs pull</code>, then <code>python tools/team_check.py</code>. Use <code>PLAY.cmd</code> or close the game and use <code>EDIT.cmd</code>. No regeneration is required. <code>--verify-handoff</code> is the historical Content-hash check and fails after later art.</p>
       <p>WASD move · mouse aim · left mouse fire · Space dodge · Escape pause · F5 restart.</p>
       <p class="readout">The <a href="history-0930.html">09:30 interactive study</a> and <a href="../CHAMBER_PARITY_HISTORY_20261005.md">chamber iteration history</a> are preserved. Their older values and pending tasks do not override this brief.</p>
     </section>

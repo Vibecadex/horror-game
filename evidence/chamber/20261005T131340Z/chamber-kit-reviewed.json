@@ -1,0 +1,668 @@
+{
+  "owner": "teddy-chamber-parity-20261005",
+  "status": "source-kit-ready-for-engine-review",
+  "generator": "tools/make_chamber_parity.py",
+  "generator_sha256": "92b4738b9aef9b77dede67f99d697bf82b7f2572d69132d3280e94d05027f7be",
+  "editable_blend": "Assets/Adapted/ChamberParity/ChamberParity_Kit.blend",
+  "blend_sha256": "1d12e6afac7fca4e5d045a3a2ec3fe0b2e836503d7e55fa1e99d3f6df0c2ed06",
+  "source": "Original deterministic local geometry authored for the two user-selected chamber references. No external models or texture downloads.",
+  "references": [
+    {
+      "path": "study/visuals/chamber-target-front.png",
+      "sha256": "f853bc67bfb3973f8c3097c829973634590bfb4b42df17ed54fcf65b156b6960"
+    },
+    {
+      "path": "study/visuals/chamber-target-reverse.png",
+      "sha256": "1728fb8239d4edde652c93c92bb441c211fe4b491fbf9c14d79413e1c60eff42"
+    }
+  ],
+  "reused_design_contract": "Generic bevel/primitive/export helpers follow the existing tools/make_industrial_room.py conventions. Existing room assets and generators were read only; no mesh or texture was overwritten.",
+  "preserved": "Assets/Adapted/Room, RoomShell, RoomDressing, all original references, characters, rigs and clips remain unchanged.",
+  "blender_version": "5.2.0 LTS",
+  "coordinate_system": "Metres, Z up, architectural front -Y; tested project static import mirrors Y. Origin zero at floor except separate wheel at axle centre.",
+  "fbx_settings": {
+    "axis_forward": "-Y",
+    "axis_up": "Z",
+    "global_scale": 1,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_NONE"
+  },
+  "material_slots": [
+    "Metal",
+    "Concrete",
+    "Rust",
+    "Dark",
+    "Emissive",
+    "Stencil"
+  ],
+  "material_contract": {
+    "Metal": "worn painted steel",
+    "Concrete": "aged neutral concrete",
+    "Rust": "subdued dark oxide",
+    "Dark": "deep neutral cavity/recess",
+    "Emissive": "small red service-door beacon only",
+    "Stencil": "nonemissive aged pale paint; also overhead reflector"
+  },
+  "material_note": "Blender procedural noise/bump is preview-only. FBX slots/UVs are supplied for root-owned Unreal world-space materials. No baked teal or gameplay light pool.",
+  "assets": [
+    {
+      "name": "SM_ChamberServiceDoorBay",
+      "file": "SM_ChamberServiceDoorBay.fbx",
+      "purpose": "Two shallow recessed service bays for the reverse/fourth wall.",
+      "detail": "2.32m concrete frame, 1.6m dark leaf, ~0.55m real reveal depth, threshold grip lips, one small red beacon. No wheel.",
+      "triangles": 7372,
+      "vertices": 3784,
+      "component_count": 49,
+      "bounds_m": {
+        "min": [
+          -1.159999966621399,
+          -0.5130000114440918,
+          0.0
+        ],
+        "max": [
+          1.159999966621399,
+          0.2580000162124634,
+          3.5999999046325684
+        ]
+      },
+      "dimensions_m": [
+        2.319999933242798,
+        0.7710000276565552,
+        3.5999999046325684
+      ],
+      "expected_dimensions_cm": [
+        231.99999332427979,
+        77.10000276565552,
+        359.99999046325684
+      ],
+      "origin": "Floor Z=0, centre of module width X=0. Back of wall-mounted assembly toward +Y.",
+      "front": "Blender -Y; project static FBX imports this toward Unreal +Y.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive",
+        "Stencil"
+      ],
+      "used_materials": [
+        "Concrete",
+        "Dark",
+        "Emissive",
+        "Metal"
+      ],
+      "collision": "NoCollision decoration; retain existing chamber collision.",
+      "sha256": "02394c41440c7016c073fa760f2c8a9936fd01ebdeb8272894b8e057b4592a56"
+    },
+    {
+      "name": "SM_ChamberDrum",
+      "file": "SM_ChamberDrum.fbx",
+      "purpose": "Single worn low steel drum for door-side/perimeter dressing.",
+      "detail": "48 radial segments, two rolled reinforcement beads, correlated dents, inset lid, two bung plugs; floor pivot.",
+      "triangles": 5384,
+      "vertices": 2740,
+      "component_count": 14,
+      "bounds_m": {
+        "min": [
+          -0.312251478433609,
+          -0.3105515241622925,
+          -0.0007999999797903001
+        ],
+        "max": [
+          0.312889963388443,
+          0.31312841176986694,
+          0.9485000371932983
+        ]
+      },
+      "dimensions_m": [
+        0.625141441822052,
+        0.6236799359321594,
+        0.9493000371730886
+      ],
+      "expected_dimensions_cm": [
+        62.5141441822052,
+        62.36799359321594,
+        94.93000371730886
+      ],
+      "origin": "Floor Z=0, centre of module width X=0. Back of wall-mounted assembly toward +Y.",
+      "front": "Blender -Y; project static FBX imports this toward Unreal +Y.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive",
+        "Stencil"
+      ],
+      "used_materials": [
+        "Dark",
+        "Metal",
+        "Rust"
+      ],
+      "collision": "NoCollision decoration; retain existing chamber collision.",
+      "sha256": "6fd6ac1df03522380914c24f0be82edee1ac520dea26ded7e6cd49210453606f"
+    },
+    {
+      "name": "SM_ChamberDrumPair",
+      "file": "SM_ChamberDrumPair.fbx",
+      "purpose": "Irregular two-drum group for the side service perimeter.",
+      "detail": "Two different dent patterns, staggered positions, subtly different heights. Does not include a tank or fan.",
+      "triangles": 10768,
+      "vertices": 5480,
+      "component_count": 28,
+      "bounds_m": {
+        "min": [
+          -0.6431434154510498,
+          -0.3344462215900421,
+          -0.0007999999797903001
+        ],
+        "max": [
+          0.6267543435096741,
+          0.3517654538154602,
+          0.9485000371932983
+        ]
+      },
+      "dimensions_m": [
+        1.2698977589607239,
+        0.6862116754055023,
+        0.9493000371730886
+      ],
+      "expected_dimensions_cm": [
+        126.98977589607239,
+        68.62116754055023,
+        94.93000371730886
+      ],
+      "origin": "Floor Z=0, centre of module width X=0. Back of wall-mounted assembly toward +Y.",
+      "front": "Blender -Y; project static FBX imports this toward Unreal +Y.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive",
+        "Stencil"
+      ],
+      "used_materials": [
+        "Dark",
+        "Metal",
+        "Rust"
+      ],
+      "collision": "NoCollision decoration; retain existing chamber collision.",
+      "sha256": "00db549a457b8d7b8ba8d5cc09120fb048ec30f4379ab54e5e6f5a7285bd44e8"
+    },
+    {
+      "name": "SM_ChamberBulkhead",
+      "file": "SM_ChamberBulkhead.fbx",
+      "purpose": "Replacement 10m-wide rear pressure bulkhead, centred between rear piers.",
+      "detail": "10x5.6m clipped concrete surround; recessed wide horizontal-panel leaves; gearbox/axle accepts ONE separate wheel; subordinate physical B-3 stencil. Conceal old bulkhead, do not layer over its wheel.",
+      "triangles": 22300,
+      "vertices": 11418,
+      "component_count": 138,
+      "bounds_m": {
+        "min": [
+          -5.0,
+          -0.7649999856948853,
+          0.0
+        ],
+        "max": [
+          5.0,
+          0.36000001430511475,
+          5.599999904632568
+        ]
+      },
+      "dimensions_m": [
+        10.0,
+        1.125,
+        5.599999904632568
+      ],
+      "expected_dimensions_cm": [
+        1000.0,
+        112.5,
+        559.9999904632568
+      ],
+      "origin": "Floor Z=0, centre of module width X=0. Back of wall-mounted assembly toward +Y.",
+      "front": "Blender -Y; project static FBX imports this toward Unreal +Y.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive",
+        "Stencil"
+      ],
+      "used_materials": [
+        "Concrete",
+        "Dark",
+        "Metal",
+        "Rust",
+        "Stencil"
+      ],
+      "collision": "NoCollision decoration; retain existing chamber collision.",
+      "sha256": "43c0527ab764f3736d92bb61d627e44bc60ea80add5d1fbdcb576a00bd253d59"
+    },
+    {
+      "name": "SM_ChamberBulkheadWheel",
+      "file": "SM_ChamberBulkheadWheel.fbx",
+      "purpose": "The only locking wheel for SM_ChamberBulkhead; distinct axle pivot allows proportion tuning.",
+      "detail": "1.57m six-spoke cast pressure wheel. Align to door local(0,-.811,2.54)m; no second wheel is present in the door mesh.",
+      "triangles": 2448,
+      "vertices": 1240,
+      "component_count": 9,
+      "bounds_m": {
+        "min": [
+          -0.7850000262260437,
+          -0.07800000160932541,
+          -0.7850000262260437
+        ],
+        "max": [
+          0.7850000262260437,
+          0.06350000947713852,
+          0.7850000262260437
+        ]
+      },
+      "dimensions_m": [
+        1.5700000524520874,
+        0.14150001108646393,
+        1.5700000524520874
+      ],
+      "expected_dimensions_cm": [
+        157.00000524520874,
+        14.150001108646393,
+        157.00000524520874
+      ],
+      "origin": "Axle centre X=Y=Z=0; front -Y. This is the sole non-floor pivot in the kit.",
+      "front": "Blender -Y; project static FBX imports this toward Unreal +Y.",
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive",
+        "Stencil"
+      ],
+      "used_materials": [
+        "Metal",
+        "Rust"
+      ],
+      "collision": "NoCollision decoration; retain existing chamber collision.",
+      "sha256": "e01a04fc3cb37f2df5b47b0c72cfb260b6cc1210720242451c81689c4059f17a"
+    }
+  ],
+  "total_unique_triangles": 48272,
+  "fbx_roundtrip_checks": [
+    {
+      "name": "SM_ChamberServiceDoorBay",
+      "max_dimension_error_m": 2.086162567138672e-07,
+      "triangles": 7372,
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive",
+        "Stencil"
+      ],
+      "uv_layers": 1,
+      "passed": true
+    },
+    {
+      "name": "SM_ChamberDrum",
+      "max_dimension_error_m": 5.960464477539063e-08,
+      "triangles": 5384,
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive",
+        "Stencil"
+      ],
+      "uv_layers": 1,
+      "passed": true
+    },
+    {
+      "name": "SM_ChamberDrumPair",
+      "max_dimension_error_m": 1.1920928955078125e-07,
+      "triangles": 10768,
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive",
+        "Stencil"
+      ],
+      "uv_layers": 1,
+      "passed": true
+    },
+    {
+      "name": "SM_ChamberBulkhead",
+      "max_dimension_error_m": 8.642673492431641e-07,
+      "triangles": 22300,
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive",
+        "Stencil"
+      ],
+      "uv_layers": 1,
+      "passed": true
+    },
+    {
+      "name": "SM_ChamberBulkheadWheel",
+      "max_dimension_error_m": 1.341104507446289e-07,
+      "triangles": 2448,
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive",
+        "Stencil"
+      ],
+      "uv_layers": 1,
+      "passed": true
+    }
+  ],
+  "combat_guard_cm": {
+    "x": [
+      -1400,
+      1480
+    ],
+    "y": [
+      -1500,
+      1500
+    ]
+  },
+  "recommended_placements": [
+    {
+      "label": "RearBulkhead",
+      "mesh": "SM_ChamberBulkhead",
+      "location_cm": [
+        1630,
+        180,
+        62
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "reason": "Replace/conceal TE_Room_Bulkhead only; rear door spans Y[-320,680]. Inspect overlapping old rear inset/header dressing.",
+      "world_bounds_cm": {
+        "min": [
+          1553.5000014305115,
+          -320.0,
+          62.0
+        ],
+        "max": [
+          1666.0000014305115,
+          680.0,
+          621.9999904632568
+        ]
+      },
+      "outside_combat_guard": true
+    },
+    {
+      "label": "RearBulkheadWheel",
+      "mesh": "SM_ChamberBulkheadWheel",
+      "location_cm": [
+        1548.9,
+        180,
+        316
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "reason": "Exactly one wheel, aligned to main door local(0,-.811,2.54)m. Axle pivot allows independent uniform scale.",
+      "world_bounds_cm": {
+        "min": [
+          1541.0999998390676,
+          101.49999737739563,
+          237.49999737739563
+        ],
+        "max": [
+          1555.250000947714,
+          258.50000262260437,
+          394.50000262260437
+        ]
+      },
+      "outside_combat_guard": true
+    },
+    {
+      "label": "ReverseDoorL",
+      "mesh": "SM_ChamberServiceDoorBay",
+      "location_cm": [
+        -1580,
+        -700,
+        -5
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "reason": "Fourth wall visible face at X<=-1605, behind dark leaf; copy original closed collision.",
+      "world_bounds_cm": {
+        "min": [
+          -1605.8000016212463,
+          -815.9999966621399,
+          -5.0
+        ],
+        "max": [
+          -1528.6999988555908,
+          -584.0000033378601,
+          354.99999046325684
+        ]
+      },
+      "outside_combat_guard": true
+    },
+    {
+      "label": "ReverseDoorR",
+      "mesh": "SM_ChamberServiceDoorBay",
+      "location_cm": [
+        -1580,
+        700,
+        -5
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "reason": "Second reverse service bay; same height and door design; beacon is small red lens only.",
+      "world_bounds_cm": {
+        "min": [
+          -1605.8000016212463,
+          584.0000033378601,
+          -5.0
+        ],
+        "max": [
+          -1528.6999988555908,
+          815.9999966621399,
+          354.99999046325684
+        ]
+      },
+      "outside_combat_guard": true
+    },
+    {
+      "label": "ReverseDrumL",
+      "mesh": "SM_ChamberDrum",
+      "location_cm": [
+        -1565,
+        -450,
+        -5
+      ],
+      "yaw": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "reason": "Single drum beside reverse left door, supported by arena floor, outside guard.",
+      "world_bounds_cm": {
+        "min": [
+          -1596.3128411769867,
+          -481.2889963388443,
+          -5.07999999797903
+        ],
+        "max": [
+          -1533.9448475837708,
+          -418.7748521566391,
+          89.85000371932983
+        ]
+      },
+      "outside_combat_guard": true
+    },
+    {
+      "label": "ReverseDrumR",
+      "mesh": "SM_ChamberDrum",
+      "location_cm": [
+        -1565,
+        980,
+        -5
+      ],
+      "yaw": -73,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "reason": "Offset single drum beside reverse right door. Keep gaps between service groups.",
+      "world_bounds_cm": {
+        "min": [
+          -1604.0739686454503,
+          940.9231952372253,
+          -5.07999999797903
+        ],
+        "max": [
+          -1526.1537928485516,
+          1018.9404052406122,
+          89.85000371932983
+        ]
+      },
+      "outside_combat_guard": true
+    },
+    {
+      "label": "RightServiceDrums",
+      "mesh": "SM_ChamberDrumPair",
+      "location_cm": [
+        130,
+        1590,
+        62
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "reason": "Two drums supported by retained right foundation top61cm; beside existing services, not a repeated row.",
+      "world_bounds_cm": {
+        "min": [
+          67.32456564903259,
+          1556.5553778409958,
+          61.92000000202097
+        ],
+        "max": [
+          194.31434154510498,
+          1625.176545381546,
+          156.85000371932983
+        ]
+      },
+      "outside_combat_guard": true
+    },
+    {
+      "label": "LeftServiceDrums",
+      "mesh": "SM_ChamberDrumPair",
+      "location_cm": [
+        850,
+        -1590,
+        62
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "reason": "Two drums supported by left foundation top61cm, between existing pilasters.",
+      "world_bounds_cm": {
+        "min": [
+          785.685658454895,
+          -1625.176545381546,
+          61.92000000202097
+        ],
+        "max": [
+          912.6754343509674,
+          -1556.5553778409958,
+          156.85000371932983
+        ]
+      },
+      "outside_combat_guard": true
+    },
+    {
+      "label": "RearDrum",
+      "mesh": "SM_ChamberDrum",
+      "location_cm": [
+        1570,
+        -435,
+        62
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "collision": "NoCollision",
+      "reason": "One drum near left bulkhead jamb, clear of retained rear crate atY-585 and original door wheel.",
+      "world_bounds_cm": {
+        "min": [
+          1538.9448475837708,
+          -466.2251478433609,
+          61.92000000202097
+        ],
+        "max": [
+          1601.3128411769867,
+          -403.7110036611557,
+          156.85000371932983
+        ]
+      },
+      "outside_combat_guard": true
+    }
+  ],
+  "integration_requirements": [
+    "Import into a new owned namespace with NoCollision and metre-to-centimetre dimensions verified; retain original collision.",
+    "Main bulkhead is a replacement: conceal old TE_Room_Bulkhead visually without moving/removing original actor or its collision. Door body has no wheel; place exactly one separate SM_ChamberBulkheadWheel at its axle. Never layer the old wheel.",
+    "Review and conceal old rear inset/header modules that overlap the 10m door; keep piers whose actual AABBs remain clear.",
+    "Fourth-wall face must be behind the service leaves (X<=-1605 for the proposed X=-1580 origins), or use actual modular door gaps. A face atX=-1550 would occlude the recess.",
+    "Fourth wall and mounted bays need root-owned reversible camera cutaway behavior; source kit does not implement gameplay or camera changes.",
+    "Conceal the old low cutaway sill meshes wherever they overlap floor-level reverse door/drum geometry; preserve their collision and transforms.",
+    "Drums atZ62 are on existing peripheral foundations whose top is61cm. Reverse drums atZ-5 rest on the arena floor. Do not reuse Z62 on bare floor.",
+    "Existing cabinets, tanks, fans and pipe-rack wheels are reused, not duplicated by this kit.",
+    "Actual Unreal shading, silhouette, floor contact and both full-room views require parent integration and independent capture review."
+  ],
+  "render_evidence": [
+    "kit-overview.png",
+    "bulkhead-front.png",
+    "service-and-drums.png"
+  ],
+  "limits": "Source geometry and Blender exports verified. No Unreal assets were imported or written. No exact-parity or player-acceptance claim."
+}

@@ -1,5 +1,77 @@
 # Teddy Encounter working status
 
+## Bay depth, red practicals, and overhead — 5 October 2026
+
+Grok session `01a10a54-69ee-7253-978b-c01aa506ee63` remains the sole Unreal writer. The recovered floor stays visible. Exposure bias stays 3.8. The gameplay camera stays pitch −46° / FOV 54.
+
+The reverse bays no longer have a solid leaf. A drum sits in the existing 77 cm reveal, and two warm spots light the openings. Side red lenses shrank from tall bars to small points. The overhead shaft moved from Z 1750 down to Z 1100, with diffuse and specular still 0. The shell face limits how deep the bays can go. The teal column is stronger in the room and still thinner than the concepts.
+
+| Evidence | Result |
+| --- | --- |
+| Before | `20261005T163731-capture_chamber_views`, the reviewed floor recovery. |
+| After | `20261005T170326-capture_chamber_views`. Front, reverse, and ordinary gameplay. |
+| Chamber audit | `20261005T170523-verify_chamber_runtime`, **34/34**. |
+| Room audit | `20261005T170600-verify_full_room`, **28/28**. Floor trace still hits `TE_ArenaFloor` at Z −5. |
+| Note | `evidence/chamber/20261005T170149Z/BAY_ATMOSPHERE_QA.md` |
+
+This is not visual acceptance. Next remaining gaps are deeper bay interiors past the shell face, a thicker overhead column, and quieter floor splits. Do not raise global exposure or restore the V3 sheet.
+
+## Floor recovery — 5 October 2026
+
+Grok session `01a10a54-69ee-7253-978b-c01aa506ee63` remains the sole Unreal writer on `grok/chamber-parity-continuation`. The V3 sheet was a fidelity regression: a smooth polygon floor. The visible floor is now `TE_Chamber_Recover_Main` / `SM_ChamberFractureRecover_Main` (65,622 triangles, 595 plates, median about 0.74 m², 39 fragments, relief at most 3.6 cm). It sits at (40, 0, −5), scale Z 1, with no collision, and it meets the drainage lip. V2 and V3 stay in place and hidden. Exposure bias stays 3.8. The gameplay camera stays pitch −46° / FOV 54.
+
+The 16:14 capture, `20261005T161429-capture_chamber_views`, still read as dark triangular plates and is not the candidate.
+
+| Evidence | Result |
+| --- | --- |
+| Current views | `20261005T163731-capture_chamber_views`: front, reverse, and ordinary gameplay. Damp cracked concrete. The dark mosaic is gone. |
+| Chamber audit | `20261005T163834-verify_chamber_runtime`, **34/34**. V3 must be hidden. Three recovery checks were added. |
+| Room audit | `20261005T163913-verify_full_room`, **28/28**. Floor trace still hits `TE_ArenaFloor` at Z −5. |
+| Motion | `evidence/chamber/20261005T161155Z/native-motion-20261005T164043`. Silent, simulated input, 19.133 s, 573 frames. Ends in boss defeat (`THE STITCHES GIVE WAY`), not player loss. |
+| Identities | `evidence/chamber/20261005T161155Z/delivery-inputs.json` |
+
+Straight splits and grounded chunks are still quieter than the concepts. Service bays, red side fixtures, and overhead haze were not changed. This is not visual acceptance. The 11:47 pair, the 11:51 player-loss movie, and the 766-file clone receipt are historical.
+
+Open the saved encounter with **PLAY.cmd** or **EDIT.cmd**. Next: bay depth, red practicals, and overhead atmosphere against the same cameras. Do not raise global exposure or restore the V3 sheet.
+
+## Local haze pass — 5 October 2026
+
+Historical lighting pass. The current candidate is the floor recovery above.
+
+The same Grok session remains the sole Unreal writer on `grok/chamber-parity-continuation`. The room was not rebuilt. Exposure bias stays 3.8.
+
+The saved look uses the existing downward fog rect, now at (80, 40, 1750), 120,000 cd, a 2800 cm source and scattering 7. It still does not light surfaces. Height fog is thinner (density 0.010, falloff 0.42) and reaches higher. The combat-floor return is 14,000 cd with a 36° outer cone. Side washes are 11,000 and 10,500 cd on the environment channel. The reverse-wall spot sits higher, at 9,000 cd. An intermediate pair, `20261005T133030-capture_chamber_views`, left the reverse ceiling black and was rejected.
+
+| Evidence | Result |
+| --- | --- |
+| Before this pass | `20261005T131840-capture_chamber_views`, the floor-morphology pair. |
+| After | `20261005T133413-capture_chamber_views`: front, reverse, and the held ordinary view at pitch −46° / FOV 54. |
+| Chamber audit | `20261005T133512-verify_chamber_runtime`, **31/31**. |
+| Room audit | `20261005T133546-verify_full_room`, **28/28**. Floor trace still hits `TE_ArenaFloor` near Z −5. |
+| Run | `evidence/chamber/20261005T132910Z` |
+
+Both directions are less evenly washed, and the reverse upper frame now carries a dark teal gradient. The door shaft remains. Service bays are still dark, the side red fixtures still read as bars beside small door pins, and the overhead column is weaker than either concept. Floor breaks remain too sparse and too shallow. This is not visual acceptance.
+
+Open the saved encounter with **PLAY.cmd** or **EDIT.cmd**. Next: reassess architectural mass and bay interiors against the two concepts, and deepen `FloorMorphologyV3` only if the floor still looks too intact. Do not raise global exposure or add a glowing fog shape. Do not add a creature, weapon, phase or camera mode.
+
+## Floor morphology pass — 5 October 2026
+
+Grok session `01a10a54-69ee-7253-978b-c01aa506ee63` is the sole Unreal writer. Branch `grok/chamber-parity-continuation`. The saved room was not rebuilt. V1 and V2 floor sources were not reimported.
+
+The visible floor is now one no-collision sheet, `TE_Chamber_Morph_Main` / `SM_ChamberFractureMorph_Main` (10,218 triangles, 58 plates, median plate about 7.8 m², 10 omitted plates, 16 angular fragments, local relief at most 3.75 cm). It sits at (40, 0, −5), scale Z exactly 1. New graphs `M_Chamber_FloorMorph*` use a flat normal and a 32 m stain at 22% weight, so the old hairline bump is not driving the read. The five V2 fields, four slab groups and five crust banks stay in place and are hidden. An intermediate capture, `20261005T131418-capture_chamber_views`, put pure black cards on the floor and was rejected; the saved mesh does not use those cards.
+
+| Evidence | Result |
+| --- | --- |
+| Before | `20261005T114712-capture_chamber_views`, ungraded native 1920×1280. |
+| After | `20261005T131840-capture_chamber_views`: front, reverse, and a held ordinary view at pitch −46° / FOV 54. |
+| Chamber audit | `20261005T131946-verify_chamber_runtime`, **31/31**. The added checks pin the morphology mesh and require the fine overlays to stay present and hidden. |
+| Room audit | `20261005T132018-verify_full_room`, **28/28**. Routes, spawns and the four collision bounds still pass. |
+| Run | `evidence/chamber/20261005T131340Z` |
+
+Both directions are quieter and read as one floor, with a few larger broken plates instead of the fine crack web and repeated banks. The breaks are still too sparse and too shallow against both concepts. The strip outside the sheet still shows the older floor. Overhead haze, wall wash and red points were not changed. This is not visual acceptance.
+
+Open the saved encounter with **PLAY.cmd** or **EDIT.cmd**. Next: local overhead haze and calmer wall light, without raising global exposure. Deepen the connected plate breaks in the same floor kit if the next review still finds the floor too intact. Do not add a creature, weapon, phase or camera mode.
+
 ## Grok continuation handoff — 5 October 2026
 
 The user has delegated the next chamber parity pass to Grok. [GROK_CHAMBER_HANDOFF.md](study/GROK_CHAMBER_HANDOFF.md) supplies the original video, selected close/front/reverse references, final actual captures, current corrected assets, prerequisites and concrete next milestones. The designated existing session is `01a10a54-69ee-7253-978b-c01aa506ee63` (Husk Cluster boss shot fidelity study, Grok4.7/xhigh).

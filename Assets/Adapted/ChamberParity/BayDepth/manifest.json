@@ -1,0 +1,28 @@
+{
+  "owner": "teddy-chamber-bay-depth-20261005",
+  "status": "source-ready-for-engine-review",
+  "replaces_visible_mesh_path": "/Game/TeddyEncounter/Chamber/Meshes/SM_ChamberServiceDoorBay",
+  "original_kit_fbx_untouched": "Assets/Adapted/ChamberParity/SM_ChamberServiceDoorBay.fbx",
+  "assets": [
+    {
+      "name": "SM_ChamberServiceDoorBay",
+      "file": "SM_ChamberServiceDoorBay.fbx",
+      "purpose": "Open reverse service recess. Same frame, no solid leaf, drum inside the existing reveal.",
+      "triangles": 476,
+      "expected_dimensions_cm": [
+        231.99999332427979,
+        76.99999809265137,
+        359.99999046325684
+      ],
+      "material_slots": [
+        "Metal",
+        "Concrete",
+        "Rust",
+        "Dark",
+        "Emissive"
+      ],
+      "sha256": "23c6f7f4973067c8c5fa20c32e1c86e2aabfbd5aa454f80c2cfe48ad9580d98f",
+      "preserves_original_kit_fbx": true
+    }
+  ]
+}

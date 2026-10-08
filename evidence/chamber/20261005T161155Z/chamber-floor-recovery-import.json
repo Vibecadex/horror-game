@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "actors": [
+    {
+      "label": "TE_Chamber_Recover_Main",
+      "placement": {
+        "label": "Main",
+        "mesh": "SM_ChamberFractureRecover_Main",
+        "location_cm": [
+          40,
+          0,
+          -5
+        ],
+        "yaw": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "collision": "NoCollision",
+        "world_bounds_cm": {
+          "min": [
+            -1696.2262725830078,
+            -1522.5354194641113,
+            -4.860000004991889
+          ],
+          "max": [
+            1685.0000762939453,
+            1522.5817680358887,
+            -1.4000001549720764
+          ]
+        }
+      },
+      "material_readback": [
+        {
+          "slot": "Concrete",
+          "material": "/Game/TeddyEncounter/Chamber/Materials/M_Chamber_FloorRecoverConcrete.M_Chamber_FloorRecoverConcrete"
+        },
+        {
+          "slot": "ConcreteLight",
+          "material": "/Game/TeddyEncounter/Chamber/Materials/M_Chamber_FloorRecoverConcreteLight.M_Chamber_FloorRecoverConcreteLight"
+        },
+        {
+          "slot": "ConcreteDark",
+          "material": "/Game/TeddyEncounter/Chamber/Materials/M_Chamber_FloorRecoverConcreteDark.M_Chamber_FloorRecoverConcreteDark"
+        },
+        {
+          "slot": "Aggregate",
+          "material": "/Game/TeddyEncounter/Chamber/Materials/M_Chamber_FloorRecoverAggregate.M_Chamber_FloorRecoverAggregate"
+        }
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "path": "/Game/TeddyEncounter/Chamber/FloorRecovery/SM_ChamberFractureRecover_Main.SM_ChamberFractureRecover_Main",
+      "bounds_cm": [
+        3381.2264404296875,
+        3045.1171875,
+        3.459999904036522
+      ],
+      "triangles_source": 65622
+    }
+  ],
+  "concealed": [
+    "TE_Chamber_Floor_ForegroundLeft",
+    "TE_Chamber_Floor_ForegroundRight",
+    "TE_Chamber_Floor_MidLeftDrift",
+    "TE_Chamber_Floor_RearRightFork",
+    "TE_Chamber_Floor_RightSideBank",
+    "TE_Chamber_Slabs_SparseForegroundLeft",
+    "TE_Chamber_Slabs_SparseForegroundRight",
+    "TE_Chamber_Slabs_SparseMidLeft",
+    "TE_Chamber_Slabs_SparseRearRight",
+    "TE_Chamber_Crust_LeftFront",
+    "TE_Chamber_Crust_ForegroundCentre",
+    "TE_Chamber_Crust_RightSide",
+    "TE_Chamber_Crust_RearRight",
+    "TE_Chamber_Crust_RearLeft"
+  ],
+  "morphology_hidden": [
+    {
+      "label": "TE_Chamber_Morph_Main",
+      "location": [
+        40.0,
+        0.0,
+        -5.0
+      ]
+    }
+  ],
+  "source_assets_preserved": true,
+  "collision": "NoCollision",
+  "existing_floor_materials_rebuilt": false,
+  "lighting_unchanged": true,
+  "manifest_sha256": "f0aad0e78122f75763b118de3ef287f9afd04a62932e015e898487ee5a92668c"
+}

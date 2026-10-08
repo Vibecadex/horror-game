@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "method": "Hashes before the V4 floor recovery. V2 and V3 exports stay in place. Lighting commit efce679 is the visual before pair.",
+  "before_native_pair": "evidence/implementation/20261005T133413-capture_chamber_views",
+  "files": [
+    {
+      "path": "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+      "sha256": "1f1e51fbf5a1afda5ba2d469a0165d6927a24d58aa7a03ee177bcd6e3afcbf9b",
+      "bytes": 1091532
+    },
+    {
+      "path": "TeddyBlueprint/Content/TeddyEncounter/Chamber/Blueprints/BP_ChamberCutaway.uasset",
+      "sha256": "e43fe006575f89e7811084c9044a2bc7941bbc711ff8a142350f155e1add8136",
+      "bytes": 78992
+    },
+    {
+      "path": "study/chamber-settings.json",
+      "sha256": "ecfdc4f55e40afbeb408a39c93778260b05f938a93201bffc95db5a260c6082c",
+      "bytes": 3089
+    },
+    {
+      "path": "Assets/Adapted/ChamberParity/FloorMorphologyV3/manifest.json",
+      "sha256": "d43558d99914839f04bf1145fbf7e9c56d24595b126006ed8642113f2680c287",
+      "bytes": 7096
+    },
+    {
+      "path": "Assets/Adapted/ChamberParity/FloorMorphologyV3/SM_ChamberFractureMorph_Main.fbx",
+      "sha256": "1b59a14e8fbc3cb3bb8333dfdd14c95a8c4786e997f4ae0960bd98c4abeeafde",
+      "bytes": 391788
+    },
+    {
+      "path": "evidence/implementation/20261005T133413-capture_chamber_views/01-chamber-front.png",
+      "sha256": "a5f7d5381e7a24b72592cde7d9ef26f93024da2d77bd4f91d151b25ff6c82596",
+      "bytes": 2548357
+    },
+    {
+      "path": "evidence/implementation/20261005T133413-capture_chamber_views/02-chamber-reverse.png",
+      "sha256": "cbbf664b3705ca7b4416d9aa56be3cbb3e4dddc79d948d12bfeea5c5d6c94939",
+      "bytes": 2678121
+    },
+    {
+      "path": "evidence/implementation/20261005T133413-capture_chamber_views/03-ordinary-gameplay.png",
+      "sha256": "9784acaa5a3dca734e80009b11d4d29eafd15547dad1a5ea927979bd67229a42",
+      "bytes": 2566564
+    }
+  ]
+}

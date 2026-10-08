@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "method": "Hashes of the saved map and the labelled before pair. team_check --verify-handoff had already matched all 766 Content files to evidence/team-handoff/content-sha256.json. Delivered run 20261005T095028Z is preserved.",
+  "before_native_pair": "evidence/implementation/20261005T114712-capture_chamber_views",
+  "files": [
+    {
+      "path": "TeddyBlueprint/Content/Maps/TeddyEncounter.umap",
+      "sha256": "6baf5912811a1db145b2b54e8b674e72763b9b3d95d6202435d6f764e320a664",
+      "bytes": 1086915
+    },
+    {
+      "path": "study/chamber-settings.json",
+      "sha256": "207625fef48f756e189f7bf087bb3031362bdb97bb646c959231557bea7d5dd5",
+      "bytes": 2642
+    },
+    {
+      "path": "evidence/implementation/20261005T114712-capture_chamber_views/01-chamber-front.png",
+      "sha256": "90b5753fcdbc10e502380d54b14e5a9d688ac5de950979d135ea93e2e35ab49d",
+      "bytes": 3243374
+    },
+    {
+      "path": "evidence/implementation/20261005T114712-capture_chamber_views/02-chamber-reverse.png",
+      "sha256": "61beec9e1ae2521afa3782f25971b657d467433087d1bdecdd90caa31f7d20d8",
+      "bytes": 3336703
+    },
+    {
+      "path": "Assets/Adapted/ChamberParity/FloorMorphologyV3/manifest.json",
+      "sha256": "a1aed374bc673448193300a5fa56d40e8cb254b4323a1b398afd12b9c2fb9801",
+      "bytes": 7119
+    }
+  ],
+  "morphology_fbx_sha256": "f306869114d75214d5995b3bed6cd9815d19a733b80702d49796d4011219e3dc",
+  "plate_count": 58,
+  "triangles": 10794
+}
