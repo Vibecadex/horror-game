@@ -2,6 +2,8 @@
 
 Updated 5 October 2026 from the saved floor recovery and its independent review. [Earlier iteration notes](CHAMBER_PARITY_HISTORY_20261005.md) preserve rejected trials and superseded values.
 
+**7 October attempt:** the isolated chamber parity experiment (`/Game/Maps/TeddyChamberParity`, kept alongside TeddyEncounter) is recorded in [CHAMBER_PARITY_EXPERIMENT_20261007.md](CHAMBER_PARITY_EXPERIMENT_20261007.md). Its later uncommitted refinement and FloorV2 work are preserved, unmerged, on the backup branch `codex/chamber-parity-20261007-refinement-backup` (f19ff31).
+
 **Objective:** reach visual parity with the two user-selected chamber concepts while preserving the playable encounter. Both defining walls are built. Floor damage, light distribution, upper haze and architectural proportions still differ materially. **Exact parity and user acceptance remain open.**
 
 ## Prerequisites and starting point

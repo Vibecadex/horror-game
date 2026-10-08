@@ -2,7 +2,7 @@
 
 Work on the current user-authorized task in this repository checkout (original workstation: C:/Projects/to-deploy/horror-game). Neighbouring projects and studio records are not assignments.
 
-This branch's current assignment is the isolated chamber parity attempt requested on 7 October 2026. Read study/CHAMBER_PARITY_EXPERIMENT_20261007.md and the latest WORK_STATUS.md entry. Its candidate is /Game/Maps/TeddyChamberParity and its new assets are under /Game/TeddyEncounter/ChamberParity20261007. Preserve /Game/Maps/TeddyEncounter and all scanner integration work. The parent integration fork and external scanner are separate active workspaces, not assignments for this branch. Do not start, stop, or modify their services.
+main is canonical; see WORK_STATUS.md for current assignments.
 
 For the team continuation, read README.md, study/CHAMBER_PARITY_BRIEF.md and study/TEAM_CONTINUATION.md first. The current task is the chamber environment. Historical setup prompts and pre-production documents do not override that scope. Check Git status and LFS ownership before editing; keep one Unreal writer per asset (the LFS lock holder, below). Use the saved project, not a broad historical rebuild. Machine-local overrides go in ignored tools/project-settings.local.json; TEDDY_ENGINE_ROOT can override the installed engine path. Do not assume the original workstation's cached CLI or successful setup receipts exist on a teammate's machine.
 
