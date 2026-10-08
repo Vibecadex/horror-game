@@ -42,7 +42,7 @@ One encounter in saved Blueprints (Python for authoring and verification only; n
 - **No gamepad-support claim until a physical test (L).**
 - "Use item" does nothing yet; there are no items.
 
-## Boss states (T: `tools/build_boss.py`, saved `BP_Boss`)
+## Boss states (T: `tools/build_boss.py`, saved `BP_TeddyBoss`)
 
 | # | State | Behaviour | Exit |
 |---|---|---|---|
@@ -51,7 +51,7 @@ One encounter in saved Blueprints (Python for authoring and verification only; n
 | 2 | Recovery | Clip plays out | After 1.15 s → 0 |
 | 4 | Hit reaction | `Hit`; only from Chase, at least 1.3 s apart | After 0.32 s → 0 |
 | 3 | Dead | `A_Teddy_DefeatGrounded`, collision off | Final |
-| 5 | **Phase change** (L, *not built*) | Entered on the first hit that leaves HP ≤ 150, from any live state. The ring is hidden and any pending slam cancelled (D, Producer 8 Oct). `Stagger` → `Threat`, about 2.3 s. **Invulnerable**; no hit reactions; cannot trigger again | Clips end → 0, `bPhase2` set |
+| 5 | **Phase change** (L, *not built*) | Entered on the first hit that leaves HP ≤ 150, from any live state. The ring is hidden and any pending slam cancelled (D, Producer 8 Oct). `Stagger` → `Threat`, 2.233 s (Tech-measured). **Invulnerable**; no hit reactions; cannot trigger again | Clips end → 0, `bPhase2` set |
 | — | **Phase 2** (L, *not built*) | Anticipation alternates `AttackLeft` / `Attack`; same 0.92 s telegraph and 475 cm radius; recovery 0.8 s | Until Dead |
 
 - **No animation notifies (T).** Slam damage and sound come from the state timer.
@@ -64,7 +64,7 @@ One encounter in saved Blueprints (Python for authoring and verification only; n
 | HP: boss / player / stitchling | 300 / 100 / 24 (×3) | D; T |
 | Rifle damage | 12 per hit (boss 25 hits, stitchling 2) | T: `build_combat.py` |
 | Fire rate | 0.33 s between shots while held | T |
-| Boss time to kill | About 8.25 s of on-target fire, plus the about 2.3 s invulnerable window | T; L (derived) |
+| Boss time to kill | About 8.25 s of on-target fire, plus the 2.233 s invulnerable window | T; L (derived) |
 | Projectile | 3200 cm/s, 1.6 s life | T |
 | Slam damage | 24 | T |
 | Telegraph | 0.92 s | D; T |
@@ -109,7 +109,7 @@ One encounter in saved Blueprints (Python for authoring and verification only; n
 
 This reverses the `study/preprod/NEXT_GAPS_DRAFT.md` exclusion of "extra boss phases", with Luther's approval on 8 Oct 2026. It also supersedes the chamber-pass note "do not add a … phase" (WORK_STATUS, 5 Oct) for this phase only.
 
-Summary: nominal trigger 150 HP (crosses at 144); about 2.3 s invulnerable `Stagger` → `Threat`; then 0.8 s recovery and alternating `AttackLeft` / `Attack` on the same telegraph and radius. Stitchlings unchanged.
+Summary: nominal trigger 150 HP (crosses at 144); 2.233 s invulnerable `Stagger` → `Threat`; then 0.8 s recovery and alternating `AttackLeft` / `Attack` on the same telegraph and radius. Stitchlings unchanged.
 
 **No-damage cue (P, awaiting approval)** for shots absorbed during the window:
 - *Impact:* the projectile still hits and disappears, with an about 0.05 s grey flash from a desaturated sibling of `M_Muzzle`. No dust.
@@ -121,13 +121,13 @@ Summary: nominal trigger 150 HP (crosses at 144); about 2.3 s invulnerable `Stag
 
 Work under LFS locks on the touched assets. Edit the saved Blueprints directly; **do not rerun the historical builders** (`build_boss.py` and others refuse once the map exists).
 
-1. **Import** `Stagger`, `Threat` and `AttackLeft` from `AnimPreprod` onto the teddy Skeleton, as owned assets under `/Game/TeddyEncounter`. Confirm `Stagger` + `Threat` ≈ 69 frames at 30 fps (≈ 2.3 s).
-2. **Phase state.** In `BP_Boss`, add state 5 and `bPhase2`. Enter on the first damage that leaves HP ≤ 150 with `bPhase2` false, from any live state. Cancel any pending strike, hide `AttackRing`, play `Stagger` → `Threat`, then go to 0 and set `bPhase2`.
+1. **Import** `Stagger`, `Threat` and `AttackLeft` from `AnimPreprod` onto the teddy Skeleton, as owned assets under `/Game/TeddyEncounter`. `Stagger` + `Threat` run 2.233 s together (Tech-measured, 30 fps).
+2. **Phase state.** In `BP_TeddyBoss`, add state 5 and `bPhase2`. Enter on the first damage that leaves HP ≤ 150 with `bPhase2` false, from any live state. Cancel any pending strike, hide `AttackRing`, play `Stagger` → `Threat`, then go to 0 and set `bPhase2`.
 3. **Damage ignore.** In `ReceiveAnyDamage`, return early while state = 5: no HP change, no hit reaction. Fire the no-damage cue if approved.
 4. **Recovery switch:** Recovery duration = `bPhase2` ? 0.8 : 1.15 s.
 5. **Alternating clips.** In phase 2, Anticipation toggles `AttackLeft` / `Attack` on each entry (starting with `AttackLeft`: D, Producer 8 Oct). The timer, ring, sound and radius are unchanged.
-6. **AttackLeft retime.** Its impact (frame 20, ≈ 0.67 s; [ANIMATION](study/preprod/ANIMATION.md)) must land at the 0.92 s timer. Tech chooses between a ≈ 0.73 play rate and a held anticipation pose, whichever reads better in a capture, and records the choice in the PR (D, Producer 8 Oct).
-7. **Attack cut short.** The 1.8 s `Attack` clip exceeds the 1.72 s phase-2 cycle by ≈ 0.08 s. Blend into `Walk`; accept the small cut rather than lengthening recovery (D, Producer 8 Oct).
+6. **AttackLeft retime.** Per Tech, the impact is frame 19 at 30 fps, and frame 1 imports at t = 0 ([ANIMATION](study/preprod/ANIMATION.md) lists frame 20). Play rate **0.688** lands it on the 0.92 s timer; 0.73 would land ≈ 46 ms early. The slowed clip is ≈ 1.69 s, inside the 1.72 s phase-2 cycle (D, Producer 8 Oct, from Tech's GAME-016 prep).
+7. **Attack cut short.** The `Attack` clip outlasts the 1.72 s phase-2 cycle, so it switches instantly to `Walk` ≈ 0.047 s early. The boss uses single-node animation, which has no crossfade. Accept the small cut rather than lengthening recovery (D, Producer 8 Oct). **Known limitation:** a true blend needs an AnimBP or montages later.
 8. **HUD.** `BP_EncounterHUD` greys the boss bar while state = 5, then flashes red for ≈ 0.15 s on exit.
 9. **No-damage cue (P).** Grey `M_Muzzle` sibling at impact, plus pitched-down `ClothHit` (VFX_AUDIO). Build it only after approval.
 10. **Leave `BP_Stitchling` alone.** It is a copy, so it keeps 1.15 s recovery; don't re-duplicate the boss.
@@ -146,7 +146,10 @@ Work under LFS locks on the touched assets. Edit the saved Blueprints directly; 
 - The boss keeps attacking a dead player.
 - Dead stitchlings may replay their death when the boss dies.
 - F5 always opens `/Game/Maps/TeddyEncounter`.
-- An edge-test evade passed with the player out of range (≈ 627 vs 475 cm).
+- An edge-test evade passed with the player out of range. QA confirmed this false pass (B2: 622 vs 475 cm) and is writing a v2 check.
+- `Attack` → `Walk` is an instant switch ≈ 0.047 s early in phase 2 (single-node animation, no crossfade). A true blend needs an AnimBP or montages.
+
+QA observation (M1 gate passed on main, 8 Oct): an idle player dies in under 48 s in PLAY. That's a useful upper bound on pressure when the player does nothing.
 
 ## Open decisions (Luther)
 
