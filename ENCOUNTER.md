@@ -1,51 +1,172 @@
 # Teddy Encounter
 
-Run [PLAY.cmd](PLAY.cmd) to play the corrected encounter. [EDIT.cmd](EDIT.cmd) opens its editable level. Both use the installed Unreal 5.8.3 and `TeddyBlueprint/TeddyBlueprint.uproject`, map `/Game/Maps/TeddyEncounter`. Close an existing editor before launching another instance. The launch helper prevents concurrent editors.
+Encounter spec for the chamber slice, based on **`main` @ `0387fe4`** (8 Oct 2026, 19:49 SAST), which includes PR #3, PR #4 and PR #6. [WORK_STATUS.md](WORK_STATUS.md) carries the current status and history.
 
-This is one playable encounter: an elevated camera, a rigged monstrous teddy, three crawling stitchlings, independent movement and aim, rifle fire, dodge, a telegraphed boss slam, damage, defeat and restart. Gameplay executes in saved Blueprints; Python is used for authoring and automated verification. No native project DLL or packaged distribution is required for this local launch.
+**Labels:**
+- **D**: design doc, or a producer-decided build default (marked "D, Producer 8 Oct"; Luther reviews it in the hub).
+- **T**: Tech-verified against the saved Blueprints on 8 Oct 2026, and unchanged on `0387fe4`.
+- **L**: Luther-approved design, 8 Oct 2026. Marked *not built* where it is still a Tech task.
+- **P**: proposed; needs Tech or Luther.
+- **Δ**: changed on `0387fe4`, Tech to reverify.
 
-The chamber now follows the supplied [front](study/visuals/chamber-target-front.png) and [reverse](study/visuals/chamber-target-reverse.png) references: a wide B-3 pressure bulkhead and wheel, two reverse service bays, structural piers, weathered walls, pipes, tanks, cabinets, low perimeter drains and broken concrete plates. The fourth wall automatically hides when the elevated camera moves outside it and remains visible from inside the room. Doors and machinery are static scenery; the ceiling stays open for the gameplay camera. The earlier [close reference](study/visuals/direction-close-best.jpg) still guides the encounter's teal character and moving white player pool. [Open the chamber comparison](evidence/chamber/20261005T095028Z/review.html).
+## Play
+
+[PLAY.cmd](PLAY.cmd) plays `/Game/Maps/TeddyEncounter` and [EDIT.cmd](EDIT.cmd) edits it. Both use Unreal 5.8.3 and `TeddyBlueprint/TeddyBlueprint.uproject`. Run one editor at a time; the launch helper refuses a second one.
+
+**Config (Δ):** `DefaultEngine.ini` sets the editor startup map and `GameDefaultMap` to `/Game/Maps/TeddyEncounter`. `GlobalDefaultGameMode` is `BP_EncounterGameMode_C`; until PR #6 these pointed at the Twin Stick starter. `DefaultGame.ini` names the project "Teddy Encounter" and adds packaging settings, but **no packaged build has been verified.** Tech should confirm a standalone launch lands in the encounter with the encounter game mode. `/Game/Maps/TeddyChamberParity` is a separate visual experiment, not this encounter.
+
+One encounter in saved Blueprints (Python for authoring and verification only; no native module): elevated camera, teddy boss, three stitchlings, independent move and aim, rifle, dodge, telegraphed slam, defeat and F5 restart. Static doors and machinery; no ceiling.
+
+## The teddy (L, 8 Oct 2026)
+
+**The child's teddy is the scanned teddy, and that same teddy is the boss, transformed by the dream.** This overrules the "safe anchor, not an enemy" proposal (Codex pre-production D07).
+- **Recognition (E01)** tests whether players spot the scanned teddy inside the boss. *P:* silhouette, colour and distinguishing marks should survive the transformation.
+- **Identity source:** the [bear-scanner](study/BEAR_SCANNER_INTEGRATION.md) → [Bear Studio](study/BEAR_STUDIO.md) pipeline feeds the boss's identity.
+- **Current state:**
+  - The boss is still the CC0 *Horror Teddy Bear Monster* stand-in: 16-bone rig, TeddyV2 skin.
+  - Scans import only as static props under `/Game/ScannedBears`.
+  - The scanner's 21-bone template has been proven only on a synthetic fixture ([TEAM_RIG_NATIVE_REVIEW](study/TEAM_RIG_NATIVE_REVIEW.md)).
+  - A studio rig does not by itself replace the enemy; integration goes through the map owner ([TEAM_CONTINUATION](study/TEAM_CONTINUATION.md)).
+- **Combat contract (P):** the scan supplies the look and animation binding only. Collision, the slam radius, speeds and timings below stay fixed whatever the scan's size or rig.
 
 ## Controls
 
-| Input | Action |
-| --- | --- |
-| WASD | Move relative to the combat view |
-| Mouse | Aim independently across the arena |
-| Left mouse button | Fire; ammunition is unlimited |
-| Space | Dodge; 0.8-second cooldown and brief invulnerability |
-| Escape | Pause/resume and show controls |
-| F5 | Restart, including after victory or defeat |
-| Alt+F4 | Close the game window |
+| Device | Bindings | Status |
+|---|---|---|
+| Keyboard and mouse | WASD move relative to the view · mouse aim · LMB fire (unlimited ammo) · Space dodge · Esc pause and controls · F5 restart (also after a win or loss, and while paused) · Alt+F4 quit | D; T |
+| Keyboard extras | F fire · G or RMB use item · LShift dodge (not shown on the HUD) | T |
+| Gamepad | Left stick move · right stick aim · RT fire · LT use item · LB dodge | T |
+| Gamepad pause and restart | **To be added** | L, *not built* |
 
-These are proposed PC bindings, not bindings recovered from the reference. The 5 October QA repair corrected invalid Space/Escape/F5 mappings. Twelve fresh checks now exercise simulated keys through the saved mapping context, including restart while paused. Separate tests cover actions and cursor aiming. Physical keyboard/mouse and gamepad play remain unverified.
+- Simulated input only (12/12 saved-key checks plus action and cursor tests); physical keyboard and mouse is unverified too.
+- **No gamepad-support claim until a physical test (L).**
+- "Use item" does nothing yet; there are no items.
 
-The boss has 300 health and a roughly 0.92-second warning before its slam. The player has 100 health. Each of the three stitchlings has 24 health; the remaining stitchlings collapse when the boss is defeated. Aim, move and shoot together; dodge outside the warning circle before the strike.
+## Boss states (T: `tools/build_boss.py`, saved `BP_Boss`)
 
-## Editable work and provenance
+| # | State | Behaviour | Exit |
+|---|---|---|---|
+| 0 | Chase | `Walk` loop, steers toward the player | Player ≤ 380 cm → 1 |
+| 1 | Anticipation | `Attack` clip, `AttackRing` shown, stands still | Tick timer reaches 0.92 s: strike (ring off, `Slam` sound, damage if ≤ 475 cm) → 2 |
+| 2 | Recovery | Clip plays out | After 1.15 s → 0 |
+| 4 | Hit reaction | `Hit`; only from Chase, at least 1.3 s apart | After 0.32 s → 0 |
+| 3 | Dead | `A_Teddy_DefeatGrounded`, collision off | Final |
+| 5 | **Phase change** (L, *not built*) | Entered on the first hit that leaves HP ≤ 150, from any live state. The ring is hidden and any pending slam cancelled (D, Producer 8 Oct). `Stagger` → `Threat`, about 2.3 s. **Invulnerable**; no hit reactions; cannot trigger again | Clips end → 0, `bPhase2` set |
+| — | **Phase 2** (L, *not built*) | Anticipation alternates `AttackLeft` / `Attack`; same 0.92 s telegraph and 475 cm radius; recovery 0.8 s | Until Dead |
 
-Owned Unreal assets are under `/Game/TeddyEncounter`, with the earlier selected-reference additions in `/Game/TeddyEncounter/Parity` and the latest room work in `/Game/TeddyEncounter/Chamber`. Camera framing tracks the player/boss pair at a fixed -46-degree elevation, FOV54, and widens for separation. Source starter animation clips remain shared read-only references; modified animation graphs and blend spaces are owned copies. The [earlier asset manifest](study/PARITY_ASSET_MANIFEST.md) and [chamber brief](study/CHAMBER_PARITY_BRIEF.md) distinguish active imports from preserved variants. Broad historical builders can overwrite later art assignments; they are not required to play or edit the saved encounter.
+- **No animation notifies (T).** Slam damage and sound come from the state timer.
+- **Stitchlings (T: `build_stitchlings.py`).** `BP_Stitchling` is a copy of this graph, not a child, with its own values. It plays `Crawl` and dies when the boss dies.
 
-- [Teddy_Encounter.blend](Assets/Adapted/Teddy/Teddy_Encounter.blend): adapted mesh, weighted 16-bone rig and six exported clips: idle, walk, crawl, attack, hit and defeat. The latest ground-contact pass is described in [motion-refinement.json](Assets/Adapted/Teddy/motion-refinement.json). Walk/crawl use baked foot targets matched to gameplay speed.
-- [Teddy_ParityV2.blend](Assets/Adapted/Parity/TeddyV2/Teddy_ParityV2.blend): thirteen weighted crown stitches and a separate dark seam, on the original body/UVs/weights and existing Skeleton. The saved encounter uses this skin for all four creatures. [Teddy_DefeatGrounded.blend](Assets/Adapted/Parity/DefeatGrounded/Teddy_DefeatGrounded.blend) adds the active grounded collapse; one boss and both stitchling death routes use its separate clip. The original six clips remain preserved.
-- [Arena_Art.blend](Assets/Adapted/Arena/Arena_Art.blend) and [Encounter_Details.blend](Assets/Adapted/Arena/Encounter_Details.blend): original procedural rifle and warning ring, plus separately generated concrete textures. Authoring scripts and seeds are retained in `tools/` and the adapted asset provenance files.
-- [IndustrialRoom_Kit.blend](Assets/Adapted/Room/IndustrialRoom_Kit.blend): ten original modular meshes, 49,280 triangles in the unique source kit. The existing room's 126 actors remain; 27 plain wall/pilaster boxes are now concealed while their collision and transforms are preserved. The selected shell/dressing extension adds 84 non-colliding instances of 21 meshes. The larger source catalogs and twenty optional animation clips are not all imported or assigned.
-- [ParityFloor_Kit.blend](Assets/Adapted/Parity/Floor/ParityFloor_Kit.blend) and [ParityFracture_V3.blend](Assets/Adapted/Parity/FloorV3/ParityFracture_V3.blend): 45 non-colliding floor placements, including two revised fracture fields with worn tops and interrupted edges.
-- [Chamber kit](Assets/Adapted/ChamberParity/manifest.json): new pressure door, wheel, reverse service bays and drums, with editable Blender source. Current floor sources are [FloorNormalsV2](Assets/Adapted/ChamberParity/FloorNormalsV2/manifest.json), [SlabsNormalsV2](Assets/Adapted/ChamberParity/SlabsNormalsV2/manifest.json) and [CrustNormalsV2](Assets/Adapted/ChamberParity/CrustNormalsV2/manifest.json): five connected fields, four sparse slab groups and five broader broken banks. The correction records include source/FBX face-direction and closed-volume audits. Earlier sources/imports remain preserved; 43 of the old 45 floor actors are visually hidden, with their transforms and collision retained.
-- [Wall albedo](Assets/Adapted/ChamberParity/WallSurface/T_ChamberWall_Albedo.png), [exact prompt](Assets/Adapted/ChamberParity/WallSurface/prompt.txt) and [provenance](Assets/Adapted/ChamberParity/WallSurface/manifest.json): one built-in imagegen result, saved byte-for-byte, combined with retained normal/roughness inputs in new world-aligned wall materials. It is generated artwork, not a measured surface scan. The earlier wall material assets remain intact.
-- [AI surface provenance](Assets/Adapted/Arena/ai-provenance.json): the separate user-owned Grok pass supplied nine generated floor/plush/decal maps. Later [ComfyUI maps](Assets/Adapted/Parity/Surfaces/provenance.json) and a separately generated concrete diffuse feed the active sibling materials. The current cloth uses Unreal's Cloth shading model and the original teddy base colour. Grok's earlier material graphs remain preserved; the prominent graphic decals are hidden. None of these textures was extracted from the reference video.
-- The teddy derives from **Horror Teddy Bear Monster by Aiden Reynolds**, listed as CC0 1.0. [Original provenance](Assets/ThirdParty/HorrorTeddyBear/provenance.json) includes the source link, archived license evidence and hash. That record describes the unrigged download; adaptation/import work is recorded separately. The original GLB remains unchanged.
-- Human mesh/animations and the underlying input logic derive from Epic's installed Twin Stick starter. They retain their original Epic terms; the teddy's CC0 listing does not relicense them.
-- Ambience, rifle and slam sounds are original deterministic synthesis. [Audio provenance](Assets/Adapted/Audio/provenance.json) labels them as proposed original sound design. The source video's audio was not auditioned, and no audio match is claimed.
+## Combat numbers
 
-## Evidence and review
+| Value | Number | Status |
+|---|---|---|
+| HP: boss / player / stitchling | 300 / 100 / 24 (×3) | D; T |
+| Rifle damage | 12 per hit (boss 25 hits, stitchling 2) | T: `build_combat.py` |
+| Fire rate | 0.33 s between shots while held | T |
+| Boss time to kill | About 8.25 s of on-target fire, plus the about 2.3 s invulnerable window | T; L (derived) |
+| Projectile | 3200 cm/s, 1.6 s life | T |
+| Slam damage | 24 | T |
+| Telegraph | 0.92 s | D; T |
+| Slam radius | 475 cm, centre to centre | T |
+| Attack trigger | 380 cm | T |
+| Time between slams | At least ≈2.07 s (0.92 + 1.15) | T (derived) |
+| Phase 2 trigger | First HP ≤ 150; at 12 per hit that is 144, on the 13th hit | L (threshold derived) |
+| Phase 2 recovery | 0.8 s | L, *not built* |
+| Phase 2 time between slams | At least ≈1.72 s (0.92 + 0.8) | L (derived) |
+| Boss walk speed | 105 cm/s as saved (`build_boss.py` sets 125; `build_stitchlings.py` overrides it) | T |
+| Dodge | 0.8 s cooldown · 0.26 s invulnerability · about 345–350 cm (LaunchCharacter 2500) | D; T |
+| Stitchling | Trigger 190 cm · radius 215 cm · 10 damage · 55 cm/s · 0.92 s telegraph and 1.15 s recovery inherited | T |
+| Spawns | Player (−230, 570); boss (250, −230); stitchlings (650, 600), (−480, −500), (20, 1070) | D: [LEVEL_DESIGN](study/preprod/LEVEL_DESIGN.md) |
 
-[Chamber comparison](evidence/chamber/20261005T095028Z/review.html) presents both supplied references beside direct 1920×1280 Unreal views, the pre-pass room and native moving gameplay. The comparison cameras are architectural views; ordinary gameplay retains FOV54 and its existing tracking. The [independent chamber review](evidence/chamber-qa/final/INDEPENDENT_REVIEW.md) separates visible reference differences from functional results. Current evidence covers 28 chamber ownership/placement/cutaway checks and 28 room/collision/camera checks. The silent native movie uses simulated input in a separate QA copy, with ordinary AI and health enabled. This take ends in player defeat and the F5 restart prompt; it does not establish a new boss-defeat result.
+**HUD (T):**
+- Player bar.
+- Boss bar "THE UNRAVELLED".
+- Controls line.
+- Messages: `PAUSED`, `YOU FELL / F5 TO RESTART` and `THE STITCHES GIVE WAY / F5 TO RESTART`.
 
-The [earlier selected-reference review](evidence/parity/20261005T070301Z/review.html) preserves its 48 skin/animation/death-route and 12 saved-key checks. Those character and input assets are unchanged in the chamber pass. Its independent rear-centre character-light repair is also retained.
+## Locked defaults (L)
 
-The earlier [combined room review](evidence/full-room/20261005T050433Z/review.html), [repair review](evidence/qa-repair/20261005T042900Z/review.html) and [delivery evidence](evidence/delivery/README.md) remain preserved as history.
+1. **FOV 54.** Gameplay pitch is −46°, and the camera widens with player/boss separation (T; WORK_STATUS 5 Oct). The 48 in ROOM_ART_DIRECTION is historical.
+2. **Walkable area at the walls' inner faces:**
+   - X −1380 / +1440, Y ±1460 (T).
+   - PR #3 kept 28/28 room checks, including the four collision bounds, so this is unchanged on `0387fe4`.
+   - Other docs quote wall centrelines.
+3. **Self-hiding camera-side wall, as built:**
+   - A 100 cm front boundary.
+   - `TE_Chamber_FrontCutaway` (`BP_ChamberCutaway`) hides when the camera's X < −1490 and shows from inside. This supersedes the "40–70 cm sill" docs.
+   - **Δ:** PR #3 re-saved `BP_ChamberCutaway` in the bay pass (hash `e43fe006…` → `678a4ff5…`). Its 34/34 runtime audit, including the threshold transitions, passed on 5 Oct, but Tech should recheck it on `0387fe4`.
+4. **Restart is F5 only, scoped to this chamber slice.** F5 reloads the level and there are no checkpoints. Save and Continue come later, at journey level.
+5. **Gamepad:** pause and restart are to be added (*not built*). No support claim until a physical test.
 
-The full architecture is an authored extension guided by the selected concepts. Remaining chamber differences include more localized fracture patches and fine surface grain, more regular wall panels, weaker overhead haze and darker service recesses. The existing character anatomy and motion were outside this chamber pass. Exact visual parity and user acceptance are not established. Physical-device play, audio matching, packaged delivery and sustained performance remain unverified.
+**Room changes since `3a1d254` (Δ, art only):**
+- Visible floor is now `FloorRecoveryV4`.
+- Bay depth spots, smaller red practicals and a lower overhead rect.
+- Exposure stays 3.8. The floor trace still hits `TE_ArenaFloor` at Z −5.
+- Tech should recheck that the warning ring and creatures read clearly on the new floor and lighting.
 
-[PLAY_BASELINE.cmd](PLAY_BASELINE.cmd) opens the preserved Twin Stick starter. The separate native BossShot/BossArena experiment and source originals remain preserved. [WORK_STATUS.md](WORK_STATUS.md) records current results, failed approaches and continuation boundaries.
+## Phase 2 escalation (L, approved 8 Oct 2026, *not built*)
+
+This reverses the `study/preprod/NEXT_GAPS_DRAFT.md` exclusion of "extra boss phases", with Luther's approval on 8 Oct 2026. It also supersedes the chamber-pass note "do not add a … phase" (WORK_STATUS, 5 Oct) for this phase only.
+
+Summary: nominal trigger 150 HP (crosses at 144); about 2.3 s invulnerable `Stagger` → `Threat`; then 0.8 s recovery and alternating `AttackLeft` / `Attack` on the same telegraph and radius. Stitchlings unchanged.
+
+**No-damage cue (P, awaiting approval)** for shots absorbed during the window:
+- *Impact:* the projectile still hits and disappears, with an about 0.05 s grey flash from a desaturated sibling of `M_Muzzle`. No dust.
+- *Sound:* `ClothHit` at about 0.6× pitch and about 0.1 volume.
+- *Reaction:* none.
+- *HUD:* the boss bar is grey for the window, then flashes red for about 0.15 s when `Threat` ends.
+
+## GAME-016 build checklist (escalation)
+
+Work under LFS locks on the touched assets. Edit the saved Blueprints directly; **do not rerun the historical builders** (`build_boss.py` and others refuse once the map exists).
+
+1. **Import** `Stagger`, `Threat` and `AttackLeft` from `AnimPreprod` onto the teddy Skeleton, as owned assets under `/Game/TeddyEncounter`. Confirm `Stagger` + `Threat` ≈ 69 frames at 30 fps (≈ 2.3 s).
+2. **Phase state.** In `BP_Boss`, add state 5 and `bPhase2`. Enter on the first damage that leaves HP ≤ 150 with `bPhase2` false, from any live state. Cancel any pending strike, hide `AttackRing`, play `Stagger` → `Threat`, then go to 0 and set `bPhase2`.
+3. **Damage ignore.** In `ReceiveAnyDamage`, return early while state = 5: no HP change, no hit reaction. Fire the no-damage cue if approved.
+4. **Recovery switch:** Recovery duration = `bPhase2` ? 0.8 : 1.15 s.
+5. **Alternating clips.** In phase 2, Anticipation toggles `AttackLeft` / `Attack` on each entry (starting with `AttackLeft`: D, Producer 8 Oct). The timer, ring, sound and radius are unchanged.
+6. **AttackLeft retime.** Its impact (frame 20, ≈ 0.67 s; [ANIMATION](study/preprod/ANIMATION.md)) must land at the 0.92 s timer. Tech chooses between a ≈ 0.73 play rate and a held anticipation pose, whichever reads better in a capture, and records the choice in the PR (D, Producer 8 Oct).
+7. **Attack cut short.** The 1.8 s `Attack` clip exceeds the 1.72 s phase-2 cycle by ≈ 0.08 s. Blend into `Walk`; accept the small cut rather than lengthening recovery (D, Producer 8 Oct).
+8. **HUD.** `BP_EncounterHUD` greys the boss bar while state = 5, then flashes red for ≈ 0.15 s on exit.
+9. **No-damage cue (P).** Grey `M_Muzzle` sibling at impact, plus pitched-down `ClothHit` (VFX_AUDIO). Build it only after approval.
+10. **Leave `BP_Stitchling` alone.** It is a copy, so it keeps 1.15 s recovery; don't re-duplicate the boss.
+
+**QA:**
+- Triggers once, at the first HP ≤ 150 (shows 144).
+- Zero boss HP loss across the window, so a lethal hit can't land in it. `Stagger` never loops.
+- A pending slam is cancelled when the change starts; no damage arrives from a hidden ring.
+- The cue and grey bar appear only in the window; the bar restores when `Threat` ends.
+- Phase-2 slam gap is at least ≈ 1.72 s, and each clip's impact matches the 0.92 s damage and sound.
+- Stitchlings stay damageable in the window. This is an *assumption*: the decision names only the boss.
+- F5 (including while paused) restores phase 1 at 300 HP.
+
+## Known issues (D: PR #1 notes)
+
+- The boss keeps attacking a dead player.
+- Dead stitchlings may replay their death when the boss dies.
+- F5 always opens `/Game/Maps/TeddyEncounter`.
+- An edge-test evade passed with the player out of range (≈ 627 vs 475 cm).
+
+## Open decisions (Luther)
+
+1. Keep LT and G/RMB "use item", or remove them?
+2. Move the slam (damage and sound) to an animation notify?
+3. Audio goal: readability first, then dread?
+4. Skip the intro on retry?
+5. Approve the no-damage cue as specified?
+
+## Provenance and limits
+
+- **Owned assets:** `/Game/TeddyEncounter` (`/Parity`, `/Chamber`), with room and asset provenance in [study/PARITY_ASSET_MANIFEST.md](study/PARITY_ASSET_MANIFEST.md) and [study/CHAMBER_PARITY_BRIEF.md](study/CHAMBER_PARITY_BRIEF.md).
+- **Current teddy:** *Horror Teddy Bear Monster* by Aiden Reynolds, CC0 1.0 ([provenance](Assets/ThirdParty/HorrorTeddyBear/provenance.json)). Adapted 16-bone rig, six clips plus `DefeatGrounded`, TeddyV2 skin.
+- **Human mesh and input:** Epic Twin Stick, under Epic's terms.
+- **Sounds:** original synthesis ([audio provenance](Assets/Adapted/Audio/provenance.json)).
+- **Not established:**
+  - visual parity
+  - user acceptance
+  - physical-device play
+  - audio match
+  - packaged delivery
+  - performance
+  - scanned-teddy boss integration
