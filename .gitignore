@@ -47,3 +47,7 @@ BossShot/.vs/
 *.blend2
 *.tmp
 *.lock
+
+# Federated workspace: machine bindings, local work journal, snapshots and packets; export deliberately for sharing.
+/workspace/local/
+*.pyc

@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "WS-001",
+      "track": "workspace",
+      "module": "workspace",
+      "title": "Scaffold the complete local workspace",
+      "status": "active",
+      "owner": "Main implementation",
+      "priority": "P0",
+      "dependsOn": [],
+      "question": "Can each development domain be inspected and coordinated without taking over its source?",
+      "criteria": [
+        "Eight explicit modules, member bindings and read-only adapters.",
+        "Persistent work records, evidence links, activity, export and startup.",
+        "HTTP boundaries, stale-write handling, responsive controls and restart persistence verified."
+      ],
+      "evidence": [],
+      "nextAction": "Finish the scaffold and record its technical verification."
+    },
+    {
+      "id": "GAME-001",
+      "track": "game",
+      "module": "character",
+      "title": "Preregister conservative contact alternatives",
+      "status": "ready",
+      "owner": "Main implementation",
+      "priority": "P0",
+      "dependsOn": [
+        "WS-001"
+      ],
+      "question": "What evidence would justify a different wrist or belly/leg boundary?",
+      "criteria": [
+        "Pin the source scan, V2 map and measured package.",
+        "Record baseline, alternatives, invariants, measurements and rejection criteria before authoring.",
+        "Verify input hashes and save a receipt without changing production geometry."
+      ],
+      "evidence": [],
+      "nextAction": "Run the contact-baseline runbook after scaffold verification."
+    },
+    {
+      "id": "GAME-002",
+      "track": "game",
+      "module": "character",
+      "title": "Author one reversible contact candidate",
+      "status": "blocked",
+      "owner": "Unassigned",
+      "priority": "P0",
+      "dependsOn": [
+        "GAME-001"
+      ],
+      "question": "Can a conservative declared boundary retain the scan's visible volume and produce coherent limb patches?",
+      "criteria": [
+        "Exact face IDs and source provenance for every changed assignment.",
+        "Matched textured, clay, torso-only and isolated-limb views.",
+        "No source geometry removal to improve a graph; uncertainty stays explicit."
+      ],
+      "evidence": [
+        "anatomy-map",
+        "contact-protocol"
+      ],
+      "nextAction": "Choose one contact and author a separately saved diagnostic candidate under the protocol."
+    },
+    {
+      "id": "GAME-003",
+      "track": "game",
+      "module": "character",
+      "title": "Review static identity before standing",
+      "status": "blocked",
+      "owner": "Unassigned",
+      "priority": "P0",
+      "dependsOn": [
+        "GAME-002"
+      ],
+      "question": "Does the same scanned teddy remain recognizable in a coherent anatomical assembly?",
+      "criteria": [
+        "Independent visual challenge against the original scan.",
+        "Source-visible belly, arms, asymmetry and paw shapes retained.",
+        "M1 decision recorded with unknowns; no automatic approval from measurements."
+      ],
+      "evidence": [
+        "identity-plan"
+      ],
+      "nextAction": "Review the exact saved candidate and record supported, contradicted and unresolved observations."
+    },
+    {
+      "id": "GAME-004",
+      "track": "game",
+      "module": "character",
+      "title": "Rebuild standing pose and restrained shuffle",
+      "status": "blocked",
+      "owner": "Unassigned",
+      "priority": "P1",
+      "dependsOn": [
+        "GAME-003"
+      ],
+      "question": "Can the accepted static interpretation deform without losing scan identity?",
+      "criteria": [
+        "21-joint schema retained; bind and motion recomputed if joints move.",
+        "Exact exported pose, one step and loop checked for collapse, penetration and sliding.",
+        "Matched Studio and native views; technical and visual gates separate."
+      ],
+      "evidence": [
+        "identity-plan"
+      ],
+      "nextAction": "Proceed only after the static interpretation is reviewed."
+    },
+    {
+      "id": "GAME-005",
+      "track": "game",
+      "module": "chamber",
+      "title": "Re-establish the chamber candidate baseline",
+      "status": "ready",
+      "owner": "Unassigned",
+      "priority": "P1",
+      "dependsOn": [
+        "WS-001"
+      ],
+      "question": "Which saved chamber revision and current locks govern the next art pass?",
+      "criteria": [
+        "Confirm candidate branch, dirty files and lock-holder coordination.",
+        "Capture the actual saved map and exact settings before editing.",
+        "Compare front, reverse and ordinary gameplay views to selected references."
+      ],
+      "evidence": [
+        "chamber-study",
+        "chamber-qa",
+        "target-front",
+        "target-reverse"
+      ],
+      "nextAction": "Coordinate the candidate writer and create a fresh baseline receipt."
+    },
+    {
+      "id": "GAME-006",
+      "track": "game",
+      "module": "chamber",
+      "title": "Refine chamber light and fractured-floor read",
+      "status": "blocked",
+      "owner": "Unassigned",
+      "priority": "P1",
+      "dependsOn": [
+        "GAME-005"
+      ],
+      "question": "Which bounded art change reduces the largest measured reference gap?",
+      "criteria": [
+        "Change one cause at a time with matched native cameras.",
+        "Preserve combat routes, controls and camera cutaway.",
+        "Keep original and rejected candidates; save visual findings and runtime checks."
+      ],
+      "evidence": [
+        "target-front",
+        "target-reverse"
+      ],
+      "nextAction": "Select a single lighting or material hypothesis from the fresh baseline."
+    },
+    {
+      "id": "GAME-007",
+      "track": "game",
+      "module": "game",
+      "title": "Validate the complete encounter loop",
+      "status": "ready",
+      "owner": "Unassigned",
+      "priority": "P1",
+      "dependsOn": [
+        "WS-001"
+      ],
+      "question": "Does the saved game remain playable through win, loss and restart?",
+      "criteria": [
+        "Use a fresh scoped native run and exact saved revision.",
+        "Exercise movement, aim, fire, dodge, pause, restart and endings.",
+        "Distinguish injected input, physical-device testing, audio and performance."
+      ],
+      "evidence": [],
+      "nextAction": "Schedule one owned native runtime session after the workspace scaffold."
+    },
+    {
+      "id": "GAME-008",
+      "track": "game",
+      "module": "scanner",
+      "title": "Establish scan dimensions and missing coverage",
+      "status": "blocked",
+      "owner": "Unassigned",
+      "priority": "P1",
+      "dependsOn": [],
+      "question": "Can measured bear-only scale and hidden contact evidence be obtained?",
+      "criteria": [
+        "Retain UNKNOWN until an actual measurement or source observation exists.",
+        "Keep original support geometry distinguishable from the bear.",
+        "Record provenance and coverage limitations for new input."
+      ],
+      "evidence": [
+        "source-bear"
+      ],
+      "nextAction": "Obtain a bear-only measurement or additional source photographs when available."
+    },
+    {
+      "id": "GAME-009",
+      "track": "game",
+      "module": "game",
+      "title": "Plan audio, performance and packaging verification",
+      "status": "ready",
+      "owner": "Unassigned",
+      "priority": "P2",
+      "dependsOn": [
+        "WS-001"
+      ],
+      "question": "Which delivery claims remain untested in an ordinary game session?",
+      "criteria": [
+        "Separate audio audition, physical controls, sustained timing and packaged startup.",
+        "Use actual target hardware and name the tested build.",
+        "Do not reuse a silent short capture as audio or performance evidence."
+      ],
+      "evidence": [],
+      "nextAction": "Create bounded validation runs after encounter and character integration."
+    },
+    {
+      "id": "WS-002",
+      "track": "workspace",
+      "module": "workspace",
+      "title": "Connect the first game experiment to the review loop",
+      "status": "ready",
+      "owner": "Main implementation",
+      "priority": "P1",
+      "dependsOn": [
+        "WS-001",
+        "GAME-001"
+      ],
+      "question": "Does a real game deliverable produce inspectable workspace evidence?",
+      "criteria": [
+        "Experiment protocol and receipt resolve by catalogued identity.",
+        "Work record names its exact evidence and limitations.",
+        "Activity persists across refresh and exports with the work state."
+      ],
+      "evidence": [],
+      "nextAction": "Record GAME-001 and its receipt through the persistent work journal."
+    },
+    {
+      "id": "WS-003",
+      "track": "workspace",
+      "module": "workspace",
+      "title": "Add future member adapters through contracts",
+      "status": "ready",
+      "owner": "Unassigned",
+      "priority": "P2",
+      "dependsOn": [
+        "WS-001"
+      ],
+      "question": "Can a new tool or repository join without broad filesystem access?",
+      "criteria": [
+        "Explicit member binding, source contract and health meaning.",
+        "Offline/missing/changed states remain distinguishable.",
+        "No credentials or arbitrary executable commands in browser payloads."
+      ],
+      "evidence": [
+        "workspace-guide"
+      ],
+      "nextAction": "Add only adapters required by the next game deliverable."
+    },
+    {
+      "id": "WS-004",
+      "track": "workspace",
+      "module": "workspace",
+      "title": "Optimize the workspace for LLM-assisted building",
+      "status": "active",
+      "owner": "Main implementation",
+      "priority": "P0",
+      "dependsOn": [
+        "WS-001"
+      ],
+      "question": "Can a coding agent acquire bounded context, coordinate scope and return a verifiable handoff?",
+      "criteria": [
+        "Model-neutral CLI and human Agent build view share task contracts.",
+        "Bounded context preserves mandatory instructions and source hashes.",
+        "Conflicting reservations, source drift, out-of-scope outputs and false acceptance claims are rejected.",
+        "Save behavioral and browser verification with exact limitations."
+      ],
+      "evidence": [],
+      "nextAction": "Verify the agent workflow and prepare the next game assignment."
+    },
+    {
+      "id": "GAME-010",
+      "track": "game",
+      "module": "game",
+      "title": "PR1: merge grok/chamber-parity-continuation into main",
+      "status": "active",
+      "owner": "Tech",
+      "priority": "P0",
+      "dependsOn": [],
+      "question": "Can grok 0a20f9f land on main 3a1d254 through a reviewed PR without overwriting work?",
+      "criteria": [
+        "PR head 0a20f9f, base 3a1d254; merge-tree clean, README the only overlap.",
+        "No binary changed on both sides; merge commit, no --admin or force.",
+        "TeddyEncounter.umap LFS lock released after merge; remaining locks unchanged."
+      ],
+      "evidence": [],
+      "nextAction": "Open the PR, merge when GitHub reports it mergeable, then release the map lock."
+    },
+    {
+      "id": "GAME-011",
+      "track": "game",
+      "module": "chamber",
+      "title": "Back up the CP refinement and FloorV2 to a branch",
+      "status": "ready",
+      "owner": "Tech",
+      "priority": "P0",
+      "dependsOn": [],
+      "question": "Is the uncommitted chamber refinement and FloorV2 preserved before any merge?",
+      "criteria": [
+        "Commit the CP worktree's dirty files and FloorV2 to a backup branch; main untouched.",
+        "Lock holders confirmed; the FloorV2 lock gap recorded.",
+        "Branch pushed and its commit SHA recorded."
+      ],
+      "evidence": [
+        "chamber-study"
+      ],
+      "nextAction": "Coordinate with the CP worktree writer, then create and push the backup branch."
+    },
+    {
+      "id": "GAME-012",
+      "track": "game",
+      "module": "chamber",
+      "title": "PR2: CP 244534d into main, TeddyChamberParity kept alongside",
+      "status": "blocked",
+      "owner": "Tech",
+      "priority": "P0",
+      "dependsOn": [
+        "GAME-010",
+        "GAME-011"
+      ],
+      "question": "Can the chamber candidate merge without replacing TeddyEncounter?",
+      "criteria": [
+        "PR head 244534d after PR1; TeddyChamberParity stays a separate map.",
+        "TeddyEncounter unchanged; merge-tree clean against the merged main.",
+        "QA smoke of both maps recorded with the commit SHA."
+      ],
+      "evidence": [
+        "chamber-qa"
+      ],
+      "nextAction": "Re-run merge-tree against the merged main and open the PR."
+    },
+    {
+      "id": "GAME-013",
+      "track": "game",
+      "module": "scanner",
+      "title": "PR3: bear-scanner work and workspace into main",
+      "status": "blocked",
+      "owner": "Tech",
+      "priority": "P1",
+      "dependsOn": [
+        "GAME-012",
+        "WS-004"
+      ],
+      "question": "Can the bear-scanner work, including the federated workspace, land after Codex commits it?",
+      "criteria": [
+        "Codex has committed all its work, including workspace/ and tools/federated_workspace/; workspace/local stays untracked.",
+        "Only the expected WORK_STATUS.md conflict; untracked binary folders resolved or locked.",
+        "Workspace tests pass on main."
+      ],
+      "evidence": [
+        "workspace-guide"
+      ],
+      "nextAction": "Wait for the Codex work to be committed, then open the PR."
+    },
+    {
+      "id": "GAME-014",
+      "track": "game",
+      "module": "game",
+      "title": "PR4: map and game-mode config plus packaging",
+      "status": "blocked",
+      "owner": "Tech",
+      "priority": "P0",
+      "dependsOn": [
+        "GAME-010",
+        "GAME-012"
+      ],
+      "question": "Does a packaged build start in TeddyEncounter with BP_EncounterGameMode?",
+      "criteria": [
+        "DefaultEngine.ini default map and game mode set to TeddyEncounter / BP_EncounterGameMode; DefaultGame.ini ProjectName fixed.",
+        "Packaged Win64 build starts and completes the encounter loop.",
+        "Build commit SHA and hardware named in the receipt."
+      ],
+      "evidence": [],
+      "nextAction": "Prepare the config diff once PR1 and PR2 are on main."
+    },
+    {
+      "id": "GAME-015",
+      "track": "game",
+      "module": "game",
+      "title": "Write the locked encounter spec into ENCOUNTER.md",
+      "status": "blocked",
+      "owner": "Design",
+      "priority": "P1",
+      "dependsOn": [
+        "GAME-010",
+        "GAME-012",
+        "GAME-014"
+      ],
+      "question": "Does ENCOUNTER.md state the verified live values?",
+      "criteria": [
+        "Every S value carries Tech's verdict: confirmed, as authored or corrected.",
+        "Corrections applied: fire 0.33 s pulse, dodge ~2500 cm/s and ~350 cm, front bound 100 cm tall, full control map.",
+        "Proposed values stay marked as proposed."
+      ],
+      "evidence": [],
+      "nextAction": "Merge the draft locked spec into ENCOUNTER.md once PR1, PR2 and PR4 are on main."
+    },
+    {
+      "id": "GAME-016",
+      "track": "game",
+      "module": "game",
+      "title": "Boss half-health escalation",
+      "status": "blocked",
+      "owner": "Tech (build) / Design (spec)",
+      "priority": "P1",
+      "dependsOn": [
+        "GAME-015"
+      ],
+      "question": "Does the boss escalate at half health as Design specifies? Approved by Luther on 8 Oct.",
+      "criteria": [
+        "Phase 2 starts at 144 HP, on the 13th rifle hit.",
+        "Retime the strike: AttackLeft peaks at ~0.67 s versus the 0.92 s strike timer.",
+        "Phase-2 cycle of 1.72 s fits the 1.8 s Attack clip.",
+        "Stitchlings are a boss copy and keep the 1.15 s recovery.",
+        "Built via the Grok CLI: headless grok in its own --worktree, session ID recorded in the handoff; LFS lock on BP_TeddyBoss."
+      ],
+      "evidence": [],
+      "nextAction": "Design finalises the escalation spec; Tech then runs the build via the Grok CLI in its own --worktree and records the session ID."
+    },
+    {
+      "id": "GAME-017",
+      "track": "game",
+      "module": "game",
+      "title": "QA gate B1-B10 for Milestone 1",
+      "status": "blocked",
+      "owner": "QA",
+      "priority": "P0",
+      "dependsOn": [
+        "GAME-010",
+        "GAME-012",
+        "GAME-014"
+      ],
+      "question": "Does the merged Milestone 1 build pass QA's gate?",
+      "criteria": [
+        "B1 encounter keys 12/12.",
+        "B2 edges 13/13 plus v2: strike radius 475, telegraph 0.92+/-0.05 s, cooldown 0.8+/-0.05 s, i-frames.",
+        "B3 parity runtime 48/48.",
+        "B4a full room on TeddyEncounter 28/28.",
+        "B4b full room on TeddyChamberParity via TEDDY_CHAMBER_MAP 28/28 (935 cm).",
+        "B4c chamber runtime on TeddyEncounter 34/34.",
+        "B5 no soft-locks.",
+        "B6 AI paths within 10 s: boss reaches 380 cm or closes 700 cm; stitchling reaches 190 cm or closes 350 cm; stuck <20 cm over 3 s fails; no overlap.",
+        "B7 audio audition.",
+        "B8 perf at 1080p on Latrine: p95 <=8.3 ms, no hitch >33.3 ms outside F5, reload <=3 s, memory growth <=10%, t.MaxFPS 0, VSync off.",
+        "B9 real keyboard and mouse.",
+        "B10 PR2 suites: team rig 89/89, scanned bears pass, importer contract 3/3, bear_studio 21/21.",
+        "Every receipt carries the commit SHA."
+      ],
+      "evidence": [],
+      "nextAction": "Run the gate against the merged main once PR1, PR2 and PR4 land."
+    }
+  ]
+}

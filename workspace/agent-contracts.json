@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "commonRead": ["AGENTS.md", "workspace/AGENT_RULES.md"],
+  "profiles": {
+    "workspace": {
+      "member": "game",
+      "writePaths": ["workspace/", "evidence/federated-workspace-v1/", "evidence/workspace-agent-v1/"],
+      "readPaths": ["workspace/README.md"],
+      "artifacts": [],
+      "runbooks": ["workspace-tests", "workspace-check"],
+      "resources": ["workspace-platform"],
+      "requirements": ["Preserve existing journal records and machine-local bindings.", "Add focused behavioral tests for writes, source identity and coordination."]
+    },
+    "character": {
+      "member": "game",
+      "writePaths": ["tools/author_contact_candidate_v1.py", "Assets/Adapted/BearAnimation/ContactAlternativesV1/", "evidence/contact-alternatives-v1/"],
+      "readPaths": [],
+      "artifacts": ["contact-protocol", "decision-record", "measure-workflow", "identity-plan", "source-bear", "anatomy-map", "source-bear-view"],
+      "runbooks": ["contact-baseline"],
+      "resources": ["character-diagnostics"],
+      "requirements": ["Write a new diagnostic candidate; never replace the frozen source/map or saved production rig.", "Retain exact face IDs, provenance, uncertainty, positions and UV preservation checks.", "Compare fixed-camera textured, clay, opaque torso and isolated-leg views. Format validity is not anatomical approval.", "Standing and walking require a separately reviewed static interpretation and an expanded contract before authoring."]
+    },
+    "chamber": {
+      "member": "chamber",
+      "writePaths": ["evidence/chamber-next-baseline/"],
+      "readPaths": ["AGENTS.md", "study/CHAMBER_PARITY_BRIEF.md"],
+      "artifacts": ["chamber-study", "chamber-qa", "target-front", "target-reverse"],
+      "runbooks": ["unreal-ownership", "play-chamber"],
+      "resources": ["unreal-session"],
+      "requirements": ["This contract covers baseline evidence only. Before art authoring, declare exact owned map/asset paths and coordinate current LFS locks.", "Use the saved candidate; historical reconstruction scripts are not safe rebuild commands.", "Capture front, reverse and gameplay views with exact revision and settings."]
+    },
+    "game": {
+      "member": "game",
+      "writePaths": ["evidence/encounter-next-validation/"],
+      "readPaths": ["README.md", "tools/BLUEPRINT_WORKFLOW.md"],
+      "artifacts": ["direction-close"],
+      "runbooks": ["unreal-ownership", "play-game"],
+      "resources": ["unreal-session"],
+      "requirements": ["Validation-only contract. Scope engine caches/logs through existing project helpers; do not rebuild assets.", "Name the exact build, controls, audio and performance conditions tested. Preserve implementation/runtime/visual/user gates separately."]
+    },
+    "scanner": {
+      "member": "game",
+      "writePaths": ["evidence/scan-source-observations/"],
+      "readPaths": [],
+      "artifacts": ["scanner-guide", "source-bear"],
+      "runbooks": [],
+      "resources": ["scan-source-observations"],
+      "requirements": ["Record new source observations only; external scanner repository remains read-only.", "Do not invent physical dimensions or hidden anatomical observations."]
+    }
+  },
+  "taskOverrides": {
+    "GAME-001": {"writePaths": ["workspace/experiments/contact-alternatives-v1/", "evidence/federated-workspace-v1/experiments/"]},
+    "GAME-003": {"writePaths": ["evidence/contact-alternatives-v1/review/"], "requirements": ["Independently challenge the exact saved candidate. Author must not self-certify independent review."]},
+    "GAME-004": {"hold": "Static interpretation is unresolved; declare a reviewed standing/animation contract before starting."},
+    "GAME-006": {"hold": "Baseline review and explicit map/asset ownership are required before expanding into art authoring."},
+    "GAME-010": {"writePaths": ["evidence/milestone1-pr1/"], "resources": ["main-integration"], "requirements": ["Merge commit via reviewed PR only; no --admin, force-push or branch deletion.", "Unlock only the exact TeddyEncounter.umap path, without --force."]},
+    "GAME-011": {"writePaths": ["evidence/chamber-refinement-backup/"], "resources": ["chamber-backup"], "requirements": ["Commit to a new backup branch only; never to main.", "Confirm LFS lock ownership before committing binaries."]},
+    "GAME-012": {"member": "game", "writePaths": ["evidence/milestone1-pr2/"], "resources": ["main-integration"], "requirements": ["Keep TeddyChamberParity alongside TeddyEncounter; never replace the original map."]},
+    "GAME-013": {"writePaths": ["evidence/milestone1-pr3/"], "resources": ["main-integration"], "requirements": ["Start only after the Codex work, including the workspace, is committed."]},
+    "GAME-014": {"writePaths": ["TeddyBlueprint/Config/DefaultEngine.ini", "TeddyBlueprint/Config/DefaultGame.ini", "evidence/milestone1-pr4/"], "resources": ["main-integration", "unreal-session"]},
+    "GAME-015": {"writePaths": ["ENCOUNTER.md"], "resources": ["encounter-spec"]},
+    "GAME-016": {"writePaths": ["tools/build_boss_escalation.py", "evidence/boss-escalation-v1/"], "resources": ["unreal-session"], "requirements": ["Run via the Grok CLI, headless, in its own --worktree; record the session ID in the handoff.", "Hold the BP_TeddyBoss LFS lock before any Unreal write."]},
+    "GAME-017": {"writePaths": ["evidence/qa-milestone1-gate/"], "resources": ["unreal-session"], "requirements": ["Every receipt names the exact commit SHA tested."]}
+  }
+}
