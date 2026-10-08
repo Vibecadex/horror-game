@@ -1,0 +1,364 @@
+{
+  "script": "tools/build_boss_escalation_v1.py",
+  "mode": "inspect",
+  "passed": false,
+  "tag": {
+    "key": "TeddyEncounter.Game016",
+    "value": "escalation-v1"
+  },
+  "cue_extension_point": "GAME-016 step 9 extension point. Not built. While State is 5, damage returns on this branch: no health change and no hit reaction. The no-damage cue waits for approval. Leave this branch unwired.",
+  "single_node_blend": "The boss mesh stays in single-node animation mode. Every PlayAnimation switch is instant; there is no crossfade. Phase 2 still ends recovery by playing Walk in a loop at 0.8 s, which cuts the shipped Attack about 0.047 s early (54 frames = 53/30 s, cycle 1.72 s). A true blend needs a later decision (an animation blueprint, or a montage driven from single-node). This script does not create either.",
+  "not_touched": [
+    "BP_Stitchling",
+    "TeddyEncounter.umap",
+    "SK_Teddy_Skeleton",
+    "existing builders"
+  ],
+  "unchanged_hash_paths": [
+    "TeddyBlueprint/Content/TeddyEncounter/Blueprints/BP_Stitchling.uasset",
+    "TeddyBlueprint/Content/TeddyEncounter/Teddy/Idle/SK_Teddy_Skeleton.uasset",
+    "TeddyBlueprint/Content/Maps/TeddyEncounter.umap"
+  ],
+  "saved_state": "ready",
+  "tag_value": "",
+  "variables_present": [
+    "/Script/Engine.Actor.ActorGuid",
+    "/Script/Engine.Actor.ActorInstanceGuid",
+    "/Script/Engine.Actor.ActorLabel",
+    "/Script/Engine.Actor.AttachmentReplication",
+    "/Script/Engine.Actor.AutoReceiveInput",
+    "/Script/Engine.Actor.BlueprintCreatedComponents",
+    "/Script/Engine.Actor.Children",
+    "/Script/Engine.Actor.ContentBundleGuid",
+    "/Script/Engine.Actor.CustomTimeDilation",
+    "/Script/Engine.Actor.DataLayerAssets",
+    "/Script/Engine.Actor.DataLayers",
+    "/Script/Engine.Actor.DefaultUpdateOverlapsMethodDuringLevelStreaming",
+    "/Script/Engine.Actor.ExternalDataLayerAsset",
+    "/Script/Engine.Actor.FolderGuid",
+    "/Script/Engine.Actor.FolderPath",
+    "/Script/Engine.Actor.GridPlacement",
+    "/Script/Engine.Actor.GroupActor",
+    "/Script/Engine.Actor.HLODLayer",
+    "/Script/Engine.Actor.HiddenEditorViews",
+    "/Script/Engine.Actor.InitialLifeSpan",
+    "/Script/Engine.Actor.InputComponent",
+    "/Script/Engine.Actor.InputPriority",
+    "/Script/Engine.Actor.InstanceComponents",
+    "/Script/Engine.Actor.Instigator",
+    "/Script/Engine.Actor.Layers",
+    "/Script/Engine.Actor.LevelInstanceFlags",
+    "/Script/Engine.Actor.LevelInstanceType",
+    "/Script/Engine.Actor.MinNetUpdateFrequency",
+    "/Script/Engine.Actor.NetCullDistanceSquared",
+    "/Script/Engine.Actor.NetDormancy",
+    "/Script/Engine.Actor.NetDriverName",
+    "/Script/Engine.Actor.NetPriority",
+    "/Script/Engine.Actor.NetTag",
+    "/Script/Engine.Actor.NetUpdateFrequency",
+    "/Script/Engine.Actor.ObjectsDetachedFromExternalPackage",
+    "/Script/Engine.Actor.OnActorBeginOverlap",
+    "/Script/Engine.Actor.OnActorEndOverlap",
+    "/Script/Engine.Actor.OnActorHit",
+    "/Script/Engine.Actor.OnBeginCursorOver",
+    "/Script/Engine.Actor.OnClicked",
+    "/Script/Engine.Actor.OnDestroyed",
+    "/Script/Engine.Actor.OnEndCursorOver",
+    "/Script/Engine.Actor.OnEndPlay",
+    "/Script/Engine.Actor.OnInputTouchBegin",
+    "/Script/Engine.Actor.OnInputTouchEnd",
+    "/Script/Engine.Actor.OnInputTouchEnter",
+    "/Script/Engine.Actor.OnInputTouchLeave",
+    "/Script/Engine.Actor.OnReleased",
+    "/Script/Engine.Actor.OnTakeAnyDamage",
+    "/Script/Engine.Actor.OnTakePointDamage",
+    "/Script/Engine.Actor.OnTakeRadialDamage",
+    "/Script/Engine.Actor.Owner",
+    "/Script/Engine.Actor.ParentComponent",
+    "/Script/Engine.Actor.ParentComponentActor",
+    "/Script/Engine.Actor.PhysicsReplicationMode",
+    "/Script/Engine.Actor.PivotOffset",
+    "/Script/Engine.Actor.PrimaryActorTick",
+    "/Script/Engine.Actor.RayTracingGroupId",
+    "/Script/Engine.Actor.RemoteRole",
+    "/Script/Engine.Actor.ReplicatedMovement",
+    "/Script/Engine.Actor.Role",
+    "/Script/Engine.Actor.RootComponent",
+    "/Script/Engine.Actor.RuntimeGrid",
+    "/Script/Engine.Actor.SpawnCollisionHandlingMethod",
+    "/Script/Engine.Actor.SpriteScale",
+    "/Script/Engine.Actor.Tags",
+    "/Script/Engine.Actor.UpdateOverlapsMethodDuringLevelStreaming",
+    "/Script/Engine.Actor.bActorEnableCollision",
+    "/Script/Engine.Actor.bActorIsBeingDestroyed",
+    "/Script/Engine.Actor.bActorLabelEditable",
+    "/Script/Engine.Actor.bAllowReceiveTickEventOnDedicatedServer",
+    "/Script/Engine.Actor.bAllowTickBeforeBeginPlay",
+    "/Script/Engine.Actor.bAlwaysRelevant",
+    "/Script/Engine.Actor.bAsyncPhysicsTickEnabled",
+    "/Script/Engine.Actor.bAutoDestroyWhenFinished",
+    "/Script/Engine.Actor.bBlockInput",
+    "/Script/Engine.Actor.bCallPreReplication",
+    "/Script/Engine.Actor.bCallPreReplicationForReplay",
+    "/Script/Engine.Actor.bCanBeDamaged",
+    "/Script/Engine.Actor.bCanBeInCluster",
+    "/Script/Engine.Actor.bCanPlayFromHere",
+    "/Script/Engine.Actor.bCollideWhenPlacing",
+    "/Script/Engine.Actor.bEditable",
+    "/Script/Engine.Actor.bEnableAutoLODGeneration",
+    "/Script/Engine.Actor.bExchangedRoles",
+    "/Script/Engine.Actor.bFindCameraComponentWhenViewTarget",
+    "/Script/Engine.Actor.bForceDuplicateInPIE",
+    "/Script/Engine.Actor.bForceExternalActorLevelReferenceForPIE",
+    "/Script/Engine.Actor.bForceNetAddressable",
+    "/Script/Engine.Actor.bGenerateOverlapEventsDuringLevelStreaming",
+    "/Script/Engine.Actor.bHidden",
+    "/Script/Engine.Actor.bHiddenEd",
+    "/Script/Engine.Actor.bHiddenEdLayer",
+    "/Script/Engine.Actor.bHiddenEdLevel",
+    "/Script/Engine.Actor.bHiddenEdTemporary",
+    "/Script/Engine.Actor.bIgnoreInPIE",
+    "/Script/Engine.Actor.bIgnoresOriginShifting",
+    "/Script/Engine.Actor.bIsEditorOnlyActor",
+    "/Script/Engine.Actor.bIsEditorPreviewActor",
+    "/Script/Engine.Actor.bIsMainWorldOnly",
+    "/Script/Engine.Actor.bIsSpatiallyLoaded",
+    "/Script/Engine.Actor.bListedInSceneOutliner",
+    "/Script/Engine.Actor.bLockLocation",
+    "/Script/Engine.Actor.bMigratingAsset",
+    "/Script/Engine.Actor.bNetLoadOnClient",
+    "/Script/Engine.Actor.bNetTemporary",
+    "/Script/Engine.Actor.bNetUseOwnerRelevancy",
+    "/Script/Engine.Actor.bOnlyRelevantToOwner",
+    "/Script/Engine.Actor.bOptimizeBPComponentData",
+    "/Script/Engine.Actor.bRelevantForLevelBounds",
+    "/Script/Engine.Actor.bRelevantForNetworkReplays",
+    "/Script/Engine.Actor.bReplayRewindable",
+    "/Script/Engine.Actor.bReplicateMovement",
+    "/Script/Engine.Actor.bReplicateUsingRegisteredSubObjectList",
+    "/Script/Engine.Actor.bReplicates",
+    "/Script/Engine.Actor.bTearOff",
+    "/Script/Engine.Character.AnimRootMotionTranslationScale",
+    "/Script/Engine.Character.ArrowComponent",
+    "/Script/Engine.Character.BaseRotationOffset",
+    "/Script/Engine.Character.BaseTranslationOffset",
+    "/Script/Engine.Character.BasedMovement",
+    "/Script/Engine.Character.CapsuleComponent",
+    "/Script/Engine.Character.CharacterMovement",
+    "/Script/Engine.Character.ClientRootMotionParams",
+    "/Script/Engine.Character.CrouchedEyeHeight",
+    "/Script/Engine.Character.JumpCurrentCount",
+    "/Script/Engine.Character.JumpCurrentCountPreJump",
+    "/Script/Engine.Character.JumpForceTimeRemaining",
+    "/Script/Engine.Character.JumpKeyHoldTime",
+    "/Script/Engine.Character.JumpMaxCount",
+    "/Script/Engine.Character.JumpMaxHoldTime",
+    "/Script/Engine.Character.LandedDelegate",
+    "/Script/Engine.Character.Mesh",
+    "/Script/Engine.Character.MovementModeChangedDelegate",
+    "/Script/Engine.Character.OnCharacterMovementUpdated",
+    "/Script/Engine.Character.OnReachedJumpApex",
+    "/Script/Engine.Character.ProxyJumpForceStartedTime",
+    "/Script/Engine.Character.RepRootMotion",
+    "/Script/Engine.Character.ReplayLastTransformUpdateTimeStamp",
+    "/Script/Engine.Character.ReplicatedBasedMovement",
+    "/Script/Engine.Character.ReplicatedGravityDirection",
+    "/Script/Engine.Character.ReplicatedMovementMode",
+    "/Script/Engine.Character.ReplicatedServerLastTransformUpdateTimeStamp",
+    "/Script/Engine.Character.RootMotionRepMoves",
+    "/Script/Engine.Character.SavedRootMotion",
+    "/Script/Engine.Character.bClientCheckEncroachmentOnNetUpdate",
+    "/Script/Engine.Character.bClientResimulateRootMotion",
+    "/Script/Engine.Character.bClientResimulateRootMotionSources",
+    "/Script/Engine.Character.bClientUpdating",
+    "/Script/Engine.Character.bClientWasFalling",
+    "/Script/Engine.Character.bInBaseReplication",
+    "/Script/Engine.Character.bIsCrouched",
+    "/Script/Engine.Character.bPressedJump",
+    "/Script/Engine.Character.bProxyIsCharacterMovementActive",
+    "/Script/Engine.Character.bProxyIsJumpForceApplied",
+    "/Script/Engine.Character.bServerMoveIgnoreRootMotion",
+    "/Script/Engine.Character.bSimGravityDisabled",
+    "/Script/Engine.Character.bWasJumping",
+    "/Script/Engine.Pawn.AIControllerClass",
+    "/Script/Engine.Pawn.AutoPossessAI",
+    "/Script/Engine.Pawn.AutoPossessPlayer",
+    "/Script/Engine.Pawn.BaseEyeHeight",
+    "/Script/Engine.Pawn.ControlInputVector",
+    "/Script/Engine.Pawn.Controller",
+    "/Script/Engine.Pawn.LastControlInputVector",
+    "/Script/Engine.Pawn.LastHitBy",
+    "/Script/Engine.Pawn.OverrideInputComponentClass",
+    "/Script/Engine.Pawn.PlayerState",
+    "/Script/Engine.Pawn.PreviousController",
+    "/Script/Engine.Pawn.ReceiveControllerChangedDelegate",
+    "/Script/Engine.Pawn.ReceiveRestartedDelegate",
+    "/Script/Engine.Pawn.RemoteViewPitch",
+    "/Script/Engine.Pawn.RemoteViewPitch16",
+    "/Script/Engine.Pawn.bCanAffectNavigationGeneration",
+    "/Script/Engine.Pawn.bIsLocalViewTarget",
+    "/Script/Engine.Pawn.bUseControllerRotationPitch",
+    "/Script/Engine.Pawn.bUseControllerRotationRoll",
+    "/Script/Engine.Pawn.bUseControllerRotationYaw",
+    "AttackDamage",
+    "AttackRange",
+    "Attacks",
+    "Health",
+    "HitReady",
+    "HitsReceived",
+    "MaxHealth",
+    "Speed",
+    "State",
+    "StateAge",
+    "StrikeRange"
+  ],
+  "compile_results": {
+    "BP_TeddyBoss": "not_run",
+    "BP_EncounterHUD": "not_run"
+  },
+  "imports": [
+    {
+      "name": "Stagger",
+      "path": "/Game/TeddyEncounter/Teddy/Stagger/A_Teddy_Stagger",
+      "sha256": "7fb167d8d637c0fe657c84d521ee82e617eac2ef7a9e67583face1fbd3e83755",
+      "frames": 24,
+      "fps": 30,
+      "imported": false,
+      "play_length": null,
+      "frames_basis": null
+    },
+    {
+      "name": "Threat",
+      "path": "/Game/TeddyEncounter/Teddy/Threat/A_Teddy_Threat",
+      "sha256": "b7340638c4e4ded68910fac62cfe18df342134df45c3c71f92e1d2b0c3af3d76",
+      "frames": 45,
+      "fps": 30,
+      "imported": false,
+      "play_length": null,
+      "frames_basis": null
+    },
+    {
+      "name": "AttackLeft",
+      "path": "/Game/TeddyEncounter/Teddy/AttackLeft/A_Teddy_AttackLeft",
+      "sha256": "c5c923e8359ac82ca3f2056b71259eef0477d8230c871969c644e29565f22f99",
+      "frames": 36,
+      "fps": 30,
+      "imported": false,
+      "play_length": null,
+      "frames_basis": null
+    }
+  ],
+  "error": "Traceback (most recent call last):\n  File \"C:/Projects/to-deploy/worktrees/game-016/tools/build_boss_escalation_v1.py\", line 978, in editor_main\n    run_inspect(editor, payload)\n  File \"C:/Projects/to-deploy/worktrees/game-016/tools/build_boss_escalation_v1.py\", line 1043, in run_inspect\n    anchors = find_boss_anchors(editor, boss, boss_graph.g, names)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:/Projects/to-deploy/worktrees/game-016/tools/build_boss_escalation_v1.py\", line 1536, in find_boss_anchors\n    require_compare(editor, 'state 0', chase, 'State', '==', 0)\n  File \"C:/Projects/to-deploy/worktrees/game-016/tools/build_boss_escalation_v1.py\", line 1830, in require_compare\n    raise AnchorError(\nAnchorError: state 0: expected branch on State == 0; failed check: function\nchecks: branch=ok {\"found\": \"K2Node_IfThenElse\"}; condition=ok {\"found\": \"K2Node_PromotableOperator_2:K2Node_PromotableOperator\"}; function=FAIL {\"expected\": [\"==\", \"EqualEqual_IntInt\"], \"found\": \"K2Node_PromotableOperator 'Equal (Integer)'\", \"operator\": \"\", \"via\": \"title\"}\nfound node:\nK2Node_IfThenElse_1 [K2Node_IfThenElse] title='Branch'\n  pin <EdGraphPinDirection.EGPD_INPUT: 0> execute : Exec default='' links=['K2Node_IfThenElse_0:then']\n  pin <EdGraphPinDirection.EGPD_INPUT: 0> Condition : Boolean default='true' links=['K2Node_PromotableOperator_2:ReturnValue']\n  pin <EdGraphPinDirection.EGPD_OUTPUT: 1> then : Exec default='' links=['K2Node_IfThenElse_2:execute']\n  pin <EdGraphPinDirection.EGPD_OUTPUT: 1> else : Exec default='' links=['K2Node_IfThenElse_3:execute']\n  Condition <-\n    K2Node_PromotableOperator_2 [K2Node_PromotableOperator] title='Equal (Integer)'\n      function: {\"error\": \"<error Exception: K2Node_PromotableOperator: Failed to find property 'function_reference' for attribute 'function_reference' on 'K2Node_PromotableOperator'>\"}\n      call_name: ''\n      pin <EdGraphPinDirection.EGPD_INPUT: 0> A : Integer default='' links=['K2Node_VariableGet_3:State']\n      pin <EdGraphPinDirection.EGPD_INPUT: 0> B : Integer default='' links=[]\n      pin <EdGraphPinDirection.EGPD_OUTPUT: 1> ReturnValue : Boolean default='' links=['K2Node_IfThenElse_1:Condition']\n",
+  "anchor_failure": {
+    "anchor": "state 0",
+    "detail": "expected branch on State == 0; failed check: function",
+    "checks": [
+      {
+        "check": "branch",
+        "ok": true,
+        "found": "K2Node_IfThenElse"
+      },
+      {
+        "check": "condition",
+        "ok": true,
+        "found": "K2Node_PromotableOperator_2:K2Node_PromotableOperator"
+      },
+      {
+        "check": "function",
+        "ok": false,
+        "found": "K2Node_PromotableOperator 'Equal (Integer)'",
+        "operator": "",
+        "expected": [
+          "==",
+          "EqualEqual_IntInt"
+        ],
+        "via": "title"
+      }
+    ],
+    "node_dump": {
+      "id": "K2Node_IfThenElse_1",
+      "class": "K2Node_IfThenElse",
+      "class_path": "/Script/BlueprintGraph.K2Node_IfThenElse",
+      "title": "Branch",
+      "pins": [
+        {
+          "name": "execute",
+          "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+          "type": "Exec",
+          "default": "",
+          "links": [
+            "K2Node_IfThenElse_0:then"
+          ]
+        },
+        {
+          "name": "Condition",
+          "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+          "type": "Boolean",
+          "default": "true",
+          "links": [
+            "K2Node_PromotableOperator_2:ReturnValue"
+          ]
+        },
+        {
+          "name": "then",
+          "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+          "type": "Exec",
+          "default": "",
+          "links": [
+            "K2Node_IfThenElse_2:execute"
+          ]
+        },
+        {
+          "name": "else",
+          "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+          "type": "Exec",
+          "default": "",
+          "links": [
+            "K2Node_IfThenElse_3:execute"
+          ]
+        }
+      ],
+      "inputs_from": {
+        "Condition": [
+          {
+            "id": "K2Node_PromotableOperator_2",
+            "class": "K2Node_PromotableOperator",
+            "class_path": "/Script/BlueprintGraph.K2Node_PromotableOperator",
+            "title": "Equal (Integer)",
+            "function": {
+              "error": "<error Exception: K2Node_PromotableOperator: Failed to find property 'function_reference' for attribute 'function_reference' on 'K2Node_PromotableOperator'>"
+            },
+            "call_name": "",
+            "pins": [
+              {
+                "name": "A",
+                "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+                "type": "Integer",
+                "default": "",
+                "links": [
+                  "K2Node_VariableGet_3:State"
+                ]
+              },
+              {
+                "name": "B",
+                "direction": "<EdGraphPinDirection.EGPD_INPUT: 0>",
+                "type": "Integer",
+                "default": "",
+                "links": []
+              },
+              {
+                "name": "ReturnValue",
+                "direction": "<EdGraphPinDirection.EGPD_OUTPUT: 1>",
+                "type": "Boolean",
+                "default": "",
+                "links": [
+                  "K2Node_IfThenElse_1:Condition"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -166,14 +166,42 @@ class Sha256Mismatch(Exception):
 
 
 class AnchorError(Exception):
-    def __init__(self, anchor, detail):
-        super().__init__(f'{anchor}: {detail}')
+    """A saved graph did not match. ``dump`` and ``checks`` say exactly what was found."""
+
+    def __init__(self, anchor, detail, dump=None, checks=None):
+        message = f'{anchor}: {detail}'
+        if checks:
+            message += '\nchecks: ' + format_checks(checks)
+        if dump:
+            message += '\nfound node:\n' + format_node_dump(dump)
+        super().__init__(message)
         self.anchor = anchor
         self.detail = detail
+        self.dump = dump
+        self.checks = checks
+
+    def as_receipt(self):
+        return {
+            'anchor': self.anchor,
+            'detail': self.detail,
+            'checks': self.checks,
+            'node_dump': self.dump,
+        }
 
 
 class PartialStateError(RuntimeError):
     pass
+
+
+def stage(payload, name):
+    """Record and log an apply/inspect stage before a native step.
+
+    A native editor crash writes no receipt, so the last 'GAME-016 stage:' line in
+    editor.log names the step that was running (apply crash 20261008T193722).
+    """
+    payload.setdefault('stages', []).append(name)
+    print(f'GAME-016 stage: {name}', flush=True)
+    return name
 
 
 def clip_seconds(frames, fps=FPS):
@@ -585,7 +613,7 @@ def write_receipt(root, mode, payload, when=None):
         suffix += 1
     folder.mkdir()
     path = folder / 'escalation-receipt.json'
-    path.write_text(json.dumps(payload, indent=2) + '\n', encoding='utf-8')
+    path.write_text(json.dumps(payload, indent=2, default=str) + '\n', encoding='utf-8')
     return path
 
 
@@ -964,8 +992,10 @@ def editor_main(mode):
         else:
             raise RuntimeError(f'unexpected editor action {mode.action}')
         code = 0 if payload.get('passed') else 1
-    except Exception:
+    except Exception as error:
         payload['error'] = traceback.format_exc()
+        if isinstance(error, AnchorError):
+            payload['anchor_failure'] = error.as_receipt()
         payload['passed'] = False
         code = 1
     try:
@@ -1056,6 +1086,7 @@ def run_apply(editor, payload):
         return
     if state == 'partial':
         raise PartialStateError(partial_message(tag, names))
+    stage(payload, 'anchors')
     boss_graph = editor.Graph(boss)
     anchors = find_boss_anchors(editor, boss, boss_graph.g, names)
     hud_graph = editor.Graph(hud)
@@ -1063,10 +1094,12 @@ def run_apply(editor, payload):
     confirm_component(editor, boss)
     payload['anchors_found'] = describe_anchors(anchors, hud_anchors)
     payload['already_applied'] = False
+    stage(payload, 'locks')
     required = locks_required_for_apply(ROOT)
     payload['locks'] = read_locks(required)
     before = hash_files(ROOT, UNCHANGED_HASH_PATHS)
     payload['unchanged_hashes'] = {'before': before}
+    stage(payload, 'import clips')
     imported = import_clips(editor, skeleton)
     payload['imports'] = imported
     lengths = {item['name']: item['play_length'] for item in imported}
@@ -1077,28 +1110,34 @@ def run_apply(editor, payload):
         shipped_attack_length=read_attack_length(editor),
     )
     payload['computed_timings'] = timings
+    stage(payload, 'add variables')
     added_vars = add_variables(editor, boss, boss_graph, timings)
     payload['variables_added'] = added_vars
     # Rebuild the graph wrapper so new nodes are placed after the variable adds.
     boss_graph = editor.Graph(boss)
-    relinked, added_nodes, comment = mutate_boss(editor, boss_graph, anchors, timings)
+    relinked, added_nodes, comment = mutate_boss(editor, boss_graph, anchors, timings, payload)
     payload['nodes_relinked'] = relinked
     payload['nodes_added'] = added_nodes
     payload['cue_marker'] = comment
     # Compile both blueprints in memory first and save nothing until both are clean,
     # so a HUD failure cannot leave a saved, untagged half-edit of the boss. The HUD
     # needs the compiled boss class to read PhaseFlashUntil. (Tech review.)
+    stage(payload, 'compile boss (in memory)')
     compile_clean(editor, boss)
     payload['compile_results'] = {'BP_TeddyBoss': 'clean (not yet saved)'}
+    stage(payload, 'mutate hud')
     hud_graph = editor.Graph(hud)
     hud_added, hud_relinked = mutate_hud(editor, hud_graph, hud_anchors, boss)
     payload['nodes_added'].extend(hud_added)
     payload['nodes_relinked'].extend(hud_relinked)
+    stage(payload, 'compile hud (in memory)')
     compile_clean(editor, hud)
     payload['compile_results'] = {'BP_TeddyBoss': 'clean', 'BP_EncounterHUD': 'clean'}
+    stage(payload, 'tag and save')
     editor.A.set_metadata_tag(boss, TAG_GAME016, TAG_VALUE)
     editor.save(hud)
     editor.save(boss)
+    stage(payload, 'saved')
     after = hash_files(ROOT, UNCHANGED_HASH_PATHS)
     payload['unchanged_hashes']['after'] = after
     payload['unchanged_hashes']['unchanged'] = after == before
@@ -1317,8 +1356,10 @@ def add_variables(editor, blueprint, graph, timings):
     return added
 
 
-def mutate_boss(editor, graph, anchors, timings):
+def mutate_boss(editor, graph, anchors, timings, payload=None):
     del timings  # durations and the rate are read from the new variables at runtime
+    payload = {} if payload is None else payload
+    stage(payload, 'mutate boss: damage ignore')
     added = []
     relinked = []
     damage_links = pin_endpoints(anchors['damage_event'], 'Damage', 'out')
@@ -1334,6 +1375,7 @@ def mutate_boss(editor, graph, anchors, timings):
         'continues': node_id(anchors['damage_health']),
     })
 
+    stage(payload, 'mutate boss: phase entry')
     not_phase = graph.math('Not_PreBool', A=val(graph, 'bPhase2'))
     low_health = graph.math(
         'LessEqual_DoubleDouble', A=val(graph, 'Health'), B=val(graph, 'PhaseChangeHealth'),
@@ -1361,6 +1403,7 @@ def mutate_boss(editor, graph, anchors, timings):
         'stagger_loops': False,
     })
 
+    stage(payload, 'mutate boss: state 5 tick')
     phase = graph.branch((graph.math('EqualEqual_IntInt', A=val(graph, 'State'), B=5), 'ReturnValue'))
     graph.link(anchors['hit_state'], 'else', phase, 'execute')
     total = graph.math('Add_DoubleDouble', A=val(graph, 'StaggerSeconds'), B=val(graph, 'ThreatSeconds'))
@@ -1400,6 +1443,7 @@ def mutate_boss(editor, graph, anchors, timings):
         'walk_loops': True,
     })
 
+    stage(payload, 'mutate boss: recovery select')
     select = graph.math(
         'SelectFloat',
         A=val(graph, 'Phase2Recovery'),
@@ -1414,6 +1458,7 @@ def mutate_boss(editor, graph, anchors, timings):
         'inserted': node_id(select),
     })
 
+    stage(payload, 'mutate boss: anticipation clips')
     choice_and = graph.math('BooleanAND', A=val(graph, 'bPhase2'), B=val(graph, 'bNextAttackLeft'))
     choice = graph.branch((choice_and, 'ReturnValue'))
     rewire_exec(anchors['anticipation_age'], 'then', choice, 'else', anchors['attack_play'])
@@ -1485,58 +1530,48 @@ def find_boss_anchors(editor, blueprint, graph, names):
     damage = find_event(editor, graph, 'ReceiveAnyDamage')
     tick = find_event(editor, graph, 'ReceiveTick')
     damage_health = exec_one(damage, 'then', 'ReceiveAnyDamage.then')
-    if not is_health_compare_branch(editor, damage_health, 'Greater_DoubleDouble', 0):
-        raise AnchorError('ReceiveAnyDamage.then', f'expected Health > 0, found {describe(editor, damage_health)}')
+    require_compare(editor, 'ReceiveAnyDamage.then', damage_health, 'Health', '>', 0)
     set_health = exec_one(damage_health, 'then', 'damage health then')
     if not is_set(editor, set_health, 'Health'):
-        raise AnchorError('Set Health', describe(editor, set_health))
+        raise AnchorError('Set Health', 'unexpected node', dump=node_dump(editor, set_health))
     health_pin = set_health.find_input_pin('Health')
     health_source = linked_call(editor, health_pin)
     if call_name(editor, health_source) not in ('', 'FMax'):
         raise AnchorError('Set Health', 'value is not FMax')
     set_hits = exec_one(set_health, 'then', 'Set Health.then')
     if not is_set(editor, set_hits, 'HitsReceived'):
-        raise AnchorError('Set HitsReceived', describe(editor, set_hits))
+        raise AnchorError('Set HitsReceived', 'unexpected node', dump=node_dump(editor, set_hits))
     lethal = exec_one(set_hits, 'then', 'HitsReceived.then')
-    if not is_health_compare_branch(editor, lethal, 'LessEqual_DoubleDouble', 0):
-        raise AnchorError('lethal', describe(editor, lethal))
+    require_compare(editor, 'lethal', lethal, 'Health', '<=', 0)
     dead = exec_one(lethal, 'then', 'lethal.then')
     if not is_set_literal(editor, dead, 'State', 3):
-        raise AnchorError('lethal.then', describe(editor, dead))
+        raise AnchorError('lethal.then', 'unexpected node', dump=node_dump(editor, dead))
     react = exec_one(lethal, 'else', 'lethal.else')
     if react.get_class().get_name() != 'K2Node_IfThenElse':
-        raise AnchorError('hit reaction', describe(editor, react))
+        raise AnchorError('hit reaction', 'unexpected node', dump=node_dump(editor, react))
     react_call = call_name(editor, condition_node(react))
     if react_call not in ('', 'BooleanAND'):
         raise AnchorError('hit reaction', f'condition is {react_call}')
 
     set_age = exec_one(tick, 'then', 'ReceiveTick.then')
     if not is_set(editor, set_age, 'StateAge'):
-        raise AnchorError('tick age', describe(editor, set_age))
+        raise AnchorError('tick age', 'unexpected node', dump=node_dump(editor, set_age))
     alive = exec_one(set_age, 'then', 'StateAge.then')
-    if not is_health_compare_branch(editor, alive, 'Greater_DoubleDouble', 0):
-        raise AnchorError('tick alive', describe(editor, alive))
+    require_compare(editor, 'tick alive', alive, 'Health', '>', 0)
     chase = exec_one(alive, 'then', 'alive.then')
-    if not is_state_branch(editor, chase, 0):
-        raise AnchorError('state 0', describe(editor, chase))
+    require_compare(editor, 'state 0', chase, 'State', '==', 0)
     windup = exec_one(chase, 'else', 'state 0 else')
-    if not is_state_branch(editor, windup, 1):
-        raise AnchorError('state 1', describe(editor, windup))
+    require_compare(editor, 'state 1', windup, 'State', '==', 1)
     ready = exec_one(windup, 'then', 'state 1 then')
-    if not is_stateage_compare_branch(editor, ready, 'GreaterEqual_DoubleDouble', TELEGRAPH_SECONDS):
-        raise AnchorError('windup 0.92', describe(editor, ready))
+    require_compare(editor, 'windup 0.92', ready, 'StateAge', '>=', TELEGRAPH_SECONDS)
     recovery = exec_one(windup, 'else', 'state 1 else')
-    if not is_state_branch(editor, recovery, 2):
-        raise AnchorError('state 2', describe(editor, recovery))
+    require_compare(editor, 'state 2', recovery, 'State', '==', 2)
     done = exec_one(recovery, 'then', 'state 2 then')
-    if not is_stateage_compare_branch(editor, done, 'Greater_DoubleDouble', PHASE1_RECOVERY):
-        raise AnchorError('recovery 1.15', describe(editor, done))
+    require_compare(editor, 'recovery 1.15', done, 'StateAge', '>', PHASE1_RECOVERY)
     hit_state = exec_one(recovery, 'else', 'state 2 else')
-    if not is_state_branch(editor, hit_state, 4):
-        raise AnchorError('state 4', describe(editor, hit_state))
+    require_compare(editor, 'state 4', hit_state, 'State', '==', 4)
     hit_done = exec_one(hit_state, 'then', 'state 4 then')
-    if not is_stateage_compare_branch(editor, hit_done, 'Greater_DoubleDouble', 0.32):
-        raise AnchorError('hit 0.32', describe(editor, hit_done))
+    require_compare(editor, 'hit 0.32', hit_done, 'StateAge', '>', 0.32)
     if exec_nodes(hit_state, 'else'):
         raise AnchorError('state 4 else', 'expected an unwired else pin')
 
@@ -1549,20 +1584,20 @@ def find_boss_anchors(editor, blueprint, graph, names):
         raise AnchorError('Set State 1', f'found {len(state_sets)}')
     anticipation_age = exec_one(state_sets[0], 'then', 'Set State 1.then')
     if not is_set_literal(editor, anticipation_age, 'StateAge', 0):
-        raise AnchorError('anticipation age', describe(editor, anticipation_age))
+        raise AnchorError('anticipation age', 'unexpected node', dump=node_dump(editor, anticipation_age))
     attack_play = exec_one(anticipation_age, 'then', 'anticipation age.then')
     if not is_play(editor, attack_play, 'Attack', False):
-        raise AnchorError('Attack play', describe(editor, attack_play))
+        raise AnchorError('Attack play', 'unexpected node', dump=node_dump(editor, attack_play))
     attack_show = exec_one(attack_play, 'then', 'Attack.then')
     if not is_warning(editor, attack_show, True):
-        raise AnchorError('Attack show', describe(editor, attack_show))
+        raise AnchorError('Attack show', 'unexpected node', dump=node_dump(editor, attack_show))
     state_fives = [node for node in nodes if is_state_branch(editor, node, 5)]
     if state_fives:
         raise AnchorError('State==5', f'already present: {[describe(editor, node) for node in state_fives]}')
     recovery_nodes = [
         node for node in nodes
-        if is_call_named(editor, node, 'Greater_DoubleDouble') and linked_var(editor, node.find_input_pin('A')) == 'StateAge'
-        and near(literal_number(node.find_input_pin('B')), PHASE1_RECOVERY)
+        if is_compare_node(editor, node, '>') and linked_var(editor, node.find_input_pin('A')) == 'StateAge'
+        and near(numeric_literal(node.find_input_pin('B'))[1], PHASE1_RECOVERY)
     ]
     if recovery_nodes != [recovery_compare]:
         raise AnchorError('recovery compare', f'found {len(recovery_nodes)}')
@@ -1670,27 +1705,187 @@ def condition_node(branch):
     return links[0].get_owning_node()
 
 
+# Function names that mean the same comparison on a saved graph. UE 5 math
+# nodes are Kismet *_DoubleDouble calls; *_FloatFloat is the pre-5.0 name that
+# a redirect may still report. Nothing else is accepted for an operator.
+COMPARE_FUNCTIONS = {
+    '>': ('Greater_DoubleDouble', 'Greater_FloatFloat'),
+    '>=': ('GreaterEqual_DoubleDouble', 'GreaterEqual_FloatFloat'),
+    '<=': ('LessEqual_DoubleDouble', 'LessEqual_FloatFloat'),
+    '==': ('EqualEqual_IntInt',),
+}
+
+
+def compare_checks(editor, node, variable, op, value):
+    """Check one single-condition branch ``variable <op> value``.
+
+    Returns (ok, checks). ``checks`` is an ordered list of dicts, one per test,
+    so a mismatch names the test that failed and what it saw. Any exception
+    inside a test is recorded as that test failing; nothing is accepted on error.
+    """
+    checks = []
+
+    def record(name, ok, **seen):
+        checks.append(dict(check=name, ok=bool(ok), **seen))
+        return bool(ok)
+
+    def guarded(name, fn):
+        try:
+            return fn()
+        except Exception as error:  # fail closed and say why
+            record(name, False, error=f'{type(error).__name__}: {error}')
+            return None
+
+    kind = guarded('branch', lambda: node.get_class().get_name())
+    if kind is None or not record('branch', kind == 'K2Node_IfThenElse', found=kind):
+        return False, checks
+    compare = guarded('condition', lambda: _compare_of(node))
+    if compare is None:
+        if not checks or checks[-1]['check'] != 'condition':
+            record('condition', False, found='no single Condition link')
+        return False, checks
+    record('condition', True, found=node_id(compare))
+
+    expected = COMPARE_FUNCTIONS[op]
+    found = guarded('function', lambda: compare_operator(editor, compare))
+    if found is None:
+        return False, checks
+    symbol, via, seen = found
+    if not record('function', symbol == op, found=seen, operator=symbol, expected=[op, *expected], via=via):
+        return False, checks
+
+    found_var = guarded('A variable', lambda: linked_var(editor, compare.find_input_pin('A')))
+    if found_var is None:
+        return False, checks
+    if not record('A variable', found_var == variable, found=found_var, expected=variable):
+        return False, checks
+
+    b = guarded('B literal', lambda: numeric_literal(compare.find_input_pin('B')))
+    if b is None:
+        return False, checks
+    raw, parsed, how = b
+    if op == '==':
+        ok = parsed is not None and abs(parsed - round(parsed)) <= 1e-6 and int(round(parsed)) == int(value)
+    else:
+        ok = near(parsed, value)
+    record('B literal', ok, raw=raw, parsed=parsed, read_as=how, expected=value)
+    return ok, checks
+
+
+OPERATOR_SYMBOLS = ('>=', '<=', '==', '!=', '>', '<')
+FUNCTION_OPERATORS = {name: symbol for symbol, names in COMPARE_FUNCTIONS.items() for name in names}
+# Saved UE 5 graphs show math compares as K2Node_PromotableOperator ("float > float").
+# Its function reference is not readable from Python, so its operator comes from the
+# node title. Only these node classes may be identified by title.
+TITLED_OPERATOR_CLASSES = ('K2Node_PromotableOperator', 'K2Node_CallFunction')
+
+
+def compare_pin_shape(node):
+    pin_a = node.find_input_pin('A')
+    pin_b = node.find_input_pin('B')
+    result = node.find_output_pin('ReturnValue')
+    return bool(pin_a.is_valid() and pin_b.is_valid() and result.is_valid())
+
+
+# UE 5 titles equality in words (KismetMathLibrary DisplayName) and every other
+# compare as "float > float" / "integer >= integer". Only these exact phrases.
+TITLE_PHRASES = {
+    'equal (integer)': '==',
+    'equal (float)': '==',
+    'not equal (integer)': '!=',
+    'not equal (float)': '!=',
+}
+
+
+def title_operator(title):
+    """Return the comparison a promotable-operator title names, else ''.
+
+    'float > float' -> '>', '>=' -> '>=', 'Equal (Integer)' -> '==',
+    'Not Equal (Integer)' -> '!='. A title with no operator, or with more than one, yields ''.
+    """
+    text = str(title or '').strip()
+    phrase = TITLE_PHRASES.get(text.lower())
+    if phrase:
+        return phrase
+    tokens = text.split()
+    found = [token for token in tokens if token in OPERATOR_SYMBOLS]
+    if len(found) != 1:
+        return ''
+    if len(tokens) == 1 or (len(tokens) == 3 and tokens[1] == found[0]):
+        return found[0]
+    return ''
+
+
+def compare_operator(editor, node):
+    """Identify a compare node's operator. Returns (symbol, via, seen); symbol '' if unknown.
+
+    Accepted: a readable Kismet function name from COMPARE_FUNCTIONS, or, when the name
+    cannot be read, the title of a promotable/math node with A, B and a boolean result.
+    Anything else is unknown and fails the check.
+    """
+    kind = node.get_class().get_name()
+    name = call_name(editor, node)
+    if name:
+        return FUNCTION_OPERATORS.get(name, ''), 'name', name
+    if kind not in TITLED_OPERATOR_CLASSES or not compare_pin_shape(node):
+        return '', 'unidentified', kind
+    result_type = str(node.find_output_pin('ReturnValue').get_pin_type_display_string()).strip().lower()
+    if result_type != 'boolean':
+        return '', 'title', f'{kind} returns {result_type}'
+    title = str(editor.L.get_node_title(node))
+    return title_operator(title), 'title', f'{kind} {title!r}'
+
+
+NUMERIC_PIN_TYPES = ('float', 'double', 'real', 'integer', 'int', 'byte')
+
+
+def numeric_literal(pin):
+    """Read an unlinked numeric pin. Returns (raw, value, how).
+
+    An empty default on an unlinked numeric pin is the type default, 0, which is what the
+    Blueprint compiler uses (saved promotable-operator pins store ''). A linked pin, a
+    non-numeric type or unparsable text gives value None.
+    """
+    if pin is None or not pin.is_valid():
+        return '<no pin>', None, 'missing'
+    if list(pin.list_connected_pins()):
+        return '<linked>', None, 'linked'
+    raw = str(pin.get_pin_value())
+    text = raw.strip()
+    if text:
+        try:
+            return raw, float(text), 'text'
+        except ValueError:
+            return raw, None, 'unparsable'
+    ptype = str(pin.get_pin_type_display_string()).lower()
+    if any(word in ptype for word in NUMERIC_PIN_TYPES):
+        return raw, 0.0, f'empty {ptype} default = 0'
+    return raw, None, f'empty non-numeric ({ptype})'
+
+
+def require_compare(editor, label, node, variable, op, value):
+    ok, checks = compare_checks(editor, node, variable, op, value)
+    if not ok:
+        failed = next((check['check'] for check in checks if not check['ok']), 'unknown')
+        raise AnchorError(
+            label,
+            f'expected branch on {variable} {op} {value}; failed check: {failed}',
+            dump=node_dump(editor, node),
+            checks=checks,
+        )
+    return checks
+
+
 def is_state_branch(editor, node, value):
-    compare = _compare_of(node)
-    if compare is None or not is_call_named(editor, compare, 'EqualEqual_IntInt'):
-        return False
-    return linked_var(editor, compare.find_input_pin('A')) == 'State' and literal_int(compare.find_input_pin('B')) == value
+    return compare_checks(editor, node, 'State', '==', value)[0]
 
 
-def is_health_compare_branch(editor, node, function_name, threshold):
-    compare = _compare_of(node)
-    if compare is None or not is_call_named(editor, compare, function_name):
-        return False
-    return linked_var(editor, compare.find_input_pin('A')) == 'Health' and near(literal_number(compare.find_input_pin('B')), threshold)
+def is_health_compare_branch(editor, node, op, threshold):
+    return compare_checks(editor, node, 'Health', op, threshold)[0]
 
 
-def is_stateage_compare_branch(editor, node, function_name, threshold):
-    compare = _compare_of(node)
-    if compare is None or not is_call_named(editor, compare, function_name):
-        return False
-    pin_a = compare.find_input_pin('A')
-    pin_b = compare.find_input_pin('B')
-    return linked_var(editor, pin_a) == 'StateAge' and near(literal_number(pin_b), threshold)
+def is_stateage_compare_branch(editor, node, op, threshold):
+    return compare_checks(editor, node, 'StateAge', op, threshold)[0]
 
 
 def _compare_of(node):
@@ -1706,18 +1901,6 @@ def _compare_of(node):
     return links[0].get_owning_node()
 
 
-def is_call_named(editor, node, function_name):
-    found = call_name(editor, node)
-    if found:
-        return found == function_name
-    # Name lookup failed. Accept the pin shape only for the compare we are matching,
-    # and let the surrounding literal and variable checks keep it unique.
-    pin_a = node.find_input_pin('A')
-    pin_b = node.find_input_pin('B')
-    result = node.find_output_pin('ReturnValue')
-    return bool(pin_a.is_valid() and pin_b.is_valid() and result.is_valid())
-
-
 def is_set(editor, node, name):
     return node.get_class().get_name() == 'K2Node_VariableSet' and var_name(editor, node) == name
 
@@ -1728,7 +1911,17 @@ def is_set_literal(editor, node, name, value):
     pin = node.find_input_pin(name)
     if not pin.is_valid() or list(pin.list_connected_pins()):
         return False
-    return literal_int(pin) == int(value)
+    number = numeric_literal(pin)[1]
+    return number is not None and abs(number - round(number)) <= 1e-6 and int(round(number)) == int(value)
+
+
+def is_compare_node(editor, node, op):
+    try:
+        if not node.get_class().get_name().startswith('K2Node'):
+            return False
+        return compare_operator(editor, node)[0] == op
+    except Exception:
+        return False
 
 
 def is_play(editor, node, clip, looping):
@@ -1856,6 +2049,9 @@ def literal_bool(pin):
         return True
     if text in ('false', '0'):
         return False
+    if not text and str(pin.get_pin_type_display_string()).strip().lower() == 'boolean':
+        # An empty default on an unlinked Boolean pin is the type default, false.
+        return False
     return None
 
 
@@ -1925,6 +2121,133 @@ def warning(graph, show):
 
 def node_id(node):
     return f'{node.get_name()}:{node.get_class().get_name()}'
+
+
+def _safe(fn):
+    try:
+        value = fn()
+    except Exception as error:
+        return f'<error {type(error).__name__}: {error}>'
+    return value
+
+
+def _ref_info(node, prop):
+    """Read a member reference (function/variable/event) without trusting the API."""
+    info = {}
+    ref = _safe(lambda: node.get_editor_property(prop))
+    if isinstance(ref, str) and ref.startswith('<error'):
+        info['error'] = ref
+        return info
+    for key in ('member_name', 'member_parent', 'member_guid', 'self_context'):
+        value = _safe(lambda key=key: ref.get_editor_property(key))
+        if isinstance(value, str) and value.startswith('<error'):
+            info[key] = value
+            continue
+        if key == 'member_parent' and value is not None and hasattr(value, 'get_path_name'):
+            value = _safe(value.get_path_name)
+        info[key] = plain_name(value) if key == 'member_name' else str(value)
+    return info
+
+
+def pin_dump(pin):
+    links = _safe(lambda: [
+        f'{link.get_owning_node().get_name()}:{plain_name(link.get_pin_name())}'
+        for link in pin.list_connected_pins()
+    ])
+    return {
+        'name': _safe(lambda: plain_name(pin.get_pin_name())),
+        'direction': _safe(lambda: str(pin.get_pin_direction())),
+        'type': _safe(lambda: str(pin.get_pin_type_display_string())),
+        'default': _safe(lambda: str(pin.get_pin_value())),
+        'links': links,
+    }
+
+
+def node_dump(editor, node, depth=1):
+    """Structured, read-only description of a graph node and its pins.
+
+    ``depth`` follows data links on input pins (not exec) so a branch dump also
+    shows its condition node and that node's inputs. Never raises.
+    """
+    if node is None:
+        return {'node': None}
+    kind = _safe(lambda: node.get_class().get_name())
+    dump = {
+        'id': _safe(lambda: node.get_name()),
+        'class': kind,
+        'class_path': _safe(lambda: node.get_class().get_path_name()),
+        'title': _safe(lambda: str(editor.L.get_node_title(node))),
+    }
+    if isinstance(kind, str) and 'CallFunction' in kind or kind in ('K2Node_PromotableOperator', 'K2Node_CommutativeAssociativeBinaryOperator'):
+        dump['function'] = _ref_info(node, 'function_reference')
+        dump['call_name'] = _safe(lambda: call_name(editor, node))
+    if kind in ('K2Node_VariableGet', 'K2Node_VariableSet'):
+        dump['variable'] = _ref_info(node, 'variable_reference')
+        dump['var_name'] = _safe(lambda: var_name(editor, node))
+    if kind in ('K2Node_Event',):
+        dump['event'] = _ref_info(node, 'event_reference')
+    inputs = _safe(lambda: list(node.list_input_pins()))
+    outputs = _safe(lambda: list(node.list_output_pins()))
+    dump['pins'] = []
+    for group in (inputs, outputs):
+        if isinstance(group, str):
+            dump['pins'].append({'error': group})
+            continue
+        dump['pins'].extend(pin_dump(pin) for pin in group)
+    if depth > 0 and not isinstance(inputs, str):
+        linked = {}
+        for pin in inputs:
+            ptype = _safe(lambda pin=pin: str(pin.get_pin_type_display_string()))
+            if isinstance(ptype, str) and 'exec' in ptype.lower():
+                continue
+            name = _safe(lambda pin=pin: plain_name(pin.get_pin_name()))
+            if name in ('execute',):
+                continue
+            others = _safe(lambda pin=pin: [link.get_owning_node() for link in pin.list_connected_pins()])
+            if isinstance(others, str):
+                linked[str(name)] = others
+                continue
+            linked[str(name)] = [node_dump(editor, other, depth - 1) for other in others]
+        dump['inputs_from'] = linked
+    return dump
+
+
+def format_checks(checks):
+    parts = []
+    for check in checks or []:
+        seen = {key: value for key, value in check.items() if key not in ('check', 'ok')}
+        parts.append(f"{check.get('check')}={'ok' if check.get('ok') else 'FAIL'} {json.dumps(seen, default=str, sort_keys=True)}")
+    return '; '.join(parts)
+
+
+def format_node_dump(dump, indent=0):
+    """Human-readable text for a node_dump() dict (also written to the editor log)."""
+    pad = '  ' * indent
+    if not isinstance(dump, dict) or dump.get('node', 1) is None:
+        return f'{pad}<none>'
+    lines = [f"{pad}{dump.get('id')} [{dump.get('class')}] title={dump.get('title')!r}"]
+    for key in ('function', 'variable', 'event'):
+        if key in dump:
+            lines.append(f'{pad}  {key}: {json.dumps(dump[key], default=str, sort_keys=True)}')
+    for key in ('call_name', 'var_name'):
+        if key in dump:
+            lines.append(f'{pad}  {key}: {dump[key]!r}')
+    for pin in dump.get('pins', []):
+        if 'error' in pin:
+            lines.append(f"{pad}  pins: {pin['error']}")
+            continue
+        lines.append(
+            f"{pad}  pin {pin.get('direction')} {pin.get('name')!s} : {pin.get('type')} "
+            f"default={pin.get('default')!r} links={pin.get('links')}"
+        )
+    for name, upstream in (dump.get('inputs_from') or {}).items():
+        if isinstance(upstream, str):
+            lines.append(f'{pad}  {name} <- {upstream}')
+            continue
+        for item in upstream:
+            lines.append(f'{pad}  {name} <-')
+            lines.append(format_node_dump(item, indent + 2))
+    return '\n'.join(lines)
 
 
 def describe(editor, node):

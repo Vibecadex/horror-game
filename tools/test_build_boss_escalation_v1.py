@@ -583,3 +583,364 @@ class SubprocessPlan(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+# ---------------------------------------------------------------------------
+# Fake graph objects for the anchor dump and compare checks (no Unreal).
+
+
+class _FakeClass:
+    def __init__(self, name):
+        self._name = name
+
+    def get_name(self):
+        return self._name
+
+    def get_path_name(self):
+        return f'/Script/BlueprintGraph.{self._name}'
+
+
+class _FakeRef:
+    def __init__(self, **props):
+        self._props = props
+
+    def get_editor_property(self, name):
+        if name not in self._props:
+            raise AttributeError(f'no property {name}')
+        return self._props[name]
+
+
+class _FakePin:
+    def __init__(self, name, direction, ptype, value='', valid=True, raise_value=False):
+        self.name = name
+        self.direction = direction
+        self.ptype = ptype
+        self.value = value
+        self.valid = valid
+        self.raise_value = raise_value
+        self.links = []
+        self.owner = None
+
+    def is_valid(self):
+        return self.valid
+
+    def get_pin_name(self):
+        return self.name
+
+    def get_pin_direction(self):
+        return self.direction
+
+    def get_pin_type_display_string(self):
+        return self.ptype
+
+    def get_pin_value(self):
+        if self.raise_value:
+            raise RuntimeError('pin value unreadable')
+        return self.value
+
+    def list_connected_pins(self):
+        return list(self.links)
+
+    def get_owning_node(self):
+        return self.owner
+
+
+_MISSING = _FakePin('missing', 'EGPD_Input', '', valid=False)
+
+
+class _FakeNode:
+    def __init__(self, name, cls, inputs=(), outputs=(), props=None, title=''):
+        self.name = name
+        self.cls = _FakeClass(cls)
+        self.inputs = list(inputs)
+        self.outputs = list(outputs)
+        self.props = props or {}
+        self.title = title
+        for pin in self.inputs + self.outputs:
+            pin.owner = self
+
+    def get_name(self):
+        return self.name
+
+    def get_class(self):
+        return self.cls
+
+    def get_editor_property(self, name):
+        if name not in self.props:
+            raise AttributeError(f'no property {name}')
+        return self.props[name]
+
+    def list_input_pins(self):
+        return list(self.inputs)
+
+    def list_output_pins(self):
+        return list(self.outputs)
+
+    def find_input_pin(self, name):
+        return next((pin for pin in self.inputs if pin.name == name), _MISSING)
+
+    def find_output_pin(self, name):
+        return next((pin for pin in self.outputs if pin.name == name), _MISSING)
+
+
+def _link(out_pin, in_pin):
+    out_pin.links.append(in_pin)
+    in_pin.links.append(out_pin)
+
+
+class _FakeLibrary:
+    @staticmethod
+    def get_node_title(node):
+        return node.title
+
+    @staticmethod
+    def list_output_pins(node):
+        return node.list_output_pins()
+
+    @staticmethod
+    def list_input_pins(node):
+        return node.list_input_pins()
+
+
+class _FakeEditor:
+    L = _FakeLibrary()
+
+
+def _compare_branch(function='Greater_DoubleDouble', variable='Health', b_value='0.0',
+                    function_readable=True, b_raises=False, cls='K2Node_CallFunction', title='>',
+                    b_type='real', result_type='boolean'):
+    """Branch(Condition <- function(A <- Get variable, B literal))."""
+    getter_out = _FakePin(variable, 'EGPD_Output', 'real')
+    getter_props = {}
+    if variable:
+        getter_props['variable_reference'] = _FakeRef(member_name=variable, member_parent=None)
+    getter = _FakeNode('K2Node_VariableGet_3', 'K2Node_VariableGet', outputs=[getter_out],
+                       props=getter_props, title=f'Get {variable}')
+    pin_a = _FakePin('A', 'EGPD_Input', 'real')
+    pin_b = _FakePin('B', 'EGPD_Input', b_type, b_value, raise_value=b_raises)
+    result = _FakePin('ReturnValue', 'EGPD_Output', result_type)
+    compare_props = {}
+    if function_readable:
+        compare_props['function_reference'] = _FakeRef(member_name=function, member_parent='/Script/Engine.KismetMathLibrary')
+    compare = _FakeNode(f'{cls}_7', cls, inputs=[pin_a, pin_b],
+                        outputs=[result], props=compare_props, title=title)
+    _link(getter_out, pin_a)
+    execute = _FakePin('execute', 'EGPD_Input', 'exec')
+    condition = _FakePin('Condition', 'EGPD_Input', 'boolean', 'true')
+    branch = _FakeNode('K2Node_IfThenElse_10', 'K2Node_IfThenElse',
+                       inputs=[execute, condition],
+                       outputs=[_FakePin('then', 'EGPD_Output', 'exec'), _FakePin('else', 'EGPD_Output', 'exec')],
+                       title='Branch')
+    _link(result, condition)
+    return branch
+
+
+def _failed(checks):
+    return [check['check'] for check in checks if not check['ok']]
+
+
+class AnchorDump(unittest.TestCase):
+    def setUp(self):
+        self.editor = _FakeEditor()
+
+    def test_compare_passes_for_equivalent_literals(self):
+        for literal in ('0', '0.0', '0.000000', ' 0.0 '):
+            ok, checks = escalation.compare_checks(self.editor, _compare_branch(b_value=literal), 'Health', '>', 0)
+            self.assertTrue(ok, (literal, checks))
+            self.assertEqual(_failed(checks), [])
+
+    def test_compare_names_the_failed_check(self):
+        cases = [
+            (dict(function='Less_DoubleDouble'), 'function'),
+            (dict(variable='Shield'), 'A variable'),
+            (dict(b_value='0.5'), 'B literal'),
+            (dict(b_value='', b_type='boolean'), 'B literal'),
+            (dict(b_value='zero'), 'B literal'),
+            (dict(b_raises=True), 'B literal'),
+        ]
+        for kwargs, expected in cases:
+            ok, checks = escalation.compare_checks(self.editor, _compare_branch(**kwargs), 'Health', '>', 0)
+            self.assertFalse(ok, kwargs)
+            self.assertEqual(_failed(checks), [expected], (kwargs, checks))
+
+    def test_compare_never_accepts_a_different_operator(self):
+        for function in ('GreaterEqual_DoubleDouble', 'LessEqual_DoubleDouble', 'NotEqual_DoubleDouble',
+                         'EqualEqual_DoubleDouble', 'Less_DoubleDouble'):
+            ok, checks = escalation.compare_checks(self.editor, _compare_branch(function=function), 'Health', '>', 0)
+            self.assertFalse(ok, function)
+            self.assertEqual(_failed(checks), ['function'])
+
+    def test_non_branch_and_missing_condition_fail_closed(self):
+        node = _FakeNode('K2Node_VariableSet_1', 'K2Node_VariableSet')
+        ok, checks = escalation.compare_checks(self.editor, node, 'Health', '>', 0)
+        self.assertFalse(ok)
+        self.assertEqual(_failed(checks), ['branch'])
+        lonely = _FakeNode('K2Node_IfThenElse_2', 'K2Node_IfThenElse',
+                           inputs=[_FakePin('Condition', 'EGPD_Input', 'boolean', 'true')])
+        ok, checks = escalation.compare_checks(self.editor, lonely, 'Health', '>', 0)
+        self.assertFalse(ok)
+        self.assertEqual(_failed(checks), ['condition'])
+
+    def test_require_compare_raises_with_dump_and_checks(self):
+        branch = _compare_branch(b_value='1.5')
+        with self.assertRaises(escalation.AnchorError) as caught:
+            escalation.require_compare(self.editor, 'ReceiveAnyDamage.then', branch, 'Health', '>', 0)
+        error = caught.exception
+        self.assertIn('failed check: B literal', str(error))
+        self.assertIn("default='1.5'", str(error))
+        receipt = error.as_receipt()
+        json.dumps(receipt)  # serialisable as-is
+        self.assertEqual(receipt['anchor'], 'ReceiveAnyDamage.then')
+        self.assertEqual(_failed(receipt['checks']), ['B literal'])
+        b_check = receipt['checks'][-1]
+        self.assertEqual((b_check['raw'], b_check['parsed'], b_check['expected']), ('1.5', 1.5, 0))
+
+    def test_node_dump_lists_pins_links_and_upstream(self):
+        dump = escalation.node_dump(self.editor, _compare_branch(), depth=2)
+        self.assertEqual(dump['id'], 'K2Node_IfThenElse_10')
+        self.assertEqual(dump['class'], 'K2Node_IfThenElse')
+        self.assertEqual(dump['title'], 'Branch')
+        names = [(pin['name'], pin['direction'], pin['type']) for pin in dump['pins']]
+        self.assertIn(('Condition', 'EGPD_Input', 'boolean'), names)
+        condition = next(pin for pin in dump['pins'] if pin['name'] == 'Condition')
+        self.assertEqual(condition['links'], ['K2Node_CallFunction_7:ReturnValue'])
+        self.assertNotIn('execute', dump['inputs_from'])
+        (compare,) = dump['inputs_from']['Condition']
+        self.assertEqual(compare['function']['member_name'], 'Greater_DoubleDouble')
+        self.assertEqual(compare['function']['member_parent'], '/Script/Engine.KismetMathLibrary')
+        self.assertEqual(compare['call_name'], 'Greater_DoubleDouble')
+        b_pin = next(pin for pin in compare['pins'] if pin['name'] == 'B')
+        self.assertEqual(b_pin['default'], '0.0')
+        (getter,) = compare['inputs_from']['A']
+        self.assertEqual(getter['var_name'], 'Health')
+        self.assertEqual(getter['variable']['member_name'], 'Health')
+        text = escalation.format_node_dump(dump)
+        for needle in ('K2Node_IfThenElse_10 [K2Node_IfThenElse]', 'Condition <-', 'Greater_DoubleDouble',
+                       "var_name: 'Health'", "pin EGPD_Input B : real default='0.0'"):
+            self.assertIn(needle, text)
+
+    def test_node_dump_survives_unreadable_api(self):
+        branch = _compare_branch(function_readable=False, b_raises=True)
+        dump = escalation.node_dump(self.editor, branch, depth=2)
+        (compare,) = dump['inputs_from']['Condition']
+        self.assertIn('error', compare['function'])
+        self.assertEqual(compare['call_name'], '')
+        b_pin = next(pin for pin in compare['pins'] if pin['name'] == 'B')
+        self.assertTrue(b_pin['default'].startswith('<error RuntimeError'))
+        json.dumps(dump)
+        escalation.format_node_dump(dump)
+        self.assertEqual(escalation.node_dump(self.editor, None), {'node': None})
+
+    def test_unreadable_function_name_uses_the_title_operator(self):
+        ok, checks = escalation.compare_checks(self.editor, _compare_branch(function_readable=False), 'Health', '>', 0)
+        self.assertTrue(ok, checks)
+        function = next(check for check in checks if check['check'] == 'function')
+        self.assertEqual((function['via'], function['operator']), ('title', '>'))
+        ok, checks = escalation.compare_checks(
+            self.editor, _compare_branch(function_readable=False, b_value='0.32'), 'Health', '>', 0)
+        self.assertFalse(ok)
+        self.assertEqual(_failed(checks), ['B literal'])
+
+    def test_saved_promotable_operator_with_empty_default_matches(self):
+        # The real saved shape on 5.8 (inspect 20261008T193333Z): K2Node_PromotableOperator
+        # 'float > float', function_reference unreadable, B pin default ''.
+        branch = _compare_branch(cls='K2Node_PromotableOperator', title='float > float',
+                                 function_readable=False, b_value='', b_type='Float (double-precision)')
+        ok, checks = escalation.compare_checks(self.editor, branch, 'Health', '>', 0)
+        self.assertTrue(ok, checks)
+        b_check = checks[-1]
+        self.assertEqual((b_check['raw'], b_check['parsed']), ('', 0.0))
+        self.assertIn('empty', b_check['read_as'])
+        state = _compare_branch(cls='K2Node_PromotableOperator', title='integer == integer', variable='State',
+                                function_readable=False, b_value='', b_type='Integer')
+        self.assertTrue(escalation.compare_checks(self.editor, state, 'State', '==', 0)[0])
+        self.assertFalse(escalation.compare_checks(self.editor, state, 'State', '==', 1)[0])
+        # The saved integer equality node is titled 'Equal (Integer)', not 'integer == integer'.
+        equal = _compare_branch(cls='K2Node_PromotableOperator', title='Equal (Integer)', variable='State',
+                                function_readable=False, b_value='', b_type='Integer')
+        ok, checks = escalation.compare_checks(self.editor, equal, 'State', '==', 0)
+        self.assertTrue(ok, checks)
+        self.assertEqual(checks[2]['operator'], '==')
+        not_equal = _compare_branch(cls='K2Node_PromotableOperator', title='Not Equal (Integer)', variable='State',
+                                    function_readable=False, b_value='', b_type='Integer')
+        self.assertEqual(_failed(escalation.compare_checks(self.editor, not_equal, 'State', '==', 0)[1]), ['function'])
+
+    def test_promotable_operator_never_matches_a_different_condition(self):
+        for title, op in (('float >= float', '>'), ('float < float', '>'), ('float > float', '>='),
+                          ('float != float', '=='), ('float > float', '<='), ('Branch', '>'),
+                          ('float > float > float', '>'), ('', '>'), ('float>float', '>')):
+            branch = _compare_branch(cls='K2Node_PromotableOperator', title=title, function_readable=False,
+                                     b_value='', b_type='Float (double-precision)')
+            ok, checks = escalation.compare_checks(self.editor, branch, 'Health', op, 0)
+            self.assertFalse(ok, (title, op))
+            self.assertEqual(_failed(checks), ['function'], (title, op))
+        not_bool = _compare_branch(cls='K2Node_PromotableOperator', title='float > float', function_readable=False,
+                                   result_type='Float (double-precision)')
+        self.assertEqual(_failed(escalation.compare_checks(self.editor, not_bool, 'Health', '>', 0)[1]), ['function'])
+        macro = _compare_branch(cls='K2Node_MacroInstance', title='float > float', function_readable=False)
+        self.assertEqual(_failed(escalation.compare_checks(self.editor, macro, 'Health', '>', 0)[1]), ['function'])
+        # A readable name always wins over the title.
+        named = _compare_branch(cls='K2Node_CallFunction', title='float > float', function='Less_DoubleDouble')
+        self.assertEqual(_failed(escalation.compare_checks(self.editor, named, 'Health', '>', 0)[1]), ['function'])
+
+    def test_title_operator(self):
+        self.assertEqual(escalation.title_operator('float > float'), '>')
+        self.assertEqual(escalation.title_operator('>='), '>=')
+        self.assertEqual(escalation.title_operator('integer == integer'), '==')
+        self.assertEqual(escalation.title_operator('Equal (Integer)'), '==')
+        self.assertEqual(escalation.title_operator('Equal (Float)'), '==')
+        self.assertEqual(escalation.title_operator('Not Equal (Integer)'), '!=')
+        self.assertEqual(escalation.title_operator('Not Equal (Float)'), '!=')
+        self.assertEqual(escalation.title_operator('integer > integer'), '>')
+        for title in ('', 'Branch', 'float > float > float', 'a b > c', '>float', None):
+            self.assertEqual(escalation.title_operator(title), '', title)
+
+    def test_numeric_literal_and_set_literal(self):
+        empty_real = _FakePin('B', 'EGPD_Input', 'Float (double-precision)', '')
+        self.assertEqual(escalation.numeric_literal(empty_real)[1], 0.0)
+        self.assertIsNone(escalation.numeric_literal(_FakePin('B', 'EGPD_Input', 'Boolean', ''))[1])
+        self.assertIsNone(escalation.numeric_literal(_FakePin('B', 'EGPD_Input', 'Float', 'x'))[1])
+        linked = _FakePin('B', 'EGPD_Input', 'Float', '0')
+        _link(_FakePin('ReturnValue', 'EGPD_Output', 'Float'), linked)
+        self.assertIsNone(escalation.numeric_literal(linked)[1])
+        self.assertIsNone(escalation.numeric_literal(_MISSING)[1])
+        for value, expected, accept in (('', 0, True), ('0.000000', 0, True), ('', 1, False), ('3', 3, True),
+                                        ('3.5', 3, False)):
+            pin = _FakePin('StateAge', 'EGPD_Input', 'Float (double-precision)', value)
+            setter = _FakeNode('K2Node_VariableSet_4', 'K2Node_VariableSet', inputs=[
+                _FakePin('execute', 'EGPD_Input', 'exec'), pin],
+                outputs=[_FakePin('then', 'EGPD_Output', 'exec')],
+                props={'variable_reference': _FakeRef(member_name='StateAge')})
+            self.assertEqual(escalation.is_set_literal(self.editor, setter, 'StateAge', expected), accept,
+                             (value, expected))
+
+    def test_literal_bool_empty_default_is_false_only_on_boolean_pins(self):
+        self.assertIs(escalation.literal_bool(_FakePin('bLooping', 'EGPD_Input', 'Boolean', '')), False)
+        self.assertIs(escalation.literal_bool(_FakePin('bLooping', 'EGPD_Input', 'Boolean', 'true')), True)
+        self.assertIs(escalation.literal_bool(_FakePin('bLooping', 'EGPD_Input', 'Boolean', 'False')), False)
+        self.assertIsNone(escalation.literal_bool(_FakePin('Rate', 'EGPD_Input', 'Float', '')))
+        self.assertIsNone(escalation.literal_bool(_FakePin('bLooping', 'EGPD_Input', 'Boolean', 'maybe')))
+        linked = _FakePin('bLooping', 'EGPD_Input', 'Boolean', '')
+        _link(_FakePin('ReturnValue', 'EGPD_Output', 'Boolean'), linked)
+        self.assertIsNone(escalation.literal_bool(linked))
+
+    def test_stage_breadcrumbs_cover_every_native_apply_step(self):
+        payload = {}
+        escalation.stage(payload, 'import clips')
+        self.assertEqual(payload['stages'], ['import clips'])
+        source = SCRIPT.read_text(encoding='utf-8')
+        for name in ('anchors', 'locks', 'import clips', 'add variables', 'mutate boss: damage ignore',
+                     'mutate boss: phase entry', 'mutate boss: state 5 tick', 'mutate boss: recovery select',
+                     'mutate boss: anticipation clips', 'compile boss (in memory)', 'mutate hud',
+                     'compile hud (in memory)', 'tag and save', 'saved'):
+            self.assertIn(f"stage(payload, '{name}')", source)
+
+    def test_receipt_carries_the_anchor_failure(self):
+        error = escalation.AnchorError('lethal', 'mismatch', dump={'id': 'n', 'pins': []},
+                                       checks=[{'check': 'branch', 'ok': False, 'found': object()}])
+        with tempfile.TemporaryDirectory() as tmp:
+            path = escalation.write_receipt(tmp, 'inspect', {'anchor_failure': error.as_receipt()},
+                                            when=datetime(2026, 10, 8, 19, 40, tzinfo=timezone.utc))
+            data = json.loads(path.read_text(encoding='utf-8'))
+        self.assertEqual(data['anchor_failure']['anchor'], 'lethal')
+        self.assertEqual(data['anchor_failure']['checks'][0]['check'], 'branch')
