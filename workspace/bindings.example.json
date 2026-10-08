@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "members": {
+    "game": ".",
+    "chamber": null,
+    "scanner": null,
+    "reference": null
+  }
+}

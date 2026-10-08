@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Workspace observation V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "module",
+    "author",
+    "title",
+    "observation",
+    "limitations",
+    "nextEvidence",
+    "expectedSnapshot"
+  ],
+  "properties": {
+    "module": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,79}$"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "observation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 5000
+    },
+    "limitations": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 5000
+    },
+    "nextEvidence": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 5000
+    },
+    "expectedSnapshot": {
+      "type": "string",
+      "pattern": "^snapshot_[a-f0-9]{16}$"
+    }
+  },
+  "$comment": "The server binds an observation to the inspected snapshot. Author is a local attribution field, not authenticated team identity."
+}

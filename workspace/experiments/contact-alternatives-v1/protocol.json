@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "contact-alternatives-v1",
+  "registeredDate": "2026-10-08",
+  "stage": "preregistered; candidates not authored",
+  "question": "Can an explicitly authored conservative contact boundary preserve the scan's distinctive visible volume and form a coherent limb selection better than the current provisional partition?",
+  "baselineArtifacts": ["source-bear", "anatomy-map", "decision-manifest"],
+  "hypotheses": [
+    {"id":"H0","meaning":"Retain the current provisional boundary; available evidence does not justify a change."},
+    {"id":"H1","meaning":"A boundary following a specifically identified source-visible contact/seam forms a more coherent limb without losing genuine belly or paw volume."},
+    {"id":"H2","meaning":"The scan cannot distinguish the boundary; a conservative authored interpretation is necessary and must remain labelled authored."}
+  ],
+  "independentVariable": "One contact's anatomical assignment map. Record exact changed full-r4 face IDs before rendering the candidate.",
+  "controls": ["Original scan and V2 input hashes", "Source vertex positions, face winding and UV correspondence", "Texture bytes", "Retained triangle inclusion mask", "Camera, origin, framing, lighting and display transform", "All unrelated anatomical assignments"],
+  "measurements": [
+    {"name":"Changed assignment area","units":"native units squared and fraction of retained V2 area","purpose":"Quantify the actual extent of the hypothesis; not confidence."},
+    {"name":"Geometry / UV preservation","units":"exact arrays and source-corner correspondence","purpose":"Reject an assignment-only candidate that silently alters shape or texture mapping."},
+    {"name":"Connectivity and attachment reach","units":"components, boundary junctions and source-space distances","purpose":"Expose disconnected shells and retained seated volume; graph regularity does not decide anatomy."},
+    {"name":"Matched visual interpretation","units":"specific face sets and supported / contradicted / unresolved observations","purpose":"Check visible belly, limb continuity, asymmetry and paw shape in texture, clay and isolation."}
+  ],
+  "requiredViews": ["front", "left", "right", "rear", "underside", "three-quarter", "contact close-up solid", "contact close-up wire"],
+  "requiredModes": ["source texture", "source clay", "baseline map", "candidate map", "opaque torso-only", "isolated proposed limb", "ghost context", "surface provenance", "assignment uncertainty"],
+  "criteria": [
+    "Reject silent changes to any controlled source quantity.",
+    "Reject removal of plausible scanned belly/limb volume merely to simplify a boundary.",
+    "Reject a proposed leg that contains only the obvious paw shell while leaving identified seated leg surfaces with the torso.",
+    "Prefer a changed boundary only when specific visible evidence supports its anatomical interpretation; save counter-evidence too.",
+    "If visible evidence is insufficient, retain unresolved status or explicitly choose an authored interpretation; do not call it measured anatomy.",
+    "Do not advance to standing or walking until the saved static interpretation has a separate visual review."
+  ],
+  "decisionChangingEvidence": "A reproducible source-visible seam/attachment interpretation that retains genuine body volume and survives matched isolation/assembly review, or new source observations of the contact.",
+  "insufficientEvidence": ["Fewer graph junctions", "Complete face coverage", "Passing format validation", "Agent agreement", "An attractive posed render", "Old bone weights or part names"],
+  "requiredOutputs": ["manifest.json", "measurements.json", "face-evidence.csv", "comparisons/", "agent-reports/ or explicit independent-review record", "decision.md", "reproduce.md"],
+  "limits": ["Physical bear-only scale UNKNOWN", "Photographic coverage of hidden contacts UNKNOWN", "No production mesh, rig or gameplay write authorized by a passing baseline check"],
+  "reviewState": "Not reviewed"
+}

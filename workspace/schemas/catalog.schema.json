@@ -1,0 +1,16 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Horror Game federation catalog V1",
+  "type":"object",
+  "required":["schemaVersion","id","title","subtitle","timezone","modules","artifacts","gates","services","runbooks"],
+  "properties":{
+    "schemaVersion":{"const":1},
+    "id":{"type":"string"},"title":{"type":"string"},"subtitle":{"type":"string"},"timezone":{"type":"string"},
+    "modules":{"type":"array","items":{"type":"object","required":["id","name","kind","member","icon","ownerRole","authority","writePolicy","dependencies","focus"],"properties":{"id":{"type":"string"},"member":{"enum":["game","chamber","scanner","reference"]},"dependencies":{"type":"array","items":{"type":"string"}}}}},
+    "artifacts":{"type":"array","items":{"type":"object","required":["id","module","member","path","title","kind","classification","scope"],"properties":{"id":{"type":"string"},"path":{"type":"string"},"kind":{"enum":["image","text","json","identity"]},"expectedSha256":{"type":"string","pattern":"^[a-f0-9]{64}$"}}}},
+    "gates":{"type":"array","items":{"type":"object","required":["id","label","status","source","scope"]}},
+    "services":{"type":"array","items":{"type":"object","required":["id","name","url","probe","runbook"]}},
+    "runbooks":{"type":"array","items":{"type":"object","required":["id","module","title","command","prerequisites","produces"]}}
+  },
+  "$comment":"Runtime checks unique IDs, known cross-references, local service destinations and bounded source paths. Some descriptive fields are intentionally extensible."
+}

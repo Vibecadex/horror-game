@@ -1,0 +1,522 @@
+{
+  "schemaVersion": 1,
+  "id": "horror-game-local",
+  "title": "Horror Game",
+  "subtitle": "Teddy Encounter \u00b7 development workspace",
+  "timezone": "Africa/Johannesburg",
+  "modules": [
+    {
+      "id": "game",
+      "name": "Game integration",
+      "kind": "repository",
+      "member": "game",
+      "icon": "game",
+      "ownerRole": "Game integrator",
+      "authority": "TeddyBlueprint/TeddyBlueprint.uproject \u00b7 /Game/Maps/TeddyEncounter",
+      "writePolicy": "Game authoring follows scoped scripts, explicit asset ownership and saved-runtime review. The hub only reads this member.",
+      "dependencies": [
+        "character",
+        "chamber"
+      ],
+      "focus": "Playable encounter, independent movement/aiming, combat and native delivery."
+    },
+    {
+      "id": "chamber",
+      "name": "Chamber environment",
+      "kind": "worktree",
+      "member": "chamber",
+      "icon": "room",
+      "ownerRole": "Environment artist / map lock holder",
+      "authority": "Separate chamber branch \u00b7 /Game/Maps/TeddyChamberParity",
+      "writePolicy": "Keep the candidate separate. Confirm current LFS ownership before any Unreal write.",
+      "dependencies": [
+        "references"
+      ],
+      "focus": "Architectural parity, fractured concrete, local teal light and haze."
+    },
+    {
+      "id": "scanner",
+      "name": "Bear Scanner",
+      "kind": "repository",
+      "member": "scanner",
+      "icon": "scan",
+      "ownerRole": "Scanner maintainer",
+      "authority": "Scanner repository and versioned bear-pack exports",
+      "writePolicy": "External member is read-only here. Existing local modifications remain owned by its maintainer.",
+      "dependencies": [],
+      "focus": "Capture, reconstruction, export provenance and scale."
+    },
+    {
+      "id": "character",
+      "name": "Character & animation",
+      "kind": "pipeline",
+      "member": "game",
+      "icon": "bear",
+      "ownerRole": "Character artist / rigging integrator",
+      "authority": "Assets/Adapted/BearAnimation \u00b7 21-joint schema",
+      "writePolicy": "Versioned diagnostic candidates only until source ownership and static identity are reviewed.",
+      "dependencies": [
+        "scanner",
+        "references"
+      ],
+      "focus": "M1 contact ownership remains unresolved. Standing and walk depend on it."
+    },
+    {
+      "id": "studio",
+      "name": "Bear Studio",
+      "kind": "service",
+      "member": "game",
+      "icon": "layers",
+      "ownerRole": "Studio integration maintainer",
+      "authority": "tools/bear_studio \u00b7 immutable saved rig revisions",
+      "writePolicy": "Open the existing Studio. The workspace does not import, rig or promote assets on its behalf.",
+      "dependencies": [
+        "scanner",
+        "character"
+      ],
+      "focus": "Inspect exact saved assets and motion before native import."
+    },
+    {
+      "id": "evidence",
+      "name": "Evidence & review",
+      "kind": "evidence",
+      "member": "game",
+      "icon": "eye",
+      "ownerRole": "Experiment owner / independent reviewer",
+      "authority": "Frozen decision packages and report manifests",
+      "writePolicy": "Evidence is read-only. Observations are separate records; technical passes do not record user acceptance.",
+      "dependencies": [
+        "game",
+        "character",
+        "chamber"
+      ],
+      "focus": "Measure, save, decide with traceable limitations."
+    },
+    {
+      "id": "references",
+      "name": "Source references",
+      "kind": "archive",
+      "member": "reference",
+      "icon": "image",
+      "ownerRole": "Reference custodian",
+      "authority": "Original video / scan sources and explicit selected concepts",
+      "writePolicy": "Originals are preserved. Concepts express direction, not measured dimensions or redistribution rights.",
+      "dependencies": [],
+      "focus": "Chamber atmosphere and the scanned teddy's identity."
+    },
+    {
+      "id": "workspace",
+      "name": "Workspace platform",
+      "kind": "platform",
+      "member": "game",
+      "icon": "network",
+      "ownerRole": "Workspace maintainer",
+      "authority": "workspace/ \u00b7 tools/federated_workspace/",
+      "writePolicy": "Owns its catalog, snapshots and local work journal. No write authority over connected members.",
+      "dependencies": [
+        "evidence"
+      ],
+      "focus": "Planning, federation, review access and durable decisions."
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "target-front",
+      "module": "references",
+      "member": "game",
+      "path": "study/visuals/chamber-target-front.png",
+      "title": "Full chamber concept",
+      "kind": "image",
+      "classification": "Reference concept",
+      "scope": "Art direction; not a runtime capture."
+    },
+    {
+      "id": "target-reverse",
+      "module": "references",
+      "member": "game",
+      "path": "study/visuals/chamber-target-reverse.png",
+      "title": "Reverse chamber concept",
+      "kind": "image",
+      "classification": "Reference concept",
+      "scope": "Opposite-wall enclosure, services and light."
+    },
+    {
+      "id": "direction-close",
+      "module": "references",
+      "member": "game",
+      "path": "study/visuals/direction-close-best.jpg",
+      "title": "Close atmosphere direction",
+      "kind": "image",
+      "classification": "Reference concept",
+      "scope": "Elevated combat framing and teal light pools."
+    },
+    {
+      "id": "source-bear-view",
+      "module": "character",
+      "member": "game",
+      "path": "evidence/scan-identity-v1/debug-views/images/source-textured__front.png",
+      "title": "Untouched seated scan",
+      "kind": "image",
+      "classification": "Source inspection",
+      "scope": "Original texture; supporting box retained; physical scale unknown."
+    },
+    {
+      "id": "source-bear",
+      "module": "character",
+      "member": "game",
+      "path": "Assets/ThirdParty/BearScannerSample/model.glb",
+      "title": "Original bundled scan GLB",
+      "kind": "identity",
+      "classification": "Source asset",
+      "expectedSha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+      "scope": "Exact source bytes. No photographic coverage or anatomy approval inferred."
+    },
+    {
+      "id": "anatomy-map",
+      "module": "character",
+      "member": "game",
+      "path": "Assets/Adapted/BearAnimation/ScanAnatomyV2/anatomy-map.npz",
+      "title": "Frozen V2 anatomical map",
+      "kind": "identity",
+      "classification": "Provisional diagnostic",
+      "expectedSha256": "6957a9ce3592ab2a3f38026cba266b1810c4a0176bc478ccf1a5197b4c404ae9",
+      "scope": "Proposed ownership, provenance and uncertainty remain separate."
+    },
+    {
+      "id": "decision-manifest",
+      "module": "evidence",
+      "member": "game",
+      "path": "evidence/scan-measurements-v1/packages/decision_7fcc48bee83ea8b9/manifest.json",
+      "title": "Measured decision package",
+      "kind": "json",
+      "classification": "Frozen evidence",
+      "expectedSha256": "5382448e1d91b837179a79d6f517dc1de96bf937d71c01c3f30086891f9d2894",
+      "scope": "Exact package identity; not anatomical approval."
+    },
+    {
+      "id": "decision-record",
+      "module": "evidence",
+      "member": "game",
+      "path": "evidence/scan-measurements-v1/packages/decision_7fcc48bee83ea8b9/decision.md",
+      "title": "Contact decisions and limitations",
+      "kind": "text",
+      "classification": "Decision record",
+      "scope": "Retain traced omission; counterfactual not adopted; contacts unresolved.",
+      "expectedSha256": "cc6fe79e2e6c52d5008f95322976f6b44c3180880a9443a98e0303fa22b24b4d"
+    },
+    {
+      "id": "identity-plan",
+      "module": "character",
+      "member": "game",
+      "path": "study/SCAN_IDENTITY_PLAN.md",
+      "title": "M1\u2013M4 character identity plan",
+      "kind": "text",
+      "classification": "Development plan",
+      "scope": "Static identity precedes deformation and native promotion."
+    },
+    {
+      "id": "measure-workflow",
+      "module": "evidence",
+      "member": "game",
+      "path": "study/MEASURE_SAVE_DECIDE.md",
+      "title": "Measure \u00b7 Save \u00b7 Decide",
+      "kind": "text",
+      "classification": "Method",
+      "scope": "Preregistered questions, measurements, criteria and independent challenges."
+    },
+    {
+      "id": "chamber-study",
+      "module": "chamber",
+      "member": "chamber",
+      "path": "study/CHAMBER_PARITY_EXPERIMENT_20261007.md",
+      "title": "Separate chamber experiment",
+      "kind": "text",
+      "classification": "Historical candidate",
+      "scope": "7 October candidate; no current visual approval inferred."
+    },
+    {
+      "id": "chamber-qa",
+      "module": "chamber",
+      "member": "chamber",
+      "path": "evidence/chamber-parity/20261007/qa.json",
+      "title": "Chamber host audit",
+      "kind": "json",
+      "classification": "Historical receipt",
+      "scope": "Recorded 26-check host audit; scope and runtime revision limits retained."
+    },
+    {
+      "id": "chamber-capture",
+      "module": "chamber",
+      "member": "chamber",
+      "path": "evidence/implementation/20261007T142109-capture_chamber_views/00-full-chamber.png",
+      "title": "Chamber candidate capture",
+      "kind": "image",
+      "classification": "Historical native capture",
+      "scope": "7 October saved candidate; not the selected reference or a fresh run."
+    },
+    {
+      "id": "scanner-guide",
+      "module": "scanner",
+      "member": "scanner",
+      "path": "README.md",
+      "title": "Scanner source guide",
+      "kind": "text",
+      "classification": "External documentation",
+      "scope": "Reference only. Its setup commands are not executed by the workspace."
+    },
+    {
+      "id": "report-manifest",
+      "module": "evidence",
+      "member": "game",
+      "path": "evidence/report-ui-v1/builds/report_c04bf9f8e670226b/manifest.json",
+      "title": "Evidence interface identity",
+      "kind": "json",
+      "classification": "Frozen UI build",
+      "expectedSha256": "6ca7c4ad26410dc0f6d65d3b1010d98e87a5389390bbc28ef4e8c8d41bd67c6a",
+      "scope": "Report c04bf9f8e670226b; source and implementation identities."
+    },
+    {
+      "id": "report-integrity",
+      "module": "evidence",
+      "member": "game",
+      "path": "evidence/report-ui-v1/qa/report_c04bf9f8e670226b/integrity.json",
+      "title": "Evidence interface verification",
+      "kind": "json",
+      "classification": "Technical receipt",
+      "scope": "Data, matched cameras, declared links and restricted serving."
+    },
+    {
+      "id": "workspace-guide",
+      "module": "workspace",
+      "member": "game",
+      "path": "workspace/README.md",
+      "title": "Workspace operating guide",
+      "kind": "text",
+      "classification": "System contract",
+      "scope": "Local federation, authority boundaries, persistence and known limits."
+    },
+    {
+      "id": "contact-protocol",
+      "module": "character",
+      "member": "game",
+      "path": "workspace/experiments/contact-alternatives-v1/protocol.json",
+      "title": "Contact alternative experiment protocol",
+      "kind": "json",
+      "classification": "Preregistered experiment",
+      "scope": "Criteria and competing hypotheses saved before candidate authoring."
+    },
+    {
+      "id": "format-receipt",
+      "module": "evidence",
+      "member": "game",
+      "path": "evidence/scan-anatomy-v2/verification.json",
+      "title": "Diagnostic format verification",
+      "kind": "json",
+      "classification": "Frozen technical receipt",
+      "expectedSha256": "5b6991080f0da3adf5305a463be61cca9d544a3cb289663315ab0c6e8f32e0cd",
+      "scope": "Saved V2 diagnostic checks; inspect the named check scope."
+    },
+    {
+      "id": "preservation-receipt",
+      "module": "evidence",
+      "member": "game",
+      "path": "evidence/scan-measurements-v1/packages/decision_7fcc48bee83ea8b9/saved-scene-readback.json",
+      "title": "Saved-scene preservation readback",
+      "kind": "json",
+      "classification": "Frozen technical receipt",
+      "expectedSha256": "0d13ea1453cde9cdeeae6bb2b09c9b1091ff2319c083601a3cbbfcf3f3e67126",
+      "scope": "Exact diagnostic mesh readback; no anatomy approval."
+    },
+    {
+      "id": "workspace-verification",
+      "module": "workspace",
+      "member": "game",
+      "path": "evidence/federated-workspace-v1/verification.json",
+      "title": "Workspace scaffold verification",
+      "kind": "json",
+      "classification": "Technical receipt",
+      "scope": "Source boundaries, persistence, tested API and browser controls. Not game acceptance."
+    },
+    {
+      "id": "contact-baseline-receipt",
+      "module": "character",
+      "member": "game",
+      "path": "evidence/federated-workspace-v1/experiments/current.json",
+      "title": "Contact experiment baseline verification",
+      "kind": "json",
+      "classification": "Experiment preparation",
+      "scope": "Exact source, map and decision-package identity; candidate authoring and anatomy remain separate."
+    },
+    {
+      "id": "agent-guide",
+      "module": "workspace",
+      "member": "game",
+      "path": "workspace/AGENT_WORKFLOW.md",
+      "title": "LLM build workflow",
+      "kind": "text",
+      "classification": "System contract",
+      "scope": "Model-neutral task packets, scope reservations and evidenced handoffs."
+    },
+    {
+      "id": "agent-verification",
+      "module": "workspace",
+      "member": "game",
+      "path": "evidence/workspace-agent-v1/verification.json",
+      "title": "Agent workflow verification",
+      "kind": "json",
+      "classification": "Technical receipt",
+      "scope": "Source identity, coordination, result ingestion and tested UI; not model performance or game acceptance."
+    }
+  ],
+  "gates": [
+    {
+      "id": "format",
+      "label": "Format validity",
+      "status": "Recorded pass",
+      "source": "format-receipt",
+      "scope": "The named saved diagnostic exports passed their format checks. No new export is created here."
+    },
+    {
+      "id": "preservation",
+      "label": "Data preservation",
+      "status": "Recorded pass",
+      "source": "preservation-receipt",
+      "scope": "Frozen diagnostic measurements retain their source identities. Runtime assets are not promoted."
+    },
+    {
+      "id": "anatomy",
+      "label": "Anatomical interpretation",
+      "status": "Unresolved",
+      "source": "decision-record",
+      "scope": "Wrist and belly/leg ownership need discriminating evidence or explicit authored alternatives."
+    },
+    {
+      "id": "acceptance",
+      "label": "Visual acceptance",
+      "status": "Not recorded",
+      "source": "identity-plan",
+      "scope": "Neither technical checks nor work-item completion establish user acceptance."
+    }
+  ],
+  "services": [
+    {
+      "id": "evidence",
+      "name": "Evidence review",
+      "url": "http://127.0.0.1:8488/",
+      "probe": "/evidence/report-ui-v1/builds/report_c04bf9f8e670226b/manifest.json",
+      "identityArtifact": "report-manifest",
+      "runbook": "review-evidence"
+    },
+    {
+      "id": "studio",
+      "name": "Bear Studio",
+      "url": "http://127.0.0.1:8472/",
+      "probe": "/api/health",
+      "identityApp": "bear-studio",
+      "runbook": "open-studio"
+    }
+  ],
+  "runbooks": [
+    {
+      "id": "workspace-check",
+      "module": "workspace",
+      "title": "Inspect the federation",
+      "command": "python tools/workspace.py check",
+      "prerequisites": [
+        "Run from the integration checkout with Python 3.11+.",
+        "Member bindings point to the intended checkouts."
+      ],
+      "produces": "Timestamped member/artifact inspection and a saved snapshot. No member writes."
+    },
+    {
+      "id": "review-evidence",
+      "module": "evidence",
+      "title": "Open evidence review",
+      "command": ".\\REVIEW_REPORTS.cmd",
+      "prerequisites": [
+        "Run from the integration checkout.",
+        "Preserve the frozen report inputs."
+      ],
+      "produces": "Hash-checked local review at port 8488."
+    },
+    {
+      "id": "open-studio",
+      "module": "studio",
+      "title": "Open Bear Studio",
+      "command": ".\\BEAR_STUDIO.cmd",
+      "prerequisites": [
+        "Check whether port 8472 already serves this integration workspace.",
+        "Use existing saved revisions; do not overwrite a baseline."
+      ],
+      "produces": "The existing saved-asset inspection and animation application."
+    },
+    {
+      "id": "play-game",
+      "module": "game",
+      "title": "Play the saved encounter",
+      "command": ".\\PLAY.cmd",
+      "prerequisites": [
+        "Run from the intended game checkout.",
+        "Close another Unreal editor/game before launching.",
+        "Installed Unreal 5.8.3 and hydrated project assets are required."
+      ],
+      "produces": "Saved TeddyEncounter. WASD move; mouse aim; left mouse fire; Space dodge; Escape pause; F5 restart."
+    },
+    {
+      "id": "play-chamber",
+      "module": "chamber",
+      "title": "Inspect the separate chamber candidate",
+      "command": ".\\PLAY_CHAMBER_PARITY.cmd",
+      "prerequisites": [
+        "Run from the bound chamber worktree, not the integration checkout.",
+        "Close another Unreal editor/game.",
+        "The candidate has not been promoted or visually accepted."
+      ],
+      "produces": "Saved TeddyChamberParity candidate. Compare it against the selected references."
+    },
+    {
+      "id": "contact-baseline",
+      "module": "character",
+      "title": "Verify the contact experiment baseline",
+      "command": "python tools/workspace.py experiment-check",
+      "prerequisites": [
+        "Run from the integration checkout.",
+        "Read the preregistered protocol before candidate authoring."
+      ],
+      "produces": "Hash-pinned input receipt and criteria; no mesh, map or animation changes."
+    },
+    {
+      "id": "unreal-ownership",
+      "module": "game",
+      "title": "Check Unreal write ownership",
+      "command": "git lfs locks --json",
+      "prerequisites": [
+        "Use the intended repository and authenticated Git remote.",
+        "A lock under the same account still requires session coordination."
+      ],
+      "produces": "Current remote lock records. This check does not acquire, release or override a lock."
+    },
+    {
+      "id": "workspace-tests",
+      "module": "workspace",
+      "title": "Verify workspace behavior",
+      "command": "python -m unittest discover -s tools/federated_workspace/tests",
+      "prerequisites": [
+        "Installed Python 3.11+.",
+        "Tests use isolated temporary state and bounded loopback ports."
+      ],
+      "produces": "Persistence, stale-write protection, dependency, source-boundary and API checks."
+    },
+    {
+      "id": "agent-next",
+      "module": "workspace",
+      "title": "Choose the next agent assignment",
+      "command": "python tools/workspace.py agent next --track game",
+      "prerequisites": [
+        "Run from the integration checkout.",
+        "Read the task contract and preserve independent member ownership."
+      ],
+      "produces": "Compact machine-readable queue with readiness and blocking reasons. No model is launched."
+    }
+  ]
+}
