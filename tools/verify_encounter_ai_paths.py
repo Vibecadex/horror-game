@@ -9,7 +9,10 @@ Worst-case game time is about 15 x (0.5 + 10 + reload) s, roughly 3-4 minutes.
 
 The creatures already chase on their own when ticked. BP_TeddyBoss's Tick
 graph (build_boss.py) yaws to the player and calls a swept
-K2_AddActorWorldOffset at Speed; BP_Stitchling inherits it with its own values.
+K2_AddActorWorldOffset at Speed. BP_Stitchling is a duplicate of the BP_TeddyBoss
+Blueprint (build_stitchlings.py duplicates it), not a child class, so it runs the
+same graph with its own values, and get_all_actors_of_class(boss_class) never
+returns a stitchling.
 There is no navmesh path and no slide: the swept move stops at the first
 blocking hit. All 9 kit props sit outside the walls and the legacy pillars have
 collision off, so the arena interior is an empty box and the only obstacles are
@@ -53,6 +56,14 @@ Checks (4 + 6 x 15 = 94):
 Expected first run: from source the occlusion stitchling stops dead, so the three
 occlusion_*_stitchlings_reach and occlusion_*_no_stuck checks (6) are likely false:
 88/94, passed=false. Listed in likely_false_until_avoidance; not waived.
+For each occlusion case the receipt records, as data only, the moved stitchling's
+min_gap_to_boss_cm (centre to centre, XY; Tech's simulation: ~173.5 = 135 + 38.5)
+and travel_before_stall_cm (furthest net XY travel from its placed spot up to the
+end of its longest stuck span; simulation: ~146.5), so a false check can be traced to the
+boss block rather than something else.
+
+The receipt is written to receipt.json.tmp and renamed over receipt.json, so a
+runner kill mid-write never leaves truncated JSON.
 
 Review: Horror Unreal Tech, 2026-10-08 (P1-P6 applied).
 """
@@ -179,9 +190,10 @@ def record_failed(name, reason, extra=None):
     case.update(extra or {})
     result['cases'].append(case)
 
-def longest_stuck(trace, in_range_flags):
-    """Longest span (s) whose points all stay within STUCK_CM of the span start, out of range."""
-    best = 0.
+def stuck_span(trace, in_range_flags):
+    """(seconds, start index, end index) of the longest span whose points all stay within
+    STUCK_CM of the span start, out of range. Indices are None when nothing ever stood still."""
+    best, start, end = 0., None, None
     for i in range(len(trace)):
         if in_range_flags[i]:
             continue
@@ -189,8 +201,12 @@ def longest_stuck(trace, in_range_flags):
         for j in range(i + 1, len(trace)):
             if in_range_flags[j] or math.dist(trace[j][1:], p0) >= STUCK_CM:
                 break
-            best = max(best, trace[j][0] - t0)
-    return round(best, 3)
+            if trace[j][0] - t0 > best:
+                best, start, end = trace[j][0] - t0, i, j
+    return round(best, 3), start, end
+
+def longest_stuck(trace, in_range_flags):
+    return stuck_span(trace, in_range_flags)[0]
 
 def run_placement(name, px, py, occlusion=None):
     yield from wait(.3)
@@ -249,6 +265,7 @@ def run_placement(name, px, py, occlusion=None):
         capsule = a.get_component_by_class(u.CapsuleComponent)
         radii[label] = capsule.get_scaled_capsule_radius() if capsule else 0.
     overlaps = []
+    min_gap_to_boss = None   # occlusion mover only: closest centre-to-centre XY gap to the boss
     last, last_sample = now(), -1.
     while True:
         yield
@@ -257,6 +274,9 @@ def run_placement(name, px, py, occlusion=None):
         t = now()
         dt, last = t - last, t
         target = xy(view()[1])
+        if occ:
+            gap = math.dist(xy(mover), xy(boss))
+            min_gap_to_boss = gap if min_gap_to_boss is None else min(min_gap_to_boss, gap)
         sample = t - last_sample >= SAMPLE_S
         if sample:
             last_sample = t
@@ -294,6 +314,20 @@ def run_placement(name, px, py, occlusion=None):
                         overlaps.append({'t': round(t, 2), 'pair': [li, lj], 'gap_cm': round(gap, 1)})
         if all(r['passed'] or r.get('timed_out') for r in rows.values()):
             break
+    if occ:
+        # Tech (optional diagnostic): show the expected false is the boss block. Data only.
+        mrow = rows[occ['stitchling']]
+        _, stuck_i, stuck_j = stuck_span(mrow['trace'], mrow['in_range'])
+        origin = mrow['start_xy']
+        occ['min_gap_to_boss_cm'] = None if min_gap_to_boss is None else round(min_gap_to_boss, 1)
+        occ['min_surface_gap_to_boss_cm'] = (None if min_gap_to_boss is None else
+                                             round(min_gap_to_boss - radii['boss'] - radii[occ['stitchling']], 1))
+        # How far it got: the furthest net XY travel from its placed spot up to the end of
+        # its longest stuck span (the span start can sit up to STUCK_CM short of the stall).
+        occ['travel_before_stall_cm'] = (None if stuck_i is None else
+                                         round(max(math.dist(origin, p[1:]) for p in mrow['trace'][:stuck_j + 1]), 1))
+        occ['stall_started_active_s'] = None if stuck_i is None else mrow['trace'][stuck_i][0]
+        occ['travel_total_cm'] = round(math.dist(origin, xy(mover)), 1)
     for row in rows.values():
         row['longest_stuck_s'] = longest_stuck(row['trace'], row['in_range'])
         row.pop('in_range')
@@ -321,6 +355,8 @@ def run():
     result['checks']['boss_attack_range_is_380'] = prop(boss, 'AttackRange') == EXPECTED['boss']['range']
     result['checks']['stitchling_speed_is_55'] = len(minions) == 3 and all(prop(a, 'Speed') == EXPECTED['stitchling']['speed'] for a in minions)
     result['checks']['stitchling_attack_range_is_190'] = len(minions) == 3 and all(prop(a, 'AttackRange') == EXPECTED['stitchling']['range'] for a in minions)
+    # Tech: don't hold the first PIE world's actors across the 15 in-PIE reloads.
+    del world, pawn, boss, minions
     failed_reloads = 0
     for name, px, py, occlusion in PLACEMENTS:
         # P6: every placement, including the first, starts 0.3 s after a fresh F5.
@@ -342,7 +378,10 @@ def write_receipt(partial):
                         and len(result['checks']) == result['expected_check_count']
                         and all(result['checks'].values()))
     result['wall_seconds'] = time.monotonic() - state['start']
-    (OUT / 'receipt.json').write_text(json.dumps(result, indent=2, default=str))
+    # Atomic: a runner kill mid-write leaves the previous receipt, never truncated JSON.
+    tmp = OUT / 'receipt.json.tmp'
+    tmp.write_text(json.dumps(result, indent=2, default=str))
+    os.replace(tmp, OUT / 'receipt.json')
 
 def finish(error=None):
     if state['done']:
