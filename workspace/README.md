@@ -1,42 +1,51 @@
-# Horror Game federated workspace
+# Horror Game workspace manifest
 
-The local development hub connects independently owned repositories, worktrees, tools, reference assets and evidence. The saved Unreal encounter remains the game implementation. This workspace owns its catalog, plans, local work records and inspection snapshots; it does not take ownership of its members' files.
+This folder is horror-game's **manifest** for the federated workspace. It describes this project to the hub. The hub itself, with its server, UI, CLI, schemas and decisions, now lives in its own repository: [lutherfourie/federated-workspace](https://github.com/lutherfourie/federated-workspace) (private). See its ADR-004, "standalone workspace, projects integrate via manifest".
 
-## Start
+The hub reads these files in place and reloads them live. It never writes to this repository.
 
-Run `WORKSPACE.cmd` from the integration checkout. It uses installed Python 3.11+ with the standard library, starts the local hub at `http://127.0.0.1:8489/`, and opens it. No installation, cloud service or engine launch is performed. `REVIEW_REPORTS.cmd` remains the separate evidence-review launcher on port 8488.
+| File | Purpose |
+|---|---|
+| `catalog.json` | Members, modules, artifacts (paths relative to this repository, optional pinned SHA-256), services and runbooks |
+| `work-items.json` | The tracked work plan: items, modules, dependencies and acceptance criteria. Existing journal records always win on reload. |
+| `agent-contracts.json` | Agent task profiles: member, read/write boundaries, artifacts, runbooks, resources and requirements |
+| `bindings.example.json` | Member ids mapped to checkout locations. `"."` is this repository. Machine-specific bindings live in the workspace, not here. |
+| `ownership.json` | Which workspace team owns each module (attribution only). Teams are defined in the workspace's `teams.json`. |
+| `AGENT_RULES.md`, `AGENT_WORKFLOW.md` | Instructions included in agent packets |
+| `experiments/` | Preregistered experiment protocols (for example `contact-alternatives-v1`) |
 
-`python tools/workspace.py check` validates the catalog, artifact identities and connected source records. `python -m unittest discover -s tools/federated_workspace/tests` verifies persistence, concurrency, federation boundaries and HTTP controls. The first launch creates ignored machine-local bindings and a SQLite work journal under `workspace/local/`. Copy `bindings.example.json` to `local/bindings.json` and set checkout locations when moving to another machine.
+## Using it
 
-## Working model
+1. Clone the workspace repository, for example to `C:\Projects\federated-workspace`.
+2. Register this checkout in that repository's gitignored `local/projects.json`:
 
-1. **Overview** shows the current game and workspace tracks, blockers and connected services.
-2. **Work board** records a work item's owner, status, rationale and evidence. Updates survive refresh/restart; concurrent stale edits are rejected. A completed work item is a workflow record, not visual approval.
-3. **Federation** exposes each member's authority, path, branch, local changes, dependencies and inspection time. Members retain separate Git histories. No automatic pull, merge, lock acquisition or cross-repository write occurs.
-4. **Assets & references** separates concept direction, scan sources, working diagnostics and runtime candidates. Inspection does not promote an asset.
-5. **Evidence & gates** connects reports to source hashes, declared scope and unresolved decisions. Existing report pages remain independently owned.
-6. **Runbooks** provide reviewed entry points with prerequisites and expected evidence. Commands are copied for deliberate execution; browser actions never execute arbitrary shell text.
-7. **Activity** records work transitions and reviewer observations. The journal and current work state can be exported together.
-8. **Agent build** prepares bounded, hash-identified assignments for a coding LLM. It exposes task scope, availability, persistent reservations and structured handoffs. Start with `python tools/workspace.py agent next --track game`, then `agent packet GAME-002`. Read [the agent workflow](AGENT_WORKFLOW.md) for reserve/check/finish/release commands and guarantees. Models are not launched automatically.
+   ```json
+   {"schemaVersion": 1, "projects": [
+     {"id": "horror-game", "name": "Horror Game", "path": "C:/Projects/to-deploy/horror-game", "manifest": "workspace"}
+   ]}
+   ```
 
-`catalog.json` is the portable module/artifact/runbook contract. `work-items.json` is the initial work plan. `schemas/` documents the interchange records. Local bindings resolve member IDs to this machine's paths. New members require a catalog entry and explicit binding; the hub does not crawl neighboring folders.
+3. From the workspace repository, run `WORKSPACE.cmd`, which serves `http://127.0.0.1:8489/`. You can also use the CLI:
 
-## Scaffold scope and implementation sequence
+   ```sh
+   python workspace.py check --project horror-game
+   python workspace.py agent next --project horror-game --track game
+   python workspace.py agent packet GAME-002 --project horror-game
+   ```
 
-- Establish the catalog, authority boundaries, adapters, persistent work journal, API, UI, startup, contracts and checks first.
-- Connect the current game/scanner/evidence records without editing their originals.
-- Register game work with acceptance criteria and dependencies. First game deliverable: a preregistered contact-alternative experiment against the frozen V2 map. Then author and review a reversible candidate before standing or walk refinement.
-- Chamber work remains a separate branch/candidate. Verify its present revision, lock ownership and baseline before resuming art changes. Its historical checks are not fresh acceptance.
-- Evolve the game and workspace through paired work items: each game experiment supplies source identities, evidence and a decision; the workspace adds only the controls needed to inspect and record them.
+   Where `AGENT_WORKFLOW.md` or a catalog runbook says `python tools/workspace.py …`, run `python workspace.py … --project horror-game` from the workspace repository instead.
 
-## Preservation and limitations
+All runtime state lives in the workspace repository under `local/horror-game/`: the SQLite work journal, local bindings, snapshots, agent packets and results, and verification and experiment receipts. An old `workspace/local/` folder here is ignored by `.gitignore` and no longer used.
 
-The hub is local single-user software. Local HTTP origin/token checks prevent unrelated webpages from posting to its API; they are not team authentication. Hosted collaboration, remote execution and multi-user permissions are future work, not deployed capabilities. No external agents are dispatched by the scaffold.
+A pinned artifact that is missing or changed in this checkout is reported as a project warning, not an error. Worktrees usually lack the large gitignored assets (the bear scan model and anatomy map, for example) and the scan-pipeline evidence packages.
 
-Remote Git synchronization and repository visibility are not inferred from local refs. Tool health is a timed observation, not perpetual availability. LFS locks and runtime tests require their own current checks. Existing report links can be unavailable if their service is stopped; the runbook remains available.
+## Changing the manifest
 
-Unknown scale, contact ownership, photographic coverage and visual acceptance remain explicit. Read-only source access is enforced by the hub's API and file allowlist; opening an IDE does not make its editors read-only.
+- Add work by appending to `work-items.json`. Don't rewrite items other people own.
+- A new module needs a catalog entry and, if a team owns it, an `ownership.json` entry.
+- A new member needs a catalog entry and a `bindings.example.json` entry. The hub never crawls neighbouring folders.
+- The contract formats are documented in the workspace repository's `schemas/` folder.
 
-Snapshots and exports include local paths and work notes. Review them before sharing. No credentials, caches, arbitrary project files or Unreal binary packages are served. The immutable evidence report and game sources are not changed by workspace updates.
+The hub is local single-user software. Its origin and token checks protect the local API; they are not team authentication. A completed work item is a workflow record, not visual approval. Snapshots and exports include local paths and work notes, so review them before sharing.
 
-See [federation decision](decisions/ADR-001-local-federation.md), [contact experiment](experiments/contact-alternatives-v1/README.md) and [contracts](schemas/README.md).
+See the [contact experiment](experiments/contact-alternatives-v1/README.md).

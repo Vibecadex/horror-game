@@ -4,7 +4,7 @@
   "profiles": {
     "workspace": {
       "member": "game",
-      "writePaths": ["workspace/", "tools/federated_workspace/", "tools/workspace.py", "tools/verify_workspace.py", "WORKSPACE.cmd", "evidence/federated-workspace-v1/", "evidence/workspace-agent-v1/"],
+      "writePaths": ["workspace/", "evidence/federated-workspace-v1/", "evidence/workspace-agent-v1/"],
       "readPaths": ["workspace/README.md", "workspace/decisions/ADR-001-local-federation.md", "tools/workspace.py"],
       "artifacts": [],
       "runbooks": ["workspace-tests", "workspace-check"],

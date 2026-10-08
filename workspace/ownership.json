@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "scope": "Proposed for horror-game workspace/ownership.json: module ownership by workspace team (attribution only).",
+  "modules": {
+    "game": "encounter",
+    "chamber": "art",
+    "references": "art",
+    "character": "art",
+    "scanner": "scan-pipeline",
+    "studio": "scan-pipeline",
+    "evidence": "qa",
+    "workspace": "workspace"
+  }
+}
