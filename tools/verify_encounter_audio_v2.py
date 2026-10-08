@@ -1,16 +1,31 @@
 """v2 of the encounter audio probe. Same capture as v1, plus a WAV analysis
-that fails on digital silence, and a restored editor sound setting.
+that fails on digital silence, the editor's background-audio switch turned on
+for the run, and both editor sound settings restored.
 
 Run only through tools/run_encounter_test.py. No asset or map saves.
 
-Why v1's probe.wav was silent (measured 2026-10-08, M1 B7):
+Why v1's probe.wav was silent (measured 2026-10-08, M1 B7; diagnosis from
+Horror Unreal Tech's review of 2026-10-08, A1-A4):
   The runner adds -NoSound unless TEDDY_TEST_AUDIO=1. With that set, the
   editor still recorded an 8-channel 48 kHz PCM file whose every sample was
   zero, while the RoomTone component reported playing and Rifle was triggered
-  into the same window. The script only checked that probe.wav existed.
-  -NoSound is handled here by failing with an explicit reason instead of
-  recording silence. The remaining cause (the offscreen editor's audio device
-  or submix capture writing zeros) is recorded, not guessed at.
+  into the same window.
+  There IS an audio device: the M1 engine.log shows WASAPI device 2
+  (SteelSeries Sonar - Gaming, 48 kHz, 8 ch) created for the PIE world. Every
+  editor PIE recording since 4 Oct peaks at 0, while the two -game runs on the
+  same device and the same UnfocusedVolumeMultiplier=1.0 override peak at
+  5402 / 5620 (about -15.5 dBFS). Likely cause: UEditorEngine::Tick keeps the
+  volume only when the editor is foreground or
+  LevelEditorMiscSettings.bAllowBackgroundAudio is set, and an offscreen
+  -unattended editor is never foreground (UnfocusedVolumeMultiplier is the
+  game path, which is why it fixes -game but not PIE).
+  This script sets bAllowBackgroundAudio=True in memory on the CDO before PIE
+  and restores it afterwards, the same way as EnableGameSound. Nothing is saved.
+
+If the capture is still silent with background audio on, the fallback is the
+proven -game capture (StartRecordingOutput -> StopRecordingOutput(WavFile), the
+run_standalone_evidence.py shape minus its asset authoring, which needs a lock
+and Tech), or a watched PLAY.cmd with B7's listener pass. Not a WASAPI loopback.
 
 Requires TEDDY_TEST_AUDIO=1; without it the script fails before PIE.
 
@@ -18,7 +33,12 @@ Checks (4):
   probe_wav_exists
   probe_not_digitally_silent     peak >= -60 dBFS and not all samples zero
   probe_has_signal_after_trigger peak in the window after the Rifle trigger
-  game_sound_setting_restored     EnableGameSound back to its pre-run value
+  game_sound_setting_restored     EnableGameSound AND bAllowBackgroundAudio back to
+                                  their pre-run values (the background-audio restore is
+                                  folded in to keep 4 checks; both are logged separately)
+
+Expected: 4/4 if the unfocused-mute diagnosis is right; 2/4 (only the two
+signal checks false) if PIE is still silent, which points to the -game fallback.
 """
 import os, sys, time, json, struct, math, traceback
 from pathlib import Path
@@ -33,9 +53,30 @@ lev = u.get_editor_subsystem(u.LevelEditorSubsystem)
 ed = u.get_editor_subsystem(u.UnrealEditorSubsystem)
 s = {'stage': 0, 'wall': time.monotonic(), 'finished': False}
 r = {'passed': False, 'checks': {}, 'asset_writes': False, 'suite': 'verify_encounter_audio_v2',
-     'method': 'v1 probe plus per-channel WAV peak/RMS, silence failure, and restored EnableGameSound.'}
+     'method': 'v1 probe plus per-channel WAV peak/RMS, silence failure, editor background audio '
+               'allowed for the run, and restored EnableGameSound and bAllowBackgroundAudio.'}
 handle = None
 SILENCE_DBFS = -60.
+MISC_SETTINGS = '/Script/UnrealEd.LevelEditorMiscSettings'
+# Python may reject the C++ name; fall back to the snake_case name.
+BG_AUDIO_NAMES = ('bAllowBackgroundAudio', 'allow_background_audio')
+
+def bg_audio_get(misc):
+    errors = []
+    for n in BG_AUDIO_NAMES:
+        try:
+            return n, misc.get_editor_property(n)
+        except Exception as e:
+            errors.append('%s: %s' % (n, e))
+    raise RuntimeError('bAllowBackgroundAudio not readable: ' + '; '.join(errors))
+
+def peak_at(values, channels, rate, offset=0):
+    if not values:
+        return None
+    i = max(range(len(values)), key=lambda k: abs(values[k]))
+    frame = (offset + i) // channels
+    return {'sample_index': offset + i, 'frame': frame, 'time_s': round(frame / rate, 4),
+            'channel': (offset + i) % channels, 'value': values[i]}
 
 def analyse_wav(path, window=None):
     data = path.read_bytes()
@@ -51,8 +92,12 @@ def analyse_wav(path, window=None):
         elif chunk == b'data':
             samples = body
         pos += 8 + size + (size & 1)
+    if fmt is None or samples is None:
+        raise ValueError('WAV has no fmt or data chunk')
     tag, channels, rate, _, _, bits = fmt
-    assert tag == 1 and bits == 16, 'expected 16-bit PCM, got tag %s bits %s' % (tag, bits)
+    if not (tag == 1 and bits == 16):
+        # A4: e.g. a float capture. Raised to the caller, which records it and fails the signal checks.
+        raise ValueError('expected 16-bit PCM, got tag %s bits %s' % (tag, bits))
     count = len(samples) // 2
     values = struct.unpack('<%dh' % count, samples)
     frames = count // channels
@@ -64,25 +109,40 @@ def analyse_wav(path, window=None):
         per_channel.append({'channel': c,
                             'peak_dbfs': round(20 * math.log10(peak + 1e-12), 2),
                             'rms_dbfs': round(20 * math.log10(rms + 1e-12), 2)})
-    window_peak = None
+    window_peak = window_peak_at = None
     if window:
         a, b = int(window[0] * rate) * channels, int(window[1] * rate) * channels
         part = values[a:b]
         window_peak = round(20 * math.log10((max(abs(v) for v in part) / 32768. if part else 0) + 1e-12), 2)
+        window_peak_at = peak_at(part, channels, rate, a)
     return {'format': 'PCM', 'channels': channels, 'sample_rate': rate, 'bits': bits,
             'duration_s': round(frames / rate, 3), 'all_samples_zero': all(v == 0 for v in values),
             'trigger_window_s': window, 'trigger_window_peak_dbfs': window_peak,
+            'trigger_window_peak_at': window_peak_at, 'peak_at': peak_at(values, channels, rate),
             'channels_detail': per_channel,
             'peak_dbfs': max(c['peak_dbfs'] for c in per_channel),
             'rms_dbfs': max(c['rms_dbfs'] for c in per_channel)}
 
 def restore():
     if 'original_game_sound' in s and not s.get('restored'):
+        s['restored'] = True
+        bg_ok = True
+        if 'original_bg_audio' in s:
+            try:
+                misc = u.get_default_object(u.load_class(None, MISC_SETTINGS))
+                misc.set_editor_property(s['bg_audio_name'], s['original_bg_audio'])
+                r['bg_audio_after'] = misc.get_editor_property(s['bg_audio_name'])
+                bg_ok = r['bg_audio_after'] == s['original_bg_audio']
+            except Exception:
+                r['bg_audio_restore_error'] = traceback.format_exc()
+                bg_ok = False
         settings = u.get_default_object(u.load_class(None, '/Script/UnrealEd.LevelEditorPlaySettings'))
         settings.set_editor_property('EnableGameSound', s['original_game_sound'])
         r['game_sound_after'] = settings.get_editor_property('EnableGameSound')
-        r['checks']['game_sound_setting_restored'] = r['game_sound_after'] == s['original_game_sound']
-        s['restored'] = True
+        r['restore_detail'] = {'game_sound_restored': r['game_sound_after'] == s['original_game_sound'],
+                               'bg_audio_restored': bg_ok,
+                               'bg_audio_changed': 'original_bg_audio' in s}
+        r['checks']['game_sound_setting_restored'] = r['restore_detail']['game_sound_restored'] and bg_ok
 
 def finish(error=None):
     if s['finished']:
@@ -116,6 +176,10 @@ def tick(dt):
                 r['sounds'].append({'name': name, 'duration': obj.duration})
             settings = u.get_default_object(u.load_class(None, '/Script/UnrealEd.LevelEditorPlaySettings'))
             r['game_sound_enabled'] = settings.get_editor_property('EnableGameSound')
+            try:
+                r['bg_audio_during_pie'] = bg_audio_get(u.get_default_object(u.load_class(None, MISC_SETTINGS)))[1]
+            except Exception as e:
+                r['bg_audio_during_pie'] = 'unreadable: %s' % e
             u.AudioMixerLibrary.start_recording_output(w, 10)
             s['stage'] = 1
             s['t'] = game
@@ -128,19 +192,28 @@ def tick(dt):
             s['stage'] = 3
         elif s['stage'] == 3 and (OUT / 'probe.wav').exists():
             r['checks']['probe_wav_exists'] = True
-            # TODO(Tech): confirm recording t=0 aligns with start_recording_output; the
-            # window is widened to 0.6 s to absorb device latency.
+            # Unverified (Tech A4): recording t=0 = start_recording_output. The 0.6 s window
+            # around a 0.19 s Rifle at 0.25 s is generous; peak offsets are logged to check it.
             start = s.get('trigger_at_s', .25)
-            analysis = analyse_wav(OUT / 'probe.wav', (start, start + .6))
+            try:
+                analysis = analyse_wav(OUT / 'probe.wav', (start, start + .6))
+            except Exception:
+                r['probe_error'] = traceback.format_exc()
+                r['checks']['probe_not_digitally_silent'] = False
+                r['checks']['probe_has_signal_after_trigger'] = False
+                finish()
+                return
             r['probe'] = analysis
             r['checks']['probe_not_digitally_silent'] = (not analysis['all_samples_zero']
                                                          and analysis['peak_dbfs'] >= SILENCE_DBFS)
             r['checks']['probe_has_signal_after_trigger'] = (analysis['trigger_window_peak_dbfs'] is not None
                                                              and analysis['trigger_window_peak_dbfs'] >= SILENCE_DBFS)
             if not r['checks']['probe_not_digitally_silent']:
-                r['silence_cause'] = ('probe.wav decoded but is silent without -NoSound. The offscreen editor '
-                                      'likely has no active audio device, or AudioMixerLibrary recording captured '
-                                      'a submix that PIE never feeds. Not asserted beyond the measurement.')
+                r['silence_cause'] = ('probe.wav decoded but is silent without -NoSound. The audio device exists '
+                                      '(M1 log: WASAPI device 2 for the PIE world). Likely cause: editor PIE is muted '
+                                      'while unfocused. bAllowBackgroundAudio during PIE was %r; if it was True and '
+                                      'this is still silent, use the -game StartRecordingOutput capture instead.'
+                                      % (r.get('bg_audio_during_pie'),))
             finish()
         if time.monotonic() - s['wall'] > 50:
             finish('timeout')
@@ -161,6 +234,17 @@ try:
     s['original_game_sound'] = settings.get_editor_property('EnableGameSound')
     r['game_sound_before'] = s['original_game_sound']
     settings.set_editor_property('EnableGameSound', True)
+    # A2: let the unfocused offscreen editor keep its volume. In memory on the CDO, not saved;
+    # restored in finish(). If it cannot be set the run continues and records why.
+    try:
+        misc = u.get_default_object(u.load_class(None, MISC_SETTINGS))
+        s['bg_audio_name'], s['original_bg_audio'] = bg_audio_get(misc)
+        r['bg_audio_before'] = s['original_bg_audio']
+        r['bg_audio_property_name'] = s['bg_audio_name']
+        misc.set_editor_property(s['bg_audio_name'], True)
+        r['bg_audio_set'] = misc.get_editor_property(s['bg_audio_name'])
+    except Exception:
+        r['bg_audio_error'] = traceback.format_exc()
     lev.editor_request_begin_play()
     handle = u.register_slate_post_tick_callback(tick)
 except Exception:
