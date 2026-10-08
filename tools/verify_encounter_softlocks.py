@@ -13,8 +13,11 @@ recover after the reload:
 BP_CombatCamera frames the player/boss midpoint, not the player (Tech, from
 fix_encounter_camera.py), so a +100 cm walk moves its target about +57 cm and
 the actor about 35-50 cm: the 10 cm threshold holds when measured this way.
-Each wait also has a wall-clock cap, so a reload that comes back paused fails
-the case instead of hanging the matrix.
+Each wait also has a wall-clock cap (4 s past the requested game time), so a
+reload that stalls fails the case instead of hanging the matrix; a paused world
+fails the wait at once. The startup wait(1) alone gets a 60 s cap, because the
+first PIE game second costs ~5 s wall on a cold worktree (receipt field
+startup_wall_s_for_1_game_s).
 
 Recovery checks (11, expected true):
    1 idle_f5                      F5 from an idle start
@@ -62,6 +65,8 @@ editor = u.get_editor_subsystem(u.UnrealEditorSubsystem)
 VIEW_TARGET_S = 1.      # BP_CombatCamera becomes the view target after Delay .2
 CAMERA_SETTLE_S = .4    # keep holding Move after the 100 cm walk; VInterpTo speed 5 lags
 WALL_CAP_S = 4.         # wall-clock cap on game-time waits, so a paused world cannot hang a case
+STARTUP_WALL_CAP_S = 60. # first PIE game second costs ~4-5 s wall on a cold worktree (DDC/asset compile);
+                         # ai_paths 20261008: 4.81 s from PIE start to its first F5 after wait(1)
 # Loaded inside the try at the bottom (S6), so a load failure still writes a receipt.
 boss_class = minion_class = camera_class = None
 actions = {}
@@ -139,16 +144,21 @@ def freeze(boss=True, minions=True):
         if (is_boss and boss) or (not is_boss and minions):
             a.set_actor_tick_enabled(False)
 
-def wait(seconds):
+def wait(seconds, wall_cap=WALL_CAP_S):
     yield from wait_view()
     start = now()
     wall = time.monotonic()
     while True:
-        t = now()
+        v = view()
+        t = u.GameplayStatics.get_time_seconds(v[0]) if v else None
         if t is not None and t - start >= seconds:
             return
-        if time.monotonic() - wall > seconds + WALL_CAP_S:
-            raise RuntimeError('wait(%s): game time stalled (paused or no world)' % seconds)
+        if v and u.GameplayStatics.is_game_paused(v[0]):
+            raise RuntimeError('wait(%s): world is paused' % seconds)
+        if time.monotonic() - wall > seconds + wall_cap:
+            raise RuntimeError('wait(%s): game time advanced %s s in %.1f s wall (world %s)' % (
+                seconds, None if t is None else round(t - start, 3), time.monotonic() - wall,
+                'present' if v else 'missing'))
         yield
 
 def until_paused(want, limit=1.):
@@ -270,7 +280,9 @@ def kill(actor, causer):
 
 def run():
     yield from wait_view(60.)
-    yield from wait(1)
+    warm = time.monotonic()
+    yield from wait(1, wall_cap=STARTUP_WALL_CAP_S)
+    result['startup_wall_s_for_1_game_s'] = round(time.monotonic() - warm, 3)
     freeze()
 
     # 1 idle
