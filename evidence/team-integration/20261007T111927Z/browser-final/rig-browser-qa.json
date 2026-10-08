@@ -1,0 +1,752 @@
+{
+  "date": "2026-10-07T11:37:43.285Z",
+  "threeRevision": "170",
+  "checks": [
+    {
+      "name": "Actual skinned mesh at crop 0",
+      "passed": true,
+      "detail": "Real Bone/Skeleton with 16 joints"
+    },
+    {
+      "name": "Draft structure and deformation at crop 0",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Corrupt weights detected at crop 0",
+      "passed": true,
+      "detail": "Intentionally changed one influence; restored afterward"
+    },
+    {
+      "name": "Nonfinite weights fail cleanly",
+      "passed": true,
+      "detail": "No validator crash or false pass"
+    },
+    {
+      "name": "Invalid joint indices fail cleanly",
+      "passed": true,
+      "detail": "No validator crash or false pass"
+    },
+    {
+      "name": "Hidden viewport state still exports complete rig",
+      "passed": true,
+      "detail": "Export includes the owned rig while source view is shown"
+    },
+    {
+      "name": "Exported skin reloads and deforms at crop 0",
+      "passed": true,
+      "detail": {
+        "vertexCount": 5091,
+        "triangleCount": 8000,
+        "sourceTriangleCount": 8000,
+        "removedTriangles": 0,
+        "heightM": 0.09697791207018851,
+        "bounds": {
+          "min": [
+            -0.03900405764579773,
+            0,
+            -0.027962621301412582
+          ],
+          "max": [
+            0.03900405764579773,
+            0.09697791207018851,
+            0.027962621301412582
+          ],
+          "size": [
+            0.07800811529159546,
+            0.09697791207018851,
+            0.055925242602825165
+          ]
+        },
+        "sourceBounds": {
+          "min": [
+            -0.03900405764579773,
+            0,
+            -0.027962621301412582
+          ],
+          "max": [
+            0.03900405764579773,
+            0.09697791188955307,
+            0.027962621301412582
+          ],
+          "size": [
+            0.07800811529159546,
+            0.09697791188955307,
+            0.055925242602825165
+          ]
+        },
+        "cropYSourceM": 0,
+        "retainedBaseSourceM": 0,
+        "boneCount": 16,
+        "weightedVertices": 5091,
+        "maxWeightError": 4.470348358154297e-8,
+        "maxRestErrorM": 3.1462047267622223e-9,
+        "nonRootMovedVertices": 3608,
+        "maxDeformationM": 0.008719039385128545,
+        "sampledPositions": 3275,
+        "minimumSampledY": 0.000031921419576974586,
+        "exportBytes": 1965100
+      }
+    },
+    {
+      "name": "Weight visualization not baked into export",
+      "passed": true,
+      "detail": "Temporary weight colours stripped from delivered GLB"
+    },
+    {
+      "name": "Changed landmarks require rebind",
+      "passed": true,
+      "detail": "Stale recipe export refused"
+    },
+    {
+      "name": "Actual skinned mesh at crop 0.52",
+      "passed": true,
+      "detail": "Real Bone/Skeleton with 16 joints"
+    },
+    {
+      "name": "Draft structure and deformation at crop 0.52",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Corrupt weights detected at crop 0.52",
+      "passed": true,
+      "detail": "Intentionally changed one influence; restored afterward"
+    },
+    {
+      "name": "Nonfinite weights fail cleanly",
+      "passed": true,
+      "detail": "No validator crash or false pass"
+    },
+    {
+      "name": "Invalid joint indices fail cleanly",
+      "passed": true,
+      "detail": "No validator crash or false pass"
+    },
+    {
+      "name": "Hidden viewport state still exports complete rig",
+      "passed": true,
+      "detail": "Export includes the owned rig while source view is shown"
+    },
+    {
+      "name": "Exported skin reloads and deforms at crop 0.52",
+      "passed": true,
+      "detail": {
+        "vertexCount": 3350,
+        "triangleCount": 5160,
+        "sourceTriangleCount": 8000,
+        "removedTriangles": 2840,
+        "heightM": 0.046548806217589986,
+        "bounds": {
+          "min": [
+            -0.03688528871194385,
+            0,
+            -0.027005321472724608
+          ],
+          "max": [
+            0.03885926736681561,
+            0.046548806217589986,
+            0.02762744016945362
+          ],
+          "size": [
+            0.07574455607875946,
+            0.046548806217589986,
+            0.05463276164217823
+          ]
+        },
+        "sourceBounds": {
+          "min": [
+            -0.03900405764579773,
+            0,
+            -0.027962621301412582
+          ],
+          "max": [
+            0.03900405764579773,
+            0.09697791188955307,
+            0.027962621301412582
+          ],
+          "size": [
+            0.07800811529159546,
+            0.09697791188955307,
+            0.055925242602825165
+          ]
+        },
+        "cropYSourceM": 0.0504285141825676,
+        "retainedBaseSourceM": 0.05042910575866699,
+        "boneCount": 16,
+        "weightedVertices": 3350,
+        "maxWeightError": 4.470348358154297e-8,
+        "maxRestErrorM": 1.5951667692925708e-9,
+        "nonRootMovedVertices": 3350,
+        "maxDeformationM": 0.008648871679455987,
+        "sampledPositions": 3225,
+        "minimumSampledY": -0.0035210401005267714,
+        "exportBytes": 1850884
+      }
+    },
+    {
+      "name": "Weight visualization not baked into export",
+      "passed": true,
+      "detail": "Temporary weight colours stripped from delivered GLB"
+    },
+    {
+      "name": "Changed landmarks require rebind",
+      "passed": true,
+      "detail": "Stale recipe export refused"
+    },
+    {
+      "name": "Official animation pack hash and inventory",
+      "passed": true,
+      "detail": {
+        "title": "Quaternius Universal Animation Library — Standard",
+        "author": "Quaternius",
+        "license": "CC0-1.0",
+        "url": "https://quaternius.com/packs/universalanimationlibrary.html",
+        "edition": "Standard free v3 June 2026; no-root-motion GLB",
+        "sha256": "69591853d817488edaa8fd9bf8fc1d821eaeaf789f8627b3cd23b41c4ed67997"
+      }
+    },
+    {
+      "name": "Imported motion actually deforms: Sitting_Idle_Loop",
+      "passed": true,
+      "detail": {
+        "movedSamples": 312,
+        "peakMetres": 0.0007141533317930904,
+        "sourceClip": "Sitting_Idle_Loop",
+        "derivedClip": "UAL · Sitting_Idle_Loop",
+        "mappedBones": 15,
+        "frameCount": 51,
+        "changedSamples": 392,
+        "peakDegrees": 3.384964339604834,
+        "status": "draft",
+        "warning": "Humanoid motion transferred onto a teddy draft. Its first pose is removed to retain the bear’s rest pose. No root travel, foot planting, collision or anatomical fit is certified."
+      }
+    },
+    {
+      "name": "Imported motion actually deforms: Hit_Chest",
+      "passed": true,
+      "detail": {
+        "movedSamples": 315,
+        "peakMetres": 0.00954833330197486,
+        "sourceClip": "Hit_Chest",
+        "derivedClip": "UAL · Hit_Chest",
+        "mappedBones": 15,
+        "frameCount": 12,
+        "changedSamples": 139,
+        "peakDegrees": 12.411066948044002,
+        "status": "draft",
+        "warning": "Humanoid motion transferred onto a teddy draft. Its first pose is removed to retain the bear’s rest pose. No root travel, foot planting, collision or anatomical fit is certified."
+      }
+    },
+    {
+      "name": "Imported motion actually deforms: Walk_Loop",
+      "passed": true,
+      "detail": {
+        "movedSamples": 315,
+        "peakMetres": 0.012565947540942918,
+        "sourceClip": "Walk_Loop",
+        "derivedClip": "UAL · Walk_Loop",
+        "mappedBones": 15,
+        "frameCount": 42,
+        "changedSamples": 600,
+        "peakDegrees": 45.50000000000001,
+        "status": "draft",
+        "warning": "Humanoid motion transferred onto a teddy draft. Its first pose is removed to retain the bear’s rest pose. No root travel, foot planting, collision or anatomical fit is certified."
+      }
+    },
+    {
+      "name": "Online motions and provenance survive export/reload",
+      "passed": true,
+      "detail": {
+        "clips": [
+          "Rest",
+          "Breathing",
+          "Arm range",
+          "Head turn",
+          "Leg deformation",
+          "UAL · Sitting_Idle_Loop",
+          "UAL · Hit_Chest",
+          "UAL · Walk_Loop"
+        ],
+        "sourceCount": 3
+      }
+    },
+    {
+      "name": "Original geometry and materials unchanged",
+      "passed": true,
+      "detail": "All source position values and skin/material references preserved"
+    }
+  ],
+  "cases": [
+    {
+      "crop": 0,
+      "sha256": "aecee8b38f60b0785f9a8746af654a6d30116fb9b364efbb2201ef0b7a505345",
+      "bytes": 1965100,
+      "validation": {
+        "schemaVersion": 1,
+        "kind": "rig-glb-roundtrip",
+        "passed": true,
+        "status": "passed",
+        "review": "pending",
+        "checks": [
+          {
+            "id": "finite_geometry",
+            "label": "Finite geometry and skeleton",
+            "status": "pass",
+            "detail": "0 non-finite vertices; skeleton transforms inspected."
+          },
+          {
+            "id": "joint_indices",
+            "label": "Valid joint references",
+            "status": "pass",
+            "detail": "0 invalid joint indices.",
+            "value": 0
+          },
+          {
+            "id": "weights",
+            "label": "Normalized four-influence weights",
+            "status": "pass",
+            "detail": "Maximum sum error 4.47e-8.",
+            "value": 4.470348358154297e-8
+          },
+          {
+            "id": "bone_lengths",
+            "label": "Nonzero authored bone lengths",
+            "status": "pass",
+            "detail": "16 authored segments and 16 saved joints inspected."
+          },
+          {
+            "id": "rest_pose",
+            "label": "Rest pose reconstructs the mesh",
+            "status": "pass",
+            "detail": "Maximum rest error 3.15e-9 m.",
+            "value": 3.1462047267622223e-9
+          },
+          {
+            "id": "non_root_deformation",
+            "label": "A non-root joint deforms actual vertices",
+            "status": "pass",
+            "detail": "3608 vertices moved; max 0.008719 m. Whole-object motion is excluded.",
+            "value": 3608
+          },
+          {
+            "id": "clips_present",
+            "label": "Saved skeletal test clips",
+            "status": "pass",
+            "detail": "5 clips.",
+            "value": 5
+          },
+          {
+            "id": "finite_playback",
+            "label": "Finite sampled animation deformation",
+            "status": "pass",
+            "detail": "3275 sampled vertex positions; 0 invalid.",
+            "value": 3275
+          },
+          {
+            "id": "visual_review",
+            "label": "Deformation and contact need visual review",
+            "status": "warn",
+            "detail": "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear."
+          },
+          {
+            "id": "glb_roundtrip",
+            "label": "Exported GLB reloads with skin and clips",
+            "status": "pass",
+            "detail": "16 joints, 5091 vertices, 5 clips; reloaded deformation tested."
+          }
+        ],
+        "metrics": {
+          "vertexCount": 5091,
+          "triangleCount": 8000,
+          "sourceTriangleCount": 8000,
+          "removedTriangles": 0,
+          "heightM": 0.09697791207018851,
+          "bounds": {
+            "min": [
+              -0.03900405764579773,
+              0,
+              -0.027962621301412582
+            ],
+            "max": [
+              0.03900405764579773,
+              0.09697791207018851,
+              0.027962621301412582
+            ],
+            "size": [
+              0.07800811529159546,
+              0.09697791207018851,
+              0.055925242602825165
+            ]
+          },
+          "sourceBounds": {
+            "min": [
+              -0.03900405764579773,
+              0,
+              -0.027962621301412582
+            ],
+            "max": [
+              0.03900405764579773,
+              0.09697791188955307,
+              0.027962621301412582
+            ],
+            "size": [
+              0.07800811529159546,
+              0.09697791188955307,
+              0.055925242602825165
+            ]
+          },
+          "cropYSourceM": 0,
+          "retainedBaseSourceM": 0,
+          "boneCount": 16,
+          "weightedVertices": 5091,
+          "maxWeightError": 4.470348358154297e-8,
+          "maxRestErrorM": 3.1462047267622223e-9,
+          "nonRootMovedVertices": 3608,
+          "maxDeformationM": 0.008719039385128545,
+          "sampledPositions": 3275,
+          "minimumSampledY": 0.000031921419576974586,
+          "exportBytes": 1965100
+        },
+        "warnings": [
+          "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear.",
+          "Seated / support preset: landmarks are suggestions. Leg deformation is not a walking or planted-foot test."
+        ]
+      }
+    },
+    {
+      "crop": 0.52,
+      "sha256": "6fc34421cee5665e176bea5b56635388adf31537faad9b1812b64032a6b13974",
+      "bytes": 1850884,
+      "validation": {
+        "schemaVersion": 1,
+        "kind": "rig-glb-roundtrip",
+        "passed": true,
+        "status": "passed",
+        "review": "pending",
+        "checks": [
+          {
+            "id": "finite_geometry",
+            "label": "Finite geometry and skeleton",
+            "status": "pass",
+            "detail": "0 non-finite vertices; skeleton transforms inspected."
+          },
+          {
+            "id": "joint_indices",
+            "label": "Valid joint references",
+            "status": "pass",
+            "detail": "0 invalid joint indices.",
+            "value": 0
+          },
+          {
+            "id": "weights",
+            "label": "Normalized four-influence weights",
+            "status": "pass",
+            "detail": "Maximum sum error 4.47e-8.",
+            "value": 4.470348358154297e-8
+          },
+          {
+            "id": "bone_lengths",
+            "label": "Nonzero authored bone lengths",
+            "status": "pass",
+            "detail": "16 authored segments and 16 saved joints inspected."
+          },
+          {
+            "id": "rest_pose",
+            "label": "Rest pose reconstructs the mesh",
+            "status": "pass",
+            "detail": "Maximum rest error 1.60e-9 m.",
+            "value": 1.5951667692925708e-9
+          },
+          {
+            "id": "non_root_deformation",
+            "label": "A non-root joint deforms actual vertices",
+            "status": "pass",
+            "detail": "3350 vertices moved; max 0.008649 m. Whole-object motion is excluded.",
+            "value": 3350
+          },
+          {
+            "id": "clips_present",
+            "label": "Saved skeletal test clips",
+            "status": "pass",
+            "detail": "5 clips.",
+            "value": 5
+          },
+          {
+            "id": "finite_playback",
+            "label": "Finite sampled animation deformation",
+            "status": "pass",
+            "detail": "3225 sampled vertex positions; 0 invalid.",
+            "value": 3225
+          },
+          {
+            "id": "visual_review",
+            "label": "Deformation and contact need visual review",
+            "status": "warn",
+            "detail": "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear."
+          },
+          {
+            "id": "floor_contact",
+            "label": "Some test poses cross the ground",
+            "status": "warn",
+            "detail": "Lowest sampled vertex -0.0035 m; this is not a planted-foot locomotion rig."
+          },
+          {
+            "id": "crop_surface",
+            "label": "Cropped underside needs inspection",
+            "status": "warn",
+            "detail": "Coarse crop removes whole triangles below the plane. It can cut feet and leave an open, uneven bottom; it does not reconstruct hidden surfaces."
+          },
+          {
+            "id": "glb_roundtrip",
+            "label": "Exported GLB reloads with skin and clips",
+            "status": "pass",
+            "detail": "16 joints, 3350 vertices, 5 clips; reloaded deformation tested."
+          }
+        ],
+        "metrics": {
+          "vertexCount": 3350,
+          "triangleCount": 5160,
+          "sourceTriangleCount": 8000,
+          "removedTriangles": 2840,
+          "heightM": 0.046548806217589986,
+          "bounds": {
+            "min": [
+              -0.03688528871194385,
+              0,
+              -0.027005321472724608
+            ],
+            "max": [
+              0.03885926736681561,
+              0.046548806217589986,
+              0.02762744016945362
+            ],
+            "size": [
+              0.07574455607875946,
+              0.046548806217589986,
+              0.05463276164217823
+            ]
+          },
+          "sourceBounds": {
+            "min": [
+              -0.03900405764579773,
+              0,
+              -0.027962621301412582
+            ],
+            "max": [
+              0.03900405764579773,
+              0.09697791188955307,
+              0.027962621301412582
+            ],
+            "size": [
+              0.07800811529159546,
+              0.09697791188955307,
+              0.055925242602825165
+            ]
+          },
+          "cropYSourceM": 0.0504285141825676,
+          "retainedBaseSourceM": 0.05042910575866699,
+          "boneCount": 16,
+          "weightedVertices": 3350,
+          "maxWeightError": 4.470348358154297e-8,
+          "maxRestErrorM": 1.5951667692925708e-9,
+          "nonRootMovedVertices": 3350,
+          "maxDeformationM": 0.008648871679455987,
+          "sampledPositions": 3225,
+          "minimumSampledY": -0.0035210401005267714,
+          "exportBytes": 1850884
+        },
+        "warnings": [
+          "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear.",
+          "Coarse crop removes whole triangles below the plane. It can cut feet and leave an open, uneven bottom; it does not reconstruct hidden surfaces.",
+          "The source collision hull is stale after cropping; no replacement collision has been generated.",
+          "Seated / support preset: landmarks are suggestions. Leg deformation is not a walking or planted-foot test."
+        ]
+      }
+    }
+  ],
+  "passed": true,
+  "source": {
+    "id": "bear_227a6f689a274d16",
+    "sha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+    "revision": 1
+  },
+  "motion": [
+    {
+      "sourceClip": "Sitting_Idle_Loop",
+      "derivedClip": "UAL · Sitting_Idle_Loop",
+      "mappedBones": 15,
+      "frameCount": 51,
+      "changedSamples": 392,
+      "peakDegrees": 3.384964339604834,
+      "status": "draft",
+      "warning": "Humanoid motion transferred onto a teddy draft. Its first pose is removed to retain the bear’s rest pose. No root travel, foot planting, collision or anatomical fit is certified."
+    },
+    {
+      "sourceClip": "Hit_Chest",
+      "derivedClip": "UAL · Hit_Chest",
+      "mappedBones": 15,
+      "frameCount": 12,
+      "changedSamples": 139,
+      "peakDegrees": 12.411066948044002,
+      "status": "draft",
+      "warning": "Humanoid motion transferred onto a teddy draft. Its first pose is removed to retain the bear’s rest pose. No root travel, foot planting, collision or anatomical fit is certified."
+    },
+    {
+      "sourceClip": "Walk_Loop",
+      "derivedClip": "UAL · Walk_Loop",
+      "mappedBones": 15,
+      "frameCount": 42,
+      "changedSamples": 600,
+      "peakDegrees": 45.50000000000001,
+      "status": "draft",
+      "warning": "Humanoid motion transferred onto a teddy draft. Its first pose is removed to retain the bear’s rest pose. No root travel, foot planting, collision or anatomical fit is certified."
+    }
+  ],
+  "motionValidation": {
+    "schemaVersion": 1,
+    "kind": "rig-glb-roundtrip",
+    "passed": true,
+    "status": "passed",
+    "review": "pending",
+    "checks": [
+      {
+        "id": "finite_geometry",
+        "label": "Finite geometry and skeleton",
+        "status": "pass",
+        "detail": "0 non-finite vertices; skeleton transforms inspected."
+      },
+      {
+        "id": "joint_indices",
+        "label": "Valid joint references",
+        "status": "pass",
+        "detail": "0 invalid joint indices.",
+        "value": 0
+      },
+      {
+        "id": "weights",
+        "label": "Normalized four-influence weights",
+        "status": "pass",
+        "detail": "Maximum sum error 4.47e-8.",
+        "value": 4.470348358154297e-8
+      },
+      {
+        "id": "bone_lengths",
+        "label": "Nonzero authored bone lengths",
+        "status": "pass",
+        "detail": "16 authored segments and 16 saved joints inspected."
+      },
+      {
+        "id": "rest_pose",
+        "label": "Rest pose reconstructs the mesh",
+        "status": "pass",
+        "detail": "Maximum rest error 1.60e-9 m.",
+        "value": 1.5951667692925708e-9
+      },
+      {
+        "id": "non_root_deformation",
+        "label": "A non-root joint deforms actual vertices",
+        "status": "pass",
+        "detail": "3350 vertices moved; max 0.008649 m. Whole-object motion is excluded.",
+        "value": 3350
+      },
+      {
+        "id": "clips_present",
+        "label": "Saved skeletal test clips",
+        "status": "pass",
+        "detail": "8 clips.",
+        "value": 8
+      },
+      {
+        "id": "finite_playback",
+        "label": "Finite sampled animation deformation",
+        "status": "pass",
+        "detail": "5160 sampled vertex positions; 0 invalid.",
+        "value": 5160
+      },
+      {
+        "id": "visual_review",
+        "label": "Deformation and contact need visual review",
+        "status": "warn",
+        "detail": "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear."
+      },
+      {
+        "id": "floor_contact",
+        "label": "Some test poses cross the ground",
+        "status": "warn",
+        "detail": "Lowest sampled vertex -0.0099 m; this is not a planted-foot locomotion rig."
+      },
+      {
+        "id": "crop_surface",
+        "label": "Cropped underside needs inspection",
+        "status": "warn",
+        "detail": "Coarse crop removes whole triangles below the plane. It can cut feet and leave an open, uneven bottom; it does not reconstruct hidden surfaces."
+      },
+      {
+        "id": "glb_roundtrip",
+        "label": "Exported GLB reloads with skin and clips",
+        "status": "pass",
+        "detail": "16 joints, 3350 vertices, 8 clips; reloaded deformation tested."
+      }
+    ],
+    "metrics": {
+      "vertexCount": 3350,
+      "triangleCount": 5160,
+      "sourceTriangleCount": 8000,
+      "removedTriangles": 2840,
+      "heightM": 0.046548806217589986,
+      "bounds": {
+        "min": [
+          -0.03688528871194385,
+          0,
+          -0.027005321472724608
+        ],
+        "max": [
+          0.03885926736681561,
+          0.046548806217589986,
+          0.02762744016945362
+        ],
+        "size": [
+          0.07574455607875946,
+          0.046548806217589986,
+          0.05463276164217823
+        ]
+      },
+      "sourceBounds": {
+        "min": [
+          -0.03900405764579773,
+          0,
+          -0.027962621301412582
+        ],
+        "max": [
+          0.03900405764579773,
+          0.09697791188955307,
+          0.027962621301412582
+        ],
+        "size": [
+          0.07800811529159546,
+          0.09697791188955307,
+          0.055925242602825165
+        ]
+      },
+      "cropYSourceM": 0.0504285141825676,
+      "retainedBaseSourceM": 0.05042910575866699,
+      "boneCount": 16,
+      "weightedVertices": 3350,
+      "maxWeightError": 4.470348358154297e-8,
+      "maxRestErrorM": 1.5951667692925708e-9,
+      "nonRootMovedVertices": 3350,
+      "maxDeformationM": 0.008648871679455987,
+      "sampledPositions": 5160,
+      "minimumSampledY": -0.009869617659140606,
+      "exportBytes": 1914408
+    },
+    "warnings": [
+      "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear.",
+      "Coarse crop removes whole triangles below the plane. It can cut feet and leave an open, uneven bottom; it does not reconstruct hidden surfaces.",
+      "The source collision hull is stale after cropping; no replacement collision has been generated.",
+      "Seated / support preset: landmarks are suggestions. Leg deformation is not a walking or planted-foot test.",
+      "Humanoid motion transferred onto a teddy draft. Its first pose is removed to retain the bear’s rest pose. No root travel, foot planting, collision or anatomical fit is certified."
+    ]
+  }
+}

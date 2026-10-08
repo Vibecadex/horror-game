@@ -1,0 +1,2099 @@
+{
+  "name": "Synthetic rigfit example",
+  "tags": [],
+  "notes": "",
+  "role": "prop",
+  "reviewStatus": "unreviewed",
+  "draftRecipe": {
+    "schemaVersion": 1,
+    "method": "scanner-rigfit-v1",
+    "sourceRevision": 1,
+    "sourceSha256": "44ed462ee266f50183fcac8ac00ae82d8a0649cbfc4103826a2e3c2750f85935",
+    "capturePose": "animation",
+    "surface": "template",
+    "landmarksOrigin": "source-pack",
+    "scannerLandmarks": {
+      "method": "depth-reach-v2",
+      "units": "meters",
+      "points": {
+        "head": [
+          0,
+          0.2797,
+          0.0038
+        ],
+        "headTop": [
+          0,
+          0.3444,
+          0.0038
+        ],
+        "neck": [
+          -0.0038,
+          0.2184,
+          0
+        ],
+        "chest": [
+          0,
+          0.1513,
+          0.0038
+        ],
+        "pelvis": [
+          0.0019,
+          0.0939,
+          0.0096
+        ],
+        "shoulder_L": [
+          0.0536,
+          0.1532,
+          0.0038
+        ],
+        "elbow_L": [
+          0.1257,
+          0.1386,
+          0.0185
+        ],
+        "hand_L": [
+          0.1916,
+          0.1111,
+          0.0383
+        ],
+        "shoulder_R": [
+          -0.0536,
+          0.1494,
+          0.0038
+        ],
+        "elbow_R": [
+          -0.1256,
+          0.1418,
+          0.0192
+        ],
+        "hand_R": [
+          -0.1916,
+          0.1111,
+          0.0345
+        ],
+        "hip_L": [
+          0.023,
+          0.0958,
+          0.0115
+        ],
+        "knee_L": [
+          0.0575,
+          0.0345,
+          0.0727
+        ],
+        "foot_L": [
+          0.0728,
+          0.0192,
+          0.1801
+        ],
+        "hip_R": [
+          -0.0192,
+          0.0919,
+          0.0077
+        ],
+        "knee_R": [
+          -0.0575,
+          0.0345,
+          0.0706
+        ],
+        "foot_R": [
+          -0.0766,
+          0.0192,
+          0.1762
+        ],
+        "ear_L": [
+          0.0536,
+          0.364,
+          -0.0077
+        ],
+        "ear_R": [
+          -0.0613,
+          0.3601,
+          -0.0077
+        ]
+      },
+      "flatSurface": 0,
+      "limbs": {
+        "arms": 2,
+        "legs": 2
+      },
+      "missing": [],
+      "complete": true,
+      "problems": []
+    },
+    "landmarksSha256": "b46a32f1816213b253146aacfc6e5406ebf23600f563171266dcbb5d92a17213",
+    "scannerSourceSha256": {
+      "scanner/rigfit.py": "da1bad34556104ec50e38a11c10d87a3cf4ee4a01f978fbee054ebee5e3fba2c",
+      "scanner/landmarks.py": "4d11b61a6fc3f9ad39c1ae90a737c902753ea570d85a36d576581fbc2cf7acc8",
+      "scripts/rig_test_package.py": "ab0496c7ed99fd856911d246a93b9bcc0603776adc06a6e0505946639bd6e7a1"
+    },
+    "adapterSha256": "9d45fb89a4aed08c2c3e5185a8b0be5905f2690e192d69329c4a288123db363c",
+    "fitReport": {
+      "status": "pass",
+      "warnings": [],
+      "capture_pose": "animation",
+      "surface": "template",
+      "reliable_pct": 97.8,
+      "skin_weights": "heat",
+      "hidden_from_scan_pct": 2.6,
+      "template": "procedural",
+      "template_arm_angle_deg": 0,
+      "template_vertices": 4402,
+      "template_faces": 8800,
+      "scale": 0.808,
+      "thickness": {
+        "torso": 1.53,
+        "head": 1.266,
+        "arm_L": 1.074,
+        "arm_R": 1.056,
+        "leg_L": 1.292,
+        "leg_R": 1.276
+      },
+      "before_fit": {
+        "template_to_scan_mm": 5.85,
+        "scan_to_template_mm": 5.73,
+        "p95_mm": 15.78,
+        "scan_to_template_p95_mm": 16.29
+      },
+      "after_fit": {
+        "template_to_scan_mm": 0.76,
+        "scan_to_template_mm": 0.43,
+        "p95_mm": 1.53,
+        "scan_to_template_p95_mm": 1.33
+      },
+      "unposing_raw": {
+        "flipped_faces_pct": 0.09,
+        "stretched_faces_pct": 0.51
+      },
+      "unposing": {
+        "flipped_faces_pct": 0,
+        "stretched_faces_pct": 1.8
+      },
+      "unposing_floored_vertices": 0,
+      "rest_lifted_mm": 91.7,
+      "texture_coverage": 0.583,
+      "seconds": 6.1,
+      "joints": {
+        "Hips": [
+          0,
+          0.2048,
+          0
+        ],
+        "Spine": [
+          0,
+          0.236,
+          0
+        ],
+        "Spine1": [
+          0,
+          0.2673,
+          0
+        ],
+        "Spine2": [
+          0,
+          0.2985,
+          0
+        ],
+        "Neck": [
+          0,
+          0.3298,
+          0
+        ],
+        "Head": [
+          0,
+          0.3601,
+          0.0025
+        ],
+        "HeadTop_End": [
+          0,
+          0.4559,
+          0.0047
+        ],
+        "LeftShoulder": [
+          0.0371,
+          0.2881,
+          0
+        ],
+        "LeftArm": [
+          0.0964,
+          0.2881,
+          0
+        ],
+        "LeftForeArm": [
+          0.1597,
+          0.2881,
+          0
+        ],
+        "LeftHand": [
+          0.2059,
+          0.2881,
+          0
+        ],
+        "RightShoulder": [
+          -0.0371,
+          0.2881,
+          0
+        ],
+        "RightArm": [
+          -0.0964,
+          0.2881,
+          0
+        ],
+        "RightForeArm": [
+          -0.1545,
+          0.2881,
+          0
+        ],
+        "RightHand": [
+          -0.1968,
+          0.2881,
+          0
+        ],
+        "LeftUpLeg": [
+          0.0593,
+          0.1821,
+          0
+        ],
+        "LeftLeg": [
+          0.0626,
+          0.099,
+          0
+        ],
+        "LeftFoot": [
+          0.0651,
+          0.0243,
+          0
+        ],
+        "RightUpLeg": [
+          -0.0593,
+          0.1821,
+          0
+        ],
+        "RightLeg": [
+          -0.0625,
+          0.1018,
+          0
+        ],
+        "RightFoot": [
+          -0.0649,
+          0.0296,
+          0
+        ]
+      }
+    },
+    "synthetic": true,
+    "axes": {
+      "unit": "metres",
+      "up": "+Y",
+      "front": "+Z",
+      "left": "+X"
+    },
+    "fitJobId": "fit_8512b3311f75422a"
+  },
+  "id": "bear_93f23f0e19a04775",
+  "revision": 5,
+  "created": "2026-10-07T12:56:55.843Z",
+  "updated": "2026-10-07T13:00:24.591Z",
+  "sources": [
+    {
+      "revision": 1,
+      "sha256": "44ed462ee266f50183fcac8ac00ae82d8a0649cbfc4103826a2e3c2750f85935",
+      "created": "2026-10-07T12:56:55.844Z",
+      "modelUrl": "/assets/bear_93f23f0e19a04775/sources/1/model.glb",
+      "thumbnailUrl": null,
+      "source": {
+        "kind": "synthetic-example",
+        "capturePose": "animation",
+        "originalFilename": "synthetic-source.glb",
+        "provenance": {
+          "purpose": "Synthetic rig-fitting example; diagnostic colours, not a real scan or production character",
+          "fixture": "synthetic-team-rig-v1"
+        }
+      },
+      "report": {
+        "status": "unreviewed",
+        "checks": []
+      },
+      "stats": {
+        "meshCount": 1,
+        "vertices": 23286,
+        "triangles": 46568,
+        "lods": [
+          {
+            "name": "geometry_0",
+            "vertices": 23286,
+            "triangles": 46568
+          }
+        ],
+        "skins": 0,
+        "animations": 0,
+        "animationNames": [],
+        "animationDetails": [],
+        "bounds": {
+          "min": [
+            -0.19108475744724274,
+            0,
+            -0.08622517436742783
+          ],
+          "max": [
+            0.19202977418899536,
+            0.363107830286026,
+            0.17990021407604218
+          ],
+          "space": "mesh-local"
+        }
+      },
+      "manifestUrl": "/assets/bear_93f23f0e19a04775/sources/1/manifest.json"
+    }
+  ],
+  "sourceRevision": 1,
+  "sourceSha256": "44ed462ee266f50183fcac8ac00ae82d8a0649cbfc4103826a2e3c2750f85935",
+  "modelUrl": "/assets/bear_93f23f0e19a04775/sources/1/model.glb",
+  "thumbnailUrl": null,
+  "source": {
+    "kind": "synthetic-example",
+    "capturePose": "animation",
+    "originalFilename": "synthetic-source.glb",
+    "provenance": {
+      "purpose": "Synthetic rig-fitting example; diagnostic colours, not a real scan or production character",
+      "fixture": "synthetic-team-rig-v1"
+    }
+  },
+  "sourceReport": {
+    "status": "unreviewed",
+    "checks": []
+  },
+  "sourceStats": {
+    "meshCount": 1,
+    "vertices": 23286,
+    "triangles": 46568,
+    "lods": [
+      {
+        "name": "geometry_0",
+        "vertices": 23286,
+        "triangles": 46568
+      }
+    ],
+    "skins": 0,
+    "animations": 0,
+    "animationNames": [],
+    "animationDetails": [],
+    "bounds": {
+      "min": [
+        -0.19108475744724274,
+        0,
+        -0.08622517436742783
+      ],
+      "max": [
+        0.19202977418899536,
+        0.363107830286026,
+        0.17990021407604218
+      ],
+      "space": "mesh-local"
+    }
+  },
+  "rigs": [
+    {
+      "revision": 1,
+      "sourceRevision": 1,
+      "sourceSha256": "44ed462ee266f50183fcac8ac00ae82d8a0649cbfc4103826a2e3c2750f85935",
+      "sha256": "b00c50f4a77d17611d21ac11601770bd2e0cb916c8d433dbe1cf419247bf6dc9",
+      "created": "2026-10-07T12:57:04.037Z",
+      "recipe": {
+        "schemaVersion": 1,
+        "method": "scanner-rigfit-v1",
+        "sourceRevision": 1,
+        "sourceSha256": "44ed462ee266f50183fcac8ac00ae82d8a0649cbfc4103826a2e3c2750f85935",
+        "capturePose": "animation",
+        "surface": "template",
+        "landmarksOrigin": "source-pack",
+        "scannerLandmarks": {
+          "method": "depth-reach-v2",
+          "units": "meters",
+          "points": {
+            "head": [
+              0,
+              0.2797,
+              0.0038
+            ],
+            "headTop": [
+              0,
+              0.3444,
+              0.0038
+            ],
+            "neck": [
+              -0.0038,
+              0.2184,
+              0
+            ],
+            "chest": [
+              0,
+              0.1513,
+              0.0038
+            ],
+            "pelvis": [
+              0.0019,
+              0.0939,
+              0.0096
+            ],
+            "shoulder_L": [
+              0.0536,
+              0.1532,
+              0.0038
+            ],
+            "elbow_L": [
+              0.1257,
+              0.1386,
+              0.0185
+            ],
+            "hand_L": [
+              0.1916,
+              0.1111,
+              0.0383
+            ],
+            "shoulder_R": [
+              -0.0536,
+              0.1494,
+              0.0038
+            ],
+            "elbow_R": [
+              -0.1256,
+              0.1418,
+              0.0192
+            ],
+            "hand_R": [
+              -0.1916,
+              0.1111,
+              0.0345
+            ],
+            "hip_L": [
+              0.023,
+              0.0958,
+              0.0115
+            ],
+            "knee_L": [
+              0.0575,
+              0.0345,
+              0.0727
+            ],
+            "foot_L": [
+              0.0728,
+              0.0192,
+              0.1801
+            ],
+            "hip_R": [
+              -0.0192,
+              0.0919,
+              0.0077
+            ],
+            "knee_R": [
+              -0.0575,
+              0.0345,
+              0.0706
+            ],
+            "foot_R": [
+              -0.0766,
+              0.0192,
+              0.1762
+            ],
+            "ear_L": [
+              0.0536,
+              0.364,
+              -0.0077
+            ],
+            "ear_R": [
+              -0.0613,
+              0.3601,
+              -0.0077
+            ]
+          },
+          "flatSurface": 0,
+          "limbs": {
+            "arms": 2,
+            "legs": 2
+          },
+          "missing": [],
+          "complete": true,
+          "problems": []
+        },
+        "landmarksSha256": "b46a32f1816213b253146aacfc6e5406ebf23600f563171266dcbb5d92a17213",
+        "scannerSourceSha256": {
+          "scanner/rigfit.py": "da1bad34556104ec50e38a11c10d87a3cf4ee4a01f978fbee054ebee5e3fba2c",
+          "scanner/landmarks.py": "4d11b61a6fc3f9ad39c1ae90a737c902753ea570d85a36d576581fbc2cf7acc8",
+          "scripts/rig_test_package.py": "ab0496c7ed99fd856911d246a93b9bcc0603776adc06a6e0505946639bd6e7a1"
+        },
+        "adapterSha256": "9d45fb89a4aed08c2c3e5185a8b0be5905f2690e192d69329c4a288123db363c",
+        "fitReport": {
+          "status": "pass",
+          "warnings": [],
+          "capture_pose": "animation",
+          "surface": "template",
+          "reliable_pct": 97.8,
+          "skin_weights": "heat",
+          "hidden_from_scan_pct": 2.6,
+          "template": "procedural",
+          "template_arm_angle_deg": 0,
+          "template_vertices": 4402,
+          "template_faces": 8800,
+          "scale": 0.808,
+          "thickness": {
+            "torso": 1.53,
+            "head": 1.266,
+            "arm_L": 1.074,
+            "arm_R": 1.056,
+            "leg_L": 1.292,
+            "leg_R": 1.276
+          },
+          "before_fit": {
+            "template_to_scan_mm": 5.85,
+            "scan_to_template_mm": 5.73,
+            "p95_mm": 15.78,
+            "scan_to_template_p95_mm": 16.29
+          },
+          "after_fit": {
+            "template_to_scan_mm": 0.76,
+            "scan_to_template_mm": 0.43,
+            "p95_mm": 1.53,
+            "scan_to_template_p95_mm": 1.33
+          },
+          "unposing_raw": {
+            "flipped_faces_pct": 0.09,
+            "stretched_faces_pct": 0.51
+          },
+          "unposing": {
+            "flipped_faces_pct": 0,
+            "stretched_faces_pct": 1.8
+          },
+          "unposing_floored_vertices": 0,
+          "rest_lifted_mm": 91.7,
+          "texture_coverage": 0.583,
+          "seconds": 6.1,
+          "joints": {
+            "Hips": [
+              0,
+              0.2048,
+              0
+            ],
+            "Spine": [
+              0,
+              0.236,
+              0
+            ],
+            "Spine1": [
+              0,
+              0.2673,
+              0
+            ],
+            "Spine2": [
+              0,
+              0.2985,
+              0
+            ],
+            "Neck": [
+              0,
+              0.3298,
+              0
+            ],
+            "Head": [
+              0,
+              0.3601,
+              0.0025
+            ],
+            "HeadTop_End": [
+              0,
+              0.4559,
+              0.0047
+            ],
+            "LeftShoulder": [
+              0.0371,
+              0.2881,
+              0
+            ],
+            "LeftArm": [
+              0.0964,
+              0.2881,
+              0
+            ],
+            "LeftForeArm": [
+              0.1597,
+              0.2881,
+              0
+            ],
+            "LeftHand": [
+              0.2059,
+              0.2881,
+              0
+            ],
+            "RightShoulder": [
+              -0.0371,
+              0.2881,
+              0
+            ],
+            "RightArm": [
+              -0.0964,
+              0.2881,
+              0
+            ],
+            "RightForeArm": [
+              -0.1545,
+              0.2881,
+              0
+            ],
+            "RightHand": [
+              -0.1968,
+              0.2881,
+              0
+            ],
+            "LeftUpLeg": [
+              0.0593,
+              0.1821,
+              0
+            ],
+            "LeftLeg": [
+              0.0626,
+              0.099,
+              0
+            ],
+            "LeftFoot": [
+              0.0651,
+              0.0243,
+              0
+            ],
+            "RightUpLeg": [
+              -0.0593,
+              0.1821,
+              0
+            ],
+            "RightLeg": [
+              -0.0625,
+              0.1018,
+              0
+            ],
+            "RightFoot": [
+              -0.0649,
+              0.0296,
+              0
+            ]
+          }
+        },
+        "synthetic": true,
+        "axes": {
+          "unit": "metres",
+          "up": "+Y",
+          "front": "+Z",
+          "left": "+X"
+        },
+        "fitJobId": "fit_c3b7148795c841bd"
+      },
+      "validation": {
+        "kind": "scanner-template-fit",
+        "review": "pending",
+        "fitReport": {
+          "status": "pass",
+          "warnings": [],
+          "capture_pose": "animation",
+          "surface": "template",
+          "reliable_pct": 97.8,
+          "skin_weights": "heat",
+          "hidden_from_scan_pct": 2.6,
+          "template": "procedural",
+          "template_arm_angle_deg": 0,
+          "template_vertices": 4402,
+          "template_faces": 8800,
+          "scale": 0.808,
+          "thickness": {
+            "torso": 1.53,
+            "head": 1.266,
+            "arm_L": 1.074,
+            "arm_R": 1.056,
+            "leg_L": 1.292,
+            "leg_R": 1.276
+          },
+          "before_fit": {
+            "template_to_scan_mm": 5.85,
+            "scan_to_template_mm": 5.73,
+            "p95_mm": 15.78,
+            "scan_to_template_p95_mm": 16.29
+          },
+          "after_fit": {
+            "template_to_scan_mm": 0.76,
+            "scan_to_template_mm": 0.43,
+            "p95_mm": 1.53,
+            "scan_to_template_p95_mm": 1.33
+          },
+          "unposing_raw": {
+            "flipped_faces_pct": 0.09,
+            "stretched_faces_pct": 0.51
+          },
+          "unposing": {
+            "flipped_faces_pct": 0,
+            "stretched_faces_pct": 1.8
+          },
+          "unposing_floored_vertices": 0,
+          "rest_lifted_mm": 91.7,
+          "texture_coverage": 0.583,
+          "seconds": 6.1,
+          "joints": {
+            "Hips": [
+              0,
+              0.2048,
+              0
+            ],
+            "Spine": [
+              0,
+              0.236,
+              0
+            ],
+            "Spine1": [
+              0,
+              0.2673,
+              0
+            ],
+            "Spine2": [
+              0,
+              0.2985,
+              0
+            ],
+            "Neck": [
+              0,
+              0.3298,
+              0
+            ],
+            "Head": [
+              0,
+              0.3601,
+              0.0025
+            ],
+            "HeadTop_End": [
+              0,
+              0.4559,
+              0.0047
+            ],
+            "LeftShoulder": [
+              0.0371,
+              0.2881,
+              0
+            ],
+            "LeftArm": [
+              0.0964,
+              0.2881,
+              0
+            ],
+            "LeftForeArm": [
+              0.1597,
+              0.2881,
+              0
+            ],
+            "LeftHand": [
+              0.2059,
+              0.2881,
+              0
+            ],
+            "RightShoulder": [
+              -0.0371,
+              0.2881,
+              0
+            ],
+            "RightArm": [
+              -0.0964,
+              0.2881,
+              0
+            ],
+            "RightForeArm": [
+              -0.1545,
+              0.2881,
+              0
+            ],
+            "RightHand": [
+              -0.1968,
+              0.2881,
+              0
+            ],
+            "LeftUpLeg": [
+              0.0593,
+              0.1821,
+              0
+            ],
+            "LeftLeg": [
+              0.0626,
+              0.099,
+              0
+            ],
+            "LeftFoot": [
+              0.0651,
+              0.0243,
+              0
+            ],
+            "RightUpLeg": [
+              -0.0593,
+              0.1821,
+              0
+            ],
+            "RightLeg": [
+              -0.0625,
+              0.1018,
+              0
+            ],
+            "RightFoot": [
+              -0.0649,
+              0.0296,
+              0
+            ]
+          }
+        },
+        "warnings": [
+          "Prototype template fit: review shape, texture, joint pinching and floor contact.",
+          "Collision and foot planting have not been generated."
+        ]
+      },
+      "structuralValidation": {
+        "status": "pass",
+        "checks": [
+          {
+            "id": "self-contained-glb",
+            "status": "pass",
+            "detail": "Valid embedded GLB 2.0"
+          },
+          {
+            "id": "finite-geometry",
+            "status": "pass",
+            "detail": "5366 finite mesh vertices"
+          },
+          {
+            "id": "saved-skin-weights",
+            "status": "pass",
+            "detail": "5366 vertices with valid joints and normalized weights"
+          }
+        ],
+        "scope": "Structural artifact checks only; deformation and visual acceptance require review."
+      },
+      "stats": {
+        "meshCount": 1,
+        "vertices": 5366,
+        "triangles": 8800,
+        "lods": [
+          {
+            "name": "Bear",
+            "vertices": 5366,
+            "triangles": 8800
+          }
+        ],
+        "skins": 1,
+        "animations": 4,
+        "animationNames": [
+          "Test_Wave",
+          "Test_Walk",
+          "Test_LookAround",
+          "Test_Bend"
+        ],
+        "animationDetails": [
+          {
+            "name": "Test_Wave",
+            "duration": 2,
+            "channels": 4
+          },
+          {
+            "name": "Test_Walk",
+            "duration": 2,
+            "channels": 7
+          },
+          {
+            "name": "Test_LookAround",
+            "duration": 2,
+            "channels": 2
+          },
+          {
+            "name": "Test_Bend",
+            "duration": 2,
+            "channels": 3
+          }
+        ],
+        "bounds": {
+          "min": [
+            -0.2137271612882614,
+            0,
+            -0.09245104342699051
+          ],
+          "max": [
+            0.22405339777469635,
+            0.4752419888973236,
+            0.08986178785562515
+          ],
+          "space": "mesh-local"
+        },
+        "skinnedVertices": 5366
+      },
+      "modelUrl": "/assets/bear_93f23f0e19a04775/rigs/1/model.glb",
+      "recipeUrl": "/assets/bear_93f23f0e19a04775/rigs/1/recipe.json",
+      "validationUrl": "/assets/bear_93f23f0e19a04775/rigs/1/validation.json",
+      "manifestUrl": "/assets/bear_93f23f0e19a04775/rigs/1/manifest.json",
+      "status": "draft",
+      "stale": false
+    },
+    {
+      "revision": 2,
+      "sourceRevision": 1,
+      "sourceSha256": "44ed462ee266f50183fcac8ac00ae82d8a0649cbfc4103826a2e3c2750f85935",
+      "sha256": "a7e808ead748acbd8dfdd77fa1ea8bdfe417ecbc6b38b283cbb4cf4af2173133",
+      "created": "2026-10-07T12:57:05.962Z",
+      "recipe": {
+        "schemaVersion": 1,
+        "method": "scanner-rigfit-v1",
+        "sourceRevision": 1,
+        "sourceSha256": "44ed462ee266f50183fcac8ac00ae82d8a0649cbfc4103826a2e3c2750f85935",
+        "capturePose": "animation",
+        "surface": "template",
+        "landmarksOrigin": "source-pack",
+        "scannerLandmarks": {
+          "method": "depth-reach-v2",
+          "units": "meters",
+          "points": {
+            "head": [
+              0,
+              0.2797,
+              0.0038
+            ],
+            "headTop": [
+              0,
+              0.3444,
+              0.0038
+            ],
+            "neck": [
+              -0.0038,
+              0.2184,
+              0
+            ],
+            "chest": [
+              0,
+              0.1513,
+              0.0038
+            ],
+            "pelvis": [
+              0.0019,
+              0.0939,
+              0.0096
+            ],
+            "shoulder_L": [
+              0.0536,
+              0.1532,
+              0.0038
+            ],
+            "elbow_L": [
+              0.1257,
+              0.1386,
+              0.0185
+            ],
+            "hand_L": [
+              0.1916,
+              0.1111,
+              0.0383
+            ],
+            "shoulder_R": [
+              -0.0536,
+              0.1494,
+              0.0038
+            ],
+            "elbow_R": [
+              -0.1256,
+              0.1418,
+              0.0192
+            ],
+            "hand_R": [
+              -0.1916,
+              0.1111,
+              0.0345
+            ],
+            "hip_L": [
+              0.023,
+              0.0958,
+              0.0115
+            ],
+            "knee_L": [
+              0.0575,
+              0.0345,
+              0.0727
+            ],
+            "foot_L": [
+              0.0728,
+              0.0192,
+              0.1801
+            ],
+            "hip_R": [
+              -0.0192,
+              0.0919,
+              0.0077
+            ],
+            "knee_R": [
+              -0.0575,
+              0.0345,
+              0.0706
+            ],
+            "foot_R": [
+              -0.0766,
+              0.0192,
+              0.1762
+            ],
+            "ear_L": [
+              0.0536,
+              0.364,
+              -0.0077
+            ],
+            "ear_R": [
+              -0.0613,
+              0.3601,
+              -0.0077
+            ]
+          },
+          "flatSurface": 0,
+          "limbs": {
+            "arms": 2,
+            "legs": 2
+          },
+          "missing": [],
+          "complete": true,
+          "problems": []
+        },
+        "landmarksSha256": "b46a32f1816213b253146aacfc6e5406ebf23600f563171266dcbb5d92a17213",
+        "scannerSourceSha256": {
+          "scanner/rigfit.py": "da1bad34556104ec50e38a11c10d87a3cf4ee4a01f978fbee054ebee5e3fba2c",
+          "scanner/landmarks.py": "4d11b61a6fc3f9ad39c1ae90a737c902753ea570d85a36d576581fbc2cf7acc8",
+          "scripts/rig_test_package.py": "ab0496c7ed99fd856911d246a93b9bcc0603776adc06a6e0505946639bd6e7a1"
+        },
+        "adapterSha256": "9d45fb89a4aed08c2c3e5185a8b0be5905f2690e192d69329c4a288123db363c",
+        "fitReport": {
+          "status": "pass",
+          "warnings": [],
+          "capture_pose": "animation",
+          "surface": "template",
+          "reliable_pct": 97.8,
+          "skin_weights": "heat",
+          "hidden_from_scan_pct": 2.6,
+          "template": "procedural",
+          "template_arm_angle_deg": 0,
+          "template_vertices": 4402,
+          "template_faces": 8800,
+          "scale": 0.808,
+          "thickness": {
+            "torso": 1.53,
+            "head": 1.266,
+            "arm_L": 1.074,
+            "arm_R": 1.056,
+            "leg_L": 1.292,
+            "leg_R": 1.276
+          },
+          "before_fit": {
+            "template_to_scan_mm": 5.85,
+            "scan_to_template_mm": 5.73,
+            "p95_mm": 15.78,
+            "scan_to_template_p95_mm": 16.29
+          },
+          "after_fit": {
+            "template_to_scan_mm": 0.76,
+            "scan_to_template_mm": 0.43,
+            "p95_mm": 1.53,
+            "scan_to_template_p95_mm": 1.33
+          },
+          "unposing_raw": {
+            "flipped_faces_pct": 0.09,
+            "stretched_faces_pct": 0.51
+          },
+          "unposing": {
+            "flipped_faces_pct": 0,
+            "stretched_faces_pct": 1.8
+          },
+          "unposing_floored_vertices": 0,
+          "rest_lifted_mm": 91.7,
+          "texture_coverage": 0.583,
+          "seconds": 6.1,
+          "joints": {
+            "Hips": [
+              0,
+              0.2048,
+              0
+            ],
+            "Spine": [
+              0,
+              0.236,
+              0
+            ],
+            "Spine1": [
+              0,
+              0.2673,
+              0
+            ],
+            "Spine2": [
+              0,
+              0.2985,
+              0
+            ],
+            "Neck": [
+              0,
+              0.3298,
+              0
+            ],
+            "Head": [
+              0,
+              0.3601,
+              0.0025
+            ],
+            "HeadTop_End": [
+              0,
+              0.4559,
+              0.0047
+            ],
+            "LeftShoulder": [
+              0.0371,
+              0.2881,
+              0
+            ],
+            "LeftArm": [
+              0.0964,
+              0.2881,
+              0
+            ],
+            "LeftForeArm": [
+              0.1597,
+              0.2881,
+              0
+            ],
+            "LeftHand": [
+              0.2059,
+              0.2881,
+              0
+            ],
+            "RightShoulder": [
+              -0.0371,
+              0.2881,
+              0
+            ],
+            "RightArm": [
+              -0.0964,
+              0.2881,
+              0
+            ],
+            "RightForeArm": [
+              -0.1545,
+              0.2881,
+              0
+            ],
+            "RightHand": [
+              -0.1968,
+              0.2881,
+              0
+            ],
+            "LeftUpLeg": [
+              0.0593,
+              0.1821,
+              0
+            ],
+            "LeftLeg": [
+              0.0626,
+              0.099,
+              0
+            ],
+            "LeftFoot": [
+              0.0651,
+              0.0243,
+              0
+            ],
+            "RightUpLeg": [
+              -0.0593,
+              0.1821,
+              0
+            ],
+            "RightLeg": [
+              -0.0625,
+              0.1018,
+              0
+            ],
+            "RightFoot": [
+              -0.0649,
+              0.0296,
+              0
+            ]
+          }
+        },
+        "synthetic": true,
+        "axes": {
+          "unit": "metres",
+          "up": "+Y",
+          "front": "+Z",
+          "left": "+X"
+        },
+        "fitJobId": "fit_c3b7148795c841bd"
+      },
+      "validation": {
+        "schemaVersion": 1,
+        "kind": "rig-structural",
+        "passed": true,
+        "status": "passed",
+        "review": "pending",
+        "checks": [
+          {
+            "id": "finite_geometry",
+            "label": "Finite geometry and skeleton",
+            "status": "pass",
+            "detail": "0 non-finite vertices; skeleton transforms inspected."
+          },
+          {
+            "id": "joint_indices",
+            "label": "Valid joint references",
+            "status": "pass",
+            "detail": "0 invalid joint indices.",
+            "value": 0
+          },
+          {
+            "id": "weights",
+            "label": "Normalized four-influence weights",
+            "status": "pass",
+            "detail": "Maximum sum error 4.18e-8.",
+            "value": 4.17931005358696e-8
+          },
+          {
+            "id": "bone_lengths",
+            "label": "Nonzero authored bone lengths",
+            "status": "pass",
+            "detail": "0 authored segments and 21 saved joints inspected."
+          },
+          {
+            "id": "rest_pose",
+            "label": "Rest pose reconstructs the mesh",
+            "status": "pass",
+            "detail": "Maximum rest error 1.50e-8 m.",
+            "value": 1.4981194454166707e-8
+          },
+          {
+            "id": "non_root_deformation",
+            "label": "A non-root joint deforms actual vertices",
+            "status": "pass",
+            "detail": "4150 vertices moved; max 0.054706 m. Whole-object motion is excluded.",
+            "value": 4150
+          },
+          {
+            "id": "clips_present",
+            "label": "Saved skeletal test clips",
+            "status": "pass",
+            "detail": "5 clips.",
+            "value": 5
+          },
+          {
+            "id": "finite_playback",
+            "label": "Finite sampled animation deformation",
+            "status": "pass",
+            "detail": "3275 sampled vertex positions; 0 invalid.",
+            "value": 3275
+          },
+          {
+            "id": "visual_review",
+            "label": "Deformation and contact need visual review",
+            "status": "warn",
+            "detail": "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear."
+          }
+        ],
+        "metrics": {
+          "boneCount": 21,
+          "vertexCount": 5366,
+          "triangleCount": 8800,
+          "heightM": 0.47524198380738225,
+          "bounds": {
+            "min": [
+              -0.21372716195655264,
+              0,
+              -0.09245104549343236
+            ],
+            "max": [
+              0.22405339668398863,
+              0.47524198380738225,
+              0.08986178672580594
+            ],
+            "size": [
+              0.4377805586405413,
+              0.47524198380738225,
+              0.1823128322192383
+            ]
+          },
+          "weightedVertices": 5366,
+          "maxWeightError": 4.17931005358696e-8,
+          "maxRestErrorM": 1.4981194454166707e-8,
+          "nonRootMovedVertices": 4150,
+          "maxDeformationM": 0.05470606980880176,
+          "sampledPositions": 3275,
+          "minimumSampledY": 0.00473563333138311
+        },
+        "warnings": [
+          "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear.",
+          "Scanner template fit: inspect shape and colour transfer. Collision and foot planting are not generated.",
+          "Humanoid motion transferred onto a teddy draft. Its first pose is removed to retain the bear’s rest pose. No root travel, foot planting, collision or anatomical fit is certified."
+        ]
+      },
+      "structuralValidation": {
+        "status": "pass",
+        "checks": [
+          {
+            "id": "self-contained-glb",
+            "status": "pass",
+            "detail": "Valid embedded GLB 2.0"
+          },
+          {
+            "id": "finite-geometry",
+            "status": "pass",
+            "detail": "5366 finite mesh vertices"
+          },
+          {
+            "id": "saved-skin-weights",
+            "status": "pass",
+            "detail": "5366 vertices with valid joints and normalized weights"
+          }
+        ],
+        "scope": "Structural artifact checks only; deformation and visual acceptance require review."
+      },
+      "stats": {
+        "meshCount": 1,
+        "vertices": 5366,
+        "triangles": 8800,
+        "lods": [
+          {
+            "name": "Bear",
+            "vertices": 5366,
+            "triangles": 8800
+          }
+        ],
+        "skins": 1,
+        "animations": 5,
+        "animationNames": [
+          "Test_Wave",
+          "Test_Walk",
+          "Test_LookAround",
+          "Test_Bend",
+          "UAL · Walk_Loop"
+        ],
+        "animationDetails": [
+          {
+            "name": "Test_Wave",
+            "duration": 2,
+            "channels": 4
+          },
+          {
+            "name": "Test_Walk",
+            "duration": 2,
+            "channels": 7
+          },
+          {
+            "name": "Test_LookAround",
+            "duration": 2,
+            "channels": 2
+          },
+          {
+            "name": "Test_Bend",
+            "duration": 2,
+            "channels": 3
+          },
+          {
+            "name": "UAL · Walk_Loop",
+            "duration": 1.3333333730697632,
+            "channels": 21
+          }
+        ],
+        "bounds": {
+          "min": [
+            -0.2137271612882614,
+            0,
+            -0.09245104342699051
+          ],
+          "max": [
+            0.22405339777469635,
+            0.4752419888973236,
+            0.08986178785562515
+          ],
+          "space": "mesh-local"
+        },
+        "skinnedVertices": 5366
+      },
+      "modelUrl": "/assets/bear_93f23f0e19a04775/rigs/2/model.glb",
+      "recipeUrl": "/assets/bear_93f23f0e19a04775/rigs/2/recipe.json",
+      "validationUrl": "/assets/bear_93f23f0e19a04775/rigs/2/validation.json",
+      "manifestUrl": "/assets/bear_93f23f0e19a04775/rigs/2/manifest.json",
+      "status": "draft",
+      "stale": false
+    },
+    {
+      "revision": 3,
+      "sourceRevision": 1,
+      "sourceSha256": "44ed462ee266f50183fcac8ac00ae82d8a0649cbfc4103826a2e3c2750f85935",
+      "sha256": "b00c50f4a77d17611d21ac11601770bd2e0cb916c8d433dbe1cf419247bf6dc9",
+      "created": "2026-10-07T13:00:24.591Z",
+      "recipe": {
+        "schemaVersion": 1,
+        "method": "scanner-rigfit-v1",
+        "sourceRevision": 1,
+        "sourceSha256": "44ed462ee266f50183fcac8ac00ae82d8a0649cbfc4103826a2e3c2750f85935",
+        "capturePose": "animation",
+        "surface": "template",
+        "landmarksOrigin": "source-pack",
+        "scannerLandmarks": {
+          "method": "depth-reach-v2",
+          "units": "meters",
+          "points": {
+            "head": [
+              0,
+              0.2797,
+              0.0038
+            ],
+            "headTop": [
+              0,
+              0.3444,
+              0.0038
+            ],
+            "neck": [
+              -0.0038,
+              0.2184,
+              0
+            ],
+            "chest": [
+              0,
+              0.1513,
+              0.0038
+            ],
+            "pelvis": [
+              0.0019,
+              0.0939,
+              0.0096
+            ],
+            "shoulder_L": [
+              0.0536,
+              0.1532,
+              0.0038
+            ],
+            "elbow_L": [
+              0.1257,
+              0.1386,
+              0.0185
+            ],
+            "hand_L": [
+              0.1916,
+              0.1111,
+              0.0383
+            ],
+            "shoulder_R": [
+              -0.0536,
+              0.1494,
+              0.0038
+            ],
+            "elbow_R": [
+              -0.1256,
+              0.1418,
+              0.0192
+            ],
+            "hand_R": [
+              -0.1916,
+              0.1111,
+              0.0345
+            ],
+            "hip_L": [
+              0.023,
+              0.0958,
+              0.0115
+            ],
+            "knee_L": [
+              0.0575,
+              0.0345,
+              0.0727
+            ],
+            "foot_L": [
+              0.0728,
+              0.0192,
+              0.1801
+            ],
+            "hip_R": [
+              -0.0192,
+              0.0919,
+              0.0077
+            ],
+            "knee_R": [
+              -0.0575,
+              0.0345,
+              0.0706
+            ],
+            "foot_R": [
+              -0.0766,
+              0.0192,
+              0.1762
+            ],
+            "ear_L": [
+              0.0536,
+              0.364,
+              -0.0077
+            ],
+            "ear_R": [
+              -0.0613,
+              0.3601,
+              -0.0077
+            ]
+          },
+          "flatSurface": 0,
+          "limbs": {
+            "arms": 2,
+            "legs": 2
+          },
+          "missing": [],
+          "complete": true,
+          "problems": []
+        },
+        "landmarksSha256": "b46a32f1816213b253146aacfc6e5406ebf23600f563171266dcbb5d92a17213",
+        "scannerSourceSha256": {
+          "scanner/rigfit.py": "da1bad34556104ec50e38a11c10d87a3cf4ee4a01f978fbee054ebee5e3fba2c",
+          "scanner/landmarks.py": "4d11b61a6fc3f9ad39c1ae90a737c902753ea570d85a36d576581fbc2cf7acc8",
+          "scripts/rig_test_package.py": "ab0496c7ed99fd856911d246a93b9bcc0603776adc06a6e0505946639bd6e7a1"
+        },
+        "adapterSha256": "9d45fb89a4aed08c2c3e5185a8b0be5905f2690e192d69329c4a288123db363c",
+        "fitReport": {
+          "status": "pass",
+          "warnings": [],
+          "capture_pose": "animation",
+          "surface": "template",
+          "reliable_pct": 97.8,
+          "skin_weights": "heat",
+          "hidden_from_scan_pct": 2.6,
+          "template": "procedural",
+          "template_arm_angle_deg": 0,
+          "template_vertices": 4402,
+          "template_faces": 8800,
+          "scale": 0.808,
+          "thickness": {
+            "torso": 1.53,
+            "head": 1.266,
+            "arm_L": 1.074,
+            "arm_R": 1.056,
+            "leg_L": 1.292,
+            "leg_R": 1.276
+          },
+          "before_fit": {
+            "template_to_scan_mm": 5.85,
+            "scan_to_template_mm": 5.73,
+            "p95_mm": 15.78,
+            "scan_to_template_p95_mm": 16.29
+          },
+          "after_fit": {
+            "template_to_scan_mm": 0.76,
+            "scan_to_template_mm": 0.43,
+            "p95_mm": 1.53,
+            "scan_to_template_p95_mm": 1.33
+          },
+          "unposing_raw": {
+            "flipped_faces_pct": 0.09,
+            "stretched_faces_pct": 0.51
+          },
+          "unposing": {
+            "flipped_faces_pct": 0,
+            "stretched_faces_pct": 1.8
+          },
+          "unposing_floored_vertices": 0,
+          "rest_lifted_mm": 91.7,
+          "texture_coverage": 0.583,
+          "seconds": 6.1,
+          "joints": {
+            "Hips": [
+              0,
+              0.2048,
+              0
+            ],
+            "Spine": [
+              0,
+              0.236,
+              0
+            ],
+            "Spine1": [
+              0,
+              0.2673,
+              0
+            ],
+            "Spine2": [
+              0,
+              0.2985,
+              0
+            ],
+            "Neck": [
+              0,
+              0.3298,
+              0
+            ],
+            "Head": [
+              0,
+              0.3601,
+              0.0025
+            ],
+            "HeadTop_End": [
+              0,
+              0.4559,
+              0.0047
+            ],
+            "LeftShoulder": [
+              0.0371,
+              0.2881,
+              0
+            ],
+            "LeftArm": [
+              0.0964,
+              0.2881,
+              0
+            ],
+            "LeftForeArm": [
+              0.1597,
+              0.2881,
+              0
+            ],
+            "LeftHand": [
+              0.2059,
+              0.2881,
+              0
+            ],
+            "RightShoulder": [
+              -0.0371,
+              0.2881,
+              0
+            ],
+            "RightArm": [
+              -0.0964,
+              0.2881,
+              0
+            ],
+            "RightForeArm": [
+              -0.1545,
+              0.2881,
+              0
+            ],
+            "RightHand": [
+              -0.1968,
+              0.2881,
+              0
+            ],
+            "LeftUpLeg": [
+              0.0593,
+              0.1821,
+              0
+            ],
+            "LeftLeg": [
+              0.0626,
+              0.099,
+              0
+            ],
+            "LeftFoot": [
+              0.0651,
+              0.0243,
+              0
+            ],
+            "RightUpLeg": [
+              -0.0593,
+              0.1821,
+              0
+            ],
+            "RightLeg": [
+              -0.0625,
+              0.1018,
+              0
+            ],
+            "RightFoot": [
+              -0.0649,
+              0.0296,
+              0
+            ]
+          }
+        },
+        "synthetic": true,
+        "axes": {
+          "unit": "metres",
+          "up": "+Y",
+          "front": "+Z",
+          "left": "+X"
+        },
+        "fitJobId": "fit_8512b3311f75422a"
+      },
+      "validation": {
+        "kind": "scanner-template-fit",
+        "review": "pending",
+        "fitReport": {
+          "status": "pass",
+          "warnings": [],
+          "capture_pose": "animation",
+          "surface": "template",
+          "reliable_pct": 97.8,
+          "skin_weights": "heat",
+          "hidden_from_scan_pct": 2.6,
+          "template": "procedural",
+          "template_arm_angle_deg": 0,
+          "template_vertices": 4402,
+          "template_faces": 8800,
+          "scale": 0.808,
+          "thickness": {
+            "torso": 1.53,
+            "head": 1.266,
+            "arm_L": 1.074,
+            "arm_R": 1.056,
+            "leg_L": 1.292,
+            "leg_R": 1.276
+          },
+          "before_fit": {
+            "template_to_scan_mm": 5.85,
+            "scan_to_template_mm": 5.73,
+            "p95_mm": 15.78,
+            "scan_to_template_p95_mm": 16.29
+          },
+          "after_fit": {
+            "template_to_scan_mm": 0.76,
+            "scan_to_template_mm": 0.43,
+            "p95_mm": 1.53,
+            "scan_to_template_p95_mm": 1.33
+          },
+          "unposing_raw": {
+            "flipped_faces_pct": 0.09,
+            "stretched_faces_pct": 0.51
+          },
+          "unposing": {
+            "flipped_faces_pct": 0,
+            "stretched_faces_pct": 1.8
+          },
+          "unposing_floored_vertices": 0,
+          "rest_lifted_mm": 91.7,
+          "texture_coverage": 0.583,
+          "seconds": 6.1,
+          "joints": {
+            "Hips": [
+              0,
+              0.2048,
+              0
+            ],
+            "Spine": [
+              0,
+              0.236,
+              0
+            ],
+            "Spine1": [
+              0,
+              0.2673,
+              0
+            ],
+            "Spine2": [
+              0,
+              0.2985,
+              0
+            ],
+            "Neck": [
+              0,
+              0.3298,
+              0
+            ],
+            "Head": [
+              0,
+              0.3601,
+              0.0025
+            ],
+            "HeadTop_End": [
+              0,
+              0.4559,
+              0.0047
+            ],
+            "LeftShoulder": [
+              0.0371,
+              0.2881,
+              0
+            ],
+            "LeftArm": [
+              0.0964,
+              0.2881,
+              0
+            ],
+            "LeftForeArm": [
+              0.1597,
+              0.2881,
+              0
+            ],
+            "LeftHand": [
+              0.2059,
+              0.2881,
+              0
+            ],
+            "RightShoulder": [
+              -0.0371,
+              0.2881,
+              0
+            ],
+            "RightArm": [
+              -0.0964,
+              0.2881,
+              0
+            ],
+            "RightForeArm": [
+              -0.1545,
+              0.2881,
+              0
+            ],
+            "RightHand": [
+              -0.1968,
+              0.2881,
+              0
+            ],
+            "LeftUpLeg": [
+              0.0593,
+              0.1821,
+              0
+            ],
+            "LeftLeg": [
+              0.0626,
+              0.099,
+              0
+            ],
+            "LeftFoot": [
+              0.0651,
+              0.0243,
+              0
+            ],
+            "RightUpLeg": [
+              -0.0593,
+              0.1821,
+              0
+            ],
+            "RightLeg": [
+              -0.0625,
+              0.1018,
+              0
+            ],
+            "RightFoot": [
+              -0.0649,
+              0.0296,
+              0
+            ]
+          }
+        },
+        "warnings": [
+          "Prototype template fit: review shape, texture, joint pinching and floor contact.",
+          "Collision and foot planting have not been generated."
+        ]
+      },
+      "structuralValidation": {
+        "status": "pass",
+        "checks": [
+          {
+            "id": "self-contained-glb",
+            "status": "pass",
+            "detail": "Valid embedded GLB 2.0"
+          },
+          {
+            "id": "finite-geometry",
+            "status": "pass",
+            "detail": "5366 finite mesh vertices"
+          },
+          {
+            "id": "saved-skin-weights",
+            "status": "pass",
+            "detail": "5366 vertices with valid joints and normalized weights"
+          }
+        ],
+        "scope": "Structural artifact checks only; deformation and visual acceptance require review."
+      },
+      "stats": {
+        "meshCount": 1,
+        "vertices": 5366,
+        "triangles": 8800,
+        "lods": [
+          {
+            "name": "Bear",
+            "vertices": 5366,
+            "triangles": 8800
+          }
+        ],
+        "skins": 1,
+        "animations": 4,
+        "animationNames": [
+          "Test_Wave",
+          "Test_Walk",
+          "Test_LookAround",
+          "Test_Bend"
+        ],
+        "animationDetails": [
+          {
+            "name": "Test_Wave",
+            "duration": 2,
+            "channels": 4
+          },
+          {
+            "name": "Test_Walk",
+            "duration": 2,
+            "channels": 7
+          },
+          {
+            "name": "Test_LookAround",
+            "duration": 2,
+            "channels": 2
+          },
+          {
+            "name": "Test_Bend",
+            "duration": 2,
+            "channels": 3
+          }
+        ],
+        "bounds": {
+          "min": [
+            -0.2137271612882614,
+            0,
+            -0.09245104342699051
+          ],
+          "max": [
+            0.22405339777469635,
+            0.4752419888973236,
+            0.08986178785562515
+          ],
+          "space": "mesh-local"
+        },
+        "skinnedVertices": 5366
+      },
+      "modelUrl": "/assets/bear_93f23f0e19a04775/rigs/3/model.glb",
+      "recipeUrl": "/assets/bear_93f23f0e19a04775/rigs/3/recipe.json",
+      "validationUrl": "/assets/bear_93f23f0e19a04775/rigs/3/validation.json",
+      "manifestUrl": "/assets/bear_93f23f0e19a04775/rigs/3/manifest.json",
+      "status": "draft",
+      "stale": false
+    }
+  ],
+  "tests": [
+    {
+      "id": "test_c51ebef89dd54f64",
+      "rigRevision": 1,
+      "sourceRevision": 1,
+      "created": "2026-10-07T12:57:05.175Z",
+      "suite": "browser-structure-deformation-roundtrip",
+      "results": [
+        {
+          "id": "finite_geometry",
+          "label": "Finite geometry and skeleton",
+          "status": "pass",
+          "detail": "0 non-finite vertices; skeleton transforms inspected."
+        },
+        {
+          "id": "joint_indices",
+          "label": "Valid joint references",
+          "status": "pass",
+          "detail": "0 invalid joint indices.",
+          "value": 0
+        },
+        {
+          "id": "weights",
+          "label": "Normalized four-influence weights",
+          "status": "pass",
+          "detail": "Maximum sum error 4.18e-8.",
+          "value": 4.17931005358696e-8
+        },
+        {
+          "id": "bone_lengths",
+          "label": "Nonzero authored bone lengths",
+          "status": "pass",
+          "detail": "0 authored segments and 21 saved joints inspected."
+        },
+        {
+          "id": "rest_pose",
+          "label": "Rest pose reconstructs the mesh",
+          "status": "pass",
+          "detail": "Maximum rest error 1.50e-8 m.",
+          "value": 1.4981194454166707e-8
+        },
+        {
+          "id": "non_root_deformation",
+          "label": "A non-root joint deforms actual vertices",
+          "status": "pass",
+          "detail": "4150 vertices moved; max 0.054706 m. Whole-object motion is excluded.",
+          "value": 4150
+        },
+        {
+          "id": "clips_present",
+          "label": "Saved skeletal test clips",
+          "status": "pass",
+          "detail": "4 clips.",
+          "value": 4
+        },
+        {
+          "id": "finite_playback",
+          "label": "Finite sampled animation deformation",
+          "status": "pass",
+          "detail": "2620 sampled vertex positions; 0 invalid.",
+          "value": 2620
+        },
+        {
+          "id": "visual_review",
+          "label": "Deformation and contact need visual review",
+          "status": "warn",
+          "detail": "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear."
+        },
+        {
+          "id": "export_finite_geometry",
+          "label": "Exported · Finite geometry and skeleton",
+          "status": "pass",
+          "detail": "0 non-finite vertices; skeleton transforms inspected."
+        },
+        {
+          "id": "export_joint_indices",
+          "label": "Exported · Valid joint references",
+          "status": "pass",
+          "detail": "0 invalid joint indices.",
+          "value": 0
+        },
+        {
+          "id": "export_weights",
+          "label": "Exported · Normalized four-influence weights",
+          "status": "pass",
+          "detail": "Maximum sum error 4.17e-8.",
+          "value": 4.1676685214042664e-8
+        },
+        {
+          "id": "export_bone_lengths",
+          "label": "Exported · Nonzero authored bone lengths",
+          "status": "pass",
+          "detail": "0 authored segments and 21 saved joints inspected."
+        },
+        {
+          "id": "export_rest_pose",
+          "label": "Exported · Rest pose reconstructs the mesh",
+          "status": "pass",
+          "detail": "Maximum rest error 1.50e-8 m.",
+          "value": 1.4981194454166707e-8
+        },
+        {
+          "id": "export_non_root_deformation",
+          "label": "Exported · A non-root joint deforms actual vertices",
+          "status": "pass",
+          "detail": "4150 vertices moved; max 0.054706 m. Whole-object motion is excluded.",
+          "value": 4150
+        },
+        {
+          "id": "export_clips_present",
+          "label": "Exported · Saved skeletal test clips",
+          "status": "pass",
+          "detail": "4 clips.",
+          "value": 4
+        },
+        {
+          "id": "export_finite_playback",
+          "label": "Exported · Finite sampled animation deformation",
+          "status": "pass",
+          "detail": "2620 sampled vertex positions; 0 invalid.",
+          "value": 2620
+        },
+        {
+          "id": "export_visual_review",
+          "label": "Exported · Deformation and contact need visual review",
+          "status": "warn",
+          "detail": "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear."
+        },
+        {
+          "id": "export_glb_roundtrip",
+          "label": "Exported · Exported GLB reloads with skin and clips",
+          "status": "pass",
+          "detail": "21 joints, 5366 vertices, 4 clips; reloaded deformation tested."
+        }
+      ],
+      "notes": "",
+      "stale": false
+    }
+  ],
+  "draftDirty": false,
+  "rigStatus": "draft-rig",
+  "manifestUrl": "/api/bears/bear_93f23f0e19a04775/manifest"
+}

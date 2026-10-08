@@ -1,0 +1,151 @@
+{
+  "base_commit": "9defbdd8ae18ca7b97f8b054f18cf9c10c9e12e5",
+  "branch": "codex/chamber-parity-20261007",
+  "files": {
+    "TeddyBlueprint/Content/Maps/TeddyChamberParity.umap": {
+      "sha256": "6439622785ae8739bf8cf98ee7869b421e282d039ecd676f440f07860ddd7e21",
+      "bytes": 1138492
+    },
+    "study/chamber-parity-20261007.json": {
+      "sha256": "b360fb6e2c59febed65e470f26f724328fcafc3df4da45dedbeb43f50b518b69",
+      "bytes": 1267
+    },
+    "tools/author_chamber_parity_20261007.py": {
+      "sha256": "a124d0f68b7757b1afc56926a3bb16c2b50e0ef0fa2b055808b3f77fc2dbb6c1",
+      "bytes": 15812
+    },
+    "tools/make_chamber_parity_debris.py": {
+      "sha256": "a792d325cfcb7746cb5472cc6682af3c85d58c23c794b1427f0c6c63c3c7d200",
+      "bytes": 7830
+    },
+    "tools/capture_chamber_views.py": {
+      "sha256": "430f23eeaa5a441f279805b4f3fbbcf13e2a65494dd088ada3e83b2abdaa0163",
+      "bytes": 15445
+    },
+    "tools/chamber_parity_snapshot.py": {
+      "sha256": "baa4d35fb708d18d0fb502f8bef927815b1ebe7c81c8f56f726a1d35939978f4",
+      "bytes": 2420
+    },
+    "tools/verify_full_room.py": {
+      "sha256": "88395543ea6f1a8b1b62f89457cff98690c0ebac42d7091648d648d372e7bc24",
+      "bytes": 31371
+    },
+    "tools/review_chamber_parity.py": {
+      "sha256": "91df4a4606274d396791bd49a4637eeb0665235da09007e27179848506fafa83",
+      "bytes": 4903
+    },
+    "evidence/chamber-parity/20261007/user-reference.png": {
+      "sha256": "a9eb1d9c44da8cb5440ff60b5f6df80e97288b6adaf9c7dcb3cfa97dd35f10a7",
+      "bytes": 374574
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_ChippedEdge.uasset": {
+      "sha256": "5bdeed48b2a22bf0970f6ed29f4710240d2e84241999d169dfb626c4b1740cf0",
+      "bytes": 31088
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Debris.uasset": {
+      "sha256": "51eb06bf069e7adb34a94220128c5fb7618934615c03fb4a4901ecfcd58b99da",
+      "bytes": 31857
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Aggregate.uasset": {
+      "sha256": "5248fa93ac099f5fcd2c3a014a4d31071119a6a9c4ccd15f51e1e700a89ec85f",
+      "bytes": 32524
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Concrete.uasset": {
+      "sha256": "d5f14590f580fdcabe7d1bb2193a571d249779c76b20419f767e8fc5d257b7c0",
+      "bytes": 33197
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_ConcreteDark.uasset": {
+      "sha256": "c2850898f3757664f9cf4abd6c2d20663202d0006db60dab4b01d0bd4c6b3579",
+      "bytes": 32261
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_ConcreteLight.uasset": {
+      "sha256": "5f63ee02940b4fdbbcdc04fb6d0f2f36772a8e4d1d880db38a9b290597e4f6c8",
+      "bytes": 32966
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Crack.uasset": {
+      "sha256": "9bb9c884451b0f2b754e59374190110a58438baf410766f94f61f3784633d0db",
+      "bytes": 31624
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_Floor_Dark.uasset": {
+      "sha256": "c988b54fba3f2eff3d11b6cdcd16e6e1ee76a7eb0ef533e7b134ad47e9e9c757",
+      "bytes": 31100
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Materials/M_Parity_WetShard.uasset": {
+      "sha256": "a463d46cf090fbfe1fda297926f7fdb7e3712a53227f28809e0dc94572759edc",
+      "bytes": 29771
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_0.uasset": {
+      "sha256": "447bbaac90c08d6e776d101decab3b39eb161748a229c2e00b69fceb3ffc5bd9",
+      "bytes": 187183
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_0_V2.uasset": {
+      "sha256": "a69a6b079332234fb4857c10611e3d17e94a68237fac324114f123f40f2be607",
+      "bytes": 188926
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_1.uasset": {
+      "sha256": "6754eb57248cdabfcda7d5cfcd60f6cbc6e458e284657695cb409385dbb5b0df",
+      "bytes": 110973
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_1_V2.uasset": {
+      "sha256": "830542f11313a1823ddedf9ff55bd725e1200deaf6012ae2cab28873c661051c",
+      "bytes": 112459
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_2.uasset": {
+      "sha256": "410d18e197ce03098aeac4ddf0830a96ba5c1e8923be88d65f5fb76320bba271",
+      "bytes": 147768
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_2_V2.uasset": {
+      "sha256": "d5c7a03d73f88b3c04c2a1f0323555596f542ad753452f47d34f665cf8fd15cb",
+      "bytes": 148922
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_3.uasset": {
+      "sha256": "d140722fc2658dc3e149727fdb5507c00c1bcd34a81f9f084462012ad663c01a",
+      "bytes": 112710
+    },
+    "TeddyBlueprint/Content/TeddyEncounter/ChamberParity20261007/Meshes/SM_Parity20261007_Debris_3_V2.uasset": {
+      "sha256": "4f9f81c32d071a7c465911740a3746cfd9049beaf95bd07b4d03b6121afd659b",
+      "bytes": 113804
+    },
+    "Assets/Adapted/ChamberParity/Parity20261007/DebrisV2/ChamberParityDebris_20261007.blend": {
+      "sha256": "79dbdc1013644aefdfe92a36e4997686b708cdbbf00bc48577fd83f251e062a7",
+      "bytes": 428877
+    },
+    "Assets/Adapted/ChamberParity/Parity20261007/DebrisV2/manifest.json": {
+      "sha256": "a9a24c4049719441473ee0131e581fcc048ab94b25803c3baf2aaf41590af5e2",
+      "bytes": 3911
+    },
+    "Assets/Adapted/ChamberParity/Parity20261007/DebrisV2/SM_Parity20261007_Debris_0_V2.fbx": {
+      "sha256": "da8ca758b8dc5c67586676f8652160585242a424fa6d830b4cbe117910423f99",
+      "bytes": 149900
+    },
+    "Assets/Adapted/ChamberParity/Parity20261007/DebrisV2/SM_Parity20261007_Debris_1_V2.fbx": {
+      "sha256": "b9657f43521a74aa2e81247e3683cb5059e98d3717f2b38ab92a7cf735083a01",
+      "bytes": 95836
+    },
+    "Assets/Adapted/ChamberParity/Parity20261007/DebrisV2/SM_Parity20261007_Debris_2_V2.fbx": {
+      "sha256": "1227e2bd2c8b89ccb3abcd1d1e0ebf2f28c19accd49cdac81850c24abc0142b9",
+      "bytes": 117708
+    },
+    "Assets/Adapted/ChamberParity/Parity20261007/DebrisV2/SM_Parity20261007_Debris_3_V2.fbx": {
+      "sha256": "237b02802385d74274907af71b61692384649e520dd3a0553fb65ef9b424ff86",
+      "bytes": 90284
+    },
+    "evidence/implementation/20261007T142109-capture_chamber_views/00-full-chamber.png": {
+      "sha256": "2efe53ff870d181c00f5d159586ce0705374fdd757fcb5e9140d4a0ece45820f",
+      "bytes": 1399526
+    },
+    "evidence/implementation/20261007T142109-capture_chamber_views/01-chamber-front.png": {
+      "sha256": "4ef5e3ff5411d7eb4f1ea11003f30efd18a5c9c6c72dc3b9828cc4df22b2bdb7",
+      "bytes": 1803402
+    },
+    "evidence/implementation/20261007T142109-capture_chamber_views/02-chamber-reverse.png": {
+      "sha256": "a6450b8260b0cf3d7f7a50c7ea65e76811408d3d5c72689c9a7496fe1850eb8a",
+      "bytes": 1946463
+    },
+    "evidence/implementation/20261007T142109-capture_chamber_views/03-ordinary-gameplay.png": {
+      "sha256": "99bffa5fbe85bab58c61142699c0aff1d97d498a8284657b9c3247f4e82bb686",
+      "bytes": 2062598
+    }
+  },
+  "visual_parity_accepted": false
+}

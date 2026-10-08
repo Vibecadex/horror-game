@@ -2,6 +2,8 @@
 
 Private repository: https://github.com/Vibecadex/horror-game. Start with [README](../README.md), then [CHAMBER_PARITY_BRIEF.md](CHAMBER_PARITY_BRIEF.md). The saved Blueprint project is the continuation point; no regeneration is required to play/edit.
 
+The `codex/integrate-bear-scanner` fork also contains the user-requested [Bear Studio](BEAR_STUDIO.md): local catalogue, draft skinning, motion tests and versioned character handoffs. Continue that tool through its own guide and [QA report](../evidence/bear-studio/20261006T134902Z/QA_REVIEW.md). A saved studio rig does not authorize replacing the chamber's enemy; coordinate any later Unreal skeletal integration with the map owner.
+
 ## Ownership
 
 - **Integrator:** one owner for `TeddyBlueprint/Content/Maps/TeddyEncounter.umap` and shared Unreal packages; coordinate dependencies, save, reload and validate.

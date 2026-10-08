@@ -1,0 +1,18 @@
+{
+  "status": {
+    "id": "fit_a6eafd7ef0064422",
+    "bearId": "bear_fcd59edbf987483b",
+    "status": "failed",
+    "created": "2026-10-07T13:01:30.600Z",
+    "expectedRevision": 1,
+    "sourceRevision": 1,
+    "sourceSha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+    "capturePose": "unspecified",
+    "synthetic": false,
+    "error": "ValueError: Scanner landmarks missing: neck, head, hand_R, foot_R. Rescan upright with arms and legs apart, or use the manual draft tools.",
+    "updated": "2026-10-07T13:01:31.625Z"
+  },
+  "originalUnchanged": true,
+  "rigCountBefore": 0,
+  "rigCountAfter": 0
+}

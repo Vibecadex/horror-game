@@ -1,0 +1,2082 @@
+{
+  "bears": [
+    {
+      "name": "Real bear (example scan)",
+      "tags": [],
+      "notes": "",
+      "role": "prop",
+      "reviewStatus": "unreviewed",
+      "draftRecipe": null,
+      "id": "bear_6a63027e60ad4c87",
+      "revision": 1,
+      "created": "2026-10-07T11:30:07.545Z",
+      "updated": "2026-10-07T11:30:07.545Z",
+      "sources": [
+        {
+          "revision": 1,
+          "sha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+          "created": "2026-10-07T11:30:07.546Z",
+          "modelUrl": "/assets/bear_6a63027e60ad4c87/sources/1/model.glb",
+          "thumbnailUrl": "/assets/bear_6a63027e60ad4c87/sources/1/thumb.webp",
+          "source": {
+            "kind": "bear-pack",
+            "scanId": "example-real-bear",
+            "originalFilename": "Team-bear-pack.zip",
+            "pack": {
+              "builtAt": "2026-10-06T03:39:41Z",
+              "capture": {
+                "pose": "unspecified"
+              },
+              "collider": {
+                "faces": 196,
+                "file": "collider.json",
+                "type": "convexHull",
+                "vertices": 100
+              },
+              "coordinates": {
+                "front": "+Z",
+                "frontFrom": "first-photo",
+                "handedness": "right",
+                "origin": "base centre: the model's lowest point is on y = 0, and x = z = 0 is the centre of its x/z bounding box",
+                "units": "meters",
+                "up": "+Y"
+              },
+              "createdAt": "2026-10-02T21:18:11Z",
+              "files": {
+                "collider.json": {
+                  "bytes": 5646,
+                  "mediaType": "application/json",
+                  "sha256": "3cf079fa7d3659a9b9993e510626f7438f8fb2f7b313c68410e29c61f510ba1d"
+                },
+                "landmarks.json": {
+                  "bytes": 937,
+                  "mediaType": "application/json",
+                  "sha256": "52d63d10cf7875ae2400184aebffa030e5cd3b46c952bc0123c5e9fdf1b2a8e4"
+                },
+                "model.glb": {
+                  "bytes": 1379600,
+                  "mediaType": "model/gltf-binary",
+                  "sha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b"
+                },
+                "report.json": {
+                  "bytes": 3567,
+                  "mediaType": "application/json",
+                  "sha256": "a4b8c711b81f525cfbeecce1840a95fdd7fea00dea75bcb678c7bce5ab4dffe1"
+                },
+                "thumb.webp": {
+                  "bytes": 14196,
+                  "mediaType": "image/webp",
+                  "sha256": "5339aafeb1716beb8cdcbb397ee04154bf74efd5aa6aade6a6d5a7b0d34b433f"
+                }
+              },
+              "format": "bear-pack",
+              "formatVersion": 1,
+              "generator": {
+                "name": "bear-scanner",
+                "version": "0.1.0"
+              },
+              "id": "example-real-bear",
+              "landmarks": {
+                "complete": false,
+                "file": "landmarks.json",
+                "flatSurface": 0.572,
+                "limbs": {
+                  "arms": 1,
+                  "legs": 1
+                },
+                "method": "depth-reach-v2",
+                "missing": [
+                  "head",
+                  "headTop",
+                  "neck",
+                  "chest",
+                  "shoulder_R",
+                  "elbow_R",
+                  "hand_R",
+                  "hip_R",
+                  "knee_R",
+                  "foot_R"
+                ],
+                "problems": [
+                  "no head found",
+                  "something flat (a box or stand?) is part of the bear"
+                ]
+              },
+              "model": {
+                "bounds": {
+                  "max": [
+                    0.039,
+                    0.09698,
+                    0.02796
+                  ],
+                  "min": [
+                    -0.039,
+                    0.0,
+                    -0.02796
+                  ]
+                },
+                "file": "model.glb",
+                "lods": [
+                  {
+                    "level": 0,
+                    "node": "LOD0",
+                    "normals": true,
+                    "switchAtHeights": 0,
+                    "triangles": 8000,
+                    "vertices": 5091
+                  },
+                  {
+                    "level": 1,
+                    "node": "LOD1",
+                    "normals": true,
+                    "switchAtHeights": 8,
+                    "triangles": 2500,
+                    "vertices": 2165
+                  },
+                  {
+                    "level": 2,
+                    "node": "LOD2",
+                    "normals": true,
+                    "switchAtHeights": 20,
+                    "triangles": 800,
+                    "vertices": 834
+                  }
+                ],
+                "materials": 1,
+                "texture": {
+                  "height": 2048,
+                  "mimeType": "image/png",
+                  "width": 2048
+                },
+                "textures": 1
+              },
+              "name": "Real bear (example scan)",
+              "photos": 22,
+              "quality": {
+                "notPassing": [
+                  "holes",
+                  "colour",
+                  "above",
+                  "props"
+                ],
+                "status": "warn",
+                "usable": true
+              },
+              "report": {
+                "file": "report.json"
+              },
+              "revision": "dca73692579c262d4e668448e3fa84e3",
+              "scale": {
+                "heightCm": 10.0,
+                "source": "typed"
+              },
+              "size": {
+                "x": 0.07801,
+                "y": 0.09698,
+                "z": 0.05593
+              },
+              "thumbnail": {
+                "file": "thumb.webp"
+              },
+              "version": 1791257981
+            }
+          },
+          "report": {
+            "status": "warn",
+            "checks": [
+              {
+                "id": "single_body",
+                "label": "Single connected body",
+                "status": "pass",
+                "value": 1,
+                "detail": "One piece, nothing floating"
+              },
+              {
+                "id": "floaters",
+                "label": "Floating debris removed",
+                "status": "pass",
+                "value": 0.0,
+                "detail": "1 stray pieces (0.0% of raw triangles) cut away"
+              },
+              {
+                "id": "holes",
+                "label": "Holes in the surface",
+                "status": "warn",
+                "value": 0,
+                "detail": "13% of the surface was filled in, not captured"
+              },
+              {
+                "id": "triangles",
+                "label": "Triangle budget",
+                "status": "pass",
+                "value": 8000,
+                "detail": "LOD0 8,000 / LOD1 2,500 / LOD2 800 (budget 8,000 / 2,500 / 800)"
+              },
+              {
+                "id": "textures",
+                "label": "Texture maps",
+                "status": "pass",
+                "value": 1,
+                "detail": "4096x4096"
+              },
+              {
+                "id": "untextured",
+                "label": "Faces no photo covered",
+                "status": "pass",
+                "value": 0.0,
+                "detail": "0.0% of triangles above the base; 0.7% on the underside (filled with the bear's colour)"
+              },
+              {
+                "id": "colour",
+                "label": "Texture matches the photos",
+                "status": "warn",
+                "value": 56,
+                "detail": "Average colour off by 56 (0-441); dark areas 1% vs 4% in the photos"
+              },
+              {
+                "id": "upright",
+                "label": "Upright",
+                "status": "pass",
+                "value": "table plane",
+                "detail": "Levelled on the table it stood on (534 points); the phone-held estimate differed by 1\u00b0"
+              },
+              {
+                "id": "stands",
+                "label": "Stands on its base",
+                "status": "pass",
+                "value": 0.0,
+                "detail": "Centre of mass is over the footprint"
+              },
+              {
+                "id": "coverage",
+                "label": "Walked all the way around",
+                "status": "pass",
+                "value": 100,
+                "detail": "Photos cover 100% of the circle; elevation 17\u00b0 to 25\u00b0"
+              },
+              {
+                "id": "above",
+                "label": "Seen from above",
+                "status": "warn",
+                "value": 25,
+                "detail": "Highest photo looks down 25\u00b0; the top of the head is guessed. Add a lap looking down from above."
+              },
+              {
+                "id": "placed",
+                "label": "Photos placed in 3D",
+                "status": "pass",
+                "value": 22,
+                "detail": "22 of 22 photos (100%)"
+              },
+              {
+                "id": "front",
+                "label": "Front photo placed",
+                "status": "pass",
+                "value": "0000.jpg",
+                "detail": "The first photo sets which way the bear faces"
+              },
+              {
+                "id": "framing",
+                "label": "Bear fills the frame",
+                "status": "pass",
+                "value": 21.7,
+                "detail": "Bear covers 22% of a typical photo"
+              },
+              {
+                "id": "props",
+                "label": "Nothing else attached",
+                "status": "warn",
+                "value": 57.2,
+                "detail": "57% of the surface is flat, like a box or stand the bear was on or holding. Anything touching the bear becomes part of it: scan it on its own, on the table"
+              },
+              {
+                "id": "limbs",
+                "label": "Arms and legs apart",
+                "status": "pass",
+                "value": 2,
+                "detail": "Found 1 of 2 arms and 1 of 2 legs standing out from the body; no head found (only matters for bears you'll animate: tick that option when scanning)"
+              }
+            ],
+            "size_m": {
+              "x": 0.078,
+              "y": 0.097,
+              "z": 0.0559
+            },
+            "triangles": 8000,
+            "lod_triangles": [
+              8000,
+              2500,
+              800
+            ],
+            "vertices": 5091
+          },
+          "stats": {
+            "meshCount": 3,
+            "vertices": 8090,
+            "triangles": 11300,
+            "lods": [
+              {
+                "name": "LOD0",
+                "vertices": 5091,
+                "triangles": 8000
+              },
+              {
+                "name": "LOD1",
+                "vertices": 2165,
+                "triangles": 2500
+              },
+              {
+                "name": "LOD2",
+                "vertices": 834,
+                "triangles": 800
+              }
+            ],
+            "skins": 0,
+            "animations": 0,
+            "animationNames": [],
+            "animationDetails": [],
+            "bounds": {
+              "min": [
+                -0.03900405764579773,
+                -6.357853999361396e-05,
+                -0.027989426627755165
+              ],
+              "max": [
+                0.03900405764579773,
+                0.09714585542678833,
+                0.027962621301412582
+              ],
+              "space": "mesh-local"
+            }
+          },
+          "manifestUrl": "/assets/bear_6a63027e60ad4c87/sources/1/manifest.json"
+        }
+      ],
+      "sourceRevision": 1,
+      "sourceSha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+      "modelUrl": "/assets/bear_6a63027e60ad4c87/sources/1/model.glb",
+      "thumbnailUrl": "/assets/bear_6a63027e60ad4c87/sources/1/thumb.webp",
+      "source": {
+        "kind": "bear-pack",
+        "scanId": "example-real-bear",
+        "originalFilename": "Team-bear-pack.zip",
+        "pack": {
+          "builtAt": "2026-10-06T03:39:41Z",
+          "capture": {
+            "pose": "unspecified"
+          },
+          "collider": {
+            "faces": 196,
+            "file": "collider.json",
+            "type": "convexHull",
+            "vertices": 100
+          },
+          "coordinates": {
+            "front": "+Z",
+            "frontFrom": "first-photo",
+            "handedness": "right",
+            "origin": "base centre: the model's lowest point is on y = 0, and x = z = 0 is the centre of its x/z bounding box",
+            "units": "meters",
+            "up": "+Y"
+          },
+          "createdAt": "2026-10-02T21:18:11Z",
+          "files": {
+            "collider.json": {
+              "bytes": 5646,
+              "mediaType": "application/json",
+              "sha256": "3cf079fa7d3659a9b9993e510626f7438f8fb2f7b313c68410e29c61f510ba1d"
+            },
+            "landmarks.json": {
+              "bytes": 937,
+              "mediaType": "application/json",
+              "sha256": "52d63d10cf7875ae2400184aebffa030e5cd3b46c952bc0123c5e9fdf1b2a8e4"
+            },
+            "model.glb": {
+              "bytes": 1379600,
+              "mediaType": "model/gltf-binary",
+              "sha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b"
+            },
+            "report.json": {
+              "bytes": 3567,
+              "mediaType": "application/json",
+              "sha256": "a4b8c711b81f525cfbeecce1840a95fdd7fea00dea75bcb678c7bce5ab4dffe1"
+            },
+            "thumb.webp": {
+              "bytes": 14196,
+              "mediaType": "image/webp",
+              "sha256": "5339aafeb1716beb8cdcbb397ee04154bf74efd5aa6aade6a6d5a7b0d34b433f"
+            }
+          },
+          "format": "bear-pack",
+          "formatVersion": 1,
+          "generator": {
+            "name": "bear-scanner",
+            "version": "0.1.0"
+          },
+          "id": "example-real-bear",
+          "landmarks": {
+            "complete": false,
+            "file": "landmarks.json",
+            "flatSurface": 0.572,
+            "limbs": {
+              "arms": 1,
+              "legs": 1
+            },
+            "method": "depth-reach-v2",
+            "missing": [
+              "head",
+              "headTop",
+              "neck",
+              "chest",
+              "shoulder_R",
+              "elbow_R",
+              "hand_R",
+              "hip_R",
+              "knee_R",
+              "foot_R"
+            ],
+            "problems": [
+              "no head found",
+              "something flat (a box or stand?) is part of the bear"
+            ]
+          },
+          "model": {
+            "bounds": {
+              "max": [
+                0.039,
+                0.09698,
+                0.02796
+              ],
+              "min": [
+                -0.039,
+                0.0,
+                -0.02796
+              ]
+            },
+            "file": "model.glb",
+            "lods": [
+              {
+                "level": 0,
+                "node": "LOD0",
+                "normals": true,
+                "switchAtHeights": 0,
+                "triangles": 8000,
+                "vertices": 5091
+              },
+              {
+                "level": 1,
+                "node": "LOD1",
+                "normals": true,
+                "switchAtHeights": 8,
+                "triangles": 2500,
+                "vertices": 2165
+              },
+              {
+                "level": 2,
+                "node": "LOD2",
+                "normals": true,
+                "switchAtHeights": 20,
+                "triangles": 800,
+                "vertices": 834
+              }
+            ],
+            "materials": 1,
+            "texture": {
+              "height": 2048,
+              "mimeType": "image/png",
+              "width": 2048
+            },
+            "textures": 1
+          },
+          "name": "Real bear (example scan)",
+          "photos": 22,
+          "quality": {
+            "notPassing": [
+              "holes",
+              "colour",
+              "above",
+              "props"
+            ],
+            "status": "warn",
+            "usable": true
+          },
+          "report": {
+            "file": "report.json"
+          },
+          "revision": "dca73692579c262d4e668448e3fa84e3",
+          "scale": {
+            "heightCm": 10.0,
+            "source": "typed"
+          },
+          "size": {
+            "x": 0.07801,
+            "y": 0.09698,
+            "z": 0.05593
+          },
+          "thumbnail": {
+            "file": "thumb.webp"
+          },
+          "version": 1791257981
+        }
+      },
+      "sourceReport": {
+        "status": "warn",
+        "checks": [
+          {
+            "id": "single_body",
+            "label": "Single connected body",
+            "status": "pass",
+            "value": 1,
+            "detail": "One piece, nothing floating"
+          },
+          {
+            "id": "floaters",
+            "label": "Floating debris removed",
+            "status": "pass",
+            "value": 0.0,
+            "detail": "1 stray pieces (0.0% of raw triangles) cut away"
+          },
+          {
+            "id": "holes",
+            "label": "Holes in the surface",
+            "status": "warn",
+            "value": 0,
+            "detail": "13% of the surface was filled in, not captured"
+          },
+          {
+            "id": "triangles",
+            "label": "Triangle budget",
+            "status": "pass",
+            "value": 8000,
+            "detail": "LOD0 8,000 / LOD1 2,500 / LOD2 800 (budget 8,000 / 2,500 / 800)"
+          },
+          {
+            "id": "textures",
+            "label": "Texture maps",
+            "status": "pass",
+            "value": 1,
+            "detail": "4096x4096"
+          },
+          {
+            "id": "untextured",
+            "label": "Faces no photo covered",
+            "status": "pass",
+            "value": 0.0,
+            "detail": "0.0% of triangles above the base; 0.7% on the underside (filled with the bear's colour)"
+          },
+          {
+            "id": "colour",
+            "label": "Texture matches the photos",
+            "status": "warn",
+            "value": 56,
+            "detail": "Average colour off by 56 (0-441); dark areas 1% vs 4% in the photos"
+          },
+          {
+            "id": "upright",
+            "label": "Upright",
+            "status": "pass",
+            "value": "table plane",
+            "detail": "Levelled on the table it stood on (534 points); the phone-held estimate differed by 1\u00b0"
+          },
+          {
+            "id": "stands",
+            "label": "Stands on its base",
+            "status": "pass",
+            "value": 0.0,
+            "detail": "Centre of mass is over the footprint"
+          },
+          {
+            "id": "coverage",
+            "label": "Walked all the way around",
+            "status": "pass",
+            "value": 100,
+            "detail": "Photos cover 100% of the circle; elevation 17\u00b0 to 25\u00b0"
+          },
+          {
+            "id": "above",
+            "label": "Seen from above",
+            "status": "warn",
+            "value": 25,
+            "detail": "Highest photo looks down 25\u00b0; the top of the head is guessed. Add a lap looking down from above."
+          },
+          {
+            "id": "placed",
+            "label": "Photos placed in 3D",
+            "status": "pass",
+            "value": 22,
+            "detail": "22 of 22 photos (100%)"
+          },
+          {
+            "id": "front",
+            "label": "Front photo placed",
+            "status": "pass",
+            "value": "0000.jpg",
+            "detail": "The first photo sets which way the bear faces"
+          },
+          {
+            "id": "framing",
+            "label": "Bear fills the frame",
+            "status": "pass",
+            "value": 21.7,
+            "detail": "Bear covers 22% of a typical photo"
+          },
+          {
+            "id": "props",
+            "label": "Nothing else attached",
+            "status": "warn",
+            "value": 57.2,
+            "detail": "57% of the surface is flat, like a box or stand the bear was on or holding. Anything touching the bear becomes part of it: scan it on its own, on the table"
+          },
+          {
+            "id": "limbs",
+            "label": "Arms and legs apart",
+            "status": "pass",
+            "value": 2,
+            "detail": "Found 1 of 2 arms and 1 of 2 legs standing out from the body; no head found (only matters for bears you'll animate: tick that option when scanning)"
+          }
+        ],
+        "size_m": {
+          "x": 0.078,
+          "y": 0.097,
+          "z": 0.0559
+        },
+        "triangles": 8000,
+        "lod_triangles": [
+          8000,
+          2500,
+          800
+        ],
+        "vertices": 5091
+      },
+      "sourceStats": {
+        "meshCount": 3,
+        "vertices": 8090,
+        "triangles": 11300,
+        "lods": [
+          {
+            "name": "LOD0",
+            "vertices": 5091,
+            "triangles": 8000
+          },
+          {
+            "name": "LOD1",
+            "vertices": 2165,
+            "triangles": 2500
+          },
+          {
+            "name": "LOD2",
+            "vertices": 834,
+            "triangles": 800
+          }
+        ],
+        "skins": 0,
+        "animations": 0,
+        "animationNames": [],
+        "animationDetails": [],
+        "bounds": {
+          "min": [
+            -0.03900405764579773,
+            -6.357853999361396e-05,
+            -0.027989426627755165
+          ],
+          "max": [
+            0.03900405764579773,
+            0.09714585542678833,
+            0.027962621301412582
+          ],
+          "space": "mesh-local"
+        }
+      },
+      "rigs": [],
+      "tests": [],
+      "draftDirty": false,
+      "rigStatus": "unrigged",
+      "manifestUrl": "/api/bears/bear_6a63027e60ad4c87/manifest"
+    },
+    {
+      "name": "Bundled real bear (prebuilt sample)",
+      "tags": [
+        "prebuilt-sample",
+        "rigging-study"
+      ],
+      "notes": "Working sample for Bear Studio QA. Original scan includes its support box; cropped underside, shoulders and foot contact require visual review. No artistic approval recorded.",
+      "role": "prop",
+      "reviewStatus": "unreviewed",
+      "draftRecipe": {
+        "schemaVersion": 1,
+        "preset": "seated",
+        "sourceSha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+        "sourceRevision": 1,
+        "lod": 0,
+        "heightM": 0.09720000000000001,
+        "yawDegrees": 0,
+        "cropFraction": 0.52,
+        "landmarks": {
+          "root": [
+            0,
+            0,
+            0
+          ],
+          "pelvis": [
+            0,
+            0.63,
+            -0.01
+          ],
+          "spine": [
+            0,
+            0.73,
+            -0.015
+          ],
+          "head": [
+            0,
+            0.835,
+            0.015
+          ],
+          "head_tip": [
+            0,
+            0.96,
+            0.015
+          ],
+          "upperarm_L": [
+            0.14,
+            0.775,
+            0
+          ],
+          "forearm_L": [
+            0.18,
+            0.685,
+            0.045
+          ],
+          "hand_L": [
+            0.145,
+            0.61,
+            0.1
+          ],
+          "hand_tip_L": [
+            0.12,
+            0.585,
+            0.12
+          ],
+          "thigh_L": [
+            0.085,
+            0.635,
+            0.01
+          ],
+          "shin_L": [
+            0.115,
+            0.56,
+            0.11
+          ],
+          "foot_L": [
+            0.135,
+            0.535,
+            0.17
+          ],
+          "foot_tip_L": [
+            0.135,
+            0.545,
+            0.22
+          ],
+          "upperarm_R": [
+            -0.14,
+            0.775,
+            0
+          ],
+          "forearm_R": [
+            -0.18,
+            0.685,
+            0.045
+          ],
+          "hand_R": [
+            -0.145,
+            0.61,
+            0.1
+          ],
+          "hand_tip_R": [
+            -0.12,
+            0.585,
+            0.12
+          ],
+          "thigh_R": [
+            -0.085,
+            0.635,
+            0.01
+          ],
+          "shin_R": [
+            -0.115,
+            0.56,
+            0.11
+          ],
+          "foot_R": [
+            -0.135,
+            0.535,
+            0.17
+          ],
+          "foot_tip_R": [
+            -0.135,
+            0.545,
+            0.22
+          ]
+        },
+        "weighting": "four-nearest-bone-capsules"
+      },
+      "id": "bear_7ee1160b65c449be",
+      "revision": 5,
+      "created": "2026-10-06T13:47:09.101Z",
+      "updated": "2026-10-06T14:00:36.845Z",
+      "sources": [
+        {
+          "revision": 1,
+          "sha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+          "created": "2026-10-06T13:47:09.102Z",
+          "modelUrl": "/assets/bear_7ee1160b65c449be/sources/1/model.glb",
+          "thumbnailUrl": "/assets/bear_7ee1160b65c449be/sources/1/thumb.webp",
+          "source": {
+            "kind": "bundled-sample",
+            "scanId": "def16f899a9a",
+            "scannerUrl": "http://127.0.0.1:8471",
+            "originalFilename": "model.glb",
+            "provenance": {
+              "source_repository": "https://github.com/Vibecadex/bear-scanner",
+              "source_commit": "19c2ffb4494ec62928665c397697212658b2a06e",
+              "source_directory": "web/examples/real-bear",
+              "source_kind": "Team bundled phone-scan sample, served by the local workshop; not a new reconstruction on this workstation",
+              "workshop_scan_id": "def16f899a9a",
+              "workshop_scan_name": "Bundled real bear (prebuilt sample)",
+              "workshop_version": "1791288767",
+              "known_limitations": [
+                "Supporting box is part of mesh",
+                "Original scan quality warnings retained in report.json"
+              ],
+              "importer_path": "unreal/import_bears.py",
+              "importer_sha256": "025642e73ece37695c6b7ae74d8d9b4f285a69540049d4167b1f5762ec19f395",
+              "files": {
+                "model.glb": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+                "README.md": "6759341eec8a4815ed28b75b57e726bd6520551a3ae319a9bd8a0de3ec3f8375",
+                "report.json": "7eec49c9212c715cf43072f893e2722e7524daa2c05e122cce55dbd8db44a36b",
+                "thumb.webp": "5339aafeb1716beb8cdcbb397ee04154bf74efd5aa6aade6a6d5a7b0d34b433f"
+              }
+            }
+          },
+          "report": {
+            "status": "warn",
+            "checks": [
+              {
+                "id": "single_body",
+                "label": "Single connected body",
+                "status": "pass",
+                "value": 1,
+                "detail": "One piece, nothing floating"
+              },
+              {
+                "id": "floaters",
+                "label": "Floating debris removed",
+                "status": "pass",
+                "value": 0.0,
+                "detail": "1 stray pieces (0.0% of raw triangles) cut away"
+              },
+              {
+                "id": "holes",
+                "label": "Holes in the surface",
+                "status": "warn",
+                "value": 0,
+                "detail": "13% of the surface was filled in, not captured"
+              },
+              {
+                "id": "triangles",
+                "label": "Triangle budget",
+                "status": "pass",
+                "value": 8000,
+                "detail": "LOD0 8,000 / LOD1 2,500 / LOD2 800 (budget 8,000 / 2,500 / 800)"
+              },
+              {
+                "id": "textures",
+                "label": "Texture maps",
+                "status": "pass",
+                "value": 1,
+                "detail": "4096x4096"
+              },
+              {
+                "id": "untextured",
+                "label": "Faces no photo covered",
+                "status": "pass",
+                "value": 0.0,
+                "detail": "0.0% of triangles above the base; 0.7% on the underside (filled with the bear's colour)"
+              },
+              {
+                "id": "colour",
+                "label": "Texture matches the photos",
+                "status": "warn",
+                "value": 56,
+                "detail": "Average colour off by 56 (0-441); dark areas 1% vs 4% in the photos"
+              },
+              {
+                "id": "upright",
+                "label": "Upright",
+                "status": "pass",
+                "value": "table plane",
+                "detail": "Levelled on the table it stood on (534 points); the phone-held estimate differed by 1\u00b0"
+              },
+              {
+                "id": "stands",
+                "label": "Stands on its base",
+                "status": "pass",
+                "value": 0.0,
+                "detail": "Centre of mass is over the footprint"
+              },
+              {
+                "id": "coverage",
+                "label": "Walked all the way around",
+                "status": "pass",
+                "value": 100,
+                "detail": "Photos cover 100% of the circle; elevation 17\u00b0 to 25\u00b0"
+              },
+              {
+                "id": "above",
+                "label": "Seen from above",
+                "status": "warn",
+                "value": 25,
+                "detail": "Highest photo looks down 25\u00b0; the top of the head is guessed. Add a lap looking down from above."
+              },
+              {
+                "id": "placed",
+                "label": "Photos placed in 3D",
+                "status": "pass",
+                "value": 22,
+                "detail": "22 of 22 photos (100%)"
+              },
+              {
+                "id": "front",
+                "label": "Front photo placed",
+                "status": "pass",
+                "value": "0000.jpg",
+                "detail": "The first photo sets which way the bear faces"
+              },
+              {
+                "id": "framing",
+                "label": "Bear fills the frame",
+                "status": "pass",
+                "value": 21.7,
+                "detail": "Bear covers 22% of a typical photo"
+              }
+            ],
+            "size_m": {
+              "x": 0.078,
+              "y": 0.097,
+              "z": 0.0559
+            },
+            "triangles": 8000,
+            "lod_triangles": [
+              8000,
+              2500,
+              800
+            ],
+            "vertices": 5091
+          },
+          "stats": {
+            "meshCount": 3,
+            "vertices": 8090,
+            "triangles": 11300,
+            "lods": [
+              {
+                "name": "LOD0",
+                "vertices": 5091,
+                "triangles": 8000
+              },
+              {
+                "name": "LOD1",
+                "vertices": 2165,
+                "triangles": 2500
+              },
+              {
+                "name": "LOD2",
+                "vertices": 834,
+                "triangles": 800
+              }
+            ],
+            "skins": 0,
+            "animations": 0,
+            "animationNames": [],
+            "bounds": {
+              "min": [
+                -0.03900405764579773,
+                -6.357853999361396e-05,
+                -0.027989426627755165
+              ],
+              "max": [
+                0.03900405764579773,
+                0.09714585542678833,
+                0.027962621301412582
+              ],
+              "space": "mesh-local"
+            }
+          },
+          "manifestUrl": "/assets/bear_7ee1160b65c449be/sources/1/manifest.json"
+        }
+      ],
+      "sourceRevision": 1,
+      "sourceSha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+      "modelUrl": "/assets/bear_7ee1160b65c449be/sources/1/model.glb",
+      "thumbnailUrl": "/assets/bear_7ee1160b65c449be/sources/1/thumb.webp",
+      "source": {
+        "kind": "bundled-sample",
+        "scanId": "def16f899a9a",
+        "scannerUrl": "http://127.0.0.1:8471",
+        "originalFilename": "model.glb",
+        "provenance": {
+          "source_repository": "https://github.com/Vibecadex/bear-scanner",
+          "source_commit": "19c2ffb4494ec62928665c397697212658b2a06e",
+          "source_directory": "web/examples/real-bear",
+          "source_kind": "Team bundled phone-scan sample, served by the local workshop; not a new reconstruction on this workstation",
+          "workshop_scan_id": "def16f899a9a",
+          "workshop_scan_name": "Bundled real bear (prebuilt sample)",
+          "workshop_version": "1791288767",
+          "known_limitations": [
+            "Supporting box is part of mesh",
+            "Original scan quality warnings retained in report.json"
+          ],
+          "importer_path": "unreal/import_bears.py",
+          "importer_sha256": "025642e73ece37695c6b7ae74d8d9b4f285a69540049d4167b1f5762ec19f395",
+          "files": {
+            "model.glb": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+            "README.md": "6759341eec8a4815ed28b75b57e726bd6520551a3ae319a9bd8a0de3ec3f8375",
+            "report.json": "7eec49c9212c715cf43072f893e2722e7524daa2c05e122cce55dbd8db44a36b",
+            "thumb.webp": "5339aafeb1716beb8cdcbb397ee04154bf74efd5aa6aade6a6d5a7b0d34b433f"
+          }
+        }
+      },
+      "sourceReport": {
+        "status": "warn",
+        "checks": [
+          {
+            "id": "single_body",
+            "label": "Single connected body",
+            "status": "pass",
+            "value": 1,
+            "detail": "One piece, nothing floating"
+          },
+          {
+            "id": "floaters",
+            "label": "Floating debris removed",
+            "status": "pass",
+            "value": 0.0,
+            "detail": "1 stray pieces (0.0% of raw triangles) cut away"
+          },
+          {
+            "id": "holes",
+            "label": "Holes in the surface",
+            "status": "warn",
+            "value": 0,
+            "detail": "13% of the surface was filled in, not captured"
+          },
+          {
+            "id": "triangles",
+            "label": "Triangle budget",
+            "status": "pass",
+            "value": 8000,
+            "detail": "LOD0 8,000 / LOD1 2,500 / LOD2 800 (budget 8,000 / 2,500 / 800)"
+          },
+          {
+            "id": "textures",
+            "label": "Texture maps",
+            "status": "pass",
+            "value": 1,
+            "detail": "4096x4096"
+          },
+          {
+            "id": "untextured",
+            "label": "Faces no photo covered",
+            "status": "pass",
+            "value": 0.0,
+            "detail": "0.0% of triangles above the base; 0.7% on the underside (filled with the bear's colour)"
+          },
+          {
+            "id": "colour",
+            "label": "Texture matches the photos",
+            "status": "warn",
+            "value": 56,
+            "detail": "Average colour off by 56 (0-441); dark areas 1% vs 4% in the photos"
+          },
+          {
+            "id": "upright",
+            "label": "Upright",
+            "status": "pass",
+            "value": "table plane",
+            "detail": "Levelled on the table it stood on (534 points); the phone-held estimate differed by 1\u00b0"
+          },
+          {
+            "id": "stands",
+            "label": "Stands on its base",
+            "status": "pass",
+            "value": 0.0,
+            "detail": "Centre of mass is over the footprint"
+          },
+          {
+            "id": "coverage",
+            "label": "Walked all the way around",
+            "status": "pass",
+            "value": 100,
+            "detail": "Photos cover 100% of the circle; elevation 17\u00b0 to 25\u00b0"
+          },
+          {
+            "id": "above",
+            "label": "Seen from above",
+            "status": "warn",
+            "value": 25,
+            "detail": "Highest photo looks down 25\u00b0; the top of the head is guessed. Add a lap looking down from above."
+          },
+          {
+            "id": "placed",
+            "label": "Photos placed in 3D",
+            "status": "pass",
+            "value": 22,
+            "detail": "22 of 22 photos (100%)"
+          },
+          {
+            "id": "front",
+            "label": "Front photo placed",
+            "status": "pass",
+            "value": "0000.jpg",
+            "detail": "The first photo sets which way the bear faces"
+          },
+          {
+            "id": "framing",
+            "label": "Bear fills the frame",
+            "status": "pass",
+            "value": 21.7,
+            "detail": "Bear covers 22% of a typical photo"
+          }
+        ],
+        "size_m": {
+          "x": 0.078,
+          "y": 0.097,
+          "z": 0.0559
+        },
+        "triangles": 8000,
+        "lod_triangles": [
+          8000,
+          2500,
+          800
+        ],
+        "vertices": 5091
+      },
+      "sourceStats": {
+        "meshCount": 3,
+        "vertices": 8090,
+        "triangles": 11300,
+        "lods": [
+          {
+            "name": "LOD0",
+            "vertices": 5091,
+            "triangles": 8000
+          },
+          {
+            "name": "LOD1",
+            "vertices": 2165,
+            "triangles": 2500
+          },
+          {
+            "name": "LOD2",
+            "vertices": 834,
+            "triangles": 800
+          }
+        ],
+        "skins": 0,
+        "animations": 0,
+        "animationNames": [],
+        "bounds": {
+          "min": [
+            -0.03900405764579773,
+            -6.357853999361396e-05,
+            -0.027989426627755165
+          ],
+          "max": [
+            0.03900405764579773,
+            0.09714585542678833,
+            0.027962621301412582
+          ],
+          "space": "mesh-local"
+        }
+      },
+      "rigs": [
+        {
+          "revision": 1,
+          "sourceRevision": 1,
+          "sourceSha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+          "sha256": "e9fb20ea1c85001ead1bba79eedcc087dcbd5d166e9c32b811bf3b3feb796fe4",
+          "created": "2026-10-06T13:56:52.463Z",
+          "recipe": {
+            "schemaVersion": 1,
+            "preset": "seated",
+            "sourceSha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+            "sourceRevision": 1,
+            "lod": 0,
+            "heightM": 0.09720000000000001,
+            "yawDegrees": 0,
+            "cropFraction": 0.52,
+            "landmarks": {
+              "root": [
+                0,
+                0,
+                0
+              ],
+              "pelvis": [
+                0,
+                0.63,
+                -0.01
+              ],
+              "spine": [
+                0,
+                0.73,
+                -0.015
+              ],
+              "head": [
+                0,
+                0.835,
+                0.015
+              ],
+              "head_tip": [
+                0,
+                0.96,
+                0.015
+              ],
+              "upperarm_L": [
+                0.14,
+                0.775,
+                0
+              ],
+              "forearm_L": [
+                0.18,
+                0.685,
+                0.045
+              ],
+              "hand_L": [
+                0.145,
+                0.61,
+                0.1
+              ],
+              "hand_tip_L": [
+                0.12,
+                0.585,
+                0.12
+              ],
+              "thigh_L": [
+                0.085,
+                0.635,
+                0.01
+              ],
+              "shin_L": [
+                0.115,
+                0.56,
+                0.11
+              ],
+              "foot_L": [
+                0.135,
+                0.535,
+                0.17
+              ],
+              "foot_tip_L": [
+                0.135,
+                0.545,
+                0.22
+              ],
+              "upperarm_R": [
+                -0.14,
+                0.775,
+                0
+              ],
+              "forearm_R": [
+                -0.18,
+                0.685,
+                0.045
+              ],
+              "hand_R": [
+                -0.145,
+                0.61,
+                0.1
+              ],
+              "hand_tip_R": [
+                -0.12,
+                0.585,
+                0.12
+              ],
+              "thigh_R": [
+                -0.085,
+                0.635,
+                0.01
+              ],
+              "shin_R": [
+                -0.115,
+                0.56,
+                0.11
+              ],
+              "foot_R": [
+                -0.135,
+                0.535,
+                0.17
+              ],
+              "foot_tip_R": [
+                -0.135,
+                0.545,
+                0.22
+              ]
+            },
+            "weighting": "four-nearest-bone-capsules"
+          },
+          "validation": {
+            "schemaVersion": 1,
+            "kind": "rig-structural",
+            "passed": true,
+            "status": "passed",
+            "review": "pending",
+            "checks": [
+              {
+                "id": "finite_geometry",
+                "label": "Finite geometry and skeleton",
+                "status": "pass",
+                "detail": "0 non-finite vertices; skeleton transforms inspected."
+              },
+              {
+                "id": "joint_indices",
+                "label": "Valid joint references",
+                "status": "pass",
+                "detail": "0 invalid joint indices.",
+                "value": 0
+              },
+              {
+                "id": "weights",
+                "label": "Normalized four-influence weights",
+                "status": "pass",
+                "detail": "Maximum sum error 4.14e-8.",
+                "value": 4.1443854570388794e-08
+              },
+              {
+                "id": "bone_lengths",
+                "label": "Nonzero authored bone lengths",
+                "status": "pass",
+                "detail": "16 authored segments and 16 saved joints inspected."
+              },
+              {
+                "id": "rest_pose",
+                "label": "Rest pose reconstructs the mesh",
+                "status": "pass",
+                "detail": "Maximum rest error 3.36e-9 m.",
+                "value": 3.361345745524841e-09
+              },
+              {
+                "id": "non_root_deformation",
+                "label": "A non-root joint deforms actual vertices",
+                "status": "pass",
+                "detail": "3350 vertices moved; max 0.018060 m. Whole-object motion is excluded.",
+                "value": 3350
+              },
+              {
+                "id": "clips_present",
+                "label": "Saved skeletal test clips",
+                "status": "pass",
+                "detail": "5 clips.",
+                "value": 5
+              },
+              {
+                "id": "finite_playback",
+                "label": "Finite sampled animation deformation",
+                "status": "pass",
+                "detail": "3225 sampled vertex positions; 0 invalid.",
+                "value": 3225
+              },
+              {
+                "id": "visual_review",
+                "label": "Deformation and contact need visual review",
+                "status": "warn",
+                "detail": "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear."
+              },
+              {
+                "id": "floor_contact",
+                "label": "Some test poses cross the ground",
+                "status": "warn",
+                "detail": "Lowest sampled vertex -0.0074 m; this is not a planted-foot locomotion rig."
+              },
+              {
+                "id": "crop_surface",
+                "label": "Cropped underside needs inspection",
+                "status": "warn",
+                "detail": "Coarse crop removes whole triangles below the plane. It can cut feet and leave an open, uneven bottom; it does not reconstruct hidden surfaces."
+              }
+            ],
+            "metrics": {
+              "vertexCount": 3350,
+              "triangleCount": 5160,
+              "sourceTriangleCount": 8000,
+              "removedTriangles": 2840,
+              "heightM": 0.09720000000000002,
+              "bounds": {
+                "min": [
+                  -0.07702130824327469,
+                  0,
+                  -0.05639064684510231
+                ],
+                "max": [
+                  0.08114323765039444,
+                  0.09719999879598618,
+                  0.05768971145153046
+                ],
+                "size": [
+                  0.15816454589366913,
+                  0.09719999879598618,
+                  0.11408035829663277
+                ]
+              },
+              "sourceBounds": {
+                "min": [
+                  -0.03900405764579773,
+                  0,
+                  -0.027962621301412582
+                ],
+                "max": [
+                  0.03900405764579773,
+                  0.09697791188955307,
+                  0.027962621301412582
+                ],
+                "size": [
+                  0.07800811529159546,
+                  0.09697791188955307,
+                  0.055925242602825165
+                ]
+              },
+              "cropYSourceM": 0.0504285141825676,
+              "retainedBaseSourceM": 0.05042910575866699,
+              "boneCount": 16,
+              "weightedVertices": 3350,
+              "maxWeightError": 4.1443854570388794e-08,
+              "maxRestErrorM": 3.361345745524841e-09,
+              "nonRootMovedVertices": 3350,
+              "maxDeformationM": 0.01805997637981531,
+              "sampledPositions": 3225,
+              "minimumSampledY": -0.00735239235953878
+            },
+            "warnings": [
+              "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear.",
+              "Coarse crop removes whole triangles below the plane. It can cut feet and leave an open, uneven bottom; it does not reconstruct hidden surfaces.",
+              "The source collision hull is stale after cropping; no replacement collision has been generated.",
+              "Seated / support preset: landmarks are suggestions. Leg deformation is not a walking or planted-foot test."
+            ]
+          },
+          "structuralValidation": {
+            "status": "pass",
+            "checks": [
+              {
+                "id": "self-contained-glb",
+                "status": "pass",
+                "detail": "Valid embedded GLB 2.0"
+              },
+              {
+                "id": "finite-geometry",
+                "status": "pass",
+                "detail": "3350 finite mesh vertices"
+              },
+              {
+                "id": "saved-skin-weights",
+                "status": "pass",
+                "detail": "3350 vertices with valid joints and normalized weights"
+              }
+            ],
+            "scope": "Structural artifact checks only; deformation and visual acceptance require review."
+          },
+          "stats": {
+            "meshCount": 1,
+            "vertices": 3350,
+            "triangles": 5160,
+            "lods": [
+              {
+                "name": "BearSkin_0",
+                "vertices": 3350,
+                "triangles": 5160
+              }
+            ],
+            "skins": 1,
+            "animations": 5,
+            "animationNames": [
+              "Rest",
+              "Breathing",
+              "Arm range",
+              "Head turn",
+              "Leg deformation"
+            ],
+            "animationDetails": [
+              {
+                "name": "Rest",
+                "duration": 1.0,
+                "channels": 16
+              },
+              {
+                "name": "Breathing",
+                "duration": 4.0,
+                "channels": 16
+              },
+              {
+                "name": "Arm range",
+                "duration": 4.0,
+                "channels": 16
+              },
+              {
+                "name": "Head turn",
+                "duration": 4.0,
+                "channels": 16
+              },
+              {
+                "name": "Leg deformation",
+                "duration": 4.0,
+                "channels": 16
+              }
+            ],
+            "bounds": {
+              "min": [
+                -0.07702130824327469,
+                0,
+                -0.05639064684510231
+              ],
+              "max": [
+                0.08114323765039444,
+                0.09719999879598618,
+                0.05768971145153046
+              ],
+              "space": "mesh-local"
+            },
+            "skinnedVertices": 3350
+          },
+          "modelUrl": "/assets/bear_7ee1160b65c449be/rigs/1/model.glb",
+          "recipeUrl": "/assets/bear_7ee1160b65c449be/rigs/1/recipe.json",
+          "validationUrl": "/assets/bear_7ee1160b65c449be/rigs/1/validation.json",
+          "manifestUrl": "/assets/bear_7ee1160b65c449be/rigs/1/manifest.json",
+          "status": "draft",
+          "stale": false
+        },
+        {
+          "revision": 2,
+          "sourceRevision": 1,
+          "sourceSha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+          "sha256": "48fbd2c9520ae1f898366b6e5fa747e3958ea88bbdcd4eefb4ee7da37ddc798c",
+          "created": "2026-10-06T14:00:27.075Z",
+          "recipe": {
+            "schemaVersion": 1,
+            "preset": "seated",
+            "sourceSha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+            "sourceRevision": 1,
+            "lod": 0,
+            "heightM": 0.09720000000000001,
+            "yawDegrees": 0,
+            "cropFraction": 0.52,
+            "landmarks": {
+              "root": [
+                0,
+                0,
+                0
+              ],
+              "pelvis": [
+                0,
+                0.63,
+                -0.01
+              ],
+              "spine": [
+                0,
+                0.73,
+                -0.015
+              ],
+              "head": [
+                0,
+                0.835,
+                0.015
+              ],
+              "head_tip": [
+                0,
+                0.96,
+                0.015
+              ],
+              "upperarm_L": [
+                0.14,
+                0.775,
+                0
+              ],
+              "forearm_L": [
+                0.18,
+                0.685,
+                0.045
+              ],
+              "hand_L": [
+                0.145,
+                0.61,
+                0.1
+              ],
+              "hand_tip_L": [
+                0.12,
+                0.585,
+                0.12
+              ],
+              "thigh_L": [
+                0.085,
+                0.635,
+                0.01
+              ],
+              "shin_L": [
+                0.115,
+                0.56,
+                0.11
+              ],
+              "foot_L": [
+                0.135,
+                0.535,
+                0.17
+              ],
+              "foot_tip_L": [
+                0.135,
+                0.545,
+                0.22
+              ],
+              "upperarm_R": [
+                -0.14,
+                0.775,
+                0
+              ],
+              "forearm_R": [
+                -0.18,
+                0.685,
+                0.045
+              ],
+              "hand_R": [
+                -0.145,
+                0.61,
+                0.1
+              ],
+              "hand_tip_R": [
+                -0.12,
+                0.585,
+                0.12
+              ],
+              "thigh_R": [
+                -0.085,
+                0.635,
+                0.01
+              ],
+              "shin_R": [
+                -0.115,
+                0.56,
+                0.11
+              ],
+              "foot_R": [
+                -0.135,
+                0.535,
+                0.17
+              ],
+              "foot_tip_R": [
+                -0.135,
+                0.545,
+                0.22
+              ]
+            },
+            "weighting": "four-nearest-bone-capsules"
+          },
+          "validation": {
+            "schemaVersion": 1,
+            "kind": "rig-structural",
+            "passed": true,
+            "status": "passed",
+            "review": "pending",
+            "checks": [
+              {
+                "id": "finite_geometry",
+                "label": "Finite geometry and skeleton",
+                "status": "pass",
+                "detail": "0 non-finite vertices; skeleton transforms inspected."
+              },
+              {
+                "id": "joint_indices",
+                "label": "Valid joint references",
+                "status": "pass",
+                "detail": "0 invalid joint indices.",
+                "value": 0
+              },
+              {
+                "id": "weights",
+                "label": "Normalized four-influence weights",
+                "status": "pass",
+                "detail": "Maximum sum error 4.10e-8.",
+                "value": 4.0978193283081055e-08
+              },
+              {
+                "id": "bone_lengths",
+                "label": "Nonzero authored bone lengths",
+                "status": "pass",
+                "detail": "16 authored segments and 16 saved joints inspected."
+              },
+              {
+                "id": "rest_pose",
+                "label": "Rest pose reconstructs the mesh",
+                "status": "pass",
+                "detail": "Maximum rest error 3.36e-9 m.",
+                "value": 3.361345745524841e-09
+              },
+              {
+                "id": "non_root_deformation",
+                "label": "A non-root joint deforms actual vertices",
+                "status": "pass",
+                "detail": "3350 vertices moved; max 0.018060 m. Whole-object motion is excluded.",
+                "value": 3350
+              },
+              {
+                "id": "clips_present",
+                "label": "Saved skeletal test clips",
+                "status": "pass",
+                "detail": "6 clips.",
+                "value": 6
+              },
+              {
+                "id": "finite_playback",
+                "label": "Finite sampled animation deformation",
+                "status": "pass",
+                "detail": "3870 sampled vertex positions; 0 invalid.",
+                "value": 3870
+              },
+              {
+                "id": "visual_review",
+                "label": "Deformation and contact need visual review",
+                "status": "warn",
+                "detail": "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear."
+              },
+              {
+                "id": "floor_contact",
+                "label": "Some test poses cross the ground",
+                "status": "warn",
+                "detail": "Lowest sampled vertex -0.0074 m; this is not a planted-foot locomotion rig."
+              },
+              {
+                "id": "crop_surface",
+                "label": "Cropped underside needs inspection",
+                "status": "warn",
+                "detail": "Coarse crop removes whole triangles below the plane. It can cut feet and leave an open, uneven bottom; it does not reconstruct hidden surfaces."
+              }
+            ],
+            "metrics": {
+              "vertexCount": 3350,
+              "triangleCount": 5160,
+              "sourceTriangleCount": 8000,
+              "removedTriangles": 2840,
+              "heightM": 0.09719999897703528,
+              "bounds": {
+                "min": [
+                  -0.07702131053868855,
+                  0,
+                  -0.05639064516453007
+                ],
+                "max": [
+                  0.0811432388595229,
+                  0.09719999897703528,
+                  0.05768971059188677
+                ],
+                "size": [
+                  0.15816454939821145,
+                  0.09719999897703528,
+                  0.11408035575641684
+                ]
+              },
+              "sourceBounds": {
+                "min": [
+                  -0.03900405764579773,
+                  0,
+                  -0.027962621301412582
+                ],
+                "max": [
+                  0.03900405764579773,
+                  0.09697791188955307,
+                  0.027962621301412582
+                ],
+                "size": [
+                  0.07800811529159546,
+                  0.09697791188955307,
+                  0.055925242602825165
+                ]
+              },
+              "cropYSourceM": 0.0504285141825676,
+              "retainedBaseSourceM": 0.05042910575866699,
+              "boneCount": 16,
+              "weightedVertices": 3350,
+              "maxWeightError": 4.0978193283081055e-08,
+              "maxRestErrorM": 3.361345745524841e-09,
+              "nonRootMovedVertices": 3350,
+              "maxDeformationM": 0.018059976296669368,
+              "sampledPositions": 3870,
+              "minimumSampledY": -0.007352392571261679
+            },
+            "warnings": [
+              "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear.",
+              "Coarse crop removes whole triangles below the plane. It can cut feet and leave an open, uneven bottom; it does not reconstruct hidden surfaces.",
+              "The source collision hull is stale after cropping; no replacement collision has been generated.",
+              "Seated / support preset: landmarks are suggestions. Leg deformation is not a walking or planted-foot test.",
+              "Humanoid motion transferred onto a teddy draft. Its first pose is removed to retain the bear\u2019s rest pose. No root travel, foot planting, collision or anatomical fit is certified."
+            ]
+          },
+          "structuralValidation": {
+            "status": "pass",
+            "checks": [
+              {
+                "id": "self-contained-glb",
+                "status": "pass",
+                "detail": "Valid embedded GLB 2.0"
+              },
+              {
+                "id": "finite-geometry",
+                "status": "pass",
+                "detail": "3350 finite mesh vertices"
+              },
+              {
+                "id": "saved-skin-weights",
+                "status": "pass",
+                "detail": "3350 vertices with valid joints and normalized weights"
+              }
+            ],
+            "scope": "Structural artifact checks only; deformation and visual acceptance require review."
+          },
+          "stats": {
+            "meshCount": 1,
+            "vertices": 3350,
+            "triangles": 5160,
+            "lods": [
+              {
+                "name": "BearSkin_0",
+                "vertices": 3350,
+                "triangles": 5160
+              }
+            ],
+            "skins": 1,
+            "animations": 6,
+            "animationNames": [
+              "Rest",
+              "Breathing",
+              "Arm range",
+              "Head turn",
+              "Leg deformation",
+              "UAL \u00b7 Sitting_Idle_Loop"
+            ],
+            "animationDetails": [
+              {
+                "name": "Rest",
+                "duration": 1.0,
+                "channels": 16
+              },
+              {
+                "name": "Breathing",
+                "duration": 4.0,
+                "channels": 16
+              },
+              {
+                "name": "Arm range",
+                "duration": 4.0,
+                "channels": 16
+              },
+              {
+                "name": "Head turn",
+                "duration": 4.0,
+                "channels": 16
+              },
+              {
+                "name": "Leg deformation",
+                "duration": 4.0,
+                "channels": 16
+              },
+              {
+                "name": "UAL \u00b7 Sitting_Idle_Loop",
+                "duration": 1.6666666269302368,
+                "channels": 16
+              }
+            ],
+            "bounds": {
+              "min": [
+                -0.07702130824327469,
+                0,
+                -0.05639064684510231
+              ],
+              "max": [
+                0.08114323765039444,
+                0.09719999879598618,
+                0.05768971145153046
+              ],
+              "space": "mesh-local"
+            },
+            "skinnedVertices": 3350
+          },
+          "modelUrl": "/assets/bear_7ee1160b65c449be/rigs/2/model.glb",
+          "recipeUrl": "/assets/bear_7ee1160b65c449be/rigs/2/recipe.json",
+          "validationUrl": "/assets/bear_7ee1160b65c449be/rigs/2/validation.json",
+          "manifestUrl": "/assets/bear_7ee1160b65c449be/rigs/2/manifest.json",
+          "status": "draft",
+          "stale": false
+        }
+      ],
+      "tests": [
+        {
+          "id": "test_2411c628b6b44da9",
+          "rigRevision": 2,
+          "sourceRevision": 1,
+          "created": "2026-10-06T14:00:36.845Z",
+          "suite": "browser-structure-deformation-roundtrip",
+          "results": [
+            {
+              "id": "finite_geometry",
+              "label": "Finite geometry and skeleton",
+              "status": "pass",
+              "detail": "0 non-finite vertices; skeleton transforms inspected."
+            },
+            {
+              "id": "joint_indices",
+              "label": "Valid joint references",
+              "status": "pass",
+              "detail": "0 invalid joint indices.",
+              "value": 0
+            },
+            {
+              "id": "weights",
+              "label": "Normalized four-influence weights",
+              "status": "pass",
+              "detail": "Maximum sum error 4.10e-8.",
+              "value": 4.0978193283081055e-08
+            },
+            {
+              "id": "bone_lengths",
+              "label": "Nonzero authored bone lengths",
+              "status": "pass",
+              "detail": "16 authored segments and 16 saved joints inspected."
+            },
+            {
+              "id": "rest_pose",
+              "label": "Rest pose reconstructs the mesh",
+              "status": "pass",
+              "detail": "Maximum rest error 3.36e-9 m.",
+              "value": 3.361345745524841e-09
+            },
+            {
+              "id": "non_root_deformation",
+              "label": "A non-root joint deforms actual vertices",
+              "status": "pass",
+              "detail": "3350 vertices moved; max 0.018060 m. Whole-object motion is excluded.",
+              "value": 3350
+            },
+            {
+              "id": "clips_present",
+              "label": "Saved skeletal test clips",
+              "status": "pass",
+              "detail": "6 clips.",
+              "value": 6
+            },
+            {
+              "id": "finite_playback",
+              "label": "Finite sampled animation deformation",
+              "status": "pass",
+              "detail": "3870 sampled vertex positions; 0 invalid.",
+              "value": 3870
+            },
+            {
+              "id": "visual_review",
+              "label": "Deformation and contact need visual review",
+              "status": "warn",
+              "detail": "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear."
+            },
+            {
+              "id": "floor_contact",
+              "label": "Some test poses cross the ground",
+              "status": "warn",
+              "detail": "Lowest sampled vertex -0.0074 m; this is not a planted-foot locomotion rig."
+            },
+            {
+              "id": "crop_surface",
+              "label": "Cropped underside needs inspection",
+              "status": "warn",
+              "detail": "Coarse crop removes whole triangles below the plane. It can cut feet and leave an open, uneven bottom; it does not reconstruct hidden surfaces."
+            },
+            {
+              "id": "finite_geometry",
+              "label": "Finite geometry and skeleton",
+              "status": "pass",
+              "detail": "0 non-finite vertices; skeleton transforms inspected."
+            },
+            {
+              "id": "joint_indices",
+              "label": "Valid joint references",
+              "status": "pass",
+              "detail": "0 invalid joint indices.",
+              "value": 0
+            },
+            {
+              "id": "weights",
+              "label": "Normalized four-influence weights",
+              "status": "pass",
+              "detail": "Maximum sum error 4.05e-8.",
+              "value": 4.0512531995773315e-08
+            },
+            {
+              "id": "bone_lengths",
+              "label": "Nonzero authored bone lengths",
+              "status": "pass",
+              "detail": "16 authored segments and 16 saved joints inspected."
+            },
+            {
+              "id": "rest_pose",
+              "label": "Rest pose reconstructs the mesh",
+              "status": "pass",
+              "detail": "Maximum rest error 3.36e-9 m.",
+              "value": 3.361345745524841e-09
+            },
+            {
+              "id": "non_root_deformation",
+              "label": "A non-root joint deforms actual vertices",
+              "status": "pass",
+              "detail": "3350 vertices moved; max 0.018060 m. Whole-object motion is excluded.",
+              "value": 3350
+            },
+            {
+              "id": "clips_present",
+              "label": "Saved skeletal test clips",
+              "status": "pass",
+              "detail": "6 clips.",
+              "value": 6
+            },
+            {
+              "id": "finite_playback",
+              "label": "Finite sampled animation deformation",
+              "status": "pass",
+              "detail": "3870 sampled vertex positions; 0 invalid.",
+              "value": 3870
+            },
+            {
+              "id": "visual_review",
+              "label": "Deformation and contact need visual review",
+              "status": "warn",
+              "detail": "Heuristic draft skin: inspect limb separation, joint pinching and contact before accepting this bear."
+            },
+            {
+              "id": "floor_contact",
+              "label": "Some test poses cross the ground",
+              "status": "warn",
+              "detail": "Lowest sampled vertex -0.0074 m; this is not a planted-foot locomotion rig."
+            },
+            {
+              "id": "crop_surface",
+              "label": "Cropped underside needs inspection",
+              "status": "warn",
+              "detail": "Coarse crop removes whole triangles below the plane. It can cut feet and leave an open, uneven bottom; it does not reconstruct hidden surfaces."
+            },
+            {
+              "id": "glb_roundtrip",
+              "label": "Exported GLB reloads with skin and clips",
+              "status": "pass",
+              "detail": "16 joints, 3350 vertices, 6 clips; reloaded deformation tested."
+            }
+          ],
+          "notes": "Browser QA: saved r2 reuses exact source r1 and includes CC0 Sitting_Idle_Loop. Motion plays and actual skin survives export/reload. Support fragments remain at the crop edge, and shoulder/foot contact still require artist cleanup. No visual approval.",
+          "stale": false
+        }
+      ],
+      "draftDirty": false,
+      "rigStatus": "draft-rig",
+      "manifestUrl": "/api/bears/bear_7ee1160b65c449be/manifest"
+    }
+  ]
+}

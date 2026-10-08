@@ -1,0 +1,115 @@
+{
+  "status": "warn",
+  "checks": [
+    {
+      "id": "single_body",
+      "label": "Single connected body",
+      "status": "pass",
+      "value": 1,
+      "detail": "One piece, nothing floating"
+    },
+    {
+      "id": "floaters",
+      "label": "Floating debris removed",
+      "status": "pass",
+      "value": 0.0,
+      "detail": "1 stray pieces (0.0% of raw triangles) cut away"
+    },
+    {
+      "id": "holes",
+      "label": "Holes in the surface",
+      "status": "warn",
+      "value": 0,
+      "detail": "13% of the surface was filled in, not captured"
+    },
+    {
+      "id": "triangles",
+      "label": "Triangle budget",
+      "status": "pass",
+      "value": 8000,
+      "detail": "LOD0 8,000 / LOD1 2,500 / LOD2 800 (budget 8,000 / 2,500 / 800)"
+    },
+    {
+      "id": "textures",
+      "label": "Texture maps",
+      "status": "pass",
+      "value": 1,
+      "detail": "4096x4096"
+    },
+    {
+      "id": "untextured",
+      "label": "Faces no photo covered",
+      "status": "pass",
+      "value": 0.0,
+      "detail": "0.0% of triangles above the base; 0.7% on the underside (filled with the bear's colour)"
+    },
+    {
+      "id": "colour",
+      "label": "Texture matches the photos",
+      "status": "warn",
+      "value": 56,
+      "detail": "Average colour off by 56 (0-441); dark areas 1% vs 4% in the photos"
+    },
+    {
+      "id": "upright",
+      "label": "Upright",
+      "status": "pass",
+      "value": "table plane",
+      "detail": "Levelled on the table it stood on (534 points); the phone-held estimate differed by 1\u00b0"
+    },
+    {
+      "id": "stands",
+      "label": "Stands on its base",
+      "status": "pass",
+      "value": 0.0,
+      "detail": "Centre of mass is over the footprint"
+    },
+    {
+      "id": "coverage",
+      "label": "Walked all the way around",
+      "status": "pass",
+      "value": 100,
+      "detail": "Photos cover 100% of the circle; elevation 17\u00b0 to 25\u00b0"
+    },
+    {
+      "id": "above",
+      "label": "Seen from above",
+      "status": "warn",
+      "value": 25,
+      "detail": "Highest photo looks down 25\u00b0; the top of the head is guessed. Add a lap looking down from above."
+    },
+    {
+      "id": "placed",
+      "label": "Photos placed in 3D",
+      "status": "pass",
+      "value": 22,
+      "detail": "22 of 22 photos (100%)"
+    },
+    {
+      "id": "front",
+      "label": "Front photo placed",
+      "status": "pass",
+      "value": "0000.jpg",
+      "detail": "The first photo sets which way the bear faces"
+    },
+    {
+      "id": "framing",
+      "label": "Bear fills the frame",
+      "status": "pass",
+      "value": 21.7,
+      "detail": "Bear covers 22% of a typical photo"
+    }
+  ],
+  "size_m": {
+    "x": 0.078,
+    "y": 0.097,
+    "z": 0.0559
+  },
+  "triangles": 8000,
+  "lod_triangles": [
+    8000,
+    2500,
+    800
+  ],
+  "vertices": 5091
+}

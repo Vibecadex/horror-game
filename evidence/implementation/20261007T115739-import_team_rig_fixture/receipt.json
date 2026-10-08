@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "synthetic": true,
+  "saved_map_writes": false,
+  "destination": "/Game/ScannedBears/RigfitReview/SyntheticV1",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "assets": [
+    {
+      "path": "/Game/ScannedBears/RigfitReview/SyntheticV1/Textures/bear_color.bear_color",
+      "class": "Texture2D"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Bear_Skeleton.Bear_Skeleton",
+      "class": "Skeleton"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/SyntheticV1/Materials/bear.bear",
+      "class": "Material"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Bear.Bear",
+      "class": "SkeletalMesh"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Bear_PhysicsAsset.Bear_PhysicsAsset",
+      "class": "PhysicsAsset"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Test_Wave.Test_Wave",
+      "class": "AnimSequence"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Test_Walk.Test_Walk",
+      "class": "AnimSequence"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Test_LookAround.Test_LookAround",
+      "class": "AnimSequence"
+    },
+    {
+      "path": "/Game/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Test_Bend.Test_Bend",
+      "class": "AnimSequence"
+    }
+  ],
+  "warnings": [],
+  "method": "Interchange glTF skeletal import with explicit animation and skin settings.",
+  "counts": {
+    "SkeletalMesh": 1,
+    "Skeleton": 1,
+    "AnimSequence": 4
+  },
+  "source_sha256": "b00c50f4a77d17611d21ac11601770bd2e0cb916c8d433dbe1cf419247bf6dc9",
+  "import_settings": {
+    "skeletal_meshes": true,
+    "static_meshes": false,
+    "animations": true,
+    "bone_tracks": true,
+    "nanite": false,
+    "bone_influence_limit": 4,
+    "high_precision_skin_weights": true
+  }
+}

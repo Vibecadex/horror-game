@@ -1,0 +1,19 @@
+{
+  "arguments": [
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject",
+    "-ExecutePythonScript=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\tools\\repair_team_pack_identity_20261007.py",
+    "-RenderOffscreen",
+    "-ResX=1280",
+    "-ResY=720",
+    "-unattended",
+    "-nosplash",
+    "-nop4",
+    "-NoSound",
+    "-abslog=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\evidence\\implementation\\20261007T112500-repair_team_pack_identity_20261007\\engine.log",
+    "-DDC=InstalledNoZenLocalFallback",
+    "-LocalDataCachePath=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\.tool-cache\\derived-data",
+    "-UserDir=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\.tool-cache\\unreal-user"
+  ],
+  "script_sha256": "734ef1bd940a9900002d174912ed936e3dc108f415f5f57a9945700dd09e24c9"
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "importer": "C:\\Projects\\to-deploy\\bear-scanner\\unreal\\import_bears.py",
+  "destination": "/Game/ScannedBears",
+  "source": "http://127.0.0.1:8471",
+  "bears": [
+    {
+      "bear": "Bundled_real_bear_prebuilt_sample",
+      "result": "imported",
+      "mesh": "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/SM_Bear_Bundled_real_bear_prebuilt_sample",
+      "lods": 3,
+      "collision": "convex hull",
+      "size_cm": [
+        7.8,
+        5.6,
+        9.7
+      ]
+    }
+  ]
+}

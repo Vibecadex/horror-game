@@ -1,0 +1,49 @@
+{
+  "passed": false,
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "asset_writes": false,
+  "saved_map_writes": false,
+  "physical_device_verified": false,
+  "method": "Fresh editor saved-asset readback; forced LOD renders in an unsaved blank world.",
+  "review_actor_scale": 10,
+  "bears": [
+    {
+      "mesh": "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/SM_Bear_Bundled_real_bear_prebuilt_sample",
+      "scan_id": "def16f899a9a",
+      "lod_triangles": [
+        2438,
+        2500,
+        800
+      ],
+      "collision_hulls": 1,
+      "size_cm": [
+        7.800811767578125,
+        5.59252405166626,
+        9.69779109954834
+      ],
+      "base_z_cm": 0.0,
+      "materials": [
+        "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/Bundled_real_bear_prebuilt_sample_def16f_1791288767/Materials/MI_Bear_def16f899a9a.MI_Bear_def16f899a9a"
+      ],
+      "textures": [
+        "/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/Bundled_real_bear_prebuilt_sample_def16f_1791288767/Textures/T_Bear_def16f899a9a.T_Bear_def16f899a9a"
+      ],
+      "checks": {
+        "owned": true,
+        "scan_identity_saved": true,
+        "scan_version_saved": true,
+        "three_lods": true,
+        "nonempty_decreasing_geometry": false,
+        "all_material_slots_resolve": true,
+        "shared_material": true,
+        "saved_scan_texture": true,
+        "collision_present": true,
+        "feet_pivot": true,
+        "finite_physical_size": true,
+        "nanite_disabled_for_lods": false
+      }
+    }
+  ],
+  "captures": [],
+  "error": "Traceback (most recent call last):\n  File \"C:/Users/4elut/.codex/worktrees/11a8/horror-game/tools/verify_scanned_bears.py\", line 163, in <module>\n    inspect_mesh(mesh)\n  File \"C:/Users/4elut/.codex/worktrees/11a8/horror-game/tools/verify_scanned_bears.py\", line 80, in inspect_mesh\n    assert all(checks.values()), result\nAssertionError: {'mesh': '/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/SM_Bear_Bundled_real_bear_prebuilt_sample', 'scan_id': 'def16f899a9a', 'lod_triangles': [2438, 2500, 800], 'collision_hulls': 1, 'size_cm': [7.800811767578125, 5.59252405166626, 9.69779109954834], 'base_z_cm': 0.0, 'materials': ['/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/Bundled_real_bear_prebuilt_sample_def16f_1791288767/Materials/MI_Bear_def16f899a9a.MI_Bear_def16f899a9a'], 'textures': ['/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f/Bundled_real_bear_prebuilt_sample_def16f_1791288767/Textures/T_Bear_def16f899a9a.T_Bear_def16f899a9a'], 'checks': {'owned': True, 'scan_identity_saved': True, 'scan_version_saved': True, 'three_lods': True, 'nonempty_decreasing_geometry': False, 'all_material_slots_resolve': True, 'shared_material': True, 'saved_scan_texture': True, 'collision_present': True, 'feet_pivot': True, 'finite_physical_size': True, 'nanite_disabled_for_lods': False}}\n"
+}

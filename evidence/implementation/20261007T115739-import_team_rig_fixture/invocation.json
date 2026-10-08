@@ -1,0 +1,19 @@
+{
+  "arguments": [
+    "C:\\Program Files\\Epic Games\\UE_5.8\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+    "C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\TeddyBlueprint\\TeddyBlueprint.uproject",
+    "-ExecutePythonScript=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\tools\\import_team_rig_fixture.py",
+    "-RenderOffscreen",
+    "-ResX=1280",
+    "-ResY=720",
+    "-unattended",
+    "-nosplash",
+    "-nop4",
+    "-NoSound",
+    "-abslog=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\evidence\\implementation\\20261007T115739-import_team_rig_fixture\\engine.log",
+    "-DDC=InstalledNoZenLocalFallback",
+    "-LocalDataCachePath=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\.tool-cache\\derived-data",
+    "-UserDir=C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\.tool-cache\\unreal-user"
+  ],
+  "script_sha256": "251f8e8ce29160b3c2b57d6e19011583d91ef27f93dfbb1b65a521dd1474dcf6"
+}

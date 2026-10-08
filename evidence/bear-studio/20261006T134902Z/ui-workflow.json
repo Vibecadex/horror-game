@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-06T14:19:55.775853+00:00",
+  "productionUrl": "http://127.0.0.1:8472/",
+  "isolatedQaUrl": "http://127.0.0.1:8473/",
+  "method": "Browser skill with visible DOM/AX interactions and real Three.js rendering; artifact downloads and persistence independently read through local HTTP. Production and import QA stores separated.",
+  "checks": [
+    {
+      "name": "Catalogue display and source warnings",
+      "passed": true,
+      "detail": "Bundled real scan rendered with support box, source report, source-only/rig state and separate Not reviewed badge."
+    },
+    {
+      "name": "Metadata persistence",
+      "passed": true,
+      "detail": "Production tags/notes saved; isolated QA file import renamed Clover, role companion, tags saved and reloaded in a fresh tab."
+    },
+    {
+      "name": "Search by catalogue identity",
+      "passed": true,
+      "detail": "Searching companion returned only the edited local bear; clearing search restored both QA cards."
+    },
+    {
+      "name": "Scanner import readiness and idempotency",
+      "passed": true,
+      "detail": "Failed OpenMVS scan and unfinished capturing job disabled; importing finished bundled scan reused its existing source without duplicating catalogue record."
+    },
+    {
+      "name": "Local GLB import with Unicode filename",
+      "passed": true,
+      "detail": "Browser file chooser imported T\u00e9ddy QA.glb from isolated ignored QA storage; source filename preserved and second catalogue entry rendered."
+    },
+    {
+      "name": "Real skin save and reopen",
+      "passed": true,
+      "detail": "UI built cropped 16-bone skin, saved r1 and reopened exact saved skin."
+    },
+    {
+      "name": "Online library draft association",
+      "passed": true,
+      "detail": "UI loaded 43 source clips, added Sitting_Idle_Loop; adding a motion disabled saved-test submission until new rig r2 was saved."
+    },
+    {
+      "name": "Motion playback and export/reload",
+      "passed": true,
+      "detail": "Saved r2 played transferred idle; browser checks sampled actual non-root vertex movement and reloaded exported skin."
+    },
+    {
+      "name": "Version-pinned test record",
+      "passed": true,
+      "detail": "Visual findings and numerical/export results saved against rig r2, source r1; human review stayed unreviewed."
+    },
+    {
+      "name": "Independent saved artifact download",
+      "passed": true,
+      "detail": "Reviewer and integrator independently read rig r2 through HTTP; real skin, six clips, embedded source and CC0 motion provenance; downloaded SHA matches catalogue."
+    },
+    {
+      "name": "Service restart",
+      "passed": true,
+      "detail": "Owned 8472 service stopped and restarted; full catalogue JSON exactly matched before/after, including both rigs and r2 test."
+    }
+  ],
+  "pending": [
+    {
+      "name": "Final in-page discard confirmation UI",
+      "reason": "Native confirm in an old isolated QA tab stalled browser input. All confirm calls replaced by accessible app-owned async dialog after review. New page contains updated dialog; Cancel/Discard end-to-end remains pending because old browser confirmation blocked automated clicks."
+    }
+  ],
+  "humanApproval": false,
+  "unrealSkeletalImportVerified": false
+}

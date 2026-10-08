@@ -21,7 +21,11 @@ from finish_editor import finish_editor
 from png_evidence import decode_png
 
 OUT = Path(os.environ['TEDDY_TEST_DIR'])
-MAP = '/Game/Maps/TeddyEncounter'
+MAP = os.environ.get('TEDDY_CHAMBER_MAP', '/Game/Maps/TeddyEncounter')
+assert MAP in ('/Game/Maps/TeddyEncounter', '/Game/Maps/TeddyChamberParity')
+# The separate candidate deliberately raises the 690 cm far shell by 1.35.
+# Its actual top is 926.5 cm. Keep the original 700 cm contract for the original map.
+ROOM_HEIGHT_LIMIT_CM = 935 if MAP.endswith('/TeddyChamberParity') else 700
 levels = u.get_editor_subsystem(u.LevelEditorSubsystem)
 editor = u.get_editor_subsystem(u.UnrealEditorSubsystem)
 actors = u.get_editor_subsystem(u.EditorActorSubsystem)
@@ -139,7 +143,7 @@ def saved_extension_audit(loaded):
                 'mesh': component.static_mesh.get_path_name(), 'bounds': bound,
                 'visible': bool(component.get_editor_property('visible')),
                 'bounds_finite_and_ordered': finite,
-                'bounds_top_at_most_700_cm': finite and hi[2] <= 700.05,
+                'bounds_top_within_declared_room_height': finite and hi[2] <= ROOM_HEIGHT_LIMIT_CM + .05,
                 'bounds_outside_combat_interior': finite and not overlaps,
             })
         names = [m['mesh'].rsplit('/', 1)[-1] for m in row['meshes']]
@@ -175,14 +179,14 @@ def saved_extension_audit(loaded):
         not row['actor_collision_enabled'] and bool(row['primitive_components']) and all(
             c['no_collision'] and c['collision_profile'] == 'NoCollision'
             for c in row['primitive_components']) for row in rows))
-    check('room_extension_world_bounds_finite_and_below_700_cm', bool(meshes) and all(
-        m['bounds_finite_and_ordered'] and m['bounds_top_at_most_700_cm'] for m in meshes))
+    check('room_extension_world_bounds_finite_and_below_' + str(ROOM_HEIGHT_LIMIT_CM) + '_cm', bool(meshes) and all(
+        m['bounds_finite_and_ordered'] and m['bounds_top_within_declared_room_height'] for m in meshes))
     check('room_extension_world_bounds_keep_combat_interior_open', bool(meshes) and all(
         m['bounds_outside_combat_interior'] for m in meshes))
     result['room_extension_bounds_method'] = {
         'source': 'Saved StaticMeshComponent world-space conservative bounds before PIE',
         'combat_interior_xy_cm': [[-1400, -1500], [1480, 1500]],
-        'maximum_world_z_cm': 700, 'floating_point_tolerance_cm': .05,
+        'maximum_world_z_cm': ROOM_HEIGHT_LIMIT_CM, 'floating_point_tolerance_cm': .05,
         'source_plan_or_import_receipt_used_as_pass_result': False,
     }
 

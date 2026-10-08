@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "file": "tools/bear_studio/web/animation_library.js",
+      "passed": true,
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "file": "tools/bear_studio/web/qa.js",
+      "passed": true,
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "file": "tools/bear_studio/web/rigging.js",
+      "passed": true,
+      "exitCode": 0,
+      "output": ""
+    },
+    {
+      "file": "tools/bear_studio/web/studio.js",
+      "passed": true,
+      "exitCode": 0,
+      "output": ""
+    }
+  ]
+}

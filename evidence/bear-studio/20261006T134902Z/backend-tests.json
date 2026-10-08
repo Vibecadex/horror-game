@@ -1,0 +1,11 @@
+{
+  "recordedAt": "2026-10-06T14:15:06.745671+00:00",
+  "command": "python -m unittest discover -s tools/bear_studio -p test_*.py -v",
+  "exitCode": 0,
+  "testsRun": 21,
+  "failures": 0,
+  "errors": 0,
+  "durationSeconds": 5.47,
+  "observedResult": "Ran 21 tests in 5.470s; OK",
+  "scope": "Python standard-library backend; temporary stores; observed by integrator after independent reviewer also ran 21 tests."
+}

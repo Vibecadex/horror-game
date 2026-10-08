@@ -1,0 +1,19 @@
+{
+  "baseline": {
+    "log_sha256": "33066055b8390346ae8edb981817f5957147d4abbf2a3d6ca4019e341eb3198f",
+    "startup_condition_messages": [
+      "[2026.10.07-13.49.29:021][  0]LogAutomationTest: Error: Condition failed",
+      "[2026.10.07-13.49.29:021][  0]LogAutomationTest: Error: Condition failed"
+    ],
+    "material_compile_errors": []
+  },
+  "candidate": {
+    "log_sha256": "8cde4bb708d6e659fa000c247fa5c4cf0349c371814d32240436ba5c31259e6f",
+    "startup_condition_messages": [
+      "[2026.10.07-14.21.14:632][  0]LogAutomationTest: Error: Condition failed",
+      "[2026.10.07-14.21.14:632][  0]LogAutomationTest: Error: Condition failed"
+    ],
+    "material_compile_errors": []
+  },
+  "assessment": "Same startup messages occur before engine initialization in baseline and candidate, adjacent to UnifiedErrorTest logging. No material compile failures in final capture. They are not counted as passing project tests."
+}

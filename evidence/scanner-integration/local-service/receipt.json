@@ -1,0 +1,17 @@
+{
+  "health": {
+    "ok": true,
+    "app": "bear-studio",
+    "version": 1,
+    "scannerUrl": "http://127.0.0.1:8471",
+    "workspace": "C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game",
+    "dataDir": "C:\\Users\\4elut\\.codex\\worktrees\\11a8\\horror-game\\.team-local\\bear-studio"
+  },
+  "fitter": {
+    "available": true,
+    "bones": 21
+  },
+  "catalogueUnchanged": true,
+  "allSourceAndRigFilesUnchanged": true,
+  "verifiedAssetFiles": 19
+}

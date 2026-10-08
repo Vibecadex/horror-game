@@ -1,0 +1,18 @@
+20261007T115739-import_team_rig_fixture
+[2026.10.07-11.57.44:845][  0]LogAutomationTest: Error: Condition failed
+[2026.10.07-11.57.44:845][  0]LogAutomationTest: Error: Condition failed
+[2026.10.07-11.57.52:205][338]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+20261007T121232-retarget_team_rig_fixture
+[2026.10.07-12.12.38:145][  0]LogAutomationTest: Error: Condition failed
+[2026.10.07-12.12.38:145][  0]LogAutomationTest: Error: Condition failed
+[2026.10.07-12.12.42:109][  2]LogAnimationCompression: Warning: EnsureDependenciesAreLoaded: [ConditionalPostLoad Dependency] /Game/ScannedBears/RigfitReview/RetargetV1/Animations/RET_MM_Idle.RET_MM_Idle:FbxAnimSequenceImportData_0
+[2026.10.07-12.12.42:126][  2]LogAnimationCompression: Warning: EnsureDependenciesAreLoaded: [ConditionalPostLoad Dependency] /Game/ScannedBears/RigfitReview/RetargetV1/Animations/RET_MF_Unarmed_Walk_Fwd.RET_MF_Unarmed_Walk_Fwd:FbxAnimSequenceImportData_0
+[2026.10.07-12.12.42:139][  2]LogAnimationCompression: Warning: EnsureDependenciesAreLoaded: [ConditionalPostLoad Dependency] /Game/ScannedBears/RigfitReview/RetargetV1/Animations/RET_MM_Attack_01.RET_MM_Attack_01:AssetImportData
+[2026.10.07-12.12.42:207][  2]LogTemp: Warning: No animation curves found for retargeting in Anim Sequence: MM_Idle
+[2026.10.07-12.12.42:207][  2]LogTemp: Warning: No animation curves found for retargeting in Anim Sequence: MF_Unarmed_Walk_Fwd
+[2026.10.07-12.12.42:208][  2]LogTemp: Warning: No animation curves found for retargeting in Anim Sequence: MM_Attack_01
+[2026.10.07-12.12.45:331][353]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+20261007T121822-verify_team_rig_fixture
+[2026.10.07-12.18.28:634][  0]LogAutomationTest: Error: Condition failed
+[2026.10.07-12.18.28:634][  0]LogAutomationTest: Error: Condition failed
+[2026.10.07-12.18.32:273][  2]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance

@@ -26,5 +26,5 @@ except Exception as error:
     s.write_json(out/'host-result.json',{'passed':False,'error':str(error)})
     raise
 r=json.loads((out/'receipt.json').read_text())
-print(json.dumps({k:v for k,v in r.items() if k not in ['frames','actors','phases','shots','samples','captures','images','encoding','events','cases']},indent=2))
+print(json.dumps({k:v for k,v in r.items() if k not in ['frames','actors','phases','shots','samples','captures','images','encoding','events','cases','clips','retarget_clips','last_held_pose','reference_positions_cm']},indent=2))
 if not r.get('passed'): sys.exit(1)

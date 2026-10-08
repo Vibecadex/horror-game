@@ -1,0 +1,24 @@
+{
+  "files": {
+    "README.md": "98230e5fde3f4dfc47565bc1c6f2d8a131a76c4ff26bb32fe5f76eeb94c43b02",
+    "WORK_STATUS.md": "2952d633989535ef361a38b74aebe5d878328b56bb55b9a0da5b59c1e52d366e",
+    "evidence/team-integration/20261007T111927Z/QA_REVIEW.md": "56debb0ddbb24d0de3b4f3fe8751406d72bb9eff6d962fdfefd8144718d7e83f",
+    "study/BEAR_SCANNER_INTEGRATION.md": "02762386ac513a878d62db750d0051091bc51d6f0f84bd5f43a4337f043c189b",
+    "study/BEAR_STUDIO.md": "65bdbc4114404738e91bc666d1a7611ef0740930a86b6d4f411749d33e93f7bd",
+    "study/REMOTE_TEAM_CONTINUATION.md": "891ac94338b4b2c8332aa0fec40a4124b6bd8a3ad61e6f5f502b3e90e108f9a0",
+    "tools/bear_studio/API.md": "c219361f119a1bced4ced8a48b01a16dcbf5e6dd90f4d14ff4b816c0585cc77e",
+    "tools/bear_studio/bear_pack.py": "306240e7164370e7995c763dd8b3fe55328088608dbb631203300b51c0d65b73",
+    "tools/bear_studio/server.py": "c5abbec3afed884ada6dda396eddc197d539eeec336c269de558cb22513649b0",
+    "tools/bear_studio/test_bear_pack.py": "49d2a33a90b42b2fb8cb64b003a7407d10bb9e53cdf740328dba076a55930208",
+    "tools/bear_studio/web/index.html": "5f2ad5545cba23029a8ea58180ad37cc068de779582344f55ce80ce6972052c7",
+    "tools/bear_studio/web/studio.js": "398630b31269bbf75669d0e7530466babeab1b9aa272948f687994637167fb41",
+    "tools/import_scanned_bears.py": "a779a9f3709b13ab17070d70e5b9eb93c6f4f3f777bf3f6ca5508404007b5962",
+    "tools/repair_team_pack_identity_20261007.py": "734ef1bd940a9900002d174912ed936e3dc108f415f5f57a9945700dd09e24c9",
+    "tools/test_bear_importer_contract.py": "8ce2e59d6c9d8470970d61eba18a6c30f9a4fdd90153b510013f0fdd0621e89d",
+    "tools/vendor/bear_scanner_importer.provenance.json": "3ab5166cc13a561e92d6ce18ac4307939e1a24765ce0aaa27045359de0c2612f",
+    "tools/vendor/bear_scanner_importer.py": "1ff06eac1b60fbd5c144ca2c6416d80dd87baae4645033b5fd312ecea8d447d3",
+    "tools/verify_scanned_bears.py": "f147bd17076642dae293df06cd94d4281355fea0dd08060239083b56455d4ed3"
+  },
+  "linked_files_exist": true,
+  "importer_provenance_matches": true
+}

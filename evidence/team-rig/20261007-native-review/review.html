@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Team rig: native review</title>
+<style>body{margin:0;background:#131820;color:#edf1f5;font:16px/1.6 system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:32px}a{color:#89dfe4}h1,h2{line-height:1.2}.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px}figure{margin:0}img{display:block;width:100%;height:auto;border:1px solid #354254;border-radius:8px}figcaption{padding:8px 0;color:#bbc7d5}.notice{padding:16px;border:1px solid #4c6276;border-radius:8px}section{margin:36px 0}.metric{font-size:1.15em}</style><main>
+<h1>Team rig: native Unreal review</h1><p class="metric">89 checks passed · 21 bones · 7 playing clips · 15 held native images</p>
+<p class="notice"><strong>Synthetic compatibility fixture.</strong> Diagnostic colours identify surface regions. This is not Rupert2, a real scan, or approved chamber art. Automatic-weight creases and imperfect foot contact remain.</p>
+<p><a href="QA_REVIEW.md">QA findings</a> · <a href="verification.json">Verification</a> · <a href="../../implementation/20261007T121822-verify_team_rig_fixture/receipt.json">Native receipt</a> · <a href="../../../study/TEAM_RIG_NATIVE_REVIEW.md">Repeat the review</a></p>
+<p>Saved assets were reopened in Unreal 5.8.3. Renders use an unsaved PIE world, an unchanged camera, actor scale 1 and the imported material. No grading or image edits. Each pair holds two times in the same saved animation; these are stills, not a motion recording.</p>
+<section><h2>Normal import correction</h2><div class="pair">
+<figure><a href="../../implementation/20261007T120343-verify_team_rig_fixture/00-Rest-0.00.png"><img loading="lazy" src="../../implementation/20261007T120343-verify_team_rig_fixture/00-Rest-0.00.png" alt="Before: default normal rebuilding causes faceted shading."></a><figcaption>Before: default normal rebuilding causes faceted shading.</figcaption></figure>
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/00-Rest-0.00.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/00-Rest-0.00.png" alt="After: the original smooth normals are retained."></a><figcaption>After: the original smooth normals are retained.</figcaption></figure>
+</div></section>
+<section><h2>Test_Wave</h2><div class="pair">
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/01-Test_Wave-0.25.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/01-Test_Wave-0.25.png" alt="Test_Wave at 0.250s"></a><figcaption>Test_Wave at 0.250s</figcaption></figure>
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/02-Test_Wave-0.75.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/02-Test_Wave-0.75.png" alt="Test_Wave at 0.750s"></a><figcaption>Test_Wave at 0.750s</figcaption></figure>
+</div></section>
+<section><h2>Test_Walk</h2><div class="pair">
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/03-Test_Walk-0.50.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/03-Test_Walk-0.50.png" alt="Test_Walk at 0.500s"></a><figcaption>Test_Walk at 0.500s</figcaption></figure>
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/04-Test_Walk-1.50.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/04-Test_Walk-1.50.png" alt="Test_Walk at 1.500s"></a><figcaption>Test_Walk at 1.500s</figcaption></figure>
+</div></section>
+<section><h2>Test_LookAround</h2><div class="pair">
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/05-Test_LookAround-0.50.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/05-Test_LookAround-0.50.png" alt="Test_LookAround at 0.500s"></a><figcaption>Test_LookAround at 0.500s</figcaption></figure>
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/06-Test_LookAround-1.50.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/06-Test_LookAround-1.50.png" alt="Test_LookAround at 1.500s"></a><figcaption>Test_LookAround at 1.500s</figcaption></figure>
+</div></section>
+<section><h2>Test_Bend</h2><div class="pair">
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/07-Test_Bend-0.00.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/07-Test_Bend-0.00.png" alt="Test_Bend at 0.000s"></a><figcaption>Test_Bend at 0.000s</figcaption></figure>
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/08-Test_Bend-1.00.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/08-Test_Bend-1.00.png" alt="Test_Bend at 1.000s"></a><figcaption>Test_Bend at 1.000s</figcaption></figure>
+</div></section>
+<section><h2>RET_MF_Unarmed_Walk_Fwd</h2><div class="pair">
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/09-RET_MF_Unarmed_Walk_Fwd-0.38.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/09-RET_MF_Unarmed_Walk_Fwd-0.38.png" alt="RET_MF_Unarmed_Walk_Fwd at 0.375s"></a><figcaption>RET_MF_Unarmed_Walk_Fwd at 0.375s</figcaption></figure>
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/10-RET_MF_Unarmed_Walk_Fwd-1.05.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/10-RET_MF_Unarmed_Walk_Fwd-1.05.png" alt="RET_MF_Unarmed_Walk_Fwd at 1.050s"></a><figcaption>RET_MF_Unarmed_Walk_Fwd at 1.050s</figcaption></figure>
+</div></section>
+<section><h2>RET_MM_Attack_01</h2><div class="pair">
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/11-RET_MM_Attack_01-0.25.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/11-RET_MM_Attack_01-0.25.png" alt="RET_MM_Attack_01 at 0.250s"></a><figcaption>RET_MM_Attack_01 at 0.250s</figcaption></figure>
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/12-RET_MM_Attack_01-0.70.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/12-RET_MM_Attack_01-0.70.png" alt="RET_MM_Attack_01 at 0.700s"></a><figcaption>RET_MM_Attack_01 at 0.700s</figcaption></figure>
+</div></section>
+<section><h2>RET_MM_Idle</h2><div class="pair">
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/13-RET_MM_Idle-1.89.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/13-RET_MM_Idle-1.89.png" alt="RET_MM_Idle at 1.892s"></a><figcaption>RET_MM_Idle at 1.892s</figcaption></figure>
+<figure><a href="../../implementation/20261007T121822-verify_team_rig_fixture/14-RET_MM_Idle-5.30.png"><img loading="lazy" src="../../implementation/20261007T121822-verify_team_rig_fixture/14-RET_MM_Idle-5.30.png" alt="RET_MM_Idle at 5.297s"></a><figcaption>RET_MM_Idle at 5.297s</figcaption></figure>
+</div></section>
+<p>Real-bear exports, foot contact, painted weights, production retargeting and character acceptance remain open. The chamber and existing gameplay are preserved.</p></main></html>

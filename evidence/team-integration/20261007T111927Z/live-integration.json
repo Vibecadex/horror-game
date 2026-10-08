@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "live_scanner_pack_verified": true,
+  "scanner_id": "def16f899a9a",
+  "live_pack_revision": "620609094f8f822d3d2cca6197eb90b7",
+  "catalogue_before": 1,
+  "catalogue_after": 2,
+  "prior_catalogue_records_unchanged": true,
+  "new_bear_id": "bear_6a63027e60ad4c87",
+  "new_pack_identity": "example-real-bear",
+  "source_revision": 1
+}

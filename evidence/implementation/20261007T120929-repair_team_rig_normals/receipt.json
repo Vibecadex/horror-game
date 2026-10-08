@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "saved_map_writes": false,
+  "synthetic": true,
+  "before": {
+    "recompute_normals": true,
+    "recompute_tangents": true
+  },
+  "asset": "/Game/ScannedBears/RigfitReview/SyntheticV1/SkeletalMeshes/Bear.Bear",
+  "after": {
+    "recompute_normals": false,
+    "recompute_tangents": true
+  }
+}

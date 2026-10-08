@@ -1,0 +1,159 @@
+{
+  "format": "bear-pack",
+  "formatVersion": 1,
+  "id": "example-real-bear",
+  "name": "Real bear (example scan)",
+  "version": 1791257981,
+  "revision": "dca73692579c262d4e668448e3fa84e3",
+  "builtAt": "2026-10-06T03:39:41Z",
+  "createdAt": "2026-10-02T21:18:11Z",
+  "building": false,
+  "generator": {
+    "name": "bear-scanner",
+    "version": "0.1.0"
+  },
+  "coordinates": {
+    "units": "meters",
+    "handedness": "right",
+    "up": "+Y",
+    "front": "+Z",
+    "frontFrom": "first-photo",
+    "origin": "base centre: the model's lowest point is on y = 0, and x = z = 0 is the centre of its x/z bounding box"
+  },
+  "size": {
+    "x": 0.07801,
+    "y": 0.09698,
+    "z": 0.05593
+  },
+  "scale": {
+    "source": "typed",
+    "heightCm": 10.0
+  },
+  "photos": 22,
+  "capture": {
+    "pose": "unspecified"
+  },
+  "quality": {
+    "status": "warn",
+    "usable": true,
+    "notPassing": [
+      "holes",
+      "colour",
+      "above",
+      "props"
+    ]
+  },
+  "model": {
+    "file": "model.glb",
+    "lods": [
+      {
+        "level": 0,
+        "node": "LOD0",
+        "triangles": 8000,
+        "vertices": 5091,
+        "normals": true,
+        "switchAtHeights": 0
+      },
+      {
+        "level": 1,
+        "node": "LOD1",
+        "triangles": 2500,
+        "vertices": 2165,
+        "normals": true,
+        "switchAtHeights": 8
+      },
+      {
+        "level": 2,
+        "node": "LOD2",
+        "triangles": 800,
+        "vertices": 834,
+        "normals": true,
+        "switchAtHeights": 20
+      }
+    ],
+    "materials": 1,
+    "textures": 1,
+    "texture": {
+      "width": 2048,
+      "height": 2048,
+      "mimeType": "image/png"
+    },
+    "bounds": {
+      "min": [
+        -0.039,
+        0.0,
+        -0.02796
+      ],
+      "max": [
+        0.039,
+        0.09698,
+        0.02796
+      ]
+    }
+  },
+  "collider": {
+    "file": "collider.json",
+    "type": "convexHull",
+    "vertices": 100,
+    "faces": 196
+  },
+  "thumbnail": {
+    "file": "thumb.webp"
+  },
+  "report": {
+    "file": "report.json"
+  },
+  "files": {
+    "model.glb": {
+      "mediaType": "model/gltf-binary",
+      "bytes": 1379600,
+      "sha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b"
+    },
+    "collider.json": {
+      "mediaType": "application/json",
+      "bytes": 5646,
+      "sha256": "3cf079fa7d3659a9b9993e510626f7438f8fb2f7b313c68410e29c61f510ba1d"
+    },
+    "thumb.webp": {
+      "mediaType": "image/webp",
+      "bytes": 14196,
+      "sha256": "5339aafeb1716beb8cdcbb397ee04154bf74efd5aa6aade6a6d5a7b0d34b433f"
+    },
+    "report.json": {
+      "mediaType": "application/json",
+      "bytes": 3567,
+      "sha256": "a4b8c711b81f525cfbeecce1840a95fdd7fea00dea75bcb678c7bce5ab4dffe1"
+    },
+    "landmarks.json": {
+      "mediaType": "application/json",
+      "bytes": 937,
+      "sha256": "52d63d10cf7875ae2400184aebffa030e5cd3b46c952bc0123c5e9fdf1b2a8e4"
+    }
+  },
+  "landmarks": {
+    "file": "landmarks.json",
+    "method": "depth-reach-v2",
+    "complete": false,
+    "missing": [
+      "head",
+      "headTop",
+      "neck",
+      "chest",
+      "shoulder_R",
+      "elbow_R",
+      "hand_R",
+      "hip_R",
+      "knee_R",
+      "foot_R"
+    ],
+    "problems": [
+      "no head found",
+      "something flat (a box or stand?) is part of the bear"
+    ],
+    "limbs": {
+      "arms": 1,
+      "legs": 1
+    },
+    "flatSurface": 0.572
+  }
+}

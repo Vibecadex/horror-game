@@ -1,3 +1,5 @@
 {
-  "engine_root": "D:/Epic Games/UE_5.8"
+  "engine_root": "D:/Epic Games/UE_5.8",
+  "bear_scanner_repo": "D:/Projects/bear-scanner",
+  "bear_scanner_url": "https://127.0.0.1:8443"
 }

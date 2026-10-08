@@ -1,5 +1,57 @@
 # Teddy Encounter working status
 
+## Isolated chamber parity attempt — 7 October 2026
+
+The user requested a separate worktree and branch for the selected full-chamber reference. This checkout is `codex/chamber-parity-20261007`, based on `9defbdd`. The candidate is `/Game/Maps/TeddyChamberParity`; `PLAY_CHAMBER_PARITY.cmd` opens it and `--edit` opens it in the editor. The original encounter and scanner integration remain preserved.
+
+The candidate has taller wall/door proportions, 710 grounded concrete fragments, clearer floor damage and restrained damp variation, front drains and revised local lighting/fog. [Interactive reference/before/after review](evidence/chamber-parity/20261007/review.html) and [implementation/evidence/limits](study/CHAMBER_PARITY_EXPERIMENT_20261007.md). 28 native room checks and 26 host preservation/evidence checks pass; all 826 baseline Content/Config/source files are unchanged. Final lighting was captured after the runtime run, with geometry identity checked separately.
+
+This is progress toward the reference, not visual parity or user acceptance. Upper haze, dark peripheral detail, connected floor damage and construction remain behind the concept. Same-author visual review only; physical input, new combat footage, audio and packaging were not established. Parent scanner statuses below describe their recorded deliveries, not new side-branch work.
+
+## Scanner fitting in Bear Studio — 7 October 2026
+
+The user deferred the team brief to focus on scanner technology. The existing Studio at `http://127.0.0.1:8472/` now runs the installed scanner's 21-bone template fitter from **Rig → Scanner template fit → Fit & save scanner rig**. **Import bear → Use example** adds an explicitly synthetic input with complete landmarks. Fitting saves an immutable draft with source/landmark/code hashes, fit warnings and four team test clips. The motion library supports this skeleton while retaining the manual 16-bone workflow. No package installation was needed.
+
+Background fitting supports cancellation and reconnect after page reload. Revision checks prevent another window's edits from being replaced; changed or missing source landmarks are refused. The live restart preserved both catalogue entries and all 19 existing source/rig files. A SQLite backup was saved before restart. The scanner checkout, Unreal Content/Config and team briefs were not edited.
+
+Verification: **41 backend/installed-worker tests**, **11 browser acceptance checks**, the existing **24 manual-rig browser checks**, and a focused review-status reset check pass. The real sample pack is correctly refused because neck, head, right hand and right foot landmarks are missing. Independent Astra review identified cancellation, input-geometry and stale-review issues; these were repaired and tested. Its source-to-draft inspection still finds shoulder/neck/torso distortion and uncertain colour fidelity; real-scan character quality, planted feet and chamber parity are not established. [Evidence and limits](evidence/scanner-integration/REVIEW.md).
+
+## Team rig native compatibility — 7 October 2026
+
+The user's dependency sync is verified: `xatlas 0.0.11` imports, and all 35 team rig-fitting tests pass. The team's generator/exporter produced a labelled synthetic 21-bone bear with four test clips. These saved assets and three mannequin retargets pass **89** fresh-editor/PIE checks with **15 native captures**. Source clip bone positions agree within 0.455 mm. The initial normal rebuild caused faceted shading; retaining the source normals corrects it. [Review, limits and one-command verification](study/TEAM_RIG_NATIVE_REVIEW.md).
+
+Basic retargeting is established for this fixture, with automatic pose alignment and pelvis/FK operations. It still has automatic-weight creases, imperfect foot contact and no production root/foot-IK setup. The team's original Rupert2 and neutral-template exports remain missing. This is a prototype compatibility proof, not real-scan acceptance, a Studio 16-bone import claim, or chamber progress. All pre-existing game Content/Config and the chamber remain unchanged.
+
+## Remote team pack integration — 7 October 2026
+
+All remote branch tips in horror-game and bear-scanner are included in the current working histories. Bear Studio now consumes the team's bear-pack v1 API and single-bear ZIPs with file/hash checks, complete source revision history, version ordering and visible landmark/capture warnings. The API-5 Unreal importer is pinned from scanner `8b396ab`, retaining the local UE reimport fix. Native readback exposed an opaque-ID normalization bug; the game copy now preserves those IDs and refuses foreign ownership/package collisions.
+
+Verification: 28 Studio backend checks, 3 importer identity/ownership checks, 11 handoff checks, 24 scanner pack checks and 24 browser rig checks pass. A fresh Unreal reopen verifies 16 saved static-prop checks and three LOD captures for the team sample. The first identity audit failed and is retained; the corrected audit passes. Live scanner import and offline ZIP import preserve the existing catalogue. [Current evidence](evidence/team-integration/20261007T111927Z/QA_REVIEW.md).
+
+The team sample remains a static review prop with a support box and incomplete landmarks. No chamber or gameplay asset was changed. The later native review above resolves the dependency and verifies a synthetic fixture; the team's original runtime scan/test exports are still needed for real-bear validation. [Continuation and commands](study/REMOTE_TEAM_CONTINUATION.md). Exact chamber parity and character acceptance remain open.
+
+## Bear Studio authoring expansion — 6 October 2026
+
+The current fork task expands the bear interface. Run [BEAR_STUDIO.cmd](BEAR_STUDIO.cmd) to open the local catalogue and character workshop at `http://127.0.0.1:8472/`. [Studio guide](study/BEAR_STUDIO.md) starts with prerequisites and describes the complete workflow. The existing chamber and scanner originals are preserved.
+
+Three specialists implemented catalogue/storage, rigging/motion transfer and the browser interface. Finished scans and local GLBs can be copied into an immutable source catalogue, tagged and inspected. Editable seated/upright landmarks bind a real 16-bone draft skin. Pose controls, weight views, clip playback, structural/deformation checks, saved rig revisions, pinned test findings and GLB/recipe/manifest handoffs are available. The downloaded Quaternius Standard library retains 43 source clips, its CC0 license and source hashes. Animation transfer remains a draft aid.
+
+Verification includes **21 passing backend tests**, **24 passing browser rig/motion checks**, launcher checks and browser catalogue/save/reopen workflows. The local sample has two saved rig revisions; r2 contains six clips, including the transferred sitting idle, with a test record pinned to r2. [QA evidence](evidence/bear-studio/20261006T134902Z/QA_REVIEW.md) and [independent review](tools/bear_studio/REVIEW.md) separate functional evidence from character acceptance.
+
+The sample still includes fused support geometry and an incomplete scanned surface. Cropping and heuristic weights require cleanup; foot planting, collision, weight painting, production retargeting and Unreal skeletal import remain future work. Human review is still unreviewed. The user-requested native Side chat could not be opened through the available tools; its [review prompt](study/BEAR_STUDIO_SIDE_CHAT.md) is prepared, with no consultation claimed. Next: review the draft in the motion lab, improve the source mesh and landmarks, then perform a separate skeletal import/preview in Unreal before any encounter integration.
+
+## Bear Scanner integration fork — 6 October 2026
+
+Branch `codex/integrate-bear-scanner` retains Grok's `0a20f9f` chamber and merges the team's `tools/scanned-bears` work. [Integration instructions](study/BEAR_SCANNER_INTEGRATION.md) describe prerequisites, the local settings and the one-command `IMPORT_BEARS.cmd` launcher. This was the verified static scan-to-Unreal integration preceding the Studio expansion above.
+
+The local workshop at `http://127.0.0.1:8471` supplied its completed **Bundled real bear (prebuilt sample)**. It is saved under `/Game/ScannedBears/Bundled_real_bear_prebuilt_sample_def16f`, with one mesh, material and texture. The original GLB and provenance are retained under `Assets/ThirdParty/BearScannerSample`. It includes the source's supporting box and scan-quality warnings; it is a static prop, not a new animated monster or chamber placement.
+
+Real editor verification exposed two integration issues, both corrected in this fork: UE 5.8 enabled Nanite on the imported prop, bypassing its authored LODs; and reimport tried to move unsaved material folders. The wrapper disables Nanite on scanner-owned meshes. A pinned importer saves the staged packages before moving them. The external scanner checkout remains unchanged.
+
+Fresh receipts: [initial live import](evidence/implementation/20261006T123856-import_scanned_bears/receipt.json), [corrected reimport](evidence/implementation/20261006T125441-import_scanned_bears/receipt.json), [unchanged repeat through the launcher](evidence/implementation/20261006T125644-import_scanned_bears/receipt.json), and [saved-asset/LOD review](evidence/implementation/20261006T125809-verify_scanned_bears/receipt.json). Integration identities and preservation are recorded under [current run](evidence/bear-scanner/current-run.json). Failed intermediate receipts are retained as diagnosis, not acceptance.
+
+The saved scan has 8,000 / 2,500 / 800 triangles, a convex hull, the source texture, and approximately 9.7 cm height. The unchanged repeat leaves all three imported asset files byte-identical. All 786 prior tracked game Content/Config/project files remain unchanged. New photo reconstruction is still blocked in the separate scanner setup by Windows Application Control on an OpenMVS dependency. This integration establishes importing finished exports, not phone capture, reconstruction, animation or packaged runtime loading.
+
 ## Bay depth, red practicals, and overhead — 5 October 2026
 
 Grok session `01a10a54-69ee-7253-978b-c01aa506ee63` remains the sole Unreal writer. The recovered floor stays visible. Exposure bias stays 3.8. The gameplay camera stays pitch −46° / FOV 54.

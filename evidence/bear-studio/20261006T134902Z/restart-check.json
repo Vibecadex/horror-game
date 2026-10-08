@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-06T14:18:33.061759+00:00",
+  "passed": true,
+  "serviceRestarted": true,
+  "catalogueBeforeEqualsAfter": true,
+  "bearId": "bear_7ee1160b65c449be",
+  "sourceRevision": 1,
+  "sourceSha256": "f296aab3adf2b77bedf91ff9349abc838027672cee479656c49350a7c4273e8b",
+  "rigRevisions": [
+    1,
+    2
+  ],
+  "testRigRevisions": [
+    2
+  ],
+  "humanReview": "unreviewed"
+}

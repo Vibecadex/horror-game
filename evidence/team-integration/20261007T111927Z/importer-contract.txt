@@ -1,0 +1,8 @@
+test_matching_identity_does_not_grant_ownership (__main__.PackIdentity.test_matching_identity_does_not_grant_ownership) ... ok
+test_pack_identity_is_preserved_and_aliases_stay_distinct (__main__.PackIdentity.test_pack_identity_is_preserved_and_aliases_stay_distinct) ... ok
+test_same_package_name_cannot_replace_a_different_bear (__main__.PackIdentity.test_same_package_name_cannot_replace_a_different_bear) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.025s
+
+OK

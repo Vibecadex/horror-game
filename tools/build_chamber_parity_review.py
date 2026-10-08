@@ -1,0 +1,90 @@
+"""Build a local comparison from the separate host audit; images remain unmodified."""
+import html
+import json
+import os
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / 'evidence/chamber-parity/20261007'
+qa = json.loads((OUT / 'qa.json').read_text())
+assert qa['passed'], 'Do not publish a passing review page for a failed audit'
+baseline = json.loads((OUT / 'baseline.json').read_text())
+relative = lambda p: os.path.relpath(ROOT / p, OUT).replace('\\', '/')
+before = relative(baseline['baseline_capture'])
+after = relative(qa['capture'])
+runtime = relative(qa['room_check'])
+paths = ['00-full-chamber.png', '01-chamber-front.png', '02-chamber-reverse.png', '03-ordinary-gameplay.png']
+for folder in [before, after]:
+    for p in paths:
+        assert (OUT / folder / p).is_file(), (folder, p)
+doc = '''<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chamber parity attempt · 7 October 2026</title>
+<style>
+:root{color-scheme:dark;font:16px/1.55 system-ui,sans-serif;background:#090f11;color:#d9e5e3}*{box-sizing:border-box}
+body{max-width:1600px;margin:auto;padding:24px}h1{font-size:28px;line-height:1.2;margin:8px 0}h2{font-size:19px}
+p{max-width:1000px;color:#adc0bd}a{color:#86ddcf}button{border:1px solid #526c67;background:#182a29;color:#e5f3ef;padding:9px 14px;border-radius:5px;cursor:pointer;font:inherit}
+button[aria-pressed=true]{background:#376b60;border-color:#8adebf}nav{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0}
+.tag{color:#e6bd7d;font-weight:650}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0}
+figure img{width:100%;height:auto;display:block;background:#000;border:1px solid #30403e}figcaption{padding:7px 0;color:#91aba5;font-size:14px}
+.strip{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:14px 0}.strip label{flex:1;max-width:480px}input{width:100%;accent-color:#7dd2b7}
+.wipe{position:relative;aspect-ratio:3/2;background:#000;overflow:hidden}.wipe img{position:absolute;width:100%;height:100%;object-fit:contain;inset:0}
+#before-image{clip-path:inset(0 50% 0 0)}#divider{position:absolute;left:50%;height:100%;border-left:2px solid #d0efe5;pointer-events:none}
+.labels{position:absolute;inset:12px 14px auto;display:flex;justify-content:space-between;pointer-events:none}.labels span{background:#0a151cbb;padding:3px 8px;border-radius:3px}
+table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:11px;border-bottom:1px solid #2a3e3a;vertical-align:top}th{color:#abd9cc}
+code{font-size:13px;word-break:break-word}footer{margin-top:28px;color:#7d938d;font-size:14px}@media(max-width:760px){body{padding:14px}.pair{grid-template-columns:1fr}h1{font-size:24px}td,th{padding:6px;font-size:14px}}
+</style>
+<body>
+<div class="tag">Local candidate · visual parity remains open</div>
+<h1>The chamber, with stronger enclosure and ground detail</h1>
+<p>This isolated attempt adds taller walls and bulkhead, 710 grounded concrete fragments, a front drain run,
+more visible cracked concrete, restrained wet variation and localized upper haze. The original encounter and scanner work are preserved.</p>
+<p><a href="../../../PLAY_CHAMBER_PARITY.cmd">Play candidate</a> · <a href="../../../study/CHAMBER_PARITY_EXPERIMENT_20261007.md">Implementation and remaining gaps</a> · <a href="qa.json">26-check preservation audit</a> · <a href="__RUNTIME__/receipt.json">28-check native room run</a></p>
+<div class="pair">
+<figure><img src="user-reference.png" alt="User selected full chamber reference"><figcaption>Your supplied reference. Original image; its label is not game UI.</figcaption></figure>
+<figure><a id="native-link" href="__AFTER__/00-full-chamber.png"><img id="candidate" src="__AFTER__/00-full-chamber.png" alt="Saved Unreal candidate, full room"></a><figcaption id="candidate-caption">Saved Unreal candidate · native 1440 × 960 · architectural camera</figcaption></figure>
+</div>
+<h2>Compare the same camera before and after</h2>
+<nav aria-label="Comparison view">
+<button type="button" data-index="0" aria-pressed="true">Full room</button><button type="button" data-index="1" aria-pressed="false">Original front camera</button>
+<button type="button" data-index="2" aria-pressed="false">Reverse</button><button type="button" data-index="3" aria-pressed="false">Gameplay camera</button>
+</nav>
+<div class="strip"><span>Baseline</span><label>Comparison divider<input id="amount" type="range" min="0" max="100" value="50" aria-label="Show baseline versus candidate"></label><span>Candidate</span></div>
+<div class="wipe"><img id="after-image" src="__AFTER__/00-full-chamber.png" alt="Candidate at the selected camera"><img id="before-image" src="__BEFORE__/00-full-chamber.png" alt="Baseline at the same camera"><div id="divider"></div><div class="labels"><span>Baseline</span><span>Candidate</span></div></div>
+<p id="view-note">Full-room camera: (−4250, 180, 3380) cm, aims at (100, 180, 80), horizontal FOV 47°. Both maps use exactly this view. This camera is for review; gameplay remains pitch −46° / FOV 54°.</p>
+<h2>What this pass establishes</h2>
+<table><thead><tr><th>Area</th><th>Result</th><th>Remaining difference</th></tr></thead><tbody>
+<tr><td>Architecture</td><td>Taller enclosure and pressure bulkhead, raised cornices and fixture, retained side services, added front drains.</td><td>Panel divisions remain regular; the concept has richer construction and more readable side equipment.</td></tr>
+<tr><td>Floor</td><td>710 closed fragments, 15,988 new triangles; fragment undersides follow the preserved floor. New instance material assignments retain source graphs.</td><td>The underlying fractures are still long and straight in places; damage distribution remains more procedural than the reference.</td></tr>
+<tr><td>Atmosphere</td><td>Localized key, darker wall fills and corner returns, reduced mirror-like wet highlights, upper fog volume. Exposure stays +3.8.</td><td>The reference has a stronger suspended teal shaft and more balanced detail in the dark edges.</td></tr>
+<tr><td>Playability</td><td>28 native room checks pass: routes, spawn clearance, walk/dash collision and twelve camera pairs.</td><td>Checks use injected keys and staged actors; physical-device play, new combat footage and packaging are not claimed.</td></tr>
+<tr><td>Preservation</td><td>826 original Content/Config/source files unchanged; the candidate uses its own map and new asset namespace. 26 separate host checks pass. Geometry remains identical to the native room run after the final lighting changes.</td><td>Same author reviewed the renders. There is no new independent-agent or user approval.</td></tr>
+</tbody></table>
+<footer>Unreal 5.8.3 · branch codex/chamber-parity-20261007 · /Game/Maps/TeddyChamberParity.<br>
+Raw engine captures, no external grading, cropping or warping. Characters are held and HUD hidden for architectural comparisons; native cutaway ticks remain active. Prior rejected trials and their receipts remain in evidence.</footer>
+<script>
+const files=__FILES__, before=__BEFORE_JSON__, after=__AFTER_JSON__;
+const notes=[
+'Full-room camera: (−4250, 180, 3380) cm, aims at (100, 180, 80), horizontal FOV 47°. Both maps use exactly this view. This camera is for review; gameplay remains pitch −46° / FOV 54°.',
+'Original front architectural camera: (−4050, 180, 2780) cm, target (100, 180, 80), FOV 41.5°. Retained for direct comparison with historical evidence.',
+'Reverse architectural camera: (1450, 100, 1450) cm, target (−600, 100, 0), FOV 70°. The native front cutaway wall is visible from inside the room.',
+'Saved gameplay camera, pitch −46° / FOV 54°. Subjects are held for comparison. This is not a physical-play or combat recording.'
+];
+document.querySelectorAll('button[data-index]').forEach(button=>button.addEventListener('click',()=>{
+const i=Number(button.dataset.index), url=after+'/'+files[i];
+document.getElementById('candidate').src=url;document.getElementById('native-link').href=url;
+document.getElementById('candidate-caption').textContent=button.textContent+' · native 1440 × 960 · saved Unreal candidate';
+document.getElementById('after-image').src=url;document.getElementById('before-image').src=before+'/'+files[i];
+document.getElementById('view-note').textContent=notes[i];
+document.querySelectorAll('button[data-index]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+}));
+document.getElementById('amount').addEventListener('input',event=>{
+const v=Number(event.target.value);document.getElementById('before-image').style.clipPath='inset(0 '+(100-v)+'% 0 0)';document.getElementById('divider').style.left=v+'%';
+});
+</script>
+</body></html>'''
+for token, value in [('__AFTER__', html.escape(after)), ('__BEFORE__', html.escape(before)), ('__RUNTIME__', html.escape(runtime)),
+                     ('__FILES__', json.dumps(paths)), ('__BEFORE_JSON__', json.dumps(before)), ('__AFTER_JSON__', json.dumps(after))]:
+    doc = doc.replace(token, value)
+(OUT / 'review.html').write_text(doc, encoding='utf-8')
+print(OUT / 'review.html')

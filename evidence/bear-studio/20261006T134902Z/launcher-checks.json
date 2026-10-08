@@ -1,0 +1,45 @@
+[
+  {
+    "args": [
+      "--status"
+    ],
+    "expectedExit": 0,
+    "actualExit": 0,
+    "passed": true,
+    "stdout": "Bear Studio is running: http://127.0.0.1:8472\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "--no-browser"
+    ],
+    "expectedExit": 0,
+    "actualExit": 0,
+    "passed": true,
+    "stdout": "Bear Studio is running: http://127.0.0.1:8472\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "--no-browser",
+      "--port",
+      "8471"
+    ],
+    "expectedExit": 1,
+    "actualExit": 1,
+    "passed": true,
+    "stdout": "",
+    "stderr": "Bear Studio: Port 8471 is in use. Choose --port 8473.\n"
+  },
+  {
+    "args": [
+      "--port",
+      "1"
+    ],
+    "expectedExit": 2,
+    "actualExit": 2,
+    "passed": true,
+    "stdout": "",
+    "stderr": "usage: launch_bear_studio.py [-h] [--port PORT] [--data-dir DATA_DIR]\n                             [--no-browser] [--foreground] [--status]\nlaunch_bear_studio.py: error: --port must be between 1024 and 65535\n"
+  }
+]

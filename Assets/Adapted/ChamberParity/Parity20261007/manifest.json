@@ -1,0 +1,143 @@
+{
+  "owner": "chamber-parity-20261007",
+  "generator": "tools/make_chamber_parity_debris.py",
+  "generator_sha256": "028d1ab612ba1928a340de9862c841c53e7545783c8b3dda5f82c766cf35ba2c",
+  "floor_source_sha256": "4e0591724d4b793b0cb2d3c5b1032954e29113cc7e67bb796362b901070be214",
+  "assets": [
+    {
+      "name": "SM_Parity20261007_Debris_0",
+      "file": "SM_Parity20261007_Debris_0.fbx",
+      "sha256": "cf8423ca6e6c0c34b1543a5e85ba469a7352d87a3647c1fb0aa3aa6c7f8de52d",
+      "triangles": 5520,
+      "pieces": 246,
+      "dimensions_cm": [
+        1539.3568985164165,
+        1368.982857465744,
+        8.199181035161018
+      ],
+      "bounds_blender_m": [
+        [
+          -15.277188301086426,
+          -14.181350708007812,
+          -0.048800185322761536
+        ],
+        [
+          0.11638068407773972,
+          -0.4915221333503723,
+          0.03319162502884865
+        ]
+      ],
+      "material_slots": [
+        "Concrete",
+        "ChippedEdge",
+        "WetShard"
+      ],
+      "manifold": true,
+      "fbx_roundtrip_passed": true
+    },
+    {
+      "name": "SM_Parity20261007_Debris_1",
+      "file": "SM_Parity20261007_Debris_1.fbx",
+      "sha256": "458ebb85dc010ece89f97188fa9133f7aa4b242e8178adf25f8d6d4d471fffd4",
+      "triangles": 3258,
+      "pieces": 144,
+      "dimensions_cm": [
+        1518.1609861552715,
+        669.4648265838623,
+        8.254994824528694
+      ],
+      "bounds_blender_m": [
+        [
+          -15.293190002441406,
+          7.885916233062744,
+          -0.048800066113471985
+        ],
+        [
+          -0.11158014088869095,
+          14.580564498901367,
+          0.03374988213181496
+        ]
+      ],
+      "material_slots": [
+        "Concrete",
+        "ChippedEdge",
+        "WetShard"
+      ],
+      "manifold": true,
+      "fbx_roundtrip_passed": true
+    },
+    {
+      "name": "SM_Parity20261007_Debris_2",
+      "file": "SM_Parity20261007_Debris_2.fbx",
+      "sha256": "c834975d01259fd960cdd4875ce8b9b8247940f8179d4e9801c8cd9be4a1efd2",
+      "triangles": 4192,
+      "pieces": 185,
+      "dimensions_cm": [
+        1409.6314892172813,
+        1458.6133725941181,
+        7.639029249548912
+      ],
+      "bounds_blender_m": [
+        [
+          -0.07366035878658295,
+          -14.536090850830078,
+          -0.048800185322761536
+        ],
+        [
+          14.02265453338623,
+          0.05004287511110306,
+          0.027590107172727585
+        ]
+      ],
+      "material_slots": [
+        "Concrete",
+        "ChippedEdge",
+        "WetShard"
+      ],
+      "manifold": true,
+      "fbx_roundtrip_passed": true
+    },
+    {
+      "name": "SM_Parity20261007_Debris_3",
+      "file": "SM_Parity20261007_Debris_3.fbx",
+      "sha256": "6b4c92d7c94f63c3bb7c22bc45fb35a87e7c649c99724284726fde0146468d46",
+      "triangles": 3018,
+      "pieces": 135,
+      "dimensions_cm": [
+        1449.2496021091938,
+        1463.2582254707813,
+        8.266658335924149
+      ],
+      "bounds_blender_m": [
+        [
+          0.015112392604351044,
+          -0.0997520163655281,
+          -0.048800185322761536
+        ],
+        [
+          14.507608413696289,
+          14.532830238342285,
+          0.03386639803647995
+        ]
+      ],
+      "material_slots": [
+        "Concrete",
+        "ChippedEdge",
+        "WetShard"
+      ],
+      "manifold": true,
+      "fbx_roundtrip_passed": true
+    }
+  ],
+  "pieces": 710,
+  "triangles": 15988,
+  "units": "metres; FBX -Y/+Z; Unreal mirrors Y",
+  "placement": [
+    0,
+    0,
+    0
+  ],
+  "collision": "NoCollision",
+  "contact": "Every underside vertex samples the preserved recovery surface by raycast, with 2 mm embed.",
+  "provenance": "Original deterministic geometry; existing authored floor used only for grounding."
+}

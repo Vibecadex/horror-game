@@ -1,0 +1,5035 @@
+{
+  "passed": true,
+  "map": "/Game/Maps/TeddyChamberParity",
+  "engine": "5.8.3-58210709+++UE5+Release-5.8",
+  "captures": [
+    {
+      "name": "00-full-chamber",
+      "caption": "Full-room architectural comparison; saved scene and native cutaway. Gameplay camera unchanged.",
+      "kind": "architecture",
+      "location": [
+        -4250,
+        180,
+        3380
+      ],
+      "target": [
+        100,
+        180,
+        80
+      ],
+      "fov": 47.0,
+      "path": "C:\\Users\\4elut\\.codex\\worktrees\\chamber-parity-20261007\\horror-game\\evidence\\implementation\\20261007T141444-capture_chamber_views\\00-full-chamber.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -4250.0,
+          180.0,
+          3380.0
+        ],
+        "rotation": [
+          -37.184706453233176,
+          0.0,
+          -0.0
+        ],
+        "fov": 47.0
+      },
+      "held_samples": 183,
+      "game_time": 10.002387803047895,
+      "validation": {
+        "width": 1440,
+        "height": 960,
+        "bytes": 1400379,
+        "sha256": "f8371ce2680b8c0b8067aadedae7c80f70cbcf131e6ffc6a8ab04f96984e559f",
+        "pixel_sha256": "2f5e6feba880f242d3475690d46dddd0c1f18a880e05426d01f1f98b97fdb7bc",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      },
+      "cutaway_observation": [
+        {
+          "label": "TE_Room_CutawaySill_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_CutawayReturn_-1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_CutawayReturn_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_RearBulkhead",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearBulkheadWheel",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseDrumL",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseDrumR",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RightServiceDrums",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_LeftServiceDrums",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearDrum",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Floor_ForegroundLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_ForegroundRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_MidLeftDrift",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_RearRightFork",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_RightSideBank",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconLHousing",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconLLens",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconRHousing",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconRLens",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_HeaderPractical",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseForegroundLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseForegroundRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseMidLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseRearRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_LeftFront",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_ForegroundCentre",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RightSide",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RearRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RearLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Morph_Main",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberMorphologyOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_FrontFloorReturn",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_LeftWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RightWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_FrontWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearServiceAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseCabinetAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReversePipeAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Recover_Main",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberRecoveryOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_FrontCutaway",
+          "class": "/Game/TeddyEncounter/Chamber/Blueprints/BP_ChamberCutaway.BP_ChamberCutaway_C",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCutawayOwned"
+          ],
+          "components": [
+            {
+              "name": "FrontPanel_0",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_2",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_3",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_4",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_5",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_6",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_7",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontEnd_M1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontEnd_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "ReverseDoorL",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "ReverseDoorR",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_0",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_2",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_3",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_4",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontHeader",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontFooting",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_BayDepthL",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BayDepthR",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_OverheadShaft",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_0_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_1_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_2_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_3_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_4",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_5",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_6",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_UpperHaze",
+          "class": "/Script/Engine.LocalFogVolume",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "Sprite",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        }
+      ]
+    },
+    {
+      "name": "01-chamber-front",
+      "caption": "ARCHITECTURAL FRONT: looks +X toward pressure bulkhead; saved actors/art/exposure. Camera outside front wall; native owned tall-wall cutaway may hide, retained sill remains. Reframed camera revision chamber-02.",
+      "kind": "architecture",
+      "location": [
+        -4050,
+        180,
+        2780
+      ],
+      "target": [
+        100,
+        180,
+        80
+      ],
+      "fov": 41.5,
+      "path": "C:\\Users\\4elut\\.codex\\worktrees\\chamber-parity-20261007\\horror-game\\evidence\\implementation\\20261007T141444-capture_chamber_views\\01-chamber-front.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -4050.0,
+          180.0,
+          2780.0
+        ],
+        "rotation": [
+          -33.04812486997527,
+          0.0,
+          -0.0
+        ],
+        "fov": 41.5
+      },
+      "held_samples": 183,
+      "game_time": 13.002978712320328,
+      "validation": {
+        "width": 1440,
+        "height": 960,
+        "bytes": 1800301,
+        "sha256": "95f53550710cf2e7e79a595a53822eebe8dfe9b68c71be0b1401f825ee5ace44",
+        "pixel_sha256": "b6c423d881565c677c234acde109125c32fafcb5357111910d54699f3a447e85",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      },
+      "cutaway_observation": [
+        {
+          "label": "TE_Room_CutawaySill_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_CutawayReturn_-1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_CutawayReturn_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_RearBulkhead",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearBulkheadWheel",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseDrumL",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseDrumR",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RightServiceDrums",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_LeftServiceDrums",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearDrum",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Floor_ForegroundLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_ForegroundRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_MidLeftDrift",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_RearRightFork",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_RightSideBank",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconLHousing",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconLLens",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconRHousing",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconRLens",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_HeaderPractical",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseForegroundLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseForegroundRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseMidLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseRearRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_LeftFront",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_ForegroundCentre",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RightSide",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RearRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RearLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Morph_Main",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberMorphologyOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_FrontFloorReturn",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_LeftWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RightWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_FrontWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearServiceAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseCabinetAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReversePipeAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Recover_Main",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberRecoveryOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_FrontCutaway",
+          "class": "/Game/TeddyEncounter/Chamber/Blueprints/BP_ChamberCutaway.BP_ChamberCutaway_C",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCutawayOwned"
+          ],
+          "components": [
+            {
+              "name": "FrontPanel_0",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_2",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_3",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_4",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_5",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_6",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_7",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontEnd_M1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontEnd_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "ReverseDoorL",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "ReverseDoorR",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_0",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_2",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_3",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_4",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontHeader",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontFooting",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_BayDepthL",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BayDepthR",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_OverheadShaft",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_0_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_1_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_2_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_3_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_4",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_5",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_6",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_UpperHaze",
+          "class": "/Script/Engine.LocalFogVolume",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "Sprite",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        }
+      ]
+    },
+    {
+      "name": "02-chamber-reverse",
+      "caption": "ARCHITECTURAL REVERSE: looks -X toward complete reverse service wall; camera inside far wall. Saved actors/art/exposure; native reverse wall must be visible. Revision03 retains the approximately35-degree pose and widens FOV to70 to include the electrical cabinets and near-end pipe rack.",
+      "kind": "architecture",
+      "location": [
+        1450,
+        100,
+        1450
+      ],
+      "target": [
+        -600,
+        100,
+        0
+      ],
+      "fov": 70.0,
+      "path": "C:\\Users\\4elut\\.codex\\worktrees\\chamber-parity-20261007\\horror-game\\evidence\\implementation\\20261007T141444-capture_chamber_views\\02-chamber-reverse.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          1450.0,
+          100.0,
+          1450.0
+        ],
+        "rotation": [
+          -35.27242144859835,
+          180.0,
+          8.051856345342334e-07
+        ],
+        "fov": 70.0
+      },
+      "held_samples": 183,
+      "game_time": 16.00536411628127,
+      "validation": {
+        "width": 1440,
+        "height": 960,
+        "bytes": 1941391,
+        "sha256": "c8f69f7f662726751abedf15ebe82c63d4df62f95c29a4b446ee17a97fa7d086",
+        "pixel_sha256": "238230180090b0ba7d630ca26747ac63a2e2403997d556d658ed61fb45ca573f",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      },
+      "cutaway_observation": [
+        {
+          "label": "TE_Room_CutawaySill_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_CutawayReturn_-1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_CutawayReturn_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_RearBulkhead",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearBulkheadWheel",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseDrumL",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseDrumR",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RightServiceDrums",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_LeftServiceDrums",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearDrum",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Floor_ForegroundLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_ForegroundRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_MidLeftDrift",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_RearRightFork",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_RightSideBank",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconLHousing",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconLLens",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconRHousing",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconRLens",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_HeaderPractical",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseForegroundLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseForegroundRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseMidLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseRearRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_LeftFront",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_ForegroundCentre",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RightSide",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RearRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RearLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Morph_Main",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberMorphologyOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_FrontFloorReturn",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_LeftWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RightWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_FrontWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearServiceAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseCabinetAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReversePipeAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Recover_Main",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberRecoveryOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_FrontCutaway",
+          "class": "/Game/TeddyEncounter/Chamber/Blueprints/BP_ChamberCutaway.BP_ChamberCutaway_C",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCutawayOwned"
+          ],
+          "components": [
+            {
+              "name": "FrontPanel_0",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_2",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_3",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_4",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_5",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_6",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_7",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontEnd_M1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontEnd_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "ReverseDoorL",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "ReverseDoorR",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_0",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_2",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_3",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_4",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontHeader",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontFooting",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BayDepthL",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BayDepthR",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_OverheadShaft",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_0_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_1_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_2_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_3_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_4",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_5",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_6",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_UpperHaze",
+          "class": "/Script/Engine.LocalFogVolume",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "Sprite",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        }
+      ]
+    },
+    {
+      "name": "03-ordinary-gameplay",
+      "caption": "ORDINARY GAMEPLAY HOLD: saved director pose restored after the architectural plates. Expected near pitch -46 and FOV 54. Characters held. Not an architectural parity plate and not physical-device input.",
+      "kind": "gameplay-camera",
+      "path": "C:\\Users\\4elut\\.codex\\worktrees\\chamber-parity-20261007\\horror-game\\evidence\\implementation\\20261007T141444-capture_chamber_views\\03-ordinary-gameplay.png",
+      "held_state": {
+        "player": [
+          -230.0,
+          570.0,
+          85.14999961853027
+        ],
+        "camera": [
+          -1678.7905600193244,
+          170.0,
+          1874.0
+        ],
+        "rotation": [
+          -46.00000000000005,
+          0.0,
+          -0.0
+        ],
+        "fov": 54.0
+      },
+      "held_samples": 183,
+      "game_time": 19.00578522309661,
+      "validation": {
+        "width": 1440,
+        "height": 960,
+        "bytes": 2062723,
+        "sha256": "fc158727a86d4b7cff3f3464812f684a4040dd90b731c139fa6df7ef2e173989",
+        "pixel_sha256": "226b648307ae9e2218eb41c78f1b939b619dca361a705e39d51b4e30ebe4bba0",
+        "all_chunk_crcs_valid": true,
+        "full_pixel_decode": true,
+        "range": [
+          0,
+          255
+        ]
+      },
+      "cutaway_observation": [
+        {
+          "label": "TE_Room_CutawaySill_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawaySill_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomShell"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Room_CutawayCap_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "FullRoomOwned",
+            "RoomDecor"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_Cutaway_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_CutawayReturn_-1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity_RoomExt_CutawayReturn_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ParityOwned",
+            "ParityRoomExtensionV1"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_RearBulkhead",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearBulkheadWheel",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseDrumL",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseDrumR",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RightServiceDrums",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_LeftServiceDrums",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearDrum",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Floor_ForegroundLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_ForegroundRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_MidLeftDrift",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_RearRightFork",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Floor_RightSideBank",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberFloorOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconLHousing",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconLLens",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconRHousing",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BulkheadBeaconRLens",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_HeaderPractical",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseForegroundLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseForegroundRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseMidLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Slabs_SparseRearRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberSlabsOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_LeftFront",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_ForegroundCentre",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RightSide",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RearRight",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Crust_RearLeft",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCrustOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_Morph_Main",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberMorphologyOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_FrontFloorReturn",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_LeftWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RightWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_FrontWallWash",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_RearServiceAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReverseCabinetAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_ReversePipeAccent",
+          "class": "/Script/Engine.RectLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_Recover_Main",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberRecoveryOwned"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_FrontCutaway",
+          "class": "/Game/TeddyEncounter/Chamber/Blueprints/BP_ChamberCutaway.BP_ChamberCutaway_C",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned",
+            "ChamberCutawayOwned"
+          ],
+          "components": [
+            {
+              "name": "FrontPanel_0",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_2",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_3",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_4",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_5",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_6",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPanel_7",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontEnd_M1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontEnd_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "ReverseDoorL",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "ReverseDoorR",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_0",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_1",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_2",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_3",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontPier_4",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontHeader",
+              "visible": true,
+              "hidden_in_game": false
+            },
+            {
+              "name": "FrontFooting",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Chamber_BayDepthL",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Chamber_BayDepthR",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberOwned"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": false,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": true
+        },
+        {
+          "label": "TE_Parity20261007_OverheadShaft",
+          "class": "/Script/Engine.SpotLight",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "ArrowComponent0",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_0_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_1_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_2_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_SM_Parity20261007_Debris_3_V2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_0",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_1",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_2",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_3",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_4",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_5",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_FrontDrain_6",
+          "class": "/Script/Engine.StaticMeshActor",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "StaticMeshComponent0",
+              "visible": true,
+              "hidden_in_game": false
+            }
+          ],
+          "actor_hidden_in_game": false
+        },
+        {
+          "label": "TE_Parity20261007_UpperHaze",
+          "class": "/Script/Engine.LocalFogVolume",
+          "tags": [
+            "TeddyEncounterOwned",
+            "ChamberParity20261007"
+          ],
+          "components": [
+            {
+              "name": "Sprite",
+              "visible": true,
+              "hidden_in_game": true
+            }
+          ],
+          "actor_hidden_in_game": false
+        }
+      ]
+    }
+  ],
+  "asset_writes": false,
+  "physical_device_verified": false,
+  "method": "Editor PIE architectural comparison only; saved actors frozen, HUD hidden. Native 3:2 HighResShot viewport, no crop/warp. Lighting/exposure unchanged. Environment Blueprint ticks remain enabled so the native camera-dependent cutaway can react; visibility is recorded, never forced.",
+  "resolution": [
+    1440,
+    960
+  ],
+  "camera_revision": "chamber-03-reverse-services",
+  "reference_front": "study/visuals/chamber-target-front.png",
+  "reference_reverse": "study/visuals/chamber-target-reverse.png",
+  "world": "/Game/Maps/UEDPIE_0_TeddyChamberParity.TeddyChamberParity",
+  "postprocess": [
+    {
+      "auto_exposure_method": "<AutoExposureMethod.AEM_MANUAL: 2>",
+      "auto_exposure_bias": "3.799999952316284",
+      "auto_exposure_apply_physical_camera_exposure": "True",
+      "vignette_intensity": "0.3799999952316284",
+      "bloom_intensity": "0.25"
+    }
+  ],
+  "architectural_camera_original": {
+    "location": [
+      -1678.7905600193246,
+      170.0,
+      1874.0
+    ],
+    "rotation": [
+      -46.000000000000114,
+      0.0,
+      -0.0
+    ],
+    "fov": 54.0,
+    "method": "PIE director tick disabled and transform/FOV staged; PIE teardown discards changes"
+  },
+  "wall_seconds": 27.70299999997951
+}
