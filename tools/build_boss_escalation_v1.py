@@ -193,15 +193,27 @@ class PartialStateError(RuntimeError):
     pass
 
 
-def stage(payload, name):
+def stage(payload, name, log=None):
     """Record and log an apply/inspect stage before a native step.
 
-    A native editor crash writes no receipt, so the last 'GAME-016 stage:' line in
-    editor.log names the step that was running (apply crash 20261008T193722).
+    print() does not reach editor.log, and a native crash drops it. unreal.log_warning
+    does reach editor.log, which is what survives the crash (apply 20261008T194503).
     """
     payload.setdefault('stages', []).append(name)
-    print(f'GAME-016 stage: {name}', flush=True)
+    line = f'GAME-016 stage: {name}'
+    print(line, flush=True)
+    writer = log if log is not None else _unreal_log
+    writer(line)
     return name
+
+
+def _unreal_log(line):
+    try:
+        import unreal
+        unreal.log_warning(line)
+    except Exception:
+        return False
+    return True
 
 
 def clip_seconds(frames, fps=FPS):
@@ -1113,8 +1125,16 @@ def run_apply(editor, payload):
     stage(payload, 'add variables')
     added_vars = add_variables(editor, boss, boss_graph, timings)
     payload['variables_added'] = added_vars
-    # Rebuild the graph wrapper so new nodes are placed after the variable adds.
+    # Hardening after the 21:37 native crash (no node had spawned yet): bring the
+    # skeleton class up to date with the ten new variables before any node is
+    # spawned against it, then re-find the anchors on a fresh graph wrapper and
+    # require the very same nodes. In memory only; nothing is saved here, and the
+    # authored graph is unchanged.
+    stage(payload, 'refresh boss after variables (compile, no save)')
+    compile_clean(editor, boss)
+    stage(payload, 're-find anchors')
     boss_graph = editor.Graph(boss)
+    anchors = reconfirm_anchors(anchors, find_boss_anchors(editor, boss, boss_graph.g, names))
     relinked, added_nodes, comment = mutate_boss(editor, boss_graph, anchors, timings, payload)
     payload['nodes_relinked'] = relinked
     payload['nodes_added'] = added_nodes
@@ -1638,6 +1658,17 @@ def find_hud_anchors(editor, graph):
     if len(actors) != 1:
         raise AnchorError('boss actor', f'found {len(actors)} GetActorOfClass nodes for the boss')
     return {'boss_bar': bars[0], 'boss_actor': actors[0]}
+
+
+def reconfirm_anchors(before, after):
+    """Return ``after`` only if every anchor is the same node (name and class) as ``before``."""
+    old_ids = {key: node_id(node) for key, node in before.items()}
+    new_ids = {key: node_id(node) for key, node in after.items()}
+    if old_ids != new_ids:
+        changed = {key: (old_ids.get(key), new_ids.get(key))
+                   for key in sorted(set(old_ids) | set(new_ids)) if old_ids.get(key) != new_ids.get(key)}
+        raise AnchorError('anchors after variables', f'anchors moved after the variable refresh: {changed}')
+    return after
 
 
 def describe_anchors(boss_anchors, hud_anchors):

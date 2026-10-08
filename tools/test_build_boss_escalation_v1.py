@@ -924,16 +924,56 @@ class AnchorDump(unittest.TestCase):
         _link(_FakePin('ReturnValue', 'EGPD_Output', 'Boolean'), linked)
         self.assertIsNone(escalation.literal_bool(linked))
 
+    def test_stage_writes_the_editor_log_not_only_stdout(self):
+        payload = {}
+        seen = []
+        escalation.stage(payload, 'refresh boss after variables (compile, no save)', log=seen.append)
+        self.assertEqual(seen, ['GAME-016 stage: refresh boss after variables (compile, no save)'])
+        self.assertIn('unreal.log_warning(line)', SCRIPT.read_text(encoding='utf-8'))
+
     def test_stage_breadcrumbs_cover_every_native_apply_step(self):
         payload = {}
         escalation.stage(payload, 'import clips')
         self.assertEqual(payload['stages'], ['import clips'])
         source = SCRIPT.read_text(encoding='utf-8')
-        for name in ('anchors', 'locks', 'import clips', 'add variables', 'mutate boss: damage ignore',
+        for name in ('anchors', 'locks', 'import clips', 'add variables',
+                     'refresh boss after variables (compile, no save)', 're-find anchors',
+                     'mutate boss: damage ignore',
                      'mutate boss: phase entry', 'mutate boss: state 5 tick', 'mutate boss: recovery select',
                      'mutate boss: anticipation clips', 'compile boss (in memory)', 'mutate hud',
                      'compile hud (in memory)', 'tag and save', 'saved'):
             self.assertIn(f"stage(payload, '{name}')", source)
+
+    def test_apply_refreshes_and_refinds_anchors_before_spawning_nodes(self):
+        source = SCRIPT.read_text(encoding='utf-8')
+        body = source[source.index('def run_apply('):source.index('def compile_clean(')]
+        order = [body.index(marker) for marker in (
+            "stage(payload, 'add variables')",
+            "stage(payload, 'refresh boss after variables (compile, no save)')",
+            'compile_clean(editor, boss)',
+            "stage(payload, 're-find anchors')",
+            'reconfirm_anchors(anchors, find_boss_anchors(',
+            'mutate_boss(editor, boss_graph, anchors',
+            'editor.save(hud)',
+        )]
+        self.assertEqual(order, sorted(order))
+        # Nothing is saved between the variable adds and the final save block.
+        between = body[order[0]:order[-1]]
+        self.assertNotIn('editor.save(boss)', between)
+        self.assertNotIn('save(', between.replace('(compile, no save)', ''))
+
+    def test_reconfirm_anchors_requires_identical_nodes(self):
+        a = _FakeNode('K2Node_IfThenElse_10', 'K2Node_IfThenElse')
+        b = _FakeNode('K2Node_CallFunction_13', 'K2Node_CallFunction')
+        same = {'damage_health': _FakeNode('K2Node_IfThenElse_10', 'K2Node_IfThenElse'),
+                'attack_play': _FakeNode('K2Node_CallFunction_13', 'K2Node_CallFunction')}
+        self.assertIs(escalation.reconfirm_anchors({'damage_health': a, 'attack_play': b}, same), same)
+        moved = {'damage_health': a, 'attack_play': _FakeNode('K2Node_CallFunction_99', 'K2Node_CallFunction')}
+        with self.assertRaises(escalation.AnchorError) as caught:
+            escalation.reconfirm_anchors({'damage_health': a, 'attack_play': b}, moved)
+        self.assertIn('K2Node_CallFunction_99', str(caught.exception))
+        with self.assertRaises(escalation.AnchorError):
+            escalation.reconfirm_anchors({'damage_health': a, 'attack_play': b}, {'damage_health': a})
 
     def test_receipt_carries_the_anchor_failure(self):
         error = escalation.AnchorError('lethal', 'mismatch', dump={'id': 'n', 'pins': []},

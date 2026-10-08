@@ -104,3 +104,5 @@ Reader fix (accepted equivalent forms only):
 - Apply now prints `GAME-016 stage: <step>` before each native step, so after a native crash the last stage line in `editor.log` names the step.
 
 Before the next apply: get a human decision on the crash first. One option is to run inspect plus apply once with the breadcrumbs to find the crashing step. Another is to open `BP_TeddyBoss` in the editor and try the same edit by hand. Do not loop applies.
+
+| 21:45:03 | apply (one breadcrumbed retry) | 1, native crash | none; log copied to `evidence/game-016/20261008T194517Z-apply-crash/editor.log` | Null access violation (`0x0`) during the new in-memory refresh compile. The log shows the ten `Could not find a match` lookups, then a fresh burst of `Missing input pin` warnings, then the crash. No callstack frames were flushed. `print` stages never reach `editor.log`; `unreal.log_warning` does, and that is wired in for a future run. Blueprints, map, skeleton and stitchling unchanged. No further launches. |
